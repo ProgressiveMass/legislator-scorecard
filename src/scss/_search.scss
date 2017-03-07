@@ -1,0 +1,34 @@
+.search-page {
+
+  @include media-breakpoint-down(xs) {
+    .blue-floated, .white-floated {
+      padding: 1rem;
+    }
+
+  }
+
+  .vertical-center {
+
+    @include media-breakpoint-up(lg) {
+      top: 50%;
+      transform: translateY(-50%);
+      position: relative;
+    }
+  }
+
+  main {
+    margin: 12vh 0;
+  }
+
+form {
+  @extend .white-floated;
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    top: -20%;
+    height: 140%;
+  }
+}
+
+}

@@ -1,0 +1,90 @@
+.senator-page {
+    table p {
+        margin-bottom: .5rem;
+    }
+
+    table {
+        position: relative;
+        top: -90px;
+    }
+
+    thead {
+        background: white;
+        border-bottom: 1px solid $gray-lighter;
+        box-shadow: 0 2px 1px -2px black;
+    }
+
+    th {
+        border-top: 0;
+        @extend .label;
+    }
+
+    .badge {
+        margin-right: 2px;
+    }
+
+    td:first-of-type {
+        width: 28%;
+    }
+
+    td:nth-of-type(2) {
+        width: 45%;
+    }
+
+    .blue-floated {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .table-container {
+        @include media-breakpoint-up(sm) {
+            width: 150%;
+            position: relative;
+            left: -25%;
+        }
+    }
+
+    .metadata {
+      @include media-breakpoint-down(xs) {
+        margin-bottom: 2rem !important;
+        padding: 1rem;
+      }
+    }
+
+    .metadata img {
+        max-height: 200px;
+        min-height: 130px;
+        min-width: 125px;
+        margin-right: 2rem;
+    }
+
+    .votes-fw {
+        width: 2rem;
+        display: inline-block;
+        text-align: right;
+        margin-right: .1rem;
+    }
+
+    .progress-component {
+      margin-bottom: 7rem;
+        padding: 1rem;
+        @include media-breakpoint-up(sm) {
+            max-width: 600px;
+            margin: auto;
+            padding: 1rem 2rem;
+            position: relative;
+            top: -110px;
+            background: #fff;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .progress-component .progress {
+        margin-bottom: 1rem;
+    }
+
+    .badge-default {
+        color: $body-color;
+        background: $progress-bg;
+    }
+}

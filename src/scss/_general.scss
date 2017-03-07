@@ -1,0 +1,110 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+.label,
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+label {
+    display: block;
+}
+
+a {
+    font-weight: bold;
+}
+
+b {
+  font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+  @extend .clearfix;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.blue-floated {
+    background: $brand-primary;
+    color: #fff;
+    padding: 0;
+
+      a {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
+      @include media-breakpoint-up(sm) {
+        padding: 2rem;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.73);
+       }
+}
+
+.white-floated {
+    background: #fff;
+    color: $body-color;
+    padding: 0;
+
+    a {
+      color: $link-color;
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      padding: 2rem;
+      box-shadow: 0 0 100px rgba(0, 0, 0, 0.47);
+    }
+}
+
+caption {
+  text-align: center;
+  caption-side: top;
+  @extend .label;
+  font-size: 1.5rem;
+  color: $body-color;
+}
+
+
+.text-lg {
+  font-size: 1.3rem;
+}
+
+header a {
+  color: $body-color;
+  display: block;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.floated-link {
+  padding: .5rem;
+  background: #fff;
+  box-shadow: 0 0 20px black;
+  display:inline-block;
+  box-shadow:0 0 20px rgba(0, 0, 0, 0.15)
+}
+
+.container {
+  @include media-breakpoint-down(xs) {
+  padding: 0 !important;
+ }
+
+}
