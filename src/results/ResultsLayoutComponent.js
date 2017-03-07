@@ -42,6 +42,7 @@ export default class ResultsLayoutComponent extends React.Component {
       }
     })
     .then((response) => {
+      debugger
       return response.data.results[0].fields.state_legislative_districts.senate.name
     })
     .then((district) => {

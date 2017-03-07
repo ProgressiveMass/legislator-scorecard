@@ -9,15 +9,18 @@ export default class SenatorMetadataComponent extends React.Component {
     if (!this.props.metadata) return (<div>loading...</div>)
 
     const senator = this.props.metadata
+    const url = senator.urls ? senator.urls[0] : null
+
     return (
       <div className='clearfix metadata' style={{ marginBottom : senator.newSenator ? '0' : '5rem' }}>
         <div className='float-sm-left mb-4'>
           <img src={senator.photo_url} alt='senator profile picture' />
         </div>
-        <div>
-          <a href={senator.urls[0]} target='_blank'>
+        <div>{
+          url ?  <a href={url} target='_blank'>
             <h2>{senator.name} ({senator.party.slice(0, 1)})</h2>
-          </a>
+          </a> :    <h2>{senator.name} ({senator.party.slice(0, 1)})</h2>
+        }
           <div className='lead mb-2'>
             {senator.district}
           </div>
@@ -32,11 +35,14 @@ export default class SenatorMetadataComponent extends React.Component {
           : null}
 
         </div>
-        <div className='text-lg'>
-          <a href={senator.urls[0]} target='_blank'>
-            <i className='fa fa-fw fa-user' aria-hidden />&nbsp;Official Profile & Contact Info
-          </a>
-        </div>
+        { url ?
+          <div className='text-lg'>
+            <a href={senator.urls[0]} target='_blank'>
+              <i className='fa fa-fw fa-user' aria-hidden />&nbsp;Official Profile & Contact Info
+            </a>
+          </div>
+        : null }
+
       </div>)
   }
 }

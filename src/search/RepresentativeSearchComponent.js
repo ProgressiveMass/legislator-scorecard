@@ -40,7 +40,7 @@ export default class RepresentativeSearch extends React.Component {
                 <div className='vertical-center'>
                   <div className='form-group'>
                     <label>
-                      Street Address
+                      Home Address
                       <input type='text' className='form-control' ref='address' placeholder='123 Main St, Cambridge' />
                     </label>
                   </div>
