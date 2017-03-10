@@ -15,8 +15,7 @@ const ProgressComponent = (props) => {
     <div className='progress-component'>
       <h2 className='sr-only'>Progressive Ranking Summary</h2>
       <p className='sr-only'>
-        Voted with the progressive position {progressive} times, and against the progressive position
-        {notProgressive} times.
+        Voted with the progressive position {props.voteRating} percent of the time
       </p>
       <div aria-hidden='aria-hidden'>
         <div>

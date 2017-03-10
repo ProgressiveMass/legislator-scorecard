@@ -9,17 +9,32 @@ export default class SenatorMetadataComponent extends React.Component {
     if (!this.props.metadata) return (<div>loading...</div>)
 
     const senator = this.props.metadata
-    const url = senator.urls ? senator.urls[0] : null
+
+    // dynamic margin bottom based on whether there's an image/whether there's
+    // a progress component
+    let marginBottom
+    if (!this.props.newSenator && !senator.photo_url){
+      marginBottom = '6.5rem'
+    } else if (!this.props.newSenator){
+      marginBottom = '5rem'
+    } else if (this.props.newSenator){
+      marginBottom = '0'
+    }
 
     return (
-      <div className='clearfix metadata' style={{ marginBottom : senator.newSenator ? '0' : '5rem' }}>
-        <div className='float-sm-left mb-4'>
-          <img src={senator.photo_url} alt='senator profile picture' />
-        </div>
+      <div className='clearfix metadata'
+        style={{ marginBottom : marginBottom}}
+      >
+        {
+          senator.photo_url ? (<div className='float-sm-left mb-4'>
+            <img src={senator.photo_url} alt='senator profile picture' />
+          </div>) : null
+        }
+
         <div>{
-          url ?  <a href={url} target='_blank'>
-            <h2>{senator.name} ({senator.party.slice(0, 1)})</h2>
-          </a> :    <h2>{senator.name} ({senator.party.slice(0, 1)})</h2>
+          senator.url ? <a href={senator.url} target='_blank'>
+            <h2>{senator.senator} ({senator.party.slice(0, 1)})</h2>
+          </a> : <h2>{senator.senator} ({senator.party.slice(0, 1)})</h2>
         }
           <div className='lead mb-2'>
             {senator.district}
@@ -35,9 +50,9 @@ export default class SenatorMetadataComponent extends React.Component {
           : null}
 
         </div>
-        { url ?
-          <div className='text-lg'>
-            <a href={senator.urls[0]} target='_blank'>
+        { senator.url
+          ? <div className='text-lg'>
+            <a href={senator.url} target='_blank'>
               <i className='fa fa-fw fa-user' aria-hidden />&nbsp;Official Profile & Contact Info
             </a>
           </div>

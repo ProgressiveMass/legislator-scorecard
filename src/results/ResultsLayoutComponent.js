@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-import axios from 'axios'
 
 import voteInfo from './2015senate_votes.json'
 import billInfo from './2015senate_bills.json'
@@ -7,6 +6,7 @@ import billInfo from './2015senate_bills.json'
 import SenatorMetadataComponent from './SenatorMetadataComponent'
 import VoteTableComponent from './VoteTableComponent'
 import ProgressComponent from './ProgressComponent'
+import NewSenatorMessageComponent from './NewSenatorMessageComponent'
 
 import { keys } from 'lodash'
 
@@ -19,150 +19,88 @@ export default class ResultsLayoutComponent extends React.Component {
     }
 
     this.findSenatorByDistrict = this.findSenatorByDistrict.bind(this)
+    this.renderNewSenatorComponent = this.renderNewSenatorComponent.bind(this)
   }
 
   getSummaryRanking (voteInfo) {
-    return parseInt(voteInfo.map((v) => {
-      return parseInt(v.voteRating.replace('%', ''))
-    }).reduce((a, b) => a + b) / voteInfo.length)
+    const districtVals = Object.values(voteInfo)
+    return parseInt(districtVals.map((v) => {
+      return parseInt(v['2015-2016'].voteRating.replace('%', ''))
+    }).reduce((a, b) => a + b) / districtVals.length)
   }
 
-  findSenatorByDistrict () {
+  findSenatorByDistrict (district) {
     const simplifyDistrict = (district) => {
       return district
       .replace(/\band\b/g, '')
       .replace(/\W/g, '')
       .replace(/District/g, '')
     }
-    axios.get('https://api.geocod.io/v1/geocode', {
-      params: {
-        api_key: '8f05bb78fef066b587eb78e855b015b4b66e508',
-        q : this.props.location.query.address,
-        fields : 'stateleg'
-      }
-    })
-    .then((response) => {
-      debugger
-      return response.data.results[0].fields.state_legislative_districts.senate.name
-    })
-    .then((district) => {
-      let metadata = voteInfo.filter((v) => {
-        return simplifyDistrict(v.district) === simplifyDistrict(district)
-      })[0]
+
+    const metadata = voteInfo[district]
+    const metadata2015 = Object.assign(
+    {},
+    metadata.senators[metadata['2015-2016'].senator],
+    metadata['2015-2016'])
+
+    const metadata2017 = Object.assign(
+    {},
+    metadata.senators[metadata['2017-2018'].senator],
+    metadata['2017-2018'])
 
       // get a nice array of data about senator's votes and
       // general vote descriptions
-      const votes = metadata.votes.map((v) => {
-        const voteId = Object.keys(v)[0]
-        const dataForThisBill = billInfo[voteId]
-        return {
-          ...dataForThisBill,
-          senatorVote : v[voteId]
-        }
-      })
+    const votes = metadata['2015-2016'].votes.map((v) => {
+      const voteId = Object.keys(v)[0]
+      const dataForThisBill = billInfo[voteId]
+      return {
+        ...dataForThisBill,
+        senatorVote : v[voteId]
+      }
+    })
 
-      this.setState({
-        metadata : metadata,
-        votes : votes,
-        voteSummary : this.getSummaryRanking(voteInfo)
-      })
+    this.setState({
+      metadata2015,
+      metadata2017,
+      votes,
+      voteSummary : this.getSummaryRanking(voteInfo)
     })
   }
 
   componentDidMount () {
-    const handleResponse = (response) => {
-      // get data from response
-      if (response.data.officials.length < 3) {
-        // Google didn't return senator info b/c it
-        // doesn't have it for some addresses D: D: D:
-        this.findSenatorByDistrict()
-        return
-      }
-      const googleSenatorInfo = response.data.officials[2]
-      // add twitter if it's there (overrides progressive Mass's version)
-      if (googleSenatorInfo.channels && googleSenatorInfo.channels.filter((c) => (c.type === 'Twitter'))[0]) {
-        googleSenatorInfo.twitter = '@' + googleSenatorInfo.channels.filter((c) => (c.type === 'Twitter'))[0].id
-      }
-      // find senator in progressive mass votes data
-      let nameKey = googleSenatorInfo.name.split(' ')
-      // our data has senator names in the form lastname, firstname (no middle initial)
-      nameKey = nameKey[nameKey.length - 1] + ', ' + nameKey[0]
+    const district = this.props.location.query.district
+    // sets state with proper values for this senator
+    this.findSenatorByDistrict(district)
+  }
 
-      let massProgSenatorInfo = voteInfo.filter((v) => {
-        return v.name === nameKey
-      })[0]
-      if (!massProgSenatorInfo) {
-        // ========================================================
-        //  probably a newly-elected senator, so just add what we have
-        //  and make a note of it so we can render an apology since
-        //  we don't have votes
-        // ========================================================
-        googleSenatorInfo.newSenator = true
-        googleSenatorInfo.district = response.data.offices[1].name
-        // google image url is broken so let's make one that should work instead
-        const govID = googleSenatorInfo.urls[0].split('/')[ googleSenatorInfo.urls[0].split('/').length - 1]
-        googleSenatorInfo.photo_url = `https://malegislature.gov/Legislators/Profile/170/${govID}.jpg`
-        googleSenatorInfo.district = googleSenatorInfo.district.replace('MA State Senate District', '')
-        this.setState({
-          metadata: googleSenatorInfo,
-          votes : [],
-          voteSummary : this.getSummaryRanking(voteInfo)
-        })
-        return
-      }
-
-      // create votes and metadata to pass down
-      // join data from Google and data from progressive massachussetts
-      const metadata = Object.assign({}, googleSenatorInfo, massProgSenatorInfo)
-
-      // google image url is broken so let's make one that should work instead
-      const govID = googleSenatorInfo.urls[0].split('/')[ googleSenatorInfo.urls[0].split('/').length - 1]
-      metadata.photo_url = `https://malegislature.gov/Legislators/Profile/170/${govID}.jpg`
-
-      // get a nice array of data about senator's votes and
-      // general vote descriptions
-      const votes = metadata.votes.map((v) => {
-        const voteId = Object.keys(v)[0]
-        const dataForThisBill = billInfo[voteId]
-        return {
-          ...dataForThisBill,
-          senatorVote : v[voteId]
-        }
-      })
-
-      this.setState({
-        metadata : metadata,
-        votes : votes,
-        voteSummary : this.getSummaryRanking(voteInfo)
-      })
-    }
-
-    axios.get('https://www.googleapis.com/civicinfo/v2/representatives', {
-      params: {
-        key: 'AIzaSyAXk0apdH-wT0XbspGc3nyE6dLpt887Nm0',
-        address: this.props.location.query.address,
-        roles: 'legislatorUpperBody'
-      }
-    })
-   .then(handleResponse)
-   .catch(function (error) {
-     console.log(error)
-   })
+  renderNewSenatorComponent () {
+    return (
+      <div className='blue-floated'>
+        <SenatorMetadataComponent
+          metadata={this.state.metadata2017}
+          newSenator
+        />
+        <NewSenatorMessageComponent />
+      </div>
+    )
   }
 
   render () {
-    if (!this.state.metadata) { return (<div>loading...</div>) }
+    if (!this.state.metadata2015) { return (<div>loading...</div>) }
+
+    const newSenator = (this.state.metadata2015.senator !== this.state.metadata2017.senator)
 
     return (<div className='senator-page'>
 
+      { newSenator ? this.renderNewSenatorComponent() : null}
+
       <div className='blue-floated'>
-        <SenatorMetadataComponent metadata={this.state.metadata} />
+        <SenatorMetadataComponent metadata={this.state.metadata2015} />
         <VoteTableComponent
-          newSenator={this.state.metadata.newSenator}
-          voteRating={this.state.metadata.voteRating}
+          voteRating={this.state.metadata2015.voteRating}
           votes={this.state.votes}
           voteSummary={this.state.voteSummary}
-          lastName={this.state.metadata.name.split(',')[0]}
+          lastName={this.state.metadata2015.senator.split(',')[0]}
         />
       </div>
     </div>)

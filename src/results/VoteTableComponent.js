@@ -64,20 +64,7 @@ export default class VoteTableComponent extends React.Component {
 
   render () {
     if (!this.props.votes) return null
-    if (this.props.newSenator) {
-      return <div className='white-floated'>
-        <p className='lead'>
-          <b>Sorry!</b> <br /> We were unable to find votes by this legislator for the 2015-2016 session.
-        </p>
-        <p>
-          <b>This most likely means he or she is a first-term senator.</b>
-        </p>
-        <p>However, you can still follow the profile link above to learn more about your state senator.</p>
-        <p>
-          To check out a full progressive summary of the 2015-2016 session,&nbsp;<a href='http://www.progressivemass.com/189thscorecard-senate'>check out the Progressive Mass website.</a>
-        </p>
-      </div>
-    }
+
     return (<div className='white-floated table-container'>
       <ProgressComponent
         votes={this.props.votes}

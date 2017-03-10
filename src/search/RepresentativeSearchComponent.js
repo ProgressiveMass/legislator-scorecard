@@ -1,4 +1,6 @@
 import React, { PropTypes } from 'react'
+import getDistrict from './getDistrict'
+import axios from 'axios'
 
 export default class RepresentativeSearch extends React.Component {
   constructor (props) {
@@ -9,9 +11,27 @@ export default class RepresentativeSearch extends React.Component {
   onFormSubmit (e) {
     e.preventDefault()
     const address = this.refs.address.value + ' MA ' + this.refs.zip.value
-    this.props.router.push({
-      pathname: '/senator',
-      query: { address : address }
+
+    axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
+      params: {
+        api_key: 'AIzaSyD7___eVHUFHrRMxLhl60H3JjOjv-tBfCw',
+        address : address
+      }
+    })
+    .then((response) => {
+      const point = response.data.results[0].geometry.location
+      const districtData = getDistrict(point)
+      if (typeof districtData === 'string') {
+          // couldn't locate the user, show error message
+        this.props.router.push({
+          pathname: '/error'
+        })
+      } else {
+        this.props.router.push({
+          pathname: '/senator',
+          query: { district :  districtData.SEN_DIST }
+        })
+      }
     })
   }
 
@@ -22,12 +42,12 @@ export default class RepresentativeSearch extends React.Component {
         <div className='blue-floated'>
           <div className='row'>
             <div className='col-md-6'>
-              <h2 className='mb-3'>Check out their voting record for the 2015-2016 session</h2>
+              <h2 className='mb-3 h4'>Check out your local representative's voting record for the 2015-2016 session</h2>
               <div className='mb-3 lead'>You'll find information about:</div>
               <ul>
-                <li>- Your state senator</li>
-                <li>- Their position on the issues</li>
-                <li>- All the bills that came to a vote in the most recent session</li>
+                <li>- The person who represents you in the Massachusetts Senate</li>
+                <li>- His or her position on the issues</li>
+                <li>- The bills that came to a vote in the most recent session</li>
               </ul>
               <p className='mt-4 lead'>All data is provided by <a href='http://www.progressivemass.com/'>
               Progressive Massachussetts</a>, a statewide grassroots organization.

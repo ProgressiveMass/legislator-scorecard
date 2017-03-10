@@ -50,7 +50,7 @@ footer {
       }
       @include media-breakpoint-up(sm) {
         padding: 2rem;
-        box-shadow: 0 0 100px rgba(0, 0, 0, 0.73);
+        box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
        }
 }
 
@@ -67,7 +67,7 @@ footer {
     }
     @include media-breakpoint-up(sm) {
       padding: 2rem;
-      box-shadow: 0 0 100px rgba(0, 0, 0, 0.47);
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
     }
 }
 
