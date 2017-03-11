@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import uri from 'urijs'
 
 import voteInfo from './2015senate_votes.json'
 import billInfo from './2015senate_bills.json'
@@ -39,12 +40,13 @@ export default class ResultsLayoutComponent extends React.Component {
 
     const metadata = voteInfo[district]
     const metadata2015 = Object.assign(
-    {},
+    { district },
     metadata.senators[metadata['2015-2016'].senator],
-    metadata['2015-2016'])
+    metadata['2015-2016']
+  )
 
     const metadata2017 = Object.assign(
-    {},
+    { district },
     metadata.senators[metadata['2017-2018'].senator],
     metadata['2017-2018'])
 
@@ -68,7 +70,7 @@ export default class ResultsLayoutComponent extends React.Component {
   }
 
   componentDidMount () {
-    const district = this.props.location.query.district
+    const district = this.props.match.params.district
     // sets state with proper values for this senator
     this.findSenatorByDistrict(district)
   }

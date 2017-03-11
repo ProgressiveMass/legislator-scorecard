@@ -1732,7 +1732,7 @@
             "voteRating": "8%"
         },
         "2017-2018": {
-            "senator": "Donald Humason Jr"
+            "senator": "Donald Humason"
         },
         "senators": {
             "Donald Humason": {
@@ -1742,11 +1742,6 @@
                 "party": "R",
                 "photo_url": "https://malegislature.gov/Legislators/Profile/170/DFH0.jpg",
                 "url": "https://malegislature.gov/Legislators/Profile/DFH0"
-            },
-            "Donald Humason Jr": {
-                "url": "https://malegislature.gov/Legislators/Profile/DFH0",
-                "photo_url": "https://malegislature.gov/Legislators/Profile/170/DFH0.jpg",
-                "party": "Republican"
             }
         }
     },

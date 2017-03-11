@@ -1,0 +1,46 @@
+.district {
+  fill: $brand-primary;
+  stroke: $white;
+  opacity : .9;
+  cursor: pointer;
+  stroke-width: .02rem;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.svg-container {
+  display:inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 52%;
+	vertical-align: middle;
+	overflow: hidden;
+
+  svg {
+  display:inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+}
+
+.swatch {
+  height: .8rem;
+  width: .8rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .5rem;
+  margin-left: 2rem;
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.swatch--less-progressive {
+  background : $gray-lighter;
+}
+
+.swatch--more-progressive {
+  background : $brand-primary;
+}

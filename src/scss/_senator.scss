@@ -53,7 +53,7 @@
     }
 
     .metadata img {
-        max-height: 200px;
+        max-height: 180px;
         min-height: 130px;
         min-width: 125px;
         margin-right: 2rem;
@@ -87,5 +87,16 @@
     .badge-default {
         color: $body-color;
         background: $progress-bg;
+    }
+
+    caption {
+      display : block;
+      font-family: $headings-font-family;
+    }
+
+
+    thead {
+      width: 100%;
+      display: table;
     }
 }

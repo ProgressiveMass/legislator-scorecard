@@ -1,0 +1,13 @@
+  .nav-item .active {
+    background : white !important;
+    color : $brand-primary !important;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+.nav-item {
+  font-family: $headings-font-family;
+}
+
+h1,h2,h3,h4 {
+  font-weight: bold !important;
+}

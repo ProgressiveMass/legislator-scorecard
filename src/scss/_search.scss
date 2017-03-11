@@ -7,9 +7,16 @@
 
   }
 
+  .blue-floated {
+    margin: 12vh 0 8vh 0;
+    @include media-breakpoint-up(xl) {
+      max-height: 330px;
+  }
+}
+
   .vertical-center {
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       top: 50%;
       transform: translateY(-50%);
       position: relative;
@@ -17,18 +24,22 @@
   }
 
   main {
-    margin: 12vh 0;
+    margin: 6vh 0;
   }
 
 form {
   @extend .white-floated;
   width: 100%;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     position: relative;
     top: -20%;
-    height: 140%;
+    height: 120%;
   }
+}
+
+.nav-pills {
+  @extend .lead;
 }
 
 }

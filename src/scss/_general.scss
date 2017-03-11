@@ -27,14 +27,13 @@ b {
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+    padding-left: 1rem;
 }
 
 footer {
   @extend .clearfix;
   padding: 2rem 0;
-  text-align: center;
+  text-align: right;
 }
 
 .blue-floated {

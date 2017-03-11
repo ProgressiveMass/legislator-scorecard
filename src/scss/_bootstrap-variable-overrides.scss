@@ -271,7 +271,7 @@ $font-size-h6: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 // $headings-font-family:   inherit !default;
-$headings-font-family: 'Montserrat', $font-family-sans-serif;
+$headings-font-family: 'Futura', $font-family-sans-serif;
 $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
@@ -648,7 +648,7 @@ $nav-tabs-active-link-hover-border-color:     #ddd !default;
 $nav-tabs-justified-link-border-color:        #ddd !default;
 $nav-tabs-justified-active-link-border-color: $body-bg !default;
 
-$nav-pills-border-radius:     $border-radius !default;
+$nav-pills-border-radius:     0;
 $nav-pills-active-link-color: $component-active-color !default;
 $nav-pills-active-link-bg:    $component-active-bg !default;
 
