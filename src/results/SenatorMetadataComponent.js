@@ -18,8 +18,6 @@ export default class SenatorMetadataComponent extends React.Component {
       marginBottom = '0'
     }
 
-    const twitter = senator.twitter ? null : senator.twitter
-
     return (
       <div className='clearfix metadata'
         style={{ marginBottom : marginBottom }}
@@ -38,12 +36,12 @@ export default class SenatorMetadataComponent extends React.Component {
           <div className='lead mb-2'>
             {senator.district}
           </div>
-          { twitter
+          { senator.twitter
             ? <div className='text-lg mb-2'>
-              <a href={'http://twitter.com/' + twitter.split('@')[1]} target='_blank'>
+              <a href={'http://twitter.com/' + senator.twitter.split('@')[1]} target='_blank'>
                 <i className='fa fa-fw fa-twitter' aria-hidden />&nbsp;
                 <span className='sr-only'>Twitter:</span>
-                {twitter}
+                {senator.twitter}
               </a>
             </div>
           : null}

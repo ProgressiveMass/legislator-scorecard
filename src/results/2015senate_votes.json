@@ -2796,7 +2796,7 @@
     },
     "First Essex": {
         "2015-2016": {
-            "senator": "Kathleen O'Connor",
+            "senator": "Kathleen O'Connor Ives",
             "votes": [{
                 "S.3 21": "+"
             }, {
@@ -2880,18 +2880,13 @@
             "senator": "Kathleen O'Connor Ives"
         },
         "senators": {
-            "Kathleen O'Connor": {
+            "Kathleen O'Connor Ives": {
                 "phone": "617-722-1604",
                 "email": "Kathleen.OConnorIves@masenate.gov",
                 "twitter": "@KOConnorIves",
                 "party": "D",
                 "photo_url": "https://malegislature.gov/Legislators/Profile/170/PMO.jpg",
                 "url": "https://malegislature.gov/Legislators/Profile/PMO"
-            },
-            "Kathleen O'Connor Ives": {
-                "url": "https://malegislature.gov/Legislators/Profile/KAO0",
-                "photo_url": "https://malegislature.gov/Legislators/Profile/170/KAO0.jpg",
-                "party": "D"
             }
         }
     },
