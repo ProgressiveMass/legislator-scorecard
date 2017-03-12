@@ -1,11 +1,11 @@
 .district {
   fill: $brand-primary;
   stroke: $white;
-  opacity : .9;
   cursor: pointer;
   stroke-width: .02rem;
+  transition: opacity .3s;
   &:hover {
-    opacity: 1;
+    opacity: .7;
   }
 }
 

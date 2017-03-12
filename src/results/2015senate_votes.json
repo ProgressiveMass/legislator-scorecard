@@ -759,7 +759,7 @@
             "voteRating": "16%"
         },
         "2017-2018": {
-            "senator": "Viriato Manuel deMacedo"
+            "senator": "Vinny DeMacedo"
         },
         "senators": {
             "Vinny DeMacedo": {
@@ -769,11 +769,6 @@
                 "party": "R",
                 "photo_url": "https://malegislature.gov/Legislators/Profile/170/VMD0.jpg",
                 "url": "https://malegislature.gov/Legislators/Profile/VMD0"
-            },
-            "Viriato Manuel deMacedo": {
-                "url": "https://malegislature.gov/Legislators/Profile/VMD0",
-                "photo_url": "https://malegislature.gov/Legislators/Profile/170/VMD0.jpg",
-                "party": "Republican"
             }
         }
     },

@@ -6,6 +6,10 @@
 
 .nav-item {
   font-family: $headings-font-family;
+  &:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+
+  }
 }
 
 h1,h2,h3,h4 {
