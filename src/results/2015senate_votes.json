@@ -658,7 +658,7 @@
             "voteRating": "87%"
         },
         "2017-2018": {
-            "senator": "Cynthia Stone Creem"
+            "senator": "Cynthia Creem"
         },
         "senators": {
             "Cynthia Creem": {
@@ -668,11 +668,6 @@
                 "party": "D",
                 "photo_url": "https://malegislature.gov/Legislators/Profile/170/CSC0.jpg",
                 "url": "https://malegislature.gov/Legislators/Profile/CSC0"
-            },
-            "Cynthia Stone Creem": {
-                "url": "https://malegislature.gov/Legislators/Profile/CSC0",
-                "photo_url": "https://malegislature.gov/Legislators/Profile/170/CSC0.jpg",
-                "party": "D"
             }
         }
     },
