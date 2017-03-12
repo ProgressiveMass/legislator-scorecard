@@ -3,7 +3,6 @@ import { StickyContainer, Sticky } from 'react-sticky'
 
 import ProgressComponent from './ProgressComponent'
 
-
 export default class VoteTableComponent extends React.Component {
   constructor (props) {
     super(props)
@@ -23,9 +22,9 @@ export default class VoteTableComponent extends React.Component {
     }
   }
 
-  renderRow (v) {
+  renderRow (v, i) {
     return (
-      <tr key={v.id}>
+      <tr key={i}>
         <td>
           <a href={v.url} target='_blank'>
             {v.title}
@@ -72,7 +71,6 @@ export default class VoteTableComponent extends React.Component {
       <StickyContainer>
         <div className='white-floated table-container'>
           <ProgressComponent
-            votes={this.props.votes}
             voteSummary={this.props.voteSummary}
             lastName={this.props.lastName}
             voteRating={this.props.voteRating}
@@ -82,7 +80,7 @@ export default class VoteTableComponent extends React.Component {
             <Sticky>
               <thead>
                 <tr>
-                  <th style={{width: '28%'}}>Bill</th>
+                  <th style={{ width: '28%' }}>Bill</th>
                   <th>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachussetts</a></th>
                   <th>Senator's Vote</th>
                   <th>Vote Tally</th>
@@ -90,8 +88,8 @@ export default class VoteTableComponent extends React.Component {
               </thead>
             </Sticky>
             <tbody>
-              {this.props.votes.map((v) => {
-                return this.renderRow(v)
+              {this.props.votes.map((v, i) => {
+                return this.renderRow(v, i)
               }, this)}
             </tbody>
 
@@ -99,9 +97,14 @@ export default class VoteTableComponent extends React.Component {
         </div>
       </StickyContainer>
 
-        )
+    )
   }
 }
 
 VoteTableComponent.propTypes = {
+  votes : PropTypes.array.isRequired,
+  lastName : PropTypes.string.isRequired,
+  voteRating : PropTypes.string.isRequired,
+  voteSummary : PropTypes.number.isRequired
+
 }

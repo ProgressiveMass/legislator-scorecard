@@ -1,15 +1,7 @@
 import React, { PropTypes } from 'react'
 
 const ProgressComponent = (props) => {
-  if (!props.votes) return null
-  const progressive = props.votes.filter((v) => {
-    return (v.senatorVote === '+' && v.progressivePosition === 'Yes') ||
-    (v.senatorVote === '-' && v.progressivePosition === 'No')
-  }).length
-  const notProgressive = props.votes.filter((v) => {
-    return (v.senatorVote === '+' && v.progressivePosition === 'No') ||
-    (v.senatorVote === '-' && v.progressivePosition === 'Yes')
-  }).length
+  if (!props.voteRating) return null
 
   return (
     <div className='progress-component'>
@@ -53,4 +45,7 @@ const ProgressComponent = (props) => {
 export default ProgressComponent
 
 ProgressComponent.propTypes = {
+  voteRating : PropTypes.string.isRequired,
+  voteSummary : PropTypes.number.isRequired,
+  lastName : PropTypes.string.isRequired
 }

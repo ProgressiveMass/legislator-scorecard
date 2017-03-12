@@ -1,26 +1,23 @@
 import React, { PropTypes } from 'react'
-import uri from 'urijs'
 
 import voteInfo from './2015senate_votes.json'
 import billInfo from './2015senate_bills.json'
 
 import SenatorMetadataComponent from './SenatorMetadataComponent'
 import VoteTableComponent from './VoteTableComponent'
-import ProgressComponent from './ProgressComponent'
 import NewSenatorMessageComponent from './NewSenatorMessageComponent'
-
-import { keys } from 'lodash'
 
 export default class ResultsLayoutComponent extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {
-      metadata : undefined,
-      votes : undefined
-    }
 
     this.findSenatorByDistrict = this.findSenatorByDistrict.bind(this)
     this.renderNewSenatorComponent = this.renderNewSenatorComponent.bind(this)
+  }
+
+  state = {
+    metadata : undefined,
+    votes : undefined
   }
 
   getSummaryRanking (voteInfo) {
@@ -31,13 +28,6 @@ export default class ResultsLayoutComponent extends React.Component {
   }
 
   findSenatorByDistrict (district) {
-    const simplifyDistrict = (district) => {
-      return district
-      .replace(/\band\b/g, '')
-      .replace(/\W/g, '')
-      .replace(/District/g, '')
-    }
-
     const metadata = voteInfo[district]
     const metadata2015 = Object.assign(
     { district },
@@ -110,4 +100,5 @@ export default class ResultsLayoutComponent extends React.Component {
 }
 
 ResultsLayoutComponent.propTypes = {
+  match : PropTypes.object.isRequired
 }

@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 
 const NewSenatorMessageComponent = (props) => {
   return (
@@ -9,12 +9,9 @@ const NewSenatorMessageComponent = (props) => {
       <p>
         This most likely means he or she is a <b>first-term state senator</b>.
       </p>
-      <p>You can follow the profile link above to learn more about your current state senator, or
-      check out the voting table below to view your previous senator's voting record.</p>
+      <p>You can follow the profile link above to learn more about the current state senator, or
+      check out the voting table below to view the previous senator's voting record.</p>
     </div>)
 }
 
 export default NewSenatorMessageComponent
-
-NewSenatorMessageComponent.propTypes = {
-}

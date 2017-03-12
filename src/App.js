@@ -14,9 +14,9 @@ class App extends Component {
       <div className='container'>
         <Header />
         <Switch>
-          <Route path='/senator/:district' component={ResultsLayout}/>
-          <Route path='/error' component={ErrorPageComponent}/>
-          <Route path='/' component={RepresentativeSearch}/>
+          <Route path='/senator/:district' component={ResultsLayout} />
+          <Route path='/error' component={ErrorPageComponent} />
+          <Route path='/' component={RepresentativeSearch} />
         </Switch>
         <Footer />
       </div>

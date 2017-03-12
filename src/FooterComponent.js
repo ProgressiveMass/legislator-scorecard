@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 
 const Footer = (props) => {
   return (<footer className='container'>
@@ -8,13 +8,10 @@ const Footer = (props) => {
         Website made by <a href='http://alex.holachek.com'>Alex</a>
       </div>
       <div>
-        Learn more about your MA legislators at <a href="https://malegislature.gov/">malegislature.gov</a>
+        Learn more about your MA legislators at <a href='https://malegislature.gov/'>malegislature.gov</a>
       </div>
     </div>
   </footer>)
 }
 
 export default Footer
-
-Footer.propTypes = {
-}

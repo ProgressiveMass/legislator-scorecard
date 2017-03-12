@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = (props) => {
@@ -13,6 +13,3 @@ const Header = (props) => {
 }
 
 export default Header
-
-Header.propTypes = {
-}

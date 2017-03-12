@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import { NavLink, Route, Switch } from 'react-router-dom'
 import SearchFormComponent from './SearchFormComponent'
 import SearchMapComponent from './SearchMapComponent'
@@ -6,23 +6,22 @@ import SearchMapComponent from './SearchMapComponent'
 export default class RepresentativeSearch extends React.Component {
 
   render () {
-
     return (<div className='search-page'>
       <nav>
-        <ul className="nav nav-pills nav-fill">
-          <li className="nav-item">
+        <ul className='nav nav-pills nav-fill'>
+          <li className='nav-item'>
             <NavLink
               exact
               to='/'
               className='nav-link'>
-              <i className="fa fa-home" aria-hidden></i>&nbsp;Address Search
+              <i className='fa fa-home' aria-hidden />&nbsp;Address Search
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className='nav-item'>
             <NavLink
               to='/map'
               className='nav-link'>
-              <i className="fa fa-map-marker"></i>&nbsp;Map Search
+              <i className='fa fa-map-marker' />&nbsp;Map Search
             </NavLink>
           </li>
         </ul>
@@ -36,7 +35,4 @@ export default class RepresentativeSearch extends React.Component {
 
     </div>)
   }
-}
-
-RepresentativeSearch.propTypes = {
 }

@@ -9,10 +9,9 @@ import App from './App'
 
 import './scss/manifest.scss'
 
-
 ReactDOM.render(
   <Router>
-    <Route path="/" component={App}/>
+    <Route path='/' component={App} />
   </Router>,
     document.getElementById('root')
 )

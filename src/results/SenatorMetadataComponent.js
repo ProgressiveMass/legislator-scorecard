@@ -1,9 +1,6 @@
 import React, { PropTypes } from 'react'
 
 export default class SenatorMetadataComponent extends React.Component {
-  constructor (props) {
-    super(props)
-  }
 
   render () {
     if (!this.props.metadata) return (<div>loading...</div>)
@@ -13,20 +10,19 @@ export default class SenatorMetadataComponent extends React.Component {
     // dynamic margin bottom based on whether there's an image/whether there's
     // a progress component
     let marginBottom
-    if (!this.props.newSenator && !senator.photo_url){
+    if (!this.props.newSenator && !senator.photo_url) {
       marginBottom = '6.5rem'
-    } else if (!this.props.newSenator){
+    } else if (!this.props.newSenator) {
       marginBottom = '5rem'
-    } else if (this.props.newSenator){
+    } else if (this.props.newSenator) {
       marginBottom = '0'
     }
-
 
     const twitter = senator.twitter ? null : senator.twitter
 
     return (
       <div className='clearfix metadata'
-        style={{ marginBottom : marginBottom}}
+        style={{ marginBottom : marginBottom }}
       >
         {
           senator.photo_url ? (<div className='float-sm-left mb-4'>
@@ -66,4 +62,6 @@ export default class SenatorMetadataComponent extends React.Component {
 }
 
 SenatorMetadataComponent.propTypes = {
+  newSenator : PropTypes.bool.isRequired,
+  metadata : PropTypes.object.isRequired
 }

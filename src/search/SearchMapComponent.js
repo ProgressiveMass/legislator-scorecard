@@ -8,8 +8,7 @@ import voteData from './../results/2015senate_votes'
 
 class SearchMapComponent extends React.Component {
 
-  renderMap  = () => {
-
+  renderMap = () => {
     const push = this.props.history.push
 
     const width = 960
@@ -18,7 +17,7 @@ class SearchMapComponent extends React.Component {
 
     const progressivePercents = Object
     .values(voteData)
-    .map((v)=>parseInt(v['2015-2016'].voteRating.replace('%', '')))
+    .map((v) => parseInt(v['2015-2016'].voteRating.replace('%', '')))
 
     const colorScale = d3.scaleLinear()
     .domain([d3.min(progressivePercents), d3.max(progressivePercents)])
@@ -28,8 +27,8 @@ class SearchMapComponent extends React.Component {
 
     const zoom = d3.zoom()
     .scaleExtent([1, 5])
-    .on("zoom", ()=>{
-      map.attr("transform", d3.event.transform);
+    .on('zoom', () => {
+      map.attr('transform', d3.event.transform)
     })
 
     svg.call(zoom)
@@ -39,7 +38,7 @@ class SearchMapComponent extends React.Component {
     .parallels([41 + 43 / 60, 42 + 41 / 60])
     .rotate([71 + 30 / 60, -41])
     .scale(13000)
-    .translate([width/1.9, height/1.1 ])
+    .translate([width / 1.9, height / 1.1 ])
 
     map.selectAll('path')
       .data(mapData.features)
@@ -47,7 +46,7 @@ class SearchMapComponent extends React.Component {
       .append('path')
       .classed('district', true)
       .attr('d', d3.geoPath().projection(projection))
-      .style('fill', (d)=>{
+      .style('fill', (d) => {
         try {
           let progressivePercent = voteData[d.properties.SEN_DIST]['2015-2016'].voteRating
           progressivePercent = parseInt(progressivePercent.replace('%', ''))
@@ -56,7 +55,7 @@ class SearchMapComponent extends React.Component {
           console.log(e)
         }
       })
-      .on('click', (d)=>{
+      .on('click', (d) => {
         push(`/senator/${d.properties.SEN_DIST}`)
       })
   }
@@ -67,15 +66,15 @@ class SearchMapComponent extends React.Component {
 
   render () {
     return (<div >
-      <h2 className="h5">Click on a district to learn more about the senator's votes.</h2>
+      <h2 className='h5'>Click on a district to learn more about its senator's votes.</h2>
       <div>
-        <div className='swatch swatch--less-progressive'></div>
+        <div className='swatch swatch--less-progressive' />
         less progressive
-        <div className='swatch swatch--more-progressive'></div>
+        <div className='swatch swatch--more-progressive' />
         more progressive
       </div>
       <div className='svg-container'>
-        <svg ref='svg' viewBox="0 0 960 500" preserveAspectRatio="xMinYMin meet"/>
+        <svg ref='svg' viewBox='0 0 960 500' preserveAspectRatio='xMinYMin meet' />
       </div>
     </div>)
   }
@@ -84,4 +83,5 @@ class SearchMapComponent extends React.Component {
 export default withRouter(SearchMapComponent)
 
 SearchMapComponent.propTypes = {
+  history : PropTypes.object.isRequired
 }
