@@ -7,6 +7,8 @@ export default class SenatorMetadataComponent extends React.Component {
 
     const senator = this.props.metadata
 
+    const twitter = senator.twitter === 'none' ? null : senator.twitter
+
     // dynamic margin bottom based on whether there's an image/whether there's
     // a progress component
     let marginBottom
@@ -36,12 +38,12 @@ export default class SenatorMetadataComponent extends React.Component {
           <div className='lead mb-2'>
             {senator.district}
           </div>
-          { senator.twitter
+          { twitter
             ? <div className='text-lg mb-2'>
-              <a href={'http://twitter.com/' + senator.twitter.split('@')[1]} target='_blank'>
+              <a href={'http://twitter.com/' + twitter.split('@')[1]} target='_blank'>
                 <i className='fa fa-fw fa-twitter' aria-hidden />&nbsp;
                 <span className='sr-only'>Twitter:</span>
-                {senator.twitter}
+                {twitter}
               </a>
             </div>
           : null}
