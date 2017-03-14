@@ -16,9 +16,12 @@ export default class SearchFormComponent extends React.Component {
 
     const push = this.props.history.push
 
+    // ========================================================
+    //  key is limited to queries from the app's domain to prevent abuse
+    // ========================================================
     axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
       params: {
-        api_key: 'AIzaSyD7___eVHUFHrRMxLhl60H3JjOjv-tBfCw',
+        api_key: 'AIzaSyAXk0apdH-wT0XbspGc3nyE6dLpt887Nm0',
         address : address
       }
     })
