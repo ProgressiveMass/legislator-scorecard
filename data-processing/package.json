@@ -1,0 +1,19 @@
+{
+  "name": "mass-progress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "csv-parse": "^1.2.0",
+    "lodash": "^4.17.4",
+    "querystring": "^0.2.0",
+    "turf": "^3.0.14"
+  },
+  "devDependencies": {},
+  "description": ""
+}
