@@ -1,0 +1,70 @@
+{
+    "HD 2719 / SD 984": {
+        "title": "An Act to improve the Commonwealth’s economy with a strong minimum wage and a strong tipped minimum wage",
+        "description": "Raises minimum wage to $15 by 2021 and indexes it to inflation. Ensures that tipped employees’ wages plus tips equal the new strengthened minimum wage."
+    },
+    "citizens petition": {
+        "title": "An Initiative Petition for an Amendment to the Constitution of the Commonwealth to Provide Resources for Education and Transportation through an additional tax on incomes in excess of One Million Dollars (Fair Share Amendment)",
+        "description": "Creates a 4% surtax on income above $1 million (inflation-adjusted) to fund education and transportation investment."
+    },
+    "HD 2573 / SD 1768": {
+        "title": "An Act establishing a paid family and medical leave insurance program (Gordon-Spilka)",
+        "description": "Makes employees eligible for job-protected paid leave to recover from a serious illness or injury, to care for a seriously ill or injured family member, or to care for a new child."
+    },
+    "SD 1609": {
+        "title": "An Act promoting housing and sustainable development",
+        "description": "Upgrades state’s zoning laws to encourage more affordable housing and transit-oriented, walkable development and promotes inclusionary zoning practices."
+    },
+    "HD 3249 / SD 698": {
+        "title": "An Act establishing Medicare for All in Massachusetts",
+        "description": "Establishes a single payer system, in which the state provides health care to all residents as a right."
+    },
+    "SD 1905": {
+        "title": "An Act modernizing the Foundation Budget for the 21st century",
+        "description": "Requires the state to implement the recommendations of the the 2015 Foundation Budget Review Commission on K-12 education."
+    },
+    "HD 771/SD 945": {
+        "title": "An Act promoting access to debt-free public higher education",
+        "description": "Establishes free college (community college and/or state university) education for students of all families earning $200,000 a year or less, covering tuition, fees, housing, and transportation costs."
+    },
+    "HD 2714 / SD 1128": {
+        "title": "An Act for justice reinvestment",
+        "description": "Enacts comprehensive justice reform, complementing reductions in sentencing with jobs training, youth jobs, and pre-apprenticeship programs."
+    },
+    "HD 1794 / SD 500": {
+        "title": "An Act to eliminate mandatory minimum sentences related to drug offenses",
+        "description": "Restores judicial discretion in sentencing for nonviolent drug charges, reducing the economic and social costs of extended prison terms."
+    },
+    "HD 3052 / SD 1596": {
+        "title": "An Act to protect the civil rights and safety of all Massachusetts residents (“Safe Communities Act”)",
+        "description": "Prohibits the use of state resources for mass deportations or deportation raids, limits local and state police collaboration with federal immigration agents, and prohibits state support for Muslim registry."
+    },
+    "HD.2929/SD.1389": {
+        "title": "An Act to reduce the criminalization of poverty",
+        "description": "Eliminates or reduces numerous fees, such as parole supervision, and ensures indigent residents are not jailed or given unreasonable fees simply because they struggle to pay court-related fine."
+    },
+    "HD 450 / SD 939": {
+        "title": "An Act relative to advancing contraceptive coverage and economic security in our state (ACCESS)",
+        "description": "Updates MA’s contraceptive coverage equity law to require insurance carriers to provide all contraceptive methods without a copay."
+    },
+    "HD 2500 / SD 1791": {
+        "title": "An Act automatically registering eligible voters and enhancing safeguards against fraud",
+        "description": "Modernizes voter registration by automatically registering citizens who interact with government agencies and ensures that such information is handled in a secure fashion"
+    },
+    "SD 2049": {
+        "title": "An Act creating 21st Century Massachusetts clean energy jobs",
+        "description": "Establishes a climate adaptation and management program, sets greenhouse gas reduction targets for 2030 and 2040, accelerates the state’s Renewable Portfolio Standard (RPS), and increases commitment to offshore wind."
+    },
+    "HD 2157 / SD 1632": {
+        "title": "An Act relative to solar power and the green economy",
+        "description": "Accelerates the state’s commitment to clean energy (RPS increase) and sets 25% by 2030 solar target."
+    },
+    "HD 3204 / SD 1727": {
+        "title": "An Act clarifying authorities and responsibilities of the Department of Public Utilities",
+        "description": "Holds gas companies to high standard with regards to new infrastrucure and prevents massive public subsidy of new interstate gas pipelines."
+    },
+    "HD 1504 / SD 1021": {
+        "title": "An Act combating climate change",
+        "description": "Enacts revenue-neutral carbon pricing. Every state resident receives an equal rebate, and employers get rebates based on their number of employees."
+    }
+}
