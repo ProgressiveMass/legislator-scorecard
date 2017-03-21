@@ -10,18 +10,18 @@ import ErrorPageComponent from './ErrorPageComponent'
 
 class App extends Component {
 
-  componentDidUpdate(prevProps) {
-  if (this.props.location !== prevProps.location) {
-    window.scrollTo(0, 0)
+  componentDidUpdate (prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+    }
   }
-}
 
   render () {
     return (
-      <div className='container'>
+      <div>
         <Header />
         <Switch>
-          <Route path='/senator/:district' component={ResultsLayout} />
+          <Route path='/my-legislators/:address' component={ResultsLayout} />
           <Route path='/error' component={ErrorPageComponent} />
           <Route path='/' component={RepresentativeSearch} />
         </Switch>

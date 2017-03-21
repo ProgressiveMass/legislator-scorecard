@@ -106,8 +106,10 @@ $purple: #613d7c !default;
 // Create grayscale
 $gray-dark:                 #292b2c !default;
 $gray:                      #464a4c !default;
-$gray-light:                #636c72 !default;
-$gray-lighter:              #d5d5d5 !default;
+// $gray-light:                #636c72 !default;
+$gray-light: #999ba1;
+$gray-lighter: #E8EBF1;
+// $gray-lighter:              #d5d5d5 !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
@@ -640,7 +642,8 @@ $nav-disabled-link-color:       $gray-light !default;
 
 $nav-tabs-border-color:                       #ddd !default;
 $nav-tabs-border-width:                       $border-width !default;
-$nav-tabs-border-radius:                      $border-radius !default;
+// $nav-tabs-border-radius:                      $border-radius !default;
+$nav-tabs-border-radius:                      0;
 $nav-tabs-link-hover-border-color:            $gray-lighter !default;
 $nav-tabs-active-link-hover-color:            $gray !default;
 $nav-tabs-active-link-hover-bg:               $body-bg !default;
@@ -649,8 +652,10 @@ $nav-tabs-justified-link-border-color:        #ddd !default;
 $nav-tabs-justified-active-link-border-color: $body-bg !default;
 
 $nav-pills-border-radius:     0;
-$nav-pills-active-link-color: $component-active-color !default;
-$nav-pills-active-link-bg:    $component-active-bg !default;
+// $nav-pills-active-link-color: $component-active-color !default;
+// $nav-pills-active-link-bg:    $component-active-bg !default;
+$nav-pills-active-link-color: $brand-primary;
+$nav-pills-active-link-bg:    $gray-lighter;
 
 
 // Pagination

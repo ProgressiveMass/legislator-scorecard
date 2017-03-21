@@ -1,17 +1,15 @@
-  .nav-item .active {
-    background : white !important;
-    color : $brand-primary !important;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+.nav-link {
+    font-family: $headings-font-family;
+    position: relative;
+    color: $body-color;
+    text-transform: uppercase;
+    font-size: 1.3rem;
 }
 
-.nav-item {
-  font-family: $headings-font-family;
-  &:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 
-  }
-}
-
-h1,h2,h3,h4 {
-  font-weight: bold !important;
+.badge-clear {
+  border: 1px solid $gray-light;
+  color: $gray-light;
+  font-weight: normal;
+  background: transparent;
 }

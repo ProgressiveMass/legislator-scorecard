@@ -1,3 +1,9 @@
+
+.table-container {
+  @extend .white-floated;
+  padding-top: 0;
+}
+
 .senator-page {
     table p {
         margin-bottom: .5rem;

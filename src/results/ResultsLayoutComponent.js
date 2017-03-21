@@ -1,23 +1,19 @@
 import React, { PropTypes } from 'react'
 
-import voteInfo from './2015senate_votes.json'
-import billInfo from './2015senate_bills.json'
-
-import SenatorMetadataComponent from './SenatorMetadataComponent'
-import VoteTableComponent from './VoteTableComponent'
-import NewSenatorMessageComponent from './NewSenatorMessageComponent'
+import axios from 'axios'
+import LegislatorPageComponent from './LegislatorPageComponent'
+import TestData from './test_data.json'
 
 export default class ResultsLayoutComponent extends React.Component {
   constructor (props) {
     super(props)
 
-    this.findSenatorByDistrict = this.findSenatorByDistrict.bind(this)
-    this.renderNewSenatorComponent = this.renderNewSenatorComponent.bind(this)
+    this.getLegislatorData = this.getLegislatorData.bind(this)
   }
 
   state = {
-    metadata : undefined,
-    votes : undefined
+    data : undefined,
+    activeTab : 'upper'
   }
 
   getSummaryRanking (voteInfo) {
@@ -27,74 +23,66 @@ export default class ResultsLayoutComponent extends React.Component {
     }).reduce((a, b) => a + b) / districtVals.length)
   }
 
-  findSenatorByDistrict (district) {
-    const metadata = voteInfo[district]
-    const metadata2015 = Object.assign(
-    { district },
-    metadata.senators[metadata['2015-2016'].senator],
-    metadata['2015-2016']
-  )
-
-    const metadata2017 = Object.assign(
-    { district },
-    metadata.senators[metadata['2017-2018'].senator],
-    metadata['2017-2018'])
-
-      // get a nice array of data about senator's votes and
-      // general vote descriptions
-    const votes = metadata['2015-2016'].votes.map((v) => {
-      const voteId = Object.keys(v)[0]
-      const dataForThisBill = billInfo[voteId]
-      return {
-        ...dataForThisBill,
-        senatorVote : v[voteId]
-      }
-    })
-
+  getLegislatorData (address) {
     this.setState({
-      metadata2015,
-      metadata2017,
-      votes,
-      voteSummary : this.getSummaryRanking(voteInfo)
+      data : TestData
     })
+    return
+  //   let apiEndpoint
+  //   if (process.env.NODE_ENV === 'production') {
+  //     apiEndpoint = 'foo'
+  //   } else {
+  //     apiEndpoint = 'http://localhost:4000/local-legislators'
+  //   }
+  //   axios.get(apiEndpoint, {
+  //     params : {
+  //       address
+  //     }
+  //   })
+  // .then((response) => {
+  //   this.setState({
+  //     data : response.data
+  //   })
+  // })
   }
 
   componentDidMount () {
-    const district = this.props.match.params.district
+    const address = this.props.match.params.address
     // sets state with proper values for this senator
-    this.findSenatorByDistrict(district)
-  }
-
-  renderNewSenatorComponent () {
-    return (
-      <div className='blue-floated'>
-        <SenatorMetadataComponent
-          metadata={this.state.metadata2017}
-          newSenator
-        />
-        <NewSenatorMessageComponent />
-      </div>
-    )
+    this.getLegislatorData(address)
   }
 
   render () {
-    if (!this.state.metadata2015) { return (<div>loading...</div>) }
+    if (!this.state.data) { return (<div>loading...</div>) }
 
-    const newSenator = (this.state.metadata2015.senator !== this.state.metadata2017.senator)
+    const legislatorData = this.state.activeTab === 'upper'
+    ? this.state.data.upper
+    : this.state.data.lower
 
-    return (<div className='senator-page'>
-
-      { newSenator ? this.renderNewSenatorComponent() : null}
-
-      <div className='blue-floated'>
-        <SenatorMetadataComponent metadata={this.state.metadata2015} />
-        <VoteTableComponent
-          voteRating={this.state.metadata2015.voteRating}
-          votes={this.state.votes}
-          voteSummary={this.state.voteSummary}
-          lastName={this.state.metadata2015.senator.split(',')[0]}
-        />
-      </div>
+    return (<div className=''>
+      <ul className='nav nav-pills nav-justified'>
+        <li className='nav-item'>
+          <a href='#'
+            className={`nav-link ${this.state.activeTab === 'upper' ? 'active' : ''}`}
+            onClick={(e) => { e.preventDefault(); this.setState({ activeTab : 'upper' }) }}
+          >
+            <div className='text-uppercase'>Your Senator</div>
+          </a>
+        </li>
+        <li className='nav-item'>
+          <a href='#'
+            className={`nav-link ${this.state.activeTab === 'lower' ? 'active' : ''}`}
+            onClick={(e) => { e.preventDefault(); this.setState({ activeTab : 'lower' }) }}
+          >
+            <div className='text-uppercase'>Your House Rep</div>
+          </a>
+        </li>
+      </ul>
+      <LegislatorPageComponent
+        data={legislatorData.data}
+        legislator={legislatorData.legislator}
+        chamber={this.state.activeTab}
+      />
     </div>)
   }
 }
