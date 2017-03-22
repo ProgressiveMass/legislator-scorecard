@@ -1,8 +1,23 @@
-
 .table-container {
-  @extend .white-floated;
-  padding-top: 0;
+    @extend .white-floated;
+    padding-top: 0;
+    min-height: 35vh;
 }
+
+.explanatory-text {
+    max-width: 650px;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.votes-fw {
+    width: 2rem;
+    display: inline-block;
+    text-align: right;
+    margin-right: .1rem;
+}
+
 
 .senator-page {
     table p {
@@ -38,13 +53,12 @@
     }
 
     td:nth-of-type(3) {
-      width: 14%;
+        width: 14%;
     }
 
     .blue-floated {
         max-width: 700px;
-        margin: auto;
-        margin-bottom: 2rem;
+        margin: auto auto 2rem;
     }
 
     .table-container {
@@ -56,10 +70,10 @@
     }
 
     .metadata {
-      @include media-breakpoint-down(xs) {
-        margin-bottom: 2rem !important;
-        padding: 1rem;
-      }
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 2rem !important;
+            padding: 1rem;
+        }
     }
 
     .metadata img {
@@ -69,44 +83,18 @@
         margin-right: 2rem;
     }
 
-    .votes-fw {
-        width: 2rem;
-        display: inline-block;
-        text-align: right;
-        margin-right: .1rem;
-    }
-
-    .progress-component {
-      margin-bottom: 7rem;
-        padding: 1rem;
-        @include media-breakpoint-up(sm) {
-            max-width: 600px;
-            margin: auto;
-            padding: 1rem 2rem;
-            position: relative;
-            top: -110px;
-            background: #fff;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        }
-    }
-
-    .progress-component .progress {
-        margin-bottom: 1rem;
-    }
-
     .badge-default {
         color: $body-color;
         background: $progress-bg;
     }
 
     caption {
-      display : block;
-      font-family: $headings-font-family;
+        display: block;
+        font-family: $headings-font-family;
     }
 
-
     thead {
-      width: 100%;
-      display: table;
+        width: 100%;
+        display: table;
     }
 }

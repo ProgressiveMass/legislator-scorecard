@@ -17,18 +17,40 @@ export default class CosponsorshipTable extends React.Component {
     }
   }
 
+  createLink (billNumber) {
+    const linkBase = 'https://malegislature.gov/Bills/190/'
+    if (billNumber.match(/S\s*D\s*.*/)) {
+      return linkBase + billNumber.match(/S\s*D\s*.*/)[0].replace(' ', '')
+    } else if (billNumber.match(/H\s*D\s*.*/)) {
+      return linkBase + billNumber.match(/H\s*D\s*.*/)[0].replace(' ', '')
+    } else {
+      return null
+    }
+  }
+
   renderRow (c, i) {
     return (
       <tr key={i}>
-        <td style={{ width: '35%' }}>
-          <div className='label mb-1'>
-            {c.number}
+        <td style={{ width: '40%' }}>
+          <div>
+            {this.createLink(c.number)
+              ? <a href={this.createLink(c.number)} className='font-weight-bold'>
+                {c.title}
+              </a> : <span>{c.title}</span>
+            }
           </div>
           <div>
-            {c.title}
+            <span className='sr-only'>Topics:</span>
+            {c.platform ? <span className='badge badge-default mr-1'>
+              <a href='https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/1011/attachments/original/1467977992/2016_06-30_Progressive_Platform_PDF.pdf?1467977992'
+                target='_blank'
+              >
+                {c.platform}
+              </a>
+            </span> : null}
           </div>
         </td>
-        <td style={{ width: '55%' }}>
+        <td style={{ width: '50%' }}>
           <p>
             {c.description}
           </p>
@@ -42,16 +64,32 @@ export default class CosponsorshipTable extends React.Component {
 
   render () {
     return (
-      <StickyContainer>
-        <div className='table-container'>
+      <div className='table-container'>
+
+        <StickyContainer>
+          <div className='explanatory-text' >
+            <p>
+              Every legislative session, Progressive Massachusetts <a href='https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/1011/attachments/original/1467977992/2016_06-30_Progressive_Platform_PDF.pdf?1467977992' target='_blank'>
+                chooses a selection of bills as legislative priorities.
+              </a> Legislators who cosponsor these bills express an important symbolic measure of support.
+            </p>
+
+            <p><div className='font-weight-bold'>What you can do:</div>
+              If {this.props.chamber === 'upper' ? 'Senator' : 'Representative'}&nbsp;{this.props.legislatorName} cosponsored an item of progressive legislation, you can thank him or her.
+              If not, you can let him or her know which bills are important to you and why.
+              <div>
+                {/* <a href='' target='_blank'>Contact details for {this.props.legislatorName}</a> */}
+              </div>
+            </p>
+          </div>
 
           <table className='table table-responsive'>
             <Sticky>
               <thead>
                 <tr>
-                  <th style={{ width: '35%' }}>Bill</th>
-                  <th style={{ width: '55%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachussetts</a></th>
-                  <th style={{ width: '10%' }}>Legislator Cosponsored?</th>
+                  <th style={{ width: '40%' }}>Bill</th>
+                  <th style={{ width: '50%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachussetts</a></th>
+                  <th style={{ width: '10%' }}>{this.props.legislatorName} Cosponsored?</th>
                 </tr>
               </thead>
             </Sticky>
@@ -62,8 +100,8 @@ export default class CosponsorshipTable extends React.Component {
             </tbody>
 
           </table>
-        </div>
-      </StickyContainer>
+        </StickyContainer>
+      </div>
 
     )
   }

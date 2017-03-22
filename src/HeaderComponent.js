@@ -2,11 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = (props) => {
-  return (<header>
-    <Link to='/' className='mt-3 mb-5 text-center'>
-      <h1 className='h2'>
-        <div className='font-weight-light h4'>Progressive Massachusetts </div>
-        <span className='text-primary'>Legislator Report Card</span>
+  return (<header className='container-fluid'>
+    <Link to='/' className='header__home-link'>
+      <img src={require('./img/massachusetts-map.png')}
+        aria-hidden
+        className='header__home-link__background-img'
+    />
+      <h1>
+        <div className='text-uppercase font-weight-light'
+          style={{ fontSize: '1.3rem' }}
+          >
+          Progressive Massachusetts
+        </div>
+        <div
+          className='h2 text-lowercase font-weight-light'
+          >
+          <div>
+              Legislator Report Card
+          </div>
+        </div>
       </h1>
     </Link>
 

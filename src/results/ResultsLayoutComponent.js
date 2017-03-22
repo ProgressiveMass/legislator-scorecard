@@ -16,34 +16,23 @@ export default class ResultsLayoutComponent extends React.Component {
     activeTab : 'upper'
   }
 
-  getSummaryRanking (voteInfo) {
-    const districtVals = Object.values(voteInfo)
-    return parseInt(districtVals.map((v) => {
-      return parseInt(v['2015-2016'].voteRating.replace('%', ''))
-    }).reduce((a, b) => a + b) / districtVals.length)
-  }
-
   getLegislatorData (address) {
-    this.setState({
-      data : TestData
+    let apiEndpoint
+    if (process.env.NODE_ENV === 'production') {
+      apiEndpoint = 'foo'
+    } else {
+      apiEndpoint = 'http://localhost:4000/local-legislators'
+    }
+    axios.get(apiEndpoint, {
+      params : {
+        address
+      }
     })
-    return
-  //   let apiEndpoint
-  //   if (process.env.NODE_ENV === 'production') {
-  //     apiEndpoint = 'foo'
-  //   } else {
-  //     apiEndpoint = 'http://localhost:4000/local-legislators'
-  //   }
-  //   axios.get(apiEndpoint, {
-  //     params : {
-  //       address
-  //     }
-  //   })
-  // .then((response) => {
-  //   this.setState({
-  //     data : response.data
-  //   })
-  // })
+  .then((response) => {
+    this.setState({
+      data : response.data
+    })
+  })
   }
 
   componentDidMount () {
@@ -82,6 +71,7 @@ export default class ResultsLayoutComponent extends React.Component {
         data={legislatorData.data}
         legislator={legislatorData.legislator}
         chamber={this.state.activeTab}
+        rating={legislatorData.rating}
       />
     </div>)
   }

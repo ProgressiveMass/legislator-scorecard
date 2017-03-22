@@ -3,46 +3,70 @@ import React, { PropTypes } from 'react'
 import CosponsorshipTable from './CosponsorshipTableComponent'
 import VoteTable from './VoteTableComponent'
 
+const getKey = (tab) => {
+  return tab.term + tab.type
+}
+
 export default class LegislatorDataComponent extends React.Component {
   constructor (props) {
     super(props)
 
+    const tabs = []
+
+    props.data.forEach((d) => {
+      Object.keys(d).forEach((key) => {
+        if (key === 'cosponsorship' || key === 'votes') {
+          tabs.push({ term : d.term, type : key, data : d[key] })
+        }
+      })
+    })
+
+    const tabsWithData = tabs.filter((t) => t.data && t.data.length > 0)
+
     this.state = {
-      activeTab : props.data.votes ? 'votes' : 'cosponsorship'
+      tabs : tabs,
+      activeTab : getKey(tabsWithData[0])
     }
   }
 
   render () {
-    const tabsToShow = ['votes']
-    if (this.props.data.cosponsorship) {
-      tabsToShow.unshift('cosponsorship')
-    }
-    const tabs = tabsToShow.map((d) => {
+    const tabs = this.state.tabs.map((t) => {
+      const key = getKey(t)
       return (<li className='nav-item'>
         <a href='#'
-          className={`nav-link ${this.state.activeTab === d ? 'active' : ''}`}
-          onClick={(e) => { e.preventDefault(); this.setState({ activeTab : d }) }}
+          className={`nav-link ${this.state.activeTab === key ? 'active' : ''}`}
+          onClick={(e) => { e.preventDefault(); this.setState({ activeTab : key }) }}
         >
-          <div className='text-uppercase'>{d}</div>
+          <div className='text-uppercase'>
+            <div className='font-weight-light'>{t.term}</div>
+            <b>{t.type}</b>
+          </div>
         </a>
       </li>)
     })
 
-    let BodyComponent, bodyData
+    const active = this.state.tabs.filter((t) => {
+      return getKey(t) === this.state.activeTab
+    })[0]
 
-    if (this.state.activeTab === 'votes') {
+    let BodyComponent
+
+    if (active.type === 'votes') {
       BodyComponent = VoteTable
-      bodyData = this.props.data.votes
-    } else if (this.state.activeTab === 'cosponsorship') {
+    } else if (active.type === 'cosponsorship') {
       BodyComponent = CosponsorshipTable
-      bodyData = this.props.data.cosponsorship
     }
 
-    return (<div key={this.props.chamber}>
+    return (<div key={this.props.chamber}
+      style={{ maxWidth: '1200px', margin: 'auto' }}
+            >
       <ul className='nav nav-tabs nav-justified'>
         { tabs }
       </ul>
-      <BodyComponent data={bodyData} chamber={this.props.chamber} />
+      <BodyComponent data={active.data}
+        chamber={this.props.chamber}
+        legislatorName={this.props.legislatorName}
+      />
     </div>)
   }
 }

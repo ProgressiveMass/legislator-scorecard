@@ -1,39 +1,53 @@
 import React, { PropTypes } from 'react'
+import { withRouter } from 'react-router'
 
-export default class SearchFormComponent extends React.Component {
+class SearchFormComponent extends React.Component {
+
+  constructor (props) {
+    super(props)
+    this.onFormSubmit = this.onFormSubmit.bind(this)
+  }
 
   state = {
     loading : false
   }
 
-  onFormSubmit = (e) => {
+  onFormSubmit (e) {
     e.preventDefault()
     this.setState({ loading : true })
     const address = this.refs.address.value + ' MA ' + this.refs.zip.value
-    const push = this.props.history.push
-    push(`/my-legislators/${address}`)
+    this.props.history.push(`/my-legislators/${address}`)
   }
 
   render () {
     return (
-      <div className='blue-floated'>
+      <div className='gray-background' style={{ position: 'relative' }}>
+
         <div className='row'>
-          <div className='col-md-6'>
-            <h2>Learn about local politics</h2>
+          <div className='col-lg-6'>
+
+            <h2 className='h1'
+              style={{ lineHeight: '3rem' }}
+              >
+                Learn about progressive politics in Massachusetts
+            </h2>
+
             <ol className='lead mt-4'>
               <li className='mb-2'>Find your state Senator and House Representative</li>
               <li className='mb-2'>Learn about their positions on progressive legislation based on their votes & legislation cosponsorship</li>
               <li>Take action</li>
             </ol>
-            <p className='mt-4'>Most of the data is provided by <a href='http://www.progressivemass.com/'>
-            Progressive Massachusetts</a>, a statewide grassroots organization.
+            <p className='mt-4'>
+              Most of the data is provided by&nbsp;<a href='http://www.progressivemass.com/' className='font-weight-bold'>
+            Progressive Massachusetts
+              </a>, a statewide grassroots organization.
             </p>
           </div>
-          <div className='col-md-6'>
+          <div className='col-lg-6'>
 
-            <form onSubmit={this.onFormSubmit}>
+            <form onSubmit={this.onFormSubmit} className='search-form vertical-center'>
 
-              <div className='vertical-center'>
+              <div>
                 <div className='form-group'>
                   <label>
                     Home Address
@@ -54,10 +68,10 @@ export default class SearchFormComponent extends React.Component {
                   </div>
                 </div>
                 <div className='mt-4'>
-                  <button className='btn btn-danger btn-block'>
+                  <button className='btn btn-primary btn-block'>
                     {this.state.loading
                       ? <span><i className='fa fa-spinner fa-pulse' />&nbsp;Loading</span>
-                        : 'Find My Legislators'
+                        : 'Find My Local Legislators'
                      }
                   </button>
                 </div>
@@ -76,3 +90,7 @@ export default class SearchFormComponent extends React.Component {
 SearchFormComponent.propTypes = {
   history : PropTypes.object.isRequired
 }
+
+const SearchFormWithRouter = withRouter(SearchFormComponent)
+
+export default SearchFormWithRouter

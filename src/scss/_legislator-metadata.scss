@@ -1,16 +1,32 @@
 .metadata {
   @include media-breakpoint-down(xs) {
-    margin-bottom: 2rem !important;
-    padding: 1rem;
+    margin-bottom: 2rem;
   }
-  max-width: 700px;
-  margin: auto;
-  padding-top: 2rem;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 4rem;
+  max-width: map-get($grid-breakpoints, 'lg');
+  background : $white;
+  box-shadow: $box-shadow-light;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.metadata__heading {
+  position: relative;
+    left: -6%;
+    top: -45px;
+    font-size: 3.3rem;
+    margin-bottom: 0;
+    height: 3rem;
 }
 
 .metadata img {
-    max-height: 200px;
-    min-height: 130px;
+    max-height: 180px;
     min-width: 125px;
     margin-right: 2rem;
+}
+
+.progress-component .progress {
+    margin-bottom: 1rem;
 }

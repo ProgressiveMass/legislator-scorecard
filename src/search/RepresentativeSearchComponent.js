@@ -5,8 +5,8 @@ export default class RepresentativeSearch extends React.Component {
 
   render () {
     return (<div className='search-page'>
-      <main>
-        {SearchFormComponent}
+      <main className='container'>
+        <SearchFormComponent />
       </main>
     </div>)
   }

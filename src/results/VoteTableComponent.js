@@ -55,24 +55,16 @@ export default class VoteTableComponent extends React.Component {
     }
   }
 
-  renderEmptyView () {
-    return (
-      <div className='white-floated lead'>
-        We don't have any vote data (yet) for this session but will update it once we are able!
-      </div>
-    )
-  }
-
   renderRow (v, i) {
     return (
       <tr key={i}>
         <td style={{ width: '30%' }}>
-          <a href={v.url} target='_blank'>
+          <a href={v.url} target='_blank' className='font-weight-bold'>
             {v.title}
             <div>
               <span className='sr-only'>Topics:</span>
               {v.tags ? v.tags.split(',').map((t) => {
-                return <span className='badge badge-default'>{t}</span>
+                return <span className='badge badge-default mr-1'>{t}</span>
               }) : null}
             </div>
           </a>
@@ -97,23 +89,34 @@ export default class VoteTableComponent extends React.Component {
   }
 
   render () {
-    if (!this.props.data) {
-      return (
-        <div>
-          {this.renderEmptyView()}
+    if (!this.props.data || this.props.data.length === 0) {
+      return <div className='table-container text-center'>
+        <div style={{ paddingTop : '7rem' }}>
+          <h3>This Data Isn't Available Yet!</h3>
+          <p className='lead'>Please check back later.</p>
         </div>
-      )
+      </div>
     }
     return (
-      <StickyContainer>
-        <div className='table-container'>
+      <div className='table-container'>
+        <div className='explanatory-text'>
+          <p>
+            Progressive Massachussetts tracks legislators' votes throughout the session and tracks both progressive and non-progressive
+            legislation as it makes its way through the State House.
+          </p>
+          <p>
+            To learn more about Progressive Massachussetts' methodology, including caveats and limitations,
+            <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>visit the Legislative Scorecard homepage.</a>
+          </p>
+        </div>
+        <StickyContainer>
           <table className='table table-responsive'>
             <Sticky>
               <thead>
                 <tr>
                   <th style={{ width: '30%' }}>Bill</th>
                   <th style={{ width: '40%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachussetts</a></th>
-                  <th style={{ width: '15%' }}>Legislator's Vote</th>
+                  <th style={{ width: '15%' }}>{this.props.legislatorName}'s Vote</th>
                   <th style={{ width: '15%' }}>Vote Tally</th>
                 </tr>
               </thead>
@@ -125,9 +128,8 @@ export default class VoteTableComponent extends React.Component {
             </tbody>
 
           </table>
-        </div>
-      </StickyContainer>
-
+        </StickyContainer>
+      </div>
     )
   }
 }

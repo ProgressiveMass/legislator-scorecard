@@ -1,45 +1,7 @@
-.search-page {
 
-  @include media-breakpoint-down(xs) {
-    .blue-floated, .white-floated {
-      padding: 1rem;
-    }
 
-  }
 
-  .blue-floated {
-    margin: 12vh 0 8vh 0;
-    @include media-breakpoint-up(xl) {
-      max-height: 330px;
-  }
-}
-
-  .vertical-center {
-
-    @include media-breakpoint-up(xl) {
-      top: 50%;
-      transform: translateY(-50%);
-      position: relative;
-    }
-  }
-
-  main {
-    margin: 6vh 0;
-  }
-
-form {
+.search-form {
   @extend .white-floated;
-  width: 100%;
-
-  @include media-breakpoint-up(xl) {
-    position: relative;
-    top: -20%;
-    height: 120%;
-  }
-}
-
-.nav-pills {
-  @extend .lead;
-}
-
+  padding: 3rem 2rem;
 }
