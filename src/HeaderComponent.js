@@ -15,11 +15,9 @@ const Header = (props) => {
           Progressive Massachusetts
         </div>
         <div
-          className='h2 text-lowercase font-weight-light'
+          className='h2 text-lowercase font-weight-light mt-2'
           >
-          <div>
-              Legislator Report Card
-          </div>
+            Legislator Report Card
         </div>
       </h1>
     </Link>
