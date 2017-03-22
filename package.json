@@ -69,7 +69,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "lint-fix": "eslint src --fix",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "deploy": "node scripts/build.js && firebase deploy"
   },
   "jest": {
     "collectCoverageFrom": [
