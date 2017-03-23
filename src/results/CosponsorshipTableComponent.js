@@ -74,7 +74,7 @@ export default class CosponsorshipTable extends React.Component {
               </a> Legislators who cosponsor these bills express an important symbolic measure of support.
             </p>
 
-            <p><div className='font-weight-bold'>What you can do:</div>
+            <p><div className='label'>What you can do:</div>
               If {this.props.chamber === 'upper' ? 'Senator' : 'Representative'}&nbsp;{this.props.legislatorName} cosponsored an item of progressive legislation, you can thank him or her.
               If not, you can let him or her know which bills are important to you and why.
               <div>

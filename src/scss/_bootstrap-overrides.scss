@@ -6,8 +6,11 @@
     font-size: 1.3rem;
 
     &.active {
-      font-weight: bold;
       color: $body-color !important;
+    }
+
+    &:hover, &:focus {
+      background: fade-out(black, .96);
     }
 }
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Header = (props) => {
   return (<header className='container-fluid'>
     <Link to='/' className='header__home-link'>
-      <img src={require('./img/massachusetts-map.png')}
+      <img src={require('./img/massachusetts-map-optimized.png')}
         aria-hidden
         className='header__home-link__background-img'
     />

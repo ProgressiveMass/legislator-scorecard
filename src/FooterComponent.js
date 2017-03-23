@@ -6,9 +6,6 @@ const Footer = (props) => {
       <div>
         Site created by <a href='http://alex.holachek.com'>Alex</a>
       </div>
-      <div>
-        Learn more about your MA legislators at <a href='https://malegislature.gov/'>malegislature.gov</a>
-      </div>
     </div>
   </footer>)
 }

@@ -101,11 +101,10 @@ export default class VoteTableComponent extends React.Component {
       <div className='table-container'>
         <div className='explanatory-text'>
           <p>
-            Progressive Massachussetts tracks legislators' votes throughout the session and tracks both progressive and non-progressive
-            legislation as it makes its way through the State House.
+            Progressive Massachussetts tracks legislation as it makes its way through the State House.
           </p>
           <p>
-            To learn more about Progressive Massachussetts' methodology, including caveats and limitations,
+            To learn more about Progressive Massachussetts' methodology, including caveats and limitations,&nbsp;
             <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>visit the Legislative Scorecard homepage.</a>
           </p>
         </div>
