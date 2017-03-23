@@ -24,7 +24,7 @@ class SearchFormComponent extends React.Component {
       <div className='gray-background' style={{ position: 'relative' }}>
 
         <div className='row'>
-          <div className='col-lg-6'>
+          <div className='col-lg-6 text-lg'>
 
             <h2 className='h1'
               style={{ lineHeight: '3rem' }}
@@ -32,11 +32,11 @@ class SearchFormComponent extends React.Component {
               Learn about progressive politics in Massachusetts
             </h2>
 
-            <ul className='lead mt-4'>
+            <ul className='mt-4'>
               <li className='mb-2'>Find your state Senator and House Representative</li>
               <li className='mb-2'>Learn about their positions on progressive legislation based on their votes & cosponsorship of bills</li>
             </ul>
-            <p className='mt-4 lead'>
+            <p className='mt-4'>
               Most of the data is provided by&nbsp;<a href='http://www.progressivemass.com/' className='font-weight-bold'>
                 Progressive Massachusetts
               </a>, a statewide grassroots organization.
@@ -49,7 +49,7 @@ class SearchFormComponent extends React.Component {
               <div>
                 <div className='form-group'>
                   <label>
-                    Home Address
+                    Address
                     <input type='text' className='form-control' ref='address' placeholder='123 Main St, Cambridge' />
                   </label>
                 </div>
@@ -62,7 +62,7 @@ class SearchFormComponent extends React.Component {
                 </div>
                 <div className='form-group'>
                   <span className='label'>State</span>
-                  <div className='lead'>
+                  <div className='text-lg'>
                     Masachusetts
                   </div>
                 </div>

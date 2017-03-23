@@ -7,7 +7,7 @@ const ErrorPageComponent = (props) => {
       <p className='lead'>Sorry, something went wrong.</p>
       <div>
         <Link to='/' className='btn btn-secondary'>
-          <i className="fa fa-arrow-circle-o-left"></i>
+          <i className='fa fa-arrow-circle-o-left' />
           &nbsp;Try again
         </Link>
       </div>

@@ -15,11 +15,11 @@ export default class SenatorMetadataComponent extends React.Component {
                   <img src={this.props.data.photo_url} alt='senator profile picture' />
                 </div>) : null
               }
-              <div>
+              <div className='font-weight-bold'>
                 <div className='text-lg'>
                   {this.props.data.party} Party
                 </div>
-                <div className='text-lg mb-2 text-uppercase font-weight-bold' style={{ position: 'relative', top: '.2rem' }}>
+                <div className='text-lg mb-2 text-uppercase' style={{ position: 'relative', top: '.2rem' }}>
                   {this.props.data.district}
                 </div>
                 { this.props.data.url

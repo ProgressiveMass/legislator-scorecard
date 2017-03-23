@@ -7,7 +7,6 @@ import TestData from './test_data.json'
 export default class ResultsLayoutComponent extends React.Component {
   constructor (props) {
     super(props)
-
     this.getLegislatorData = this.getLegislatorData.bind(this)
   }
 

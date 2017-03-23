@@ -57,7 +57,7 @@ export default class LegislatorDataComponent extends React.Component {
       BodyComponent = CosponsorshipTable
     }
 
-    return (<div key={this.props.chamber}
+    return (<div
       style={{ maxWidth: '1200px', margin: 'auto' }}
             >
       <ul className='nav nav-tabs nav-justified'>
