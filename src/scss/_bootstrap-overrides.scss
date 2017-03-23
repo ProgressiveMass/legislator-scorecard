@@ -16,10 +16,13 @@
 
 
 .badge-clear {
-  border: 1px solid $gray-light;
+  border: 1px solid $gray-lighter;
   color: $gray-light;
-  font-weight: normal;
   background: transparent;
+}
+
+.badge-default {
+  color :$body-color;
 }
 
 
