@@ -17,6 +17,7 @@ export default class LegislatorPageComponent extends React.Component {
         chamber={this.props.chamber}
         legislatorName={this.props.legislator.last_name}
         key={this.props.chamber}
+
       />
 
     </div>)
