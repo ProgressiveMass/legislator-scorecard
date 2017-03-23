@@ -5,9 +5,15 @@ const RatingComponent = (props) => {
 
   if (!props.rating.legislator) {
     return (
-      <div className='text-muted'>
-        Since we don't have any vote information available,
-        we can't provide a progressive rating for this legislator.
+      <div className='text-muted text-weight-bold'>
+        <p>
+          We don't have any vote information available for this legislator,
+          likely because they are new to the office.
+        </p>
+        <p>
+          Check back later for a progressive ranking
+          for this legislator.
+        </p>
       </div>
     )
   }

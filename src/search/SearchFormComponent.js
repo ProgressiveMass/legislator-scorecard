@@ -28,18 +28,17 @@ class SearchFormComponent extends React.Component {
 
             <h2 className='h1'
               style={{ lineHeight: '3rem' }}
-              >
-                Learn about progressive politics in Massachusetts
+            >
+              Learn about progressive politics in Massachusetts
             </h2>
 
-            <ol className='lead mt-4'>
+            <ul className='lead mt-4'>
               <li className='mb-2'>Find your state Senator and House Representative</li>
-              <li className='mb-2'>Learn about their positions on progressive legislation based on their votes & legislation cosponsorship</li>
-              <li>Take action</li>
-            </ol>
-            <p className='mt-4'>
+              <li className='mb-2'>Learn about their positions on progressive legislation based on their votes & cosponsorship of bills</li>
+            </ul>
+            <p className='mt-4 lead'>
               Most of the data is provided by&nbsp;<a href='http://www.progressivemass.com/' className='font-weight-bold'>
-            Progressive Massachusetts
+                Progressive Massachusetts
               </a>, a statewide grassroots organization.
             </p>
           </div>

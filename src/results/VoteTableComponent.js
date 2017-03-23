@@ -20,6 +20,8 @@ export default class VoteTableComponent extends React.Component {
       return <span className='badge badge-default'>No</span>
     } else if (v === 'NV') {
       return <span className='badge badge-default'>Didn&#39;t vote</span>
+    } else {
+      return <span className='badge badge-clear'>N/A</span>
     }
   }
 
