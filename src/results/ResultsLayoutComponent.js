@@ -55,15 +55,15 @@ export default class ResultsLayoutComponent extends React.Component {
             className={`nav-link ${this.state.activeTab === 'upper' ? 'active' : ''}`}
             onClick={(e) => { e.preventDefault(); this.setState({ activeTab : 'upper' }) }}
           >
-            <div className='text-uppercase'>Your Senator</div>
+            Your Senator
           </a>
         </li>
         <li className='nav-item'>
           <a href='#'
             className={`nav-link ${this.state.activeTab === 'lower' ? 'active' : ''}`}
-            onClick={(e) => { e.preventDefault(); this.setState({ activeTab : 'lower' }) }}
-          >
-            <div className='text-uppercase'>Your House Rep</div>
+            onClick={(e) => { e.preventDefault(); this.setState({ activeTab : 'lower' }) }}>
+
+            Your House Rep
           </a>
         </li>
       </ul>
