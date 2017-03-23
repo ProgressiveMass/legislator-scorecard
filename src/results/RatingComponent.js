@@ -34,11 +34,7 @@ const RatingComponent = (props) => {
 
       <div className='clearfix'>
         <div className='mt-2 pull-right'>
-          <a href='http://www.progressivemass.com/189thscorecard-senate'
-            target='_blank'
-          >
-            Rating based on votes in the 2015-2016 session.
-          </a>
+          Rating based on votes in the 2015-2016 session.
         </div>
       </div>
     </div>

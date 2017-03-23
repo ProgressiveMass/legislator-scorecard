@@ -100,11 +100,9 @@ export default class VoteTableComponent extends React.Component {
     return (
       <div className='table-container'>
         <div className='explanatory-text'>
+          <span className='label'>What makes a bill progressive? </span>
           <p>
-            Progressive Massachussetts tracks legislation as it makes its way through the State House.
-          </p>
-          <p>
-            To learn more about Progressive Massachussetts' methodology, including caveats and limitations,&nbsp;
+            To learn more about Progressive Masachusetts' methodology for rating legislation,
             <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>visit the Legislative Scorecard homepage.</a>
           </p>
         </div>
@@ -114,7 +112,7 @@ export default class VoteTableComponent extends React.Component {
               <thead>
                 <tr>
                   <th style={{ width: '30%' }}>Bill</th>
-                  <th style={{ width: '40%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachussetts</a></th>
+                  <th style={{ width: '40%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Masachusetts</a></th>
                   <th style={{ width: '15%' }}>{this.props.legislatorName}'s Vote</th>
                   <th style={{ width: '15%' }}>Vote Tally</th>
                 </tr>

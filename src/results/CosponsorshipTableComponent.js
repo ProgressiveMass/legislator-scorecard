@@ -41,21 +41,21 @@ export default class CosponsorshipTable extends React.Component {
           </div>
           <div>
             <span className='sr-only'>Topics:</span>
-            {c.platform ? <span className='badge badge-default mr-1'>
+            {/* {c.platform ? <span className='badge badge-default mr-1'>
               <a href='https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/1011/attachments/original/1467977992/2016_06-30_Progressive_Platform_PDF.pdf?1467977992'
                 target='_blank'
               >
                 {c.platform}
               </a>
-            </span> : null}
+            </span> : null} */}
           </div>
         </td>
-        <td style={{ width: '50%' }}>
+        <td style={{ width: '45%' }}>
           <p>
             {c.description}
           </p>
         </td>
-        <td style={{ width: '10%' }}>
+        <td style={{ width: '15%' }}>
           {this.renderCosponsorship(c.yourLegislator)}
         </td>
       </tr>
@@ -88,8 +88,8 @@ export default class CosponsorshipTable extends React.Component {
               <thead>
                 <tr>
                   <th style={{ width: '40%' }}>Bill</th>
-                  <th style={{ width: '50%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachussetts</a></th>
-                  <th style={{ width: '10%' }}>{this.props.legislatorName} Cosponsored?</th>
+                  <th style={{ width: '45%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Masachusetts</a></th>
+                  <th style={{ width: '15%' }}>{this.props.legislatorName} Cosponsored?</th>
                 </tr>
               </thead>
             </Sticky>
