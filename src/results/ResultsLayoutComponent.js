@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 import axios from 'axios'
 import LegislatorPageComponent from './LegislatorPageComponent'
-import TestData from './test_data.json'
+import LoadingComponent from './LoadingViewComponent'
 
 export default class ResultsLayoutComponent extends React.Component {
   constructor (props) {
@@ -41,7 +41,7 @@ export default class ResultsLayoutComponent extends React.Component {
   }
 
   render () {
-    if (!this.state.data) { return (<div>loading...</div>) }
+    if (!this.state.data) { return <LoadingComponent /> }
 
     const legislatorData = this.state.activeTab === 'upper'
     ? this.state.data.upper

@@ -26,7 +26,7 @@ const RatingComponent = (props) => {
       </p>
       <div aria-hidden='aria-hidden'>
         <div>
-          <span className='label'>
+          <span className='label' style={{ fontSize: '1.2rem' }}>
             {props.chamber === 'upper' ? 'Senator' : 'Rep'}&nbsp;
             {props.legislatorName}'s votes:
           </span>

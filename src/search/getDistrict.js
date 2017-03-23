@@ -15,6 +15,6 @@ export default function findDistrict (pointObj) {
   if (matches.length) {
     return matches[0].properties
   } else {
-    return 'Error: Could not find your Masachusetts district'
+    return 'Error: Could not find your Massachusetts district'
   }
 }

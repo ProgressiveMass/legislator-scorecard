@@ -88,7 +88,7 @@ export default class CosponsorshipTable extends React.Component {
               <thead>
                 <tr>
                   <th style={{ width: '40%' }}>Bill</th>
-                  <th style={{ width: '45%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Masachusetts</a></th>
+                  <th style={{ width: '45%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachusetts</a></th>
                   <th style={{ width: '15%' }}>{this.props.legislatorName} Cosponsored?</th>
                 </tr>
               </thead>

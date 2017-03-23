@@ -21,7 +21,7 @@ class SearchFormComponent extends React.Component {
 
   render () {
     return (
-      <div className='gray-background' style={{ position: 'relative' }}>
+      <div className='container' style={{ position: 'relative' }}>
 
         <div className='row'>
           <div className='col-lg-6 text-lg'>
@@ -63,7 +63,7 @@ class SearchFormComponent extends React.Component {
                 <div className='form-group'>
                   <span className='label'>State</span>
                   <div className='text-lg'>
-                    Masachusetts
+                    Massachusetts
                   </div>
                 </div>
                 <div className='mt-4'>

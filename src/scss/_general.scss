@@ -1,15 +1,15 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
@@ -24,13 +24,12 @@ label {
     display: block;
 }
 
-
 b {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 p a {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 ul {
@@ -38,100 +37,126 @@ ul {
 }
 
 footer {
-  @extend .clearfix;
-  padding: 3rem 0;
-  text-align: right;
-  a {
-    font-weight: bold;
-  }
+    @extend .clearfix;
+    padding: 3rem 0;
+    text-align: right;
+
+    a {
+        font-weight: bold;
+    }
 }
 
 caption {
-  text-align: center;
-  caption-side: top;
-  @extend .label;
-  font-size: 1.5rem;
-  color: $body-color;
+    text-align: center;
+    caption-side: top;
+    @extend .label;
+    font-size: 1.5rem;
+    color: $body-color;
 }
-
 
 .text-lg {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
-
 .header__home-link {
-  color: $body-color;
-  display: block;
-  position: relative;
-  letter-spacing: .06rem;
-  width: 333px;
-  margin: 1.5rem auto 5.5rem auto;
-  &:hover, &:focus {
-    text-decoration: none;
     color: $body-color;
-
-    img {
-      opacity: .4;
-    }
-  }
-
-  h1 {
+    display: block;
     position: relative;
-    z-index: 2;
-  }
+    letter-spacing: .06rem;
+    width: 333px;
+    margin: 1.5rem auto 5.5rem;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        color: $body-color;
+
+        img {
+            opacity: .4;
+        }
+    }
+
+    h1 {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .header__home-link__background-img {
-  position: absolute;
-  left: 10%;
-  opacity: .2;
-  width: 260px;
-  z-index: 0;
-  transition: opacity .3s;
+    position: absolute;
+    left: 10%;
+    opacity: .2;
+    width: 260px;
+    z-index: 0;
+    transition: opacity .3s;
 }
 
-
-
 .container {
-  @include media-breakpoint-down(xs) {
-  padding: 0 !important;
- }
+    @include media-breakpoint-down(xs) {
+        padding: 0 !important;
+    }
 }
 
 .font-weight-light {
-  font-weight: 300 !important;
+    font-weight: 300 !important;
 }
 
 thead {
-  background : #fff;
-  @extend .label;
-  width:100%;
-  //why does this work ????
-  display: table;
+    background: #fff;
+    @extend .label;
+    width: 100%;
+    //why does this work ????
+    display: table;
 }
 
 .gray-background {
-  background-color: $gray-lighter;
-  padding: 1rem;
-  @include media-breakpoint-up(md) {
-  padding: 2rem
- }
+    background-color: $gray-lighter;
+    padding: 1rem;
+    @include media-breakpoint-up(md) {
+        padding: 2rem;
+    }
 }
 
 .heading-font {
-  font-family: $headings-font-family;
+    font-family: $headings-font-family;
 }
 
 .badge a {
-  color : #fff;
-  &:hover, &:focus {
     color: #fff;
-  }
+
+    &:focus,
+    &:hover {
+        color: #fff;
+    }
 }
 
 .vertical-center {
     top: 50%;
     transform: translateY(-50%);
     position: relative;
+}
+@keyframes pulse_animation {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: .5;
+    }
+}
+
+.loading {
+    h1 {
+        font-size: 6rem;
+        text-align: center;
+        animation-name: pulse_animation;
+        animation-duration: 1.5s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+    }
+    min-height: 50vh;
+    text-align: center;
+    padding-top:3rem;
 }
