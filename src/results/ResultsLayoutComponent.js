@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react'
 import axios from 'axios'
 import LegislatorPageComponent from './LegislatorPageComponent'
 import LoadingComponent from './LoadingViewComponent'
+import ErrorViewComponent from './ErrorViewComponent'
 
 export default class ResultsLayoutComponent extends React.Component {
   constructor (props) {
@@ -12,6 +13,7 @@ export default class ResultsLayoutComponent extends React.Component {
 
   state = {
     data : undefined,
+    error : false,
     activeTab : 'upper'
   }
 
@@ -31,6 +33,13 @@ export default class ResultsLayoutComponent extends React.Component {
     this.setState({
       data : response.data
     })
+  }, (error) => {
+    if (error.response) {
+      this.setState({ error : error.response.data, data : {} })
+    } else {
+      this.setState({ error : error.message, data : {} })
+    }
+    console.log(error.message)
   })
   }
 
@@ -42,6 +51,8 @@ export default class ResultsLayoutComponent extends React.Component {
 
   render () {
     if (!this.state.data) { return <LoadingComponent /> }
+
+    if (this.state.error) { return <ErrorViewComponent error={this.state.error} /> }
 
     const legislatorData = this.state.activeTab === 'upper'
     ? this.state.data.upper
