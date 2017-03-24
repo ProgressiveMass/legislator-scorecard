@@ -19,6 +19,10 @@ class SearchFormComponent extends React.Component {
     this.props.history.push(`/my-legislators/${address}`)
   }
 
+  componentDidMount () {
+    this.refs.address.focus()
+  }
+
   render () {
     return (
       <div className='container' style={{ position: 'relative' }}>

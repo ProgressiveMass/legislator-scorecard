@@ -8,34 +8,47 @@ export default class VoteTableComponent extends React.Component {
   }
 
   renderLegislatorVote (v, progressivePosition) {
-    if (v === 'n/a') {
-      return <span className='badge badge-clear'>N/A</span>
-    } else if (v === '-' && progressivePosition.toLowerCase() === 'no') {
-      return <span className='badge badge-primary'>No</span>
-    } else if (v === '+' && progressivePosition.toLowerCase() === 'yes') {
-      return <span className='badge badge-primary'>Yes</span>
-    } else if (v === '+' && progressivePosition.toLowerCase() === 'no') {
-      return <span className='badge badge-default'>Yes</span>
-    } else if (v === '-' && progressivePosition.toLowerCase() === 'yes') {
-      return <span className='badge badge-default'>No</span>
-    } else if (v === 'NV') {
-      return <span className='badge badge-default'>Didn&#39;t vote</span>
-    } else {
-      return <span className='badge badge-clear'>N/A</span>
+    let badgeClass = 'badge'
+
+    console.log(v, progressivePosition)
+
+    const oppositeDict = (term) => {
+      if (term.toLowerCase() === 'yes') return 'No'
+      else if (term.toLowerCase() === 'no') return 'Yes'
+      else return 'N/A'
     }
+
+    if (v === '+') {
+      badgeClass += ' badge-primary'
+    } else if (v === '-' || v === 'NV') {
+      badgeClass += ' badge-danger'
+    } else {
+      badgeClass += ' badge-clear'
+    }
+
+    let badgeText = 'N/A'
+    if (v === '+') {
+      badgeText = progressivePosition[0].toUpperCase() + progressivePosition.slice(1).toLowerCase()
+    } else if (v === '-') {
+      badgeText = oppositeDict(progressivePosition)
+    } else if (v === 'NV') {
+      badgeText = 'Didn\'t vote'
+    }
+
+    return <span className={badgeClass}>{badgeText}</span>
   }
 
   renderCumulativeVote (yesVotes, noVotes, progressivePosition) {
     const yesBlock = (<div>
       <span className='label votes-fw'>Yes:</span>&nbsp;
-      <span className={`badge ${progressivePosition.toLowerCase() === 'yes' ? 'badge-primary' : 'badge-default'}`}>
+      <span className={`badge ${progressivePosition.toLowerCase() === 'yes' ? 'badge-primary' : 'badge-danger'}`}>
         {yesVotes}
       </span>
     </div>)
 
     const noBlock = (<div>
       <span className='label votes-fw'>No:</span>&nbsp;
-      <span className={`badge ${progressivePosition.toLowerCase() === 'no' ? 'badge-primary' : 'badge-default'}`}>
+      <span className={`badge ${progressivePosition.toLowerCase() === 'no' ? 'badge-primary' : 'badge-danger'}`}>
         {noVotes}
       </span>
     </div>)

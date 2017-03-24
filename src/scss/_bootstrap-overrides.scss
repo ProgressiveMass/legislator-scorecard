@@ -25,6 +25,10 @@
   color :$body-color;
 }
 
+.badge-danger {
+  color: $brand-danger;
+}
+
 
 .table th, .table td {
     padding: 0.75rem;

@@ -13,7 +13,7 @@ export default class CosponsorshipTable extends React.Component {
     } else if (indicator === 'Y') {
       return <span className='badge badge-primary'>Yes</span>
     } else if (indicator === 'N') {
-      return <span className='badge badge-default'>No</span>
+      return <span className='badge badge-danger'>No</span>
     }
   }
 
