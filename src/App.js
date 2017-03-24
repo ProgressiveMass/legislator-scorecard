@@ -19,7 +19,7 @@ class App extends Component {
   render () {
     return (
       <div>
-        <Header />
+        <Header key='header-component' />
         <Switch>
           <Route path='/my-legislators/:address' component={ResultsLayout} />
           <Route path='/error' component={ErrorPageComponent} />
