@@ -10,8 +10,6 @@ export default class VoteTableComponent extends React.Component {
   renderLegislatorVote (v, progressivePosition) {
     let badgeClass = 'badge'
 
-    console.log(v, progressivePosition)
-
     const oppositeDict = (term) => {
       if (term.toLowerCase() === 'yes') return 'No'
       else if (term.toLowerCase() === 'no') return 'Yes'
@@ -73,7 +71,7 @@ export default class VoteTableComponent extends React.Component {
   renderRow (v, i) {
     return (
       <tr key={i}>
-        <td style={{ width: '30%' }}>
+        <td style={{ width: '30%' }} data-label='Bill'>
           <a href={v.url} target='_blank' className='font-weight-bold'>
             {v.title}
             <div>
@@ -84,7 +82,7 @@ export default class VoteTableComponent extends React.Component {
             </div>
           </a>
         </td>
-        <td style={{ width: '40%' }}>
+        <td style={{ width: '40%' }} data-label='Bill Description'>
           <p>
             {v.description}
           </p>
@@ -93,10 +91,10 @@ export default class VoteTableComponent extends React.Component {
             <span className='badge badge-primary'>{v.progressivePosition}</span>
           </p>
         </td>
-        <td style={{ width: '15%' }}>
+        <td style={{ width: '15%' }} data-label={`${this.props.legislatorName}'s Vote`}>
           {this.renderLegislatorVote(v.yourLegislator, v.progressivePosition)}
         </td>
-        <td style={{ width: '15%' }}>
+        <td style={{ width: '15%' }} data-label='Total Votes'>
           {this.renderCumulativeVote(v.yesVotes, v.noVotes, v.progressivePosition)}
         </td>
       </tr>
@@ -104,21 +102,22 @@ export default class VoteTableComponent extends React.Component {
   }
 
   render () {
-    if (!this.props.data || this.props.data.length === 0) {
+    const votes = this.props.data.votes
+    if (!votes || votes.length === 0) {
       return <div className='table-container text-center'>
         <div style={{ paddingTop : '7rem' }}>
-          <h3>This Data Isn't Available Yet!</h3>
+          <h3>This Data Isn't Available Yet.</h3>
           <p className='lead'>Please check back later.</p>
         </div>
       </div>
     }
     return (
       <div className='table-container'>
+        <h4 className='sr-only'>Voting Record</h4>
         <div className='explanatory-text'>
-          <span className='label'>What makes a bill progressive? </span>
+          <span className='label'>What makes a bill progressive?</span>
           <p>
-            To learn more about Progressive Massachusetts' methodology for rating legislation,
-            <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>visit the Legislative Scorecard homepage.</a>
+            To learn more about the methodology for rating legislation, <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>visit the Progressive Mass Legislative Scorecard homepage.</a>
           </p>
         </div>
         <StickyContainer>
@@ -134,7 +133,7 @@ export default class VoteTableComponent extends React.Component {
               </thead>
             </Sticky>
             <tbody>
-              {this.props.data.map((v, i) => {
+              { votes.map((v, i) => {
                 return this.renderRow(v, i)
               }, this)}
             </tbody>

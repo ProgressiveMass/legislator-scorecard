@@ -6,5 +6,11 @@
 
 .search-form {
   @extend .white-floated;
-  padding: 3rem 2rem;
+  @include media-breakpoint-down(md) {
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 3rem 2rem;
+  }
 }

@@ -7,14 +7,17 @@ export default class SenatorMetadataComponent extends React.Component {
     return (
       <div className='metadata' key={this.props.data.url}>
         <h2 className='metadata__heading'>{this.props.data.full_name}</h2>
-        <div className='row no-gutters align-items-top'>
-          <div className='col-md-7'>
-            <div className='d-flex align-items-center mr-4'>
-              {
-                this.props.data.photo_url ? (<div>
-                  <img src={this.props.data.photo_url} alt='senator profile picture' />
-                </div>) : null
-              }
+        <div className='row no-gutters align-items-center'>
+          <div className='col-md-6'>
+            <div className='d-flex align-items-center flex-column flex-md-row'>
+              <div className='py-4 py-md-0'>
+                {
+                  this.props.data.photo_url
+                    ? <img src={this.props.data.photo_url} alt='senator profile picture' />
+                    : null
+                }
+              </div>
+
               <div className='font-weight-bold'>
                 <div className='text-lg'>
                   {this.props.data.party} Party
@@ -32,7 +35,7 @@ export default class SenatorMetadataComponent extends React.Component {
               </div>
             </div>
           </div>
-          <div className='col-md-5'>
+          <div className='col-md-6 pl-md-4 pl-lg-5 pt-4 pt-md-0'>
             <RatingComponent
               chamber={this.props.chamber}
               legislatorName={this.props.legislatorName}

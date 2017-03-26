@@ -4,13 +4,16 @@
     color: $body-color;
     font-size: 1.4rem;
     font-weight: bold;
+    padding: .5rem 0 .25rem 0;
+    margin-right: 1rem;
 
     &.active {
-      color: $body-color !important;
+      color: $brand-primary;
+      border-bottom: .4rem solid $brand-primary;
     }
 
-    &:hover, &:focus {
-      background: fade-out(black, .96);
+    &:not(.active):hover, &:not(.active):focus {
+      border-bottom: .4rem solid fade-out($gray-lighter, .5);
     }
 }
 
@@ -39,3 +42,65 @@
 .text-weight-light {
   font-weight: 300 !important;
 }
+
+.card {
+  @extend .white-floated;
+}
+
+.progress-bar {
+  padding-left: .8rem;
+}
+
+/* ==========================================================================
+   responsive tables
+   ========================================================================== */
+   /* Stack rows vertically on small screens */
+   @media (max-width: map-get($grid-breakpoints, sm)) {
+     /* Hide column labels */
+   	thead tr {
+   		position: absolute;
+   		top: -9999em;
+   		left: -9999em;
+   	}
+   	tr {
+       border: 2px solid $gray-lighter;
+       border-bottom: 0;
+     }
+   	/* Leave a space between table rows */
+     tr + tr {
+       margin-top: 1.5em;
+     }
+     /* Get table cells to act like rows */
+     tr,
+     td {
+   		display: block;
+   	}
+   	td {
+   		border: none;
+   		border-bottom: 2px solid $gray-lighter;
+   	/* Leave a space for data labels */
+   		padding-left: 50%;
+      // override widths set on the cells for big-screen viewing
+      width: 100% !important;
+   	}
+   	/* Add data labels */
+     td:before {
+       content: attr(data-label);
+       display: inline-block;
+       font-weight: bold;
+       line-height: 1.5;
+       margin-left: -100%;
+       width: 100%;
+     }
+   }
+   /* Stack labels vertically on smaller screens */
+   @media (max-width: map-get($grid-breakpoints, sm)) {
+     td {
+       padding-left: 0.75em;
+     }
+     td:before {
+       display: block;
+       margin-bottom: 0.75em;
+       margin-left: 0;
+     }
+   }

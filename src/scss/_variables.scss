@@ -3,5 +3,8 @@ $box-shadow-light: 0 0 20px rgba(0, 0, 0, 0.1);
 .white-floated {
   background: $white;
   box-shadow: $box-shadow-light;
-  padding: 2rem;
+  padding: 1rem .75rem;
+  @include media-breakpoint-up(sm) {
+    padding: 2rem;
+  }
 }

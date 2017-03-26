@@ -1,13 +1,16 @@
+.metadata, .inverted-tabs {
+  max-width: map-get($grid-breakpoints, xl);
+  margin: auto;
+}
+
 .table-container {
-    @extend .white-floated;
     padding-top: 0;
     min-height: 35vh;
 }
 
 .explanatory-text {
     max-width: 650px;
-    margin: auto;
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-bottom: 1rem;
 }
 

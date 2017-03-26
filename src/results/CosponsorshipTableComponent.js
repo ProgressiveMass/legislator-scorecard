@@ -5,6 +5,22 @@ export default class CosponsorshipTable extends React.Component {
   constructor (props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)
+    this.renderSummary = this.renderSummary.bind(this)
+  }
+
+  renderSummary () {
+    const sponsoredLength = this
+    .props
+    .data
+    .cosponsorship
+    .filter((c) => c.yourLegislator == 'Y')
+    .length
+
+    return (
+      <p>
+        This session, {this.props.legislatorName} cosponsored <b>{sponsoredLength}</b> out of the <b>{this.props.data.cosponsorship.length}</b> bills endorsed by Progressive Massachusetts.
+      </p>
+    )
   }
 
   renderCosponsorship (indicator) {
@@ -31,7 +47,7 @@ export default class CosponsorshipTable extends React.Component {
   renderRow (c, i) {
     return (
       <tr key={i}>
-        <td style={{ width: '40%' }}>
+        <td style={{ width: '40%' }} data-label='Bill'>
           <div>
             {this.createLink(c.number)
               ? <a href={this.createLink(c.number)} className='font-weight-bold'>
@@ -40,7 +56,6 @@ export default class CosponsorshipTable extends React.Component {
             }
           </div>
           <div>
-            <span className='sr-only'>Topics:</span>
             {/* {c.platform ? <span className='badge badge-default mr-1'>
               <a href='https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/1011/attachments/original/1467977992/2016_06-30_Progressive_Platform_PDF.pdf?1467977992'
                 target='_blank'
@@ -50,12 +65,12 @@ export default class CosponsorshipTable extends React.Component {
             </span> : null} */}
           </div>
         </td>
-        <td style={{ width: '45%' }}>
+        <td style={{ width: '45%' }} data-label='Bill Description'>
           <p>
             {c.description}
           </p>
         </td>
-        <td style={{ width: '15%' }}>
+        <td style={{ width: '15%' }} data-label={`${this.props.legislatorName} Cosponsored?`}>
           {this.renderCosponsorship(c.yourLegislator)}
         </td>
       </tr>
@@ -63,9 +78,17 @@ export default class CosponsorshipTable extends React.Component {
   }
 
   render () {
+    const cosponsorship = this.props.data.cosponsorship
+
+    if (!cosponsorship) {
+      return <div>
+        <p className='h-3'>No Data Available</p>
+      </div>
+    }
+
     return (
       <div className='table-container'>
-
+        <h4 className='sr-only'>Cosponsorship Record</h4>
         <StickyContainer>
           <div className='explanatory-text' >
             <p>
@@ -74,13 +97,7 @@ export default class CosponsorshipTable extends React.Component {
               </a> Legislators who cosponsor these bills express an important symbolic measure of support.
             </p>
 
-            <p><div className='label'>What you can do:</div>
-              If {this.props.chamber === 'upper' ? 'Senator' : 'Representative'}&nbsp;{this.props.legislatorName} cosponsored an item of progressive legislation, you can thank him or her.
-              If not, you can let him or her know which bills are important to you and why.
-              <div>
-                {/* <a href='' target='_blank'>Contact details for {this.props.legislatorName}</a> */}
-              </div>
-            </p>
+            {this.renderSummary()}
           </div>
 
           <table className='table table-responsive'>
@@ -94,7 +111,7 @@ export default class CosponsorshipTable extends React.Component {
               </thead>
             </Sticky>
             <tbody>
-              {this.props.data.map((c, i) => {
+              {cosponsorship.map((c, i) => {
                 return this.renderRow(c, i)
               }, this)}
             </tbody>

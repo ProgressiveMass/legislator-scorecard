@@ -3,17 +3,31 @@ import React, { PropTypes } from 'react'
 const RatingComponent = (props) => {
   if (!props.rating) return null
 
-  if (!props.rating.legislator) {
+  const renderVoteSection = (props) => {
     return (
-      <div className='text-muted text-weight-bold'>
-        <p>
-          We don't have any vote information available for this legislator,
-          likely because they are new to the office.
+      <div>
+        <p className='sr-only'>
+          Voted with the progressive position {props.rating.votes.legislator} percent of the time.
         </p>
-        <p>
-          Check back later for a progressive ranking
-          for this legislator.
-        </p>
+        <div aria-hidden>
+          <span className='label' style={{ fontSize: '1.2rem' }}>
+            {props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
+            {props.legislatorName}'s votes
+          </span>
+          <div className='progress' aria-hidden>
+            <div className='progress-bar bg-primary' style={{ width: props.rating.votes.legislator + '%' }} >
+              <b>{props.rating.votes.legislator}%</b>&nbsp;&nbsp;progressive
+            </div>
+          </div>
+        </div>
+        <div aria-hidden>
+          <span className='label'>{props.chamber === 'upper' ? 'Senate' : 'House'} average:</span>
+          <div className='progress'>
+            <div className='progress-bar bg-primary' style={{ width: props.rating.votes.average + '%' }} >
+              <b>{props.rating.votes.average}%</b>&nbsp;&nbsp;progressive
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
@@ -21,36 +35,28 @@ const RatingComponent = (props) => {
   return (
     <div className='progress-component'>
       <h2 className='sr-only'>Progressive Ranking Summary</h2>
-      <p className='sr-only'>
-        Voted with the progressive position {props.rating.legislator} percent of the time
-      </p>
-      <div aria-hidden='aria-hidden'>
-        <div>
-          <span className='label' style={{ fontSize: '1.2rem' }}>
-            {props.chamber === 'upper' ? 'Senator' : 'Rep'}&nbsp;
-            {props.legislatorName}'s votes:
+      {
+        props.rating.votes.legislator ? renderVoteSection(props)
+          : <span className='text-muted font-weight-bold'>
+            No voting data available, probably because this is a first-term legislator.
           </span>
-          <div className='progress' aria-hidden>
-            <div className='progress-bar bg-primary' style={{ width: props.rating.legislator + '%' }} >
-              {props.rating.legislator}% progressive
-            </div>
-          </div>
+      }
+
+      <div className='mt-4'>
+        <div className='label' style={{ fontSize: '1.2rem' }}>
+          {props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
+          {props.legislatorName} cosponsored
+        </div>
+        <div style={{ fontSize : '2rem' }}>
+          <b className={`${props.rating.cosponsorship.legislator > 3 ? 'text-primary' : 'text-danger'}`}>
+            {props.rating.cosponsorship.legislator}
+          </b>&nbsp;progressive bills
+        </div>
+        <div>out of&nbsp;
+          <b className='text-primary'>{props.rating.cosponsorship.total}</b>
+              &nbsp;endorsed by Progressive Mass
         </div>
 
-        <div>
-          <span className='label'>{props.chamber === 'upper' ? 'Senate' : 'House'} average:</span>
-          <div className='progress'>
-            <div className='progress-bar bg-primary' style={{ width: props.rating.average + '%' }} >
-              {props.rating.average + '%'} progressive
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className='clearfix'>
-        <div className='mt-2 pull-right'>
-          Rating based on votes in the 2015-2016 session.
-        </div>
       </div>
     </div>
   )

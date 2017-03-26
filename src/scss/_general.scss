@@ -59,10 +59,14 @@ caption {
 
 
 .header__home-link img {
-    width: 400px;
+    width: 200px;
     height: auto;
-    transform: scale(.5) translateX(-180px) translateY(-80px);
-    transition: transform .3s;
+
+    @include media-breakpoint-up(md) {
+      width: 400px;
+      transform: scale(.5) translateX(-180px) translateY(-80px);
+      transition: transform .3s;
+    }
 }
 
 .header__home-link {
@@ -73,7 +77,9 @@ caption {
   height: auto;
 }
 .header__home-link--centered-large  img {
-  transform: scale(1) translateX(calc(50vw - 200px));
+  @include media-breakpoint-up(md) {
+    transform: scale(1) translateX(calc(50vw - 200px));
+  }
 }
 
 .container {
@@ -94,9 +100,9 @@ thead {
     display: table;
 }
 
-.gray-background {
+.tinted-background {
     background-color: $gray-lighter;
-    padding: 1rem;
+    padding: .5rem;
     @include media-breakpoint-up(md) {
         padding: 2rem;
     }
@@ -131,9 +137,9 @@ thead {
 }
 
 .loading {
+  @include media-breakpoint-up(md) {
     h1 {
         font-size: 6rem;
-        text-align: center;
         animation-name: pulse_animation;
         animation-duration: 1.5s;
         transform-origin: 50% 50%;
@@ -141,7 +147,7 @@ thead {
         animation-timing-function: linear;
         animation-direction: alternate;
     }
-    min-height: 50vh;
     text-align: center;
-    padding-top:5rem;
+    min-height: 50vh;
+  }
 }

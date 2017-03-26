@@ -2,23 +2,24 @@
   @include media-breakpoint-down(xs) {
     margin-bottom: 2rem;
   }
+  @include media-breakpoint-up(sm) {
+    padding-top: 2.5rem;
+  }
+  @extend .white-floated;
   margin-top: 3rem;
-  margin-left: auto;
-  margin-right:auto;
   margin-bottom: 4rem;
-  max-width: map-get($grid-breakpoints, 'lg');
-  background : $white;
-  box-shadow: $box-shadow-light;
-  padding: 1rem 2rem 2rem 2rem;
   font-family: $headings-font-family;
+  position: relative;
 }
 
 .metadata__heading {
-  position: relative;
-    top: -45px;
+  font-size: 2rem;
+  @include media-breakpoint-up(sm) {
+    position: absolute;
+    top: -35px;
     font-size: 3.3rem;
-    margin-bottom: 0;
-    height: 3rem;
+  }
+
 }
 
 .metadata img {

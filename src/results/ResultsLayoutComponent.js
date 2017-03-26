@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react'
-
+import Tabs from 'react-responsive-tabs'
 import axios from 'axios'
+
 import LegislatorPageComponent from './LegislatorPageComponent'
+import SummaryPageComponent from './SummaryPageComponent'
 import LoadingComponent from './LoadingViewComponent'
 import ErrorViewComponent from './ErrorViewComponent'
 
@@ -13,8 +15,7 @@ export default class ResultsLayoutComponent extends React.Component {
 
   state = {
     data : undefined,
-    error : false,
-    activeTab : 'upper'
+    error : false
   }
 
   getLegislatorData (address) {
@@ -51,39 +52,45 @@ export default class ResultsLayoutComponent extends React.Component {
 
   render () {
     if (!this.state.data) { return <LoadingComponent /> }
-
     if (this.state.error) { return <ErrorViewComponent error={this.state.error} /> }
 
-    const legislatorData = this.state.activeTab === 'upper'
-    ? this.state.data.upper
-    : this.state.data.lower
+    const tabItems = [
+      // {
+      //   title : 'Summary',
+      //   component : <SummaryPageComponent />
+      // },
+      {
+        title : 'Your Senator',
+        component : (<LegislatorPageComponent
+          data={this.state.data.upper}
+          legislator={this.state.data.upper.legislator}
+          chamber='upper'
+          rating={this.state.data.upper.rating}
+                     />)
+      },
+      {
+        title : 'Your House Rep',
+        component : (<LegislatorPageComponent
+          data={this.state.data.lower}
+          legislator={this.state.data.lower.legislator}
+          chamber='lower'
+          rating={this.state.data.lower.rating}
+                     />)
+      }
+    ]
+    .map((t) => {
+      return {
+        title: t.title,
+        getContent: () => t.component
+      }
+    })
 
-    return (<div className=''>
-      <ul className='nav nav-pills nav-justified'>
-        <li className='nav-item'>
-          <a href='#'
-            className={`nav-link ${this.state.activeTab === 'upper' ? 'active' : ''}`}
-            onClick={(e) => { e.preventDefault(); this.setState({ activeTab : 'upper' }) }}
-          >
-            Your Senator
-          </a>
-        </li>
-        <li className='nav-item'>
-          <a href='#'
-            className={`nav-link ${this.state.activeTab === 'lower' ? 'active' : ''}`}
-            onClick={(e) => { e.preventDefault(); this.setState({ activeTab : 'lower' }) }}>
-
-            Your House Rep
-          </a>
-        </li>
-      </ul>
-      <LegislatorPageComponent
-        data={legislatorData.data}
-        legislator={legislatorData.legislator}
-        chamber={this.state.activeTab}
-        rating={legislatorData.rating}
+    return (
+      <Tabs items={tabItems}
+        showMore={false}
+        transform={false}
       />
-    </div>)
+    )
   }
 }
 

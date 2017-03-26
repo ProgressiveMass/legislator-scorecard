@@ -71,7 +71,7 @@ class SearchFormComponent extends React.Component {
                   </div>
                 </div>
                 <div className='mt-4'>
-                  <button className='btn btn-primary btn-block heading-font font-weight-bold text-lg'>
+                  <button className='btn btn-primary btn-block heading-font font-weight-bold text-md-lg'>
                     {this.state.loading
                       ? <span><i className='fa fa-spinner fa-pulse' />&nbsp;Loading</span>
                         : 'Find My Local Legislators'

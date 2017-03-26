@@ -6,7 +6,6 @@ import Footer from './FooterComponent'
 
 import RepresentativeSearch from './search/RepresentativeSearchComponent'
 import ResultsLayout from './results/ResultsLayoutComponent'
-import ErrorPageComponent from './ErrorPageComponent'
 
 class App extends Component {
 
@@ -22,7 +21,6 @@ class App extends Component {
         <Header key='header-component' />
         <Switch>
           <Route path='/my-legislators/:address' component={ResultsLayout} />
-          <Route path='/error' component={ErrorPageComponent} />
           <Route path='/' component={RepresentativeSearch} />
         </Switch>
         <Footer />
