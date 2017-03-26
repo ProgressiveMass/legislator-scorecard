@@ -7,9 +7,9 @@ export default class SenatorMetadataComponent extends React.Component {
     return (
       <div className='metadata' key={this.props.data.url}>
         <h2 className='metadata__heading'>{this.props.data.full_name}</h2>
-        <div className='row no-gutters align-items-center'>
+        <div className='row no-gutters align-items-md-center'>
           <div className='col-md-6'>
-            <div className='d-flex align-items-center flex-column flex-md-row'>
+            <div className='d-flex align-items-md-center flex-column flex-md-row'>
               <div className='py-4 py-md-0'>
                 {
                   this.props.data.photo_url

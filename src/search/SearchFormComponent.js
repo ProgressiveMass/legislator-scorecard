@@ -41,7 +41,7 @@ class SearchFormComponent extends React.Component {
               <li className='mb-2'>Learn about their positions on progressive legislation based on their votes & cosponsorship of bills</li>
             </ul>
             <p className='mt-4'>
-              Most of the data is provided by&nbsp;<a href='http://www.progressivemass.com/' className='font-weight-bold'>
+              This report card is provided by&nbsp;<a href='http://www.progressivemass.com/' className='font-weight-bold'>
                 Progressive Massachusetts
               </a>, a statewide grassroots organization.
             </p>

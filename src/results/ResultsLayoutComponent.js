@@ -3,7 +3,6 @@ import Tabs from 'react-responsive-tabs'
 import axios from 'axios'
 
 import LegislatorPageComponent from './LegislatorPageComponent'
-import SummaryPageComponent from './SummaryPageComponent'
 import LoadingComponent from './LoadingViewComponent'
 import ErrorViewComponent from './ErrorViewComponent'
 
@@ -55,19 +54,6 @@ export default class ResultsLayoutComponent extends React.Component {
     if (this.state.error) { return <ErrorViewComponent error={this.state.error} /> }
 
     const tabItems = [
-      // {
-      //   title : 'Summary',
-      //   component : <SummaryPageComponent />
-      // },
-      {
-        title : 'Your Senator',
-        component : (<LegislatorPageComponent
-          data={this.state.data.upper}
-          legislator={this.state.data.upper.legislator}
-          chamber='upper'
-          rating={this.state.data.upper.rating}
-                     />)
-      },
       {
         title : 'Your House Rep',
         component : (<LegislatorPageComponent
@@ -75,6 +61,15 @@ export default class ResultsLayoutComponent extends React.Component {
           legislator={this.state.data.lower.legislator}
           chamber='lower'
           rating={this.state.data.lower.rating}
+                     />)
+      },
+      {
+        title : 'Your Senator',
+        component : (<LegislatorPageComponent
+          data={this.state.data.upper}
+          legislator={this.state.data.upper.legislator}
+          chamber='upper'
+          rating={this.state.data.upper.rating}
                      />)
       }
     ]
