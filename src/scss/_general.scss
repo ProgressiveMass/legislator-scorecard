@@ -69,8 +69,9 @@ footer {
     height: auto;
 
     @include media-breakpoint-up(md) {
-      width: 400px;
-      transform: scale(.5) translateX(-180px) translateY(-80px);
+      width: 320px;
+      margin-top: 1rem;
+      transform: scale(.5) translateX(-120px) translateY(-80px);
       transition: transform .3s;
     }
 }
@@ -84,7 +85,7 @@ footer {
 }
 .header__home-link--centered-large  img {
   @include media-breakpoint-up(md) {
-    transform: scale(1) translateX(calc(50vw - 200px));
+    transform: scale(1) translateX(calc(50vw - 160px));
   }
 }
 

@@ -17,7 +17,7 @@ export default class ProgressBar extends React.Component {
     return (<div>
       <div className='progress'>
         <div className={`progress-bar bg-primary ${this.props.large ? 'progress-bar--large' : ''}`}
-          style={{ width: `${this.props.animate ? '0%' : this.props.width}` }}
+          style={{ width: `${this.props.animate ? '0' : this.props.width}%` }}
           ref={(el) => this.bar = el}
            >
           <b>{this.props.width}%</b>&nbsp;&nbsp;progressive
