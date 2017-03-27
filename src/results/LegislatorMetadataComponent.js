@@ -9,7 +9,7 @@ export default class SenatorMetadataComponent extends React.Component {
         <div className='row no-gutters align-items-md-center'>
           <div className='col-md-6'>
             <h2 className='metadata__heading'>
-              <span className='font-weight-light'>{this.props.data.first_name}</span>&nbsp;
+              <span className='font-weight-light'>{this.props.data.first_name}</span>
               <span className='font-weight-bold'>{this.props.data.last_name}</span>
             </h2>
             <div className='d-flex align-items-md-center flex-column flex-md-row'>
