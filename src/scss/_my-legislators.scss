@@ -1,5 +1,5 @@
 .metadata, .inverted-tabs {
-  max-width: map-get($grid-breakpoints, xl);
+  max-width: map-get($container-max-widths, xl);
   margin: auto;
 }
 
