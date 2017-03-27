@@ -90,15 +90,17 @@ export default class CosponsorshipTable extends React.Component {
       <div className='table-container'>
         <h4 className='sr-only'>Cosponsorship Record</h4>
         <StickyContainer>
-          <div className='explanatory-text' >
-            <p>
-              Every legislative session, Progressive Massachusetts <a href='https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/1011/attachments/original/1467977992/2016_06-30_Progressive_Platform_PDF.pdf?1467977992' target='_blank'>
-                chooses a selection of bills as legislative priorities.
-              </a>
-            </p>
-            <p>
-            Legislators who cosponsor these bills express an important symbolic measure of support.
-            </p>
+          <div className='row no-gutters'>
+            <div className='col-md-6 mt-4'>
+              <p>
+                Every legislative session, Progressive Massachusetts <a href='https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/1011/attachments/original/1467977992/2016_06-30_Progressive_Platform_PDF.pdf?1467977992' target='_blank'>
+                  chooses a selection of bills as legislative priorities.
+                </a>
+              </p>
+              <p>
+              Legislators who cosponsor these bills express an important symbolic measure of support.
+              </p>
+            </div>
 
             {/* {this.renderSummary()} */}
           </div>

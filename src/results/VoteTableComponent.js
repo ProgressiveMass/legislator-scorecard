@@ -114,12 +114,15 @@ export default class VoteTableComponent extends React.Component {
     return (
       <div className='table-container'>
         <h4 className='sr-only'>Voting Record</h4>
-        <div className='explanatory-text'>
-          <span className='label'>What makes a bill progressive?</span>
-          <p>
-            To learn more about the methodology for rating legislation, <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>visit the Progressive Mass Legislative Scorecard homepage.</a>
-          </p>
+        <div className='row no-gutters mt-4'>
+          <div className='col-md-6'>
+            <span className='label'>What makes a bill progressive?</span>
+            <p>
+              To learn more about the methodology for rating legislation, <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>visit the Progressive Mass Legislative Scorecard homepage.</a>
+            </p>
+          </div>
         </div>
+
         <StickyContainer>
           <table className='table table-responsive'>
             <Sticky>
