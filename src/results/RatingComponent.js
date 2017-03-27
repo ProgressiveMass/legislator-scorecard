@@ -1,71 +1,80 @@
 import React, { PropTypes } from 'react'
+import ProgressBar from './ProgressBarComponent'
 
-const RatingComponent = (props) => {
-  if (!props.rating) return null
+export default class RatingComponent extends React.Component {
+  constructor (props) {
+    super(props)
+    this.renderVoteSection = this.renderVoteSection.bind(this)
+    this.renderCosponsorshipSection = this.renderCosponsorshipSection.bind(this)
+  }
 
-  const renderVoteSection = (props) => {
+  renderVoteSection () {
     return (
       <div>
         <p className='sr-only'>
-          Voted with the progressive position {props.rating.votes.legislator} percent of the time.
+          Voted with the progressive position {this.props.rating.votes.legislator} percent of the time.
         </p>
-        <div aria-hidden>
+        <div>
           <span className='label' style={{ fontSize: '1.2rem' }}>
-            {props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
-            {props.legislatorName}'s votes
+            {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
+            {this.props.legislatorName}'s votes&nbsp;
+            <span className='text-lowercase font-weight-normal' style={{ fontSize: '1rem' }}>(189th Session)</span>
           </span>
-          <div className='progress' aria-hidden>
-            <div className='progress-bar bg-primary' style={{ width: props.rating.votes.legislator + '%' }} >
-              <b>{props.rating.votes.legislator}%</b>&nbsp;&nbsp;progressive
-            </div>
-          </div>
+          <ProgressBar width={this.props.rating.votes.legislator} animate large />
         </div>
-        <div aria-hidden>
-          <span className='label'>{props.chamber === 'upper' ? 'Senate' : 'House'} average:</span>
-          <div className='progress'>
-            <div className='progress-bar bg-primary' style={{ width: props.rating.votes.average + '%' }} >
-              <b>{props.rating.votes.average}%</b>&nbsp;&nbsp;progressive
-            </div>
+        <div className='d-flex'>
+          <div className='flex-grow mr-2'>
+            <span className='label'>
+              Avg {this.props.chamber === 'upper' ? 'Sen' : 'House'} Democrat:</span>
+            <ProgressBar width={this.props.rating.votes.cumulative.democratAverage} />
+          </div>
+          <div div className='flex-grow ml-2'>
+            <span className='label'>
+              Avg {this.props.chamber === 'upper' ? 'Sen' : 'House'} Republican:</span>
+            <ProgressBar width={this.props.rating.votes.cumulative.republicanAverage} />
           </div>
         </div>
       </div>
     )
   }
 
-  return (
-    <div className='progress-component'>
-      <h2 className='sr-only'>Progressive Ranking Summary</h2>
-      {
-        props.rating.votes.legislator ? renderVoteSection(props)
-          : <span className='text-muted font-weight-bold'>
-            No voting data available, probably because this is a first-term legislator.
-          </span>
-      }
-
-      <div className='mt-4'>
+  renderCosponsorshipSection () {
+    return (
+      <div className='mt-3'>
         <div className='label' style={{ fontSize: '1.2rem' }}>
-          {props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
-          {props.legislatorName} cosponsored
+          {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
+          {this.props.legislatorName} cosponsored
         </div>
         <div style={{ fontSize : '2rem' }}>
-          <b className={`${props.rating.cosponsorship.legislator > 3 ? 'text-primary' : 'text-danger'}`}>
-            {props.rating.cosponsorship.legislator}
+          <b className={`${this.props.rating.cosponsorship.legislator > 3 ? 'text-primary' : 'text-danger'}`}>
+            {this.props.rating.cosponsorship.legislator}
           </b>&nbsp;progressive bills
         </div>
         <div>out of&nbsp;
-          <b className='text-primary'>{props.rating.cosponsorship.total}</b>
-              &nbsp;endorsed by Progressive Mass
+          <b className='text-primary'>{this.props.rating.cosponsorship.total}</b>
+              &nbsp;endorsed by Progressive Mass for 190th session
         </div>
-
       </div>
-    </div>
-  )
+    )
+  }
+
+  render () {
+    if (!this.props.rating) return null
+
+    return (
+      <div className='progress-component'>
+        <h2 className='sr-only'>Progressive Ranking Summary</h2>
+        {
+          this.props.rating.votes.legislator ? this.renderVoteSection()
+            : <span className='text-muted font-weight-bold'>
+              No voting data available, probably because this is a first-term legislator.
+            </span>
+        }
+        { this.renderCosponsorshipSection() }
+      </div>
+    )
+  }
 }
 
-export default RatingComponent
-
 RatingComponent.propTypes = {
-  voteRating : PropTypes.string.isRequired,
-  voteSummary : PropTypes.number.isRequired,
-  lastName : PropTypes.string.isRequired
 }

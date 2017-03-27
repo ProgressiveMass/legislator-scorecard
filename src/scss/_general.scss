@@ -13,6 +13,10 @@ h6 {
     font-weight: bold;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .label,
 label {
     font-weight: bold;
@@ -46,6 +50,7 @@ footer {
 
     img {
       max-height: 100px;
+      max-width: 100%;
       @include media-breakpoint-up(md) {
         max-height: 200px;
       }
@@ -71,7 +76,7 @@ footer {
 }
 
 .header__home-link {
-  height: 160px;
+  height: 150px;
   display:inline-block;
 }
 .header__home-link--centered-large {
@@ -138,6 +143,7 @@ thead {
 }
 
 .loading {
+  min-height: 50vh;
   @include media-breakpoint-up(md) {
     h1 {
         font-size: 6rem;
@@ -149,6 +155,5 @@ thead {
         animation-direction: alternate;
     }
     text-align: center;
-    min-height: 50vh;
   }
 }

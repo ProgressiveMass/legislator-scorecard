@@ -2,9 +2,6 @@
   @include media-breakpoint-down(xs) {
     margin-bottom: 2rem;
   }
-  @include media-breakpoint-up(sm) {
-    padding-top: 2.5rem;
-  }
   @extend .white-floated;
   margin-top: 3rem;
   margin-bottom: 4rem;
@@ -14,21 +11,44 @@
 
 .metadata__heading {
   font-size: 2rem;
+  margin-bottom: .5rem;
+  position: relative;
+  display: inline-block;
   @include media-breakpoint-up(sm) {
-    position: absolute;
-    top: -35px;
-    font-size: 3.3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
-
+  @include media-breakpoint-up(md) {
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 3.2rem;
+  }
 }
 
 .metadata img {
     max-height: 180px;
     min-width: 125px;
+    max-width: 150px;
     margin-right: 2rem;
+}
+
+.progress-component {
+  max-width: 500px;
 }
 
 .progress-component .progress {
     margin-bottom: 1rem;
     font-family: $font-family-sans-serif;
+}
+
+.progress-bar {
+  padding-left: .8rem;
+  transition: width .3s;
+}
+
+.progress-bar--large {
+  font-size: 1rem;
+  height: 1.35rem;
+  padding-top: .07rem;
 }

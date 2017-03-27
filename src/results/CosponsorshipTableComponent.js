@@ -47,7 +47,7 @@ export default class CosponsorshipTable extends React.Component {
   renderRow (c, i) {
     return (
       <tr key={i}>
-        <td style={{ width: '40%' }} data-label='Bill'>
+        <td style={{ width: '40%' }}>
           <div>
             {this.createLink(c.number)
               ? <a href={this.createLink(c.number)} className='font-weight-bold'>
@@ -65,7 +65,7 @@ export default class CosponsorshipTable extends React.Component {
             </span> : null} */}
           </div>
         </td>
-        <td style={{ width: '45%' }} data-label='Bill Description'>
+        <td style={{ width: '45%' }} data-label=''>
           <p>
             {c.description}
           </p>
@@ -94,10 +94,13 @@ export default class CosponsorshipTable extends React.Component {
             <p>
               Every legislative session, Progressive Massachusetts <a href='https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/1011/attachments/original/1467977992/2016_06-30_Progressive_Platform_PDF.pdf?1467977992' target='_blank'>
                 chooses a selection of bills as legislative priorities.
-              </a> Legislators who cosponsor these bills express an important symbolic measure of support.
+              </a>
+            </p>
+            <p>
+            Legislators who cosponsor these bills express an important symbolic measure of support.
             </p>
 
-            {this.renderSummary()}
+            {/* {this.renderSummary()} */}
           </div>
 
           <table className='table table-responsive'>

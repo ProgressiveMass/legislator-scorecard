@@ -13,7 +13,7 @@ const Footer = (props) => {
       <div className='col-sm-12 col-md-9 p-3'>
         <div className='heading-font p-md-l-5'>
           <p>
-            Site designed & created by <a href='http://alex.holachek.com' target='_blank'>Alex Holachek</a>.
+            Site created by <a href='http://alex.holachek.com' target='_blank'>Alex Holachek</a>.
           </p>
           <p className='mb-0'>
             Vote and cosponsorship data provided by <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachusetts</a>.

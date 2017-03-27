@@ -30,7 +30,7 @@ export default class VoteTableComponent extends React.Component {
     } else if (v === '-') {
       badgeText = oppositeDict(progressivePosition)
     } else if (v === 'NV') {
-      badgeText = 'Didn\'t vote'
+      badgeText = 'No vote'
     }
 
     return <span className={badgeClass}>{badgeText}</span>
@@ -71,7 +71,7 @@ export default class VoteTableComponent extends React.Component {
   renderRow (v, i) {
     return (
       <tr key={i}>
-        <td style={{ width: '30%' }} data-label='Bill'>
+        <td style={{ width: '30%' }}>
           <a href={v.url} target='_blank' className='font-weight-bold'>
             {v.title}
             <div>
@@ -82,7 +82,7 @@ export default class VoteTableComponent extends React.Component {
             </div>
           </a>
         </td>
-        <td style={{ width: '40%' }} data-label='Bill Description'>
+        <td style={{ width: '40%' }}>
           <p>
             {v.description}
           </p>

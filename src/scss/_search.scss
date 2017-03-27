@@ -14,3 +14,10 @@
     padding: 3rem 2rem;
   }
 }
+
+
+.search-form .btn-block {
+  @include media-breakpoint-up(md) {
+    font-size: 1.2rem;
+  }
+}
