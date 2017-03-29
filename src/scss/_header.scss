@@ -1,0 +1,23 @@
+
+
+header {
+  padding: 1rem 0 .5rem 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  @extend .heading-font;
+  z-index: 5;
+  position: relative;
+}
+
+.header__home-link {
+    color: $body-color;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+//yeah yeah i know its bad :P
+header nav ul li a {
+  font-weight: bold;
+  @extend .text-lg;
+}

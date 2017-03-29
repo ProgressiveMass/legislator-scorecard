@@ -24,6 +24,10 @@ label {
     font-size: .9rem;
 }
 
+button {
+  cursor: pointer
+}
+
 label {
     display: block;
 }
@@ -64,31 +68,6 @@ footer {
 }
 
 
-.header__home-link img {
-    width: 200px;
-    height: auto;
-
-    @include media-breakpoint-up(md) {
-      width: 320px;
-      margin-top: 1rem;
-      transform: scale(.5) translateX(-120px) translateY(-80px);
-      transition: transform .3s;
-    }
-}
-
-.header__home-link {
-  height: 150px;
-  display:inline-block;
-}
-.header__home-link--centered-large {
-  height: auto;
-}
-.header__home-link--centered-large  img {
-  @include media-breakpoint-up(md) {
-    transform: scale(1) translateX(calc(50vw - 160px));
-  }
-}
-
 .container {
     @include media-breakpoint-down(xs) {
         padding: 0 !important;
@@ -103,8 +82,10 @@ thead {
     background: #fff;
     @extend .label;
     width: 100%;
-    //why does this work ????
-    display: table;
+}
+.sticky thead {
+  //why does this work ????
+  display: table;
 }
 
 .tinted-background {
@@ -157,4 +138,27 @@ thead {
     }
     text-align: center;
   }
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+
+.background-text {
+  background-image: linear-gradient(to top, white 90%, transparent 90%, transparent);
+  display: inline;
+}
+
+.btn-icon {
+  background-color: #fff;
+  padding: 0;
+  margin-left: .5rem;
+  &:hover, &:focus {
+    background-color: fade-out(#000, .95);
+  }
+}
+
+.rotated {
+  transform: rotate(180deg);
+  display: block;
 }

@@ -186,7 +186,7 @@ $sizes: (
 
 $body-bg:       $white !default;
 // $body-color:    $gray-dark !default;
-$body-color:    mix($gray, $gray-dark);
+$body-color:    $gray-dark;
 
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;
@@ -219,14 +219,11 @@ $grid-breakpoints: (
 
 
 // Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
 $container-max-widths: (
   sm: 540px,
-  md: 800px,
-  lg: 1000px,
-  xl: 1200px
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
 ) !default;
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
@@ -380,7 +377,7 @@ $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $gray-dark !default;
 $btn-secondary-bg:               $white !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-border:           $gray-lighter !default;
 
 $btn-info-color:                 $white !default;
 $btn-info-bg:                    $brand-info !default;
@@ -862,7 +859,7 @@ $alert-danger-border:         $state-danger-border !default;
 $progress-height:               1.2rem;
 $progress-font-size:            .8rem;
 // $progress-bg:                   $gray-lighter !default;
-$progress-bg: fade-out($brand-danger, .4);
+$progress-bg: fade-out($brand-danger, .2);
 $progress-border-radius:        $border-radius !default;
 $progress-box-shadow:           0;
 $progress-bar-color:            $white !default;

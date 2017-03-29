@@ -1,0 +1,40 @@
+
+
+.full-height{
+  min-height: calc(100vh - 75px);
+}
+.landing__header--1{
+  position: relative;
+  background-image: linear-gradient(to bottom right, #0275d8, #276ae9);
+  color: white;
+  a {
+    color: white;
+  }
+  .btn-outline-secondary:hover {
+    background: fade-out(white, .9);
+  }
+  @include media-breakpoint-up(md) {
+
+    h1 {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+
+.landing__section--1 {
+  img {
+    width: 80%;
+    max-width: 110px;
+    margin:auto;
+    display: block;
+  }
+
+  .h4 {
+    margin: 1rem 0;
+  }
+
+  .white-floated {
+    height: 100%;
+  }
+}

@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-import Header from './HeaderComponent'
+import NavComponent from './NavComponent'
 import Footer from './FooterComponent'
 
-import RepresentativeSearch from './search/RepresentativeSearchComponent'
-import ResultsLayout from './results/ResultsLayoutComponent'
+import LandingLayout from './landing/LandingPageComponent'
+import ResultsLayout from './legislator/ResultsLayoutComponent'
+import AllLegislatorsLayout from './all-legislators/AllLegislatorsLayout'
 
 class App extends Component {
 
@@ -17,12 +18,15 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-        <Header key='header-component' />
-        <Switch>
-          <Route path='/my-legislators/:address' component={ResultsLayout} />
-          <Route path='/' component={RepresentativeSearch} />
-        </Switch>
+      <div className='d-flex flex-column'>
+        <NavComponent />
+        <div className='flex-grow'>
+          <Switch>
+            <Route path='/all-legislators' component={AllLegislatorsLayout} />
+            <Route path='/my-legislators/:address' component={ResultsLayout} />
+            <Route path='/' component={LandingLayout} />
+          </Switch>
+        </div>
         <Footer />
       </div>
     )

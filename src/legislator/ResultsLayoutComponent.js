@@ -81,10 +81,12 @@ export default class ResultsLayoutComponent extends React.Component {
     })
 
     return (
-      <Tabs items={tabItems}
-        showMore={false}
-        transform={false}
-      />
+      <div className='mt-5'>
+        <Tabs items={tabItems}
+          showMore={false}
+          transform={false}
+        />
+      </div>
     )
   }
 }

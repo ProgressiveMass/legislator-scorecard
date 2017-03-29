@@ -1,11 +1,9 @@
-.search-page {
-  padding-top: 1rem;
-  font-family: $headings-font-family;
-}
-
 
 .search-form {
+  margin:auto;
+  color: $body-color;
   @extend .white-floated;
+  box-shadow: 0;
   @include media-breakpoint-down(md) {
     padding: 2rem 1rem;
     margin-bottom: 3rem;
