@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 
 const Header = (props) => {
   return (<header>
-    <div className='container d-md-flex justify-content-between align-items-center'>
+    <div className='d-md-flex justify-content-between align-items-center'>
       <Link to='/' className='header__home-link d-flex'>
         <div>
           <img src={require('./img/inspection.svg')}

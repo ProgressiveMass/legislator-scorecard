@@ -62,6 +62,14 @@ footer {
     }
 }
 
+.metadata, .inverted-tabs, header > div {
+  max-width: map-get($container-max-widths, xl);
+  margin: auto;
+}
+
+ header > div  {
+   padding: 0 2rem;
+ }
 
 .text-lg {
     font-size: 1.3rem;

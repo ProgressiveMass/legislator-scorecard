@@ -104,7 +104,8 @@ class StateRepTable extends React.Component {
 
 StateRepTable.propTypes = {
   data : PropTypes.object.isRequired,
-  history: PropTypes.object.isRequired
+  history: PropTypes.object.isRequired,
+  chamber : PropTypes.string.isRequired
 }
 
 export default withRouter(StateRepTable)
