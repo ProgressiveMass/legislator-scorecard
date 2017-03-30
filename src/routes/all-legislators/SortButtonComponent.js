@@ -14,12 +14,12 @@ export default class SortButton extends React.Component {
 
     return (<button
       type='button'
-      className='btn btn-sm btn-icon'
+      className='btn btn-sm btn-icon text-left'
+      style={{ width: '100%' }}
       onClick={() => this.props.onClick(this.props.sort)}
       aria-label='sort'>
-      <span className={`${rotated ? 'rotated' : ''}`}>
-        {image}
-      </span>
+      <span className='label d-inline-block pr-3'>{this.props.title}</span>
+      <span className={`${rotated ? 'rotated' : ''}`}>{image}</span>
     </button>)
   }
 }
@@ -27,5 +27,6 @@ export default class SortButton extends React.Component {
 SortButton.propTypes = {
   sort : PropTypes.string.isRequired,
   currentSort : PropTypes.array.isRequired,
-  onClick : PropTypes.object.isRequired
+  onClick : PropTypes.object.isRequired,
+  title : PropTypes.string.isRequired
 }

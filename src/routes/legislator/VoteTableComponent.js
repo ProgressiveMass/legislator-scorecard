@@ -73,7 +73,7 @@ export default class VoteTableComponent extends React.Component {
       <tr key={i}>
         <td style={{ width: '30%' }}>
           <a href={v.url} target='_blank' className='font-weight-bold'>
-            <div className='text-muted font-weight-normal'>{v.number}</div>
+            <div className='text-muted'>{v.number}</div>
             {v.title}
             <div>
               <span className='sr-only'>Topics:</span>

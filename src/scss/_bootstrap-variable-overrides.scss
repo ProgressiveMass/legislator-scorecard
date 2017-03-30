@@ -859,7 +859,7 @@ $alert-danger-border:         $state-danger-border !default;
 $progress-height:               1.2rem;
 $progress-font-size:            .8rem;
 // $progress-bg:                   $gray-lighter !default;
-$progress-bg: fade-out($brand-danger, .2);
+$progress-bg: fade-out($brand-danger, .1);
 $progress-border-radius:        $border-radius !default;
 $progress-box-shadow:           0;
 $progress-bar-color:            $white !default;

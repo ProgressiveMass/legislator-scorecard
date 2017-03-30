@@ -15,7 +15,6 @@ const Header = (props) => {
           <div className='text-uppercase h6 mb-0' style={{ fontWeight: 'normal' }}>Progressive Massachusetts</div>
           <div className='h4'>Legislator Scorecard</div>
         </div>
-
       </Link>
 
       <nav className='float-right text-right'>

@@ -152,7 +152,6 @@ thead {
 .btn-icon {
   background-color: #fff;
   padding: .5rem .25rem;
-  margin-left: .5rem;
   &:hover, &:focus {
     background-color: fade-out(#000, .95);
   }
@@ -160,5 +159,9 @@ thead {
 
 .rotated {
   transform: rotate(180deg);
-  display: block;
+  display: inline-block;
+}
+
+.table-clickable-rows tr {
+  cursor: pointer;
 }

@@ -51,7 +51,7 @@ export default class CosponsorshipTable extends React.Component {
           <div>
             {this.createLink(c.number)
               ? <a href={this.createLink(c.number)} className='font-weight-bold'>
-                <div className='text-muted font-weight-normal'>{c.number}</div>
+                <div className='text-muted'>{c.number}</div>
                 {c.title}
               </a> : <span>{c.title}</span>
             }

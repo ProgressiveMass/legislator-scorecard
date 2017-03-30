@@ -1,8 +1,11 @@
 import React, { PropTypes } from 'react'
 import { Link } from 'react-router-dom'
-import SortButton from './SortButtonComponent'
+import { withRouter } from 'react-router'
 
-export default class StateRepTable extends React.Component {
+import SortButton from './SortButtonComponent'
+import ProgressBarComponent from './../legislator/ProgressBarComponent'
+
+class StateRepTable extends React.Component {
   constructor (props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)
@@ -16,17 +19,17 @@ export default class StateRepTable extends React.Component {
 
   renderRow (d, i) {
     return (
-      <tr>
+      <tr onClick={() => this.props.history.push(`/legislator/${d.id}`)}>
         <td>{i + 1}</td>
         <td><Link to={`/legislator/${d.id}`}><b>{d.name}</b></Link></td>
         <td>{d.party.slice(0, 1)}</td>
-        <td><b>{d.pm_vote_score ? d.pm_vote_score + '%' : 'N/A' }</b></td>
-        <td><Link to={`/legislator/${d.id}`} className='btn btn-sm btn-block btn-secondary'>
-          <img src={require('./../../img/inspection.svg')} alt='' style={{ maxWidth : '20px' }} />
-          &nbsp;Scorecard
-        </Link></td>
-
+        <td> {d.pm_vote_score
+          ? <ProgressBarComponent width={d.pm_vote_score} animate key={d.id + 'prog-bar'} />
+          : <b>N/A</b>
+        }
+        </td>
       </tr>
+
     )
   }
 
@@ -52,7 +55,7 @@ export default class StateRepTable extends React.Component {
         return (order === 'asc' ? -1 : 1)
       } else {
         // use rating as secondary sort
-        return b.pm_vote_score - a.pm_vote_score
+        return normalizeSortVal(b.pm_vote_score) - normalizeSortVal(a.pm_vote_score)
       }
     })
   }
@@ -72,20 +75,19 @@ export default class StateRepTable extends React.Component {
     const data = this.sortData(this.props.data)
 
     return (<div className='white-floated pt-5'>
-      <table className='table mx-auto table-hover' style={{ maxWidth : '750px' }}>
+      <table className='table mx-auto table-hover table-clickable-rows' style={{ maxWidth : '750px' }}>
         <thead>
           <tr>
             <th />
-            <th>Name
-              <SortButton onClick={this.setSort} sort='name' currentSort={this.state.sort} />
+            <th>
+              <SortButton onClick={this.setSort} sort='name' currentSort={this.state.sort} title='Name' />
             </th>
-            <th>Party
-              <SortButton onClick={this.setSort} sort='party' currentSort={this.state.sort} />
+            <th>
+              <SortButton onClick={this.setSort} sort='party' currentSort={this.state.sort} title='Party' />
             </th>
-            <th>Prog. Rating
-              <SortButton onClick={this.setSort} sort='pm_vote_score' currentSort={this.state.sort} />
+            <th>
+              <SortButton onClick={this.setSort} sort='pm_vote_score' currentSort={this.state.sort} title='Prog. Rating' />
             </th>
-            <th />
 
           </tr>
         </thead>
@@ -98,5 +100,8 @@ export default class StateRepTable extends React.Component {
 }
 
 StateRepTable.propTypes = {
-  data : PropTypes.object.isRequired
+  data : PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired
 }
+
+export default withRouter(StateRepTable)
