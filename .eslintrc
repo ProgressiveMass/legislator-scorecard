@@ -24,6 +24,5 @@
     "max-len"              : "off",
     "object-curly-spacing" : [2, "always"],
     "no-return-assign" : "off"
-
   }
 }

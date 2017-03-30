@@ -91,19 +91,20 @@ export default class CosponsorshipTable extends React.Component {
       <div className='table-container table--top-row-fixed'>
         <h4 className='sr-only'>Cosponsorship Record</h4>
         <StickyContainer>
-          <div className='row no-gutters'>
-            <div className='col-md-6 mt-4'>
+          <div className='row no-gutters explanatory-text'>
+            <div className='col-md-6 pr-3'>
               <p>
-                Every legislative session, Progressive Massachusetts <a href='https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/1011/attachments/original/1467977992/2016_06-30_Progressive_Platform_PDF.pdf?1467977992' target='_blank'>
-                  chooses a selection of bills as legislative priorities.
-                </a>
-              </p>
-              <p>
-              Legislators who cosponsor these bills express an important symbolic measure of support.
+                This session, almost 6,000 pieces of legislation have been filed. Only a few will even make it out of committee, let alone receive a vote.
+                Progressive Mass identifies a suite of bills, in several issue areas, to craft a Progressive Legislative Agenda. These are the bills that can make the most dramatic changes in real people’s lives.
               </p>
             </div>
 
-            {/* {this.renderSummary()} */}
+            <div className='col-md-6 pr-3'>
+              <p>
+                Co-Sponsoring legislation is one of the ways that a Legislator can help put momentum behind certain bills: consponsorship is one of the few signs we have for initial support. <br />
+                It’s not enough to push a bill through to passage&mdash;but it’s a first step, and we think every legislator should know you’re paying attention.
+              </p>
+            </div>
           </div>
 
           <table className='table table-responsive'>

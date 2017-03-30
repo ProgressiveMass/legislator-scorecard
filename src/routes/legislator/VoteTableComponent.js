@@ -115,17 +115,23 @@ export default class VoteTableComponent extends React.Component {
     return (
       <div className='table-container'>
         <h4 className='sr-only'>Voting Record</h4>
-        <div className='row no-gutters mt-4'>
-          <div className='col-md-6'>
-            <span className='label'>What makes a bill progressive?</span>
+
+        <div className='row explanatory-text no-gutters'>
+          <div className='col-md-6 pr-3'>
             <p>
-              To learn more about the methodology for rating legislation, <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>visit the Progressive Mass Legislative Scorecard homepage.</a>
+            Legislators are scored for their roll-called votes on bills and amendments where an important progressive advancement (or stopping a bad policy) is at stake. </p>
+
+          </div>
+          <div className='col-md-6 pr-3'>
+            <p>
+              Assessing a legislator’s record is a challenging proposition. <br />
+              <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>Find out the benefits and limitations of a scorecard here.</a>
             </p>
           </div>
         </div>
 
         <StickyContainer>
-          <table className='table table-responsive table--top-row-fixede'>
+          <table className='table table-responsive table--top-row-fixed'>
             <Sticky>
               <thead>
                 <tr>

@@ -9,8 +9,9 @@
 }
 
 .explanatory-text {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+  border: 2px solid $gray-lighter;
+  padding: 1rem;
+  margin: 2rem 0;
 }
 
 .votes-fw {
@@ -19,7 +20,6 @@
     text-align: right;
     margin-right: .1rem;
 }
-
 
 
 
