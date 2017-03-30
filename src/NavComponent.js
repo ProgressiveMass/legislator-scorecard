@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 
 const Header = (props) => {
   return (<header>
-    <div className='container d-flex justify-content-between align-items-center'>
+    <div className='container d-md-flex justify-content-between align-items-center'>
       <Link to='/' className='header__home-link d-flex'>
         <div>
           <img src={require('./img/inspection.svg')}
@@ -17,12 +17,10 @@ const Header = (props) => {
         </div>
       </Link>
 
-      <nav className='float-right text-right'>
-        <ul>
-          <li>
-            <Link to='/all-legislators'>Index of All MA Legislators</Link>
-          </li>
-        </ul>
+      <nav className='text-md-right mt-3 mt-md-0'>
+
+        <Link to='/all-legislators'>Index of All MA Legislators</Link>
+
       </nav>
     </div>
   </header>)

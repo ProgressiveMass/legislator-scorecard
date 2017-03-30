@@ -21,9 +21,12 @@ class StateRepTable extends React.Component {
     return (
       <tr onClick={() => this.props.history.push(`/legislator/${d.id}`)}>
         <td>{i + 1}</td>
-        <td><Link to={`/legislator/${d.id}`}><b>{d.name}</b></Link></td>
-        <td>{d.party.slice(0, 1)}</td>
-        <td> {d.pm_vote_score
+        <td data-label={this.props.chamber === 'upper' ? 'Senator' : 'Representative'}><Link to={`/legislator/${d.id}`}><b>{d.name}</b></Link></td>
+        <td data-label='Party'>{d.party.slice(0, 1)}</td>
+        <td
+          data-label='Progressive Rating'
+          style={{ verticalAlign : 'middle' }}>
+          {d.pm_vote_score
           ? <ProgressBarComponent width={d.pm_vote_score} animate key={d.id + 'prog-bar'} />
           : <b>N/A</b>
         }
