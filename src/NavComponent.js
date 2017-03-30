@@ -21,7 +21,7 @@ const Header = (props) => {
       <nav className='float-right text-right'>
         <ul>
           <li>
-            <Link to='all-legislators'>Index of All MA Legislators</Link>
+            <Link to='/all-legislators'>Index of All MA Legislators</Link>
           </li>
         </ul>
       </nav>

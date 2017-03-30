@@ -26,5 +26,6 @@ export default class LegislatorPageComponent extends React.Component {
 LegislatorPageComponent.propTypes = {
   legislator : PropTypes.object.isRequired,
   data : PropTypes.object.isRequired,
-  chamber : PropTypes.string.isRequired
+  chamber : PropTypes.string.isRequired,
+  rating : PropTypes.object.isRequired
 }

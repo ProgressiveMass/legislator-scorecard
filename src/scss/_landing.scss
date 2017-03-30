@@ -5,7 +5,7 @@
 }
 .landing__header--1{
   position: relative;
-  background-image: linear-gradient(to bottom right, #0275d8, #276ae9);
+  background-image: linear-gradient(to bottom right, lighten($brand-primary, 10%), #276ae9);
   color: white;
   a {
     color: white;

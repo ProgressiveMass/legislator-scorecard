@@ -53,5 +53,8 @@ export default class SenatorMetadataComponent extends React.Component {
 }
 
 SenatorMetadataComponent.propTypes = {
-  data : PropTypes.object.isRequired
+  data : PropTypes.object.isRequired,
+  chamber : PropTypes.string.isRequired,
+  legislatorName : PropTypes.string.isRequired,
+  rating : PropTypes.object.isRequired
 }

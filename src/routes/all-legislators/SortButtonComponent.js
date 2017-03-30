@@ -1,16 +1,13 @@
 import React, { PropTypes } from 'react'
 
 export default class SortButton extends React.Component {
-  constructor (props) {
-    super(props)
-  }
 
   render () {
     let image
     if (this.props.currentSort[0] === this.props.sort) {
-      image = <img src={require('./../img/sort-arrows-selected.svg')} alt='' style={{ maxWidth : '20px' }} />
+      image = <img src={require('./../../img/sort-arrows-selected.svg')} alt='' style={{ maxWidth : '16px' }} />
     } else {
-      image = <img src={require('./../img/sort-arrows-faded.svg')} alt='' style={{ maxWidth : '20px' }} />
+      image = <img src={require('./../../img/sort-arrows-faded.svg')} alt='' style={{ maxWidth : '16px' }} />
     }
 
     const rotated = (this.props.currentSort[0] === this.props.sort && this.props.currentSort[1] === 'desc')
@@ -28,4 +25,7 @@ export default class SortButton extends React.Component {
 }
 
 SortButton.propTypes = {
+  sort : PropTypes.string.isRequired,
+  currentSort : PropTypes.array.isRequired,
+  onClick : PropTypes.object.isRequired
 }

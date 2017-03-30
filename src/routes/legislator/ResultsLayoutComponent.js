@@ -50,27 +50,29 @@ export default class ResultsLayoutComponent extends React.Component {
   }
 
   render () {
-    if (!this.state.data) { return <LoadingComponent /> }
     if (this.state.error) { return <ErrorViewComponent error={this.state.error} /> }
+    if (!this.state.data) { return <LoadingComponent /> }
 
     const tabItems = [
       {
         title : 'Your House Rep',
-        component : (<LegislatorPageComponent
-          data={this.state.data.lower}
-          legislator={this.state.data.lower.legislator}
-          chamber='lower'
-          rating={this.state.data.lower.rating}
-                     />)
+        component : (
+          <LegislatorPageComponent
+            data={this.state.data.lower}
+            legislator={this.state.data.lower.legislator}
+            chamber='lower'
+            rating={this.state.data.lower.rating}
+            />)
       },
       {
         title : 'Your Senator',
-        component : (<LegislatorPageComponent
-          data={this.state.data.upper}
-          legislator={this.state.data.upper.legislator}
-          chamber='upper'
-          rating={this.state.data.upper.rating}
-                     />)
+        component : (
+          <LegislatorPageComponent
+            data={this.state.data.upper}
+            legislator={this.state.data.upper.legislator}
+            chamber='upper'
+            rating={this.state.data.upper.rating}
+          />)
       }
     ]
     .map((t) => {

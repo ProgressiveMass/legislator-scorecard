@@ -73,6 +73,7 @@ export default class VoteTableComponent extends React.Component {
       <tr key={i}>
         <td style={{ width: '30%' }}>
           <a href={v.url} target='_blank' className='font-weight-bold'>
+            <div className='text-muted font-weight-normal'>{v.number}</div>
             {v.title}
             <div>
               <span className='sr-only'>Topics:</span>
@@ -124,7 +125,7 @@ export default class VoteTableComponent extends React.Component {
         </div>
 
         <StickyContainer>
-          <table className='table table-responsive'>
+          <table className='table table-responsive table--top-row-fixede'>
             <Sticky>
               <thead>
                 <tr>
@@ -152,6 +153,7 @@ VoteTableComponent.propTypes = {
   data : PropTypes.array.isRequired,
   lastName : PropTypes.string.isRequired,
   voteRating : PropTypes.string.isRequired,
-  voteSummary : PropTypes.number.isRequired
+  voteSummary : PropTypes.number.isRequired,
+  legislatorName : PropTypes.string.isRequired
 
 }

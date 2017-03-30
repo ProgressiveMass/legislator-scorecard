@@ -1,9 +1,6 @@
 import React, { PropTypes } from 'react'
 
 export default class ProgressBar extends React.Component {
-  constructor (props) {
-    super(props)
-  }
 
   componentDidMount () {
     if (this.props.animate) {

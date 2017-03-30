@@ -77,4 +77,8 @@ export default class RatingComponent extends React.Component {
 }
 
 RatingComponent.propTypes = {
+  rating : PropTypes.object.isRequired,
+  chamber : PropTypes.string.isRequired,
+  legislatorName : PropTypes.string.isRequired
+
 }

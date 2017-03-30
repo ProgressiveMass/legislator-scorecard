@@ -12,7 +12,7 @@
       border-bottom: .4rem solid $brand-primary;
     }
 
-    &:not(.active):hover, &:not(.active):focus {
+    &:not(.active):not(disabled):hover, &:not(.active)::not(disabled):focus {
       border-bottom: .4rem solid fade-out($gray-lighter, .5);
     }
 }

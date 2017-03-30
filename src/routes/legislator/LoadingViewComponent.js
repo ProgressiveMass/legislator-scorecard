@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 
 const LoadingComponent = (props) => {
   return (<div className='loading blue-background d-flex align-items-center justify-content-center'>
@@ -8,6 +8,3 @@ const LoadingComponent = (props) => {
 }
 
 export default LoadingComponent
-
-LoadingComponent.propTypes = {
-}

@@ -13,7 +13,7 @@ export default class CosponsorshipTable extends React.Component {
     .props
     .data
     .cosponsorship
-    .filter((c) => c.yourLegislator == 'Y')
+    .filter((c) => c.yourLegislator === 'Y')
     .length
 
     return (
@@ -51,6 +51,7 @@ export default class CosponsorshipTable extends React.Component {
           <div>
             {this.createLink(c.number)
               ? <a href={this.createLink(c.number)} className='font-weight-bold'>
+                <div className='text-muted font-weight-normal'>{c.number}</div>
                 {c.title}
               </a> : <span>{c.title}</span>
             }
@@ -87,7 +88,7 @@ export default class CosponsorshipTable extends React.Component {
     }
 
     return (
-      <div className='table-container'>
+      <div className='table-container table--top-row-fixed'>
         <h4 className='sr-only'>Cosponsorship Record</h4>
         <StickyContainer>
           <div className='row no-gutters'>
@@ -131,5 +132,6 @@ export default class CosponsorshipTable extends React.Component {
 
 CosponsorshipTable.propTypes = {
   data : PropTypes.object.isRequired,
-  chamber : PropTypes.string.isRequired
+  chamber : PropTypes.string.isRequired,
+  legislatorName : PropTypes.string.isRequired
 }

@@ -1,3 +1,4 @@
+
 import React, { PropTypes } from 'react'
 import { withRouter } from 'react-router-dom'
 
@@ -38,7 +39,7 @@ class SearchMapComponent extends React.Component {
     .parallels([41 + 43 / 60, 42 + 41 / 60])
     .rotate([71 + 30 / 60, -41])
     .scale(13000)
-    .translate([width / 1.9, height / 1.1 ])
+    .translate([ width / 1.9, height / 1.1 ])
 
     map.selectAll('path')
       .data(mapData.features)

@@ -22,11 +22,14 @@ export default class TermLayout extends React.Component {
       e.preventDefault()
       this.setState({ active })
     }
+
+    const hasCosponsorship = this.props.data.cosponsorship && this.props.data.cosponsorship.length
     const cosponsorshipTab = (
       <li className='nav-item'>
-        <a className={`nav-link ${this.state.active === cosponsorship ? 'active' : ''}`}
+        <a className={`nav-link ${this.state.active === cosponsorship ? 'active' : ''} ${!hasCosponsorship ? 'disabled' : ''}`}
           href='#'
-          onClick={onTabClick('cosponsorship')}
+          onClick={hasCosponsorship ? onTabClick('cosponsorship') : null}
+          disabled={!hasCosponsorship}
         >
           Cosponsored Bills
         </a>
@@ -56,9 +59,7 @@ export default class TermLayout extends React.Component {
     return (
       <div className='white-floated'>
         <ul className='nav justify-content-center'>
-          {this.props.data.cosponsorship && this.props.data.cosponsorship.length
-            ? cosponsorshipTab : null
-          }
+          { cosponsorshipTab }
           {voteTab}
         </ul>
         <div>
@@ -70,4 +71,5 @@ export default class TermLayout extends React.Component {
 }
 
 TermLayout.propTypes = {
+  data : PropTypes.object.isRequired
 }

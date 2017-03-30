@@ -18,13 +18,13 @@ export default class StateRepTable extends React.Component {
     return (
       <tr>
         <td>{i + 1}</td>
-        <td><Link to='/'><b>{d.name}</b></Link></td>
+        <td><Link to={`/legislator/${d.id}`}><b>{d.name}</b></Link></td>
         <td>{d.party.slice(0, 1)}</td>
         <td><b>{d.pm_vote_score ? d.pm_vote_score + '%' : 'N/A' }</b></td>
-        <td><button className='btn btn-sm btn-block btn-secondary'>
-          <img src={require('./../img/inspection.svg')} alt='' style={{ maxWidth : '20px' }} />
+        <td><Link to={`/legislator/${d.id}`} className='btn btn-sm btn-block btn-secondary'>
+          <img src={require('./../../img/inspection.svg')} alt='' style={{ maxWidth : '20px' }} />
           &nbsp;Scorecard
-        </button></td>
+        </Link></td>
 
       </tr>
     )
@@ -71,8 +71,8 @@ export default class StateRepTable extends React.Component {
     // sort data
     const data = this.sortData(this.props.data)
 
-    return (<div className='white-floated'>
-      <table className='table mx-auto' style={{ maxWidth : '750px' }}>
+    return (<div className='white-floated pt-5'>
+      <table className='table mx-auto table-hover' style={{ maxWidth : '750px' }}>
         <thead>
           <tr>
             <th />
@@ -98,4 +98,5 @@ export default class StateRepTable extends React.Component {
 }
 
 StateRepTable.propTypes = {
+  data : PropTypes.object.isRequired
 }

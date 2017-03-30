@@ -83,7 +83,7 @@ thead {
     @extend .label;
     width: 100%;
 }
-.sticky thead {
+.table--top-row-fixed thead {
   //why does this work ????
   display: table;
 }
@@ -151,7 +151,7 @@ thead {
 
 .btn-icon {
   background-color: #fff;
-  padding: 0;
+  padding: .5rem .25rem;
   margin-left: .5rem;
   &:hover, &:focus {
     background-color: fade-out(#000, .95);

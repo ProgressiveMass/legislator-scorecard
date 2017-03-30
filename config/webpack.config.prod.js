@@ -44,7 +44,7 @@ const extractTextPluginOptions = shouldUseRelativeAssetPaths
 // The development configuration is different and lives in a separate file.
 module.exports = {
   // Don't attempt to continue if there are any errors.
-  bail: true,
+  bail: false,
   // We generate sourcemaps in production. This is slow but gives good results.
   // You can exclude the *.map files from the build during deployment.
   // devtool: 'source-map',
@@ -86,13 +86,13 @@ module.exports = {
   module: {
     // First, run the linter.
     // It's important to do this before Babel processes the JS.
-    // preLoaders: [
-    //   {
-    //     test: /\.(js|jsx)$/,
-    //     loader: 'eslint',
-    //     include: paths.appSrc
-    //   }
-    // ],
+    preLoaders: [
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'eslint',
+        include: paths.appSrc
+      }
+    ],
     loaders: [
       // ** ADDING/UPDATING LOADERS **
       // The "url" loader handles all assets unless explicitly excluded.
@@ -152,11 +152,11 @@ module.exports = {
       },
       // "file" loader for svg
       {
-        test: /\.svg$/,
-        loader: 'file',
-        query: {
-          name: 'static/media/[name].[hash:8].[ext]'
-        }
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "url" loader exclusion list.

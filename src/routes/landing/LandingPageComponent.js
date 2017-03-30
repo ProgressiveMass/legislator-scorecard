@@ -1,10 +1,7 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import SearchFormComponent from './search/SearchFormComponent'
 
 export default class LandingPageComponent extends React.Component {
-  constructor (props) {
-    super(props)
-  }
 
   render () {
     return (
@@ -27,16 +24,16 @@ export default class LandingPageComponent extends React.Component {
 
                 <div className='col-md-6 pb-3 landing__header__main'>
 
-                  <img src={require('./../img/cards.png')}
+                  <img src={require('./../../img/cards.png')}
                     alt='Progressive Massachusetts Legislator Report Card'
-                    className='img-fluid mx-auto mb-2 mt-md-3 d-block' style={{ maxWidth: '330px' }} />
+                    className='img-fluid mx-auto mb-2 mt-md-1 d-block' style={{ maxWidth: '330px' }} />
                   <p className='text-lg'>
                     <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachusetts</a> is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
                   </p>
 
                 </div>
 
-                <div className='col-md-6  blue-background pl-md-5 pt-lg-5'>
+                <div className='col-md-6  blue-background pl-md-5 pt-lg-3'>
                   <SearchFormComponent />
                 </div>
               </div>
@@ -53,7 +50,7 @@ export default class LandingPageComponent extends React.Component {
             <div className='row align-items-stretch pb-4'>
               <div className='col-md-4'>
                 <div className='white-floated p-3'>
-                  <img src={require('./../img/track-legislation.svg')} alt='chart symbol' />
+                  <img src={require('./../../img/track-legislation.svg')} alt='chart symbol' />
                   <h2 className='h4'>Track Legislation</h2>
                   <p>Progressive Mass provides summaries of important bills and follows their paths through the State House.</p>
                 </div>
@@ -61,7 +58,7 @@ export default class LandingPageComponent extends React.Component {
               </div>
               <div className='col-md-4'>
                 <div className='white-floated p-3'>
-                  <img src={require('./../img/learn-more.svg')} alt='person reading symbol' />
+                  <img src={require('./../../img/learn-more.svg')} alt='person reading symbol' />
 
                   <h2 className='h4'>Learn About Your Representatives</h2>
                   <p>By viewing which legislation your local representatives cosponsored and voted for or against, you can begin to understand their legislative priorities.</p>
@@ -69,7 +66,7 @@ export default class LandingPageComponent extends React.Component {
               </div>
               <div className='col-md-4'>
                 <div className='white-floated p-3'>
-                  <img src={require('./../img/take-action.svg')} alt='gear symbol' />
+                  <img src={require('./../../img/take-action.svg')} alt='gear symbol' />
 
                   <h2 className='h4'>Take Action <span className='h5 text-muted mb-3'> (Coming Soon)</span></h2>
                   <p>We're working to make it easier to take action based on the information in the scorecard.</p>
@@ -84,6 +81,3 @@ export default class LandingPageComponent extends React.Component {
   }
 
       }
-
-LandingPageComponent.propTypes = {
-}

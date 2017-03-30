@@ -1,3 +1,5 @@
+/* eslint-disable max- */
+
 import React from 'react'
 
 const Footer = (props) => {
@@ -23,10 +25,7 @@ const Footer = (props) => {
               Additional legislator information sourced from the <a href='http://docs.openstates.org/en/latest/api/' target='_blank'>Open States API</a>.
             </p>
             <p>
-              For questions and comments, contact
-              <address>
-                grassroots@progressivemass.com
-              </address>
+              For questions and comments, contact grassroots@progressivemass.com
             </p>
           </div>
         </div>
