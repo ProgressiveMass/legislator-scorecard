@@ -9,6 +9,10 @@
   border: 2px solid $gray-lighter;
   padding: 1rem;
   margin: 2rem 0;
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .votes-fw {

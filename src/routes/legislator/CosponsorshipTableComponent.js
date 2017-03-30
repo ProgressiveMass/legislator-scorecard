@@ -101,7 +101,7 @@ export default class CosponsorshipTable extends React.Component {
 
             <div className='col-md-6 pr-3'>
               <p>
-                Co-Sponsoring legislation is one of the ways that a Legislator can help put momentum behind certain bills: consponsorship is one of the few signs we have for initial support. <br />
+                Cosponsoring legislation is one of the ways that a Legislator can help put momentum behind certain bills: consponsorship is one of the few signs we have for initial support. <br />
                 It’s not enough to push a bill through to passage&mdash;but it’s a first step.
               </p>
             </div>
