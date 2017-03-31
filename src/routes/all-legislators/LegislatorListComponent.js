@@ -14,7 +14,8 @@ class StateRepTable extends React.Component {
   }
 
   state = {
-    sort : ['name', 'desc']
+    sort : ['name', 'desc'],
+    filter : ''
   }
 
   renderRow (d, i) {
@@ -73,31 +74,54 @@ class StateRepTable extends React.Component {
     }
   }
 
+  filterData (rows) {
+    const filterRegex = new RegExp('^' + this.state.filter.toLowerCase())
+    return rows.filter((r) => {
+      const names = r.name.split(',')
+      return names.filter((n) => {
+        return n.trim().toLowerCase().match(filterRegex)
+      }).length > 0
+    })
+  }
+
   render () {
     // sort data
-    const data = this.sortData(this.props.data)
+    const data = this.sortData(this.filterData(this.props.data))
 
     return (<div className='white-floated pt-5'>
-      <table className='table mx-auto table-hover table-clickable-rows' style={{ maxWidth : '750px' }}>
-        <thead>
-          <tr>
-            <th />
-            <th>
-              <SortButton onClick={this.setSort} sort='name' currentSort={this.state.sort} title='Name' />
-            </th>
-            <th>
-              <SortButton onClick={this.setSort} sort='party' currentSort={this.state.sort} title='Party' />
-            </th>
-            <th>
-              <SortButton onClick={this.setSort} sort='pm_vote_score' currentSort={this.state.sort} title='Prog. Rating' />
-            </th>
+      <div className='mx-auto' style={{ maxWidth : '750px' }}>
+        <div style={{ maxWidth : '300px' }}>
+          <label htmlFor='filterTable'>Filter:</label>
+          <input
+            type='text'
+            placeholder='type a name'
+            id='filterTable'
+            className='form-control'
+            onChange={(e) => { this.setState({ filter : e.target.value }) }}
+          />
+        </div>
+        <table className='table mx-auto table-hover table-clickable-rows'>
+          <thead>
+            <tr>
+              <th />
+              <th>
+                <SortButton onClick={this.setSort} sort='name' currentSort={this.state.sort} title='Name' />
+              </th>
+              <th>
+                <SortButton onClick={this.setSort} sort='party' currentSort={this.state.sort} title='Party' />
+              </th>
+              <th>
+                <SortButton onClick={this.setSort} sort='pm_vote_score' currentSort={this.state.sort} title='Prog. Rating' />
+              </th>
 
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(this.renderRow)}
-        </tbody>
-      </table>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map(this.renderRow)}
+          </tbody>
+        </table>
+      </div>
+
     </div>)
   }
 }

@@ -130,6 +130,8 @@ export default class VoteTableComponent extends React.Component {
           </div>
         </div>
 
+        <div />
+
         <StickyContainer>
           <table className='table table-responsive table--top-row-fixed'>
             <Sticky>
