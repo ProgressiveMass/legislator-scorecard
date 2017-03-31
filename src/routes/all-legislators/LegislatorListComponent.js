@@ -90,7 +90,7 @@ class StateRepTable extends React.Component {
 
     return (<div className='white-floated pt-5'>
       <div className='mx-auto' style={{ maxWidth : '750px' }}>
-        <div style={{ maxWidth : '300px' }}>
+        <div style={{ maxWidth : '300px' }} className='mb-4'>
           <label htmlFor='filterTable'>Filter:</label>
           <input
             type='text'
