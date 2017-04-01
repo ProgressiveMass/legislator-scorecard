@@ -138,6 +138,7 @@ export default class VoteTableComponent extends React.Component {
         <button
           className={`btn btn-sm badge ${badgeClass}`}
           style={{ fontSize : '.9rem' }}
+          aria-pressed={this.state.tagFilter === t ? 'true' : 'false'}
           onClick={() => this.toggleFilter(t)}
         >
           {tagMap[t].name}

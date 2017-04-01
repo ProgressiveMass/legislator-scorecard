@@ -12,9 +12,11 @@ export default class RatingComponent extends React.Component {
     return (
       <div>
         <p className='sr-only'>
-          Voted with the progressive position {this.props.rating.votes.legislator} percent of the time.
+          {`Voted with the progressive position ${this.props.rating.votes.legislator} percent of the time.`}
+          {`The average democrat progressive rating was ${this.props.rating.votes.cumulative.democratAverage} percent.`}
+          {`The average republican progressive rating was ${this.props.rating.votes.cumulative.republicanAverage} percent.`}
         </p>
-        <div>
+        <div aria-hidden>
           <span className='label' style={{ fontSize: '1.2rem' }}>
             {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
             {this.props.legislatorName}'s votes&nbsp;
@@ -22,7 +24,7 @@ export default class RatingComponent extends React.Component {
           </span>
           <ProgressBar width={this.props.rating.votes.legislator} animate large />
         </div>
-        <div className='d-flex'>
+        <div aria-hidden className='d-flex'>
           <div className='flex-grow mr-2'>
             <span className='label'>
               Avg {this.props.chamber === 'upper' ? 'Sen' : 'House'} Democrat:</span>

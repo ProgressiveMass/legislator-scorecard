@@ -21,14 +21,14 @@ class App extends Component {
     return (
       <div className='d-flex flex-column'>
         <NavComponent />
-        <div className='flex-grow'>
+        <main className='flex-grow'>
           <Switch>
             <Route path='/all-legislators' component={AllLegislatorsLayout} />
             <Route path='/my-legislators/:address' component={ResultsLayout} />
             <Route path='/legislator/:id' component={SingleLegislatorLayout} />
             <Route path='/' component={LandingLayout} />
           </Switch>
-        </div>
+        </main>
         <Footer />
       </div>
     )

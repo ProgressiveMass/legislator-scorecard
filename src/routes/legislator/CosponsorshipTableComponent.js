@@ -100,6 +100,7 @@ export default class CosponsorshipTable extends React.Component {
         <button
           className={`btn btn-sm badge ${badgeClass}`}
           style={{ fontSize : '.9rem' }}
+          aria-pressed={this.state.tagFilter === t ? 'true' : 'false'}
           onClick={() => this.toggleFilter(t)}
         >
           {tagMap[t].name}
@@ -132,7 +133,7 @@ export default class CosponsorshipTable extends React.Component {
 
     return (
       <div className='table-container table--top-row-fixed'>
-        <h4 className='sr-only'>Cosponsorship Record</h4>
+        <h4 className='sr-only'>Cosponsored Bills</h4>
         <StickyContainer>
           <div className='row no-gutters explanatory-text'>
             <div className='col-md-6 pr-5'>

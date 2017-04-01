@@ -28,6 +28,7 @@ export default class TermLayout extends React.Component {
       <li className='nav-item'>
         <a className={`nav-link ${this.state.active === cosponsorship ? 'active' : ''} ${!hasCosponsorship ? 'disabled' : ''}`}
           href='#'
+          aria-current={this.state.active === cosponsorship ? 'page' : false}
           onClick={hasCosponsorship ? onTabClick('cosponsorship') : null}
           disabled={!hasCosponsorship}
         >
@@ -39,6 +40,7 @@ export default class TermLayout extends React.Component {
     const voteTab = (
       <li className='nav-item'>
         <a className={`nav-link ${this.state.active === votes ? 'active' : ''}`}
+          aria-current={this.state.active === votes ? 'page' : false}
           href='#'
           onClick={onTabClick('votes')}
         >
