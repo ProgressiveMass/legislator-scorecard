@@ -1,15 +1,4 @@
 
-.module-container {
-   max-width: map-get($container-max-widths, xl);
-   margin:auto;
-   padding: 0;
-}
-
-.module-container--padded {
-  padding: 1rem 2rem;
-}
-
-
 .nav-link {
     font-family: $headings-font-family;
     position: relative;

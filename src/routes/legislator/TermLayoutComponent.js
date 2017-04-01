@@ -57,7 +57,7 @@ export default class TermLayout extends React.Component {
                       />
     }
     return (
-      <div className='white-floated'>
+      <div className='white-floated mb-4'>
         <ul className='nav justify-content-center'>
           { cosponsorshipTab }
           {voteTab}

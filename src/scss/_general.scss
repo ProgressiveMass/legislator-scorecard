@@ -14,7 +14,29 @@ h6 {
 }
 
 .flex-grow {
-  flex-grow: 1;
+    flex-grow: 1;
+}
+
+.module-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include media-breakpoint-up(md) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    max-width: map-get($grid-breakpoints, xl);
+    margin: auto;
+}
+
+.module-container--padded {
+    @include media-breakpoint-up(xl) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 .label,
@@ -25,7 +47,7 @@ label {
 }
 
 button {
-  cursor: pointer
+    cursor: pointer;
 }
 
 label {
@@ -48,20 +70,20 @@ footer {
     @extend .clearfix;
     background-color: #e6eaf3;
     font-size: 1rem;
+
     a {
         font-weight: bold;
     }
 
     img {
-      max-height: 100px;
-      max-width: 100%;
+        max-height: 100px;
+        max-width: 100%;
     }
 }
 
 .text-lg {
     font-size: 1.3rem;
 }
-
 
 .font-weight-light {
     font-weight: 300 !important;
@@ -72,17 +94,16 @@ thead {
     @extend .label;
     width: 100%;
 }
+
 .table--top-row-fixed thead {
-  //why does this work ????
-  display: table;
+    //why does this work ????
+    display: table;
 }
 
 .tinted-background {
     background-color: $gray-lighter;
-    padding: .5rem;
-    @include media-breakpoint-up(md) {
-        padding: 2rem;
-    }
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .heading-font {
@@ -105,52 +126,54 @@ thead {
 }
 @keyframes pulse_animation {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
 
     100% {
-      opacity: .5;
+        opacity: .5;
     }
 }
 
 .loading {
-  min-height: 50vh;
-  @include media-breakpoint-up(md) {
-    h1 {
-        font-size: 6rem;
-        animation-name: pulse_animation;
-        animation-duration: 1.5s;
-        transform-origin: 50% 50%;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-direction: alternate;
+    min-height: 50vh;
+    @include media-breakpoint-up(md) {
+        h1 {
+            font-size: 6rem;
+            animation-name: pulse_animation;
+            animation-duration: 1.5s;
+            transform-origin: 50% 50%;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        text-align: center;
     }
-    text-align: center;
-  }
 }
 
 .text-xl {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .background-text {
-  background-image: linear-gradient(to top, white 90%, transparent 90%, transparent);
-  display: inline;
+    background-image: linear-gradient(to top, white 90%, transparent 90%, transparent);
+    display: inline;
 }
 
 .btn-icon {
-  background-color: #fff;
-  padding: .5rem .25rem;
-  &:hover, &:focus {
-    background-color: fade-out(#000, .95);
-  }
+    background-color: #fff;
+    padding: .5rem .25rem;
+
+    &:focus,
+    &:hover {
+        background-color: fade-out(#000, .95);
+    }
 }
 
 .rotated {
-  transform: rotate(180deg);
-  display: inline-block;
+    transform: rotate(180deg);
+    display: inline-block;
 }
 
 .table-clickable-rows tr {
-  cursor: pointer;
+    cursor: pointer;
 }

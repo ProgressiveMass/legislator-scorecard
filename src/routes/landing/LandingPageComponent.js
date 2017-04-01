@@ -11,7 +11,7 @@ export default class LandingPageComponent extends React.Component {
 
           <div className='heading-font landing__header--1 pb-3'>
 
-            <div className='container-fluid'>
+            <div className='module-container'>
               <div className='row'>
                 <div className='col-sm-12'>
                   <h1 className='pt-5 pb-3'>
@@ -41,22 +41,22 @@ export default class LandingPageComponent extends React.Component {
           </div>
         </div>
         <div className='landing__section--1 tinted-background'>
-          <div className='container-fluid'>
+          <div className='module-container'>
             <div className='row'>
               <div className='col-sm-12'>
                 <h2 className='h1 pt-3 pb-5'>The Legislator Scorecard can help you...</h2>
               </div>
             </div>
             <div className='row align-items-stretch pb-4'>
-              <div className='col-md-4'>
-                <div className='white-floated p-3'>
+              <div className='col-md-4 mb-3 mb-md-0'>
+                <div className='white-floated p-3 mb-3 mb-md-0'>
                   <img src={require('./../../img/track-legislation.svg')} alt='chart symbol' />
                   <h2 className='h4'>Track Legislation</h2>
                   <p>Progressive Mass provides summaries of important bills and follows their paths through the State House.</p>
                 </div>
 
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 mb-3 mb-md-0'>
                 <div className='white-floated p-3'>
                   <img src={require('./../../img/learn-more.svg')} alt='person reading symbol' />
 

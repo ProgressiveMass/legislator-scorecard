@@ -30,7 +30,7 @@ export default class AllLegislators extends React.Component {
 
     return (
       <div className='tinted-background'>
-        <div className='mt-5 pt-3 inverted-tabs'>
+        <div className='mt-4 inverted-tabs'>
           <Tabs items={tabItems}
             showMore={false}
             transform={false}
