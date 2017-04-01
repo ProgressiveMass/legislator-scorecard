@@ -9,9 +9,9 @@ export default class LandingPageComponent extends React.Component {
 
         <div className='landing__header'>
 
-          <div className='heading-font landing__header--1'>
+          <div className='heading-font landing__header--1 pb-3'>
 
-            <div className='container'>
+            <div className='container-fluid'>
               <div className='row'>
                 <div className='col-sm-12'>
                   <h1 className='pt-5 pb-3'>
@@ -41,7 +41,7 @@ export default class LandingPageComponent extends React.Component {
           </div>
         </div>
         <div className='landing__section--1 tinted-background'>
-          <div className='container'>
+          <div className='container-fluid'>
             <div className='row'>
               <div className='col-sm-12'>
                 <h2 className='h1 pt-3 pb-5'>The Legislator Scorecard can help you...</h2>

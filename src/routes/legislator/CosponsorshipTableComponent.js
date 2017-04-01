@@ -9,6 +9,7 @@ export default class CosponsorshipTable extends React.Component {
     this.renderRow = this.renderRow.bind(this)
     this.renderSummary = this.renderSummary.bind(this)
     this.toggleFilter = this.toggleFilter.bind(this)
+    this.filterRows = this.filterRows.bind(this)
 
     this.state = {
       tagFilter : ''
@@ -40,17 +41,6 @@ export default class CosponsorshipTable extends React.Component {
     }
   }
 
-  createLink (billNumber) {
-    const linkBase = 'https://malegislature.gov/Bills/190/'
-    if (billNumber.match(/S\s*D\s*.*/)) {
-      return linkBase + billNumber.match(/S\s*D\s*.*/)[0].replace(' ', '')
-    } else if (billNumber.match(/H\s*D\s*.*/)) {
-      return linkBase + billNumber.match(/H\s*D\s*.*/)[0].replace(' ', '')
-    } else {
-      return null
-    }
-  }
-
   renderRow (c, i) {
     const tags = c.tags.map((t) => {
       return <button
@@ -62,23 +52,20 @@ export default class CosponsorshipTable extends React.Component {
     })
 
     return (
-      <tr key={i}>
+      <tr key={c.finalNumber}>
         <td className='text-muted' style={{ width: '15%' }}>
-          <small className=' font-weight-bold'>
-            {c.number}
-          </small>
+          <div className='font-weight-bold'>
+            {c.finalNumber}
+          </div>
           <div>
             { tags }
           </div>
         </td>
         <td style={{ width: '30%' }}>
           <div>
-            {this.createLink(c.number)
-              ? <a href={this.createLink(c.number)} className='font-weight-bold' target='_blank'>
-                {c.title}
-              </a>
-              : <span>{c.title}</span>
-            }
+            <a href={c.url} className='font-weight-bold' target='_blank'>
+              {c.title}
+            </a>
           </div>
         </td>
         <td style={{ width: '40%' }} data-label=''>
@@ -112,7 +99,7 @@ export default class CosponsorshipTable extends React.Component {
       return <li className='mr-1'>
         <button
           className={`btn btn-sm badge ${badgeClass}`}
-          style={{ fontSize : '1rem' }}
+          style={{ fontSize : '.9rem' }}
           onClick={() => this.toggleFilter(t)}
         >
           {tagMap[t].name}
@@ -151,19 +138,19 @@ export default class CosponsorshipTable extends React.Component {
             <div className='col-md-6 pr-5'>
               <p>
                 This session, almost 6,000 pieces of legislation have been filed. Only a few will even make it out of committee, let alone receive a vote.
-                Progressive Mass identifies a suite of bills, in several issue areas, to craft a Progressive Legislative Agenda. These are the bills that can make the most dramatic changes in real people’s lives.
+                Progressive Mass identifies a suite of bills, in several issue areas, to craft a <a href='http://www.progressivemass.com/190legislativeagenda' target='_blank' >Progressive Legislative Agenda</a>. These are the bills that can make the most dramatic changes in real people’s lives.
               </p>
             </div>
 
             <div className='col-md-6 pr-5'>
               <p>
-                Cosponsoring legislation is one of the ways that a Legislator can help put momentum behind certain bills: consponsorship is one of the few signs we have for initial support. <br />
+                Cosponsoring legislation is one of the ways that a legislator can help put momentum behind certain bills: consponsorship is one of the few signs we have for initial support. <br />
                 It’s not enough to push a bill through to passage&mdash;but it’s a first step.
               </p>
             </div>
           </div>
 
-          <div className='mb-4'>
+          <div className='mb-3 pt-4'>
             <span className='label d-md-inline-block mr-3'>Filter Bills By Topic:</span>
             <ul className='d-sm-inline-flex list-unstyled'>
               { this.renderTagFilters(tags) }

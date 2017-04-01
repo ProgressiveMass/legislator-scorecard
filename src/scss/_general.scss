@@ -58,21 +58,10 @@ footer {
     }
 }
 
-.metadata, .inverted-tabs, header > div {
-  max-width: map-get($container-max-widths, xl);
-  margin: auto;
-}
-
 .text-lg {
     font-size: 1.3rem;
 }
 
-
-.container {
-    @include media-breakpoint-down(xs) {
-        padding: 0 !important;
-    }
-}
 
 .font-weight-light {
     font-weight: 300 !important;

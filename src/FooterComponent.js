@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = (props) => {
   return (<footer>
-    <div className='container'>
+    <div className='module-container'>
       <div className='row align-items-top no-gutters py-5'>
         <div className='col-sm-12 p-3 p-md-0'>
           <a href='http://www.progressivemass.com/'>

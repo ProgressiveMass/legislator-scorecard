@@ -1,10 +1,18 @@
 import React, { PropTypes } from 'react'
 import { StickyContainer, Sticky } from 'react-sticky'
 
+import tagMap from './tagMap'
+
 export default class VoteTableComponent extends React.Component {
   constructor (props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)
+    this.toggleFilter = this.toggleFilter.bind(this)
+    this.filterRows = this.filterRows.bind(this)
+
+    this.state = {
+      tagFilter : ''
+    }
   }
 
   renderLegislatorVote (v, progressivePosition) {
@@ -69,16 +77,31 @@ export default class VoteTableComponent extends React.Component {
   }
 
   renderRow (v, i) {
+    const tags = v.tags.map((t) => {
+      return <button
+        className={`btn badge ${tagMap[t].badge}`}
+        onClick={() => { this.toggleFilter(t) }}
+             >
+        {tagMap[t].name}
+      </button>
+    })
+
     return (
       <tr key={i}>
-        <td style={{ width: '30%' }}>
+        <td style={{ width: '15%' }}>
+          <div className='text-muted font-weight-bold'>{v.number}</div>
+          <div>
+            {tags}
+
+          </div>
+        </td>
+        <td style={{ width: '25%' }}>
           <a href={v.url} target='_blank' className='font-weight-bold'>
-            <div className='text-muted'>{v.number}</div>
             {v.title}
             <div />
           </a>
         </td>
-        <td style={{ width: '40%' }}>
+        <td style={{ width: '35%' }}>
           <p>
             {v.description}
           </p>
@@ -87,23 +110,67 @@ export default class VoteTableComponent extends React.Component {
             <span className='badge badge-primary'>{v.progressivePosition}</span>
           </p>
         </td>
-        <td style={{ width: '15%' }} data-label={`${this.props.legislatorName}'s Vote`}>
+        <td style={{ width: '12.5%' }} data-label={`${this.props.legislatorName}'s Vote`}>
           {this.renderLegislatorVote(v.yourLegislator, v.progressivePosition)}
         </td>
-        <td style={{ width: '15%' }} data-label='Total Votes'>
+        <td style={{ width: '12.5%' }} data-label='Total Votes'>
           {this.renderCumulativeVote(v.yesVotes, v.noVotes, v.progressivePosition)}
         </td>
       </tr>
     )
   }
 
+  toggleFilter (t) {
+    if (this.state.tagFilter === t) {
+      this.setState({ tagFilter : '' })
+    } else {
+      this.setState({ tagFilter : t })
+    }
+  }
+
+  renderTagFilters (tags) {
+    return tags.map((t) => {
+      let badgeClass = 'badge-default'
+      if (!this.state.tagFilter || this.state.tagFilter === t) {
+        badgeClass = tagMap[t].badge
+      }
+      return <li className='mr-1'>
+        <button
+          className={`btn btn-sm badge ${badgeClass}`}
+          style={{ fontSize : '.9rem' }}
+          onClick={() => this.toggleFilter(t)}
+        >
+          {tagMap[t].name}
+
+        </button>
+      </li>
+    })
+  }
+
+  filterRows (data) {
+    if (!this.state.tagFilter) {
+      return data
+    } else {
+      return data.filter((d) => {
+        return d.tags.indexOf(this.state.tagFilter) > -1
+      })
+    }
+  }
+
   render () {
-    const votes = this.props.data.votes
+    const votes = this.filterRows(this.props.data.votes)
+    const tags = [...(new Set([].concat.apply([], this.props.data.votes.map((c) => c.tags))))]
+
     if (!votes || votes.length === 0) {
       return <div className='table-container text-center'>
-        <div style={{ paddingTop : '7rem' }}>
-          <h3>This Data Isn't Available Yet.</h3>
-          <p className='lead'>Please check back later.</p>
+        <div style={{ padding : '5rem 0' }}>
+          <h3>This Data Isn't Available Yet!</h3>
+          <p className='lead'>
+            Final scorecards are released at the end of the session. <br />
+            Mid-session updates will come out in January/February 2018.
+
+          </p>
+
         </div>
       </div>
     }
@@ -125,17 +192,23 @@ export default class VoteTableComponent extends React.Component {
           </div>
         </div>
 
-        <div />
+        <div className='mb-4 pt-4'>
+          <span className='label d-md-inline-block mr-3'>Filter Bills By Topic:</span>
+          <ul className='d-sm-inline-flex list-unstyled'>
+            { this.renderTagFilters(tags) }
+          </ul>
+        </div>
 
         <StickyContainer>
           <table className='table table-responsive table--top-row-fixed'>
             <Sticky>
               <thead>
                 <tr>
-                  <th style={{ width: '30%' }}>Bill</th>
-                  <th style={{ width: '40%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachusetts</a></th>
-                  <th style={{ width: '15%' }}>{this.props.legislatorName}'s Vote</th>
-                  <th style={{ width: '15%' }}>Vote Tally</th>
+                  <th style={{ width: '15%' }}>Bill</th>
+                  <th style={{ width: '25%' }}>Name</th>
+                  <th style={{ width: '35%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachusetts</a></th>
+                  <th style={{ width: '12.5%' }}>{this.props.legislatorName}'s Vote</th>
+                  <th style={{ width: '12.5%' }}>Vote Tally</th>
                 </tr>
               </thead>
             </Sticky>

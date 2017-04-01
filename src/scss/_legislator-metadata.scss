@@ -1,10 +1,11 @@
 .metadata {
-  @include media-breakpoint-down(xs) {
-    margin-bottom: 2rem;
-  }
+  @extend .module-container;
   @extend .white-floated;
   margin-top: 2rem;
   margin-bottom: 4rem;
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 2rem;
+  }
   font-family: $headings-font-family;
   position: relative;
 }

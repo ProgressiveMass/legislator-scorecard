@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: nowrap;
 }
+
 .RRT__panel {
     margin-top: 0;
     padding: 0;
@@ -20,8 +21,8 @@
     flex-grow: 1;
     text-align: center;
     @include media-breakpoint-up(sm) {
-      font-size: 1.5rem;
-      padding: 1rem 2rem;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
     }
 }
 
@@ -55,6 +56,7 @@
 // }
 
 .inverted-tabs {
+   @extend .module-container;
     .RRT__tab--selected {
         background: $white;
     }
