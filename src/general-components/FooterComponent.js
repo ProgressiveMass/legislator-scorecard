@@ -8,7 +8,7 @@ const Footer = (props) => {
       <div className='row align-items-top no-gutters py-5'>
         <div className='col-sm-12 p-3 p-md-0'>
           <a href='http://www.progressivemass.com/'>
-            <img src={require('./img/progressive-mass-logo.png')}
+            <img src={require('./../img/progressive-mass-logo.png')}
               alt='Progressive Massachusetts Logo'
             />
           </a>

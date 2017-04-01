@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-import NavComponent from './NavComponent'
-import Footer from './FooterComponent'
+import NavComponent from './general-components/NavComponent'
+import Footer from './general-components/FooterComponent'
 
 import LandingLayout from './routes/landing/LandingPageComponent'
 import ResultsLayout from './routes/legislator/ResultsLayoutComponent'

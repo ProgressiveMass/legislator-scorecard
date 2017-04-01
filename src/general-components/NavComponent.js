@@ -6,7 +6,7 @@ const Header = (props) => {
     <div className='module-container py-3 d-md-flex justify-content-between align-items-center'>
       <Link to='/' className='header__home-link d-flex align-items-center'>
         <div>
-          <img src={require('./img/logo.svg')}
+          <img src={require('./../img/logo.svg')}
             alt='logo image of an inspection sheet'
             style={{ width: '35px', marginRight: '.5rem' }}
           />
