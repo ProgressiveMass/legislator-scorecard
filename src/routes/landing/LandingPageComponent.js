@@ -13,20 +13,21 @@ export default class LandingPageComponent extends React.Component {
 
             <div className='module-container'>
 
-              <div className='row align-items-center' style={{ minHeight : '85vh' }}>
-                <div className='col-md-6'>
-                  <h1 style={{ fontSize: '3.6rem' }}>
+              <div className='row no-gutters align-items-center' style={{ minHeight : '85vh' }}>
+                <div className='col-md-6 py-5 py-md-0'>
+                  <h1>
                     Are your Massachusetts representatives
                     fighting for your progressive values?
                   </h1>
                 </div>
 
                 <div className='col-md-6  blue-background pl-md-5 pt-lg-3'>
-                  <div className='header__home-link d-flex align-items-center mx-auto mb-4' style={{ color : 'white', width : '343px' }}>
-                    <div>
+                  <div className='header__home-link d-flex align-items-center mx-auto mb-4' style={{ color : 'white', width : '350px' }}>
+                    <div className='pr-3'>
                       <img src={require('./../../img/logo.svg')}
                         alt='logo image of an inspection sheet'
-                        style={{ width: '45px', marginRight: '.5rem' }}
+                        className='img-fluid'
+                        style={{ width: '45px' }}
                       />
                     </div>
                     <div>
@@ -40,13 +41,13 @@ export default class LandingPageComponent extends React.Component {
             </div>
           </div>
         </div>
-        <div className='row no-gutters align-items-center'>
+        <div className='module-container row no-gutters align-items-center'>
 
           <div className='col-md-4 offset-md-2 pb-3 landing__section--1'>
 
             <img src={require('./../../img/cards.png')}
               alt='Progressive Massachusetts Legislator Report Card'
-              className='img-fluid mx-auto mb-2 mt-md-1' style={{ maxWidth: '330px' }} />
+              className='img-fluid mx-auto mb-2 mt-md-1' />
           </div>
           <div className='col-md-4'>
             <p className='text-lg'>

@@ -4,6 +4,20 @@
   min-height: calc(100vh - 75px);
 }
 .landing__header--1{
+
+  h1 {
+    font-size: 2rem;
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+      text-align: left;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 3.5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 4.2rem;
+    }
+  }
   position: relative;
   background-image: linear-gradient(to bottom right, fade-out($gray-dark, .06), fade-out(darken($gray-dark, 10%), .05)), url('./../img/dome.jpg');
   background-size: cover;
@@ -13,12 +27,6 @@
   }
   .btn-outline-secondary:hover {
     background: fade-out(white, .9);
-  }
-  @include media-breakpoint-up(md) {
-
-    h1 {
-      font-size: 2.7rem;
-    }
   }
 }
 
