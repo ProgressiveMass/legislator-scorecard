@@ -1,7 +1,7 @@
 .metadata {
   @extend .white-floated;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   @include media-breakpoint-down(xs) {
     margin-bottom: 2rem;
   }
