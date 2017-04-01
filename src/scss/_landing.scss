@@ -5,7 +5,8 @@
 }
 .landing__header--1{
   position: relative;
-  background-image: linear-gradient(to bottom right, #276ae9, lighten($brand-primary, 12%));
+  background-image: linear-gradient(to bottom right, fade-out($gray-dark, .06), fade-out(darken($gray-dark, 10%), .05)), url('./../img/dome.jpg');
+  background-size: cover;
   color: white;
   a {
     color: white;
@@ -21,8 +22,13 @@
   }
 }
 
-
 .landing__section--1 {
+  padding: 3rem 0;
+}
+
+.landing__section--2 {
+  @extend .tinted-background;
+
   img {
     width: 80%;
     max-width: 110px;

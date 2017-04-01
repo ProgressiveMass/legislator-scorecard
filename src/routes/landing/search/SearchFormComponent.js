@@ -26,7 +26,6 @@ class SearchFormComponent extends React.Component {
   render () {
     return (
       <div className='search-form mb-5'>
-        <h2 className='h3 mb-4'>Search the Legislator Scorecard</h2>
         <form onSubmit={this.onFormSubmit} >
 
           <div>

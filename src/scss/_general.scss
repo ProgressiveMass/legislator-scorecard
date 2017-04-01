@@ -68,12 +68,8 @@ ul {
 
 footer {
     @extend .clearfix;
-    background-color: #e6eaf3;
-    font-size: 1rem;
-
-    a {
-        font-weight: bold;
-    }
+    background: darken($gray-lighter, 5%);
+    font-size: 1.1rem;
 
     img {
         max-height: 100px;
