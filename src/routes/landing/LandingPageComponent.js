@@ -22,7 +22,9 @@ export default class LandingPageComponent extends React.Component {
                 </div>
 
                 <div className='col-md-6  blue-background pl-md-5 pt-lg-3'>
-                  <div className='header__home-link d-flex align-items-center mx-auto mb-4' style={{ color : 'white', width : '350px' }}>
+                  <div className='header__home-link d-flex align-items-center mx-auto mb-4 hidden-sm-down'
+                    style={{ color : 'white', width : '350px' }}
+                  >
                     <div className='pr-3'>
                       <img src={require('./../../img/logo.svg')}
                         alt='logo image of an inspection sheet'
@@ -43,14 +45,14 @@ export default class LandingPageComponent extends React.Component {
         </div>
         <div className='module-container row no-gutters align-items-center'>
 
-          <div className='col-md-4 offset-md-2 pb-3 landing__section--1'>
+          <div className='col-md-4 offset-md-2 landing__section--1 pr-md-3'>
 
             <img src={require('./../../img/cards.png')}
               alt='Progressive Massachusetts Legislator Report Card'
-              className='img-fluid mx-auto mb-2 mt-md-1' />
+              className='img-fluid mx-auto' />
           </div>
-          <div className='col-md-4'>
-            <p className='text-lg'>
+          <div className='col-md-4 mb-5 mb-md-0'>
+            <p>
               <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachusetts</a> is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
             </p>
           </div>
@@ -60,7 +62,7 @@ export default class LandingPageComponent extends React.Component {
           <div className='module-container'>
             <div className='row'>
               <div className='col-sm-12'>
-                <h2 className='h1 py-5 mb-0'>The Legislator Scorecard can help you...</h2>
+                <h1 className='h1 py-5 mb-0'>The Legislator Scorecard can help you:</h1>
               </div>
             </div>
             <div className='row align-items-stretch pb-4'>
@@ -70,7 +72,7 @@ export default class LandingPageComponent extends React.Component {
                     alt='track legislation symbol'
                     style={{ width: '100px' }}
                   />
-                  <h2 className='h4'>Track Legislation</h2>
+                  <h2 className='h5'>Track Legislation</h2>
                   <p>Progressive Mass provides summaries of important bills and follows their paths through the State House.</p>
                 </div>
 
@@ -82,7 +84,7 @@ export default class LandingPageComponent extends React.Component {
                     style={{ width: '100px' }}
                   />
 
-                  <h2 className='h4'>Learn About Your Representatives</h2>
+                  <h2 className='h5'>Learn About Your Representatives</h2>
                   <p>By viewing which legislation your local representatives cosponsored and voted for or against, you can begin to understand their legislative priorities.</p>
                 </div>
               </div>
@@ -92,7 +94,7 @@ export default class LandingPageComponent extends React.Component {
                     alt='take action symbol'
                     style={{ width: '100px' }}
                   />
-                  <h2 className='h4'>Take Action <span className='h5 text-muted mb-3'> (Coming Soon)</span></h2>
+                  <h2 className='h5'>Take Action <span className='h5 text-muted mb-3'> (Coming Soon)</span></h2>
                   <p>We're working to make it easier to take action based on the information in the scorecard.</p>
                 </div>
               </div>

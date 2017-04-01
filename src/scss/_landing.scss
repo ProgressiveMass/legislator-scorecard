@@ -37,6 +37,13 @@
 .landing__section--2 {
   @extend .tinted-background;
 
+  h1 {
+    font-size : 1.5rem;
+    @include media-breakpoint-up(md) {
+      font-size: 2.5rem;
+    }
+  }
+
   img {
     width: 80%;
     max-width: 110px;

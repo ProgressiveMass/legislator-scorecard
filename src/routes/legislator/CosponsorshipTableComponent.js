@@ -96,7 +96,7 @@ export default class CosponsorshipTable extends React.Component {
       if (!this.state.tagFilter || this.state.tagFilter === t) {
         badgeClass = tagMap[t].badge
       }
-      return <li className='mr-1'>
+      return <li className='mr-1 my-2 my-md-0'>
         <button
           className={`btn btn-sm badge ${badgeClass}`}
           style={{ fontSize : '.9rem' }}
