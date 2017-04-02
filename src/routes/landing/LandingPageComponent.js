@@ -62,7 +62,7 @@ export default class LandingPageComponent extends React.Component {
           <div className='module-container'>
             <div className='row'>
               <div className='col-sm-12'>
-                <h1 className='h1 py-5 mb-0'>The Legislator Scorecard can help you:</h1>
+                <h1 className='py-5 mb-0'>The Legislator Scorecard can help you:</h1>
               </div>
             </div>
             <div className='row align-items-stretch pb-4'>
@@ -70,9 +70,10 @@ export default class LandingPageComponent extends React.Component {
                 <div className='white-floated p-3 mb-3 mb-md-0'>
                   <img src={require('./../../img/fine_print.svg')}
                     alt='track legislation symbol'
-                    style={{ width: '100px' }}
+                    style={{ width: '80px' }}
+                    className='my-4'
                   />
-                  <h2 className='h5'>Track Legislation</h2>
+                  <h2 className='h4'>Track Legislation</h2>
                   <p>Progressive Mass provides summaries of important bills and follows their paths through the State House.</p>
                 </div>
 
@@ -81,10 +82,12 @@ export default class LandingPageComponent extends React.Component {
                 <div className='white-floated p-3'>
                   <img src={require('./../../img/legislator.svg')}
                     alt='symbol representing a legislator'
-                    style={{ width: '100px' }}
+                    style={{ width: '80px' }}
+                    className='my-4'
+
                   />
 
-                  <h2 className='h5'>Learn About Your Representatives</h2>
+                  <h2 className='h4'>Learn About Your Reps</h2>
                   <p>By viewing which legislation your local representatives cosponsored and voted for or against, you can begin to understand their legislative priorities.</p>
                 </div>
               </div>
@@ -92,9 +95,11 @@ export default class LandingPageComponent extends React.Component {
                 <div className='white-floated p-3'>
                   <img src={require('./../../img/take-action.svg')}
                     alt='take action symbol'
-                    style={{ width: '100px' }}
+                    style={{ width: '80px' }}
+                    className='my-4'
+
                   />
-                  <h2 className='h5'>Take Action <div className='h5 text-muted mb-3'> (Coming Soon)</div></h2>
+                  <h2 className='h4'>Take Action <span className='h6 text-muted mb-3'> (Coming Soon)</span></h2>
                   <p>We're working to make it easier to take action based on the information in the scorecard.</p>
                 </div>
               </div>
