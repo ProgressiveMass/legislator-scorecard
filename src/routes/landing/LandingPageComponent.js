@@ -45,13 +45,12 @@ export default class LandingPageComponent extends React.Component {
         </div>
         <div className='module-container row no-gutters align-items-center'>
 
-          <div className='col-md-4 offset-md-2 landing__section--1 pr-md-3'>
-
+          <div className='col-md-5 offset-md-1 landing__section--1 pr-md-3'>
             <img src={require('./../../img/cards.png')}
               alt='Progressive Massachusetts Legislator Report Card'
               className='img-fluid mx-auto' />
           </div>
-          <div className='col-md-4 mb-5 mb-md-0'>
+          <div className='col-md-4 mb-5 mb-md-0 lead'>
             <p>
               <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachusetts</a> is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
             </p>
