@@ -24,16 +24,16 @@ h6 {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
         padding-left: 0;
         padding-right: 0;
     }
-    max-width: map-get($grid-breakpoints, xl);
+    max-width: map-get($grid-breakpoints, lg);
     margin: auto;
 }
 
 .module-container--padded {
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
         padding-left: 2rem;
         padding-right: 2rem;
     }

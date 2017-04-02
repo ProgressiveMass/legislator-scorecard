@@ -8,18 +8,18 @@
   h1 {
     font-size: 2rem;
     @include media-breakpoint-up(md) {
-      font-size: 3rem;
+      font-size: 3.2rem;
       text-align: left;
     }
     @include media-breakpoint-up(lg) {
       font-size: 3.5rem;
     }
     @include media-breakpoint-up(xl) {
-      font-size: 4.2rem;
+      font-size: 3.7rem;
     }
   }
   position: relative;
-  background-image: linear-gradient(to bottom right, fade-out($gray-dark, .06), fade-out(darken($gray-dark, 10%), .05)), url('./../img/dome.jpg');
+  background-image: linear-gradient(to bottom right, fade-out($gray-dark, .07), fade-out(darken($gray-dark, 10%), .05)), url('./../img/dome.jpg');
   background-size: cover;
   color: white;
   a {

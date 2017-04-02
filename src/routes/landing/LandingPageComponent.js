@@ -15,8 +15,8 @@ export default class LandingPageComponent extends React.Component {
 
               <div className='row no-gutters align-items-center' style={{ minHeight : '85vh' }}>
                 <div className='col-md-6 py-5 py-md-0'>
-                  <h1>
-                    Are your Massachusetts representatives
+                  <h1 className='font-weight-normal'>
+                    Are your MA representatives
                     fighting for your progressive values?
                   </h1>
                 </div>
@@ -94,7 +94,7 @@ export default class LandingPageComponent extends React.Component {
                     alt='take action symbol'
                     style={{ width: '100px' }}
                   />
-                  <h2 className='h5'>Take Action <span className='h5 text-muted mb-3'> (Coming Soon)</span></h2>
+                  <h2 className='h5'>Take Action <div className='h5 text-muted mb-3'> (Coming Soon)</div></h2>
                   <p>We're working to make it easier to take action based on the information in the scorecard.</p>
                 </div>
               </div>
