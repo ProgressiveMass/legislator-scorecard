@@ -29,7 +29,7 @@ class StateRepTable extends React.Component {
           data-label='Progressive Rating'
           style={{ verticalAlign : 'middle' }}>
           {d.pm_vote_score
-          ? <ProgressBarComponent width={d.pm_vote_score} animate key={d.id + 'prog-bar'} />
+            ? <ProgressBarComponent width={d.pm_vote_score} animate key={d.id + 'prog-bar'} />
           : <b>N/A</b>
         }
         </td>

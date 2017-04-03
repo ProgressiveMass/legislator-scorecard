@@ -19,7 +19,7 @@ const Footer = (props) => {
             If you've found it valuable, please consider becoming <a href='https://progressivemass.nationbuilder.com/contribute'>a contributing member of Progressive Mass.</a>
           </p>
           <p>
-            For questions and comments, contact grassroots@progressivemass.com.
+            For questions, comments, and corrections, contact grassroots@progressivemass.com.
           </p>
         </div>
         <div className='col-sm-12 col-md-4 offset-md-2 '>

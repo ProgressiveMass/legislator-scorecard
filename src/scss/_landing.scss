@@ -41,10 +41,9 @@
   h1 {
     text-align: center;
     font-size : 1.4rem;
-    font-weight: 300;
     color: white;
     @include media-breakpoint-up(md) {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
   }
 

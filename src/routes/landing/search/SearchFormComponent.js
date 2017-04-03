@@ -44,12 +44,12 @@ class SearchFormComponent extends React.Component {
             </div>
             <div className='form-group'>
               <span className='label'>State</span>
-              <div className='text-lg'>
+              <div className='lead'>
                 Massachusetts
               </div>
             </div>
             <div className='mt-4'>
-              <button className='btn btn-primary btn-block heading-font font-weight-bold text-md-lg'>
+              <button className='btn btn-primary btn-block heading-font text-md-lg'>
                 {this.state.loading
                   ? <span><i className='fa fa-spinner fa-pulse' />&nbsp;Loading</span>
                           : 'Find My Local Legislators'

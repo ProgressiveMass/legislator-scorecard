@@ -5,12 +5,11 @@
   @include media-breakpoint-down(xs) {
     margin-bottom: 2rem;
   }
-  font-family: $headings-font-family;
   position: relative;
 }
 
 .metadata__heading {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: .5rem;
   position: relative;
   display: inline-block;
@@ -19,10 +18,10 @@
     margin-bottom: 1.5rem;
   }
   @include media-breakpoint-up(md) {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   @include media-breakpoint-up(lg) {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 

@@ -16,7 +16,7 @@ export default class SenatorMetadataComponent extends React.Component {
                 {/* keep that space in between spans -- it's important for wrapping */}
                 <span className='font-weight-light'>{this.props.data.first_name}</span> <span className='font-weight-bold'>{this.props.data.last_name}</span>
               </h2>
-              <div className='d-flex align-items-md-center flex-column flex-md-row'>
+              <div className='d-flex align-items-md-center flex-column flex-md-row heading-font'>
                 <div className='pb-4 py-md-0'>
                   {
                     this.props.data.photo_url
@@ -25,16 +25,16 @@ export default class SenatorMetadataComponent extends React.Component {
                   }
                 </div>
 
-                <div className='font-weight-bold'>
-                  <div className='text-lg'>
+                <div>
+                  <div className='text-lg font-weight-bold'>
                     {this.props.data.party} Party
                   </div>
                   <div className='text-lg mb-2 text-uppercase' style={{ position: 'relative', top: '.2rem' }}>
                     {this.props.data.district}
                   </div>
                   { this.props.data.url
-                    ? <div className='text-lg'>
-                      <a href={this.props.data.url} target='_blank' className='font-weight-bold'>
+                    ? <div style={{ fontSize: '1.2rem' }}>
+                      <a href={this.props.data.url} target='_blank'>
                         Official Profile & Contact Info
                       </a>
                     </div>

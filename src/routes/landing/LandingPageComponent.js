@@ -15,15 +15,15 @@ export default class LandingPageComponent extends React.Component {
 
               <div className='row no-gutters align-items-center' style={{ minHeight : '85vh' }}>
                 <div className='col-md-6 py-5 py-md-0'>
-                  <h1 className='font-weight-normal'>
-                    Are your MA representatives
-                    fighting for your progressive values?
+                  <h1 style={{ fontWeight : '300' }}>
+                    Are your <b>Massachusetts</b> representatives
+                    fighting for your <b>progressive</b> values?
                   </h1>
                 </div>
 
                 <div className='col-md-6  blue-background pl-md-5 pt-lg-3'>
                   <div className='header__home-link d-flex align-items-center mx-auto mb-4 hidden-sm-down'
-                    style={{ color : 'white', width : '350px' }}
+                    style={{ color : 'white', width : '322px' }}
                   >
                     <div className='pr-3'>
                       <img src={require('./../../img/logo.svg')}
@@ -33,8 +33,8 @@ export default class LandingPageComponent extends React.Component {
                       />
                     </div>
                     <div>
-                      <div className='text-uppercase h5 mb-0' style={{ fontWeight: 'normal' }}>Progressive Massachusetts</div>
-                      <div className='h3 mb-0'>Legislator Scorecard</div>
+                      <div className='text-uppercase h6 mb-0' style={{ fontWeight: '300' }}>Progressive Massachusetts</div>
+                      <div className='h4 mb-0' style={{ fontWeight: '400' }}>Legislator Scorecard</div>
                     </div>
                   </div>
                   <SearchFormComponent />
@@ -50,9 +50,9 @@ export default class LandingPageComponent extends React.Component {
               alt='Progressive Massachusetts Legislator Report Card'
               className='img-fluid mx-auto' />
           </div>
-          <div className='col-md-4 mb-5 mb-md-0 lead'>
+          <div className='col-md-4 mb-5 mb-md-0 text-lg '>
             <p>
-              <a href='http://www.progressivemass.com/' target='_blank'>Progressive Massachusetts</a> is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
+              <a href='http://www.progressivemass.com/' target='_blank' className='heading-font text-lg'>Progressive Massachusetts</a> is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
             </p>
           </div>
 

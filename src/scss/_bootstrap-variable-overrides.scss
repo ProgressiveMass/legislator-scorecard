@@ -186,7 +186,7 @@ $sizes: (
 
 $body-bg:       $white !default;
 // $body-color:    $gray-dark !default;
-$body-color:    $gray-dark;
+$body-color:    lighten($gray-dark, 5%);
 
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;
@@ -271,7 +271,7 @@ $font-size-h6: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 // $headings-font-family:   inherit !default;
-$headings-font-family: Karla, Futura, $font-family-sans-serif;
+$headings-font-family: Montserrat, $font-family-sans-serif;
 $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;

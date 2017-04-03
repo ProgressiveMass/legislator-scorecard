@@ -17,7 +17,7 @@ export default class RatingComponent extends React.Component {
           {`The average republican progressive rating was ${this.props.rating.votes.cumulative.republicanAverage} percent.`}
         </p>
         <div aria-hidden>
-          <span className='label' style={{ fontSize: '1.2rem' }}>
+          <span className='label d-block mb-1' style={{ fontSize: '1.2rem' }}>
             {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
             {this.props.legislatorName}'s votes&nbsp;
             <span className='text-lowercase font-weight-normal' style={{ fontSize: '1rem' }}>(189th Session)</span>
@@ -27,12 +27,12 @@ export default class RatingComponent extends React.Component {
         <div aria-hidden className='d-flex'>
           <div className='flex-grow mr-2'>
             <span className='label'>
-              Avg {this.props.chamber === 'upper' ? 'Sen' : 'House'} Democrat:</span>
+              Avg {this.props.chamber === 'upper' ? 'Sen.' : 'House.'} Democrat:</span>
             <ProgressBar width={this.props.rating.votes.cumulative.democratAverage} />
           </div>
           <div div className='flex-grow ml-2'>
             <span className='label'>
-              Avg {this.props.chamber === 'upper' ? 'Sen' : 'House'} Republican:</span>
+              Avg {this.props.chamber === 'upper' ? 'Sen.' : 'House.'} Republican:</span>
             <ProgressBar width={this.props.rating.votes.cumulative.republicanAverage} />
           </div>
         </div>
@@ -50,11 +50,11 @@ export default class RatingComponent extends React.Component {
         <div style={{ fontSize : '2rem' }}>
           <b className={`${this.props.rating.cosponsorship.legislator > 3 ? 'text-primary' : 'text-danger'}`}>
             {this.props.rating.cosponsorship.legislator}
-          </b>&nbsp;progressive bills
+          </b>&nbsp;<span className='font-weight-light'>progressive bills</span>
         </div>
         <div>out of&nbsp;
           <b className='text-primary'>{this.props.rating.cosponsorship.total}</b>
-              &nbsp;endorsed by Progressive Mass for 190th session
+          &nbsp;endorsed by Prog. Mass for 190th session
         </div>
       </div>
     )
