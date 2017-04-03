@@ -27,12 +27,12 @@ export default class RatingComponent extends React.Component {
         <div aria-hidden className='d-flex'>
           <div className='flex-grow mr-2'>
             <span className='label'>
-              Avg {this.props.chamber === 'upper' ? 'Sen.' : 'House.'} Democrat:</span>
+              Avg {this.props.chamber === 'upper' ? 'Sen.' : 'House'} Democrat</span>
             <ProgressBar width={this.props.rating.votes.cumulative.democratAverage} />
           </div>
           <div div className='flex-grow ml-2'>
             <span className='label'>
-              Avg {this.props.chamber === 'upper' ? 'Sen.' : 'House.'} Republican:</span>
+              Avg {this.props.chamber === 'upper' ? 'Sen.' : 'House'} Republican</span>
             <ProgressBar width={this.props.rating.votes.cumulative.republicanAverage} />
           </div>
         </div>
@@ -47,7 +47,7 @@ export default class RatingComponent extends React.Component {
           {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
           {this.props.legislatorName} cosponsored
         </div>
-        <div style={{ fontSize : '2rem' }}>
+        <div style={{ fontSize : '2.2rem' }}>
           <b className={`${this.props.rating.cosponsorship.legislator > 3 ? 'text-primary' : 'text-danger'}`}>
             {this.props.rating.cosponsorship.legislator}
           </b>&nbsp;<span className='font-weight-light'>progressive bills</span>

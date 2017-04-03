@@ -6,7 +6,7 @@ export default class SenatorMetadataComponent extends React.Component {
   render () {
     return (
       <div className='module-container'>
-        <div className='metadata' key={this.props.data.url}>
+        <div className='metadata heading-font' key={this.props.data.url}>
           <div className='row no-gutters align-items-md-center'>
             <div className='col-md-6'>
               <div className='label' style={{ fontSize : '1.1rem' }}>
@@ -14,9 +14,9 @@ export default class SenatorMetadataComponent extends React.Component {
               </div>
               <h2 className='metadata__heading'>
                 {/* keep that space in between spans -- it's important for wrapping */}
-                <span className='font-weight-light'>{this.props.data.first_name}</span> <span className='font-weight-bold'>{this.props.data.last_name}</span>
+                <span className='font-weight-light'>{this.props.data.first_name}</span> <span className='font-weight-normal'>{this.props.data.last_name}</span>
               </h2>
-              <div className='d-flex align-items-md-center flex-column flex-md-row heading-font'>
+              <div className='d-flex align-items-md-center flex-column flex-md-row'>
                 <div className='pb-4 py-md-0'>
                   {
                     this.props.data.photo_url
