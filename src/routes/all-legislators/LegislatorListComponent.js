@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
 import SortButton from './SortButtonComponent'
@@ -20,9 +19,11 @@ class StateRepTable extends React.Component {
 
   renderRow (d, i) {
     return (
-      <tr onClick={() => this.props.history.push(`/legislator/${d.id}`)}>
+      <tr onClick={(e) => { e.preventDefault(); this.props.history.push(`/legislator/${d.id}`) }}>
         <td>{i + 1}</td>
-        <td data-label={this.props.chamber === 'upper' ? 'Senator' : 'Representative'}><Link to={`/legislator/${d.id}`}><b>{d.name}</b></Link></td>
+        <td data-label={this.props.chamber === 'upper' ? 'Senator' : 'Representative'}>
+          <a href='#'><b>{d.name}</b></a>
+        </td>
         <td data-label='Party'>{d.party.slice(0, 1)}</td>
         <td
           data-label='Progressive Rating'
