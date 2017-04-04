@@ -1,11 +1,12 @@
 
 .photo-background {
-  background-image: linear-gradient(to bottom right, fade-out($gray-dark, .07), fade-out(darken($gray-dark, 10%), .07)), url('./../img/dome.jpg');
+  background-image: linear-gradient(to bottom right, fade-out($gray-dark, .09), fade-out(darken($gray-dark, .14), .07)), url('./../img/dome.jpg');
   background-size: cover;
 }
 
 
 .landing__header--1{
+  padding : 5rem 0;
 
   h1 {
     font-size: 2rem;
@@ -32,18 +33,19 @@
 }
 
 .landing__section--1 {
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 .landing__section--2 {
    @extend .photo-background;
+   padding: 5rem 0;
 
   h1 {
     text-align: center;
-    font-size : 1.4rem;
+    font-size : 2rem;
     color: white;
     @include media-breakpoint-up(md) {
-      font-size: 2.3rem;
+      font-size: 2.5rem;
     }
   }
 

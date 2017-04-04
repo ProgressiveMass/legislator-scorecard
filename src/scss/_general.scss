@@ -24,11 +24,7 @@ h6 {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    @include media-breakpoint-up(lg) {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    max-width: map-get($grid-breakpoints, lg);
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -68,13 +64,34 @@ ul {
 
 footer {
     @extend .clearfix;
-    background: darken($gray-lighter, 5%);
+    background: $body-color;
+    color: $white;
+    font-weight: 300;
     font-size: 1.1rem;
+    font-family: $headings-font-family;
+
+    a {
+      color: lighten($brand-primary, 25%);
+      &:hover {
+        color: lighten($brand-primary, 20%);
+      }
+    }
 
     img {
         max-height: 100px;
         max-width: 100%;
     }
+}
+
+.dark-tint {
+  background: fade-out(black, .88);
+  font-weight: 300;
+  @extend .heading-font;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .text-lg {

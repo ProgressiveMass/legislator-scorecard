@@ -89,10 +89,10 @@ class StateRepTable extends React.Component {
     // sort data
     const data = this.sortData(this.filterData(this.props.data))
 
-    return (<div className='white-floated pt-5'>
+    return (<div className='white-floated pt-5 mb-5'>
       <div className='mx-auto'>
-        <div style={{ maxWidth : '300px' }} className='mb-4'>
-          <label htmlFor='filterTable'>Filter:</label>
+        <div style={{ maxWidth : '350px' }} className='d-flex align-items-center mb-4'>
+          <label htmlFor='filterTable' className='d-inline-block mr-3'>Filter:</label>
           <input
             type='text'
             placeholder='type a name'

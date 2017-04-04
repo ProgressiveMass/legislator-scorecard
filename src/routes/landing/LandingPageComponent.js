@@ -9,12 +9,12 @@ export default class LandingPageComponent extends React.Component {
 
         <div className='landing__header'>
 
-          <div className='heading-font landing__header--1 pb-3'>
+          <div className='heading-font landing__header--1'>
 
             <div className='module-container'>
 
-              <div className='row no-gutters align-items-center' style={{ minHeight : '85vh' }}>
-                <div className='col-md-6 py-5 py-md-0'>
+              <div className='row no-gutters align-items-center' style={{ minHeight : '50vh' }}>
+                <div className='col-md-6 py-md-0'>
                   <h1 style={{ fontWeight : '300' }}>
                     Are your <b>Massachusetts</b> representatives
                     fighting for your <b>progressive</b> values?
@@ -47,7 +47,7 @@ export default class LandingPageComponent extends React.Component {
 
           <div className='col-md-5 offset-md-1 landing__section--1 pr-md-3'>
             <img src={require('./../../img/cards.png')}
-              alt='Progressive Massachusetts Legislator Report Card'
+              alt='Progressive Massachusetts Legislator Report Cards'
               className='img-fluid mx-auto' />
           </div>
           <div className='col-md-4 mb-5 mb-md-0 text-lg '>
@@ -57,36 +57,36 @@ export default class LandingPageComponent extends React.Component {
           </div>
 
         </div>
-        <div className='landing__section--2 pb-5'>
+        <div className='landing__section--2'>
           <div className='module-container'>
             <div className='row'>
               <div className='col-sm-12'>
-                <h1 className='py-5 mb-0'>The Legislator Scorecard can help you:</h1>
+                <h2 className='h1 mb-0 pb-5'>The Legislator Scorecard can help you:</h2>
               </div>
             </div>
             <div className='row align-items-stretch pb-4'>
-              <div className='col-md-4 mb-3 mb-md-0'>
-                <div className='white-floated p-3 mb-3 mb-md-0'>
+              <div className='col-md-4 mb-5 mb-md-0'>
+                <div className='white-floated p-3 mb-5 mb-md-0'>
                   <img src={require('./../../img/fine_print.svg')}
-                    alt='track legislation symbol'
+                    alt='a symbol of a magnifying glass over a document'
                     style={{ width: '80px' }}
                     className='my-4'
                   />
-                  <h2 className='h4'>Track Legislation</h2>
+                  <h3 className='h4'>Track Legislation</h3>
                   <p>Progressive Mass provides summaries of important bills and follows their paths through the State House.</p>
                 </div>
 
               </div>
-              <div className='col-md-4 mb-3 mb-md-0'>
+              <div className='col-md-4 mb-5 mb-md-0'>
                 <div className='white-floated p-3'>
                   <img src={require('./../../img/legislator.svg')}
-                    alt='symbol representing a legislator'
+                    alt='symbol representing a person reading'
                     style={{ width: '80px' }}
                     className='my-4'
 
                   />
 
-                  <h2 className='h4'>Learn About Your Reps</h2>
+                  <h3 className='h4'>Learn About Your Reps</h3>
                   <p>By viewing which legislation your local representatives cosponsored and voted for or against, you can begin to understand their legislative priorities.</p>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default class LandingPageComponent extends React.Component {
                     className='my-4'
 
                   />
-                  <h2 className='h4'>Take Action <span className='h6 text-muted mb-3'> (Coming Soon)</span></h2>
+                  <h3 className='h4'>Take Action <span className='h6 text-muted mb-3'> (Coming Soon)</span></h3>
                   <p>We're working to make it easier to take action based on the information in the scorecard.</p>
                 </div>
               </div>
