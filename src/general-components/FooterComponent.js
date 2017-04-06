@@ -16,13 +16,13 @@ const Footer = (props) => {
     <div className='module-container'>
 
       <div className='d-md-flex align-items-top py-4'>
-        <a href='http://www.progressivemass.com/' className='mr-3'>
+        <a href='http://www.progressivemass.com/' className='mr-3 mb-3 mb-md-0'>
           <img src={require('./../img/progressive-mass-logo.png')}
             alt='Progressive Massachusetts Logo'
           />
         </a>
 
-        <p>
+        <p className='pt-3 pt-md-0'>
           For questions, comments, and corrections, contact grassroots@progressivemass.com.
         </p>
         <div>

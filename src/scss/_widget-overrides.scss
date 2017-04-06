@@ -57,6 +57,7 @@
 
 .inverted-tabs {
    @extend .module-container;
+   @extend .module-container--full-width-on-small;
     .RRT__tab--selected {
         background: $white;
     }

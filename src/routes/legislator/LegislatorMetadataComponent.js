@@ -5,7 +5,7 @@ export default class SenatorMetadataComponent extends React.Component {
 
   render () {
     return (
-      <div className='module-container'>
+      <div className='module-container module-container--full-width-on-small'>
         <div className='metadata heading-font' key={this.props.data.url}>
           <div className='row no-gutters align-items-md-center'>
             <div className='col-md-6'>

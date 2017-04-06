@@ -8,6 +8,9 @@ header {
 
 .header__home-link {
     color: $body-color;
+    &:hover, &:focus {
+      text-decoration: none;
+    }
 }
 
 header nav ul {

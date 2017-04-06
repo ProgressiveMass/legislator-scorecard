@@ -39,7 +39,7 @@ class SearchFormComponent extends React.Component {
             <div className='form-group'>
               <label>
                 Zip Code
-                <input type='text' className='form-control' ref='zip' placeholder='02140' />
+                <input type='text' className='form-control' ref='zip' placeholder='02142' />
               </label>
             </div>
             <div className='form-group'>

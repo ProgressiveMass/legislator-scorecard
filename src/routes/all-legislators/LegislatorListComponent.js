@@ -91,8 +91,18 @@ class StateRepTable extends React.Component {
 
     return (<div className='white-floated pt-5 mb-5'>
       <div className='mx-auto'>
-        <div style={{ maxWidth : '350px' }} className='d-flex align-items-center mb-4'>
-          <label htmlFor='filterTable' className='d-inline-block mr-3'>Filter:</label>
+        <div className='mb-4 mb-md-5'>
+          <p className='mb-1 lead'>
+            Progressive ratings are based on votes from the 189th session.
+          </p>
+          <p>
+            <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>
+              Learn more about the benefits and limitations of a scorecard.
+            </a>
+          </p>
+        </div>
+        <div className='d-md-flex align-items-center mb-5 mb-md-4' style={{ maxWidth : '600px' }}>
+          <label htmlFor='filterTable' className='d-inline-block mr-1' style={{ minWidth: '240px' }}>Filter By Legislator Name:</label>
           <input
             type='text'
             placeholder='type a name'
@@ -101,6 +111,7 @@ class StateRepTable extends React.Component {
             onChange={(e) => { this.setState({ filter : e.target.value }) }}
           />
         </div>
+
         <table className='table mx-auto table-hover table-clickable-rows'>
           <thead>
             <tr>

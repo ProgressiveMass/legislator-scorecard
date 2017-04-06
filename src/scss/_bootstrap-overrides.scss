@@ -8,6 +8,10 @@
     padding: .5rem 0 .25rem 0;
     margin-right: 1rem;
 
+    @include media-breakpoint-down(sm) {
+        font-size: 1.2rem;
+    }
+
     &.active {
       color: $brand-primary;
       border-bottom: .4rem solid $brand-primary;

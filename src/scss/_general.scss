@@ -28,6 +28,13 @@ h6 {
     margin: auto;
 }
 
+.module-container--full-width-on-small {
+  @include media-breakpoint-down(sm) {
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+
 .module-container--padded {
     @include media-breakpoint-up(lg) {
         padding-left: 2rem;
@@ -72,7 +79,7 @@ footer {
 
     a {
       color: lighten($brand-primary, 25%);
-      &:hover {
+      &:hover, &:focus {
         color: lighten($brand-primary, 20%);
       }
     }
