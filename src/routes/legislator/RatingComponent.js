@@ -17,7 +17,7 @@ export default class RatingComponent extends React.Component {
           {`The average republican progressive rating was ${this.props.rating.votes.cumulative.republicanAverage} percent.`}
         </p>
         <div aria-hidden>
-          <span className='label d-block mb-1' style={{ fontSize: '1.2rem' }}>
+          <span className='label d-block mb-1' style={{ fontSize: '1.1rem' }}>
             {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
             {this.props.legislatorName}'s votes&nbsp;
             <span className='text-lowercase font-weight-normal' style={{ fontSize: '1rem' }}>(189th Session)</span>
@@ -43,14 +43,16 @@ export default class RatingComponent extends React.Component {
   renderCosponsorshipSection () {
     return (
       <div className='mt-3'>
-        <div className='label' style={{ fontSize: '1.2rem', position: 'relative', top: '.5rem' }}>
+        <div className='label' style={{ fontSize: '1.1rem', position: 'relative', top: '.5rem' }}>
           {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
           {this.props.legislatorName} cosponsored
         </div>
         <div style={{ fontSize : '2.2rem' }}>
           <b className={`${this.props.rating.cosponsorship.legislator > 3 ? 'text-primary' : 'text-danger'}`}>
             {this.props.rating.cosponsorship.legislator}
-          </b>&nbsp;<span className='font-weight-light'>progressive bills</span>
+          </b>&nbsp;<span className='font-weight-light'>
+            progressive {this.props.rating.cosponsorship.legislator === 1 ? 'bill' : 'bills'}
+          </span>
         </div>
         <div>out of&nbsp;
           <b className='text-primary'>{this.props.rating.cosponsorship.total}</b>

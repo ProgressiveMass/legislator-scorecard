@@ -9,16 +9,16 @@
   padding : 5rem 0;
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     @include media-breakpoint-up(md) {
-      font-size: 3.2rem;
+      font-size: 3rem;
       text-align: left;
     }
     @include media-breakpoint-up(lg) {
-      font-size: 3.5rem;
+      font-size: 3.4rem;
     }
     @include media-breakpoint-up(xl) {
-      font-size: 3.7rem;
+      font-size: 3.6rem;
     }
   }
   position: relative;

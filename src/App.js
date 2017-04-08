@@ -19,7 +19,7 @@ class App extends Component {
 
   render () {
     return (
-      <div className='d-flex flex-column'>
+      <div className='d-flex flex-column' style={{ minHeight: '100vh' }}>
         <NavComponent />
         <main className='flex-grow'>
           <Switch>
