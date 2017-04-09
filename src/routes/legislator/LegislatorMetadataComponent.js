@@ -13,7 +13,7 @@ export default class SenatorMetadataComponent extends React.Component {
                 {this.props.chamber === 'upper' ? 'Senator' : 'Representative'}
               </div>
               <h2 className='metadata__heading'>
-                {/* keep that space in between spans -- it's important for wrapping */}
+                {/* keep that space below in between spans -- it's important for wrapping */}
                 <span className='font-weight-light'>{this.props.data.first_name}</span> <span className='font-weight-normal'>{this.props.data.last_name}</span>
               </h2>
               <div className='d-flex align-items-md-center flex-column flex-md-row'>

@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import { withRouter } from 'react-router'
 
 import SortButton from './SortButtonComponent'
-import ProgressBarComponent from './../legislator/ProgressBarComponent'
+import ProgressBarWContext from './../legislator/ProgressBarWContextComponent'
 
 class StateRepTable extends React.Component {
   constructor (props) {
@@ -28,13 +28,11 @@ class StateRepTable extends React.Component {
         <td
           data-label='Progressive Rating'
           style={{ verticalAlign : 'middle' }}>
-          {d.pm_vote_score
-            ? <ProgressBarComponent width={d.pm_vote_score} animate key={d.id + 'prog-bar'} />
-          : <b>N/A</b>
-        }
+          <div style={{ maxWidth: '300px' }}>
+            <ProgressBarWContext data={d} />
+          </div>
         </td>
       </tr>
-
     )
   }
 
