@@ -15,17 +15,23 @@ const Footer = (props) => {
     </div>
     <div className='module-container'>
 
-      <div className='d-md-flex align-items-top py-4'>
-        <a href='http://www.progressivemass.com/' className='mr-3 mb-3 mb-md-0'>
-          <img src={require('./../img/progressive-mass-logo.png')}
-            alt='Progressive Massachusetts Logo'
-          />
-        </a>
+      <div className='row no-gutters align-items-top py-4'>
+        <div className='col-md-6 d-flex'>
 
-        <p className='pt-3 pt-md-0'>
-          For questions, comments, and corrections, contact grassroots@progressivemass.com.
-        </p>
-        <div>
+          <a href='http://www.progressivemass.com/' className='mr-3 mb-3 mb-md-0'>
+            <img src={require('./../img/progressive-mass-logo.png')}
+              alt='Progressive Massachusetts Logo'
+            />
+          </a>
+
+          <p className='pt-3 pt-md-0'>
+            Please contact us at <br /> <b>grassroots@progressivemass.com</b><br />
+            if you spot an error or have a question.
+          </p>
+
+        </div>
+
+        <div className='col-md-5 offset-md-1'>
           <p>
             Site created by <a href='http://alex.holachek.com' target='_blank'>Alex Holachek</a>.
           </p>

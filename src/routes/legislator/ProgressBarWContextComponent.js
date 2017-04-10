@@ -2,9 +2,6 @@ import React, { PropTypes } from 'react'
 import ProgressBarComponent from './ProgressBarComponent'
 
 export default class ProgressBarWContext extends React.Component {
-  constructor (props) {
-    super(props)
-  }
 
   render () {
     const d = this.props.data
@@ -26,7 +23,7 @@ export default class ProgressBarWContext extends React.Component {
           key={d.id + 'prog-bar'}
           large={this.props.large}
         />
-        <small>voted between 50-90% of 189th sess.</small>
+        <small>some votes missing for 189th sess.</small>
       </div>
       )
     } else {
@@ -44,5 +41,7 @@ export default class ProgressBarWContext extends React.Component {
 }
 
 ProgressBarWContext.propTypes = {
-  data : PropTypes.object.isRequired
+  data : PropTypes.object.isRequired,
+  animate : PropTypes.bool,
+  large : PropTypes.bool
 }

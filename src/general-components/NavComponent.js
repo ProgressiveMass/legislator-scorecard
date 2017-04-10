@@ -8,7 +8,7 @@ const Header = (props) => {
         <div>
           <img src={require('./../img/logo.svg')}
             alt='logo image of an inspection sheet'
-            style={{ width: '35px', marginRight: '.5rem' }}
+            style={{ width: '35px', marginRight: '.7rem' }}
           />
         </div>
         <div>

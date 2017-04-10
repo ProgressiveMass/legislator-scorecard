@@ -47,18 +47,33 @@ class StateRepTable extends React.Component {
       }
     }
 
+    const normalizeRatingVal = (val, data) => {
+      if (data.recordedVotePercentage < 50) {
+        return 0
+      } else {
+        return val
+      }
+    }
+
     const sortKey = this.state.sort[0]
     const order = this.state.sort[1]
     return data.sort((a, b) => {
-      const aSort = normalizeSortVal(a[sortKey])
-      const bSort = normalizeSortVal(b[sortKey])
+      let aSort = normalizeSortVal(a[sortKey])
+      let bSort = normalizeSortVal(b[sortKey])
+
+      if (sortKey === 'voteRating') {
+        // so that people who didnt vote much don't get sorted to the top
+        aSort = normalizeRatingVal(aSort, a)
+        bSort = normalizeRatingVal(bSort, b)
+      }
+
       if (aSort < bSort) {
         return (order === 'asc' ? 1 : -1)
       } else if (aSort > bSort) {
         return (order === 'asc' ? -1 : 1)
       } else {
         // use rating as secondary sort
-        return normalizeSortVal(b.pm_vote_score) - normalizeSortVal(a.pm_vote_score)
+        return normalizeSortVal(b.voteRating) - normalizeSortVal(a.voteRating)
       }
     })
   }
@@ -121,7 +136,7 @@ class StateRepTable extends React.Component {
                 <SortButton onClick={this.setSort} sort='party' currentSort={this.state.sort} title='Party' />
               </th>
               <th>
-                <SortButton onClick={this.setSort} sort='pm_vote_score' currentSort={this.state.sort} title='Prog. Rating' />
+                <SortButton onClick={this.setSort} sort='voteRating' currentSort={this.state.sort} title='Prog. Rating' />
               </th>
 
             </tr>
