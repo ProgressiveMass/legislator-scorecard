@@ -62,7 +62,7 @@ export default class RatingComponent extends React.Component {
 
   renderCosponsorshipSection () {
     return (
-      <div className='mt-3'>
+      <div className='mt-4'>
         <div className='label' style={{ fontSize: '1.1rem', position: 'relative', top: '.5rem' }}>
           {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
           {this.props.legislatorName} cosponsored
