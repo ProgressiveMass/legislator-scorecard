@@ -27,6 +27,6 @@ export default class SortButton extends React.Component {
 SortButton.propTypes = {
   sort : PropTypes.string.isRequired,
   currentSort : PropTypes.array.isRequired,
-  onClick : PropTypes.object.isRequired,
+  onClick : PropTypes.func.isRequired,
   title : PropTypes.string.isRequired
 }

@@ -45,7 +45,7 @@ export default class SessionTabsComponent extends React.Component {
 }
 
 SessionTabsComponent.propTypes = {
-  data : PropTypes.object.isRequired,
+  data : PropTypes.array.isRequired,
   chamber : PropTypes.string.isRequired,
   legislatorName : PropTypes.string.isRequired
 }

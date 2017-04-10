@@ -19,7 +19,8 @@ class StateRepTable extends React.Component {
 
   renderRow (d, i) {
     return (
-      <tr onClick={(e) => { e.preventDefault(); this.props.history.push(`/legislator/${d.id}`) }}>
+      <tr key={d.name}
+        onClick={(e) => { e.preventDefault(); this.props.history.push(`/legislator/${d.id}`) }}>
         <td>{i + 1}</td>
         <td data-label={this.props.chamber === 'upper' ? 'Senator' : 'Representative'}>
           <a href='#'><b>{d.name}</b></a>
@@ -152,7 +153,7 @@ class StateRepTable extends React.Component {
 }
 
 StateRepTable.propTypes = {
-  data : PropTypes.object.isRequired,
+  data : PropTypes.array.isRequired,
   history: PropTypes.object.isRequired,
   chamber : PropTypes.string.isRequired
 }

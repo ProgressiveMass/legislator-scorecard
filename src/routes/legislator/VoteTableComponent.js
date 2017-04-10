@@ -78,7 +78,7 @@ export default class VoteTableComponent extends React.Component {
 
   renderRow (v, i) {
     const tags = v.tags.map((t) => {
-      return <button
+      return <button key={tagMap[t].name}
         className={`btn badge ${tagMap[t].badge}`}
         onClick={() => { this.toggleFilter(t) }}
              >
@@ -134,7 +134,7 @@ export default class VoteTableComponent extends React.Component {
       if (!this.state.tagFilter || this.state.tagFilter === t) {
         badgeClass = tagMap[t].badge
       }
-      return <li className='mr-1'>
+      return <li className='mr-1' key={tagMap[t].name}>
         <button
           className={`btn btn-sm badge ${badgeClass}`}
           style={{ fontSize : '.9rem' }}
@@ -227,10 +227,7 @@ export default class VoteTableComponent extends React.Component {
 }
 
 VoteTableComponent.propTypes = {
-  data : PropTypes.array.isRequired,
-  lastName : PropTypes.string.isRequired,
-  voteRating : PropTypes.string.isRequired,
-  voteSummary : PropTypes.number.isRequired,
+  data : PropTypes.object.isRequired,
   legislatorName : PropTypes.string.isRequired
 
 }

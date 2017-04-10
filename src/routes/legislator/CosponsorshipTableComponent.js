@@ -46,6 +46,7 @@ export default class CosponsorshipTable extends React.Component {
       return <button
         className={`btn badge ${tagMap[t].badge}`}
         onClick={() => { this.toggleFilter(t) }}
+        key={tagMap[t].name}
              >
         {tagMap[t].name}
       </button>
@@ -96,7 +97,7 @@ export default class CosponsorshipTable extends React.Component {
       if (!this.state.tagFilter || this.state.tagFilter === t) {
         badgeClass = tagMap[t].badge
       }
-      return <li className='mr-1 my-2 my-md-0'>
+      return <li className='mr-1 my-2 my-md-0' key={tagMap[t].name}>
         <button
           className={`btn btn-sm badge ${badgeClass}`}
           style={{ fontSize : '.9rem' }}
