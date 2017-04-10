@@ -14,7 +14,8 @@
     "react-router-dom": "^4.0.0",
     "react-sticky": "^5.0.5",
     "react-sticky-table": "^1.1.9",
-    "turf": "^3.0.14"
+    "turf": "^3.0.14",
+    "unorm": "^1.4.1"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",

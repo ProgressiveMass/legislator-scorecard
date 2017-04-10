@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import { withRouter } from 'react-router'
+import unorm from 'unorm'
 
 import SortButton from './SortButtonComponent'
 import ProgressBarWContext from './../legislator/ProgressBarWContextComponent'
@@ -42,7 +43,7 @@ class StateRepTable extends React.Component {
       if (!val) {
         return 0
       } else if (typeof val === 'string') {
-        return val.toLowerCase()
+        return unorm.nfd(val.toLowerCase())
       } else {
         return val
       }

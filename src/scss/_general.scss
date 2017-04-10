@@ -197,3 +197,12 @@ thead {
 .table-clickable-rows tr {
     cursor: pointer;
 }
+
+.muted-link {
+  color: lighten($gray, 12%);
+  text-decoration: underline;
+  &:hover, &:focus {
+    color: $gray;
+    text-decoration: underline;
+  }
+}

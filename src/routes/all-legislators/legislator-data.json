@@ -102,7 +102,7 @@
         "name": "Rodrigues, Michael J.",
         "district": "First Bristol and Plymouth",
         "party": "D",
-        "voteRating": 69,
+        "voteRating": 66,
         "recordedVotePercentage": 95
     }, {
         "id": "MAL000032",
@@ -221,7 +221,7 @@
         "name": "Lovely, Joan B. ",
         "district": "Second Essex",
         "party": "D",
-        "voteRating": 78,
+        "voteRating": 74,
         "recordedVotePercentage": 92
     }, {
         "id": "MAL000239",
@@ -614,13 +614,6 @@
         "voteRating": 61,
         "recordedVotePercentage": 100
     }, {
-        "id": "MAL000455",
-        "name": "Pignatelli, William ",
-        "district": "Fourth Berkshire",
-        "party": "D",
-        "voteRating": 78,
-        "recordedVotePercentage": 100
-    }, {
         "id": "MAL000456",
         "name": "Kaufman, Jay R. ",
         "district": "Fifteenth Middlesex",
@@ -955,7 +948,7 @@
         "name": "Smizik, Frank I. ",
         "district": "Fifteenth Norfolk",
         "party": "D",
-        "voteRating": 95,
+        "voteRating": 91,
         "recordedVotePercentage": 96
     }, {
         "id": "MAL000506",
@@ -1166,7 +1159,7 @@
         "name": "Atkins, Cory ",
         "district": "Fourteenth Middlesex",
         "party": "D",
-        "voteRating": 86,
+        "voteRating": 83,
         "recordedVotePercentage": 96
     }, {
         "id": "MAL000538",
