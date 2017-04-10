@@ -23,7 +23,7 @@ export default class ProgressBarWContext extends React.Component {
           key={d.id + 'prog-bar'}
           large={this.props.large}
         />
-        <small>some votes missing for 189th sess.</small>
+        <small>* some votes missing for 189th sess.</small>
       </div>
       )
     } else {
