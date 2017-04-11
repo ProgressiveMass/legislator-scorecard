@@ -24,7 +24,7 @@ export default class ProgressBarWContext extends React.Component {
           large={this.props.large}
         />
         <small style={{ lineHeight: 1.3, display: 'inline-block', marginTop : '.3rem' }}>
-          {`*Wasn't present for ${100 - d.recordedVotePercentage}% of scored votes, either because of absences or mid-term election`}
+          {`*Missed ${100 - d.recordedVotePercentage}% of scored votes, either because of absences or mid-term election`}
         </small>
       </div>
       )
