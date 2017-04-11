@@ -24,7 +24,7 @@ export default class ProgressBarWContext extends React.Component {
           large={this.props.large}
         />
         <small style={{ lineHeight: 1.3, display: 'inline-block', marginTop : '.1rem' }}>
-          {`*Missed some scored votes`}
+          *Missed several scored votes
         </small>
       </div>
       )
