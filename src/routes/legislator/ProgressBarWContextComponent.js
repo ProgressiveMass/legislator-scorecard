@@ -23,8 +23,8 @@ export default class ProgressBarWContext extends React.Component {
           key={d.id + 'prog-bar'}
           large={this.props.large}
         />
-        <small style={{ lineHeight: 1.3, display: 'inline-block', marginTop : '.3rem' }}>
-          {`*Missed some scored votes, either because of absences or mid-term election`}
+        <small style={{ lineHeight: 1.3, display: 'inline-block', marginTop : '.1rem' }}>
+          {`*Missed some scored votes`}
         </small>
       </div>
       )
