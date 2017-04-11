@@ -23,7 +23,9 @@ export default class ProgressBarWContext extends React.Component {
           key={d.id + 'prog-bar'}
           large={this.props.large}
         />
-        <small>*some votes missing for 189th sess.</small>
+        <small style={{ lineHeight: 1.3, display: 'inline-block', marginTop : '.3rem' }}>
+          *Wasn't present for 10-50% of scored votes, either because of absences or mid-term election
+        </small>
       </div>
       )
     } else {
