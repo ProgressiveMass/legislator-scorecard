@@ -52,7 +52,8 @@ export default class LandingPageComponent extends React.Component {
           </div>
           <div className='col-md-4 mb-5 mb-md-0 text-lg '>
             <p>
-              <a href='http://www.progressivemass.com/' target='_blank' className='heading-font text-lg'>Progressive Massachusetts</a> is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
+              <a href='http://www.progressivemass.com/' target='_blank' className='heading-font text-lg'>Progressive Massachusetts</a>
+              is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
             </p>
           </div>
 
@@ -65,7 +66,7 @@ export default class LandingPageComponent extends React.Component {
               </div>
             </div>
             <div className='row align-items-stretch pb-4'>
-              <div className='col-md-4 mb-5 mb-md-0'>
+              <div className='col-md-4 mb-4 mb-md-0'>
                 <div className='white-floated p-3 mb-5 mb-md-0'>
                   <img src={require('./../../img/fine_print.svg')}
                     alt='a symbol of a magnifying glass over a document'
@@ -77,7 +78,7 @@ export default class LandingPageComponent extends React.Component {
                 </div>
 
               </div>
-              <div className='col-md-4 mb-5 mb-md-0'>
+              <div className='col-md-4 mb-4 mb-md-0'>
                 <div className='white-floated p-3'>
                   <img src={require('./../../img/legislator.svg')}
                     alt='symbol representing a person reading'
