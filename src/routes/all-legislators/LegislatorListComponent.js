@@ -74,8 +74,15 @@ class StateRepTable extends React.Component {
       } else if (aSort > bSort) {
         return (order === 'asc' ? -1 : 1)
       } else {
-        // use rating as secondary sort
-        return normalizeSortVal(b.voteRating) - normalizeSortVal(a.voteRating)
+        // find an appropriate secondary sort
+        if (sortKey === 'voteRating') {
+          if (normalizeSortVal(a.name) < normalizeSortVal(b.name)) return -1
+          else if (normalizeSortVal(a.name) > normalizeSortVal(b.name)) return 1
+          // this will never happen...right...
+          else return 0
+        } else {
+          return normalizeRatingVal(b.voteRating) - normalizeRatingVal(a.voteRating)
+        }
       }
     })
   }
