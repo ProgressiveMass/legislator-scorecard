@@ -37,8 +37,10 @@ export default class VoteTableComponent extends React.Component {
       badgeText = progressivePosition[0].toUpperCase() + progressivePosition.slice(1).toLowerCase()
     } else if (v === '-') {
       badgeText = oppositeDict(progressivePosition)
-    } else if (v === 'NV' || v === 'NVP') {
+    } else if (v === 'NV') {
       badgeText = 'No vote'
+    } else if (v === 'NVP') {
+      badgeText = 'Abstained'
     }
 
     return <span className={badgeClass}>{badgeText}</span>

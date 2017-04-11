@@ -103,7 +103,7 @@
         "district": "First Bristol and Plymouth",
         "party": "D",
         "voteRating": 66,
-        "recordedVotePercentage": 95
+        "recordedVotePercentage": 100
     }, {
         "id": "MAL000032",
         "name": "Rosenberg, Stanley C.",
@@ -222,7 +222,7 @@
         "district": "Second Essex",
         "party": "D",
         "voteRating": 74,
-        "recordedVotePercentage": 92
+        "recordedVotePercentage": 97
     }, {
         "id": "MAL000239",
         "name": "Ives, Kathleen O'Connor ",
@@ -776,7 +776,9 @@
         "id": "MAL000479",
         "name": "Muratore, Mathew ",
         "district": "First Plymouth",
-        "party": "R"
+        "party": "R",
+        "voteRating": 17,
+        "recordedVotePercentage": 100
     }, {
         "id": "MAL000480",
         "name": "Farley-Bouvier, Tricia ",
@@ -949,7 +951,7 @@
         "district": "Fifteenth Norfolk",
         "party": "D",
         "voteRating": 91,
-        "recordedVotePercentage": 96
+        "recordedVotePercentage": 100
     }, {
         "id": "MAL000506",
         "name": "Cahill, Daniel ",
@@ -1160,7 +1162,7 @@
         "district": "Fourteenth Middlesex",
         "party": "D",
         "voteRating": 83,
-        "recordedVotePercentage": 96
+        "recordedVotePercentage": 100
     }, {
         "id": "MAL000538",
         "name": "Smola, Todd M. ",

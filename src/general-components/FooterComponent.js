@@ -16,7 +16,7 @@ const Footer = (props) => {
     <div className='module-container'>
 
       <div className='row no-gutters align-items-top py-4'>
-        <div className='col-md-6 d-flex'>
+        <div className='col-md-6 d-md-flex'>
 
           <a href='http://www.progressivemass.com/' className='mr-3 mb-3 mb-md-0'>
             <img src={require('./../img/progressive-mass-logo.png')}
