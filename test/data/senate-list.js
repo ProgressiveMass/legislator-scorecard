@@ -1,43 +1,42 @@
-module.exports = `Barrett, Michael J.  D  87%  progressive
-Boncore, Joseph A.  D  89%  progressive
-*some votes missing for 189th sess.
-Brady, Michael D.  D  85%  progressive
-*some votes missing for 189th sess.
-Brownsberger, William N.  D  79%  progressive
-Chandler, Harriette L.  D  84%  progressive
-Chang-Diaz, Sonia  D  89%  progressive
-Creem, Cynthia Stone  D  87%  progressive
-Cyr, Julian  D  N/A:  no voting data from 189th sess.
-deMacedo, Viriato Manuel  R  16%  progressive
-DiDomenico, Sal N.  D  82%  progressive
-Donnelly, Kenneth J.  D  92%  progressive
-Donoghue, Eileen M.  D  66%  progressive
-Eldridge, James B.  D  100%  progressive
-Fattman, Ryan C.  R  11%  progressive
-Flanagan, Jennifer L.  D  47%  progressive
-Forry, Linda Dorcena  D  82%  progressive
-Gobi, Anne M.  D  58%  progressive
-Hinds, Adam G.  D  N/A:  no voting data from 189th sess.
-Humason, Donald F.  R  8%  progressive
-Ives, Kathleen O'Connor  D  74%  progressive
-Jehlen, Patricia D.  D  95%  progressive
-Keenan, John F.  D  82%  progressive
-L'Italien, Barbara A.  D  84%  progressive
-Lesser, Eric P.  D  82%  progressive
-Lewis, Jason M.  D  84%  progressive
-Lovely, Joan B.  D  74%  progressive
-McGee, Thomas M.  D  82%  progressive
-Montigny, Mark C.  D  87%  progressive
-Moore, Michael O.  D  42%  progressive
-O'Connor, Patrick M.  R  21%  progressive
-*some votes missing for 189th sess.
-Pacheco, Marc R.  D  76%  progressive
-Rodrigues, Michael J.  D  66%  progressive
-Rosenberg, Stanley C.  D  N/A:  voted less than 50% of 189th sess.
-Ross, Richard J.  R  24%  progressive
-Rush, Michael F.  D  47%  progressive
-Spilka, Karen E.  D  84%  progressive
-Tarr, Bruce E.  R  11%  progressive
-Timilty, James E.  D  39%  progressive
-Timilty, Walter F.  D  N/A:  no voting data from 189th sess.
-Welch, James T.  D  76%  progressive`
+module.exports = [
+  '1Barrett, Michael J. D87%  progressive',
+  '2Boncore, Joseph A. D89%  progressive*Missing several scored votes',
+  '3Brady, Michael D.D85%  progressive*Missing several scored votes',
+  '4Brownsberger, William N.D79%  progressive',
+  '5Chandler, Harriette L.D84%  progressive',
+  '6Chang-Diaz, Sonia D89%  progressive',
+  '7Creem, Cynthia StoneD87%  progressive',
+  '8Cyr, Julian DN/A:  no voting data from 189th sess.',
+  '9deMacedo, Viriato ManuelR16%  progressive',
+  '10DiDomenico, Sal N.D82%  progressive',
+  '11Donnelly, Kenneth J.D92%  progressive',
+  '12Donoghue, Eileen M. D66%  progressive',
+  '13Eldridge, James B.D100%  progressive',
+  '14Fattman, Ryan C.R11%  progressive',
+  '15Flanagan, Jennifer L.D47%  progressive',
+  '16Forry, Linda DorcenaD82%  progressive',
+  '17Gobi, Anne M.D58%  progressive',
+  '18Hinds, Adam G. DN/A:  no voting data from 189th sess.',
+  '19Humason, Donald F.R8%  progressive',
+  "20Ives, Kathleen O'Connor D74%  progressive",
+  '21Jehlen, Patricia D.D95%  progressive',
+  '22Keenan, John F.D82%  progressive',
+  "23L'Italien, Barbara A. D84%  progressive",
+  '24Lesser, Eric P. D82%  progressive',
+  '25Lewis, Jason M.D84%  progressive',
+  '26Lovely, Joan B. D74%  progressive',
+  '27McGee, Thomas M.D82%  progressive',
+  '28Montigny, Mark C.D87%  progressive',
+  '29Moore, Michael O.D42%  progressive',
+  "30O'Connor, Patrick M. R21%  progressive*Missing several scored votes",
+  '31Pacheco, Marc R.D76%  progressive',
+  '32Rodrigues, Michael J.D66%  progressive',
+  '33Rosenberg, Stanley C.DN/A:  voted less than 50% of 189th sess.',
+  '34Ross, Richard J.R24%  progressive',
+  '35Rush, Michael F.D47%  progressive',
+  '36Spilka, Karen E. D84%  progressive',
+  '37Tarr, Bruce E.R11%  progressive',
+  '38Timilty, James E.D39%  progressive',
+  '39Timilty, Walter F. DN/A:  no voting data from 189th sess.',
+  '40Welch, James T.D76%  progressive'
+]
