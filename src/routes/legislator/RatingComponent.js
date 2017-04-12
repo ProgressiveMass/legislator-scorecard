@@ -31,7 +31,7 @@ export default class RatingComponent extends React.Component {
   renderVoteSection () {
     return (
       <div>
-        <p className='sr-only'>
+        <p className='sr-only' id='sr-stats'>
           {`Voted with the progressive position ${this.props.rating.votes.voteRating} percent of the time.`}
           {`The average democrat progressive rating was ${this.props.rating.votes.cumulative.democratAverage} percent.`}
           {`The average republican progressive rating was ${this.props.rating.votes.cumulative.republicanAverage} percent.`}
@@ -67,7 +67,7 @@ export default class RatingComponent extends React.Component {
           {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
           {this.props.legislatorName} cosponsored
         </div>
-        <div style={{ fontSize : '2.2rem' }}>
+        <div style={{ fontSize : '2.2rem' }} id='cosponsorship-summary'>
           <b className={`${this.props.rating.cosponsorship.legislator > 3 ? 'text-primary' : 'text-danger'}`}>
             {this.props.rating.cosponsorship.legislator}
           </b>&nbsp;<span className='font-weight-light'>

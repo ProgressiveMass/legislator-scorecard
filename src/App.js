@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react'
 import { Route, Switch } from 'react-router-dom'
-
 import NavComponent from './general-components/NavComponent'
 import Footer from './general-components/FooterComponent'
 
