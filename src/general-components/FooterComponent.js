@@ -6,9 +6,15 @@ const Footer = (props) => {
   return (<footer>
     <div className='dark-tint'>
       <div className='module-container'>
-        <div className=''>
-          <p className='text-center'>
-            <b>Like the scorecard?</b> Consider becoming <a href='https://progressivemass.nationbuilder.com/contribute'>a contributing member of Progressive Mass.</a>
+        <div className='d-md-flex align-items-center justify-content-center'>
+          <a href='http://www.progressivemass.com/' className='mr-3 mb-3 mb-md-0 d-block' style={{ maxWidth: '80px' }}>
+            <img src={require('./../img/progressive-mass-logo.png')}
+              alt='Progressive Massachusetts Logo'
+              className='img-fluid'
+            />
+          </a>
+          <p>
+            You can support Progressive Mass by becoming <a href='https://progressivemass.nationbuilder.com/contribute'>a contributing member.</a>
           </p>
         </div>
       </div>
@@ -16,18 +22,15 @@ const Footer = (props) => {
     <div className='module-container'>
 
       <div className='row no-gutters align-items-top py-4'>
-        <div className='col-md-6 d-md-flex'>
+        <div className='col-md-6'>
 
-          <a href='http://www.progressivemass.com/' className='mr-3 mb-3 mb-md-0'>
-            <img src={require('./../img/progressive-mass-logo.png')}
-              alt='Progressive Massachusetts Logo'
-            />
-          </a>
+          <div className='pt-3 pt-md-0'>
+            <p>This scorecard is the work of a volunteer-led team.</p>
+            <p>
+              If you spot an error, please contact us at <b>corrections@progressivemass.com</b>.
+            </p>
 
-          <p className='pt-3 pt-md-0'>
-            Please contact us at <br /> <b>grassroots@progressivemass.com</b><br />
-            if you spot an error or have a question.
-          </p>
+          </div>
 
         </div>
 
