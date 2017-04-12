@@ -37,26 +37,31 @@ export default class LandingPageComponent extends React.Component {
                       <div className='h4 mb-0' style={{ fontWeight: '400' }}>Legislator Scorecard</div>
                     </div>
                   </div>
-                  <SearchFormComponent />
+                  <div className='mx-auto' style={{ maxWidth: '500px' }}>
+                    <SearchFormComponent />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className='module-container row no-gutters align-items-center'>
+        <div className='module-container'>
 
-          <div className='col-md-5 offset-md-1 landing__section--1 pr-md-3'>
-            <img src={require('./../../img/cards.png')}
-              alt='Progressive Massachusetts Legislator Report Cards'
-              className='img-fluid mx-auto' />
+          <div className='landing__section--1 row no-gutters align-items-center'>
+            <div className='col-md-5 offset-md-1 pr-md-3 mb-5 mb-md-0'>
+              <img src={require('./../../img/cards.png')}
+                alt='Progressive Massachusetts Legislator Report Cards'
+                className='img-fluid mx-auto d-block'
+                style={{ maxHeight : '500px' }}
+              />
+            </div>
+            <div className='col-md-4 mb-5 mb-md-0 text-lg '>
+              <p>
+                <a href='http://www.progressivemass.com/' target='_blank' className='heading-font text-lg'>Progressive Massachusetts</a><br />
+                is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
+              </p>
+            </div>
           </div>
-          <div className='col-md-4 mb-5 mb-md-0 text-lg '>
-            <p>
-              <a href='http://www.progressivemass.com/' target='_blank' className='heading-font text-lg'>Progressive Massachusetts</a>
-              is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
-            </p>
-          </div>
-
         </div>
         <div className='landing__section--2'>
           <div className='module-container'>
@@ -67,7 +72,7 @@ export default class LandingPageComponent extends React.Component {
             </div>
             <div className='row align-items-stretch pb-4'>
               <div className='col-md-4 mb-4 mb-md-0'>
-                <div className='white-floated p-3 mb-5 mb-md-0'>
+                <div className='white-floated p-3 mx-auto' style={{ maxWidth : '400px' }}>
                   <img src={require('./../../img/fine_print.svg')}
                     alt='a symbol of a magnifying glass over a document'
                     style={{ width: '80px' }}
@@ -79,7 +84,7 @@ export default class LandingPageComponent extends React.Component {
 
               </div>
               <div className='col-md-4 mb-4 mb-md-0'>
-                <div className='white-floated p-3'>
+                <div className='white-floated p-3 mx-auto' style={{ maxWidth : '400px' }}>
                   <img src={require('./../../img/legislator.svg')}
                     alt='symbol representing a person reading'
                     style={{ width: '80px' }}
@@ -92,7 +97,7 @@ export default class LandingPageComponent extends React.Component {
                 </div>
               </div>
               <div className='col-md-4'>
-                <div className='white-floated p-3'>
+                <div className='white-floated p-3 mx-auto' style={{ maxWidth : '400px' }}>
                   <img src={require('./../../img/take-action.svg')}
                     alt='take action symbol'
                     style={{ width: '80px' }}
