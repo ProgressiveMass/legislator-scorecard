@@ -1,4 +1,24 @@
+.progress-bar {
+  text-align: left;
+}
 
+.progress {
+  position: relative;
+}
+.progress__text-container {
+  font-size: 1.1rem;
+  text-align: center;
+  position: absolute;
+  color: white;
+  z-index: 5;
+  width: 100%;
+  vertical-align: text-bottom;
+}
+
+.progress__text-container--right {
+  text-align: right;
+  font-weight: light;
+}
 .nav-link {
     font-family: $headings-font-family;
     position: relative;
