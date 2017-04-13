@@ -28,7 +28,7 @@ class StateRepTable extends React.Component {
         </td>
         <td data-label='Party'>{d.party.slice(0, 1)}</td>
         <td
-          data-label='Progressive Rating'
+          data-label='Progressive Rating (2015-2016)'
           style={{ verticalAlign : 'middle' }}>
           <div style={{ maxWidth: '300px' }}>
             <ProgressBarWContext data={d} />
@@ -113,10 +113,8 @@ class StateRepTable extends React.Component {
 
     return (<div className='white-floated pt-5 mb-5'>
       <div className='mx-auto'>
-        <div className='mb-4 mb-md-5'>
-          <p className='mb-1 lead'>
-            Progressive ratings are based on votes from the 189th session.
-          </p>
+        <div className='mb-3 mb-md-5'>
+
           <p>
             <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>
               Learn more about the benefits and limitations of a scorecard.
@@ -145,7 +143,7 @@ class StateRepTable extends React.Component {
                 <SortButton onClick={this.setSort} sort='party' currentSort={this.state.sort} title='Party' />
               </th>
               <th>
-                <SortButton onClick={this.setSort} sort='voteRating' currentSort={this.state.sort} title='Prog. Rating' />
+                <SortButton onClick={this.setSort} sort='voteRating' currentSort={this.state.sort} title='Prog. Rating (2015-2016)' />
               </th>
 
             </tr>

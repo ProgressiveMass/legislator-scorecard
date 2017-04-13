@@ -169,13 +169,14 @@ export default class VoteTableComponent extends React.Component {
     const tags = [...(new Set([].concat.apply([], this.props.data.votes.map((c) => c.tags))))]
 
     if (!votes || votes.length === 0) {
-      return <div className='table-container text-center'>
-        <div style={{ padding : '5rem 0' }}>
+      return <div className='table-container'>
+        <div className=' mx-auto p-5' style={{ maxWidth : '600px' }}>
           <h3>This Data Isn't Available Yet!</h3>
           <p className='lead'>
-            Final scorecards are released at the end of the session. <br />
-            Mid-session updates will come out in January/February 2018.
-
+            Final scorecards will be released at the end of the session (Winter 2018). <br />
+          </p>
+          <p>
+            Progressive Mass is currently considering how to more frequent updates on votes as they happen.
           </p>
 
         </div>
