@@ -1,0 +1,14 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/7.5.0/bin/node /usr/local/bin/firebase deploy -P default
+[debug] CLI Version:  3.5.0
+[debug] Platform:     darwin
+[debug] Node Version: v7.5.0
+[debug] Time:         Thu Apr 13 2017 15:23:44 GMT-0400 (EDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/progressive-mass  
+ Thu Apr 13 2017 15:23:44 GMT-0400 (EDT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/progressive-mass/tokens  
+ Thu Apr 13 2017 15:23:46 GMT-0400 (EDT)

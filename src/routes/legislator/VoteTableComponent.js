@@ -176,7 +176,7 @@ export default class VoteTableComponent extends React.Component {
             Final scorecards will be released at the end of the session (Winter 2018). <br />
           </p>
           <p>
-            Progressive Mass is currently considering how to more frequent updates on votes as they happen.
+            Progressive Mass is currently considering how to provide more frequent updates on votes as they happen.
           </p>
 
         </div>
