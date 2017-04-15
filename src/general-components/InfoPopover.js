@@ -11,6 +11,8 @@ const PopoverContent = (props) => {
 }
 
 PopoverContent.propTypes = {
+  title : PropTypes.string,
+  text : PropTypes.string
 }
 
 export default class Popover extends React.Component {
@@ -35,7 +37,7 @@ export default class Popover extends React.Component {
         >
           <button className='btn btn-icon btn-icon--basic'>
             <img src={require('./../img/help.svg')}
-              style={{ height : '18px' }}
+              style={{ height : '18px', position: 'relative', top: '1px' }}
               alt='help icon'
             />
             <span className='sr-only'>more information</span>
