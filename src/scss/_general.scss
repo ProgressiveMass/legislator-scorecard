@@ -189,6 +189,23 @@ thead {
     }
 }
 
+.btn-icon--basic {
+  padding: 0;
+  &:focus,
+  &:hover,
+  &:active {
+      background-color: transparent;
+      box-shadow: none;
+      img {
+        background: fade-out($brand-info, .8);
+      }
+  }
+
+  img {
+    border-radius: 100px;
+  }
+}
+
 .rotated {
     transform: rotate(180deg);
     display: inline-block;

@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
 import ProgressBarWContext from './ProgressBarWContextComponent'
 import ProgressBar from './ProgressBarComponent'
+import InfoPopover from './../../general-components/InfoPopover'
 
 export default class RatingComponent extends React.Component {
   constructor (props) {
@@ -21,7 +22,10 @@ export default class RatingComponent extends React.Component {
     } else if (this.props.chamber === 'lower') {
       return (<div className='flex-grow mr-2'>
         <span className='label'>
-          Speaker Deleo (Dem)
+          Speaker Deleo (Dem)&nbsp;
+          <InfoPopover
+            text="The Speaker of the House's votes are highly predictive of the average Democratic vote."
+          />
         </span>
         <ProgressBar width={this.props.rating.votes.cumulative.speaker} />
       </div>)
@@ -42,7 +46,7 @@ export default class RatingComponent extends React.Component {
             <span className='label d-block mb-1' style={{ fontSize: '1.1rem' }}>
               {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
               {this.props.legislatorName}'s votes&nbsp;
-              <span className='text-lowercase font-weight-normal' style={{ fontSize: '1rem' }}>(2015-2016)</span>
+              <span className='text-lowercase font-weight-normal' style={{ fontSize: '1rem' }}>(2015-16)</span>
             </span>
             <ProgressBarWContext data={this.props.rating.votes} animate large />
           </div>
@@ -74,10 +78,14 @@ export default class RatingComponent extends React.Component {
             progressive {this.props.rating.cosponsorship.legislator === 1 ? 'bill' : 'bills'}
           </span>
         </div>
-        <div>out of&nbsp;
+        <div style={{ position:'relative', top:'-.4rem' }}>out of&nbsp;
           <b className='text-primary'>{this.props.rating.cosponsorship.total}</b>
-          &nbsp;endorsed by Prog. Mass for 190th session
+          &nbsp;endorsed by Prog. Mass for 2017-18&nbsp;
+          <InfoPopover title='Which bills does Progressive Mass endorse?'
+            text='Every session, Prog. Mass chooses a limited selection of progressive bills that represent diverse progressive causes. There are always other worthy bills that do not make it into the selected group.'
+          />
         </div>
+
       </div>
     )
   }

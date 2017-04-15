@@ -20,7 +20,7 @@ export default class SenatorMetadataComponent extends React.Component {
                 <div className='pb-4 py-md-0'>
                   {
                     this.props.data.photo_url
-                      ? <img src={this.props.data.photo_url} alt='senator profile picture' />
+                      ? <img src={this.props.data.photo_url} alt='senator profile picture' className='legislator-portrait' />
                       : null
                   }
                 </div>

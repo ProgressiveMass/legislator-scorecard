@@ -5119,10 +5119,6 @@ pend@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
 
-phantomjs-polyfill@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/phantomjs-polyfill/-/phantomjs-polyfill-0.0.2.tgz#8c6a7163e9bc8fd9ffdbe7d605cb5352f9fb891e"
-
 phantomjs-prebuilt@^2.1.14:
   version "2.1.14"
   resolved "https://registry.yarnpkg.com/phantomjs-prebuilt/-/phantomjs-prebuilt-2.1.14.tgz#d53d311fcfb7d1d08ddb24014558f1188c516da0"
@@ -5174,6 +5170,10 @@ pngquant-bin@^3.0.0:
     bin-build "^2.0.0"
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
+
+popper.js@^1.0.8:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.6.0.tgz#34884c9506d947ba5ed11c821c60ad2204e8ca4c"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -5628,6 +5628,12 @@ react-sticky-table@^1.1.9:
 react-sticky@^5.0.5:
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/react-sticky/-/react-sticky-5.0.5.tgz#995871273f8a001fa4d462d3b96f381ee54b2649"
+
+react-tippy@^0.3.5-1:
+  version "0.3.5-1"
+  resolved "https://registry.yarnpkg.com/react-tippy/-/react-tippy-0.3.5-1.tgz#4802f53f39ed97a997905f4a1dcc7c4c4686f5cc"
+  dependencies:
+    popper.js "^1.0.8"
 
 react@^15.4.2:
   version "15.4.2"

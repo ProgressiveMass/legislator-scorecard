@@ -39,21 +39,6 @@
 .RRT__tab:not(.RRT__tab--selected):hover {
     background-color: fade-out(#000, .95);
 }
-//
-// $accordion-border: 2px solid darken($gray-lighter, 10%);
-// .RRT__accordion {
-//   flex-wrap: nowrap;
-// }
-// .RRT__accordion .RRT__tab {
-//     border-bottom: $accordion-border;
-//     &:first-of-type {
-//       border-top: 2px solid $accordion-border;
-//     }
-// }
-//
-// .RRT__accordion .RRT__panel {
-//   border-bottom: 2px solid $accordion-border;
-// }
 
 .inverted-tabs {
    @extend .module-container;
@@ -61,4 +46,22 @@
     .RRT__tab--selected {
         background: $white;
     }
+}
+
+.tippy-tooltip {
+  font-size : .95rem;
+  max-width: 400px;
+  text-align: left;
+  font-family: $font-family-sans-serif;
+  padding: .75rem !important;
+  p {
+    margin-bottom: 0;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.tippy-popper:focus {
+  outline: none;
 }

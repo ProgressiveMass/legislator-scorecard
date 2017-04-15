@@ -18,8 +18,9 @@ function getLetterGrade (score) {
   }
   const num1 = (score + '').slice(0, 1)
   const num2 = (score + '').slice(1)
-  if (score === 100) return 'A+'
-  else if (score < 60) {
+  if (score === 100) {
+    return 'A+'
+  } else if (score < 60) {
     return 'F'
   } else {
     return letterMap[num1] + getSymbol(num2)
