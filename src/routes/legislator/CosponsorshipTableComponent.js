@@ -123,7 +123,6 @@ export default class CosponsorshipTable extends React.Component {
 
   render () {
     const cosponsorship = this.filterRows(this.props.data.cosponsorship)
-
     const tags = [...(new Set([].concat.apply([], this.props.data.cosponsorship.map((c) => c.tags))))]
 
     if (!cosponsorship) {
@@ -146,8 +145,10 @@ export default class CosponsorshipTable extends React.Component {
             <div className='col-md-6 pr-md-5 pt-3 pt-md-0'>
               <p>
                 Cosponsoring legislation is an important way for a legislator to help put momentum behind certain bills. It is one of the few signs we have for initial support.
-                It’s not enough to push a bill through to passage&mdash;but it’s a first step.
+                It’s not enough to push a bill through to passage&mdash;but it’s a first step.<br />
+                <b>Cosponsorship is not currently factored into a legislator's score.</b>
               </p>
+
             </div>
           </div>
 

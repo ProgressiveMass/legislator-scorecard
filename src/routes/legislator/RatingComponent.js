@@ -82,7 +82,7 @@ export default class RatingComponent extends React.Component {
           <b className='text-primary'>{this.props.rating.cosponsorship.total}</b>
           &nbsp;endorsed by Prog. Mass for 2017-18&nbsp;
           <InfoPopover title='Which bills does Progressive Mass endorse?'
-            text='Every session, Prog. Mass chooses a limited selection of progressive bills that represent diverse progressive causes. There are always other worthy bills that do not make it into the selected group.'
+            text='Every session, Prog. Mass chooses a limited selection of progressive bills that advance its <a target="_blank" href="http://www.progressivemass.com/progressiveplatform">Progressive Platform.</a> There are, of course, worthy bills that do not make it into the selected group.'
           />
         </div>
 

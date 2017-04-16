@@ -33,6 +33,7 @@ export default class Popover extends React.Component {
           }
           trigger='click'
           arrow='true'
+          duration='200'
           position={this.props.position ? this.props.position : 'left'}
         >
           <button className='btn btn-icon btn-icon--basic'>
