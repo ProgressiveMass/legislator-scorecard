@@ -160,9 +160,14 @@ export default class CosponsorshipTable extends React.Component {
                 It’s not enough to push a bill through to passage&mdash;but it’s a first step. (Cosponsorship does not currently factor into a legislator's score.)
               </p>
             </div>
-            <div className='px-3 pb-3'>
-              <b>Note:</b>&nbsp;
-              Progressive Mass pairs similar bills across the House and Senate and counts them as a single bill for cosponsorship tracking purposes.
+            <div className='px-3 pb-3 d-flex'>
+              <div className='mr-3'>
+                <b>Note:</b>
+              </div>
+              <div>
+                Progressive Mass pairs similar bills across the House and Senate and counts them as a single bill for cosponsorship tracking purposes.
+
+              </div>
 
             </div>
           </div>
