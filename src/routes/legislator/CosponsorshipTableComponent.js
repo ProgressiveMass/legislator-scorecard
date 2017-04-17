@@ -151,13 +151,18 @@ export default class CosponsorshipTable extends React.Component {
               <p>
                 This session, almost 6,000 pieces of legislation have been filed. Only a few will even make it out of committee, let alone receive a vote. Progressive Mass has identified a suite of bills, across several issue areas, to craft a <a href='http://www.progressivemass.com/190legislativeagenda' target='_blank' >Progressive Legislative Agenda</a>.
               </p>
+
             </div>
 
             <div className='col-md-6 p-3 pr-md-5'>
               <p>
                 Cosponsoring legislation is an important way for a legislator to help put momentum behind certain bills. It is one of the few signs we have for initial support.
-                It’s not enough to push a bill through to passage&mdash;but it’s a first step. <b>Cosponsorship is not currently factored into a legislator's score.</b>
+                It’s not enough to push a bill through to passage&mdash;but it’s a first step. (Cosponsorship does not currently factor into a legislator's score.)
               </p>
+            </div>
+            <div className='px-3 pb-3'>
+              <b>Note:</b>&nbsp;
+              Progressive Mass pairs similar bills across the House and Senate and counts them as a single bill for cosponsorship tracking purposes.
 
             </div>
           </div>
@@ -173,7 +178,9 @@ export default class CosponsorshipTable extends React.Component {
             <Sticky>
               <thead>
                 <tr>
-                  <th style={{ width: '15%' }}>Bill</th>
+                  <th style={{ width: '15%' }}>
+                    Bill
+                  </th>
                   <th style={{ width: '30%' }}>Title</th>
                   <th style={{ width: '40%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Mass</a></th>
                   <th style={{ width: '15%' }}>{this.props.legislatorName} Cosponsored?</th>
