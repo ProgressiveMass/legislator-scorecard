@@ -186,7 +186,7 @@ export default class VoteTableComponent extends React.Component {
       <div className='table-container'>
         <h3 className='sr-only'>Voting Record</h3>
 
-        <div className='row explanatory-text no-gutters'>
+        <div className='row explanatory-text p-3 no-gutters'>
           <div className='col-md-6 pr-md-5'>
             <p>
             Legislators are scored for their roll-called votes on bills and amendments where an important progressive advancement (or stopping a bad policy) is at stake. </p>

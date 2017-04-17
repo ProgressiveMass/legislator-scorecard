@@ -136,10 +136,14 @@ export default class CosponsorshipTable extends React.Component {
         <h3 className='sr-only'>Cosponsored Bills</h3>
         <StickyContainer>
           <div className='row no-gutters explanatory-text'>
-            <div className='text-center p-3' style={{ width: '100%', fontSize : '1.1rem', background : 'rgba(2, 117, 216, 0.1)' }}>
+            <div className='text-center py-3' style={{ width: '100%', fontSize : '1.1rem', background : 'rgba(2, 117, 216, 0.1)' }}>
               <a className='font-weight-bold heading-font' target='_blank'
                 href='http://progressivemass.com/factsheet'>
-                <img src={require('./../../img/survey.svg')} alt='list symbol' style={{ width: '50px' }} />
+                <img
+                  src={require('./../../img/survey.svg')}
+                  alt='list symbol' style={{ width: '45px' }}
+                  className='d-block d-sm-inline-block mx-auto'
+                />
                 View our guide to progressive legislation for the 2017-2018 term.
               </a>
             </div>
