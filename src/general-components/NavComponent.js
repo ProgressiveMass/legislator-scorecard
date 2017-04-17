@@ -19,7 +19,7 @@ const Header = (props) => {
 
       <nav className='text-md-right mt-3 mt-md-0'>
 
-        <Link to='/all-legislators'>Index of All MA Legislators</Link>
+        <Link to='/all-legislators'>View All MA Legislators</Link>
 
       </nav>
     </div>

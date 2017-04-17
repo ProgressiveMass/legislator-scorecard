@@ -7,12 +7,12 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="fine_print" fill-rule="nonzero">
             <g id="Group">
-                <polygon id="Shape" fill="#E2E2E2" points="28 38 0 38 0 0 19 0 28 9"></polygon>
+                <polygon id="Shape" fill="#dadada" points="28 38 0 38 0 0 19 0 28 9"></polygon>
                 <polygon id="Shape" fill="#FFFFFF" points="26.5 10 18 10 18 1.5"></polygon>
-                <rect id="Rectangle-path" fill="#616161" transform="translate(34.736500, 36.832700) rotate(-45.000000) translate(-34.736500, -36.832700) " x="33.3367114" y="30.8336061" width="2.79957717" height="11.9981879"></rect>
-                <circle id="Oval" fill="#616161" cx="23" cy="25" r="11"></circle>
-                <circle id="Oval" fill="#F3F3F3" cx="23" cy="25" r="9"></circle>
-                <rect id="Rectangle-path" fill="#424242" transform="translate(35.913950, 37.965350) rotate(-45.000000) translate(-35.913950, -37.965350) " x="34.5141614" y="33.6160069" width="2.79957717" height="8.6986862"></rect>
+                <rect id="Rectangle-path" fill="#0273D4" transform="translate(34.736500, 36.832700) rotate(-45.000000) translate(-34.736500, -36.832700) " x="33.3367114" y="30.8336061" width="2.79957717" height="11.9981879"></rect>
+                <circle id="Oval" fill="#0273D4" cx="23" cy="25" r="11"></circle>
+                <circle id="Oval" fill="#dff1fc" cx="23" cy="25" r="9"></circle>
+                <rect id="Rectangle-path" fill="#2196F3" transform="translate(35.913950, 37.965350) rotate(-45.000000) translate(-35.913950, -37.965350) " x="34.5141614" y="33.6160069" width="2.79957717" height="8.6986862"></rect>
                 <g transform="translate(6.000000, 16.000000)" id="Shape" fill="#4E4E4E">
                     <path d="M19,11 L9.3,11 C9.7,12.6 10.6,14 11.8,15 L19,15 L19,11 Z"></path>
                     <path d="M9.3,7 L19,7 L19,3 L11.7,3 C10.5,4 9.7,5.4 9.3,7 Z"></path>

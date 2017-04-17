@@ -133,20 +133,26 @@ export default class CosponsorshipTable extends React.Component {
 
     return (
       <div className='table-container table--top-row-fixed'>
-        <h4 className='sr-only'>Cosponsored Bills</h4>
+        <h3 className='sr-only'>Cosponsored Bills</h3>
         <StickyContainer>
           <div className='row no-gutters explanatory-text'>
-            <div className='col-md-6 pr-md-5'>
+            <div className='text-center p-3' style={{ width: '100%', fontSize : '1.1rem', background : 'rgba(2, 117, 216, 0.1)' }}>
+              <a className='font-weight-bold heading-font' target='_blank'
+                href='http://progressivemass.com/factsheet'>
+                <img src={require('./../../img/survey.svg')} alt='list symbol' style={{ width: '50px' }} />
+                View our guide to progressive legislation for the 2017-2018 term.
+              </a>
+            </div>
+            <div className='col-md-6 p-3 pr-md-5'>
               <p>
                 This session, almost 6,000 pieces of legislation have been filed. Only a few will even make it out of committee, let alone receive a vote. Progressive Mass has identified a suite of bills, across several issue areas, to craft a <a href='http://www.progressivemass.com/190legislativeagenda' target='_blank' >Progressive Legislative Agenda</a>.
               </p>
             </div>
 
-            <div className='col-md-6 pr-md-5 pt-3 pt-md-0'>
+            <div className='col-md-6 p-3 pr-md-5'>
               <p>
                 Cosponsoring legislation is an important way for a legislator to help put momentum behind certain bills. It is one of the few signs we have for initial support.
-                It’s not enough to push a bill through to passage&mdash;but it’s a first step.<br />
-                <b>Cosponsorship is not currently factored into a legislator's score.</b>
+                It’s not enough to push a bill through to passage&mdash;but it’s a first step. <b>Cosponsorship is not currently factored into a legislator's score.</b>
               </p>
 
             </div>

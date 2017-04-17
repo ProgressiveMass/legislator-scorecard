@@ -14,14 +14,14 @@ export default class RatingComponent extends React.Component {
   renderAvgDem () {
     if (this.props.chamber === 'upper') {
       return (<div className='flex-grow mr-2'>
-        <span className='label'>
+        <span className='label font-weight-normal'>
           Avg Sen. Democrat
         </span>
         <ProgressBar width={this.props.rating.votes.cumulative.democratAverage} />
       </div>)
     } else if (this.props.chamber === 'lower') {
       return (<div className='flex-grow mr-2'>
-        <span className='label'>
+        <span className='label font-weight-normal'>
           Speaker Deleo (Dem)&nbsp;
           <InfoPopover
             text="The Speaker of the House's votes are highly predictive of the average Democratic vote."
@@ -35,12 +35,16 @@ export default class RatingComponent extends React.Component {
   renderVoteSection () {
     return (
       <div>
-        <p className='sr-only' id='sr-stats'>
-          {`Voted with the progressive position ${this.props.rating.votes.voteRating} percent of the time.`}
-          {`The average democrat progressive rating was ${this.props.rating.votes.cumulative.democratAverage} percent.`}
-          {`The average republican progressive rating was ${this.props.rating.votes.cumulative.republicanAverage} percent.`}
-          {this.props.rating.votes.cumulative.speaker ? `The House Speaker progressive rating was ${this.props.rating.votes.cumulative.speaker} percent.` : ''}
-        </p>
+        <div className='sr-only'>
+          <h3>Vote information</h3>
+          <p id='sr-stats'>
+            {`Voted with the progressive position ${this.props.rating.votes.voteRating} percent of the time.`}
+            {`The average democrat progressive rating was ${this.props.rating.votes.cumulative.democratAverage} percent.`}
+            {`The average republican progressive rating was ${this.props.rating.votes.cumulative.republicanAverage} percent.`}
+            {this.props.rating.votes.cumulative.speaker ? `The House Speaker progressive rating was ${this.props.rating.votes.cumulative.speaker} percent.` : ''}
+          </p>
+        </div>
+
         <div aria-hidden>
           <div className='mb-2'>
             <span className='label d-block mb-1' style={{ fontSize: '1.1rem' }}>
@@ -53,7 +57,7 @@ export default class RatingComponent extends React.Component {
           <div className='d-flex'>
             {this.renderAvgDem()}
             <div className='flex-grow ml-2'>
-              <span className='label'>
+              <span className='label font-weight-normal'>
                 Avg {this.props.chamber === 'upper' ? 'Sen.' : 'House'} Republican</span>
               <ProgressBar width={this.props.rating.votes.cumulative.republicanAverage} />
             </div>
@@ -67,10 +71,10 @@ export default class RatingComponent extends React.Component {
   renderCosponsorshipSection () {
     return (
       <div className='mt-4'>
-        <div className='label' style={{ fontSize: '1.1rem', position: 'relative', top: '.5rem' }}>
+        <h3 className='label' style={{ fontSize: '1.1rem', position: 'relative', top: '.5rem' }}>
           {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
           {this.props.legislatorName} cosponsored
-        </div>
+        </h3>
         <div style={{ fontSize : '2.2rem' }} id='cosponsorship-summary'>
           <b className={`${this.props.rating.cosponsorship.legislator > 3 ? 'text-primary' : 'text-danger'}`}>
             {this.props.rating.cosponsorship.legislator}

@@ -8,7 +8,8 @@
 .landing__header--1{
   padding : 5rem 0;
 
-  h1 {
+  .landing__cta {
+    font-weight: 300;
     font-size: 2.4rem;
     @include media-breakpoint-up(md) {
       font-size: 3rem;

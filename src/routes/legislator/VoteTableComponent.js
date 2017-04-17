@@ -184,7 +184,7 @@ export default class VoteTableComponent extends React.Component {
     }
     return (
       <div className='table-container'>
-        <h4 className='sr-only'>Voting Record</h4>
+        <h3 className='sr-only'>Voting Record</h3>
 
         <div className='row explanatory-text no-gutters'>
           <div className='col-md-6 pr-md-5'>

@@ -12,10 +12,10 @@ export default class SenatorMetadataComponent extends React.Component {
               <div className='label' style={{ fontSize : '1.1rem' }}>
                 {this.props.chamber === 'upper' ? 'Senator' : 'Representative'}
               </div>
-              <h2 className='metadata__heading'>
+              <h1 className='metadata__heading'>
                 {/* keep that space below in between spans -- it's important for wrapping */}
                 <span className='font-weight-light'>{this.props.data.first_name}</span> <span className='font-weight-normal'>{this.props.data.last_name}</span>
-              </h2>
+              </h1>
               <div className='d-flex align-items-md-center flex-column flex-md-row'>
                 <div className='pb-4 py-md-0'>
                   {

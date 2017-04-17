@@ -30,6 +30,9 @@ export default class AllLegislators extends React.Component {
 
     return (
       <div className='tinted-background'>
+        <h1 className='text-center h2 mt-3' style={{ marginBottom: '2rem' }}>
+          Index of Current MA Legislators
+        </h1>
         <div className='mt-4 inverted-tabs'>
           <Tabs items={tabItems}
             showMore={false}

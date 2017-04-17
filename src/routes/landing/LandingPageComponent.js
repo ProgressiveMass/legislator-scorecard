@@ -15,10 +15,10 @@ export default class LandingPageComponent extends React.Component {
 
               <div className='row no-gutters align-items-center' style={{ minHeight : '50vh' }}>
                 <div className='col-md-6 py-md-0'>
-                  <h1 style={{ fontWeight : '300' }}>
+                  <h2 className='landing__cta'>
                     Are your <b>Massachusetts</b> representatives
                     fighting for your <b>progressive</b> values?
-                  </h1>
+                  </h2>
                 </div>
 
                 <div className='col-md-6  blue-background pl-md-5 pt-lg-3'>
@@ -32,10 +32,10 @@ export default class LandingPageComponent extends React.Component {
                         style={{ width: '45px' }}
                       />
                     </div>
-                    <div>
+                    <h1>
                       <div className='text-uppercase h6 mb-0' style={{ fontWeight: '300' }}>Progressive Massachusetts</div>
                       <div className='h4 mb-0' style={{ fontWeight: '400' }}>Legislator Scorecard</div>
-                    </div>
+                    </h1>
                   </div>
                   <div className='mx-auto' style={{ maxWidth: '500px' }}>
                     <SearchFormComponent />
@@ -98,7 +98,7 @@ export default class LandingPageComponent extends React.Component {
               </div>
               <div className='col-md-4'>
                 <div className='white-floated p-3 mx-auto' style={{ maxWidth : '400px' }}>
-                  <img src={require('./../../img/take-action.svg')}
+                  <img src={require('./../../img/collaboration.svg')}
                     alt='take action symbol'
                     style={{ width: '80px' }}
                     className='my-4'

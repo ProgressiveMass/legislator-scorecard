@@ -113,11 +113,10 @@ class StateRepTable extends React.Component {
 
     return (<div className='white-floated pt-5 mb-5'>
       <div className='mx-auto'>
-        <div className='mb-3 mb-md-5'>
-
+        <div className='mb-3 mb-md-4'>
           <p>
             <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>
-              Learn more about the benefits and limitations of a scorecard.
+              Learn more about how legislators are scored.
             </a>
           </p>
         </div>
