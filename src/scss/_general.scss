@@ -115,8 +115,10 @@ thead {
     width: 100%;
 }
 
+.table--top-row-fixed {
+  display:block
+}
 .table--top-row-fixed thead {
-    //why does this work ????
     display: table;
 }
 

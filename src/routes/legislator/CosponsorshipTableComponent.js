@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import { StickyContainer, Sticky } from 'react-sticky'
+import InfoPopover from './../../general-components/InfoPopover'
 
 import tagMap from './tagMap'
 
@@ -56,8 +57,13 @@ export default class CosponsorshipTable extends React.Component {
       <tr key={c.finalNumber}>
         <td className='text-muted' style={{ width: '15%' }}>
           <div className='font-weight-bold'>
-            {c.finalNumber}
+            {c.finalNumber}&nbsp;
+            {c.showPairedDisclaimer
+              ? <InfoPopover
+                text='This bill has two distinct versions in the House and Senate, but for the purposes of tracking cosponsorship we treat them as a single bill.'
+                /> : null}
           </div>
+
           <div>
             { tags }
           </div>
@@ -132,7 +138,7 @@ export default class CosponsorshipTable extends React.Component {
     }
 
     return (
-      <div className='table-container table--top-row-fixed'>
+      <div className='table-container'>
         <h3 className='sr-only'>Cosponsored Bills</h3>
         <StickyContainer>
           <div className='row no-gutters explanatory-text'>
@@ -160,16 +166,7 @@ export default class CosponsorshipTable extends React.Component {
                 It’s not enough to push a bill through to passage&mdash;but it’s a first step. (Cosponsorship does not currently factor into a legislator's score.)
               </p>
             </div>
-            <div className='px-3 pb-3 d-flex'>
-              <div className='mr-3'>
-                <b>Note:</b>
-              </div>
-              <div>
-                Progressive Mass pairs similar bills across the House and Senate and counts them as a single bill for cosponsorship tracking purposes.
 
-              </div>
-
-            </div>
           </div>
 
           <div className='mb-3 pt-4'>
@@ -179,7 +176,7 @@ export default class CosponsorshipTable extends React.Component {
             </ul>
           </div>
 
-          <table className='table table-responsive'>
+          <table className='table table--top-row-fixed'>
             <Sticky>
               <thead>
                 <tr>
