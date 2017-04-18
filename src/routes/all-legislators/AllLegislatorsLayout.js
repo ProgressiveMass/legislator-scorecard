@@ -9,13 +9,13 @@ export default class AllLegislators extends React.Component {
   render () {
     const tabItems = [
       {
-        title : 'All MA House Reps',
+        title : 'House Reps',
         component : (<LegislatorListComponent
           data={legislatorMetadata.houseReps}
           chamber='lower' />)
       },
       {
-        title : 'All MA Senators',
+        title : 'Senators',
         component : (<LegislatorListComponent
           data={legislatorMetadata.senators}
           chamber='upper' />)
@@ -30,7 +30,7 @@ export default class AllLegislators extends React.Component {
 
     return (
       <div className='tinted-background'>
-        <h1 className='text-center h2 mt-3' style={{ marginBottom: '2rem' }}>
+        <h1 className='text-center h2 mt-4 font-weight-light' style={{ marginBottom: '3rem' }}>
           Index of Current MA Legislators
         </h1>
         <div className='mt-4 inverted-tabs'>
