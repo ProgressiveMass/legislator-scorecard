@@ -81,7 +81,7 @@ class StateRepTable extends React.Component {
           // this will never happen...right...
           else return 0
         } else {
-          return normalizeRatingVal(b.voteRating) - normalizeRatingVal(a.voteRating)
+          return normalizeRatingVal(b.voteRating, b) - normalizeRatingVal(a.voteRating, a)
         }
       }
     })
