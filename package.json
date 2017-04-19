@@ -81,7 +81,7 @@
     "test": "testcafe chrome test/index.js",
     "lint-fix": "eslint src --fix",
     "lint": "eslint src",
-    "deploy:prod": "node run test && node scripts/build.js && firebase deploy -P default",
+    "deploy:prod": "node scripts/build.js && firebase deploy -P default",
     "deploy:dev": "node scripts/build.js && firebase deploy -P staging"
   },
   "jest": {
