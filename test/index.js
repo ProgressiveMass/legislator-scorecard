@@ -1,91 +1,88 @@
+import { Selector } from 'testcafe'
 
-var houseList = require('./data/house-list')
-var senateList = require('./data/senate-list')
+fixture `House Reps`
+    .page `http://localhost:3000/all-legislators`
 
-// http://docs.casperjs.org/en/latest/events-filters.html#remote-message
-casper.on('remote.message', function (msg) {
-  this.echo('Console: ' + msg)
-})
+// test('House legislator list is ok', async t => {
+//   await t
+//   .expect(Selector('table tbody tr:first-of-type').textContent).eql('1Arciero, James DC+  (78%)', 'Aricero')
+//   .expect(Selector('table tbody tr:last-of-type').textContent).eql('159Zlotnik, Jonathan D. DF  (52%)')
+//
+//   // sort by score highest to lowest
+//   await t
+//   .click(Selector('table th:last-of-type button'))
+//   .click(Selector('table th:last-of-type button'))
+//   .expect(Selector('table tbody tr:first-of-type').textContent).eql('1Hecht, Jonathan DA+  (100%)')
+//   .expect(Selector('table tbody tr:last-of-type').textContent).eql('159Williams, Bud DN/A:  no voting data from 189th sess.')
+// })
+//
+// test('House legislator detail page is ok', async t => {
+//   // move to legislator detail page
+//   await t
+//   .click(Selector('a').withText('Holmes, Russell E'))
+//   .expect(Selector('.metadata__heading').textContent).eql('Russell E. Holmes')
+//   .expect(Selector('.progress__text-container').textContent)
+//   .eql('C   (74%)')
+//   .expect(Selector('#sr-stats').textContent)
+//   .eql('Voted with the progressive position 74 percent of the time.The average democrat progressive rating was 75 percent.The average republican progressive rating was 21 percent.The House Speaker progressive rating was 78 percent.')
+//   .expect(Selector('#cosponsorship-summary').textContent)
+//   .eql('5 progressive bills')
+// })
+//
+// fixture `Senate Reps`
+//     .page `http://localhost:3000/all-legislators`
+//
+// test('Senate legislator list is ok', async t => {
+//   await t
+//   .click(Selector('div[role="tab"]').withText('Senators'))
+//   .expect(Selector('table tbody tr:first-of-type').textContent).eql('1Barrett, Michael J. DB   (87%)')
+//   .expect(Selector('table tbody tr:last-of-type').textContent).eql('40Welch, James T.DC   (76%)')
+//
+//   // sort by score highest to lowest
+//   await t
+//   .click(Selector('table th:last-of-type button'))
+//   .click(Selector('table th:last-of-type button'))
+//   .expect(Selector('table tbody tr:first-of-type').textContent).eql('1Eldridge, James B.DA+  (100%)')
+//   .expect(Selector('table tbody tr:last-of-type').textContent).eql('40Timilty, Walter F. DN/A:  no voting data from 189th sess.')
+// })
 
-// http://docs.casperjs.org/en/latest/events-filters.html#page-error
-casper.on('page.error', function (msg, trace) {
-  this.echo('Error: ' + msg)
-    // maybe make it a little fancier with the code from the PhantomJS equivalent
-})
-
-// http://docs.casperjs.org/en/latest/events-filters.html#resource-error
-casper.on('resource.error', function (resourceError) {
-  this.echo('ResourceError: ' + JSON.stringify(resourceError, undefined, 4))
-})
-
-// http://docs.casperjs.org/en/latest/events-filters.html#page-initialized
-casper.on('page.initialized', function (page) {
-    // CasperJS doesn't provide `onResourceTimeout`, so it must be set through
-    // the PhantomJS means. This is only possible when the page is initialized
-  page.onResourceTimeout = function (request) {
-    console.log('Response Timeout (#' + request.id + '): ' + JSON.stringify(request))
-  }
-})
-
-function parseLegislatorList () {
-  return [].slice.apply(document.querySelectorAll('tbody tr'))
-  .map(function (el) { return el.textContent })
-}
-
-describe('Legislator Scorecard Index', function () {
-  before(function () {
-    casper.start('http://localhost:3000/all-legislators')
-  })
-
-  it('should retrieve correct page', function () {
-    casper.then(function () {
-      'Progressive Massachusetts | Legislator Scorecard'.should.matchTitle
+test('Senator legislator detail page is ok', async t => {
+  // move to legislator detail page
+  // check out metadata
+  // await t
+  // .click(Selector('div[role="tab"]').withText('Senators'))
+  // .click(Selector('a').withText('Jehlen, Patricia D'))
+  // .expect(Selector('.metadata__heading').textContent).eql('Patricia Jehlen')
+  // .expect(Selector('.progress__text-container').textContent)
+  // .eql('A   (97%)')
+  // .expect(Selector('#sr-stats').textContent)
+  // .eql('Voted with the progressive position 97 percent of the time.The average democrat progressive rating was 77 percent.The average republican progressive rating was 15 percent.')
+  // .expect(Selector('#cosponsorship-summary').textContent)
+  // .eql('16 progressive bills')
+  //
+  Selector(() => {
+    return [].slice.apply(document.querySelector('table tbody tr'))
+    .map((tr) => {
+      let billName = tr.querySelector('td:first-of-type div:first-of-type').innerText
+      let cosponsored = tr.querySelector('td:last-of-type').innerText
+      return billName + ' ' + cosponsored
     })
   })
 
-  it('should show proper info for House', function () {
-    expect(casper.evaluate(parseLegislatorList)).to.eql(houseList)
+  // check out cosponsored bills
+  const cosponsored = Selector('table tbody tr')
+  .addCustomDOMProperties({
+    cosponsorInfo : (tr) => {
+      let billName = tr.querySelector('td:first-of-type div:first-of-type').innerText
+      let cosponsored = tr.querySelector('td:last-of-type').innerText
+      return billName + ' ' + cosponsored
+    }
   })
 
-  it('should show proper info for Senate', function () {
-    casper.thenClick('#tab-1', function () {
-      expect(casper.evaluate(parseLegislatorList)).to.eql(senateList)
-    })
-  })
-})
+  const info = await cosponsored.cosponsorInfo
+  console.log(info)
 
-describe('Legislator Detail Page', function () {
-  before(function () {
-    casper.start('http://localhost:3000/legislator/MAL000444')
-  })
-
-  it('should show correct information for legislator metadata', function (done) {
-    casper.waitForSelector('.metadata', function () {
-      casper.then(function () {
-        expect(casper.evaluate(function () {
-          return document.querySelector('.metadata__heading').textContent
-        })).to.eql('Russell E. Holmes')
-
-        expect(casper.evaluate(function () {
-          return document.querySelector('#legislator-rating').textContent
-        })).to.eql('74%  progressive')
-
-        expect(casper.evaluate(function () {
-          return document.querySelector('#sr-stats').textContent
-        })).to.eql('Voted with the progressive position 74 percent of the time.The average democrat progressive rating was 75 percent.The average republican progressive rating was 21 percent.The House Speaker progressive rating was 78 percent.')
-
-        expect(casper.evaluate(function () {
-          return document.querySelector('#cosponsorship-summary').textContent
-        })).to.eql('5 progressive bills')
-
-        done()
-
-        // now a quick hacky check to make sure cosponsorship info is reflected below
-
-        // expect(casper.evaluate(function(){
-        //   return document.querySelector('#cosponsorship-summary').textContent
-        // })).to.eql("5 progressive bills")
-      })
-    })
-  })
+  await t
+  .expect(cosponsored.cosponsorInfo)
+  .eql(['S1004 Yes', 'S1048 Yes', 'S81 Yes', 'S619 Yes', 'S223 Yes', 'S681 Yes', 'S791 Yes', 'S819 Yes', 'S1305 Yes', 'S777 Yes', 'S499 Yes', 'S373 Yes', 'S1880 Yes', 'S1846 Yes', 'S1847 Yes', 'S1821 Yes'])
 })
