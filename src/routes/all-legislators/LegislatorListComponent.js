@@ -113,13 +113,7 @@ class StateRepTable extends React.Component {
 
     return (<div className='white-floated pt-5 mb-5'>
       <div className='mx-auto'>
-        <div className='mb-3 mb-md-4'>
-          <p>
-            <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>
-              Learn more about how legislators are scored.
-            </a>
-          </p>
-        </div>
+
         <div className='d-md-flex align-items-center mb-5 mb-md-4' style={{ maxWidth : '600px' }}>
           <label htmlFor='filterTable' className='d-inline-block mr-1' style={{ minWidth: '240px' }}>Filter By Legislator Name:</label>
           <input
