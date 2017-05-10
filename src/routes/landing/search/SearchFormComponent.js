@@ -43,10 +43,10 @@ class SearchFormComponent extends React.Component {
           </div>
 
           <div className='form-group'>
-            <span className='label'>State</span>
-            <div className='lead'>
-              Massachusetts
-            </div>
+            <label>
+              State
+              <input type='text' className='form-control' readOnly value='Massachusetts' />
+            </label>
           </div>
 
           <div className='mt-4'>
