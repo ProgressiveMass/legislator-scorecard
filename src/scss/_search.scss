@@ -11,6 +11,11 @@
   @include media-breakpoint-up(md) {
     padding: 2rem;
   }
+
+  [readonly] {
+    background: transparent;
+    border-color: rgba(0,0,0,.06);
+  }
 }
 
 
