@@ -275,6 +275,13 @@
     "recordedVotePercentage": 50
   }],
   "houseReps": [{
+    "id": "MAL000158",
+    "name": "Pignatelli, William Smitty",
+    "district": "Fourth Berkshire",
+    "party": "D",
+    "voteRating": 78,
+    "recordedVotePercentage": 100
+  }, {
     "id": "MAL000403",
     "name": "Lawn, John J. ",
     "district": "Tenth Middlesex",
@@ -1357,8 +1364,8 @@
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
-    "id": "MAL000567",
-    "name": "Crocker, William ",
+    "id": "MAL000572",
+    "name": "Crocker, William L. ",
     "district": "Second Barnstable",
     "party": "R"
   }]
