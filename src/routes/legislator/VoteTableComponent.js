@@ -195,7 +195,7 @@ export default class VoteTableComponent extends React.Component {
           <div className='col-md-6 pr-md-5'>
             <p>
               Assessing a legislator’s record is a challenging proposition. <br />
-              <a href='http://www.progressivemass.com/scorecards_and_roll_calls' target='_blank'>Learn more about the benefits and limitations of a scorecard.</a>
+              <a href='https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0' target='_blank'>Learn more about the benefits and limitations of a scorecard.</a>
             </p>
           </div>
         </div>
