@@ -36,10 +36,10 @@ export default class Popover extends React.Component {
           duration='200'
           position={this.props.position ? this.props.position : 'left'}
         >
-          <button className='btn btn-icon btn-icon--basic'>
+          <button type='button' className='btn btn-icon btn-icon--basic'>
             <img src={require('./../img/help.svg')}
               style={{ height : '18px', position: 'relative', top: '1px' }}
-              alt='help icon'
+              alt=''
             />
             <span className='sr-only'>more information</span>
           </button>

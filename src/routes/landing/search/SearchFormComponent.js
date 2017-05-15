@@ -26,37 +26,36 @@ class SearchFormComponent extends React.Component {
   render () {
     return (
       <div className='search-form my-5 my-md-0'>
-        <form onSubmit={this.onFormSubmit} >
+        <form onSubmit={this.onFormSubmit}>
 
-          <div>
-            <div className='form-group'>
-              <label>
-                Address
-                <input type='text' className='form-control' ref='address' placeholder='123 Main St, Cambridge' />
-              </label>
-            </div>
+          <div className='form-group'>
+            <label>
+              Address
+              <input type='text' className='form-control' ref='address' placeholder='123 Main St, Cambridge' />
+            </label>
+          </div>
 
-            <div className='form-group'>
-              <label>
-                Zip Code
-                <input type='text' className='form-control' ref='zip' placeholder='02142' />
-              </label>
-            </div>
-            <div className='form-group'>
-              <span className='label'>State</span>
-              <div className='lead'>
-                Massachusetts
-              </div>
-            </div>
-            <div className='mt-4'>
-              <button className='btn btn-primary btn-block heading-font'>
-                {this.state.loading
-                  ? <span><i className='fa fa-spinner fa-pulse' />&nbsp;Loading</span>
-                          : 'Find My Local Legislators'
-                }
-              </button>
+          <div className='form-group'>
+            <label>
+              Zip Code
+              <input type='text' className='form-control' ref='zip' placeholder='02142' />
+            </label>
+          </div>
 
-            </div>
+          <div className='form-group'>
+            <label>
+              State
+              <input type='text' className='form-control' readOnly value='Massachusetts' />
+            </label>
+          </div>
+
+          <div className='mt-4'>
+            <button className='btn btn-primary btn-block heading-font' type='submit'>
+              {this.state.loading
+                ? <span><span aria-hidden='true' className='fa fa-spinner fa-pulse' />&nbsp;Loading</span>
+                        : 'Find My Local Legislators'
+              }
+            </button>
           </div>
 
         </form>
