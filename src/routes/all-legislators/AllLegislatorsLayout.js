@@ -5,7 +5,6 @@ import legislatorMetadata from './legislator-data.json'
 import LegislatorListComponent from './LegislatorListComponent'
 
 export default class AllLegislators extends React.Component {
-
   render () {
     const tabItems = [
       {

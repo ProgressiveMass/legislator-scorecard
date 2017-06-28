@@ -2,11 +2,9 @@ import React from 'react'
 import SearchFormComponent from './search/SearchFormComponent'
 
 export default class LandingPageComponent extends React.Component {
-
   render () {
     return (
       <div>
-
         <section className='landing__header'>
 
           <div className='heading-font landing__header--1'>
@@ -69,7 +67,6 @@ export default class LandingPageComponent extends React.Component {
           </div>
         </section>
 
-
         <section className='landing__section--2'>
           <div className='module-container'>
             <div className='row'>
@@ -85,9 +82,9 @@ export default class LandingPageComponent extends React.Component {
 
                   <h3 className='h4'>
                     <img src={require('./../../img/fine_print.svg')}
-                    alt=''
-                    style={{ width: '80px' }}
-                    className='my-4'
+                      alt=''
+                      style={{ width: '80px' }}
+                      className='my-4'
                   />
                     Track Legislation
                   </h3>
@@ -100,9 +97,9 @@ export default class LandingPageComponent extends React.Component {
 
                   <h3 className='h4'>
                     <img src={require('./../../img/legislator.svg')}
-                    alt=''
-                    style={{ width: '80px' }}
-                    className='my-4'
+                      alt=''
+                      style={{ width: '80px' }}
+                      className='my-4'
                   />
                     Learn About Your Reps
                   </h3>
@@ -131,5 +128,4 @@ export default class LandingPageComponent extends React.Component {
       </div>
     )
   }
-
       }
