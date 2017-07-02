@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className="search-form my-5 my-md-0"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label>
+      Address
+      <input
+        className="form-control"
+        name="address"
+        placeholder="123 Main St, Cambridge"
+        type="text"
+      />
+    </label>
+  </div>
+  <div
+    className="form-group"
+  >
+    <label>
+      Zip Code
+      <input
+        className="form-control"
+        name="zipCode"
+        placeholder="02142"
+        type="text"
+      />
+    </label>
+  </div>
+  <div
+    className="form-group"
+  >
+    <label>
+      State
+      <input
+        className="form-control"
+        readOnly={true}
+        type="text"
+        value="Massachusetts"
+      />
+    </label>
+  </div>
+  <div
+    className="mt-4"
+  >
+    <button
+      className="btn btn-primary btn-block heading-font"
+      type="submit"
+    >
+      Find My Local Legislators
+    </button>
+  </div>
+</form>
+`;

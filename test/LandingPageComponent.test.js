@@ -1,25 +1,14 @@
 import React from 'react'
 import LandingPageComponent from './../src/routes/landing/LandingPageComponent'
-import { Renderer } from 'react-test-renderer'
-import ShallowRenderer from 'react-test-renderer/shallow'
-import { MemoryRouter } from 'react-router-dom'
+import { shallow, mount } from 'enzyme'
+import toJSON from 'enzyme-to-json'
+import {MemoryRouter} from 'react-router'
 
-function createNodeMock (element) {
-  if (element.type === 'input') {
-    return {
-      focus () {}
-    }
-  }
-  return null
-}
-
-const shallowRenderer = new ShallowRenderer()
-debugger
 it('renders correctly', () => {
-  const tree = shallowRenderer.render(
-    <MemoryRouter initialEntries={[{ key : 1 }]}>
+  const tree = mount(
+    <MemoryRouter initialEntries={[{ key : 1, pathname : '/' }]}>
       <LandingPageComponent />
     </MemoryRouter>
   )
-  expect(tree).toMatchSnapshot()
+  expect(toJSON(tree)).toMatchSnapshot()
 })

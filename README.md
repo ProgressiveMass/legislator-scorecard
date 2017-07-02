@@ -14,3 +14,9 @@ This small app was created to centralize the data and to present it in a more se
 
 The UI is in React, with the project scaffolded off create-react-app.
 It talks to a small node backend.
+
+### Tests
+
+Right now there are functional tests using Testcafe and a few sad unit tests run by Jest.
+
+To run the functional tests, `npm run functional-test` and to run the unit tests, `npm run unit-test`.
