@@ -8,6 +8,7 @@ import ResultsLayout from './routes/legislator/ResultsLayoutComponent'
 import AllLegislatorsLayout from './routes/all-legislators/AllLegislatorsLayout'
 import SingleLegislatorLayout from './routes/legislator/SingleLegislatorLayout'
 
+
 class App extends Component {
 
   componentDidUpdate (prevProps) {

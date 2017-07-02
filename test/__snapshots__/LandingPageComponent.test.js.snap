@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<MemoryRouter
+  initialEntries={
+    Array [
+      Object {
+        "key": 1,
+        "pathname": "/",
+      },
+    ]
+  }
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": 1,
+            "pathname": "/",
+            "search": "",
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": 1,
+          "pathname": "/",
+          "search": "",
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <LandingPageComponent>
+      <div>
+        <section
+          className="landing__header"
+        >
+          <div
+            className="heading-font landing__header--1"
+          >
+            <div
+              className="module-container"
+            >
+              <div
+                className="row no-gutters align-items-center"
+                style={
+                  Object {
+                    "minHeight": "50vh",
+                  }
+                }
+              >
+                <div
+                  className="col-md-6 py-md-0"
+                >
+                  <h1
+                    className="landing__cta"
+                  >
+                    Are your 
+                    <b>
+                      Massachusetts
+                    </b>
+                     representatives fighting for your 
+                    <b>
+                      progressive
+                    </b>
+                     values?
+                  </h1>
+                </div>
+                <div
+                  className="col-md-6  blue-background pl-md-5 pt-lg-3"
+                >
+                  <div
+                    className="header__home-link d-flex align-items-center mx-auto mb-4 hidden-sm-down"
+                    style={
+                      Object {
+                        "color": "white",
+                        "width": "322px",
+                      }
+                    }
+                  >
+                    <div
+                      className="pr-3"
+                    >
+                      <img
+                        alt=""
+                        className="img-fluid"
+                        src="logo.svg"
+                        style={
+                          Object {
+                            "width": "45px",
+                          }
+                        }
+                      />
+                    </div>
+                    <h2>
+                      <span
+                        className="text-uppercase h6 mb-0 d-block"
+                        style={
+                          Object {
+                            "fontWeight": "300",
+                          }
+                        }
+                      >
+                        Progressive Massachusetts
+                      </span>
+                      <span
+                        className="h4 mb-0 d-block"
+                        style={
+                          Object {
+                            "fontWeight": "400",
+                          }
+                        }
+                      >
+                        Legislator Scorecard
+                      </span>
+                    </h2>
+                  </div>
+                  <div
+                    className="mx-auto"
+                    style={
+                      Object {
+                        "maxWidth": "500px",
+                      }
+                    }
+                  >
+                    <withRouter(SearchFormComponent)>
+                      <Route
+                        render={[Function]}
+                      >
+                        <SearchFormComponent
+                          history={
+                            Object {
+                              "action": "POP",
+                              "block": [Function],
+                              "canGo": [Function],
+                              "createHref": [Function],
+                              "entries": Array [
+                                Object {
+                                  "hash": "",
+                                  "key": 1,
+                                  "pathname": "/",
+                                  "search": "",
+                                },
+                              ],
+                              "go": [Function],
+                              "goBack": [Function],
+                              "goForward": [Function],
+                              "index": 0,
+                              "length": 1,
+                              "listen": [Function],
+                              "location": Object {
+                                "hash": "",
+                                "key": 1,
+                                "pathname": "/",
+                                "search": "",
+                              },
+                              "push": [Function],
+                              "replace": [Function],
+                            }
+                          }
+                          location={
+                            Object {
+                              "hash": "",
+                              "key": 1,
+                              "pathname": "/",
+                              "search": "",
+                            }
+                          }
+                          match={
+                            Object {
+                              "isExact": true,
+                              "params": Object {},
+                              "path": "/",
+                              "url": "/",
+                            }
+                          }
+                        >
+                          <form
+                            className="search-form my-5 my-md-0"
+                            onSubmit={[Function]}
+                          >
+                            <div
+                              className="form-group"
+                            >
+                              <label>
+                                Address
+                                <input
+                                  className="form-control"
+                                  name="address"
+                                  placeholder="123 Main St, Cambridge"
+                                  type="text"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              className="form-group"
+                            >
+                              <label>
+                                Zip Code
+                                <input
+                                  className="form-control"
+                                  name="zipCode"
+                                  placeholder="02142"
+                                  type="text"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              className="form-group"
+                            >
+                              <label>
+                                State
+                                <input
+                                  className="form-control"
+                                  readOnly={true}
+                                  type="text"
+                                  value="Massachusetts"
+                                />
+                              </label>
+                            </div>
+                            <div
+                              className="mt-4"
+                            >
+                              <button
+                                className="btn btn-primary btn-block heading-font"
+                                type="submit"
+                              >
+                                Find My Local Legislators
+                              </button>
+                            </div>
+                          </form>
+                        </SearchFormComponent>
+                      </Route>
+                    </withRouter(SearchFormComponent)>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          className="module-container"
+        >
+          <h2
+            className="sr-only"
+          >
+            About Progressive Massachusetts
+          </h2>
+          <div
+            className="landing__section--1 row no-gutters align-items-center"
+          >
+            <div
+              className="col-md-5 offset-md-1 pr-md-3 mb-5 mb-md-0"
+            >
+              <img
+                alt="snap shots of three different Progressive Massachusetts Legislator Report Cards"
+                className="img-fluid mx-auto d-block"
+                src="cards.png"
+                style={
+                  Object {
+                    "maxHeight": "500px",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="col-md-4 mb-5 mb-md-0 text-lg "
+            >
+              <p>
+                <a
+                  className="heading-font text-lg"
+                  href="http://www.progressivemass.com/"
+                  target="_blank"
+                >
+                  Progressive Massachusetts
+                </a>
+                <br />
+                is a grassroots organization that tracks legislation in order to provide people with the knowledge they need to enact positive local change.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          className="landing__section--2"
+        >
+          <div
+            className="module-container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-12"
+              >
+                <h2
+                  className="h1 mb-0 pb-5"
+                >
+                  The Legislator Scorecard can help you:
+                </h2>
+              </div>
+            </div>
+            <div
+              className="row align-items-stretch pb-4"
+            >
+              <div
+                className="col-md-4 mb-4 mb-md-0"
+              >
+                <div
+                  className="white-floated p-3 mx-auto"
+                  style={
+                    Object {
+                      "maxWidth": "400px",
+                    }
+                  }
+                >
+                  <h3
+                    className="h4"
+                  >
+                    <img
+                      alt=""
+                      className="my-4"
+                      src="fine_print.svg"
+                      style={
+                        Object {
+                          "width": "80px",
+                        }
+                      }
+                    />
+                    Track Legislation
+                  </h3>
+                  <p>
+                    Progressive Mass provides summaries of important bills and follows their paths through the State House.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="col-md-4 mb-4 mb-md-0"
+              >
+                <div
+                  className="white-floated p-3 mx-auto"
+                  style={
+                    Object {
+                      "maxWidth": "400px",
+                    }
+                  }
+                >
+                  <h3
+                    className="h4"
+                  >
+                    <img
+                      alt=""
+                      className="my-4"
+                      src="legislator.svg"
+                      style={
+                        Object {
+                          "width": "80px",
+                        }
+                      }
+                    />
+                    Learn About Your Reps
+                  </h3>
+                  <p>
+                    By viewing which legislation your local representatives cosponsored and voted for or against, you can begin to understand their legislative priorities.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="col-md-4"
+              >
+                <div
+                  className="white-floated p-3 mx-auto"
+                  style={
+                    Object {
+                      "maxWidth": "400px",
+                    }
+                  }
+                >
+                  <h3
+                    className="h4"
+                  >
+                    <img
+                      alt=""
+                      className="my-4"
+                      src="collaboration.svg"
+                      style={
+                        Object {
+                          "width": "80px",
+                        }
+                      }
+                    />
+                    Take Action
+                    <small
+                      className="h6 text-muted mb-3"
+                    >
+                       (Coming Soon)
+                    </small>
+                  </h3>
+                  <p>
+                    We're working to make it easier to take action based on the information in the scorecard.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </LandingPageComponent>
+  </Router>
+</MemoryRouter>
+`;

@@ -16,21 +16,21 @@ fixture `House Reps`
 test('House legislator list is ok', async t => {
   await t
   .expect(Selector('table tbody tr:first-of-type').textContent).eql('1Arciero, James DC+  (78%)', 'Aricero')
-  .expect(Selector('table tbody tr:last-of-type').textContent).eql('159Zlotnik, Jonathan D. DF  (52%)')
+  .expect(Selector('table tbody tr:last-of-type').textContent).eql('161Zlotnik, Jonathan D. DF  (52%)')
 
   // sort by score highest to lowest
   await t
   .click(Selector('table th:last-of-type button'))
   .click(Selector('table th:last-of-type button'))
   .expect(Selector('table tbody tr:first-of-type').textContent).eql('1Hecht, Jonathan DA+  (100%)')
-  .expect(Selector('table tbody tr:last-of-type').textContent).eql('159Williams, Bud DN/A:  no voting data from 189th sess.')
+  .expect(Selector('table tbody tr:last-of-type').textContent).eql('161Williams, Bud DN/A:  no voting data from 189th sess.')
 })
 
 test('House legislator detail page is ok', async t => {
   // move to legislator detail page
   await t
   .click(Selector('a').withText('Holmes, Russell E'))
-  .expect(Selector('.metadata__heading').textContent).eql('Russell E. Holmes')
+  .expect(Selector('.metadata__heading').textContent).eql('Russell Holmes')
   .expect(Selector('.progress__text-container').textContent)
   .eql('C   (74%)')
   .expect(Selector('#sr-stats').textContent)

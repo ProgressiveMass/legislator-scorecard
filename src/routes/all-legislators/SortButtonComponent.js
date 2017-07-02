@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react'
 
 export default class SortButton extends React.Component {
-
   render () {
     let image
     if (this.props.currentSort[0] === this.props.sort) {
