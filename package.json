@@ -80,7 +80,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "functional-test": "testcafe chrome test/index.js",
+    "functional-test": "testcafe chrome test/functional.js",
     "unit-test": "jest",
     "lint-fix": "eslint src --fix",
     "lint": "eslint src",

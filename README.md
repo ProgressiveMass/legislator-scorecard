@@ -19,4 +19,5 @@ It talks to a small node backend.
 
 Right now there are functional tests using Testcafe and a few sad unit tests run by Jest.
 
-To run the functional tests, `npm run functional-test` and to run the unit tests, `npm run unit-test`.
+To run the functional tests, `npm install -g testcafe` and then `npm run functional-test`. 
+To run the unit tests, `npm run unit-test`.
