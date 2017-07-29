@@ -7,7 +7,7 @@ import LandingLayout from './routes/landing/LandingPageComponent'
 import ResultsLayout from './routes/legislator/ResultsLayoutComponent'
 import AllLegislatorsLayout from './routes/all-legislators/AllLegislatorsLayout'
 import SingleLegislatorLayout from './routes/legislator/SingleLegislatorLayout'
-
+import AllActsLayout from './routes/all-acts/AllActsLayout'
 
 class App extends Component {
 
@@ -23,6 +23,7 @@ class App extends Component {
         <NavComponent />
         <main className='flex-grow'>
           <Switch>
+            <Route path='/all-acts' component={AllActsLayout} />
             <Route path='/all-legislators' component={AllLegislatorsLayout} />
             <Route path='/my-legislators/:address' component={ResultsLayout} />
             <Route path='/legislator/:id' component={SingleLegislatorLayout} />
