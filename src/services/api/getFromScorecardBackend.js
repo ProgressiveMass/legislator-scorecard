@@ -1,7 +1,7 @@
 
 import axios from 'axios'
 
-export default function getFromScorecardBackend (urlFragment, callingComponent) {
+export default function getFromScorecardBackend (url, callingComponent) {
   let apiEndpoint
   if (process.env.NODE_ENV === 'production') {
     apiEndpoint = 'https://progressive-mass.herokuapp.com'
@@ -9,10 +9,12 @@ export default function getFromScorecardBackend (urlFragment, callingComponent) 
     apiEndpoint = 'http://localhost:4000'
   }
 
-  // FIXME This join should be done with a URL constructor, not by hand
-  let request = `${apiEndpoint}${urlFragment}`
+  // FIXME Need to handle query params in the URL
+  const axiosConfig = {
+    baseURL: apiEndpoint
+  }
 
-  axios.get(request)
+  axios.get(url, axiosConfig)
     .then((response) => {
       callingComponent.setState({
         apiData: response.data
