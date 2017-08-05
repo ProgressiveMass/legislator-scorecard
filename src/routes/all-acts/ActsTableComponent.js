@@ -168,7 +168,7 @@ class ActsTable extends React.Component {
             </ul>
           </div>
 
-          <table className='table table--top-row-fixed'>
+          <table className='table table-hover table--top-row-fixed'>
             <Sticky>
               <thead>
                 <tr>
