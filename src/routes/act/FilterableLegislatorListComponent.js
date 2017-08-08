@@ -93,7 +93,7 @@ class FilterableLegislatorList extends React.Component {
           else if (normalizeSortVal(a.lastName) > normalizeSortVal(b.lastName)) return 1
           else
             // this will never happen...right...
-            { return 0 }
+            { return 0 } // eslint-disable-line brace-style
         } else {
           return (
             normalizeRatingVal(b.voteRating, b) -
