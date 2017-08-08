@@ -18,7 +18,9 @@ export default class ResultsLayoutComponent extends React.Component {
 
   getLegislatorData (id) {
     let apiEndpoint
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.REACT_APP_ENV === 'test') {
+      apiEndpoint = 'https://progressive-mass-test.herokuapp.com/legislator'
+    } else if (process.env.NODE_ENV === 'production') {
       apiEndpoint = 'https://progressive-mass.herokuapp.com/legislator'
     } else {
       apiEndpoint = 'http://localhost:4000/legislator'

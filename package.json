@@ -84,8 +84,8 @@
     "unit-test": "jest",
     "lint-fix": "eslint src --fix",
     "lint": "eslint src",
-    "deploy:prod": "node scripts/build.js && firebase deploy -P default",
-    "deploy:dev": "node scripts/build.js && firebase deploy -P staging"
+    "deploy:prod": "REACT_APP_ENV=production node scripts/build.js && firebase deploy -P default",
+    "deploy:dev": "REACT_APP_ENV=test node scripts/build.js && firebase deploy -P staging"
   },
   "jest": {
     "collectCoverageFrom": [
