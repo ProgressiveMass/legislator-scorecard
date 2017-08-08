@@ -19,7 +19,7 @@ class ActsTable extends React.Component {
 
   renderNumCosponsorships (numCosponsors) {
     if (numCosponsors < 100) {
-      return <span className='badge badge-danger'>{numCosponsors}</span>
+      return <span className='badge badge-default'>{numCosponsors}</span>
     } else {
       return <span className='badge badge-primary'>{numCosponsors}</span>
     }
@@ -75,7 +75,7 @@ class ActsTable extends React.Component {
           </p>
         </td>
         <td style={{ width: '15%' }} data-label=''>
-          {this.renderNumCosponsorships(a.numCosponsors)}
+          <span className='badge badge-primary'>{a.numCosponsors}</span>
         </td>
       </tr>
     )
