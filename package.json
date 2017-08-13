@@ -18,6 +18,8 @@
     "react-sticky-table": "^1.1.9",
     "react-test-renderer": "15.6.1",
     "react-tippy": "^0.3.5-1",
+    "react-transition-group": "^1.1.2",
+    "reactstrap": "^4.8.0",
     "testcafe": "^0.14.0",
     "unorm": "^1.4.1"
   },

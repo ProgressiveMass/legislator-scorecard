@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { withRouter } from 'react-router'
 import unorm from 'unorm'
 
@@ -11,11 +12,15 @@ class FilterableLegislatorList extends React.Component {
     this.renderRow = this.renderRow.bind(this)
     this.sortData = this.sortData.bind(this)
     this.setSort = this.setSort.bind(this)
+    this.filterData = this.filterData.bind(this)
+    this.toggleCPFilter = this.toggleCPFilter.bind(this)
+    this.isFilterActive = this.isFilterActive.bind(this)
   }
 
   state = {
     sort: ['lastName', 'desc'],
-    filter: ''
+    nameFilter: null,
+    cpFilter: [null, null]
   }
 
   renderRow (r, i) {
@@ -115,15 +120,66 @@ class FilterableLegislatorList extends React.Component {
   }
 
   filterData (rows) {
-    const filterRegex = new RegExp('^' + this.state.filter.toLowerCase())
-    return rows.filter(r => {
-      const names = [r.lastName, r.firstName]
-      return (
-        names.filter(n => {
-          return n.trim().toLowerCase().match(filterRegex)
-        }).length > 0
-      )
-    })
+    const filterDataByName = rows => {
+      const filterRegex = new RegExp('^' + this.state.nameFilter.toLowerCase())
+      return rows.filter(r => {
+        const names = [r.lastName, r.firstName]
+        return (
+          names.filter(n => {
+            return n.trim().toLowerCase().match(filterRegex)
+          }).length > 0
+        )
+      })
+    }
+
+    const filterDataByChamberAndParty = rows => {
+      if (this.state.cpFilter[0]) {
+        rows = rows.filter(r => {
+          return r.chamber.toLowerCase() === this.state.cpFilter[0].toLowerCase()
+        })
+      }
+
+      if (this.state.cpFilter[1]) {
+        rows = rows.filter(r => {
+          return r.party.toLowerCase() === this.state.cpFilter[1].toLowerCase()
+        })
+      }
+
+      return rows
+    }
+
+    if (this.state.nameFilter) {
+      return filterDataByName(rows)
+    } else if (this.state.cpFilter.some((e) => e)) {
+      return filterDataByChamberAndParty(rows)
+    } else {
+      return rows
+    }
+  }
+
+  toggleCPFilter (filterIndex, filterValue) {
+    // Setting a chamber or party filter will clear the name filter, and vice versa
+    const stateClone = {
+      nameFilter: this.state.nameFilter,
+      cpFilter: [this.state.cpFilter[0], this.state.cpFilter[1]]
+    }
+
+    if (filterValue === 'clear') {
+      stateClone.cpFilter[filterIndex] = null
+    } else {
+      stateClone.nameFilter = null
+      // also clear the name filter's text box
+      this.nameFilter.value = ''
+      stateClone.cpFilter[filterIndex] = filterValue.toLowerCase()
+    }
+    this.setState(stateClone)
+  }
+
+  isFilterActive (filterIndex, filterValue) {
+    if (!this.state.cpFilter[filterIndex]) {
+      return false
+    }
+    return this.state.cpFilter[filterIndex].toLowerCase() === filterValue
   }
 
   render () {
@@ -138,8 +194,58 @@ class FilterableLegislatorList extends React.Component {
             className='d-md-flex align-items-center mb-5 mb-md-4'
             style={{ maxWidth: '600px' }}
           >
+            <UncontrolledDropdown id='chamberFilterDropdown'>
+              <DropdownToggle caret>
+                {{ lower: 'House', upper: 'Senate' }[this.state.cpFilter[0]] || 'Chamber'}
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem
+                  active={this.isFilterActive(0, 'lower')}
+                  onClick={() => this.toggleCPFilter(0, 'lower')}
+                >
+                  House
+                </DropdownItem>
+                <DropdownItem
+                  active={this.isFilterActive(0, 'upper')}
+                  onClick={() => this.toggleCPFilter(0, 'upper')}
+                >
+                  Senate
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem
+                  onClick={() => this.toggleCPFilter(0, 'clear')}
+                >
+                  Clear Filter
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown id='partyFilterDropdown'>
+              <DropdownToggle caret>
+                {{ democratic: 'Democrats', republican: 'Republicans' }[this.state.cpFilter[1]] || 'Party'}
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem
+                  active={this.isFilterActive(1, 'democratic')}
+                  onClick={() => this.toggleCPFilter(1, 'democratic')}
+                >
+                  Democrats
+                </DropdownItem>
+                <DropdownItem
+                  active={this.isFilterActive(1, 'republican')}
+                  onClick={() => this.toggleCPFilter(1, 'republican')}
+                >
+                  Republicans
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem
+                  onClick={() => this.toggleCPFilter(1, 'clear')}
+                >
+                  Clear Filter
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
             <label
-              htmlFor='filterTable'
+              htmlFor='nameFilter'
               className='d-inline-block mr-1'
               style={{ minWidth: '240px' }}
             >
@@ -148,10 +254,11 @@ class FilterableLegislatorList extends React.Component {
             <input
               type='text'
               placeholder='type a name'
-              id='filterTable'
+              id='nameFilter'
+              ref={el => { this.nameFilter = el }}
               className='form-control'
               onChange={e => {
-                this.setState({ filter: e.target.value })
+                this.setState({ nameFilter: e.target.value, cpFilter: [null, null] })
               }}
             />
           </div>
@@ -169,20 +276,20 @@ class FilterableLegislatorList extends React.Component {
                   />
                 </th>
                 <th>
-                  <SortButton
-                    onClick={this.setSort}
-                    sort='chamber'
-                    currentSort={this.state.sort}
-                    title='Chamber'
-                  />
+                  <button
+                    type='button'
+                    className='btn btn-sm btn-icon text-left'
+                    style={{ width: '100%' }}>
+                    <span className='label d-inline-block pr-3'>Chamber</span>
+                  </button>
                 </th>
                 <th>
-                  <SortButton
-                    onClick={this.setSort}
-                    sort='party'
-                    currentSort={this.state.sort}
-                    title='Party'
-                  />
+                  <button
+                    type='button'
+                    className='btn btn-sm btn-icon text-left'
+                    style={{ width: '100%' }}>
+                    <span className='label d-inline-block pr-3'>Party</span>
+                  </button>
                 </th>
                 <th>
                   <SortButton
