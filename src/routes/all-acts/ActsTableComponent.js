@@ -17,14 +17,6 @@ class ActsTable extends React.Component {
     }
   }
 
-  renderNumCosponsorships (numCosponsors) {
-    if (numCosponsors < 100) {
-      return <span className='badge badge-default'>{numCosponsors}</span>
-    } else {
-      return <span className='badge badge-primary'>{numCosponsors}</span>
-    }
-  }
-
   renderRow (a, i) {
     const tags = a.tags.map((t) => {
       return <button
@@ -74,8 +66,21 @@ class ActsTable extends React.Component {
             {a.houseDescription || a.senateDescription}
           </p>
         </td>
-        <td style={{ width: '15%' }} data-label=''>
-          <span className='badge badge-primary'>{a.numCosponsors}</span>
+        <td style={{ width: '15%' }} data-label='cosponsors'>
+          <ul className='list-unstyled'>
+            <li className='d-flex justify-content-between align-items-center mb-1'>
+              <span>House:</span>
+              <span className='badge badge-clear'>{a.houseCosponsors}</span>
+            </li>
+            <li className='d-flex justify-content-between align-items-center mb-1'>
+              <span>Senate:</span>
+              <span className='badge badge-clear'>{a.senateCosponsors}</span>
+            </li>
+            <li className='d-flex justify-content-between align-items-center mb-1'>
+              <span>Total:</span>
+              <span className='badge badge-primary'>{a.totalCosponsors}</span>
+            </li>
+          </ul>
         </td>
       </tr>
     )
