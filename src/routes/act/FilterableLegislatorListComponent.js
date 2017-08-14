@@ -190,9 +190,16 @@ class FilterableLegislatorList extends React.Component {
       <div className='white-floated pt-5 mb-5'>
         <div className='mx-auto'>
 
+          <label
+            htmlFor='filterBox'
+            className='d-block'
+          >
+            Filter By:
+          </label>
           <div
             className='d-md-flex align-items-center mb-5 mb-md-4'
             style={{ maxWidth: '600px' }}
+            id='filterBox'
           >
             <UncontrolledDropdown id='chamberFilterDropdown'>
               <DropdownToggle caret>
@@ -244,16 +251,9 @@ class FilterableLegislatorList extends React.Component {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <label
-              htmlFor='nameFilter'
-              className='d-inline-block mr-1'
-              style={{ minWidth: '240px' }}
-            >
-              Filter By Legislator Name:
-            </label>
             <input
               type='text'
-              placeholder='type a name'
+              placeholder='Legislator Name'
               id='nameFilter'
               ref={el => { this.nameFilter = el }}
               className='form-control'
