@@ -4,9 +4,20 @@ import InfoPopover from './../../general-components/InfoPopover'
 export default class ActMetadataComponent extends React.Component {
 
   render () {
+    let containerClass,
+      marginClass
+
+    if (this.props.data.showPairedDisclaimer) {
+      containerClass = ''
+      marginClass = 'mt-0'
+    } else {
+      containerClass = 'module-container'
+      marginClass = ''
+    }
+
     return (
-      <div className='module-container module-container--full-width-on-small'>
-        <div className='metadata heading-font'>
+      <div className={`${containerClass} module-container--full-width-on-small`}>
+        <div className={`metadata heading-font ${marginClass}`}>
           <div className='row no-gutters align-items-md-center'>
             <div className='col-md-6'>
               <div className='label' style={{ fontSize : '1.1rem' }}>
