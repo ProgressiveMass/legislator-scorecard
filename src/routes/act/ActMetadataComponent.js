@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import InfoPopover from './../../general-components/InfoPopover'
+import PlatformLogo from './PlatformLogo'
 
 export default class ActMetadataComponent extends React.Component {
 
@@ -20,7 +21,7 @@ export default class ActMetadataComponent extends React.Component {
         <div className={`metadata heading-font ${marginClass}`}>
           <div className='row no-gutters align-items-md-center'>
             <div className='col-md-6'>
-              <div className='label' style={{ fontSize : '1.1rem' }}>
+              <div className='label text-muted font-weight-bold mb-md-1' style={{ fontSize : '1rem' }}>
                 {this.props.billNumberDisplay}&nbsp;
                 {this.props.data.showPairedDisclaimer
                   ? <InfoPopover
@@ -28,12 +29,7 @@ export default class ActMetadataComponent extends React.Component {
                     /> : null}
               </div>
               <div className='d-flex align-items-md-center flex-column flex-md-row'>
-                <div className='pb-4 py-md-0'>
-                  <img src={require('./../../img/progressive-mass-logo.png')}
-                    alt='Progressive Massachusetts'
-                    className='legislator-portrait'
-                  />
-                </div>
+                <PlatformLogo platforms={this.props.data.tags} />
                 <div>
                   <div className='text-lg mb-2' style={{ position: 'relative', top: '.2rem' }}>
                     {this.props.title}
