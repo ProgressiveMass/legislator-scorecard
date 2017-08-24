@@ -51,7 +51,7 @@ function renderAllMeansAllLogo () {
 
 function renderGovernmentLogo () {
   return (
-    <div className='pb-4 py-md-0 pltfm-logo-container' style={{ 'font-size': '0.9rem' }}>
+    <div className='pb-4 py-md-0 pltfm-logo-container' style={{ fontSize: '0.9rem' }}>
       <p className='text-left font-weight-bold m-0'>Good</p>
       <p className='text-left font-weight-light m-0'>Government</p>
       <img src={require('../../img/platform_logos/gvmnt.svg')}
