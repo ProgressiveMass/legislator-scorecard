@@ -106,9 +106,6 @@ export default class ActLayout extends React.Component {
     return (
       <div className='tinted-background'>
         {this.renderMetadataSection()}
-        <h1 className='text-center h2 mt-4 font-weight-light' style={{ marginBottom: '3rem' }}>
-          Cosponsorship
-        </h1>
         <div className='mt-4 inverted-tabs'>
           <Tabs items={tabItems}
             showMore={false}

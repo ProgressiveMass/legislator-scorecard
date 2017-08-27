@@ -201,7 +201,7 @@ class FilterableLegislatorList extends React.Component {
             style={{ maxWidth: '600px' }}
             id='filterBox'
           >
-            <UncontrolledDropdown id='chamberFilterDropdown'>
+            <UncontrolledDropdown id='chamberFilterDropdown' className='mr-1'>
               <DropdownToggle caret>
                 {{ lower: 'House', upper: 'Senate' }[this.state.cpFilter[0]] || 'Chamber'}
               </DropdownToggle>
@@ -226,7 +226,7 @@ class FilterableLegislatorList extends React.Component {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <UncontrolledDropdown id='partyFilterDropdown'>
+            <UncontrolledDropdown id='partyFilterDropdown'  className='mr-1'>
               <DropdownToggle caret>
                 {{ democratic: 'Democrats', republican: 'Republicans' }[this.state.cpFilter[1]] || 'Party'}
               </DropdownToggle>
