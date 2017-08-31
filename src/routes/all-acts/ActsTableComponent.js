@@ -9,7 +9,7 @@ import tagMap from './tagMap'
 class ActsTable extends React.Component {
   constructor (props) {
     super(props)
-    this.renderRow = this.renderRow.bind(this)
+    this.renderCard = this.renderCard.bind(this)
     this.toggleFilter = this.toggleFilter.bind(this)
     this.filterRows = this.filterRows.bind(this)
 
@@ -18,11 +18,11 @@ class ActsTable extends React.Component {
     }
   }
 
-  renderRow (a, i) {
+  renderCard (a, i) {
     const tags = a.tags.map(t => {
       return (
         <button
-          className={`btn badge ${tagMap[t].badge}`}
+          className={`btn badge ${tagMap[t].badge} mr-2`}
           onClick={() => {
             this.toggleFilter(t)
           }}
@@ -34,50 +34,50 @@ class ActsTable extends React.Component {
     })
 
     return (
-      <tr key={a.actId} onClick={()=> this.props.history.push(`/act/${a.actId}`)}>
-        <td className='text-muted' style={{ width: '15%' }}>
-          <div className='font-weight-bold'>
-            {a.combinedNumber}&nbsp;
-            {a.showPairedDisclaimer
-              ? <InfoPopover text='This bill has two distinct versions in the House and Senate, but for the purposes of tracking cosponsorship we treat them as a single bill.' />
-              : null}
-          </div>
-          <div>
-            {tags}
-          </div>
-        </td>
-        <td style={{ width: '30%' }}>
-          {a.houseTitle || a.senateTitle}
-        </td>
-        <td style={{ width: '40%' }} data-label=''>
+      <div
+        key={a.actId}
+        onClick={() => this.props.history.push(`/act/${a.actId}`)}
+        className='card all-acts__card'
+      >
+        <div>
+          {tags}
+        </div>
+        <h3 className='h5 mt-3 mb-1'>
+          {a.shortTitle}
+        </h3>
+        <div className='font-weight-bold mb-2 text-muted'>
+          {a.combinedNumber}&nbsp;
+          {a.showPairedDisclaimer
+            ? <InfoPopover text='This bill has two distinct versions in the House and Senate, but for the purposes of tracking cosponsorship we treat them as a single bill.' />
+            : null}
+        </div>
+        <div className='mb-3' style={{flexGrow : '1'}}>
           {a.houseDescription || a.senateDescription}
-        </td>
-        <td style={{ width: '15%' }} data-label='cosponsors'>
-          <ul className='list-unstyled'>
-            <li className='d-flex justify-content-between align-items-center mb-1'>
-              <span>House:</span>
-              <span className='badge badge-clear'>
+        </div>
+        <div>
+          <h3 style={{fontSize: '1rem'}}>Cosponsors (<Link to={`/act/${a.actId}`}>View All</Link>)</h3>
+          <ul className='list-unstyled d-flex'>
+            <li className='d-flex flex-column mr-3'>
+              <span>House</span>
+              <span className='badge badge-default align-self-start' style={{fontSize: '1rem'}}>
                 {a.houseCosponsors}
               </span>
             </li>
-            <li className='d-flex justify-content-between align-items-center mb-1'>
-              <span>Senate:</span>
-              <span className='badge badge-clear'>
+            <li className='d-flex flex-column mr-3'>
+              <span>Senate</span>
+              <span className='badge badge-default align-self-start' style={{fontSize: '1rem'}}>
                 {a.senateCosponsors}
               </span>
             </li>
-            <li className='d-flex justify-content-between align-items-center mb-1'>
-              <span>Total:</span>
-              <span className='badge badge-primary'>
+            <li className='d-flex flex-column'>
+              <span>Total</span>
+              <span className='badge badge-primary align-self-start' style={{fontSize: '1rem'}}>
                 {a.totalCosponsors}
               </span>
             </li>
           </ul>
-          <div>
-            <Link to={`/act/${a.actId}`}>View List of Cosponsors</Link>
-          </div>
-        </td>
-      </tr>
+        </div>
+      </div>
     )
   }
 
@@ -121,6 +121,7 @@ class ActsTable extends React.Component {
   }
 
   render () {
+
     const acts = this.filterRows(this.props.data)
     const tags = [
       ...new Set([].concat.apply([], this.props.data.map(a => a.tags)))
@@ -136,40 +137,19 @@ class ActsTable extends React.Component {
 
     return (
       <div className='table-container'>
-        <h3 className='sr-only'>Cosponsored Bills</h3>
-        <StickyContainer>
-          <div className='row no-gutters explanatory-text'>
-            <div
-              className='text-center py-3'
-              style={{
-                width: '100%',
-                fontSize: '1.1rem',
-                background: 'rgba(2, 117, 216, 0.1)'
-              }}
-            >
-              <a
-                className='font-weight-bold heading-font'
-                target='_blank'
-                href='http://progressivemass.com/factsheet'
-              >
-                <img
-                  src={require('./../../img/survey.svg')}
-                  alt='list symbol'
-                  style={{ width: '45px' }}
-                  className='d-block d-sm-inline-block mx-auto'
-                />
-                View our guide to progressive legislation for the 2017-2018
-                term.
-              </a>
-            </div>
-            <div className='col-md-6 p-3 pr-md-5'>
+        <div className='metadata py-3 mb-2'>
+        <h1 className='h2 my-4' style={{ marginBottom: '3rem' }}>
+          Progressive Mass Legislative Agenda
+        </h1>
+          <div className='row no-gutters'>
+            <div className='col-md-6 pr-md-5'>
               <p>
                 This session, almost 6,000 pieces of legislation have been
                 filed. Only a few will even make it out of committee, let alone
                 receive a vote. Progressive Mass has identified a suite of
                 bills, across several issue areas, to craft a{' '}
                 <a
-                  href='http://www.progressivemass.com/190legislativeagenda'
+                  href='http://progressivemass.com/factsheet'
                   target='_blank'
                 >
                   Progressive Legislative Agenda
@@ -177,7 +157,7 @@ class ActsTable extends React.Component {
               </p>
             </div>
 
-            <div className='col-md-6 p-3 pr-md-5'>
+            <div className='col-md-6 pr-md-5'>
               <p>
                 Cosponsoring legislation is an important way for a legislator to
                 help put momentum behind certain bills. It is one of the few
@@ -189,38 +169,22 @@ class ActsTable extends React.Component {
             </div>
           </div>
 
-          <div className='mb-3 pt-4'>
-            <span className='label d-md-inline-block mr-3'>
-              Filter Bills By Topic:
-            </span>
-            <ul className='d-sm-inline-flex list-unstyled'>
-              {this.renderTagFilters(tags)}
-            </ul>
-          </div>
+        <div className='mb-3 pt-3'>
+          <span className='label d-md-inline-block mr-3'>
+            Filter Bills By Topic:
+          </span>
+          <ul className='d-sm-inline-flex list-unstyled'>
+            {this.renderTagFilters(tags)}
+          </ul>
+        </div>
+        </div>
 
-          <table className='table table-hover table--top-row-fixed'>
-            <Sticky>
-              <thead>
-                <tr>
-                  <th style={{ width: '15%' }}>Bill</th>
-                  <th style={{ width: '30%' }}>Title</th>
-                  <th style={{ width: '40%' }}>
-                    Summary from{' '}
-                    <a href='http://www.progressivemass.com/' target='_blank'>
-                      Progressive Mass
-                    </a>
-                  </th>
-                  <th style={{ width: '15%' }}>Cosponsors</th>
-                </tr>
-              </thead>
-            </Sticky>
-            <tbody>
-              {acts.map((a, i) => {
-                return this.renderRow(a, i)
-              }, this)}
-            </tbody>
-          </table>
-        </StickyContainer>
+
+        <div className='d-flex flex-wrap all-acts__grid'>
+          {acts.map((a, i) => {
+            return this.renderCard(a, i)
+          }, this)}
+        </div>
       </div>
     )
   }

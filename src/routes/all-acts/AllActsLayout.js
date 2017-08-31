@@ -24,13 +24,9 @@ export default class AllActsLayout extends React.Component {
 
     return (
       <div className='tinted-background'>
-        <h1 className='text-center h2 mt-4 font-weight-light' style={{ marginBottom: '3rem' }}>
-          Progressive Mass Legislative Agenda
-        </h1>
-        <div className='module-container module-container--full-width-on-small'>
-          <div className='metadata'>
-            <ActsTable data={this.state.apiData} />
-          </div>
+        <div className="module-container">
+        <ActsTable data={this.state.apiData} />
+
         </div>
       </div>
     )
