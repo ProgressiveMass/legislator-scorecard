@@ -1,5 +1,10 @@
 import React, { PropTypes } from 'react'
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import {
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from 'reactstrap'
 import { withRouter } from 'react-router'
 import unorm from 'unorm'
 
@@ -32,18 +37,22 @@ class FilterableLegislatorList extends React.Component {
           this.props.history.push(`/legislator/${r.legId}`)
         }}
       >
-        <td>{i + 1}</td>
-        <td
-          data-label={
-            r.chamber === 'upper' ? 'Senator' : 'Representative'
-          }
-        >
-          <a href='#'><b>{r.lastName}, {r.firstName}</b></a>
+        <td>
+          {i + 1}
+        </td>
+        <td data-label={r.chamber === 'upper' ? 'Senator' : 'Representative'}>
+          <a href='#'>
+            <b>
+              {r.lastName}, {r.firstName}
+            </b>
+          </a>
         </td>
         <td data-label='Chamber'>
           {r.chamber === 'upper' ? 'Senate' : 'House'}
         </td>
-        <td data-label='Party'>{r.party.slice(0, 1)}</td>
+        <td data-label='Party'>
+          {r.party.slice(0, 1)}
+        </td>
         <td
           data-label='Progressive Rating (2015-2016)'
           style={{ verticalAlign: 'middle' }}
@@ -94,11 +103,10 @@ class FilterableLegislatorList extends React.Component {
       } else {
         // find an appropriate secondary sort
         if (sortKey === 'voteRating') {
-          if (normalizeSortVal(a.lastName) < normalizeSortVal(b.lastName)) return -1
-          else if (normalizeSortVal(a.lastName) > normalizeSortVal(b.lastName)) return 1
-          else
+          if (normalizeSortVal(a.lastName) < normalizeSortVal(b.lastName)) { return -1 } else if (normalizeSortVal(a.lastName) > normalizeSortVal(b.lastName)) { return 1 } else {
             // this will never happen...right...
-            { return 0 } // eslint-disable-line brace-style
+            return 0
+          } // eslint-disable-line brace-style
         } else {
           return (
             normalizeRatingVal(b.voteRating, b) -
@@ -135,7 +143,9 @@ class FilterableLegislatorList extends React.Component {
     const filterDataByChamberAndParty = rows => {
       if (this.state.cpFilter[0]) {
         rows = rows.filter(r => {
-          return r.chamber.toLowerCase() === this.state.cpFilter[0].toLowerCase()
+          return (
+            r.chamber.toLowerCase() === this.state.cpFilter[0].toLowerCase()
+          )
         })
       }
 
@@ -150,7 +160,7 @@ class FilterableLegislatorList extends React.Component {
 
     if (this.state.nameFilter) {
       return filterDataByName(rows)
-    } else if (this.state.cpFilter.some((e) => e)) {
+    } else if (this.state.cpFilter.some(e => e)) {
       return filterDataByChamberAndParty(rows)
     } else {
       return rows
@@ -187,13 +197,9 @@ class FilterableLegislatorList extends React.Component {
     const data = this.sortData(this.filterData(this.props.data))
 
     return (
-      <div className='white-floated pt-5 mb-5'>
+      <div className='white-floated pt-3 mb-3'>
         <div className='mx-auto'>
-
-          <label
-            htmlFor='filterBox'
-            className='d-block'
-          >
+          <label htmlFor='filterBox' className='d-block'>
             Filter By:
           </label>
           <div
@@ -203,7 +209,8 @@ class FilterableLegislatorList extends React.Component {
           >
             <UncontrolledDropdown id='chamberFilterDropdown' className='mr-1'>
               <DropdownToggle caret>
-                {{ lower: 'House', upper: 'Senate' }[this.state.cpFilter[0]] || 'Chamber'}
+                {{ lower: 'House', upper: 'Senate' }[this.state.cpFilter[0]] ||
+                  'Chamber'}
               </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem
@@ -219,14 +226,12 @@ class FilterableLegislatorList extends React.Component {
                   Senate
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem
-                  onClick={() => this.toggleCPFilter(0, 'clear')}
-                >
+                <DropdownItem onClick={() => this.toggleCPFilter(0, 'clear')}>
                   Clear Filter
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <UncontrolledDropdown id='partyFilterDropdown'  className='mr-1'>
+            <UncontrolledDropdown id='partyFilterDropdown' className='mr-1'>
               <DropdownToggle caret>
                 {{ democratic: 'Democrats', republican: 'Republicans' }[this.state.cpFilter[1]] || 'Party'}
               </DropdownToggle>
@@ -244,9 +249,7 @@ class FilterableLegislatorList extends React.Component {
                   Republicans
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem
-                  onClick={() => this.toggleCPFilter(1, 'clear')}
-                >
+                <DropdownItem onClick={() => this.toggleCPFilter(1, 'clear')}>
                   Clear Filter
                 </DropdownItem>
               </DropdownMenu>
@@ -255,10 +258,15 @@ class FilterableLegislatorList extends React.Component {
               type='text'
               placeholder='Legislator Name'
               id='nameFilter'
-              ref={el => { this.nameFilter = el }}
+              ref={el => {
+                this.nameFilter = el
+              }}
               className='form-control'
               onChange={e => {
-                this.setState({ nameFilter: e.target.value, cpFilter: [null, null] })
+                this.setState({
+                  nameFilter: e.target.value,
+                  cpFilter: [null, null]
+                })
               }}
             />
           </div>
@@ -279,7 +287,8 @@ class FilterableLegislatorList extends React.Component {
                   <button
                     type='button'
                     className='btn btn-sm btn-icon text-left'
-                    style={{ width: '100%' }}>
+                    style={{ width: '100%' }}
+                  >
                     <span className='label d-inline-block pr-3'>Chamber</span>
                   </button>
                 </th>
@@ -287,7 +296,8 @@ class FilterableLegislatorList extends React.Component {
                   <button
                     type='button'
                     className='btn btn-sm btn-icon text-left'
-                    style={{ width: '100%' }}>
+                    style={{ width: '100%' }}
+                  >
                     <span className='label d-inline-block pr-3'>Party</span>
                   </button>
                 </th>
@@ -299,7 +309,6 @@ class FilterableLegislatorList extends React.Component {
                     title='Prog. Rating (2015-2016)'
                   />
                 </th>
-
               </tr>
             </thead>
             <tbody>
@@ -307,7 +316,6 @@ class FilterableLegislatorList extends React.Component {
             </tbody>
           </table>
         </div>
-
       </div>
     )
   }

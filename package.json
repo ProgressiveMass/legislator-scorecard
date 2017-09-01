@@ -60,7 +60,7 @@
     "gzip-size": "3.0.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.3",
-    "image-webpack-loader": "^3.3.0",
+    "image-webpack-loader": "^3.4.0",
     "jest": "20.0.4",
     "json-loader": "0.5.4",
     "node-sass": "^4.5.0",

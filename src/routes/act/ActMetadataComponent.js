@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react'
 import InfoPopover from './../../general-components/InfoPopover'
-import PlatformLogo from './PlatformLogo'
 
 const ActMetadataComponent = props => {
   let containerClass, marginClass
