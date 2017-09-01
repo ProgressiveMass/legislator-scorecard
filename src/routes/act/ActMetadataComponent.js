@@ -14,8 +14,8 @@ const ActMetadataComponent = props => {
   }
 
   return (
-    <div className='module-container'>
-      <div className='metadata heading-font'>
+    <div className={`${containerClass} module-container--full-width-on-small`}>
+      <div className={`metadata heading-font ${marginClass}`}>
         <div>
           <div className='label text-muted font-weight-bold mb-md-1 text-lg'>
             {props.billNumberDisplay}&nbsp;
@@ -31,7 +31,7 @@ const ActMetadataComponent = props => {
               <a href={props.houseUrl} target='_blank'>
                 House Bill
               </a>}{' '}
-            |{' '}
+            {props.houseUrl && props.senateUrl ? '|' : null }{' '}
             {props.senateUrl &&
               <a href={props.senateUrl} target='_blank'>
                 Senate Bill

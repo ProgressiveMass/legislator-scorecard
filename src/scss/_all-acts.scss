@@ -7,7 +7,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.30);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   }
 
   @include media-breakpoint-up(md) {
