@@ -37,9 +37,6 @@ class FilterableLegislatorList extends React.Component {
           this.props.history.push(`/legislator/${r.legId}`)
         }}
       >
-        <td>
-          {i + 1}
-        </td>
         <td data-label={r.chamber === 'upper' ? 'Senator' : 'Representative'}>
           <a href='#'>
             <b>
@@ -274,7 +271,6 @@ class FilterableLegislatorList extends React.Component {
           <table className='table mx-auto table-hover table-clickable-rows'>
             <thead>
               <tr>
-                <th />
                 <th>
                   <SortButton
                     onClick={this.setSort}
