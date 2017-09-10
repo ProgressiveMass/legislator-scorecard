@@ -47,7 +47,7 @@ class ActsGrid extends React.Component {
           {a.combinedNumber}&nbsp;
         </div>
         <div className='mb-3' style={{ flexGrow: '1' }}>
-          {a.houseDescription || a.senateDescription}
+          {a.senateDescription || a.houseDescription}
         </div>
         <div>
           <h3 style={{ fontSize: '1rem' }}>

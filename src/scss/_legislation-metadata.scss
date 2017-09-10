@@ -1,5 +1,8 @@
 .pltfm-logo-container {
     margin-right: 2rem;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
 }
 
 .pltfm-logo {
