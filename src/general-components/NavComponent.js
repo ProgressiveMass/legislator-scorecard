@@ -19,7 +19,10 @@ const Header = (props) => {
       <div className='text-md-right mt-3 mt-md-0'>
         <ul className='list-unstyled d-flex'>
           <li className='mr-3 mr-md-5'>
-            <NavLink to='/all-legislators'>View All <abbr aria-label='Massachusetts'>MA</abbr> Legislators</NavLink>
+            <NavLink to='/all-legislators'>All <abbr aria-label='Massachusetts'>MA</abbr> Legislators</NavLink>
+          </li>
+          <li className='mr-3 mr-md-5'>
+            <NavLink to='/all-acts'>Our Legislative Agenda</NavLink>
           </li>
           <li>
             <a href='https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0' target='_blank'>F.A.Q. <span className='sr-only'>opens in new window</span></a>

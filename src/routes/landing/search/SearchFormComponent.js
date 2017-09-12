@@ -33,7 +33,7 @@ class SearchFormComponent extends React.Component {
               className='form-control'
               ref='address'
               placeholder='123 Main St, Cambridge'
-              name="address"
+              name='address'
             />
           </label>
         </div>
@@ -46,7 +46,7 @@ class SearchFormComponent extends React.Component {
               className='form-control'
               ref='zip'
               placeholder='02142'
-              name="zipCode"
+              name='zipCode'
 
             />
           </label>

@@ -45,7 +45,16 @@ const Footer = props => {
             <p>
               Site created by{' '}
               <a href='http://alex.holachek.com' target='_blank'>
-                Alex Holachek<span className='sr-only'> opens in new window</span></a>.
+                Alex Holachek<span className='sr-only'>
+                  opens in new window
+                </span>
+              </a>{' '}and maintained by<br /><a
+                href='https://www.linkedin.com/in/jay-spiros-a691b52a/'
+                target='_blank'
+              >
+                Jay Spiros <span className='sr-only'> opens in new window</span>
+              </a>
+              .
             </p>
 
             <p>
