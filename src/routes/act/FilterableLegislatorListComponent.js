@@ -10,6 +10,7 @@ import unorm from 'unorm'
 
 import SortButton from '../all-legislators/SortButtonComponent'
 import ProgressBarWContext from './../legislator/ProgressBarWContextComponent'
+import InfoPopover from './../../general-components/InfoPopover'
 
 class FilterableLegislatorList extends React.Component {
   constructor (props) {
@@ -40,7 +41,12 @@ class FilterableLegislatorList extends React.Component {
         <td data-label={r.chamber === 'upper' ? 'Senator' : 'Representative'}>
           <a href='#'>
             <b>
-              {r.lastName}, {r.firstName}
+              {r.lastName}, {r.firstName}&nbsp;
+              {r.specialElectionUrl
+                ? <InfoPopover
+                  text={`${r.chamber === 'upper' ? 'Senator' : 'Representative'} ${r.lastName} is no longer a member of the Massachusetts Legislature. There is a <a target="_blank" href="${r.specialElectionUrl}">special election</a> pending to elect a replacement.`}
+                  />
+              : null}
             </b>
           </a>
         </td>

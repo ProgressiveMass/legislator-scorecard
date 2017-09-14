@@ -4,6 +4,7 @@ import unorm from 'unorm'
 
 import SortButton from './SortButtonComponent'
 import ProgressBarWContext from './../legislator/ProgressBarWContextComponent'
+import InfoPopover from './../../general-components/InfoPopover'
 
 class StateRepTable extends React.Component {
   constructor (props) {
@@ -33,7 +34,16 @@ class StateRepTable extends React.Component {
             this.props.chamber === 'upper' ? 'Senator' : 'Representative'
           }
         >
-          <a href='#'><b>{d.name}</b></a>
+          <a href='#'>
+            <b>
+              {d.name}&nbsp;
+              {d.specialElectionUrl
+                ? <InfoPopover
+                  text={`${this.props.chamber === 'upper' ? 'Senator' : 'Representative'} ${d.name.split(',')[0]} is no longer a member of the Massachusetts Legislature. There is a <a target="_blank" href="${d.specialElectionUrl}">special election</a> pending to elect a replacement.`}
+                  />
+              : null}
+            </b>
+          </a>
         </td>
         <td data-label='Party'>{d.party.slice(0, 1)}</td>
         <td
