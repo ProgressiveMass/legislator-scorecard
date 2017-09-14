@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
+import InfoPopover from './../../general-components/InfoPopover'
 
 import tagMap from './tagMap'
 
@@ -45,6 +46,9 @@ class ActsGrid extends React.Component {
         </h3>
         <div className='font-weight-bold mb-1 text-muted'>
           {a.combinedNumber}&nbsp;
+          {a.showPairedDisclaimer
+            ? <InfoPopover text='This bill has two distinct versions in the House and Senate, but for the purposes of tracking cosponsorship we treat them as a single bill.' />
+            : null}
         </div>
         <div className='mb-3' style={{ flexGrow: '1' }}>
           {a.senateDescription || a.houseDescription}
