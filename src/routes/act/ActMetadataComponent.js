@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import InfoPopover from './../../general-components/InfoPopover'
+import tagMap from '../all-acts/tagMap'
 
 const ActMetadataComponent = props => {
   let containerClass, marginClass
@@ -12,10 +13,22 @@ const ActMetadataComponent = props => {
     marginClass = ''
   }
 
+  const tags = props.data.tags.map(t => {
+    return (
+      <img src={require(`../../img/platform_logos/${tagMap[t].logo}`)}
+        alt={t}
+        className='mr-1'
+        style={{ width: '60px', maxHeight: '60px' }}
+      />
+    )
+  })
   return (
     <div className={`${containerClass} module-container--full-width-on-small`}>
       <div className={`metadata heading-font ${marginClass}`}>
         <div>
+          <div>
+            {tags}
+          </div>
           <div className='label text-muted font-weight-bold mb-md-1 text-lg'>
             {props.billNumberDisplay}&nbsp;
             {props.data.showPairedDisclaimer

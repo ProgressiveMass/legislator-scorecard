@@ -20,22 +20,18 @@ class ActsGrid extends React.Component {
   renderCard (a, i) {
     const tags = a.tags.map(t => {
       return (
-        <button
-          className={`btn badge ${tagMap[t].badge} mr-2`}
-          onClick={() => {
-            this.toggleFilter(t)
-          }}
-          key={tagMap[t].name}
-        >
-          {tagMap[t].name}
-        </button>
+        <img src={require(`../../img/platform_logos/${tagMap[t].logo}`)}
+          alt={t}
+          className='mr-1'
+          style={{ width: '60px', maxHeight: '60px' }}
+        />
       )
     })
 
     return (
       <div
         key={a.actId}
-        onClick={() => this.props.history.push(`/act/${a.actId}`)}
+        onClick={() => this.props.history.push(`/act/${a.friendlyUrl}`)}
         className='card all-acts__card'
       >
         <div>
@@ -55,7 +51,7 @@ class ActsGrid extends React.Component {
         </div>
         <div>
           <h3 style={{ fontSize: '1rem' }}>
-            {a.totalCosponsors} Cosponsors (<Link to={`/act/${a.actId}`}>View All</Link>)
+            {a.totalCosponsors} Cosponsors (<Link to={`/act/${a.friendlyUrl}`}>View All</Link>)
           </h3>
           <ul className='list-unstyled d-flex'>
             <li className='mr-2'>
@@ -92,21 +88,28 @@ class ActsGrid extends React.Component {
 
   renderTagFilters (tags) {
     return tags.map(t => {
-      let badgeClass = 'badge-default'
+      let imageSrc = `${tagMap[t].logo.split('.')[0]}-greyed.svg`
       if (!this.state.tagFilter || this.state.tagFilter === t) {
-        badgeClass = tagMap[t].badge
+        imageSrc = tagMap[t].logo
       }
       return (
-        <li className='mr-1 my-2 my-md-0' key={tagMap[t].name}>
-          <button
-            className={`btn btn-sm badge ${badgeClass}`}
-            style={{ fontSize: '.9rem' }}
-            aria-pressed={this.state.tagFilter === t ? 'true' : 'false'}
-            onClick={() => this.toggleFilter(t)}
-          >
-            {tagMap[t].name}
-          </button>
-        </li>
+        <button
+          key={tagMap[t].name}
+          type='button'
+          className='list-group-item border-0 p-2'
+          style={{ fontSize: '.4rem' }}
+          aria-pressed={this.state.tagFilter === t ? 'true' : 'false'}
+          onClick={() => this.toggleFilter(t)}
+        >
+          <span className='align-middle'>
+            <img src={require(`../../img/platform_logos/${imageSrc}`)}
+              alt=''
+              className='mr-1'
+              style={{ width: '28px', maxHeight: '28px' }}
+            />
+          </span>
+          <span className='label d-inline-block align-middle'>{t}</span>
+        </button>
       )
     })
   }
@@ -173,12 +176,12 @@ class ActsGrid extends React.Component {
           </div>
 
           <div className='mb-3 pt-3'>
-            <span className='label d-md-inline-block mr-3'>
+            <div className='label'>
               Filter Bills By Topic:
-            </span>
-            <ul className='d-sm-inline-flex list-unstyled'>
+            </div>
+            <div className='ml-md-5 list-group' style={{ maxWidth: '400px' }}>
               {this.renderTagFilters(tags)}
-            </ul>
+            </div>
           </div>
         </div>
 
