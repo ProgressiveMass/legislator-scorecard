@@ -38,7 +38,7 @@ class ActsGrid extends React.Component {
           {tags}
         </div>
         {a.hasPassed
-          ? <h3 className='text-primary mt-1 mb-0'>PASSED&#10004;</h3>
+          ? <h3 className='text-primary mt-1 mb-0'>PASSED&#9745;</h3>
           : null}
         <h3 className='h5 mt-3 mb-1'>
           {a.shortTitle}

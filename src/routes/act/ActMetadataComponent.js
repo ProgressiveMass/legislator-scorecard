@@ -36,7 +36,7 @@ const ActMetadataComponent = props => {
               : null}
           </div>
           {props.data.hasPassed
-            ? <h3 className='text-primary'>PASSED&#10004;</h3>
+            ? <h3 className='text-primary'>PASSED&#9745;</h3>
             : null}
           <h1 className='h3 mt-2'>
             {props.title}
