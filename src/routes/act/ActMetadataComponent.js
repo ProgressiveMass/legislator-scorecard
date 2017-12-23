@@ -35,6 +35,9 @@ const ActMetadataComponent = props => {
               ? <InfoPopover text='This bill has two distinct versions in the House and Senate, but for the purposes of tracking cosponsorship we treat them as a single bill.' />
               : null}
           </div>
+          {props.data.hasPassed
+            ? <h3 className='text-primary'>PASSED&#10004;</h3>
+            : null}
           <h1 className='h3 mt-2'>
             {props.title}
           </h1>
