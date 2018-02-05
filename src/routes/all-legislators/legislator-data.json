@@ -47,14 +47,6 @@
     "voteRating": 100,
     "recordedVotePercentage": 100
   }, {
-    "id": "MAL000016",
-    "name": "Flanagan, Jennifer L.",
-    "district": "Worcester and Middlesex",
-    "party": "D",
-    "specialElectionUrl": "http://www.progressivemass.com/2017specialelections",
-    "voteRating": 47,
-    "recordedVotePercentage": 95
-  }, {
     "id": "MAL000019",
     "name": "Jehlen, Patricia D.",
     "district": "Second Middlesex",
@@ -1007,14 +999,6 @@
     "voteRating": 70,
     "recordedVotePercentage": 96
   }, {
-    "id": "MAL000513",
-    "name": "Cariddi, Gailanne M. ",
-    "district": "First Berkshire",
-    "party": "D",
-    "specialElectionUrl": "http://www.progressivemass.com/2017specialelections",
-    "voteRating": 57,
-    "recordedVotePercentage": 70
-  }, {
     "id": "MAL000514",
     "name": "Rogers, David M. ",
     "district": "Twenty-Fourth Middlesex",
@@ -1177,14 +1161,6 @@
     "district": "First Hampden",
     "party": "R",
     "voteRating": 26,
-    "recordedVotePercentage": 100
-  }, {
-    "id": "MAL000539",
-    "name": "Dempsey, Brian S. ",
-    "district": "Third Essex",
-    "party": "D",
-    "specialElectionUrl": "http://www.progressivemass.com/2017specialelections",
-    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000540",
