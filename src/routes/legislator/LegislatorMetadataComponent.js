@@ -35,10 +35,10 @@ export default class SenatorMetadataComponent extends React.Component {
                   <div style={{ fontSize: '1.2rem' }}>
                     Contact {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
                     {this.props.legislatorName}
-                    <div style={{ fontSize: '.9rem' }}>
-                      Official Email: <a href={`mailto:${this.props.data.email}`}>{this.props.data.email}</a>
+                    <div style={{ fontSize: '.8rem' }}>
+                      Email: <a href={`mailto:${this.props.data.email}`}>{this.props.data.email}</a>
                     </div>
-                    <div style={{ fontSize: '.9rem' }}>
+                    <div style={{ fontSize: '.8rem' }}>
                       State House Switchboard: <a href='tel:617-722-2000'>617-722-2000</a>
                     </div>
                     { this.props.data.url
