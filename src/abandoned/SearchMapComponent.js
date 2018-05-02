@@ -18,7 +18,7 @@ class SearchMapComponent extends React.Component {
 
     const progressivePercents = Object
     .values(voteData)
-    .map((v) => parseInt(v['2015-2016'].voteRating.replace('%', '')))
+    .map((v) => parseInt(v['2017-2018'].voteRating.replace('%', '')))
 
     const colorScale = d3.scaleLinear()
     .domain([d3.min(progressivePercents), d3.max(progressivePercents)])
@@ -49,7 +49,7 @@ class SearchMapComponent extends React.Component {
       .attr('d', d3.geoPath().projection(projection))
       .style('fill', (d) => {
         try {
-          let progressivePercent = voteData[d.properties.SEN_DIST]['2015-2016'].voteRating
+          let progressivePercent = voteData[d.properties.SEN_DIST]['2017-2018'].voteRating
           progressivePercent = parseInt(progressivePercent.replace('%', ''))
           return colorScale(progressivePercent)
         } catch (e) {

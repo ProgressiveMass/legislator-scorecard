@@ -57,7 +57,7 @@ class FilterableLegislatorList extends React.Component {
           {r.party.slice(0, 1)}
         </td>
         <td
-          data-label='Progressive Rating (2015-2016)'
+          data-label='Progressive Rating (2017-2018)'
           style={{ verticalAlign: 'middle' }}
         >
           <div style={{ maxWidth: '300px' }}>
@@ -308,7 +308,7 @@ class FilterableLegislatorList extends React.Component {
                     onClick={this.setSort}
                     sort='voteRating'
                     currentSort={this.state.sort}
-                    title='Prog. Rating (2015-2016)'
+                    title='Prog. Rating (2017-2018)'
                   />
                 </th>
               </tr>
