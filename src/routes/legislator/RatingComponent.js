@@ -50,7 +50,7 @@ export default class RatingComponent extends React.Component {
             <span className='label d-block mb-1' style={{ fontSize: '1.1rem' }}>
               {this.props.chamber === 'upper' ? 'Sen.' : 'Rep.'}&nbsp;
               {this.props.legislatorName}'s votes&nbsp;
-              <span className='text-lowercase font-weight-normal' style={{ fontSize: '1rem' }}>(2015-16)</span>
+              <span className='text-lowercase font-weight-normal' style={{ fontSize: '1rem' }}>(2017-18)</span>
             </span>
             <ProgressBarWContext data={this.props.rating.votes} animate large />
           </div>
