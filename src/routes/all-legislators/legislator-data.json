@@ -297,7 +297,7 @@
     "name": "Tosado, Jose ",
     "district": "Ninth Hampden",
     "party": "D",
-    "voteRating": 75,
+    "voteRating": 74,
     "recordedVotePercentage": 91
   }, {
     "id": "MAL000403",
@@ -1390,7 +1390,7 @@
     "district": "Third Essex",
     "party": "D",
     "voteRating": "n/a",
-    "recordedVotePercentage": 57
+    "recordedVotePercentage": 0
   }, {
     "id": "MAL000588",
     "name": "Hawkins, James K. ",
