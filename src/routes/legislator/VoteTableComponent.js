@@ -214,7 +214,7 @@ export default class VoteTableComponent extends React.Component {
                 <tr>
                   <th style={{ width: '15%' }}>Bill</th>
                   <th style={{ width: '25%' }}>Name</th>
-                  <th style={{ width: '35%' }}>Summary from <a href='http://www.progressivemass.com/' target='_blank'>Progressive Mass</a></th>
+                  <th style={{ width: '35%' }}>Summary from <a href='https://www.progressivemass.com/190thscorecard-house' target='_blank'>Progressive Mass</a></th>
                   <th style={{ width: '12.5%' }}>{this.props.legislatorName}'s Vote</th>
                   <th style={{ width: '12.5%' }}>Vote Tally</th>
                 </tr>
