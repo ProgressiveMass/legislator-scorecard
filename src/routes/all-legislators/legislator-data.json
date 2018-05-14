@@ -4,47 +4,42 @@
     "name": "Chandler, Harriette L.",
     "district": "First Worcester",
     "party": "D",
-    "voteRating": 84,
+    "voteRating": 86,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000006",
     "name": "Chang-Diaz, Sonia ",
     "district": "Second Suffolk",
     "party": "D",
-    "voteRating": 89,
-    "recordedVotePercentage": 95
+    "voteRating": 94,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000008",
     "name": "Creem, Cynthia Stone",
     "district": "First Middlesex and Norfolk",
     "party": "D",
-    "voteRating": 87,
+    "voteRating": 94,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000009",
     "name": "DiDomenico, Sal N.",
     "district": "Middlesex and Suffolk",
     "party": "D",
-    "voteRating": 82,
-    "recordedVotePercentage": 95
-  }, {
-    "id": "MAL000574",
-    "name": "Friedman, Cindy F.",
-    "district": "Fourth Middlesex",
-    "party": "D"
+    "voteRating": 89,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000011",
-    "name": "Donoghue, Eileen M. ",
+    "name": "Donoghue, Eileen ",
     "district": "First Middlesex",
     "party": "D",
-    "voteRating": 66,
+    "voteRating": 50,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000013",
     "name": "Eldridge, James B.",
     "district": "Middlesex and Worcester",
     "party": "D",
-    "voteRating": 100,
+    "voteRating": 94,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000019",
@@ -58,56 +53,49 @@
     "name": "Keenan, John F.",
     "district": "Norfolk and Plymouth",
     "party": "D",
-    "voteRating": 82,
+    "voteRating": 72,
     "recordedVotePercentage": 100
-  }, {
-    "id": "MAL000024",
-    "name": "McGee, Thomas M.",
-    "district": "Third Essex",
-    "party": "D",
-    "voteRating": 82,
-    "recordedVotePercentage": 95
   }, {
     "id": "MAL000025",
     "name": "Montigny, Mark C.",
     "district": "Second Bristol and Plymouth",
     "party": "D",
-    "voteRating": 87,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000026",
     "name": "Moore, Michael O.",
     "district": "Second Worcester",
     "party": "D",
-    "voteRating": 42,
+    "voteRating": 53,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000029",
     "name": "Pacheco, Marc R.",
     "district": "First Plymouth and Bristol",
     "party": "D",
-    "voteRating": 76,
-    "recordedVotePercentage": 92
+    "voteRating": 42,
+    "recordedVotePercentage": 78
   }, {
     "id": "MAL000031",
     "name": "Rodrigues, Michael J.",
     "district": "First Bristol and Plymouth",
     "party": "D",
-    "voteRating": 66,
+    "voteRating": 44,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000032",
     "name": "Rosenberg, Stanley C.",
     "district": "Hampshire, Franklin and Worcester",
     "party": "D",
-    "voteRating": 93,
-    "recordedVotePercentage": 39
+    "voteRating": 88,
+    "recordedVotePercentage": 72
   }, {
     "id": "MAL000033",
     "name": "Ross, Richard J.",
     "district": "Norfolk, Bristol and Middlesex",
     "party": "R",
-    "voteRating": 24,
+    "voteRating": 22,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000034",
@@ -115,159 +103,205 @@
     "district": "Norfolk and Suffolk",
     "party": "D",
     "voteRating": 47,
-    "recordedVotePercentage": 95
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000035",
-    "name": "Spilka, Karen E. ",
+    "name": "Spilka, Karen ",
     "district": "Second Middlesex and Norfolk",
     "party": "D",
-    "voteRating": 84,
+    "voteRating": 89,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000036",
     "name": "Tarr, Bruce E.",
     "district": "First Essex and Middlesex",
     "party": "R",
-    "voteRating": 11,
+    "voteRating": 19,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000039",
     "name": "Welch, James T.",
     "district": "Hampden",
     "party": "D",
-    "voteRating": 76,
-    "recordedVotePercentage": 97
+    "voteRating": 64,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000058",
     "name": "Brady, Michael D.",
     "district": "Second Plymouth and Bristol",
     "party": "D",
-    "voteRating": 85,
-    "recordedVotePercentage": 71
+    "voteRating": 56,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000060",
     "name": "Brownsberger, William N.",
     "district": "Second Suffolk and Middlesex",
     "party": "D",
-    "voteRating": 79,
+    "voteRating": 89,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000078",
     "name": "deMacedo, Viriato Manuel",
     "district": "Plymouth and Barnstable",
     "party": "R",
-    "voteRating": 16,
+    "voteRating": 19,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000089",
     "name": "Fattman, Ryan C.",
     "district": "Worcester and Norfolk",
     "party": "R",
-    "voteRating": 11,
+    "voteRating": 14,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000095",
     "name": "Forry, Linda Dorcena",
     "district": "First Suffolk",
     "party": "D",
-    "voteRating": 82,
-    "recordedVotePercentage": 97
+    "voteRating": 86,
+    "recordedVotePercentage": 94
   }, {
     "id": "MAL000104",
     "name": "Gobi, Anne M.",
     "district": "Worcester, Hampden, Hampshire and Middlesex",
     "party": "D",
-    "voteRating": 58,
+    "voteRating": 44,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000115",
     "name": "Humason, Donald F.",
     "district": "Second Hampden and Hampshire",
     "party": "R",
-    "voteRating": 8,
+    "voteRating": 24,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000129",
     "name": "Lewis, Jason M.",
     "district": "Fifth Middlesex",
     "party": "D",
-    "voteRating": 84,
+    "voteRating": 89,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000233",
-    "name": "Barrett, Michael J. ",
+    "name": "Barrett, Michael ",
     "district": "Third Middlesex",
     "party": "D",
-    "voteRating": 87,
-    "recordedVotePercentage": 100
+    "voteRating": 89,
+    "recordedVotePercentage": 97
   }, {
     "id": "MAL000238",
-    "name": "Lovely, Joan B. ",
+    "name": "Lovely, Joan ",
     "district": "Second Essex",
     "party": "D",
-    "voteRating": 74,
-    "recordedVotePercentage": 92
+    "voteRating": 58,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000239",
     "name": "Ives, Kathleen O'Connor ",
     "district": "First Essex",
     "party": "D",
-    "voteRating": 74,
+    "voteRating": 42,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000339",
-    "name": "Lesser, Eric P. ",
+    "name": "Lesser, Eric ",
     "district": "First Hampden and Hampshire",
     "party": "D",
-    "voteRating": 82,
+    "voteRating": 75,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000396",
-    "name": "Boncore, Joseph A. ",
+    "name": "Boncore, Joseph ",
     "district": "First Suffolk and Middlesex",
     "party": "D",
-    "voteRating": 89,
-    "recordedVotePercentage": 50
+    "voteRating": 92,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000409",
     "name": "Cyr, Julian ",
     "district": "Cape and Islands",
-    "party": "D"
+    "party": "D",
+    "voteRating": 94,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000417",
-    "name": "Hinds, Adam G. ",
+    "name": "Hinds, Adam ",
     "district": "Berkshire, Hampshire, Franklin and Hampden",
-    "party": "D"
+    "party": "D",
+    "voteRating": 89,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000433",
-    "name": "L'Italien, Barbara A. ",
+    "name": "L'Italien, Barbara ",
     "district": "Second Essex and Middlesex",
     "party": "D",
-    "voteRating": 84,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000482",
-    "name": "Timilty, Walter F. ",
+    "name": "Timilty, Walter ",
     "district": "Norfolk, Bristol and Plymouth",
-    "party": "D"
+    "party": "D",
+    "voteRating": 53,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000527",
-    "name": "O'Connor, Patrick M. ",
+    "name": "O'Connor, Patrick ",
     "district": "Plymouth and Norfolk",
     "party": "R",
-    "voteRating": 21,
-    "recordedVotePercentage": 50
+    "voteRating": 19,
+    "recordedVotePercentage": 100
+  }, {
+    "id": "MAL000574",
+    "name": "Friedman, Cindy F. ",
+    "district": "Fourth Middlesex",
+    "party": "D",
+    "voteRating": 92,
+    "recordedVotePercentage": 69
+  }, {
+    "id": "MAL000578",
+    "name": "Feeney, Paul R. ",
+    "district": "Bristol and Norfolk",
+    "party": "D",
+    "voteRating": 83,
+    "recordedVotePercentage": 17
+  }, {
+    "id": "MAL000583",
+    "name": "Tran, Dean A. ",
+    "district": "Worcester and Middlesex",
+    "party": "R",
+    "voteRating": "n/a",
+    "recordedVotePercentage": 0
+  }, {
+    "id": "MAL000586",
+    "name": "Crighton, Brendan P. ",
+    "district": "Third Essex",
+    "party": "D"
   }],
   "houseReps": [{
     "id": "MAL000158",
     "name": "Pignatelli, William Smitty",
     "district": "Fourth Berkshire",
     "party": "D",
-    "voteRating": 78,
+    "voteRating": 74,
     "recordedVotePercentage": 100
   }, {
+    "id": "MAL000347",
+    "name": "González, Carlos ",
+    "district": "Tenth Hampden",
+    "party": "D",
+    "voteRating": 83,
+    "recordedVotePercentage": 100
+  }, {
+    "id": "MAL000349",
+    "name": "Tosado, Jose ",
+    "district": "Ninth Hampden",
+    "party": "D",
+    "voteRating": 74,
+    "recordedVotePercentage": 91
+  }, {
     "id": "MAL000403",
-    "name": "Lawn, John J. ",
+    "name": "Lawn, John ",
     "district": "Tenth Middlesex",
     "party": "D",
     "voteRating": 78,
@@ -281,30 +315,32 @@
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000405",
-    "name": "Murphy, James M. ",
+    "name": "Murphy, James ",
     "district": "Fourth Norfolk",
     "party": "D",
-    "voteRating": 70,
-    "recordedVotePercentage": 96
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000406",
     "name": "Higgins, Natalie ",
     "district": "Fourth Worcester",
-    "party": "D"
+    "party": "D",
+    "voteRating": 83,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000407",
-    "name": "Parisella, Jerald A. ",
+    "name": "Parisella, Jerald ",
     "district": "Sixth Essex",
     "party": "D",
-    "voteRating": 57,
-    "recordedVotePercentage": 74
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000408",
-    "name": "Orrall, Keiko M. ",
+    "name": "Orrall, Keiko ",
     "district": "Twelfth Bristol",
     "party": "R",
     "voteRating": 22,
-    "recordedVotePercentage": 100
+    "recordedVotePercentage": 87
   }, {
     "id": "MAL000410",
     "name": "Hogan, Kate ",
@@ -317,67 +353,67 @@
     "name": "Collins, Nick ",
     "district": "Fourth Suffolk",
     "party": "D",
+    "voteRating": 74,
+    "recordedVotePercentage": 96
+  }, {
+    "id": "MAL000412",
+    "name": "Zlotnik, Jonathan ",
+    "district": "Second Worcester",
+    "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
-    "id": "MAL000412",
-    "name": "Zlotnik, Jonathan D. ",
-    "district": "Second Worcester",
-    "party": "D",
-    "voteRating": 52,
-    "recordedVotePercentage": 100
-  }, {
     "id": "MAL000413",
-    "name": "Frost, Paul K. ",
+    "name": "Frost, Paul ",
     "district": "Seventh Worcester",
     "party": "R",
-    "voteRating": 22,
+    "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000414",
-    "name": "Petrolati, Thomas M. ",
+    "name": "Petrolati, Thomas ",
     "district": "Seventh Hampden",
     "party": "D",
-    "voteRating": 65,
+    "voteRating": 74,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000415",
-    "name": "Coppinger, Edward F. ",
+    "name": "Coppinger, Edward ",
     "district": "Tenth Suffolk",
     "party": "D",
-    "voteRating": 61,
-    "recordedVotePercentage": 83
+    "voteRating": 74,
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000416",
     "name": "Tucker, Paul ",
     "district": "Seventh Essex",
     "party": "D",
-    "voteRating": 74,
-    "recordedVotePercentage": 96
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000418",
-    "name": "Barber, Christine P. ",
+    "name": "Barber, Christine ",
     "district": "Thirty-Fourth Middlesex",
     "party": "D",
-    "voteRating": 91,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000419",
-    "name": "Kafka, Louis L. ",
+    "name": "Kafka, Louis ",
     "district": "Eighth Norfolk",
     "party": "D",
-    "voteRating": 61,
-    "recordedVotePercentage": 78
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000420",
-    "name": "Mahoney, John J. ",
+    "name": "Mahoney, John ",
     "district": "Thirteenth Worcester",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000421",
-    "name": "Peake, Sarah K. ",
+    "name": "Peake, Sarah ",
     "district": "Fourth Barnstable",
     "party": "D",
     "voteRating": 78,
@@ -387,109 +423,102 @@
     "name": "Silvia, Alan ",
     "district": "Seventh Bristol",
     "party": "D",
-    "voteRating": 70,
+    "voteRating": 74,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000423",
-    "name": "Cantwell, James M. ",
+    "name": "Cantwell, James ",
     "district": "Fourth Plymouth",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000424",
-    "name": "Hunt, Daniel J. ",
+    "name": "Hunt, Daniel ",
     "district": "Thirteenth Suffolk",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000425",
-    "name": "Galvin, William C. ",
+    "name": "Galvin, William ",
     "district": "Sixth Norfolk",
     "party": "D",
-    "voteRating": 70,
-    "recordedVotePercentage": 96
+    "voteRating": 74,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000426",
-    "name": "Whipps, Susannah M. ",
+    "name": "Whipps, Susannah ",
     "district": "Second Franklin",
-    "party": "R",
-    "voteRating": 30,
-    "recordedVotePercentage": 96
+    "party": "I",
+    "voteRating": 65,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000427",
     "name": "Sánchez, Jeffrey ",
     "district": "Fifteenth Suffolk",
     "party": "D",
-    "voteRating": 83,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000428",
-    "name": "Harrington, Sheila C. ",
+    "name": "Harrington, Sheila ",
     "district": "First Middlesex",
     "party": "R",
-    "voteRating": 26,
+    "voteRating": 35,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000429",
     "name": "DiZoglio, Diana ",
     "district": "Fourteenth Essex",
     "party": "D",
-    "voteRating": 78,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000430",
-    "name": "Campanale, Kate D. ",
+    "name": "Campanale, Kate ",
     "district": "Seventeenth Worcester",
     "party": "R",
-    "voteRating": 26,
-    "recordedVotePercentage": 91
+    "voteRating": 13,
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000431",
     "name": "Walsh, Chris ",
     "district": "Sixth Middlesex",
     "party": "D",
     "voteRating": 74,
-    "recordedVotePercentage": 91
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000432",
     "name": "Hay, Stephan ",
     "district": "Third Worcester",
     "party": "D",
-    "voteRating": 89,
-    "recordedVotePercentage": 39
-  }, {
-    "id": "MAL000434",
-    "name": "Tosado, Jose F. ",
-    "district": "Ninth Hampden",
-    "party": "D",
-    "voteRating": 83,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000435",
-    "name": "Straus, William M. ",
+    "name": "Straus, William ",
     "district": "Tenth Bristol",
     "party": "D",
-    "voteRating": 70,
-    "recordedVotePercentage": 91
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000436",
-    "name": "Koczera, Robert M. ",
+    "name": "Koczera, Robert ",
     "district": "Eleventh Bristol",
     "party": "D",
-    "voteRating": 74,
-    "recordedVotePercentage": 96
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000437",
     "name": "Gifford, Susan Williams ",
     "district": "Second Plymouth",
     "party": "R",
-    "voteRating": 17,
+    "voteRating": 30,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000438",
-    "name": "Gregoire, Danielle W. ",
+    "name": "Gregoire, Danielle ",
     "district": "Fourth Middlesex",
     "party": "D",
     "voteRating": 74,
@@ -499,74 +528,67 @@
     "name": "Barrows, F. Jay ",
     "district": "First Bristol",
     "party": "R",
-    "voteRating": 13,
+    "voteRating": 30,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000440",
-    "name": "Wagner, Joseph F. ",
+    "name": "Wagner, Joseph ",
     "district": "Eighth Hampden",
     "party": "D",
     "voteRating": 78,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000441",
-    "name": "Dykema, Carolyn C. ",
+    "name": "Dykema, Carolyn ",
     "district": "Eighth Middlesex",
     "party": "D",
-    "voteRating": 83,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000442",
-    "name": "Cabral, Antonio F. D. ",
+    "name": "Cabral, Antonio F. ",
     "district": "Thirteenth Bristol",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000443",
-    "name": "Vieira, David T. ",
+    "name": "Vieira, David ",
     "district": "Third Barnstable",
     "party": "R",
     "voteRating": 35,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000444",
-    "name": "Holmes, Russell E. ",
+    "name": "Holmes, Russell ",
     "district": "Sixth Suffolk",
     "party": "D",
-    "voteRating": 74,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000445",
-    "name": "Muradian, David K. ",
+    "name": "Muradian, David ",
     "district": "Ninth Worcester",
     "party": "R",
     "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000446",
-    "name": "Ashe, Brian M. ",
+    "name": "Ashe, Brian ",
     "district": "Second Hampden",
     "party": "D",
-    "voteRating": 70,
+    "voteRating": 74,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000447",
-    "name": "Moran, Michael J. ",
+    "name": "Moran, Michael ",
     "district": "Eighteenth Suffolk",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
-    "id": "MAL000448",
-    "name": "Gonzalez, Carlos ",
-    "district": "Tenth Hampden",
-    "party": "D",
-    "voteRating": 78,
-    "recordedVotePercentage": 100
-  }, {
     "id": "MAL000449",
-    "name": "Donahue, Daniel M. ",
+    "name": "Donahue, Daniel ",
     "district": "Sixteenth Worcester",
     "party": "D",
     "voteRating": 78,
@@ -580,47 +602,42 @@
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000451",
-    "name": "Decker, Marjorie C. ",
+    "name": "Decker, Marjorie ",
     "district": "Twenty-Fifth Middlesex",
     "party": "D",
     "voteRating": 87,
-    "recordedVotePercentage": 91
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000452",
     "name": "Lewis, Jack ",
     "district": "Seventh Middlesex",
-    "party": "D"
-  }, {
-    "id": "MAL000453",
-    "name": "Heroux, Paul R. ",
-    "district": "Second Bristol",
-    "party": "D",
-    "voteRating": 74,
-    "recordedVotePercentage": 96
-  }, {
-    "id": "MAL000454",
-    "name": "Miceli, James R. ",
-    "district": "Nineteenth Middlesex",
-    "party": "D",
-    "voteRating": 61,
-    "recordedVotePercentage": 100
-  }, {
-    "id": "MAL000456",
-    "name": "Kaufman, Jay R. ",
-    "district": "Fifteenth Middlesex",
     "party": "D",
     "voteRating": 87,
     "recordedVotePercentage": 100
   }, {
+    "id": "MAL000454",
+    "name": "Miceli, James ",
+    "district": "Nineteenth Middlesex",
+    "party": "D",
+    "voteRating": 57,
+    "recordedVotePercentage": 91
+  }, {
+    "id": "MAL000456",
+    "name": "Kaufman, Jay ",
+    "district": "Fifteenth Middlesex",
+    "party": "D",
+    "voteRating": 78,
+    "recordedVotePercentage": 87
+  }, {
     "id": "MAL000457",
-    "name": "Kocot, Peter V. ",
+    "name": "Kocot, Peter ",
     "district": "First Hampshire",
     "party": "D",
-    "voteRating": 83,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000458",
-    "name": "Kuros, Kevin J. ",
+    "name": "Kuros, Kevin ",
     "district": "Eighth Worcester",
     "party": "R",
     "voteRating": 13,
@@ -631,19 +648,21 @@
     "district": "Twenty-Third Middlesex",
     "party": "D",
     "voteRating": 87,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000460",
-    "name": "Kelcourse, James M. ",
+    "name": "Kelcourse, James ",
     "district": "First Essex",
     "party": "R",
-    "voteRating": 35,
+    "voteRating": 30,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000461",
     "name": "Williams, Bud ",
     "district": "Eleventh Hampden",
-    "party": "D"
+    "party": "D",
+    "voteRating": 78,
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000462",
     "name": "McMurtry, Paul ",
@@ -653,45 +672,45 @@
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000463",
-    "name": "Boldyga, Nicholas A. ",
+    "name": "Boldyga, Nicholas ",
     "district": "Third Hampden",
     "party": "R",
-    "voteRating": 17,
-    "recordedVotePercentage": 100
+    "voteRating": 9,
+    "recordedVotePercentage": 91
   }, {
     "id": "MAL000464",
-    "name": "O'Day, James J. ",
+    "name": "O'Day, James ",
     "district": "Fourteenth Worcester",
     "party": "D",
     "voteRating": 78,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000465",
-    "name": "Golden, Thomas A. ",
+    "name": "Golden, Thomas ",
     "district": "Sixteenth Middlesex",
     "party": "D",
-    "voteRating": 70,
+    "voteRating": 74,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000466",
-    "name": "Durant, Peter J. ",
+    "name": "Durant, Peter ",
     "district": "Sixth Worcester",
     "party": "R",
     "voteRating": 22,
-    "recordedVotePercentage": 100
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000467",
-    "name": "Rogers, John H. ",
+    "name": "Rogers, John ",
     "district": "Twelfth Norfolk",
     "party": "D",
-    "voteRating": 70,
+    "voteRating": 61,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000468",
-    "name": "Wong, Donald H. ",
+    "name": "Wong, Donald ",
     "district": "Ninth Essex",
     "party": "R",
-    "voteRating": 22,
+    "voteRating": 35,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000469",
@@ -702,17 +721,17 @@
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000470",
-    "name": "DeCoste, David F. ",
+    "name": "DeCoste, David ",
     "district": "Fifth Plymouth",
     "party": "R",
     "voteRating": 13,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000471",
-    "name": "Whelan, Timothy R. ",
+    "name": "Whelan, Timothy ",
     "district": "First Barnstable",
     "party": "R",
-    "voteRating": 26,
+    "voteRating": 30,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000472",
@@ -723,176 +742,178 @@
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000473",
-    "name": "Gentile, Carmine L. ",
+    "name": "Gentile, Carmine ",
     "district": "Thirteenth Middlesex",
     "party": "D",
-    "voteRating": 91,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000474",
-    "name": "Garry, Colleen M. ",
+    "name": "Garry, Colleen ",
     "district": "Thirty-Sixth Middlesex",
     "party": "D",
-    "voteRating": 30,
-    "recordedVotePercentage": 96
+    "voteRating": 39,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000475",
-    "name": "Naughton, Harold P. ",
+    "name": "Naughton, Harold ",
     "district": "Twelfth Worcester",
     "party": "D",
-    "voteRating": 48,
-    "recordedVotePercentage": 61
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000476",
-    "name": "Walsh, Thomas P. ",
+    "name": "Walsh, Thomas ",
     "district": "Twelfth Essex",
     "party": "D",
-    "voteRating": 78,
-    "recordedVotePercentage": 39
+    "voteRating": 74,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000477",
     "name": "Ferrante, Ann-Margaret ",
     "district": "Fifth Essex",
     "party": "D",
     "voteRating": 74,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000478",
-    "name": "Roy, Jeffrey N. ",
+    "name": "Roy, Jeffrey ",
     "district": "Tenth Norfolk",
     "party": "D",
-    "voteRating": 74,
-    "recordedVotePercentage": 91
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000479",
     "name": "Muratore, Mathew ",
     "district": "First Plymouth",
     "party": "R",
-    "voteRating": 17,
+    "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000480",
     "name": "Farley-Bouvier, Tricia ",
     "district": "Third Berkshire",
     "party": "D",
-    "voteRating": 91,
-    "recordedVotePercentage": 100
+    "voteRating": 78,
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000481",
-    "name": "Stanley, Thomas M. ",
+    "name": "Stanley, Thomas ",
     "district": "Ninth Middlesex",
     "party": "D",
-    "voteRating": 70,
+    "voteRating": 87,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000483",
-    "name": "Carvalho, Evandro C. ",
+    "name": "Carvalho, Evandro ",
     "district": "Fifth Suffolk",
     "party": "D",
     "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000484",
-    "name": "Benson, Jennifer E. ",
+    "name": "Benson, Jennifer ",
     "district": "Thirty-Seventh Middlesex",
+    "party": "D",
+    "voteRating": "n/a",
+    "recordedVotePercentage": 48
+  }, {
+    "id": "MAL000485",
+    "name": "Ayers, Bruce ",
+    "district": "First Norfolk",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
-    "id": "MAL000485",
-    "name": "Ayers, Bruce J. ",
-    "district": "First Norfolk",
-    "party": "D",
-    "voteRating": 70,
-    "recordedVotePercentage": 100
-  }, {
     "id": "MAL000486",
-    "name": "Scaccia, Angelo M. ",
+    "name": "Scaccia, Angelo ",
     "district": "Fourteenth Suffolk",
     "party": "D",
-    "voteRating": 65,
-    "recordedVotePercentage": 100
+    "voteRating": 52,
+    "recordedVotePercentage": 78
   }, {
     "id": "MAL000487",
-    "name": "Malia, Elizabeth A. ",
+    "name": "Malia, Elizabeth ",
     "district": "Eleventh Suffolk",
     "party": "D",
-    "voteRating": 91,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000488",
-    "name": "McKenna, Joseph D. ",
+    "name": "McKenna, Joseph ",
     "district": "Eighteenth Worcester",
     "party": "R",
     "voteRating": 13,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000489",
-    "name": "Puppolo, Angelo J. ",
+    "name": "Puppolo, Angelo ",
     "district": "Twelfth Hampden",
     "party": "D",
-    "voteRating": 61,
-    "recordedVotePercentage": 100
+    "voteRating": 70,
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000490",
     "name": "Kane, Hannah ",
     "district": "Eleventh Worcester",
     "party": "R",
-    "voteRating": 29,
-    "recordedVotePercentage": 91
+    "voteRating": 26,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000491",
-    "name": "Cutler, Josh S. ",
+    "name": "Cutler, Josh ",
     "district": "Sixth Plymouth",
     "party": "D",
-    "voteRating": 74,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000492",
     "name": "Goldstein-Rose, Solomon ",
     "district": "Third Hampshire",
-    "party": "D"
+    "party": "I",
+    "voteRating": 87,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000493",
-    "name": "Crighton, Brendan P. ",
+    "name": "Crighton, Brendan ",
     "district": "Eleventh Essex",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000494",
-    "name": "Ehrlich, Lori A. ",
+    "name": "Ehrlich, Lori ",
     "district": "Eighth Essex",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000495",
-    "name": "Honan, Kevin G. ",
+    "name": "Honan, Kevin ",
     "district": "Seventeenth Suffolk",
     "party": "D",
-    "voteRating": 78,
-    "recordedVotePercentage": 100
+    "voteRating": 74,
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000496",
-    "name": "Lombardo, Marc T. ",
+    "name": "Lombardo, Marc ",
     "district": "Twenty-Second Middlesex",
     "party": "R",
-    "voteRating": 13,
-    "recordedVotePercentage": 100
+    "voteRating": 9,
+    "recordedVotePercentage": 87
   }, {
     "id": "MAL000497",
-    "name": "McGonagle, Joseph W. ",
+    "name": "McGonagle, Joseph ",
     "district": "Twenty-Eighth Middlesex",
     "party": "D",
-    "voteRating": 74,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000498",
     "name": "Campbell, Linda Dean ",
     "district": "Fifteenth Essex",
     "party": "D",
-    "voteRating": 74,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000499",
@@ -907,17 +928,17 @@
     "district": "Twenty-Seventh Middlesex",
     "party": "D",
     "voteRating": 96,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000501",
-    "name": "Poirier, Elizabeth A. ",
+    "name": "Poirier, Elizabeth ",
     "district": "Fourteenth Bristol",
     "party": "R",
-    "voteRating": 22,
+    "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000502",
-    "name": "Haddad, Patricia A. ",
+    "name": "Haddad, Patricia ",
     "district": "Fifth Bristol",
     "party": "D",
     "voteRating": 78,
@@ -927,30 +948,32 @@
     "name": "Mom, Rady ",
     "district": "Eighteenth Middlesex",
     "party": "D",
-    "voteRating": 74,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000504",
-    "name": "Velis, John C. ",
+    "name": "Velis, John ",
     "district": "Fourth Hampden",
     "party": "D",
-    "voteRating": 57,
+    "voteRating": 70,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000505",
-    "name": "Smizik, Frank I. ",
+    "name": "Smizik, Frank ",
     "district": "Fifteenth Norfolk",
     "party": "D",
-    "voteRating": 91,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000506",
     "name": "Cahill, Daniel ",
     "district": "Tenth Essex",
-    "party": "D"
+    "party": "D",
+    "voteRating": 74,
+    "recordedVotePercentage": 87
   }, {
     "id": "MAL000507",
-    "name": "Schmid, Paul A. ",
+    "name": "Schmid, Paul ",
     "district": "Eighth Bristol",
     "party": "D",
     "voteRating": 78,
@@ -960,111 +983,113 @@
     "name": "Rushing, Byron ",
     "district": "Ninth Suffolk",
     "party": "D",
-    "voteRating": 87,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000509",
     "name": "Arciero, James ",
     "district": "Second Middlesex",
     "party": "D",
-    "voteRating": 78,
-    "recordedVotePercentage": 100
+    "voteRating": 74,
+    "recordedVotePercentage": 87
   }, {
     "id": "MAL000510",
     "name": "Hunt, Randy ",
     "district": "Fifth Barnstable",
     "party": "R",
     "voteRating": 26,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000511",
-    "name": "Howitt, Steven S. ",
+    "name": "Howitt, Steven ",
     "district": "Fourth Bristol",
     "party": "R",
-    "voteRating": 22,
+    "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000512",
-    "name": "Cusack, Mark J. ",
+    "name": "Cusack, Mark ",
     "district": "Fifth Norfolk",
     "party": "D",
-    "voteRating": 70,
+    "voteRating": 74,
     "recordedVotePercentage": 96
   }, {
     "id": "MAL000514",
-    "name": "Rogers, David M. ",
+    "name": "Rogers, David ",
     "district": "Twenty-Fourth Middlesex",
     "party": "D",
-    "voteRating": 83,
-    "recordedVotePercentage": 96
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000515",
-    "name": "Day, Michael S. ",
+    "name": "Day, Michael ",
     "district": "Thirty-First Middlesex",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000516",
-    "name": "Livingstone, Jay D. ",
+    "name": "Livingstone, Jay ",
     "district": "Eighth Suffolk",
     "party": "D",
-    "voteRating": 83,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000517",
-    "name": "Matias, Juana ",
+    "name": "Matias, Juana B. ",
     "district": "Sixteenth Essex",
-    "party": "D"
+    "party": "D",
+    "voteRating": 87,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000518",
-    "name": "Lyons, James J. ",
+    "name": "Lyons, James ",
     "district": "Eighteenth Essex",
     "party": "R",
-    "voteRating": 9,
-    "recordedVotePercentage": 100
+    "voteRating": 13,
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000519",
     "name": "Cullinane, Daniel ",
     "district": "Twelfth Suffolk",
     "party": "D",
-    "voteRating": 83,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000520",
-    "name": "Speliotis, Theodore C. ",
+    "name": "Speliotis, Theodore ",
     "district": "Thirteenth Essex",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000521",
-    "name": "O'Connell, Shaunna L. ",
+    "name": "O'Connell, Shaunna ",
     "district": "Third Bristol",
     "party": "R",
-    "voteRating": 17,
+    "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000522",
     "name": "Hecht, Jonathan ",
     "district": "Twenty-Ninth Middlesex",
     "party": "D",
-    "voteRating": 100,
+    "voteRating": 96,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000523",
     "name": "Madaro, Adrian ",
     "district": "First Suffolk",
     "party": "D",
-    "voteRating": 76,
-    "recordedVotePercentage": 83
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000524",
-    "name": "Dwyer, James J. ",
+    "name": "Dwyer, James ",
     "district": "Thirtieth Middlesex",
     "party": "D",
     "voteRating": 39,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000525",
     "name": "Brodeur, Paul ",
@@ -1081,58 +1106,60 @@
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000528",
-    "name": "Cronin, Claire D. ",
+    "name": "Cronin, Claire ",
     "district": "Eleventh Plymouth",
     "party": "D",
     "voteRating": 78,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000529",
-    "name": "Ryan, Daniel J. ",
+    "name": "Ryan, Daniel ",
     "district": "Second Suffolk",
     "party": "D",
     "voteRating": 78,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000530",
-    "name": "Mark, Paul W. ",
+    "name": "Mark, Paul ",
     "district": "Second Berkshire",
     "party": "D",
-    "voteRating": 74,
-    "recordedVotePercentage": 91
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000531",
     "name": "Cassidy, Gerard ",
     "district": "Ninth Plymouth",
     "party": "D",
-    "voteRating": 89,
-    "recordedVotePercentage": 39
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000532",
-    "name": "Balser, Ruth B. ",
+    "name": "Balser, Ruth ",
     "district": "Twelfth Middlesex",
     "party": "D",
-    "voteRating": 87,
-    "recordedVotePercentage": 91
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000533",
     "name": "Connolly, Mike ",
     "district": "Twenty-Sixth Middlesex",
-    "party": "D"
+    "party": "D",
+    "voteRating": 96,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000534",
-    "name": "DuBois, Michelle M. ",
+    "name": "DuBois, Michelle ",
     "district": "Tenth Plymouth",
     "party": "D",
     "voteRating": 83,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000535",
     "name": "Vincent, RoseLee ",
     "district": "Sixteenth Suffolk",
     "party": "D",
-    "voteRating": 78,
-    "recordedVotePercentage": 100
+    "voteRating": 74,
+    "recordedVotePercentage": 96
   }, {
     "id": "MAL000536",
     "name": "Kulik, Stephen ",
@@ -1145,132 +1172,140 @@
     "name": "Atkins, Cory ",
     "district": "Fourteenth Middlesex",
     "party": "D",
-    "voteRating": 83,
-    "recordedVotePercentage": 100
+    "voteRating": 65,
+    "recordedVotePercentage": 87
   }, {
     "id": "MAL000538",
-    "name": "Smola, Todd M. ",
+    "name": "Smola, Todd ",
     "district": "First Hampden",
     "party": "R",
     "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000540",
-    "name": "DeLeo, Robert A. ",
+    "name": "DeLeo, Robert ",
     "district": "Nineteenth Suffolk",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000541",
-    "name": "Fiola, Carole A. ",
+    "name": "Fiola, Carole ",
     "district": "Sixth Bristol",
     "party": "D",
-    "voteRating": 65,
-    "recordedVotePercentage": 96
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000542",
-    "name": "Berthiaume, Donald R. ",
+    "name": "Berthiaume, Donald ",
     "district": "Fifth Worcester",
     "party": "R",
-    "voteRating": 13,
+    "voteRating": 17,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000543",
-    "name": "Jones, Bradley H. ",
+    "name": "Jones, Bradley ",
     "district": "Twentieth Middlesex",
     "party": "R",
-    "voteRating": 13,
+    "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000544",
     "name": "Tyler, Chynah ",
     "district": "Seventh Suffolk",
-    "party": "D"
+    "party": "D",
+    "voteRating": 87,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000545",
     "name": "Murray, Brian ",
     "district": "Tenth Worcester",
-    "party": "D"
+    "party": "D",
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000546",
-    "name": "Gordon, Kenneth I. ",
+    "name": "Gordon, Kenneth ",
     "district": "Twenty-First Middlesex",
     "party": "D",
-    "voteRating": 74,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000547",
     "name": "Dooley, Shawn ",
     "district": "Ninth Norfolk",
     "party": "R",
-    "voteRating": 26,
+    "voteRating": 17,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000548",
-    "name": "Ferguson, Kimberly N. ",
+    "name": "Ferguson, Kimberly ",
     "district": "First Worcester",
     "party": "R",
     "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000549",
-    "name": "D'Emilia, Angelo L. ",
+    "name": "D'Emilia, Angelo ",
     "district": "Eighth Plymouth",
     "party": "R",
-    "voteRating": 26,
+    "voteRating": 30,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000550",
-    "name": "Hill, Bradford R. ",
+    "name": "Hill, Bradford ",
     "district": "Fourth Essex",
     "party": "R",
-    "voteRating": 22,
+    "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000551",
     "name": "Meschino, Joan ",
     "district": "Third Plymouth",
-    "party": "D"
+    "party": "D",
+    "voteRating": 83,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000552",
     "name": "Khan, Kay ",
     "district": "Eleventh Middlesex",
     "party": "D",
-    "voteRating": 74,
-    "recordedVotePercentage": 91
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000553",
-    "name": "Garlick, Denise C. ",
+    "name": "Garlick, Denise ",
     "district": "Thirteenth Norfolk",
     "party": "D",
-    "voteRating": 74,
-    "recordedVotePercentage": 96
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000554",
     "name": "Fernandes, Dylan ",
     "district": "Barnstable, Dukes and Nantucket",
-    "party": "D"
+    "party": "D",
+    "voteRating": 87,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000555",
-    "name": "Nangle, David M. ",
+    "name": "Nangle, David ",
     "district": "Seventeenth Middlesex",
     "party": "D",
-    "voteRating": 61,
+    "voteRating": 74,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000556",
-    "name": "Moran, Frank A. ",
+    "name": "Moran, Frank ",
     "district": "Seventeenth Essex",
     "party": "D",
-    "voteRating": 83,
+    "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000557",
     "name": "Mirra, Leonard ",
     "district": "Second Essex",
     "party": "R",
-    "voteRating": 17,
+    "voteRating": 26,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000558",
@@ -1281,44 +1316,46 @@
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000559",
-    "name": "Keefe, Mary S. ",
+    "name": "Keefe, Mary ",
     "district": "Fifteenth Worcester",
     "party": "D",
-    "voteRating": 87,
-    "recordedVotePercentage": 96
-  }, {
-    "id": "MAL000560",
-    "name": "Calter, Thomas J. ",
-    "district": "Twelfth Plymouth",
-    "party": "D",
-    "voteRating": 65,
+    "voteRating": 83,
     "recordedVotePercentage": 100
   }, {
-    "id": "MAL000561",
-    "name": "Markey, Christopher M. ",
-    "district": "Ninth Bristol",
+    "id": "MAL000560",
+    "name": "Calter, Thomas ",
+    "district": "Twelfth Plymouth",
     "party": "D",
     "voteRating": 70,
+    "recordedVotePercentage": 87
+  }, {
+    "id": "MAL000561",
+    "name": "Markey, Christopher ",
+    "district": "Ninth Bristol",
+    "party": "D",
+    "voteRating": 74,
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000562",
     "name": "Driscoll, William ",
     "district": "Seventh Norfolk",
-    "party": "D"
+    "party": "D",
+    "voteRating": 78,
+    "recordedVotePercentage": 100
   }, {
     "id": "MAL000563",
-    "name": "Donato, Paul J. ",
+    "name": "Donato, Paul ",
     "district": "Thirty-Fifth Middlesex",
     "party": "D",
     "voteRating": 70,
-    "recordedVotePercentage": 100
+    "recordedVotePercentage": 91
   }, {
     "id": "MAL000564",
-    "name": "Finn, Michael J. ",
+    "name": "Finn, Michael ",
     "district": "Sixth Hampden",
     "party": "D",
     "voteRating": 61,
-    "recordedVotePercentage": 96
+    "recordedVotePercentage": 78
   }, {
     "id": "MAL000565",
     "name": "Michlewitz, Aaron ",
@@ -1328,20 +1365,36 @@
     "recordedVotePercentage": 100
   }, {
     "id": "MAL000566",
-    "name": "Scibak, John W. ",
+    "name": "Scibak, John ",
     "district": "Second Hampshire",
     "party": "D",
     "voteRating": 78,
     "recordedVotePercentage": 100
   }, {
-    "id": "MAL000572",
-    "name": "Crocker, William L. ",
+    "id": "MAL000567",
+    "name": "Crocker, William ",
     "district": "Second Barnstable",
-    "party": "R"
+    "party": "R",
+    "voteRating": 22,
+    "recordedVotePercentage": 100
   }, {
-    "id": "MAL000572",
-    "name": "Crocker, William L. ",
-    "district": "Second Barnstable",
-    "party": "R"
+    "id": "MAL000579",
+    "name": "Barrett, John ",
+    "district": "First Berkshire",
+    "party": "D",
+    "voteRating": "n/a",
+    "recordedVotePercentage": 0
+  }, {
+    "id": "MAL000580",
+    "name": "Vargas, Andres X. ",
+    "district": "Third Essex",
+    "party": "D",
+    "voteRating": "n/a",
+    "recordedVotePercentage": 0
+  }, {
+    "id": "MAL000588",
+    "name": "Hawkins, James K. ",
+    "district": "Second Bristol",
+    "party": "D"
   }]
 }

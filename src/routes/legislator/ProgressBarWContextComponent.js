@@ -8,14 +8,21 @@ export default class ProgressBarWContext extends React.Component {
       return (
         <div className='badge badge-default d-block text-left pl-3 py-1'>
           N/A:&nbsp;
-          no voting data from 189th sess.
+          no voting data from 190th sess.
         </div>
       )
     } else if (d.recordedVotePercentage < 50) {
       return (
         <div className='badge badge-default d-block text-left pl-3 py-1'>
           N/A:&nbsp;
-          voted less than 50% of 189th sess.
+          voted less than 50% of 190th sess.
+        </div>
+      )
+    } else if (d.voteRating === 'n/a') {
+      return (
+        <div className='badge badge-default d-block text-left pl-3 py-1'>
+          N/A:&nbsp;
+          no rating available for 190th sess.
         </div>
       )
     } else if (d.recordedVotePercentage < 90) {

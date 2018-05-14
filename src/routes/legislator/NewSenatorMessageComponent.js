@@ -4,7 +4,7 @@ const NewSenatorMessageComponent = (props) => {
   return (
     <div className='white-floated'>
       <p className='lead'>
-        <b>We were unable to find votes by this legislator for the 2015-2016 session.</b>
+        <b>We were unable to find votes by this legislator for the 2017-2018 session.</b>
       </p>
       <p>
         This most likely means he or she is a <b>first-term state senator</b>.
