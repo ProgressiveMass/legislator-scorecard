@@ -806,7 +806,7 @@
     "name": "Benson, Jennifer ",
     "district": "Thirty-Seventh Middlesex",
     "party": "D",
-    "voteRating": "n/a",
+    "voteRating": 56,
     "recordedVotePercentage": 72
   }, {
     "id": "MAL000485",
@@ -869,8 +869,8 @@
     "name": "Crighton, Brendan ",
     "district": "Eleventh Essex",
     "party": "D",
-    "voteRating": 79,
-    "recordedVotePercentage": 52
+    "voteRating": 78,
+    "recordedVotePercentage": 50
   }, {
     "id": "MAL000494",
     "name": "Ehrlich, Lori ",
