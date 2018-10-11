@@ -269,12 +269,16 @@
     "id": "MAL000586",
     "name": "Crighton, Brendan P. ",
     "district": "Third Essex",
-    "party": "D"
+    "party": "D",
+    "voteRating": 77,
+    "recordedVotePercentage": 45
   }, {
     "id": "MAL000589",
     "name": "Collins, Nick ",
     "district": "First Suffolk",
-    "party": "D"
+    "party": "D",
+    "voteRating": 64,
+    "recordedVotePercentage": 38
   }],
   "houseReps": [{
     "id": "MAL000158",
