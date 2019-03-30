@@ -1,0 +1,39 @@
+
+header {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  @extend .heading-font;
+  z-index: 5;
+  position: relative;
+}
+
+.header__home-link {
+    border-bottom: 0;
+    color: $body-color;
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+}
+
+header nav a {
+  display: inline-block;
+  border-bottom: .3rem solid $white;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $primary;
+    border-color: mix($primary, $white, 20%);
+
+  }
+
+  &.active {
+    border-color: $primary;
+  }
+}
+
+header nav ul {
+  margin: 0;
+}
+
+
+header a {
+  font-size: 1.2rem;
+}

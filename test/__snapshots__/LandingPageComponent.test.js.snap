@@ -68,11 +68,11 @@ exports[`renders correctly 1`] = `
                   <h1
                     className="landing__cta"
                   >
-                    Are your 
+                    Are your
                     <b>
                       Massachusetts
                     </b>
-                     representatives fighting for your 
+                     representatives fighting for your
                     <b>
                       progressive
                     </b>
@@ -405,11 +405,10 @@ exports[`renders correctly 1`] = `
                     <small
                       className="h6 text-muted mb-3"
                     >
-                       (Coming Soon)
                     </small>
                   </h3>
                   <p>
-                    We're working to make it easier to take action based on the information in the scorecard.
+                    Call or email your legislator with the provided contact details.
                   </p>
                 </div>
               </div>

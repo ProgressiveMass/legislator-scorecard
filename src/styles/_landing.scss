@@ -1,0 +1,70 @@
+.photo-background {
+  background-image: linear-gradient(
+      to bottom right,
+      fade-out($gray-900, 0.09),
+      fade-out(darken($gray-900, 0.14), 0.07)
+    ),
+    url("./../images/dome.jpg");
+  background-size: cover;
+}
+
+.landing__header--1 {
+  padding: 5rem 0;
+
+  .landing__cta {
+    font-weight: 300;
+    font-size: 2.4rem;
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+      text-align: left;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 3.4rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 3.6rem;
+    }
+  }
+  position: relative;
+  color: white;
+  @extend .photo-background;
+  a {
+    color: white;
+  }
+  .btn-outline-secondary:hover {
+    background: fade-out(white, 0.9);
+  }
+}
+
+.landing__section--1 {
+  padding: 5rem 0;
+}
+
+.landing__section--2 {
+  @extend .photo-background;
+  padding: 5rem 0;
+
+  .h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    @include media-breakpoint-up(md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  img {
+    width: 80%;
+    max-width: 110px;
+    margin: auto;
+    display: block;
+  }
+
+  .h4 {
+    margin: 1rem 0;
+  }
+
+  .white-floated {
+    height: 100%;
+  }
+}
