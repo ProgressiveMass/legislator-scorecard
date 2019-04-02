@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import LazyLoad, { forceCheck } from "react-lazyload"
 import { navigate } from "gatsby"
 import SortButton from "./SortButton"
 import ProgressBar from "../../components/progressBar"
@@ -22,12 +23,13 @@ class LegislatorList extends React.Component {
     return (
       <tr
         key={d.name}
+        className="legislator-row"
         onClick={e => {
           e.preventDefault()
-          navigate(`/legislator/${d.id}`)
+          navigate(`/legislator/${d.id.replace("ocd-person/", "")}`)
         }}
       >
-        <td>{i + 1}</td>
+        <td style={{ verticalAlign: "middle" }}>{i + 1}</td>
         <td
           data-label={
             this.props.chamber === "upper" ? "Senator" : "Representative"
@@ -35,6 +37,13 @@ class LegislatorList extends React.Component {
         >
           <a href="#">
             <b>
+              <LazyLoad once height="4rem" offset={100}>
+                <img
+                  src={d.image}
+                  alt=""
+                  className="legislator-list__profile-img"
+                />
+              </LazyLoad>
               {d.name}&nbsp;
               {d.specialElectionUrl ? (
                 <InfoPopover
@@ -53,10 +62,7 @@ class LegislatorList extends React.Component {
           </a>
         </td>
         <td data-label="Party">{d.party.slice(0, 1)}</td>
-        <td
-          data-label="Progressive Rating (2017-2018)"
-          style={{ verticalAlign: "middle" }}
-        >
+        <td data-label="Progressive Rating (2017-2018)">
           <div style={{ maxWidth: "300px" }}>
             <ProgressBar data={d} />
           </div>
@@ -90,7 +96,7 @@ class LegislatorList extends React.Component {
       let aSort = normalizeSortVal(a[sortKey])
       let bSort = normalizeSortVal(b[sortKey])
 
-      if (sortKey === "voteRating") {
+      if (sortKey === "score") {
         // so that people who didnt vote much don't get sorted to the top
         aSort = normalizeRatingVal(aSort, a)
         bSort = normalizeRatingVal(bSort, b)
@@ -102,7 +108,7 @@ class LegislatorList extends React.Component {
         return order === "asc" ? -1 : 1
       } else {
         // find an appropriate secondary sort
-        if (sortKey === "voteRating") {
+        if (sortKey === "score") {
           if (normalizeSortVal(a.name) < normalizeSortVal(b.name)) return -1
           else if (normalizeSortVal(a.name) > normalizeSortVal(b.name)) return 1
           // this will never happen...right...
@@ -110,10 +116,7 @@ class LegislatorList extends React.Component {
             return 0
           } // eslint-disable-line brace-style
         } else {
-          return (
-            normalizeRatingVal(b.voteRating, b) -
-            normalizeRatingVal(a.voteRating, a)
-          )
+          return normalizeRatingVal(b.score, b) - normalizeRatingVal(a.score, a)
         }
       }
     })
@@ -127,6 +130,7 @@ class LegislatorList extends React.Component {
     } else {
       this.setState({ sort: [sort, "desc"] })
     }
+    setTimeout(forceCheck, 1)
   }
 
   filterData(rows) {
@@ -148,7 +152,7 @@ class LegislatorList extends React.Component {
     const data = this.sortData(this.filterData(this.props.data))
 
     return (
-      <div className="white-floated pt-5 mb-5">
+      <div className="white-background pt-5 mb-5">
         <div className="mx-auto">
           <div
             className="d-md-flex align-items-center mb-5 mb-md-4"
@@ -168,6 +172,7 @@ class LegislatorList extends React.Component {
               className="form-control"
               onChange={e => {
                 this.setState({ filter: e.target.value })
+                setTimeout(forceCheck, 1)
               }}
             />
           </div>
@@ -195,7 +200,7 @@ class LegislatorList extends React.Component {
                 <th>
                   <SortButton
                     onClick={this.setSort}
-                    sort="voteRating"
+                    sort="score"
                     currentSort={this.state.sort}
                     title="Prog. Rating (2017-2018)"
                   />

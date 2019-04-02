@@ -2,8 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import ProgressBar from "./ProgressBar"
 
-const ContextualProgressBar = ({ data: d }) => {
-  if (!d.voteRating) {
+const ContextualProgressBar = ({ data: d, animate, large }) => {
+  console.log(d)
+  if (!d.score) {
     return (
       <div className="badge badge-default d-block text-left pl-3 py-1">
         N/A:&nbsp; no voting data from 190th sess.
@@ -15,20 +16,20 @@ const ContextualProgressBar = ({ data: d }) => {
         N/A:&nbsp; voted less than 50% of 190th sess.
       </div>
     )
-  } else if (d.voteRating === "n/a") {
+  } else if (d.score === "n/a") {
     return (
       <div className="badge badge-default d-block text-left pl-3 py-1">
         N/A:&nbsp; no rating available for 190th sess.
       </div>
     )
-  } else if (d.recordedVotePercentage < 90) {
+  } else if (d.score < 90) {
     return (
       <div>
         <ProgressBar
-          width={d.voteRating}
-          animate={this.props.animate}
+          width={d.score}
+          animate={animate}
           key={d.id + "prog-bar"}
-          large={this.props.large}
+          large={large}
         />
         <small
           style={{
@@ -45,9 +46,9 @@ const ContextualProgressBar = ({ data: d }) => {
     return (
       <div>
         <ProgressBar
-          width={d.voteRating}
-          animate={this.props.animate}
-          large={this.props.large}
+          width={d.score}
+          animate={animate}
+          large={large}
           key={d.id + "prog-bar"}
         />
       </div>

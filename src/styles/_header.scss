@@ -1,6 +1,6 @@
 
 header {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   @extend .heading-font;
   z-index: 5;
   position: relative;
@@ -35,5 +35,5 @@ header nav ul {
 
 
 header a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }

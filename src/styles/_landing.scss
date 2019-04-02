@@ -28,9 +28,7 @@
   position: relative;
   color: white;
   @extend .photo-background;
-  a {
-    color: white;
-  }
+
   .btn-outline-secondary:hover {
     background: fade-out(white, 0.9);
   }
@@ -64,7 +62,7 @@
     margin: 1rem 0;
   }
 
-  .white-floated {
+  .white-background {
     height: 100%;
   }
 }

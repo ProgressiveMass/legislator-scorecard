@@ -9,7 +9,7 @@ require("dotenv").config()
 
 const googleSheetIds = {
   2017: "15AgxGT87Qc02IqPV46Uc0u9Z_ChfAjZQaj3qS2VNF8g",
-  2019: "17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg"
+  2019: "17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg",
 }
 
 const requestSheet = async (id, sheet) => {
@@ -29,22 +29,33 @@ const requestSheet = async (id, sheet) => {
 const loadGoogleSheets = async year => {
   const id = googleSheetIds[year]
   const sheetTypes = [
-    "Legislation",
+    "Sponsored_Bills",
+    "House_Bills",
+    "Senate_Bills",
     "Sponsorship",
     "House_Votes",
-    "Senate_Votes"
+    "Senate_Votes",
   ]
   const sheetRequests = sheetTypes.map(sheet => requestSheet(id, sheet))
 
   await Promise.all(sheetRequests).then(
-    ([legislation, sponsorship, houseVotes, senateVotes]) => {
+    ([
+      sponsoredBills,
+      houseBills,
+      senateBills,
+      sponsorship,
+      houseVotes,
+      senateVotes,
+    ]) => {
       fs.writeFileSync(
         `${__dirname}/tmp/${year}.json`,
         JSON.stringify({
-          legislation,
+          sponsoredBills,
+          houseBills,
+          senateBills,
           sponsorship,
           houseVotes,
-          senateVotes
+          senateVotes,
         })
       )
       console.log(`wrote ${year} csv data to disk`)

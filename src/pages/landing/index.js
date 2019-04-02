@@ -72,7 +72,7 @@ export default () => {
           <div className="row align-items-stretch pb-4">
             <div className="col-md-4 mb-4 mb-md-0">
               <div
-                className="white-floated p-3 mx-auto"
+                className="white-background p-3 mx-auto"
                 style={{ maxWidth: "400px" }}
               >
                 <h3 className="h4">
@@ -92,7 +92,7 @@ export default () => {
             </div>
             <div className="col-md-4 mb-4 mb-md-0">
               <div
-                className="white-floated p-3 mx-auto"
+                className="white-background p-3 mx-auto"
                 style={{ maxWidth: "400px" }}
               >
                 <h3 className="h4">
@@ -113,7 +113,7 @@ export default () => {
             </div>
             <div className="col-md-4">
               <div
-                className="white-floated p-3 mx-auto"
+                className="white-background p-3 mx-auto"
                 style={{ maxWidth: "400px" }}
               >
                 <h3 className="h4">

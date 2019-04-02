@@ -4,8 +4,11 @@ const buildLegislationData = require("./buildLegislationData")
 const updateLegislatorData = require("./updateLegislatorData")
 
 const downloadAndBuildData = async () => {
+  // fetch sheets from Google
   await downloadGoogleSheets()
+  // process into json tree
   const processedData = buildLegislationData()
+  // fetch legislator details from openStates
   // await updateLegislatorData()
 
   fs.writeFileSync(

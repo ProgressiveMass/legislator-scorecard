@@ -1,5 +1,5 @@
 .metadata {
-  @extend .white-floated;
+  @extend .white-background;
   margin-top: 2rem;
   margin-bottom: 3rem;
   @include media-breakpoint-down(xs) {
@@ -10,8 +10,8 @@
 
 .metadata__heading {
   font-size: 1.8rem;
-  line-height: .96;
-  margin-bottom: .5rem;
+  line-height: 0.96;
+  margin-bottom: 0.5rem;
   position: relative;
   display: inline-block;
   @include media-breakpoint-up(sm) {
@@ -27,10 +27,10 @@
 }
 
 .legislator-portrait {
-    max-height: 180px;
-    min-width: 125px;
-    max-width: 150px;
-    margin-right: 2rem;
+  max-height: 180px;
+  min-width: 125px;
+  max-width: 150px;
+  margin-right: 2rem;
 }
 
 .progress-component {
@@ -38,16 +38,35 @@
 }
 
 .progress-component .progress {
-    font-family: $font-family-sans-serif;
+  font-family: $font-family-sans-serif;
 }
 
 .progress-bar {
-  padding-left: .8rem;
-  transition: width .3s;
+  padding-left: 0.8rem;
+  transition: width 0.3s;
 }
 
 .progress-bar--large {
   font-size: 1rem;
   height: 1.35rem;
-  padding-top: .07rem;
+  padding-top: 0.07rem;
+}
+
+.legislator-list__profile-img {
+  width: 4rem;
+  height: 4rem !important;
+  object-fit: cover;
+  object-position: 50% 0;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 3px;
+}
+
+.legislator-row {
+  td {
+    vertical-align: middle;
+  }
+  &:hover {
+    background-color: mix($gray-100, $gray-200) !important;
+  }
 }

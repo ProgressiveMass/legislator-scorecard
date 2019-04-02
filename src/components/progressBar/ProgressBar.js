@@ -42,16 +42,15 @@ export default class ProgressBar extends React.Component {
       <div>
         <div className="progress">
           <div className="progress__text-container">
-            <b>{getLetterGrade(this.props.width)}</b>&nbsp;&nbsp;
             <span
               style={{
-                opacity: 0.68,
                 fontSize: ".85rem",
                 position: "relative",
                 top: "-2px",
               }}
             >
-              ({this.props.width + "%"})
+              <b>{getLetterGrade(this.props.width)}</b>&nbsp;&nbsp; (
+              {this.props.width + "%"})
             </span>
           </div>
 

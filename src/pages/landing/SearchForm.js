@@ -1,82 +1,89 @@
-import React, { PropTypes } from 'react'
+import React from "react"
+import { Link } from "gatsby"
 
 class SearchForm extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.onFormSubmit = this.onFormSubmit.bind(this)
   }
 
   state = {
-    loading: false
+    loading: false,
   }
 
-  onFormSubmit (e) {
+  onFormSubmit(e) {
     e.preventDefault()
     this.setState({ loading: true })
-    const address = this.refs.address.value + ' MA ' + this.refs.zip.value
+    const address = this.refs.address.value + " MA " + this.refs.zip.value
     this.props.history.push(`/my-legislators/${address}`)
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.refs.address.focus()
   }
 
-  render () {
+  render() {
     return (
-      <form className='search-form my-5 my-md-0' onSubmit={this.onFormSubmit}>
-        <div className='form-group'>
+      <form
+        className="search-form my-5 my-md-0 white-background"
+        onSubmit={this.onFormSubmit}
+      >
+        <div className="form-group">
           <label>
             Address
             <input
-              type='text'
-              className='form-control'
-              ref='address'
-              placeholder='123 Main St, Cambridge'
-              name='address'
+              type="text"
+              className="form-control"
+              ref="address"
+              placeholder="123 Main St, Cambridge"
+              name="address"
             />
           </label>
         </div>
 
-        <div className='form-group'>
+        <div className="form-group">
           <label>
             Zip Code
             <input
-              type='text'
-              className='form-control'
-              ref='zip'
-              placeholder='02142'
-              name='zipCode'
-
+              type="text"
+              className="form-control"
+              ref="zip"
+              placeholder="02142"
+              name="zipCode"
             />
           </label>
         </div>
 
-        <div className='form-group'>
+        <div className="form-group">
           <label>
             State
             <input
-              type='text'
-              className='form-control'
+              type="text"
+              className="form-control"
               readOnly
-              value='Massachusetts'
+              value="Massachusetts"
             />
           </label>
         </div>
 
-        <div className='mt-4'>
+        <div className="mt-4">
           <button
-            className='btn btn-primary btn-block heading-font'
-            type='submit'
+            className="btn btn-primary btn-block heading-font"
+            type="submit"
           >
-            {this.state.loading
-              ? <span>
-                <span aria-hidden='true' className='fa fa-spinner fa-pulse' />
-                  &nbsp;Loading
+            {this.state.loading ? (
+              <span>
+                <span aria-hidden="true" className="fa fa-spinner fa-pulse" />
+                &nbsp;Loading
               </span>
-              : 'Find My Local Legislators'}
+            ) : (
+              "Find My Local Legislators"
+            )}
           </button>
         </div>
-
+        <Link to="/all-legislators" className="mt-3 d-block">
+          I already know who my reps are ⇨
+        </Link>
       </form>
     )
   }

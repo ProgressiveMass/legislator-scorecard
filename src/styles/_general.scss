@@ -1,8 +1,7 @@
-$box-shadow-light: 0 0 20px rgba(0, 0, 0, 0.1);
-$box-shadow-medium: 0 0 50px rgba(0, 0, 0, 0.2);
+$box-shadow-light: 0 2px 10px rgba(0, 0, 0, 0.07);
+$box-shadow-medium: 0 0 30px rgba(0, 0, 0, 0.15);
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
 
 .h1,
 .h2,
@@ -128,7 +127,7 @@ thead {
 }
 
 .tinted-background {
-  background-color: $light;
+  background-color: $gray-200;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -241,9 +240,8 @@ small {
   font-family: $font-family-sans-serif !important;
 }
 
-.white-floated {
+.white-background {
   background: $white;
-  box-shadow: $box-shadow-light;
   padding: 1rem 0.75rem;
   @include media-breakpoint-up(sm) {
     padding: 2rem;

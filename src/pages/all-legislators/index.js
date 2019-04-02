@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Tabs from "react-responsive-tabs"
 import LegislatorList from "./LegislatorList"
 import Layout from "../../components/layout"
+
 const legislatorQuery = graphql`
   {
     dataJson {
@@ -26,6 +27,7 @@ const legislatorQuery = graphql`
           name
           party
           district
+          image
         }
       }
     }
@@ -36,6 +38,7 @@ const legislatorQuery = graphql`
           name
           party
           district
+          image
         }
       }
     }
@@ -49,6 +52,14 @@ const createLegislatorList = (legislatorArr, voteDataArr) => {
   }, {})
   return legislatorArr
     .map(({ node }) => node)
+    .map(data => {
+      const nameArray = data.name.split(/\s/)
+      const lastName = nameArray[nameArray.length - 1] + ","
+      data.name = [lastName, ...nameArray.slice(0, nameArray.length - 1)].join(
+        " "
+      )
+      return data
+    })
     .map(data => {
       const relevantVoteData = voteData[data.id]
       return {
@@ -101,8 +112,8 @@ const AllLegislators = () => {
     <Layout>
       <div className="tinted-background">
         <h1
-          className="text-center h2 mt-4 font-weight-light"
-          style={{ marginBottom: "3rem" }}
+          className="h2 mt-4 font-weight-light text-center"
+          style={{ marginBottom: "2rem" }}
         >
           All Current MA Legislators
         </h1>

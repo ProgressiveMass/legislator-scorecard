@@ -1,4 +1,4 @@
-const fs = require("fs-extra")
+const fs = require('fs-extra')
 
 const buildLegislationObject = legislation => {
   const processedLegislation = legislation.slice(1).reduce((acc, row) => {
@@ -6,6 +6,8 @@ const buildLegislationObject = legislation => {
       acc[legislation[0][i]] = cell
       return acc
     }, {})
+    // for easier matching in gatsby-node.js
+    obj.bill_number = obj.bill_number.replace(/\./g, '')
     acc[obj.bill_number] = obj
     return acc
   }, {})
@@ -14,10 +16,10 @@ const buildLegislationObject = legislation => {
 
 const buildVoteObject = votes => {
   const progressivePositionToVoteType = position => {
-    if (position.trim().toLowerCase() === "yes") return "+"
-    else if (position.trim().toLowerCase() === "no") return "-"
+    if (position.trim().toLowerCase() === 'yes') return '+'
+    else if (position.trim().toLowerCase() === 'no') return '-'
     else {
-      throw new Error("did not recognize position type")
+      throw new Error('did not recognize position type')
     }
   }
   const progressivePositionDict = votes[0]
@@ -44,7 +46,7 @@ const buildVoteObject = votes => {
       }, {})
 
       const voteCount = Object.values(votes).filter(vote => {
-        return vote.toLowerCase() !== "n/a"
+        return vote.toLowerCase() !== 'n/a'
       }).length
 
       const score = Math.round(
@@ -77,13 +79,15 @@ const buildSponsorshipObject = sponsorship => {
     .map((openStatesId, legislatorIndex) => {
       if (!openStatesId) return
       const data = billNumbers.reduce((acc, billNo, i) => {
+        // for easier matching in gatsby-node.js
+        billNo = billNo.replace(/\./g, '')
         acc[billNo] = sponsorship[i + 2][legislatorIndex]
         return acc
       }, {})
       const score = parseInt(
         Object.values(data)
           .reduce((acc, curr) => {
-            if (curr.toLowerCase() === "y") return acc + 1
+            if (curr.toLowerCase() === 'y') return acc + 1
             return acc
           }, 0)
           .toFixed()
@@ -100,10 +104,12 @@ const buildSponsorshipObject = sponsorship => {
 
 const buildLegislationDataForYear = year => {
   const data = JSON.parse(
-    fs.readFileSync(`${__dirname}/tmp/${year}.json`, "utf8")
+    fs.readFileSync(`${__dirname}/tmp/${year}.json`, 'utf8')
   )
 
-  data.legislation = buildLegislationObject(data.legislation)
+  ;['sponsored', 'house', 'senate'].forEach(type => {
+    data[`${type}Bills`] = buildLegislationObject(data[`${type}Bills`])
+  })
 
   if (data.sponsorship.length)
     data.sponsorship = buildSponsorshipObject(data.sponsorship)
