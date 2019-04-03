@@ -1,6 +1,6 @@
 import React from "react"
 
-const NewSenatorMessageComponent = props => {
+const NewSenatorMessage = props => {
   return (
     <div className="white-floated">
       <p className="lead">
@@ -21,4 +21,4 @@ const NewSenatorMessageComponent = props => {
   )
 }
 
-export default NewSenatorMessageComponent
+export default NewSenatorMessage

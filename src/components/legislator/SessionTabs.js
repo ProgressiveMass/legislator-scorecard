@@ -1,20 +1,22 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Tabs from "react-responsive-tabs"
-import TermLayout from "./TermLayoutComponent"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Tabs from 'react-responsive-tabs'
+import TermLayout from './TermLayout'
 
 const termDict = {
-  "2015-2016": "189th Session",
-  "2017-2018": "190th Session",
+  '2015-2016': '189th Session',
+  '2017-2018': '190th Session',
+  '2019-2020': '191st Session',
 }
 
-export const SessionTabsComponent = () => {
-  const tabItems = this.props.data.map(d => {
+export const SessionTabs = ({ terms, chamber, legislatorName }) => {
+  console.log(terms)
+  const tabItems = terms.map(d => {
     return {
       title: (
         <div>
           <div>{d.term}</div>
-          <div style={{ fontSize: "1rem" }}>{termDict[d.term]}</div>
+          <div style={{ fontSize: '1rem' }}>{termDict[d.term]}</div>
         </div>
       ),
       key: d.term,
@@ -23,15 +25,15 @@ export const SessionTabsComponent = () => {
           <TermLayout
             id={d.term}
             data={d}
-            chamber={this.props.chamber}
-            legislatorName={this.props.legislatorName}
+            chamber={chamber}
+            legislatorName={legislatorName}
           />
         )
       },
     }
   })
 
-  const selectedTabKey = this.props.data[this.props.data.length - 1].term
+  const selectedTabKey = terms[terms.length - 1].term
 
   return (
     <div className="inverted-tabs">
@@ -47,10 +49,10 @@ export const SessionTabsComponent = () => {
   )
 }
 
-export default SessionTabsComponent
+export default SessionTabs
 
-SessionTabsComponent.propTypes = {
-  data: PropTypes.array.isRequired,
+SessionTabs.propTypes = {
+  terms: PropTypes.array.isRequired,
   chamber: PropTypes.string.isRequired,
   legislatorName: PropTypes.string.isRequired,
 }

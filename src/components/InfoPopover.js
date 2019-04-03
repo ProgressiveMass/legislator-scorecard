@@ -1,6 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Tooltip } from "react-tippy"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Tooltip } from 'react-tippy'
 
 const PopoverContent = props => {
   return (
@@ -11,26 +11,26 @@ const PopoverContent = props => {
   )
 }
 
-const InfoPopover = () => (
+const InfoPopover = ({ title, position, text }) => (
   <div
     style={{
-      maxWidth: "40px",
-      display: "inline-block",
-      verticalAlign: "text-bottom",
+      maxWidth: '40px',
+      display: 'inline-block',
+      verticalAlign: 'text-bottom',
     }}
   >
     <Tooltip
       id={Math.random()}
       content={
         <div>
-          {this.props.title ? <div className="h6">{this.props.title}</div> : ""}
-          <p dangerouslySetInnerHTML={{ __html: this.props.text }} />
+          {title ? <div className="h6">{title}</div> : ''}
+          <p dangerouslySetInnerHTML={{ __html: text }} />
         </div>
       }
       trigger="click"
       arrow="true"
       duration="200"
-      position={this.props.position ? this.props.position : "left"}
+      position={position ? position : 'left'}
     >
       <button
         type="button"
@@ -41,8 +41,8 @@ const InfoPopover = () => (
         }}
       >
         <img
-          src={require("../images/help.svg")}
-          style={{ height: "18px", position: "relative", top: "1px" }}
+          src={require('../images/help.svg')}
+          style={{ height: '18px', position: 'relative', top: '1px' }}
           alt=""
         />
         <span className="sr-only">more information</span>

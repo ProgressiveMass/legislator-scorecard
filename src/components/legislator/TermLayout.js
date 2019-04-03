@@ -1,17 +1,18 @@
-import React from "react"
-import PropTypes from "prop-types"
-import CosponsorshipTable from "./CosponsorshipTableComponent"
-import VoteTable from "./VoteTableComponent"
+import React from 'react'
+import PropTypes from 'prop-types'
+import SponsorshipTable from './SponsorshipTable'
+import VoteTable from './VoteTable'
 
-const cosponsorship = "sponsorship"
-const votes = "votes"
+const sponsorship = 'sponsorship'
+const votes = 'votes'
 
-export default class TermLayout extends React.Component {
+export default class TermLayout extends React. {
   constructor(props) {
     super(props)
-    // if no votes, set active to cosponsorship
+    debugger // eslint-disable-line
+    // if no votes, set active to sponsorship
     const active =
-      !props.data.votes || !props.data.votes.length ? cosponsorship : votes
+      !props.data.votes || !props.data.votes.length ? sponsorship : votes
     this.state = {
       active,
     }
@@ -23,24 +24,24 @@ export default class TermLayout extends React.Component {
       this.setState({ active })
     }
 
-    const hasCosponsorship =
-      this.props.data.cosponsorship && this.props.data.cosponsorship.length
-    const cosponsorshipTab = (
+    const hasSponsorship =
+      this.props.data.sponsorship && this.props.data.sponsorship.length
+    const sponsorshipTab = (
       <li className="nav-item">
         <a
           className={`nav-link ${
-            this.state.active === cosponsorship ? "active" : ""
-          } ${!hasCosponsorship ? "disabled" : ""}`}
+            this.state.active === sponsorship ? 'active' : ''
+          } ${!hasSponsorship ? 'disabled' : ''}`}
           href="#"
-          aria-current={this.state.active === cosponsorship ? "page" : false}
+          aria-current={this.state.active === sponsorship ? 'page' : false}
           onClick={
-            hasCosponsorship
-              ? onTabClick("cosponsorship")
+            hasSponsorship
+              ? onTabClick('sponsorship')
               : function(e) {
                   e.preventDefault()
                 }
           }
-          disabled={!hasCosponsorship}
+          disabled={!hasSponsorship}
         >
           Cosponsored Bills
         </a>
@@ -50,14 +51,14 @@ export default class TermLayout extends React.Component {
     const voteTab = (
       <li className="nav-item">
         <a
-          className={`nav-link ${this.state.active === votes ? "active" : ""} ${
-            !hasVotes ? "disabled" : ""
+          className={`nav-link ${this.state.active === votes ? 'active' : ''} ${
+            !hasVotes ? 'disabled' : ''
           }`}
-          aria-current={this.state.active === votes ? "page" : false}
+          aria-current={this.state.active === votes ? 'page' : false}
           href="#"
           onClick={
             hasVotes
-              ? onTabClick("votes")
+              ? onTabClick('votes')
               : function(e) {
                   e.preventDefault()
                 }
@@ -71,15 +72,15 @@ export default class TermLayout extends React.Component {
 
     let BodyComponent
 
-    if (this.state.active === cosponsorship) {
-      BodyComponent = <CosponsorshipTable {...this.props} />
+    if (this.state.active === sponsorship) {
+      BodyComponent = <SponsorshipTable {...this.props} />
     } else if (this.state.active === votes) {
       BodyComponent = <VoteTable {...this.props} />
     }
     return (
       <div className="white-floated mb-4">
         <ul className="nav justify-content-center">
-          {cosponsorshipTab}
+          {sponsorshipTab}
           {voteTab}
         </ul>
         <div>{BodyComponent}</div>

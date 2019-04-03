@@ -15,6 +15,7 @@ const buildLegislationObject = legislation => {
 }
 
 const buildVoteObject = votes => {
+  debugger // eslint-disable-line
   const progressivePositionToVoteType = position => {
     if (position.trim().toLowerCase() === 'yes') return '+'
     else if (position.trim().toLowerCase() === 'no') return '-'
@@ -38,6 +39,8 @@ const buildVoteObject = votes => {
     .map(row => {
       const openStatesLegislatorId = row[0]
       if (!openStatesLegislatorId) return
+
+      debugger // eslint-disable-line
 
       const votes = row.slice(2).reduce((acc, vote, index) => {
         const billName = legislationRow[index + 2]

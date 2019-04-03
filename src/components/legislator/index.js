@@ -1,26 +1,29 @@
-import React from "react"
-import PropTypes from "prop-types"
-import LegislatorMetadataComponent from "./LegislatorMetadataComponent"
-import SessionTabsComponent from "./SessionTabsComponent"
-import Layout from "../layout"
+import React from 'react'
+import PropTypes from 'prop-types'
+import SEO from '../seo'
+import LegislatorMetadata from './LegislatorMetadata'
+import SessionTabs from './SessionTabs'
+import Layout from '../layout'
 
-const LegislatorPageComponent = ({
-  pageContext: { chamber, id, legislatorMetadata },
+const LegislatorPage = ({
+  pageContext: { chamber, id, pageData },
 }) => {
-  debugger // eslint-disable-line
+  const legislatorTitle = chamber === 'senate' ? 'Senator' : 'Rep'
+  const seoTitle = `${legislatorTitle} ${pageData.legislator.name}'s Voting Record`
+  const seoDescription = `Learn about ${legislatorTitle} ${pageData.legislator.name}'s values by viewing a record of their activity in the Massachusetts statehouse.`
   return (
     <Layout>
+    <SEO title={seoTitle} description={seoDescription} />
       <div className="tinted-background">
-        <LegislatorMetadataComponent
-          data={legislatorMetadata.legislator}
+        <LegislatorMetadata
+          data={pageData.legislator}
           chamber={chamber}
-          rating={"100" }
-          legislatorName={legislatorMetadata.legislator.name}
+          rating={pageData.rating}
         />
-        <SessionTabsComponent
-          data={legislatorMetadata}
+        <SessionTabs
+          terms={pageData.data}
           chamber={chamber}
-          legislatorName={legislatorMetadata.legislator.name}
+          legislatorName={pageData.legislator.name}
           key={chamber}
         />
       </div>
@@ -28,11 +31,11 @@ const LegislatorPageComponent = ({
   )
 }
 
-LegislatorPageComponent.propTypes = {
+LegislatorPage.propTypes = {
   legislator: PropTypes.object.isRequired,
   data: PropTypes.object.isRequired,
   chamber: PropTypes.string.isRequired,
   rating: PropTypes.object.isRequired,
 }
 
-export default LegislatorPageComponent
+export default LegislatorPage

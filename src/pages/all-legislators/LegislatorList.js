@@ -6,7 +6,7 @@ import SortButton from "./SortButton"
 import ProgressBar from "../../components/progressBar"
 import InfoPopover from "../../components/InfoPopover"
 
-class LegislatorList extends React.Component {
+class LegislatorList extends React. {
   constructor(props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)

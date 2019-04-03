@@ -13,6 +13,13 @@ const legislatorData = {
   house: houseLegislators,
 }
 
+const medianVoteData = buildVoteCumulativeData(voteSummaryYear, legislatorData)
+
+const medianSponsorshipData = buildSponsorshipCumulativeData(
+  sponsorshipSummaryYear,
+  legislatorData
+)
+
 // helpers
 const getLegislatorVotesEntry = ({ year, chamber, legislatorId }) =>
   legislationData[year][`${chamber}Votes`].find(
@@ -24,7 +31,9 @@ const getLegislatorSponsorshipEntry = ({ year, legislatorId }) =>
 
 // main function
 const createPageDataStruct = ({ chamber, legislatorId }) => {
-  const legislator = legislatorData[chamber][legislatorId]
+  const legislator = legislatorData[chamber].find(
+    data => data.id === legislatorId
+  )
   const pageData = {
     legislator,
   }
@@ -43,21 +52,26 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
       const legislatorSponsorship = legislatorSponsorshipEntry.data
 
       termData.sponsorship = Object.keys(legislatorSponsorship).map(billNum => {
-        const billKey =
-          chamber === 'senate' ? billNum.split('/')[1] : billNum.split('/')[0]
+        const billKey = !billNum.match('/')
+          ? billNum
+          : chamber === 'senate'
+          ? billNum.split('/')[1]
+          : billNum.split('/')[0]
         const billData = progMassSponsoredBills[billKey]
         if (!billData) {
           throw new Error(
             `no bill data for ${billNum} found! (this means something is really wrong)`
           )
         }
-        termData.sponsorship = {
+        return {
           ...billData,
           yourLegislator: legislatorSponsorship[billNum],
         }
       })
     } catch (e) {
-      console.error(e.message)
+      console.error(
+        `${pageData.legislator.name} didn't have sponsorship data available`
+      )
     }
 
     // votes
@@ -65,8 +79,8 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
       try {
         // we merge them bc sometimes the house votes on a senate bill and vice versa
         const bills = {
-          ...legislationData[year].senateVotes,
-          ...legislationData[year].houseVotes,
+          ...legislationData[year].senateBills,
+          ...legislationData[year].houseBills,
         }
 
         const legislatorVotesEntry = getLegislatorVotesEntry({
@@ -83,7 +97,9 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
           }
         })
       } catch (e) {
-        console.error(e)
+        console.error(
+          `${pageData.legislator.name} didn't have vote data available`
+        )
       }
     }
     return termData
@@ -96,7 +112,9 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
   })
 
   const voteSummary = {
-    cumulative: buildVoteCumulativeData(voteSummaryYear, legislatorData),
+    cumulative: medianVoteData[chamber],
+    recordedVotePercentage: votes && votes.recordedVotePercentage,
+    score: votes && votes.score,
   }
 
   const sponsorship = getLegislatorSponsorshipEntry({
@@ -105,14 +123,15 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
     legislatorId,
   })
   const sponsorshipSummary = {
-    cumulative: buildSponsorshipCumulativeData(sponsorshipSummaryYear),
+    cumulative: medianSponsorshipData,
+    legislator: sponsorship && sponsorship.score,
+    total: sponsorship && Object.keys(sponsorship.data).length,
   }
 
   pageData.rating = {
     votes: voteSummary,
     sponsorship: sponsorshipSummary,
   }
-
   return pageData
 }
 

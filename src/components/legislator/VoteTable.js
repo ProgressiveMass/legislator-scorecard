@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StickyContainer, Sticky } from "react-sticky"
 import tagMap from "./tagMap"
 
-export default class VoteTableComponent extends React.Component {
+export default class VoteTable extends React. {
   constructor(props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)
@@ -283,7 +283,7 @@ export default class VoteTableComponent extends React.Component {
   }
 }
 
-VoteTableComponent.propTypes = {
+VoteTable.propTypes = {
   data: PropTypes.object.isRequired,
   legislatorName: PropTypes.string.isRequired,
 }

@@ -1,11 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StickyContainer, Sticky } from "react-sticky"
-import InfoPopover from "../InfoPopover"
-import surveyImg from "./images/survey.svg"
-import tagMap from "./tagMap"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StickyContainer, Sticky } from 'react-sticky'
+import InfoPopover from '../InfoPopover'
+import surveyImg from './images/survey.svg'
+import tagMap from './tagMap'
 
-export default class CosponsorshipTable extends React.Component {
+export default class SponsorshipTable extends React. {
   constructor(props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)
@@ -14,20 +14,20 @@ export default class CosponsorshipTable extends React.Component {
     this.filterRows = this.filterRows.bind(this)
 
     this.state = {
-      tagFilter: "",
+      tagFilter: '',
     }
   }
 
   renderSummary() {
-    const sponsoredLength = this.props.data.cosponsorship.filter(
-      c => c.yourLegislator === "Y"
+    const sponsoredLength = this.props.data.sponsorship.filter(
+      c => c.yourLegislator === 'Y'
     ).length
 
     return (
       <p>
-        This session, {this.props.legislatorName} cosponsored{" "}
-        <b>{sponsoredLength}</b> out of the{" "}
-        <b>{this.props.data.cosponsorship.length}</b> bills endorsed by
+        This session, {this.props.legislatorName} cosponsored{' '}
+        <b>{sponsoredLength}</b> out of the{' '}
+        <b>{this.props.data.sponsorship.length}</b> bills endorsed by
         Progressive Massachusetts.
       </p>
     )
@@ -36,14 +36,15 @@ export default class CosponsorshipTable extends React.Component {
   renderCosponsorship(indicator) {
     if (!indicator) {
       return <span className="badge badge-clear">N/A</span>
-    } else if (indicator === "Y") {
+    } else if (indicator === 'Y') {
       return <span className="badge badge-primary">Yes</span>
-    } else if (indicator === "N") {
+    } else if (indicator === 'N') {
       return <span className="badge badge-danger">No</span>
     }
   }
 
   renderRow(c, i) {
+    debugger // eslint-disable-line
     const tags = c.tags.map(t => {
       return (
         <button
@@ -60,28 +61,28 @@ export default class CosponsorshipTable extends React.Component {
 
     return (
       <tr key={c.finalNumber}>
-        <td className="text-muted" style={{ width: "15%" }}>
+        <td className="text-muted" style={{ width: '15%' }}>
           <div className="font-weight-bold">
             {c.finalNumber}&nbsp;
             {c.showPairedDisclaimer ? (
-              <InfoPopover text="This bill has two distinct versions in the House and Senate, but for the purposes of tracking cosponsorship we treat them as a single bill." />
+              <InfoPopover text="This bill has two distinct versions in the House and Senate, but for the purposes of tracking sponsorship we treat them as a single bill." />
             ) : null}
           </div>
 
           <div>{tags}</div>
         </td>
-        <td style={{ width: "30%" }}>
+        <td style={{ width: '30%' }}>
           <div>
             <a href={c.url} className="font-weight-bold" target="_blank">
               {c.title}
             </a>
           </div>
         </td>
-        <td style={{ width: "40%" }} data-label="">
+        <td style={{ width: '40%' }} data-label="">
           <p>{c.description}</p>
         </td>
         <td
-          style={{ width: "15%" }}
+          style={{ width: '15%' }}
           data-label={`${this.props.legislatorName} Cosponsored?`}
         >
           {this.renderCosponsorship(c.yourLegislator)}
@@ -92,15 +93,16 @@ export default class CosponsorshipTable extends React.Component {
 
   toggleFilter(t) {
     if (this.state.tagFilter === t) {
-      this.setState({ tagFilter: "" })
+      this.setState({ tagFilter: '' })
     } else {
       this.setState({ tagFilter: t })
     }
   }
 
   renderTagFilters(tags) {
+    debugger // eslint-disable-line
     return tags.map(t => {
-      let badgeClass = "badge-default"
+      let badgeClass = 'badge-default'
       if (!this.state.tagFilter || this.state.tagFilter === t) {
         badgeClass = tagMap[t].badge
       }
@@ -108,8 +110,8 @@ export default class CosponsorshipTable extends React.Component {
         <li className="mr-1 my-2 my-md-0" key={tagMap[t].name}>
           <button
             className={`btn btn-sm badge ${badgeClass}`}
-            style={{ fontSize: ".9rem" }}
-            aria-pressed={this.state.tagFilter === t ? "true" : "false"}
+            style={{ fontSize: '.9rem' }}
+            aria-pressed={this.state.tagFilter === t ? 'true' : 'false'}
             onClick={() => this.toggleFilter(t)}
           >
             {tagMap[t].name}
@@ -130,14 +132,14 @@ export default class CosponsorshipTable extends React.Component {
   }
 
   render() {
-    const cosponsorship = this.filterRows(this.props.data.cosponsorship)
+    const sponsorship = this.filterRows(this.props.data.sponsorship)
     const tags = [
       ...new Set(
-        [].concat.apply([], this.props.data.cosponsorship.map(c => c.tags))
+        [].concat.apply([], this.props.data.sponsorship.map(c => c.tags))
       ),
     ]
 
-    if (!cosponsorship) {
+    if (!sponsorship) {
       return (
         <div>
           <p className="h-3">No Data Available</p>
@@ -153,9 +155,9 @@ export default class CosponsorshipTable extends React.Component {
             <div
               className="text-center py-3"
               style={{
-                width: "100%",
-                fontSize: "1.1rem",
-                background: "rgba(2, 117, 216, 0.1)",
+                width: '100%',
+                fontSize: '1.1rem',
+                background: 'rgba(2, 117, 216, 0.1)',
               }}
             >
               <a
@@ -166,7 +168,7 @@ export default class CosponsorshipTable extends React.Component {
                 <img
                   src={surveyImg}
                   alt="list symbol"
-                  style={{ width: "45px" }}
+                  style={{ width: '45px' }}
                   className="d-block d-sm-inline-block mx-auto"
                 />
                 View our guide to progressive legislation for the 2017-2018
@@ -178,7 +180,7 @@ export default class CosponsorshipTable extends React.Component {
                 This session, almost 6,000 pieces of legislation have been
                 filed. Only a few will even make it out of committee, let alone
                 receive a vote. Progressive Mass has identified a suite of
-                bills, across several issue areas, to craft a{" "}
+                bills, across several issue areas, to craft a{' '}
                 <a
                   href="http://www.progressivemass.com/190legislativeagenda"
                   target="_blank"
@@ -214,22 +216,22 @@ export default class CosponsorshipTable extends React.Component {
             <Sticky>
               <thead>
                 <tr>
-                  <th style={{ width: "15%" }}>Bill</th>
-                  <th style={{ width: "30%" }}>Title</th>
-                  <th style={{ width: "40%" }}>
-                    Summary from{" "}
+                  <th style={{ width: '15%' }}>Bill</th>
+                  <th style={{ width: '30%' }}>Title</th>
+                  <th style={{ width: '40%' }}>
+                    Summary from{' '}
                     <a href="http://www.progressivemass.com/" target="_blank">
                       Progressive Mass
                     </a>
                   </th>
-                  <th style={{ width: "15%" }}>
+                  <th style={{ width: '15%' }}>
                     {this.props.legislatorName} Cosponsored?
                   </th>
                 </tr>
               </thead>
             </Sticky>
             <tbody>
-              {cosponsorship.map((c, i) => {
+              {sponsorship.map((c, i) => {
                 return this.renderRow(c, i)
               }, this)}
             </tbody>
@@ -240,7 +242,7 @@ export default class CosponsorshipTable extends React.Component {
   }
 }
 
-CosponsorshipTable.propTypes = {
+SponsorshipTable.propTypes = {
   data: PropTypes.object.isRequired,
   legislatorName: PropTypes.string.isRequired,
 }

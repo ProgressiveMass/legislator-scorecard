@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-class SearchForm extends React.Component {
+class SearchForm extends React. {
   constructor(props) {
     super(props)
     this.onFormSubmit = this.onFormSubmit.bind(this)

@@ -1,15 +1,15 @@
-const fs = require("fs-extra")
-const axios = require("axios")
-const curlirize = require("axios-curlirize").default
+const fs = require('fs-extra')
+const axios = require('axios')
+const curlirize = require('axios-curlirize').default
 
 // get some nice debugging output
 // curlirize(axios)
 
-require("dotenv").config()
+require('dotenv').config()
 
 const googleSheetIds = {
-  2017: "15AgxGT87Qc02IqPV46Uc0u9Z_ChfAjZQaj3qS2VNF8g",
-  2019: "17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg",
+  2017: '15AgxGT87Qc02IqPV46Uc0u9Z_ChfAjZQaj3qS2VNF8g',
+  2019: '17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg',
 }
 
 const requestSheet = async (id, sheet) => {
@@ -29,12 +29,12 @@ const requestSheet = async (id, sheet) => {
 const loadGoogleSheets = async year => {
   const id = googleSheetIds[year]
   const sheetTypes = [
-    "Sponsored_Bills",
-    "House_Bills",
-    "Senate_Bills",
-    "Sponsorship",
-    "House_Votes",
-    "Senate_Votes",
+    'Sponsored_Bills',
+    'House_Bills',
+    'Senate_Bills',
+    'Sponsorship',
+    'House_Votes',
+    'Senate_Votes',
   ]
   const sheetRequests = sheetTypes.map(sheet => requestSheet(id, sheet))
 
@@ -47,6 +47,8 @@ const loadGoogleSheets = async year => {
       houseVotes,
       senateVotes,
     ]) => {
+      // there must have been a connectivity error since this always has data
+      if (sponsoredBills.length === 0) return
       fs.writeFileSync(
         `${__dirname}/tmp/${year}.json`,
         JSON.stringify({

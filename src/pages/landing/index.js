@@ -1,11 +1,13 @@
 import React from "react"
 import SearchForm from "./SearchForm"
+import SEO from '../../components/seo'
 import "../../styles/index.scss"
 import Layout from "../../components/layout"
 
 export default () => {
   return (
     <Layout>
+    <SEO description='Are your Massachusetts representatives fighting for your progressive values?'/>
       <section className="landing__header">
         <div className="heading-font landing__header--1">
           <div className="module-container">

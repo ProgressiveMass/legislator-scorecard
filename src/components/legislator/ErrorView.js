@@ -1,13 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
-const ErrorViewComponent = props => {
+const ErrorView = props => {
   return (
     <div className="tinted-background">
       <div
         className="mx-auto white-floated p-4"
-        style={{ maxWidth: "500px", marginTop: "12vh", marginBottom: "15vh" }}
+        style={{ maxWidth: '500px', marginTop: '12vh', marginBottom: '15vh' }}
       >
         <h1 className="h2 mb-4">Sorry, there was an error.</h1>
         <p className="text-lg mb-4">{props.error}</p>
@@ -19,8 +19,8 @@ const ErrorViewComponent = props => {
   )
 }
 
-export default ErrorViewComponent
+export default ErrorView
 
-ErrorViewComponent.propTypes = {
+ErrorView.propTypes = {
   error: PropTypes.string,
 }
