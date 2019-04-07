@@ -1,32 +1,18 @@
-
-
 .table-container {
-    padding-top: 0;
-    min-height: 35vh;
-}
-
-.explanatory-text {
-  border: 2px solid $light;
-  margin: 2rem 0;
-
-  p:last-of-type {
-    margin-bottom: 0;
-  }
+  padding-top: 0;
+  min-height: 35vh;
 }
 
 .votes-fw {
-    width: 2rem;
-    display: inline-block;
-    text-align: right;
-    margin-right: .1rem;
+  width: 2rem;
+  display: inline-block;
+  text-align: right;
+  margin-right: 0.1rem;
 }
-
-
 
 .sticky {
   tr td:first-of-type,
-  tr th:first-of-type  {
+  tr th:first-of-type {
     padding-left: 0;
   }
-
 }

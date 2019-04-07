@@ -28,7 +28,7 @@ function getLetterGrade(score) {
   }
 }
 
-export default class ProgressBar extends React. {
+export default class ProgressBar extends React.Component {
   componentDidMount() {
     if (this.props.animate) {
       setTimeout(() => {

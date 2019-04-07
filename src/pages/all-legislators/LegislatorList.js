@@ -6,7 +6,7 @@ import SortButton from "./SortButton"
 import ProgressBar from "../../components/progressBar"
 import InfoPopover from "../../components/InfoPopover"
 
-class LegislatorList extends React. {
+class LegislatorList extends React.Component {
   constructor(props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)
@@ -133,7 +133,9 @@ class LegislatorList extends React. {
     setTimeout(forceCheck, 1)
   }
 
-  filterData(rows) {
+  // TODO: figure out error
+
+  filterData(rows = []) {
     const filterRegex = new RegExp("^" + this.state.filter.toLowerCase())
     return rows.filter(r => {
       const names = r.name.split(",")

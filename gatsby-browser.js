@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+
+//load site-wide styles
+import './src/styles/index.scss'

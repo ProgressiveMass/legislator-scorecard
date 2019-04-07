@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StickyContainer, Sticky } from "react-sticky"
-import tagMap from "./tagMap"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StickyContainer, Sticky } from 'react-sticky'
+import getTagData from './tagMap'
 
-export default class VoteTable extends React. {
+export default class VoteTable extends React.Component {
   constructor(props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)
@@ -11,52 +11,52 @@ export default class VoteTable extends React. {
     this.filterRows = this.filterRows.bind(this)
 
     this.state = {
-      tagFilter: "",
+      tagFilter: '',
     }
   }
 
-  renderLegislatorVote(v, progressivePosition) {
-    let badgeClass = "badge"
+  renderLegislatorVote(v, progressive_position) {
+    let badgeClass = 'badge'
 
-    const oppositeDict = term => {
-      if (term.toLowerCase() === "yes") return "No"
-      else if (term.toLowerCase() === "no") return "Yes"
-      else return "N/A"
+    const oppositeDict = position => {
+      if (position.toLowerCase() === 'yes') return 'No'
+      else if (position.toLowerCase() === 'no') return 'Yes'
+      else return 'N/A'
     }
 
-    if (v === "+") {
-      badgeClass += " badge-primary"
-    } else if (v === "-" || v === "NV" || v === "NVP") {
-      badgeClass += " badge-danger"
+    if (v === '+') {
+      badgeClass += ' badge-primary'
+    } else if (v === '-' || v === 'NV' || v === 'NVP') {
+      badgeClass += ' badge-danger'
     } else {
-      badgeClass += " badge-clear"
+      badgeClass += ' badge-clear'
     }
 
-    let badgeText = "N/A"
-    if (v === "+") {
+    let badgeText = 'N/A'
+    if (v === '+') {
       badgeText =
-        progressivePosition[0].toUpperCase() +
-        progressivePosition.slice(1).toLowerCase()
-    } else if (v === "-") {
-      badgeText = oppositeDict(progressivePosition)
-    } else if (v === "NV") {
-      badgeText = "No vote"
-    } else if (v === "NVP") {
-      badgeText = "Abstained"
+        progressive_position[0].toUpperCase() +
+        progressive_position.slice(1).toLowerCase()
+    } else if (v === '-') {
+      badgeText = oppositeDict(progressive_position)
+    } else if (v === 'NV') {
+      badgeText = 'No vote'
+    } else if (v === 'NVP') {
+      badgeText = 'Abstained'
     }
 
     return <span className={badgeClass}>{badgeText}</span>
   }
 
-  renderCumulativeVote(yesVotes, noVotes, progressivePosition) {
+  renderCumulativeVote(yesVotes, noVotes, progressive_position) {
     const yesBlock = (
       <div>
         <span className="label votes-fw">Yes:</span>&nbsp;
         <span
           className={`badge ${
-            progressivePosition.toLowerCase() === "yes"
-              ? "badge-primary"
-              : "badge-danger"
+            progressive_position.toLowerCase() === 'yes'
+              ? 'badge-primary'
+              : 'badge-danger'
           }`}
         >
           {yesVotes}
@@ -69,9 +69,9 @@ export default class VoteTable extends React. {
         <span className="label votes-fw">No:</span>&nbsp;
         <span
           className={`badge ${
-            progressivePosition.toLowerCase() === "no"
-              ? "badge-primary"
-              : "badge-danger"
+            progressive_position.toLowerCase() === 'no'
+              ? 'badge-primary'
+              : 'badge-danger'
           }`}
         >
           {noVotes}
@@ -97,23 +97,24 @@ export default class VoteTable extends React. {
   }
 
   renderRow(v, i) {
+    debugger // eslint-disable-line
     const tags = v.tags.map(t => {
       return (
         <button
-          key={tagMap[t].name}
-          className={`btn badge ${tagMap[t].badge}`}
+          key={getTagData(t).name}
+          className={`btn badge ${getTagData(t).badge}`}
           onClick={() => {
             this.toggleFilter(t)
           }}
         >
-          {tagMap[t].name}
+          {getTagData(t).name}
         </button>
       )
     })
 
     return (
       <tr key={i}>
-        <td style={{ width: "15%" }}>
+        <td style={{ width: '15%' }}>
           <div className="text-muted font-weight-bold">
             <a href={v.rollCallUrl} target="_blank" className="muted-link">
               {v.number}
@@ -121,30 +122,32 @@ export default class VoteTable extends React. {
           </div>
           <div>{tags}</div>
         </td>
-        <td style={{ width: "25%" }}>
+        <td style={{ width: '25%' }}>
           <a href={v.url} target="_blank" className="font-weight-bold">
             {v.title}
             <div />
           </a>
         </td>
-        <td style={{ width: "35%" }}>
+        <td style={{ width: '35%' }}>
           <p>{v.description}</p>
           <p>
             <span className="label">Progressive Position:</span>&nbsp;
-            <span className="badge badge-primary">{v.progressivePosition}</span>
+            <span className="badge badge-primary">
+              {v.progressive_position}
+            </span>
           </p>
         </td>
         <td
-          style={{ width: "12.5%" }}
-          data-label={`${this.props.legislatorName}'s Vote`}
+          style={{ width: '12.5%' }}
+          data-label={`${this.props.lastName}'s Vote`}
         >
-          {this.renderLegislatorVote(v.yourLegislator, v.progressivePosition)}
+          {this.renderLegislatorVote(v.yourLegislator, v.progressive_position)}
         </td>
-        <td style={{ width: "12.5%" }} data-label="Total Votes">
+        <td style={{ width: '12.5%' }} data-label="Total Votes">
           {this.renderCumulativeVote(
             v.yesVotes,
             v.noVotes,
-            v.progressivePosition
+            v.progressive_position
           )}
         </td>
       </tr>
@@ -153,7 +156,7 @@ export default class VoteTable extends React. {
 
   toggleFilter(t) {
     if (this.state.tagFilter === t) {
-      this.setState({ tagFilter: "" })
+      this.setState({ tagFilter: '' })
     } else {
       this.setState({ tagFilter: t })
     }
@@ -161,19 +164,19 @@ export default class VoteTable extends React. {
 
   renderTagFilters(tags) {
     return tags.map(t => {
-      let badgeClass = "badge-default"
+      let badgeClass = 'badge-default'
       if (!this.state.tagFilter || this.state.tagFilter === t) {
-        badgeClass = tagMap[t].badge
+        badgeClass = getTagData(t).badge
       }
       return (
-        <li className="mr-1" key={tagMap[t].name}>
+        <li className="mr-1" key={getTagData(t).name}>
           <button
             className={`btn btn-sm badge ${badgeClass}`}
-            style={{ fontSize: ".9rem" }}
-            aria-pressed={this.state.tagFilter === t ? "true" : "false"}
+            style={{ fontSize: '.9rem' }}
+            aria-pressed={this.state.tagFilter === t ? 'true' : 'false'}
             onClick={() => this.toggleFilter(t)}
           >
-            {tagMap[t].name}
+            {getTagData(t).name}
           </button>
         </li>
       )
@@ -192,23 +195,19 @@ export default class VoteTable extends React. {
 
   render() {
     const votes = this.filterRows(this.props.data.votes)
-    const tags = [
-      ...new Set([].concat.apply([], this.props.data.votes.map(c => c.tags))),
-    ]
+    const tags = Array.from(
+      new Set(
+        this.props.data.sponsorship
+          .map(c => c.tags)
+          .reduce((acc, curr) => acc.concat(curr), [])
+      )
+    )
 
     if (!votes || votes.length === 0) {
       return (
-        <div className="table-container">
-          <div className=" mx-auto p-5" style={{ maxWidth: "600px" }}>
-            <h3>This Data Isn't Available Yet!</h3>
-            <p className="lead">
-              Final scorecards will be released at the end of the session
-              (Winter 2018). <br />
-            </p>
-            <p>
-              Progressive Mass is currently considering how to provide more
-              frequent updates on votes as they happen.
-            </p>
+        <div className="table-container text-center">
+          <div className=" mx-auto p-5">
+            <b>No data available.</b>
           </div>
         </div>
       )
@@ -216,30 +215,21 @@ export default class VoteTable extends React. {
     return (
       <div className="table-container">
         <h3 className="sr-only">Voting Record</h3>
-
-        <div className="row explanatory-text p-3 no-gutters">
-          <div className="col-md-6 pr-md-5">
-            <p>
-              Legislators are scored for their roll-called votes on bills and
-              amendments where an important progressive advancement (or stopping
-              a bad policy) is at stake.{" "}
-            </p>
-          </div>
-          <div className="col-md-6 pr-md-5">
-            <p>
-              Assessing a legislator’s record is a challenging proposition.{" "}
-              <br />
-              <a
-                href="https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0"
-                target="_blank"
-              >
-                Learn more about the benefits and limitations of a scorecard.
-              </a>
-            </p>
-          </div>
+        <div className="my-4 py-2 lead">
+          <p>
+            Legislators are scored for their roll-called votes on bills and
+            amendments where an important progressive advancement (or stopping a
+            bad policy) is at stake.{' '}
+            <a
+              href="https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0"
+              target="_blank"
+            >
+              Learn more about the benefits and limitations of a scorecard.
+            </a>
+          </p>
         </div>
 
-        <div className="mb-4 pt-4">
+        <div className="mb-2">
           <span className="label d-md-inline-block mr-3">
             Filter Bills By Topic:
           </span>
@@ -253,10 +243,10 @@ export default class VoteTable extends React. {
             <Sticky>
               <thead>
                 <tr>
-                  <th style={{ width: "15%" }}>Bill</th>
-                  <th style={{ width: "25%" }}>Name</th>
-                  <th style={{ width: "35%" }}>
-                    Summary from{" "}
+                  <th style={{ width: '15%' }}>Bill</th>
+                  <th style={{ width: '25%' }}>Name</th>
+                  <th style={{ width: '35%' }}>
+                    Summary from{' '}
                     <a
                       href="https://www.progressivemass.com/190thscorecard-house"
                       target="_blank"
@@ -264,10 +254,10 @@ export default class VoteTable extends React. {
                       Progressive Mass
                     </a>
                   </th>
-                  <th style={{ width: "12.5%" }}>
-                    {this.props.legislatorName}'s Vote
+                  <th style={{ width: '12.5%' }}>
+                    {this.props.lastName}'s Vote
                   </th>
-                  <th style={{ width: "12.5%" }}>Vote Tally</th>
+                  <th style={{ width: '12.5%' }}>Vote Tally</th>
                 </tr>
               </thead>
             </Sticky>

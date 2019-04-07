@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import LogoImg from "../../images/scorecard-logo.svg"
+import React from 'react'
+import { Link } from 'gatsby'
+import LogoImg from '../../images/scorecard-logo.svg'
 
 const Nav = () => {
   return (
@@ -13,13 +13,13 @@ const Nav = () => {
           <img
             src={LogoImg}
             alt=""
-            style={{ width: "35px", marginRight: ".7rem" }}
+            style={{ width: '35px', marginRight: '.7rem' }}
           />
 
           <span>
             <span
               className="text-uppercase mb-0 d-block"
-              style={{ fontWeight: "normal" }}
+              style={{ fontWeight: 'normal' }}
             >
               Progressive Massachusetts
             </span>
@@ -29,13 +29,10 @@ const Nav = () => {
 
         <div className="text-md-right mt-3 mt-md-0">
           <ul className="list-unstyled d-flex">
-            <li className="mr-3 mr-md-5">
+            <li className="mr-4 mr-md-5">
               <Link to="/all-legislators">
                 All <abbr aria-label="Massachusetts">MA</abbr> Legislators
               </Link>
-            </li>
-            <li className="mr-3 mr-md-5">
-              <Link to="/all-acts">Our Legislative Agenda</Link>
             </li>
             <li>
               <a

@@ -5,26 +5,32 @@ import LegislatorMetadata from './LegislatorMetadata'
 import SessionTabs from './SessionTabs'
 import Layout from '../layout'
 
-const LegislatorPage = ({
-  pageContext: { chamber, id, pageData },
-}) => {
+const LegislatorPage = ({ pageContext: { chamber, id, pageData } }) => {
   const legislatorTitle = chamber === 'senate' ? 'Senator' : 'Rep'
-  const seoTitle = `${legislatorTitle} ${pageData.legislator.name}'s Voting Record`
-  const seoDescription = `Learn about ${legislatorTitle} ${pageData.legislator.name}'s values by viewing a record of their activity in the Massachusetts statehouse.`
+  const lastName = pageData.legislator.name.split(/\s/).slice(-1)[0]
+  const seoTitle = `${legislatorTitle} ${
+    pageData.legislator.name
+  }'s Voting Record`
+  const seoDescription = `Learn about ${legislatorTitle} ${
+    pageData.legislator.name
+  }'s values by viewing a record of their activity in the Massachusetts statehouse.`
   return (
     <Layout>
-    <SEO title={seoTitle} description={seoDescription} />
+      <SEO title={seoTitle} description={seoDescription} />
       <div className="tinted-background">
         <LegislatorMetadata
           data={pageData.legislator}
           chamber={chamber}
           rating={pageData.rating}
+          lastName={lastName}
+          legislatorTitle={legislatorTitle}
         />
         <SessionTabs
           terms={pageData.data}
           chamber={chamber}
-          legislatorName={pageData.legislator.name}
           key={chamber}
+          lastName={lastName}
+          legislatorTitle={legislatorTitle}
         />
       </div>
     </Layout>

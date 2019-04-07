@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { StickyContainer, Sticky } from 'react-sticky'
 import InfoPopover from '../InfoPopover'
 import surveyImg from './images/survey.svg'
-import tagMap from './tagMap'
+import getTagData from './tagMap'
 
-export default class SponsorshipTable extends React. {
+export default class SponsorshipTable extends React.Component {
   constructor(props) {
     super(props)
     this.renderRow = this.renderRow.bind(this)
@@ -25,9 +25,8 @@ export default class SponsorshipTable extends React. {
 
     return (
       <p>
-        This session, {this.props.legislatorName} cosponsored{' '}
-        <b>{sponsoredLength}</b> out of the{' '}
-        <b>{this.props.data.sponsorship.length}</b> bills endorsed by
+        This session, {this.props.lastName} cosponsored <b>{sponsoredLength}</b>{' '}
+        out of the <b>{this.props.data.sponsorship.length}</b> bills endorsed by
         Progressive Massachusetts.
       </p>
     )
@@ -43,18 +42,17 @@ export default class SponsorshipTable extends React. {
     }
   }
 
-  renderRow(c, i) {
-    debugger // eslint-disable-line
+  renderRow(c) {
     const tags = c.tags.map(t => {
       return (
         <button
-          className={`btn badge ${tagMap[t].badge}`}
+          className={`btn badge ${getTagData(t).badge}`}
           onClick={() => {
             this.toggleFilter(t)
           }}
-          key={tagMap[t].name}
+          key={getTagData(t).name}
         >
-          {tagMap[t].name}
+          {getTagData(t).name}
         </button>
       )
     })
@@ -63,7 +61,7 @@ export default class SponsorshipTable extends React. {
       <tr key={c.finalNumber}>
         <td className="text-muted" style={{ width: '15%' }}>
           <div className="font-weight-bold">
-            {c.finalNumber}&nbsp;
+            {c.bill_number}&nbsp;
             {c.showPairedDisclaimer ? (
               <InfoPopover text="This bill has two distinct versions in the House and Senate, but for the purposes of tracking sponsorship we treat them as a single bill." />
             ) : null}
@@ -74,7 +72,7 @@ export default class SponsorshipTable extends React. {
         <td style={{ width: '30%' }}>
           <div>
             <a href={c.url} className="font-weight-bold" target="_blank">
-              {c.title}
+              {c.shorthand_title}
             </a>
           </div>
         </td>
@@ -100,21 +98,20 @@ export default class SponsorshipTable extends React. {
   }
 
   renderTagFilters(tags) {
-    debugger // eslint-disable-line
     return tags.map(t => {
       let badgeClass = 'badge-default'
       if (!this.state.tagFilter || this.state.tagFilter === t) {
-        badgeClass = tagMap[t].badge
+        badgeClass = getTagData(t).badge
       }
       return (
-        <li className="mr-1 my-2 my-md-0" key={tagMap[t].name}>
+        <li className="mr-1 my-2 my-md-0" key={getTagData(t).name}>
           <button
             className={`btn btn-sm badge ${badgeClass}`}
             style={{ fontSize: '.9rem' }}
             aria-pressed={this.state.tagFilter === t ? 'true' : 'false'}
             onClick={() => this.toggleFilter(t)}
           >
-            {tagMap[t].name}
+            {getTagData(t).name}
           </button>
         </li>
       )
@@ -133,77 +130,43 @@ export default class SponsorshipTable extends React. {
 
   render() {
     const sponsorship = this.filterRows(this.props.data.sponsorship)
-    const tags = [
-      ...new Set(
-        [].concat.apply([], this.props.data.sponsorship.map(c => c.tags))
-      ),
-    ]
 
     if (!sponsorship) {
       return (
-        <div>
-          <p className="h-3">No Data Available</p>
+        <div className="my-5 py-5 text-center">
+          <p className="h2 mb-5 pb-5">No Data Available</p>
         </div>
       )
     }
+
+    const tags = Array.from(
+      new Set(
+        sponsorship.map(c => c.tags).reduce((acc, curr) => acc.concat(curr), [])
+      )
+    )
 
     return (
       <div className="table-container">
         <h3 className="sr-only">Cosponsored Bills</h3>
         <StickyContainer>
-          <div className="row no-gutters explanatory-text">
-            <div
-              className="text-center py-3"
-              style={{
-                width: '100%',
-                fontSize: '1.1rem',
-                background: 'rgba(2, 117, 216, 0.1)',
-              }}
-            >
+          <div className="my-4 py-2">
+            <p className="lead mb-0">
+              Cosponsoring legislation is an important way for a legislator to
+              help put momentum behind certain bills. To learn more about which
+              bills Progressive Mass thinks are most important to support, you
+              can{' '}
               <a
-                className="font-weight-bold heading-font"
+                className="font-weight-bold"
                 target="_blank"
-                href="http://progressivemass.com/factsheet"
+                href="https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/5393/attachments/original/1553983553/2019_PM_Fact_Sheet_Compilation_March_2019.pdf"
               >
-                <img
-                  src={surveyImg}
-                  alt="list symbol"
-                  style={{ width: '45px' }}
-                  className="d-block d-sm-inline-block mx-auto"
-                />
-                View our guide to progressive legislation for the 2017-2018
+                view the guide to progressive legislation for the 2019-2020
                 term.
               </a>
-            </div>
-            <div className="col-md-6 p-3 pr-md-5">
-              <p>
-                This session, almost 6,000 pieces of legislation have been
-                filed. Only a few will even make it out of committee, let alone
-                receive a vote. Progressive Mass has identified a suite of
-                bills, across several issue areas, to craft a{' '}
-                <a
-                  href="http://www.progressivemass.com/190legislativeagenda"
-                  target="_blank"
-                >
-                  Progressive Legislative Agenda
-                </a>
-                .
-              </p>
-            </div>
-
-            <div className="col-md-6 p-3 pr-md-5">
-              <p>
-                Cosponsoring legislation is an important way for a legislator to
-                help put momentum behind certain bills. It is one of the few
-                signs we have for initial support. It&#8217;s not enough to push
-                a bill through to passage&mdash;but it&#8217;s a first step.
-                (Cosponsorship does not currently factor into a
-                legislator&#8217;s score.)
-              </p>
-            </div>
+            </p>
           </div>
 
-          <div className="mb-3 pt-4">
+          <div className=" pt-3">
             <span className="label d-md-inline-block mr-3">
               Filter Bills By Topic:
             </span>

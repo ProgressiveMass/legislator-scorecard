@@ -1,4 +1,4 @@
-export default {
+const tagMap = {
   'shared prosperity': { name: 'economy', badge: 'badge-warning' },
   'all means all': { name: 'justice & equality', badge: 'badge-purple' },
   'good govt/strong democracy': { name: 'government', badge: 'badge-info' },
@@ -13,3 +13,15 @@ export default {
     badge: 'badge-success',
   },
 }
+
+const getTagData = (tag = '') => {
+
+  return (
+    tagMap[tag.toLowerCase()] || {
+      name: tag,
+      badge: 'badge-default',
+    }
+  )
+}
+
+export default getTagData

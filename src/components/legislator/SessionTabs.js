@@ -9,8 +9,7 @@ const termDict = {
   '2019-2020': '191st Session',
 }
 
-export const SessionTabs = ({ terms, chamber, legislatorName }) => {
-  console.log(terms)
+export const SessionTabs = ({ terms, chamber, lastName }) => {
   const tabItems = terms.map(d => {
     return {
       title: (
@@ -26,7 +25,7 @@ export const SessionTabs = ({ terms, chamber, legislatorName }) => {
             id={d.term}
             data={d}
             chamber={chamber}
-            legislatorName={legislatorName}
+            lastName={lastName}
           />
         )
       },
@@ -54,5 +53,5 @@ export default SessionTabs
 SessionTabs.propTypes = {
   terms: PropTypes.array.isRequired,
   chamber: PropTypes.string.isRequired,
-  legislatorName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
 }

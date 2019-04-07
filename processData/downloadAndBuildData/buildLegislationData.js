@@ -1,21 +1,47 @@
 const fs = require('fs-extra')
 
+const normalizeBillNumber = billNumber => billNumber.replace(/\./g, '')
+const normalizeTags = tagString => tagString.split(',').map(tag => tag.trim())
+
+// handles house, senate, and "sponsored" sheets
 const buildLegislationObject = legislation => {
   const processedLegislation = legislation.slice(1).reduce((acc, row) => {
     const obj = row.reduce((acc, cell, i) => {
       acc[legislation[0][i]] = cell
       return acc
     }, {})
-    // for easier matching in gatsby-node.js
-    obj.bill_number = obj.bill_number.replace(/\./g, '')
+    obj.bill_number = normalizeBillNumber(obj.bill_number)
+    obj.tags = normalizeTags(obj.tags)
     acc[obj.bill_number] = obj
     return acc
   }, {})
   return processedLegislation
 }
 
+const addYesAndNoVotes = (bills, votes) => {
+  const billRow = votes[1]
+  billRow.forEach((bill, index) => {
+    if (!bill || !bill.trim()) return
+    const billVotes = votes.map(row => row[index])
+    const yesVotes = billVotes.filter(v => v.trim() === '+').length
+    const noVotes = billVotes.filter(v => v.trim() === '-').length
+    bills[bill].noVotes = noVotes
+    bills[bill].yesVotes = yesVotes
+  })
+}
+
+const cleanDescription = bills => {
+  Object.keys(bills).forEach(billNumber => {
+    const descriptionLines = bills[billNumber].description
+      .split(/\n/)
+      .filter(Boolean)
+    if (descriptionLines.length === 1)
+      bills[billNumber].description = descriptionLines[0]
+    else bills[billNumber].description = descriptionLines[1]
+  })
+}
+
 const buildVoteObject = votes => {
-  debugger // eslint-disable-line
   const progressivePositionToVoteType = position => {
     if (position.trim().toLowerCase() === 'yes') return '+'
     else if (position.trim().toLowerCase() === 'no') return '-'
@@ -39,8 +65,6 @@ const buildVoteObject = votes => {
     .map(row => {
       const openStatesLegislatorId = row[0]
       if (!openStatesLegislatorId) return
-
-      debugger // eslint-disable-line
 
       const votes = row.slice(2).reduce((acc, vote, index) => {
         const billName = legislationRow[index + 2]
@@ -112,6 +136,17 @@ const buildLegislationDataForYear = year => {
 
   ;['sponsored', 'house', 'senate'].forEach(type => {
     data[`${type}Bills`] = buildLegislationObject(data[`${type}Bills`])
+  })
+
+  // add additional vote data to bills
+  // modifies in-place
+  ;['house', 'senate'].forEach(type => {
+    if (!data[`${type}Votes`] || !Object.keys(data[`${type}Bills`]).length)
+      return
+    addYesAndNoVotes(data[`${type}Bills`], data[`${type}Votes`])
+  })
+  ;['house', 'senate'].forEach(type => {
+    cleanDescription(data[`${type}Bills`])
   })
 
   if (data.sponsorship.length)

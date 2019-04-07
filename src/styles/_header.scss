@@ -16,6 +16,7 @@ header {
 
 header nav a {
   display: inline-block;
+  font-weight: bold;
   border-bottom: .3rem solid $white;
   &:hover, &:focus {
     text-decoration: none;

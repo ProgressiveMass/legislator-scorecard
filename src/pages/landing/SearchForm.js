@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-class SearchForm extends React. {
+class SearchForm extends React.Component {
   constructor(props) {
     super(props)
     this.onFormSubmit = this.onFormSubmit.bind(this)
@@ -14,7 +14,7 @@ class SearchForm extends React. {
   onFormSubmit(e) {
     e.preventDefault()
     this.setState({ loading: true })
-    const address = this.refs.address.value + " MA " + this.refs.zip.value
+    const address = this.refs.address.value + ' MA ' + this.refs.zip.value
     this.props.history.push(`/my-legislators/${address}`)
   }
 
@@ -77,7 +77,7 @@ class SearchForm extends React. {
                 &nbsp;Loading
               </span>
             ) : (
-              "Find My Local Legislators"
+              'Find My Local Legislators'
             )}
           </button>
         </div>

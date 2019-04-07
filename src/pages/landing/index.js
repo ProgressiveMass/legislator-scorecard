@@ -1,7 +1,6 @@
 import React from "react"
 import SearchForm from "./SearchForm"
 import SEO from '../../components/seo'
-import "../../styles/index.scss"
 import Layout from "../../components/layout"
 
 export default () => {

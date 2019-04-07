@@ -6,10 +6,9 @@ import VoteTable from './VoteTable'
 const sponsorship = 'sponsorship'
 const votes = 'votes'
 
-export default class TermLayout extends React. {
+export default class TermLayout extends React.Component {
   constructor(props) {
     super(props)
-    debugger // eslint-disable-line
     // if no votes, set active to sponsorship
     const active =
       !props.data.votes || !props.data.votes.length ? sponsorship : votes
@@ -43,7 +42,7 @@ export default class TermLayout extends React. {
           }
           disabled={!hasSponsorship}
         >
-          Cosponsored Bills
+          Cosponsorship
         </a>
       </li>
     )
@@ -78,7 +77,7 @@ export default class TermLayout extends React. {
       BodyComponent = <VoteTable {...this.props} />
     }
     return (
-      <div className="white-floated mb-4">
+      <div className="white-background mb-4">
         <ul className="nav justify-content-center">
           {sponsorshipTab}
           {voteTab}

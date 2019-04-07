@@ -2,7 +2,7 @@ import React from "react"
 
 const NewSenatorMessage = props => {
   return (
-    <div className="white-floated">
+    <div className="white-background">
       <p className="lead">
         <b>
           We were unable to find votes by this legislator for the 2017-2018

@@ -46,8 +46,18 @@
   }
 }
 
+.badge:hover {
+  color: white !important;
+}
+
+.badge-warning {
+  color: white;
+  background-color: orange;
+}
+
 .badge-purple {
   background-color: $purple;
+  color: white;
 }
 
 .badge-clear {
@@ -62,6 +72,7 @@
 
 .badge-danger {
   color: $danger;
+  background-color: hsla(354, 70%, 54%, 0.18);
 }
 
 .table th,
@@ -119,4 +130,8 @@
     width: 100%;
     margin-bottom: 0.3rem;
   }
+}
+
+.lead {
+  font-weight: normal;
 }

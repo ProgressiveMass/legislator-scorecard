@@ -6,7 +6,7 @@ const ErrorView = props => {
   return (
     <div className="tinted-background">
       <div
-        className="mx-auto white-floated p-4"
+        className="mx-auto white-background p-4"
         style={{ maxWidth: '500px', marginTop: '12vh', marginBottom: '15vh' }}
       >
         <h1 className="h2 mb-4">Sorry, there was an error.</h1>
