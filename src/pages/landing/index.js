@@ -1,28 +1,29 @@
-import React from "react"
-import SearchForm from "./SearchForm"
+import React from 'react'
+import SearchForm from './SearchForm'
 import SEO from '../../components/seo'
-import Layout from "../../components/layout"
+import Layout from '../../components/layout'
 
 export default () => {
   return (
     <Layout>
-    <SEO description='Are your Massachusetts representatives fighting for your progressive values?'/>
+      <SEO description="Are your Massachusetts representatives fighting for your progressive values?" />
       <section className="landing__header">
         <div className="heading-font landing__header--1">
           <div className="module-container">
             <div
               className="row no-gutters align-items-center"
-              style={{ minHeight: "50vh" }}
+              style={{ minHeight: '50vh' }}
             >
               <div className="col-md-6 py-md-0">
                 <h1 className="landing__cta">
-                  Are your <b>Massachusetts</b> representatives fighting for
-                  your <b>progressive</b> values?
+                  Are your <b className="font-weight-800">Massachusetts</b>{' '}
+                  representatives fighting for your{' '}
+                  <b className="font-weight-800">progressive</b> values?
                 </h1>
               </div>
 
               <div className="col-md-6  blue-background pl-md-5 pt-lg-3">
-                <div className="mx-auto" style={{ maxWidth: "500px" }}>
+                <div className="mx-auto" style={{ maxWidth: '500px' }}>
                   <SearchForm />
                 </div>
               </div>
@@ -37,10 +38,10 @@ export default () => {
         <div className="landing__section--1 row no-gutters align-items-center">
           <div className="col-md-5 offset-md-1 pr-md-3 mb-5 mb-md-0">
             <img
-              src={require("./images/cards.png")}
+              src={require('./images/cards.png')}
               alt="snap shots of three different Progressive Massachusetts Legislator Report Cards"
               className="img-fluid mx-auto d-block"
-              style={{ maxHeight: "500px" }}
+              style={{ maxHeight: '500px' }}
             />
           </div>
           <div className="col-md-4 mb-5 mb-md-0 text-lg ">
@@ -74,13 +75,13 @@ export default () => {
             <div className="col-md-4 mb-4 mb-md-0">
               <div
                 className="white-background p-3 mx-auto"
-                style={{ maxWidth: "400px" }}
+                style={{ maxWidth: '400px' }}
               >
                 <h3 className="h4">
                   <img
-                    src={require("./images/fine_print.svg")}
+                    src={require('./images/fine_print.svg')}
                     alt=""
-                    style={{ width: "80px" }}
+                    style={{ width: '80px' }}
                     className="my-4"
                   />
                   Track Legislation
@@ -94,13 +95,13 @@ export default () => {
             <div className="col-md-4 mb-4 mb-md-0">
               <div
                 className="white-background p-3 mx-auto"
-                style={{ maxWidth: "400px" }}
+                style={{ maxWidth: '400px' }}
               >
                 <h3 className="h4">
                   <img
-                    src={require("./images/legislator.svg")}
+                    src={require('./images/legislator.svg')}
                     alt=""
-                    style={{ width: "80px" }}
+                    style={{ width: '80px' }}
                     className="my-4"
                   />
                   Learn About Your Reps
@@ -115,13 +116,13 @@ export default () => {
             <div className="col-md-4">
               <div
                 className="white-background p-3 mx-auto"
-                style={{ maxWidth: "400px" }}
+                style={{ maxWidth: '400px' }}
               >
                 <h3 className="h4">
                   <img
-                    src={require("./images/collaboration.svg")}
+                    src={require('./images/collaboration.svg')}
                     alt=""
-                    style={{ width: "80px" }}
+                    style={{ width: '80px' }}
                     className="my-4"
                   />
                   Take Action

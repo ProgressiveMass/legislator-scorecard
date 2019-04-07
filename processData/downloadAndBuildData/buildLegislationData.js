@@ -1,7 +1,25 @@
 const fs = require('fs-extra')
 
+const tagMap = {
+  'shared prosperity': 'economy',
+  'all means all': 'justice & equality',
+  'good govt/strong democracy': 'government',
+  'good government & strong democracy': 'government',
+  'strong democracy': 'government',
+  'infrastructure/environment': 'environment',
+  'sustainable infrastructure & environmental protection': 'environment',
+}
+
 const normalizeBillNumber = billNumber => billNumber.replace(/\./g, '')
-const normalizeTags = tagString => tagString.split(',').map(tag => tag.trim())
+const normalizeTags = tagString => {
+  const tags = tagString
+    .split(',')
+    .map(tag => tag.trim())
+    .filter(Boolean)
+    .map(tag => tag.toLowerCase())
+    .map(tag => tagMap[tag])
+  return tags
+}
 
 // handles house, senate, and "sponsored" sheets
 const buildLegislationObject = legislation => {
@@ -38,6 +56,13 @@ const cleanDescription = bills => {
     if (descriptionLines.length === 1)
       bills[billNumber].description = descriptionLines[0]
     else bills[billNumber].description = descriptionLines[1]
+  })
+}
+
+const addBillUrls = (bills, session) => {
+  Object.keys(bills).forEach(billNumber => {
+    const url = `https://malegislature.gov/Bills/${session}/${billNumber}`
+    bills[billNumber].url = url
   })
 }
 
@@ -129,6 +154,12 @@ const buildSponsorshipObject = sponsorship => {
     .filter(Boolean)
 }
 
+const sessionDict = {
+  '2017': 190,
+  '2019': 191,
+  '2021': 192,
+}
+
 const buildLegislationDataForYear = year => {
   const data = JSON.parse(
     fs.readFileSync(`${__dirname}/tmp/${year}.json`, 'utf8')
@@ -147,6 +178,7 @@ const buildLegislationDataForYear = year => {
   })
   ;['house', 'senate'].forEach(type => {
     cleanDescription(data[`${type}Bills`])
+    addBillUrls(data[`${type}Bills`], sessionDict[year])
   })
 
   if (data.sponsorship.length)

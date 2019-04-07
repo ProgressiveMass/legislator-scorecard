@@ -97,7 +97,6 @@ export default class VoteTable extends React.Component {
   }
 
   renderRow(v, i) {
-    debugger // eslint-disable-line
     const tags = v.tags.map(t => {
       return (
         <button
@@ -164,7 +163,7 @@ export default class VoteTable extends React.Component {
 
   renderTagFilters(tags) {
     return tags.map(t => {
-      let badgeClass = 'badge-default'
+      let badgeClass = 'badge-light'
       if (!this.state.tagFilter || this.state.tagFilter === t) {
         badgeClass = getTagData(t).badge
       }
@@ -197,7 +196,7 @@ export default class VoteTable extends React.Component {
     const votes = this.filterRows(this.props.data.votes)
     const tags = Array.from(
       new Set(
-        this.props.data.sponsorship
+        this.props.data.votes
           .map(c => c.tags)
           .reduce((acc, curr) => acc.concat(curr), [])
       )

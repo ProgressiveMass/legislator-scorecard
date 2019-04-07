@@ -1,8 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Tabs from "react-responsive-tabs"
-import LegislatorList from "./LegislatorList"
-import Layout from "../../components/layout"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Tabs from 'react-responsive-tabs'
+import LegislatorList from './LegislatorList'
+import Layout from '../../components/layout'
+import { getLastName } from '../../utilities'
 
 const legislatorQuery = graphql`
   {
@@ -53,11 +54,9 @@ const createLegislatorList = (legislatorArr, voteDataArr) => {
   return legislatorArr
     .map(({ node }) => node)
     .map(data => {
-      const nameArray = data.name.split(/\s/)
-      const lastName = nameArray[nameArray.length - 1] + ","
-      data.name = [lastName, ...nameArray.slice(0, nameArray.length - 1)].join(
-        " "
-      )
+      const lastName = getLastName(data.name)
+      const firstName = data.name.split(/\s/)[0]
+      data.name = [lastName, firstName].join(', ')
       return data
     })
     .map(data => {
@@ -90,13 +89,13 @@ const AllLegislators = () => {
   const legislatorMetadata = processQuery(useStaticQuery(legislatorQuery))
   const tabItems = [
     {
-      title: "House Reps",
+      title: 'House Reps',
       component: (
         <LegislatorList data={legislatorMetadata.houseReps} chamber="lower" />
       ),
     },
     {
-      title: "Senators",
+      title: 'Senators',
       component: (
         <LegislatorList data={legislatorMetadata.senators} chamber="upper" />
       ),
@@ -113,7 +112,7 @@ const AllLegislators = () => {
       <div className="tinted-background">
         <h1
           className="h2 mt-4 font-weight-light text-center"
-          style={{ marginBottom: "2rem" }}
+          style={{ marginBottom: '2rem' }}
         >
           All Current MA Legislators
         </h1>

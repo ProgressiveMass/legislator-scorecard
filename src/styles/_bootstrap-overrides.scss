@@ -46,28 +46,44 @@
   }
 }
 
-.badge:hover {
-  color: white !important;
-}
-
-.badge-warning {
-  color: white;
-  background-color: orange;
+.badge-gold {
+  color: $white;
+  background-color: $orange;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
 }
 
 .badge-purple {
+  color: $white;
   background-color: $purple;
-  color: white;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
 }
 
-.badge-clear {
-  border: 1px solid $light;
-  color: $light;
-  background: transparent;
+.badge-cyan {
+  color: $white;
+  background-color: $cyan;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
 }
 
-.badge-default {
-  color: $body-color;
+.badge-green {
+  color: $white;
+  background-color: $green;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
 }
 
 .badge-danger {

@@ -1,21 +1,14 @@
 const tagMap = {
-  'shared prosperity': { name: 'economy', badge: 'badge-warning' },
-  'all means all': { name: 'justice & equality', badge: 'badge-purple' },
-  'good govt/strong democracy': { name: 'government', badge: 'badge-info' },
-  'good government & strong democracy': {
+  economy: { name: 'economy', badge: 'badge-gold' },
+  'justice & equality': { name: 'justice & equality', badge: 'badge-purple' },
+  government: {
     name: 'government',
-    badge: 'badge-info',
+    badge: 'badge-cyan',
   },
-  'strong democracy': { name: 'government', badge: 'badge-info' },
-  'infrastructure/environment': { name: 'environment', badge: 'badge-success' },
-  'sustainable infrastructure & environmental protection': {
-    name: 'environment',
-    badge: 'badge-success',
-  },
+  environment: { name: 'environment', badge: 'badge-green' },
 }
 
 const getTagData = (tag = '') => {
-
   return (
     tagMap[tag.toLowerCase()] || {
       name: tag,

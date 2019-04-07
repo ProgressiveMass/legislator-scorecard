@@ -54,7 +54,10 @@ export default class Rating extends React.Component {
 
         <div aria-hidden>
           <div className="mb-2">
-            <b className="d-block mb-1" style={{ fontSize: '1.1rem' }}>
+            <b
+              className="d-block mb-1  heading-font"
+              style={{ fontSize: '18px' }}
+            >
               {this.props.title}&nbsp;
               {this.props.lastName}'s votes&nbsp;
               <span className="text-lowercase" style={{ fontSize: '1rem' }}>
@@ -83,11 +86,22 @@ export default class Rating extends React.Component {
   renderCosponsorshipSection() {
     return (
       <div className="mt-4">
-        <h3 style={{ fontSize: '1.1rem', position: 'relative', top: '.5rem', fontWeight: 'bold' }}>
+        <h3
+          style={{
+            fontSize: '18px',
+            position: 'relative',
+            top: '.5rem',
+            fontWeight: 'bold',
+          }}
+        >
           {this.props.title}&nbsp;
           {this.props.lastName} cosponsored
         </h3>
-        <div style={{ fontSize: '2.2rem' }} id="cosponsorship-summary">
+        <div
+          style={{ fontSize: '2.2rem' }}
+          id="cosponsorship-summary"
+          className="mb-2"
+        >
           <b
             className={`${
               this.props.rating.sponsorship.legislator > 3
@@ -105,13 +119,9 @@ export default class Rating extends React.Component {
         </div>
         <div style={{ position: 'relative', top: '-.4rem' }}>
           out of&nbsp;
-          <b className="text-primary">{this.props.rating.sponsorship.total}</b>
+          <b>{this.props.rating.sponsorship.total}</b>
           &nbsp;endorsed by Prog. Mass for{' '}
           {this.props.rating.sponsorship.cumulative.term}&nbsp;
-          <InfoPopover
-            title="Which bills does Progressive Mass endorse?"
-            text='Every session, Prog. Mass chooses a limited selection of progressive bills that advance its <a target="_blank" href="http://www.progressivemass.com/progressiveplatform">Progressive Platform.</a> There are, of course, worthy bills that do not make it into the selected group.'
-          />
         </div>
       </div>
     )

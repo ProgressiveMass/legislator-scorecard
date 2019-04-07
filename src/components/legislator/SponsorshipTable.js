@@ -99,7 +99,7 @@ export default class SponsorshipTable extends React.Component {
 
   renderTagFilters(tags) {
     return tags.map(t => {
-      let badgeClass = 'badge-default'
+      let badgeClass = 'badge-light'
       if (!this.state.tagFilter || this.state.tagFilter === t) {
         badgeClass = getTagData(t).badge
       }
@@ -129,6 +129,7 @@ export default class SponsorshipTable extends React.Component {
   }
 
   render() {
+    // filtered based on selected tags (if any)
     const sponsorship = this.filterRows(this.props.data.sponsorship)
 
     if (!sponsorship) {
@@ -141,7 +142,9 @@ export default class SponsorshipTable extends React.Component {
 
     const tags = Array.from(
       new Set(
-        sponsorship.map(c => c.tags).reduce((acc, curr) => acc.concat(curr), [])
+        this.props.data.sponsorship
+          .map(c => c.tags)
+          .reduce((acc, curr) => acc.concat(curr), [])
       )
     )
 
@@ -154,14 +157,13 @@ export default class SponsorshipTable extends React.Component {
               Cosponsoring legislation is an important way for a legislator to
               help put momentum behind certain bills. To learn more about which
               bills Progressive Mass thinks are most important to support, you
-              can{' '}
+              can view the{' '}
               <a
                 className="font-weight-bold"
                 target="_blank"
                 href="https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/5393/attachments/original/1553983553/2019_PM_Fact_Sheet_Compilation_March_2019.pdf"
               >
-                view the guide to progressive legislation for the 2019-2020
-                term.
+                guide to progressive legislation for the 2019-2020 term.
               </a>
             </p>
           </div>

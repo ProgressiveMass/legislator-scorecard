@@ -5,10 +5,10 @@ import Rating from './Rating'
 const LegislatorMetadata = props => {
   return (
     <div className="module-container module-container--full-width-on-small">
-      <div className="metadata heading-font" key={props.data.url}>
+      <div className="metadata" key={props.data.url}>
         <div className="row no-gutters align-items-md-center">
           <div className="col-md-6">
-            <div className="label" style={{ fontSize: '1.1rem' }}>
+            <div className="label  heading-font" style={{ fontSize: '1.1rem' }}>
               {props.chamber === 'senate' ? 'Senator' : 'Representative'}
             </div>
             <h1 className="metadata__heading mt-1 mb-3">
@@ -26,7 +26,9 @@ const LegislatorMetadata = props => {
               </div>
 
               <div>
-                <div className="font-weight-bold">{props.data.party} Party</div>
+                <div className="font-weight-bold  heading-font">
+                  {props.data.party} Party
+                </div>
                 <div>{props.data.district}</div>
                 {props.data.url ? (
                   <div>
@@ -37,7 +39,10 @@ const LegislatorMetadata = props => {
                 ) : null}
                 <div>
                   <div>
-                    <h2 className="h6 mt-2 mb-0" style={{ fontWeight: 'bold' }}>
+                    <h2
+                      className="font-weight-bold  heading-font mt-3 mb-1"
+                      style={{ fontWeight: 'bold', fontSize: '18px' }}
+                    >
                       Contact {props.legislatorTitle} {props.lastName}
                     </h2>
                   </div>
