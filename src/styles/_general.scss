@@ -29,7 +29,7 @@ h6 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  max-width: 1150px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -246,4 +246,9 @@ small {
 
 .font-weight-800 {
   font-weight: 800 !important;
+}
+
+.readable-measure {
+  max-width: 800px;
+  margin: auto;
 }

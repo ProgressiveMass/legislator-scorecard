@@ -153,7 +153,7 @@ export default class SponsorshipTable extends React.Component {
         <h3 className="sr-only">Cosponsored Bills</h3>
         <StickyContainer>
           <div className="my-4 py-2">
-            <p className="lead mb-0">
+            <p className="lead mb-0 readable-measure">
               Cosponsoring legislation is an important way for a legislator to
               help put momentum behind certain bills. To learn more about which
               bills Progressive Mass thinks are most important to support, you

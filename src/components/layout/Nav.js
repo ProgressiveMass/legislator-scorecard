@@ -19,11 +19,13 @@ const Nav = () => {
           <span>
             <span
               className="text-uppercase mb-0 d-block"
-              style={{ fontWeight: 'normal' }}
+              style={{ fontWeight: 'normal', fontSize: '.9rem' }}
             >
               Progressive Massachusetts
             </span>
-            <span className="h5 mb-0 d-block">Legislator Scorecard</span>
+            <span className="h5 mb-0 d-block" style={{ fontSize: '1.4rem' }}>
+              Legislator Scorecard
+            </span>
           </span>
         </Link>
 
