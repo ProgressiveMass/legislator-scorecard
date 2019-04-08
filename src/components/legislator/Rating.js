@@ -98,9 +98,9 @@ export default class Rating extends React.Component {
           {this.props.lastName} cosponsored
         </h3>
         <div
-          style={{ fontSize: '2.2rem' }}
+          style={{ fontSize: '2.5rem' }}
           id="cosponsorship-summary"
-          className="mb-2"
+          className="mb-2 heading-font"
         >
           <b
             className={`${

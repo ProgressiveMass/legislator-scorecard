@@ -1,10 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
-import LazyLoad, { forceCheck } from "react-lazyload"
-import { navigate } from "gatsby"
-import SortButton from "./SortButton"
-import ProgressBar from "../../components/progressBar"
-import InfoPopover from "../../components/InfoPopover"
+import React from 'react'
+import PropTypes from 'prop-types'
+import LazyLoad, { forceCheck } from 'react-lazyload'
+import { navigate } from 'gatsby'
+import SortButton from './SortButton'
+import ProgressBar from '../../components/progressBar'
+import InfoPopover from '../../components/InfoPopover'
 
 class LegislatorList extends React.Component {
   constructor(props) {
@@ -15,24 +15,24 @@ class LegislatorList extends React.Component {
   }
 
   state = {
-    sort: ["name", "desc"],
-    filter: "",
+    sort: ['name', 'desc'],
+    filter: '',
   }
 
   renderRow(d, i) {
     return (
       <tr
-        key={d.name}
+        key={d.id}
         className="legislator-row"
         onClick={e => {
           e.preventDefault()
-          navigate(`/legislator/${d.id.replace("ocd-person/", "")}`)
+          navigate(`/legislator/${d.id.replace('ocd-person/', '')}`)
         }}
       >
-        <td style={{ verticalAlign: "middle" }}>{i + 1}</td>
+        <td style={{ verticalAlign: 'middle' }}>{i + 1}</td>
         <td
           data-label={
-            this.props.chamber === "upper" ? "Senator" : "Representative"
+            this.props.chamber === 'upper' ? 'Senator' : 'Representative'
           }
         >
           <a href="#">
@@ -48,11 +48,11 @@ class LegislatorList extends React.Component {
               {d.specialElectionUrl ? (
                 <InfoPopover
                   text={`${
-                    this.props.chamber === "upper"
-                      ? "Senator"
-                      : "Representative"
+                    this.props.chamber === 'upper'
+                      ? 'Senator'
+                      : 'Representative'
                   } ${
-                    d.name.split(",")[0]
+                    d.name.split(',')[0]
                   } is no longer a member of the Massachusetts Legislature. There is a <a target="_blank" href="${
                     d.specialElectionUrl
                   }">special election</a> pending to elect a replacement.`}
@@ -63,7 +63,7 @@ class LegislatorList extends React.Component {
         </td>
         <td data-label="Party">{d.party.slice(0, 1)}</td>
         <td data-label="Progressive Rating (2017-2018)">
-          <div style={{ maxWidth: "300px" }}>
+          <div style={{ maxWidth: '300px' }}>
             <ProgressBar data={d} />
           </div>
         </td>
@@ -75,7 +75,7 @@ class LegislatorList extends React.Component {
     const normalizeSortVal = val => {
       if (!val) {
         return 0
-      } else if (typeof val === "string") {
+      } else if (typeof val === 'string') {
         return val.toLowerCase()
       } else {
         return val
@@ -96,19 +96,19 @@ class LegislatorList extends React.Component {
       let aSort = normalizeSortVal(a[sortKey])
       let bSort = normalizeSortVal(b[sortKey])
 
-      if (sortKey === "score") {
+      if (sortKey === 'score') {
         // so that people who didnt vote much don't get sorted to the top
         aSort = normalizeRatingVal(aSort, a)
         bSort = normalizeRatingVal(bSort, b)
       }
 
       if (aSort < bSort) {
-        return order === "asc" ? 1 : -1
+        return order === 'asc' ? 1 : -1
       } else if (aSort > bSort) {
-        return order === "asc" ? -1 : 1
+        return order === 'asc' ? -1 : 1
       } else {
         // find an appropriate secondary sort
-        if (sortKey === "score") {
+        if (sortKey === 'score') {
           if (normalizeSortVal(a.name) < normalizeSortVal(b.name)) return -1
           else if (normalizeSortVal(a.name) > normalizeSortVal(b.name)) return 1
           // this will never happen...right...
@@ -125,20 +125,18 @@ class LegislatorList extends React.Component {
   setSort(sort) {
     if (this.state.sort[0] === sort) {
       // just switch between asc and desc
-      const order = this.state.sort[1] === "asc" ? "desc" : "asc"
+      const order = this.state.sort[1] === 'asc' ? 'desc' : 'asc'
       this.setState({ sort: [sort, order] })
     } else {
-      this.setState({ sort: [sort, "desc"] })
+      this.setState({ sort: [sort, 'desc'] })
     }
     setTimeout(forceCheck, 1)
   }
 
-  // TODO: figure out error
-
   filterData(rows = []) {
-    const filterRegex = new RegExp("^" + this.state.filter.toLowerCase())
+    const filterRegex = new RegExp('^' + this.state.filter.toLowerCase())
     return rows.filter(r => {
-      const names = r.name.split(",")
+      const names = r.name.split(',')
       return (
         names.filter(n => {
           return n
@@ -158,12 +156,12 @@ class LegislatorList extends React.Component {
         <div className="mx-auto">
           <div
             className="d-md-flex align-items-center mb-5 mb-md-4"
-            style={{ maxWidth: "600px" }}
+            style={{ maxWidth: '600px' }}
           >
             <label
               htmlFor="filterTable"
-              className="d-inline-block mr-1"
-              style={{ minWidth: "240px" }}
+              className="d-inline-block mr-1 mb-0"
+              style={{ minWidth: '240px', marginBottom: 0 }}
             >
               Filter By Legislator Name:
             </label>

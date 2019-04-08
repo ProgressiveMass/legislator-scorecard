@@ -69,12 +69,6 @@ const addBillUrls = (bills, session) => {
 }
 
 const buildVoteObject = (votes, bills) => {
-  const progressivePositionToVoteType = position => {
-    if (position.trim().toLowerCase() === 'yes') return '+'
-    else if (position.trim().toLowerCase() === 'no') return '-'
-    else throw new Error('did not recognize position type')
-  }
-
   const rollCallNumberRow = votes[2]
 
   // return array instead of object because gatsby's graphql queries
@@ -96,12 +90,7 @@ const buildVoteObject = (votes, bills) => {
 
       const totalScore = Object.entries(votes).reduce(
         (acc, [rollCallNumber, vote]) => {
-          if (
-            vote.trim() ===
-            progressivePositionToVoteType(
-              bills[rollCallNumber].progressive_position
-            )
-          ) {
+          if (vote.trim() === '+') {
             return acc + 1
           }
           return acc

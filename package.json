@@ -50,8 +50,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "build-data": "node processData/downloadAndBuildData/index.js",
-    "deploy:prod": "yarn run build && firebase deploy -P default",
-    "deploy:dev": "yarn run build && firebase deploy -P staging"
+    "deploy:prod": "yarn run build && firebase deploy --only hosting -P default",
+    "deploy:dev": "yarn run build && firebase deploy --only hosting -P staging"
   },
   "repository": {
     "type": "git",

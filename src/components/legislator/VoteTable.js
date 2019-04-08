@@ -116,7 +116,7 @@ export default class VoteTable extends React.Component {
         <td style={{ width: '15%' }}>
           <div className="text-muted font-weight-bold">
             <a href={v.rollCallUrl} target="_blank" className="muted-link">
-              {v.number}
+              {v.bill_number} {v.roll_call_number}
             </a>
           </div>
           <div>{tags}</div>
