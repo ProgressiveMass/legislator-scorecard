@@ -6,10 +6,53 @@ import SortButton from './SortButton'
 import ProgressBar from '../../components/progressBar'
 import InfoPopover from '../../components/InfoPopover'
 
+const LegislatorRow = ({ d, i, chamber }) => {
+  return (
+    <tr
+      key={d.id}
+      className="legislator-row"
+      onClick={e => {
+        e.preventDefault()
+        navigate(`/legislator/${d.id.replace('ocd-person/', '')}`)
+      }}
+    >
+      <td style={{ verticalAlign: 'middle' }}>{i + 1}</td>
+      <td data-label={chamber === 'upper' ? 'Senator' : 'Representative'}>
+        <a href="#">
+          <b>
+            <LazyLoad once height="4rem" offset={100}>
+              <img
+                src={d.image}
+                alt=""
+                className="legislator-list__profile-img"
+              />
+            </LazyLoad>
+            {d.name}&nbsp;
+            {d.specialElectionUrl ? (
+              <InfoPopover
+                text={`${chamber === 'upper' ? 'Senator' : 'Representative'} ${
+                  d.name.split(',')[0]
+                } is no longer a member of the Massachusetts Legislature. There is a <a target="_blank" href="${
+                  d.specialElectionUrl
+                }">special election</a> pending to elect a replacement.`}
+              />
+            ) : null}
+          </b>
+        </a>
+      </td>
+      <td data-label="Party">{d.party.slice(0, 1)}</td>
+      <td data-label="Progressive Rating (2017-2018)">
+        <div style={{ maxWidth: '300px' }}>
+          <ProgressBar data={d} />
+        </div>
+      </td>
+    </tr>
+  )
+}
+
 class LegislatorList extends React.Component {
   constructor(props) {
     super(props)
-    this.renderRow = this.renderRow.bind(this)
     this.sortData = this.sortData.bind(this)
     this.setSort = this.setSort.bind(this)
   }
@@ -17,58 +60,6 @@ class LegislatorList extends React.Component {
   state = {
     sort: ['name', 'desc'],
     filter: '',
-  }
-
-  renderRow(d, i) {
-    return (
-      <tr
-        key={d.id}
-        className="legislator-row"
-        onClick={e => {
-          e.preventDefault()
-          navigate(`/legislator/${d.id.replace('ocd-person/', '')}`)
-        }}
-      >
-        <td style={{ verticalAlign: 'middle' }}>{i + 1}</td>
-        <td
-          data-label={
-            this.props.chamber === 'upper' ? 'Senator' : 'Representative'
-          }
-        >
-          <a href="#">
-            <b>
-              <LazyLoad once height="4rem" offset={100}>
-                <img
-                  src={d.image}
-                  alt=""
-                  className="legislator-list__profile-img"
-                />
-              </LazyLoad>
-              {d.name}&nbsp;
-              {d.specialElectionUrl ? (
-                <InfoPopover
-                  text={`${
-                    this.props.chamber === 'upper'
-                      ? 'Senator'
-                      : 'Representative'
-                  } ${
-                    d.name.split(',')[0]
-                  } is no longer a member of the Massachusetts Legislature. There is a <a target="_blank" href="${
-                    d.specialElectionUrl
-                  }">special election</a> pending to elect a replacement.`}
-                />
-              ) : null}
-            </b>
-          </a>
-        </td>
-        <td data-label="Party">{d.party.slice(0, 1)}</td>
-        <td data-label="Progressive Rating (2017-2018)">
-          <div style={{ maxWidth: '300px' }}>
-            <ProgressBar data={d} />
-          </div>
-        </td>
-      </tr>
-    )
   }
 
   sortData(data) {
@@ -150,6 +141,7 @@ class LegislatorList extends React.Component {
 
   render() {
     const data = this.sortData(this.filterData(this.props.data))
+    console.log(data)
 
     return (
       <div className="white-background pt-5 mb-5">
@@ -207,7 +199,11 @@ class LegislatorList extends React.Component {
                 </th>
               </tr>
             </thead>
-            <tbody>{data.map(this.renderRow)}</tbody>
+            <tbody>
+              {data.map((d, i) => (
+                <LegislatorRow d={d} i={i} chamber={this.props.chamber} />
+              ))}
+            </tbody>
           </table>
         </div>
       </div>

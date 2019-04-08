@@ -56,8 +56,7 @@ const createLegislatorList = (legislatorArr, voteDataArr) => {
     .map(data => {
       const lastName = getLastName(data.name)
       const firstName = data.name.split(/\s/)[0]
-      data.name = [lastName, firstName].join(', ')
-      return data
+      return { ...data, name: [lastName, firstName].join(', ') }
     })
     .map(data => {
       const relevantVoteData = voteData[data.id]

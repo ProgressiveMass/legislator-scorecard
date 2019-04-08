@@ -41,8 +41,19 @@ const addYesAndNoVotes = (bills, votes) => {
   rollCallRow.forEach((rollCallNumber, index) => {
     if (!rollCallNumber || !rollCallNumber.trim()) return
     const billVotes = votes.map(row => row[index])
-    const yesVotes = billVotes.filter(v => v.trim() === '+').length
-    const noVotes = billVotes.filter(v => v.trim() === '-').length
+
+    const progressivePosition = bills[
+      rollCallNumber
+    ].progressive_position.toLowerCase()
+    let yesVotes, noVotes
+    if (progressivePosition === 'no') {
+      yesVotes = billVotes.filter(v => v.trim() === '-').length
+      noVotes = billVotes.filter(v => v.trim() === '+').length
+    } else {
+      yesVotes = billVotes.filter(v => v.trim() === '+').length
+      noVotes = billVotes.filter(v => v.trim() === '-').length
+    }
+
     bills[rollCallNumber].noVotes = noVotes
     bills[rollCallNumber].yesVotes = yesVotes
   })
