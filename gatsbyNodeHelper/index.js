@@ -77,12 +77,6 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
     // votes
     if (legislationData[year][`${chamber}Votes`]) {
       try {
-        // we merge them bc sometimes the house votes on a senate bill and vice versa
-        const bills = {
-          ...legislationData[year].senateBills,
-          ...legislationData[year].houseBills,
-        }
-
         const legislatorVotesEntry = getLegislatorVotesEntry({
           year,
           chamber,
@@ -90,10 +84,10 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
         })
         const legislatorVotes = legislatorVotesEntry.data
 
-        termData.votes = Object.keys(legislatorVotes).map(bill => {
+        termData.votes = Object.keys(legislatorVotes).map(rollCallNumber => {
           return {
-            ...bills[bill],
-            yourLegislator: legislatorVotes[bill],
+            ...legislationData[year][`${chamber}Bills`][rollCallNumber],
+            yourLegislator: legislatorVotes[rollCallNumber],
           }
         })
       } catch (e) {

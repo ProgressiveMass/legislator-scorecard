@@ -5,6 +5,7 @@ import LegislatorMetadata from './LegislatorMetadata'
 import SessionTabs from './SessionTabs'
 import Layout from '../layout'
 import { getLastName } from '../../utilities'
+import YourLegislatorTabs from './YourLegislatorTabs'
 
 const LegislatorPage = ({ pageContext: { chamber, id, pageData } }) => {
   const legislatorTitle = chamber === 'senate' ? 'Senator' : 'Rep'
@@ -18,6 +19,7 @@ const LegislatorPage = ({ pageContext: { chamber, id, pageData } }) => {
   return (
     <Layout>
       <SEO title={seoTitle} description={seoDescription} />
+      <YourLegislatorTabs />
       <div className="tinted-background">
         <LegislatorMetadata
           data={pageData.legislator}

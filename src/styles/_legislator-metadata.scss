@@ -71,3 +71,11 @@
     background-color: mix($gray-100, $gray-200) !important;
   }
 }
+
+.legislator-row__name {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $primary;
+  }
+}

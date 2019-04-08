@@ -18,7 +18,7 @@ const LegislatorRow = ({ d, i, chamber }) => {
     >
       <td style={{ verticalAlign: 'middle' }}>{i + 1}</td>
       <td data-label={chamber === 'upper' ? 'Senator' : 'Representative'}>
-        <a href="#">
+        <a href="#" className="legislator-row__name">
           <b>
             <LazyLoad once height="4rem" offset={100}>
               <img

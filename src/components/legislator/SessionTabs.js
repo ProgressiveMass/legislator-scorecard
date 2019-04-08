@@ -10,11 +10,12 @@ const termDict = {
 }
 
 export const SessionTabs = ({ terms, chamber, lastName }) => {
-  const tabItems = terms.map(d => {
+  const tabItems = terms.map((d, i) => {
+    const isCurrentTerm = i === terms.length - 1
     return {
       title: (
         <div>
-          <div>{d.term}</div>
+          <div>{d.term} </div>
           <div style={{ fontSize: '1rem' }}>{termDict[d.term]}</div>
         </div>
       ),

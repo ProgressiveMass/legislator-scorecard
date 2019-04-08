@@ -1,5 +1,6 @@
 const fs = require('fs-extra')
 
+// because this is inconsistent in the spreadsheets
 const tagMap = {
   'shared prosperity': 'economy',
   'all means all': 'justice & equality',

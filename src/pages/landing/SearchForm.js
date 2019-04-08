@@ -18,34 +18,15 @@ class SearchForm extends React.Component {
     const address = this.refs.address.value + ' MA ' + this.refs.zip.value
 
     return axios
-    .post(
-      'https://openstates.org/graphql',
-      {
-        query,
-        variables: {
-          latitude: coordinates.lat,
-          longitude: coordinates.lng,
-        },
-      },
-      {
-        headers: {
-          'X-API-KEY': process.env.OPENSTATES_API_KEY,
-        },
-      }
-    )
-    .then(function(response) {
-      if (!Object.keys(response.data).length) {
-        throw new Error("The Open States API couldn't find your legislators.")
-      }
-      return {
-        senator: response.data.data.senator.edges[0].node.id,
-        representative: response.data.data.representative.edges[0].node.id
-      }
-    })
-    .catch(function(error){
-      console.error(error)
-    })
-    
+      .post(process.env.GATSBY_SERVERLESS_ENDPOINT, {
+        address,
+      })
+      .then(function(response) {
+        // redirect to senator page
+      })
+      .catch(function(error) {
+        console.error(error)
+      })
   }
 
   componentDidMount() {
