@@ -17,7 +17,7 @@
   display: inline-block;
   @include media-breakpoint-up(sm) {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem !important;
   }
   @include media-breakpoint-up(md) {
     font-size: 2.4rem;

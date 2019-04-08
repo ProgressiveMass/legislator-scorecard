@@ -146,7 +146,7 @@ export default class SponsorshipTable extends React.Component {
           .map(c => c.tags)
           .reduce((acc, curr) => acc.concat(curr), [])
       )
-    )
+    ).sort()
 
     return (
       <div className="table-container">

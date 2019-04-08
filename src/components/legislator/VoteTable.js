@@ -200,7 +200,7 @@ export default class VoteTable extends React.Component {
           .map(c => c.tags)
           .reduce((acc, curr) => acc.concat(curr), [])
       )
-    )
+    ).sort()
 
     if (!votes || votes.length === 0) {
       return (

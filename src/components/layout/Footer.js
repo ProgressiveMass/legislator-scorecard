@@ -47,7 +47,7 @@ const Footer = () => {
               <a href="http://alex.holachek.com" target="_blank">
                 Alex Holachek
                 <span className="sr-only">opens in new window</span>
-              </a>
+              </a>.
             </p>
 
             <p>

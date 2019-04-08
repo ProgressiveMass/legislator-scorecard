@@ -11,7 +11,7 @@ const LegislatorMetadata = props => {
             <div className="label  heading-font" style={{ fontSize: '1.1rem' }}>
               {props.chamber === 'senate' ? 'Senator' : 'Representative'}
             </div>
-            <h1 className="metadata__heading mt-1 mb-3">
+            <h1 className="metadata__heading mt-1">
               <span className="font-weight-normal">{props.data.name}</span>
             </h1>
             <div className="d-flex align-items-md-top flex-column flex-md-row">
@@ -43,7 +43,7 @@ const LegislatorMetadata = props => {
                       className="font-weight-bold  heading-font mt-3 mb-1"
                       style={{ fontWeight: 'bold', fontSize: '18px' }}
                     >
-                      Contact {props.legislatorTitle} {props.lastName}
+                      Contact {props.legislatorTitle} {props.lastName}:
                     </h2>
                   </div>
                   <div>

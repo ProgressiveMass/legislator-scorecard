@@ -22,7 +22,7 @@ const normalizeTags = tagString => {
 }
 
 // handles house, senate, and "sponsored" sheets
-const buildLegislationObject = legislation => {
+const buildLegislationObject = (legislation, key) => {
   const processedLegislation = legislation.slice(1).reduce((acc, row) => {
     const obj = row.reduce((acc, cell, i) => {
       acc[legislation[0][i]] = cell
@@ -30,60 +30,53 @@ const buildLegislationObject = legislation => {
     }, {})
     obj.bill_number = normalizeBillNumber(obj.bill_number)
     obj.tags = normalizeTags(obj.tags)
-    acc[obj.bill_number] = obj
+    acc[obj[key]] = obj
     return acc
   }, {})
   return processedLegislation
 }
 
 const addYesAndNoVotes = (bills, votes) => {
-  const billRow = votes[1]
-  billRow.forEach((bill, index) => {
-    if (!bill || !bill.trim()) return
+  const rollCallRow = votes[2]
+  rollCallRow.forEach((rollCallNumber, index) => {
+    if (!rollCallNumber || !rollCallNumber.trim()) return
     const billVotes = votes.map(row => row[index])
     const yesVotes = billVotes.filter(v => v.trim() === '+').length
     const noVotes = billVotes.filter(v => v.trim() === '-').length
-    bills[bill].noVotes = noVotes
-    bills[bill].yesVotes = yesVotes
+    bills[rollCallNumber].noVotes = noVotes
+    bills[rollCallNumber].yesVotes = yesVotes
   })
 }
 
 const cleanDescription = bills => {
-  Object.keys(bills).forEach(billNumber => {
-    const descriptionLines = bills[billNumber].description
+  Object.keys(bills).forEach(rollCallNumber => {
+    const descriptionLines = bills[rollCallNumber].description
       .split(/\n/)
       .filter(Boolean)
     if (descriptionLines.length === 1)
-      bills[billNumber].description = descriptionLines[0]
-    else bills[billNumber].description = descriptionLines[1]
+      bills[rollCallNumber].description = descriptionLines[0]
+    else bills[rollCallNumber].description = descriptionLines[1]
   })
 }
 
 const addBillUrls = (bills, session) => {
-  Object.keys(bills).forEach(billNumber => {
-    const url = `https://malegislature.gov/Bills/${session}/${billNumber}`
-    bills[billNumber].url = url
+  Object.keys(bills).forEach(rollCallNumber => {
+    const url = `https://malegislature.gov/Bills/${session}/${
+      bills[rollCallNumber].bill_number
+    }`
+    bills[rollCallNumber].url = url
   })
 }
 
-const buildVoteObject = votes => {
+const buildVoteObject = (votes, bills) => {
   const progressivePositionToVoteType = position => {
     if (position.trim().toLowerCase() === 'yes') return '+'
     else if (position.trim().toLowerCase() === 'no') return '-'
-    else {
-      throw new Error('did not recognize position type')
-    }
+    else throw new Error('did not recognize position type')
   }
-  const progressivePositionDict = votes[0]
-    .slice(2)
-    .reduce((acc, progressivePosition, index) => {
-      acc[votes[1][index + 2]] = progressivePositionToVoteType(
-        progressivePosition
-      )
-      return acc
-    }, {})
 
-  const legislationRow = votes[1]
+  const rollCallNumberRow = votes[2]
+
   // return array instead of object because gatsby's graphql queries
   // can only return bulk items in an array
   return votes
@@ -92,8 +85,8 @@ const buildVoteObject = votes => {
       if (!openStatesLegislatorId) return
 
       const votes = row.slice(2).reduce((acc, vote, index) => {
-        const billName = legislationRow[index + 2]
-        acc[billName] = vote
+        const rollCallNumber = rollCallNumberRow[index + 2]
+        acc[rollCallNumber] = vote
         return acc
       }, {})
 
@@ -101,21 +94,27 @@ const buildVoteObject = votes => {
         return vote.toLowerCase() !== 'n/a'
       }).length
 
-      const score = Math.round(
-        (Object.entries(votes).reduce((acc, [bill, vote]) => {
-          if (vote.trim() === progressivePositionDict[bill]) {
+      const totalScore = Object.entries(votes).reduce(
+        (acc, [rollCallNumber, vote]) => {
+          if (
+            vote.trim() ===
+            progressivePositionToVoteType(
+              bills[rollCallNumber].progressive_position
+            )
+          ) {
             return acc + 1
           }
           return acc
-        }, 0) /
-          voteCount) *
-          100
+        },
+        0
       )
+
+      const percentageScore = Math.round((totalScore / voteCount) * 100)
 
       return {
         id: openStatesLegislatorId,
         data: votes,
-        score,
+        score: percentageScore,
         recordedVotePercentage: Math.round(
           (voteCount / Object.keys(votes).length) * 100
         ),
@@ -166,7 +165,8 @@ const buildLegislationDataForYear = year => {
   )
 
   ;['sponsored', 'house', 'senate'].forEach(type => {
-    data[`${type}Bills`] = buildLegislationObject(data[`${type}Bills`])
+    const key = type === 'sponsored' ? 'bill_number' : 'roll_call_number'
+    data[`${type}Bills`] = buildLegislationObject(data[`${type}Bills`], key)
   })
 
   // add additional vote data to bills
@@ -184,8 +184,10 @@ const buildLegislationDataForYear = year => {
   if (data.sponsorship.length)
     data.sponsorship = buildSponsorshipObject(data.sponsorship)
 
-  if (data.houseVotes) data.houseVotes = buildVoteObject(data.houseVotes)
-  if (data.senateVotes) data.senateVotes = buildVoteObject(data.senateVotes)
+  if (data.houseVotes)
+    data.houseVotes = buildVoteObject(data.houseVotes, data.houseBills)
+  if (data.senateVotes)
+    data.senateVotes = buildVoteObject(data.senateVotes, data.senateBills)
 
   return data
 }
