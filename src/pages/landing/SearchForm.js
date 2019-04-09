@@ -1,6 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import axios from 'axios'
+
+const transformOpenStatesId = id => encodeURI(id.replace('ocd-person/', ''))
 
 class SearchForm extends React.Component {
   constructor(props) {
@@ -22,8 +24,11 @@ class SearchForm extends React.Component {
         address,
       })
       .then(function(response) {
-        debugger // eslint-disable-line
-        // redirect to senator page
+        navigate(
+          `/legislator/${transformOpenStatesId(
+            response.data.senator
+          )}?yourRep=${transformOpenStatesId(response.data.representative)}`
+        )
       })
       .catch(function(error) {
         console.error(error)

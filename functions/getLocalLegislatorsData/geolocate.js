@@ -6,7 +6,7 @@ function geolocate(address) {
     .get('https://maps.googleapis.com/maps/api/geocode/json', {
       params: {
         address: address,
-        key: functions.config().google_api_key,
+        key: functions.config().keys.google_api_key,
       },
     })
     .then(function(response) {

@@ -11,7 +11,7 @@ const YourLegislatorTabs = () => {
 
   const isPersonalizedView = search.yourSenator || search.yourRep
   if (!isPersonalizedView) return null
-  
+
   const selectedClass = 'RRT__tab--selected'
   return (
     <div className="mt-5 d-md-flex">
@@ -24,23 +24,14 @@ const YourLegislatorTabs = () => {
           href={
             search.yourRep
               ? '#'
-              : `/legislator/${search.yourSenator.replace(
-                  'ocd-person/',
-                  ''
-                )}?yourRep=${search.yourRep}`
+              : `/legislator/${search.yourSenator}?yourRep=${search.yourRep}`
           }
         >
           Your Senator
         </a>
       </div>
       <div className={`RRT__tab ${search.yourSenator ? selectedClass : ''}`}>
-        <a
-          href={
-            search.yourSenator
-              ? '#'
-              : `/legislator/${search.yourRep.replace('ocd-person/', '')}`
-          }
-        >
+        <a href={search.yourSenator ? '#' : `/legislator/${search.yourRep}`}>
           Your House Rep
         </a>
       </div>

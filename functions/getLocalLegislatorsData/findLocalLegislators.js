@@ -35,7 +35,7 @@ function findLocalLegislators(coordinates) {
       },
       {
         headers: {
-          'X-API-KEY': functions.config().openstates_api_key,
+          'X-API-KEY': functions.config().keys.openstates_api_key,
         },
       }
     )
