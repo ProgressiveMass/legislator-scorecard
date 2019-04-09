@@ -1,11 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useState, useEffect } from 'react'
 import qs from 'query-string'
 
 const YourLegislatorTabs = () => {
-  const search = qs.parse(window.location.search)
+  const [search, setSearch] = useState({})
+
+  useEffect(() => {
+    const search = qs.parse(window.location.search)
+    setSearch(search)
+  }, [])
+
   const isPersonalizedView = search.yourSenator || search.yourRep
   if (!isPersonalizedView) return null
+  
   const selectedClass = 'RRT__tab--selected'
   return (
     <div className="mt-5 d-md-flex">

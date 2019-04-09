@@ -141,7 +141,6 @@ class LegislatorList extends React.Component {
 
   render() {
     const data = this.sortData(this.filterData(this.props.data))
-    console.log(data)
 
     return (
       <div className="white-background pt-5 mb-5">
