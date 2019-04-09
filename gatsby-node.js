@@ -23,7 +23,7 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
 // create individual legislator pages
 exports.createPages = async function({ actions: { createPage } }) {
   ;[
-    { chamber: 'senate', legislators: senateLegislators },
+    // { chamber: 'senate', legislators: senateLegislators },
     { chamber: 'house', legislators: houseLegislators },
   ].map(({ chamber, legislators }) => {
     legislators.forEach(({ id: legislatorId }) => {

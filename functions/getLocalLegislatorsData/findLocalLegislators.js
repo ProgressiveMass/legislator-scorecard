@@ -1,4 +1,5 @@
-var axios = require('axios')
+const axios = require('axios')
+const functions = require('firebase-functions')
 
 const query = `
 query getLocalLegislators($latitude: Float, $longitude: Float) {
@@ -19,7 +20,6 @@ query getLocalLegislators($latitude: Float, $longitude: Float) {
     }
   }
 }
-
 `
 
 function findLocalLegislators(coordinates) {
@@ -35,7 +35,7 @@ function findLocalLegislators(coordinates) {
       },
       {
         headers: {
-          'X-API-KEY': process.env.OPENSTATES_API_KEY,
+          'X-API-KEY': functions.config().openstates_api_key,
         },
       }
     )
@@ -45,10 +45,10 @@ function findLocalLegislators(coordinates) {
       }
       return {
         senator: response.data.data.senator.edges[0].node.id,
-        representative: response.data.data.representative.edges[0].node.id
+        representative: response.data.data.representative.edges[0].node.id,
       }
     })
-    .catch(function(error){
+    .catch(function(error) {
       console.error(error)
     })
 }

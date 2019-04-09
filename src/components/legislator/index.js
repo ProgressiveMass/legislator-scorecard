@@ -19,7 +19,7 @@ const LegislatorPage = ({ pageContext: { chamber, id, pageData } }) => {
   return (
     <Layout>
       <SEO title={seoTitle} description={seoDescription} />
-      <YourLegislatorTabs />
+      <YourLegislatorTabs currentLegislator={pageData.legislator.id} />
       <div className="tinted-background">
         <LegislatorMetadata
           data={pageData.legislator}

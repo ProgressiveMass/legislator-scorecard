@@ -11,7 +11,7 @@ const tagMap = {
   'sustainable infrastructure & environmental protection': 'environment',
 }
 
-const normalizeBillNumber = billNumber => billNumber.replace(/\./g, '')
+const normalizeBillNumber = billNumber => billNumber.replace(/[\.\s]/g, '')
 const normalizeTags = tagString => {
   const tags = tagString
     .split(',')

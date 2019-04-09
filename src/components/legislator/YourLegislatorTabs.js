@@ -1,18 +1,45 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import qs from 'query-string'
 
-const YourLegislatorTabs = ({}) => {
-  return null
-  // const search = window.location.search
-  // debugger // eslint-disable-line
-  // const selectedClass = 'RRT__tab--selected'
-  // return (
-  //   <div className="mt-4 d-md-flex">
-  //     <div className="RRT__tab RRT__tab--first ">Your Senator</div>
-  //     <div className="RRT__tab">Your House Rep</div>
-  //   </div>
-  // )
+const YourLegislatorTabs = () => {
+  const search = qs.parse(window.location.search)
+  const isPersonalizedView = search.yourSenator || search.yourRep
+  if (!isPersonalizedView) return null
+  const selectedClass = 'RRT__tab--selected'
+  return (
+    <div className="mt-5 d-md-flex">
+      <div
+        className={`RRT__tab RRT__tab--first ${
+          search.yourRep ? selectedClass : ''
+        }?yourSenator=${search.yourSenator}`}
+      >
+        <a
+          href={
+            search.yourRep
+              ? '#'
+              : `/legislator/${search.yourSenator.replace(
+                  'ocd-person/',
+                  ''
+                )}?yourRep=${search.yourRep}`
+          }
+        >
+          Your Senator
+        </a>
+      </div>
+      <div className={`RRT__tab ${search.yourSenator ? selectedClass : ''}`}>
+        <a
+          href={
+            search.yourSenator
+              ? '#'
+              : `/legislator/${search.yourRep.replace('ocd-person/', '')}`
+          }
+        >
+          Your House Rep
+        </a>
+      </div>
+    </div>
+  )
 }
-
 
 export default YourLegislatorTabs

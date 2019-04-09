@@ -19,7 +19,7 @@ const LegislatorMetadata = props => {
                 {props.data.image ? (
                   <img
                     src={props.data.image}
-                    alt="senator profile picture"
+                    alt="legislator profile picture"
                     className="legislator-portrait"
                   />
                 ) : null}

@@ -55,8 +55,8 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
         const billKey = !billNum.match('/')
           ? billNum
           : chamber === 'senate'
-          ? billNum.split('/')[1]
-          : billNum.split('/')[0]
+          ? billNum.match(/S\d+/)[0]
+          : billNum.match(/H\d+/)[0]
         const billData = progMassSponsoredBills[billKey]
         if (!billData) {
           throw new Error(
@@ -70,7 +70,9 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
       })
     } catch (e) {
       console.error(
-        `${pageData.legislator.name} didn't have sponsorship data available`
+        `${
+          pageData.legislator.name
+        } didn't have sponsorship data available: ${e.toString()}`
       )
     }
 
@@ -92,7 +94,9 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
         })
       } catch (e) {
         console.error(
-          `${pageData.legislator.name} didn't have vote data available`
+          `${
+            pageData.legislator.name
+          } didn't have vote data available: ${e.toString()}`
         )
       }
     }

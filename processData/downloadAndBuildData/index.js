@@ -1,7 +1,7 @@
-const fs = require("fs")
-const downloadGoogleSheets = require("./downloadGoogleSheets")
-const buildLegislationData = require("./buildLegislationData")
-const updateLegislatorData = require("./updateLegislatorData")
+const fs = require('fs')
+const downloadGoogleSheets = require('./downloadGoogleSheets')
+const buildLegislationData = require('./buildLegislationData')
+const updateLegislatorData = require('./updateLegislatorData')
 
 const downloadAndBuildData = async () => {
   // fetch sheets from Google
@@ -9,7 +9,7 @@ const downloadAndBuildData = async () => {
   // process into json tree
   const processedData = buildLegislationData()
   // fetch legislator details from openStates
-  // await updateLegislatorData()
+  await updateLegislatorData()
 
   fs.writeFileSync(
     `${__dirname}/../../src/data/legislation.json`,

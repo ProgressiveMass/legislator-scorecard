@@ -18,10 +18,11 @@ class SearchForm extends React.Component {
     const address = this.refs.address.value + ' MA ' + this.refs.zip.value
 
     return axios
-      .post(process.env.GATSBY_SERVERLESS_ENDPOINT, {
+      .post(`${process.env.GATSBY_SERVERLESS_ENDPOINT}/local-legislators`, {
         address,
       })
       .then(function(response) {
+        debugger // eslint-disable-line
         // redirect to senator page
       })
       .catch(function(error) {

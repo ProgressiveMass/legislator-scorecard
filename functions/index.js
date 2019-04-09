@@ -4,10 +4,6 @@ const getLocalLegislatorsData = require('./getLocalLegislatorsData')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
-require('dotenv').config({
-  silent: process.env.NODE_ENV === 'production',
-})
-
 const app = express()
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -17,11 +13,8 @@ const corsOptions = {
     /^https:\/\/progressive-mass.firebaseapp.com\/*/,
     /^https:\/\/scorecard.progressivemass.com\/*/,
     /^https:\/\/progressive-mass-test.firebaseapp.com\/*/,
+    /^http:\/\/localhost:.{4}/
   ],
-}
-
-if (process.env.NODE_ENV === 'development') {
-  corsOptions.origin.push(/^http:\/\/localhost:.{4}/)
 }
 
 // to test in firebase console: api.post('/local-legislators').form({ address: '24 Beacon St, Boston, MA 02133'})

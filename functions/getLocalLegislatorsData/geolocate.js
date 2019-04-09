@@ -1,11 +1,12 @@
-var axios = require('axios')
+const functions = require('firebase-functions')
+const axios = require('axios')
 
 function geolocate(address) {
   return axios
     .get('https://maps.googleapis.com/maps/api/geocode/json', {
       params: {
         address: address,
-        key: process.env.GOOGLE_API_KEY,
+        key: functions.config().google_api_key,
       },
     })
     .then(function(response) {
@@ -14,8 +15,10 @@ function geolocate(address) {
       } else {
         // couldn't geolocate the address
         throw new Error(
-          "Couldn't locate that Massachusetts address.",
-          JSON.stringify(response.data)
+          JSON.stringify({
+            name: "Couldn't locate that Massachusetts address.",
+            data: response.data,
+          })
         )
       }
     })
