@@ -1,13 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: `Progressive Massachussetts Legislator Scorecard`,
-    description: `Learn about local Massachusetts politics via legislators' voting records`,
+    description: `Learn about MA state legislatin and review your legislators' records`,
     author: `Alex Holachek`,
+    siteUrl: 'https://scorecard.progressivemass.com/'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-93532804-1",
+        trackingId: 'UA-93532804-1',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
