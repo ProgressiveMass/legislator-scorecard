@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Progressive Massachussetts Legislator Scorecard`,
-    description: `Learn about MA state legislatin and review your legislators' records`,
+    description: `Learn about MA state legislation and review your legislators' records`,
     author: `Alex Holachek`,
     siteUrl: 'https://scorecard.progressivemass.com/',
   },
@@ -22,11 +22,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Progressive Massachussetts Legislator Scorecard`,
+        short_name: `Progressive Mass Scorecard`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#037BFF`,
+        theme_color: `#037BFF`,
         display: `minimal-ui`,
         icon: `src/images/progressive-mass-logo.png`, // This path is relative to the root of the site.
       },
