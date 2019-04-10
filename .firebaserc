@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "progressive-mass",
+    "prod": "progressive-mass",
     "staging": "progressive-mass-test"
   }
 }

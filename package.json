@@ -52,9 +52,9 @@
     "serve": "gatsby serve",
     "gatsby:debug": " node --inspect ./node_modules/.bin/gatsby develop",
     "build-data": "node processData/downloadAndBuildData/index.js",
-    "deploy:functions": "firebase deploy --only functions",
     "serve:functions": "firebase serve",
-    "deploy:prod": "yarn run build && firebase deploy --only hosting -P default",
+    "deploy:functions:prod": "firebase deploy --only functions -P prod",
+    "deploy:prod": "yarn run build && firebase deploy --only hosting -P prod",
     "deploy:dev": "yarn run build && firebase deploy --only hosting -P staging"
   },
   "repository": {
