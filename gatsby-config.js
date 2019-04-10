@@ -10,7 +10,12 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
     'gatsby-plugin-robots-txt',
-    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['LegislatorList', 'SortButton', 'SearchForm'],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
