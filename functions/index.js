@@ -13,7 +13,6 @@ const corsOptions = {
     /^https:\/\/progressive-mass.firebaseapp.com\/*/,
     /^https:\/\/scorecard.progressivemass.com\/*/,
     /^https:\/\/progressive-mass-test.firebaseapp.com\/*/,
-    /^http:\/\/localhost:.{4}/
   ],
 }
 

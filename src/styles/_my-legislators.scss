@@ -16,3 +16,26 @@
     padding-left: 0;
   }
 }
+
+.your-legislator-tabs {
+  .RRT__tab--selected {
+    background-color: $gray-200;
+  }
+  .RRT__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $headings-font-family;
+    padding: 0;
+    a {
+      padding: 1rem;
+      display: block;
+      width: 100%;
+      height: 100%;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
