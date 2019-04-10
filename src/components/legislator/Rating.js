@@ -64,7 +64,7 @@ export default class Rating extends React.Component {
                 ({this.props.rating.votes.cumulative.term})
               </span>
             </b>
-            <ProgressBarWContext data={this.props.rating.votes} animate large />
+            <ProgressBarWContext data={this.props.rating.votes} large />
           </div>
           <div className="d-flex">
             {this.renderMedianDem()}

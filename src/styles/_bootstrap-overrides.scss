@@ -8,7 +8,7 @@
 
 .progress {
   position: relative;
-  background-color: rgba(217, 83, 79, 0.9);
+  background-color: rgba(217, 83, 79, 0.8);
 }
 .progress__text-container {
   text-align: center;
@@ -155,4 +155,8 @@
 
 .lead {
   font-weight: normal;
+}
+
+.text-danger {
+  color: #e27872 !important;
 }

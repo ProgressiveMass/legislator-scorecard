@@ -1,6 +1,5 @@
-
 .search-form {
-  margin:auto;
+  margin: auto;
   color: $body-color;
   box-shadow: 0;
   @include media-breakpoint-down(md) {
@@ -11,12 +10,11 @@
     padding: 2rem;
   }
 
-  [readonly] {
+  [disabled] {
     background: transparent;
-    border-color: rgba(0,0,0,.06);
+    border-color: rgba(0, 0, 0, 0.06);
   }
 }
-
 
 .search-form .btn-block {
   @include media-breakpoint-up(lg) {

@@ -158,7 +158,7 @@ class LegislatorList extends React.Component {
             </label>
             <input
               type="text"
-              placeholder="type a name"
+              placeholder="Type a name"
               id="filterTable"
               className="form-control"
               onChange={e => {

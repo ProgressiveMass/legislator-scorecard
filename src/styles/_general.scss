@@ -172,20 +172,6 @@ thead {
   }
 }
 
-.text-xl {
-  font-size: 2rem;
-}
-
-.background-text {
-  background-image: linear-gradient(
-    to top,
-    white 90%,
-    transparent 90%,
-    transparent
-  );
-  display: inline;
-}
-
 .btn-icon {
   background-color: #fff;
   padding: 0.5rem 0.25rem;
@@ -251,4 +237,8 @@ small {
 .readable-measure {
   max-width: 800px;
   margin: auto;
+}
+
+.rounded {
+  border-radius: 50px !important;
 }

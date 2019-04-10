@@ -77,7 +77,7 @@ class SearchForm extends React.Component {
             <input
               type="text"
               className="form-control"
-              readOnly
+              disabled
               value="Massachusetts"
             />
           </label>

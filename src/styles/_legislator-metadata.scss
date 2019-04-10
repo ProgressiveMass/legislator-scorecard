@@ -23,7 +23,7 @@
     font-size: 2.4rem;
   }
   @include media-breakpoint-up(lg) {
-    font-size: 2.9rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -42,15 +42,22 @@
   font-family: $font-family-sans-serif;
 }
 
-.progress-bar {
-  padding-left: 0.8rem;
-  transition: width 0.3s;
+.progress {
+  border-radius: 50px;
 }
 
-.progress-bar--large {
+.progress-bar {
+  padding-left: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.progress--large {
   font-size: 1rem;
-  height: 1.35rem;
-  padding-top: 0.07rem;
+  height: 1.4rem;
+  .progress__text-container span {
+    font-size: 0.95rem !important;
+  }
 }
 
 .legislator-list__profile-img {
