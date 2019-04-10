@@ -78,10 +78,10 @@ footer {
   font-family: $headings-font-family;
 
   a {
-    color: lighten($primary, 25%);
+    color: lighten($primary, 20%);
     &:hover,
     &:focus {
-      color: lighten($primary, 20%);
+      color: lighten($primary, 15%);
     }
   }
 
