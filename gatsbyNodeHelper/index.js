@@ -72,7 +72,7 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
       console.error(
         `${
           pageData.legislator.name
-        } didn't have sponsorship data available: ${e.toString()}`
+        } didn't have sponsorship data available for ${year}: ${e.toString()}`
       )
     }
 
@@ -96,7 +96,7 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
         console.error(
           `${
             pageData.legislator.name
-          } didn't have vote data available: ${e.toString()}`
+          } didn't have vote data available for ${year}: ${e.toString()}`
         )
       }
     }
