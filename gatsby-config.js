@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ['LegislatorList', 'SortButton', 'SearchForm'],
+        exclude: ['/all-legislators/LegislatorList/', '/all-legislators/SortButton/', '/landing/*'],
       },
     },
     {
@@ -28,7 +28,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Progressive Massachussetts Legislator Scorecard`,
-        short_name: `Progressive Mass Scorecard`,
+        short_name: `Prog Mass Scorecard`,
         start_url: `/`,
         background_color: `#037BFF`,
         theme_color: `#037BFF`,

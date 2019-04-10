@@ -40,8 +40,12 @@
     border-bottom: 0.4rem solid $primary;
   }
 
+  &.disabled {
+    color: $gray-500;
+  }
+
   &:not(.active):not(disabled):hover,
-  &:not(.active)::not(disabled):focus {
+  &:not(.active):not(disabled):focus {
     border-bottom: 0.4rem solid fade-out($light, 0.5);
   }
 }
