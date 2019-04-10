@@ -3,13 +3,14 @@ module.exports = {
     title: `Progressive Massachussetts Legislator Scorecard`,
     description: `Learn about MA state legislatin and review your legislators' records`,
     author: `Alex Holachek`,
-    siteUrl: 'https://scorecard.progressivemass.com/'
+    siteUrl: 'https://scorecard.progressivemass.com/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
     'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

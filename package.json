@@ -1,7 +1,7 @@
 {
   "name": "progressive_mass_legislator_scorecard",
-  "description": "Progressive Mass Legislator Scorecard",
-  "version": "0.1.0",
+  "description": "Progressive Massachusetts Legislator Scorecard",
+  "version": "1.0.0",
   "author": "Alex Holachek",
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -15,6 +15,7 @@
     "gatsby-plugin-robots-txt": "^1.4.0",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-plugin-sitemap": "^2.0.12",
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.17",
