@@ -99,8 +99,7 @@ export default class Rating extends React.Component {
         </h3>
         <div
           style={{ fontSize: '2.5rem' }}
-          id="cosponsorship-summary"
-          className="mb-2 heading-font"
+          className="mb-2 heading-font cosponsorship-summary"
         >
           <b
             className={`${

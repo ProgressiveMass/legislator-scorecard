@@ -72,9 +72,16 @@ export default class TermLayout extends React.Component {
     let BodyComponent
 
     if (this.state.active === sponsorship) {
-      BodyComponent = <SponsorshipTable {...this.props} />
+      BodyComponent = (
+        <SponsorshipTable
+          data={this.props.data}
+          lastName={this.props.lastName}
+        />
+      )
     } else if (this.state.active === votes) {
-      BodyComponent = <VoteTable {...this.props} />
+      BodyComponent = (
+        <VoteTable data={this.props.data} lastName={this.props.lastName} />
+      )
     }
     return (
       <div className="white-background mb-4">

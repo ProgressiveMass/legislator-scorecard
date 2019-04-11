@@ -26,9 +26,9 @@
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
     "react-lazyload": "^2.5.0",
-    "react-responsive-tabs": "^1.0.1",
-    "react-sticky": "^5.0.5",
-    "react-sticky-table": "^1.1.9",
+    "react-responsive-tabs": "^3.1.0",
+    "react-sticky": "^6.0.3",
+    "react-sticky-table": "^2.0.5",
     "react-tippy": "1.2.3"
   },
   "devDependencies": {
