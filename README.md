@@ -6,7 +6,7 @@ Taking somewhat dry legislator information from various spreadsheets administere
 
 ## Technical details
 
-The gatsbyjs statically-generated site [uses google sheets as a lightweight CMS](https://docs.google.com/spreadsheets/d/17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg) and also sources additional legislator data from the [Open States API](https://docs.openstates.org/en/latest/api/v2/).
+The gatsbyjs statically-generated site [uses Google Sheets as a lightweight CMS](https://docs.google.com/spreadsheets/d/17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg) and also sources additional legislator data from the [Open States API](https://docs.openstates.org/en/latest/api/v2/).
 
 Hosted on Google Firebase with a Firebase serverless function for fetching geolocation data.
 
