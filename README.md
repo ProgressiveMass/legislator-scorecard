@@ -2,7 +2,7 @@
 
 Taking somewhat dry legislator information from various spreadsheets administered by [Progressive Massachussetts](https://www.progressivemass.com/) and turning them into a ...slightly less dry interactive scorecard app.
 
-[Check out the scorecard here!](http://scorecard.progressivemass.com)
+[**Check out the scorecard here!**](http://scorecard.progressivemass.com)
 
 ## Technical details
 
