@@ -125,7 +125,7 @@ class SearchForm extends React.Component {
             {this.state.loading ? (
               <span>
                 <span aria-hidden="true" className="fa fa-spinner fa-pulse" />
-                &nbsp;Loading
+                &nbsp;Loading...
               </span>
             ) : (
               'Find My Local Legislators'
