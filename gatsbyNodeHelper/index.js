@@ -69,6 +69,7 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
         }
       })
     } catch (e) {
+      termData.sponsorship = []
       console.error(
         `${
           pageData.legislator.name
@@ -93,6 +94,7 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
           }
         })
       } catch (e) {
+        termData.votes = []
         console.error(
           `${
             pageData.legislator.name
