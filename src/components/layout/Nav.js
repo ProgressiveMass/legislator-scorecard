@@ -33,10 +33,10 @@ const Nav = () => {
           <ul className="list-unstyled d-flex">
             <li className="mr-4 mr-md-5">
               <Link to="/all-legislators">
-                All <abbr aria-label="Massachusetts">MA</abbr> Legislators
+                View All <abbr aria-label="Massachusetts">MA</abbr> Legislators
               </Link>
             </li>
-            <li>
+            <li className="ml-sm-2">
               <a
                 href="https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0"
                 target="_blank"

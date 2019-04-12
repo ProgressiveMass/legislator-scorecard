@@ -2,85 +2,119 @@ import React from 'react'
 import { Link, navigate } from 'gatsby'
 import axios from 'axios'
 
+const randomLocations = [
+  {
+    street: '50 Nauset Road',
+    city: 'Eastham',
+  },
+  {
+    street: ' 820 Front St',
+    city: 'Chicopee',
+  },
+  {
+    street: '304 Dutton Street',
+    city: 'Lowell',
+  },
+  {
+    street: '15 Oak Bluffs Ave',
+    city: 'Oak Bluffs',
+  },
+  {
+    street: '2101 Commonwealth Avenue',
+    city: 'Boston',
+  },
+  {
+    street: '2101 Commonwealth Avenue',
+    city: 'Boston',
+  },
+  {
+    street: '908 N Montello St',
+    city: 'Brockton',
+  },
+]
+
 const transformOpenStatesId = id => encodeURI(id.replace('ocd-person/', ''))
 
 class SearchForm extends React.Component {
-  constructor(props) {
-    super(props)
-    this.onFormSubmit = this.onFormSubmit.bind(this)
-  }
-
   state = {
     loading: false,
+    street: '',
+    city: '',
   }
 
-  onFormSubmit(e) {
+  randomizeLocation = () => {
+    const randomLocation =
+      randomLocations[Math.floor(Math.random() * randomLocations.length)]
+    this.setState(randomLocation)
+  }
+
+  onFormSubmit = e => {
     e.preventDefault()
     this.setState({ loading: true })
-    const address = this.refs.address.value + ' MA ' + this.refs.zip.value
+    const address = this.state.street + ' MA ' + this.state.city
 
     return axios
       .post(`${process.env.GATSBY_SERVERLESS_ENDPOINT}/local-legislators`, {
         address,
       })
-      .then(function(response) {
+      .then(response => {
         navigate(
           `/legislator/${transformOpenStatesId(
             response.data.senator
           )}?yourRep=${transformOpenStatesId(response.data.representative)}`
         )
       })
-      .catch(function(error) {
+      .catch(error => {
+        // TODO: better error handling
+        this.setState({ loading: false })
         console.error(error)
       })
   }
 
-  componentDidMount() {
-    this.refs.address.focus()
-  }
+  onChange = e => this.setState({ [e.target.name]: e.target.value })
 
   render() {
     return (
       <form
-        className="search-form my-5 my-md-0 white-background"
+        className="search-form mt-5 mb-4 my-md-0 white-background"
         onSubmit={this.onFormSubmit}
       >
+        <div className="d-flex justify-content-end">
+          <button
+            type="button"
+            className="btn btn-secondary btn-sm"
+            onClick={this.randomizeLocation}
+          >
+            randomize location
+          </button>
+        </div>
         <div className="form-group">
           <label>
-            Address
+            Street Address
             <input
+              value={this.state.street}
               type="text"
               className="form-control"
-              ref="address"
-              placeholder="123 Main St, Cambridge"
-              name="address"
+              placeholder="123 Main St"
+              name="street"
+              onChange={this.onChange}
             />
           </label>
         </div>
 
         <div className="form-group">
           <label>
-            Zip Code
+            City
             <input
+              value={this.state.city}
               type="text"
               className="form-control"
-              ref="zip"
-              placeholder="02142"
-              name="zipCode"
+              placeholder="Cambridge"
+              name="city"
+              onChange={this.onChange}
             />
           </label>
-        </div>
-
-        <div className="form-group">
-          <label>
-            State
-            <input
-              type="text"
-              className="form-control"
-              disabled
-              value="Massachusetts"
-            />
-          </label>
+          <div className="mt-3">Massachussetts</div>
         </div>
 
         <div className="mt-4">
@@ -98,9 +132,6 @@ class SearchForm extends React.Component {
             )}
           </button>
         </div>
-        <Link to="/all-legislators" className="mt-3 d-block">
-          I already know who my reps are ⇨
-        </Link>
       </form>
     )
   }
