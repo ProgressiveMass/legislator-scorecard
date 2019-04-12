@@ -1,6 +1,6 @@
 # Progressive Massachusetts Legislator Scorecard
 
-Taking somewhat dry legislator information from various spreadsheets administered by [Progressive Massachussetts](https://www.progressivemass.com/) and turning them into a ...slightly less dry interactive app!
+Taking somewhat dry legislator information from various spreadsheets administered by [Progressive Massachussetts](https://www.progressivemass.com/) and turning it into a ...slightly less dry interactive app!
 
 [**Check out the scorecard app here**](http://scorecard.progressivemass.com)
 
