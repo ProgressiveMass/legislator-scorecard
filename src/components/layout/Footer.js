@@ -43,9 +43,12 @@ const Footer = () => {
 
           <div className="col-md-5 offset-md-1">
             <p>
-              Site created by{' '}
-              <a href="http://alex.holachek.com" target="_blank">
-                Alex Holachek
+              The code for this site is{' '}
+              <a
+                href="https://github.com/ProgressiveMass/legislator-scorecard"
+                target="_blank"
+              >
+                publically available on Github.
                 <span className="sr-only">opens in new window</span>
               </a>
             </p>
