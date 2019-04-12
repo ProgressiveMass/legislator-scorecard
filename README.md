@@ -10,4 +10,4 @@ The gatsbyjs statically-generated site [uses google sheets as a CMS](https://doc
 
 Hosted on Google Firebase with a Firebase serverless function for fetching geolocation data.
 
-Site created by [Alex Holachek](https://alex.holachek.com)
+Site created by [Alex Holachek](https://github.com/aholachek)
