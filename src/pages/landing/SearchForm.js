@@ -4,6 +4,11 @@ import axios from 'axios'
 
 const randomLocations = [
   {
+    street: '64 Weir St',
+    city: 'Taunton',
+  },
+
+  {
     street: '50 Nauset Road',
     city: 'Eastham',
   },
@@ -31,6 +36,7 @@ const randomLocations = [
     street: '908 N Montello St',
     city: 'Brockton',
   },
+  { street: '1 Skyline Dr', city: 'Worcester' },
 ]
 
 const transformOpenStatesId = id => encodeURI(id.replace('ocd-person/', ''))
