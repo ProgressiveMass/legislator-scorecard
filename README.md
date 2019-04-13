@@ -15,3 +15,8 @@ Site created by [Alex Holachek](https://github.com/aholachek)
 ## Screenshot
 
 ![screenshot of the scorecard](./screenshot.png)
+
+## Contributing
+
+You can build the site locally by simply running `yarn start`. To build the data, you'll need to copy `.env.template` to `.env` and then add your own Google API key (it must be Google Sheets enabled) and an Open States API key. You should then be able to run the `yarn build-data` command to fetch legislator data.
+

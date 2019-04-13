@@ -1,4 +1,3 @@
-const fs = require('fs')
 const legislationData = require('../src/data/legislation.json')
 const houseLegislators = require('../src/data/house_legislators.json')
 const senateLegislators = require('../src/data/senate_legislators.json')
