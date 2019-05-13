@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import LegislatorTable from './LegislatorTable'
 
-const LegislatorVote = ({ v, progressivePosition }) => {
+const LegislatorVote = ({ vote, progressivePosition }) => {
   let badgeClass = 'badge'
 
   const oppositeDict = position => {
@@ -11,24 +11,24 @@ const LegislatorVote = ({ v, progressivePosition }) => {
     else return 'N/A'
   }
 
-  if (v === '+') {
+  if (vote === '+') {
     badgeClass += ' badge-primary'
-  } else if (v === '-' || v === 'NV' || v === 'NVP') {
+  } else if (vote === '-' || vote === 'NV' || vote === 'NVP') {
     badgeClass += ' badge-danger'
   } else {
     badgeClass += ' badge-clear'
   }
 
   let badgeText = 'N/A'
-  if (v === '+') {
+  if (vote === '+') {
     badgeText =
       progressivePosition[0].toUpperCase() +
       progressivePosition.slice(1).toLowerCase()
-  } else if (v === '-') {
+  } else if (vote === '-') {
     badgeText = oppositeDict(progressivePosition)
-  } else if (v === 'NV') {
+  } else if (vote === 'NV') {
     badgeText = 'No vote'
-  } else if (v === 'NVP') {
+  } else if (vote === 'NVP') {
     badgeText = 'Abstained'
   }
 
@@ -99,6 +99,7 @@ const VoteRow = ({
   },
   lastName,
 }) => {
+  debugger
   return (
     <tr>
       <td style={{ width: '15%' }}>
@@ -124,7 +125,7 @@ const VoteRow = ({
       </td>
       <td style={{ width: '12.5%' }} data-label={`${lastName}'s Vote`}>
         <LegislatorVote
-          yourLegislator={yourLegislator}
+          vote={yourLegislator}
           progressivePosition={progressivePosition}
         />
       </td>

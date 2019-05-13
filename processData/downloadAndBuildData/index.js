@@ -1,6 +1,5 @@
 const fs = require('fs')
 const path = require('path')
-const process = require('process')
 const downloadGoogleSheets = require('./downloadGoogleSheets')
 const buildLegislationData = require('./buildLegislationData')
 const updateLegislatorData = require('./updateLegislatorData')
@@ -21,5 +20,3 @@ const downloadAndBuildData = async () => {
 }
 
 downloadAndBuildData()
-// why necessary?
-process.exit()
