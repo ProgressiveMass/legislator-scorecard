@@ -52,7 +52,10 @@ const LegislatorMetadata = props => {
                     </a>
                   </div>
                   <div>
-                    <a href={`tel:${props.data.phone}`}>{props.data.phone}</a>
+                    <a href="https://www.progressivemass.com/ma_legislators_contact" target="_blank">
+                      More contact information
+                    </a>
+                    {/* <a href={`tel:${props.data.phone}`}>{props.data.phone}</a> */}
                   </div>
                 </div>
               </div>
