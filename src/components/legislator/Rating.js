@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ProgressBarWContext from '../progressBar'
 import ProgressBar from '../progressBar/ProgressBar'
-import InfoPopover from '../InfoPopover'
 
 export default class Rating extends React.Component {
   constructor(props) {
@@ -70,7 +69,7 @@ export default class Rating extends React.Component {
             {this.renderMedianDem()}
             <div className="flex-grow ml-2">
               <span className="font-weight-normal">
-                Median {this.props.chamber === 'upper' ? 'Sen.' : 'House'}{' '}
+                Median {this.props.chamber === 'senate' ? 'Sen.' : 'House'}{' '}
                 Republican
               </span>
               <ProgressBar

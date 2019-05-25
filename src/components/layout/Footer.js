@@ -59,7 +59,7 @@ const Footer = () => {
                 href="http://docs.openstates.org/en/latest/api/v2/index.html"
                 target="_blank"
               >
-                Open States API{' '}
+                Open States API.
                 <span className="sr-only"> opens in new window</span>
               </a>
             </p>
