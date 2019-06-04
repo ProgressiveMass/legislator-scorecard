@@ -87,7 +87,7 @@ const LegislatorTable = ({
   return (
     <div className="table-container">
       <h3 className="sr-only">{title}</h3>
-      <div className="my-4 py-2">
+      <div className="mt-4 mb-1 my-sm-4 py-sm-2">
         <p className="lead mb-0 readable-measure">{description}</p>
       </div>
       <StickyContainer>
