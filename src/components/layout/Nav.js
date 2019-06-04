@@ -30,7 +30,7 @@ const Nav = () => {
         </Link>
 
         <div className="text-md-right mt-3 mt-md-0">
-          <ul className="list-unstyled d-flex">
+          <ul className="list-unstyled d-flex" style={{justifyContent: "space-between"}}>
             <li className="mr-4 mr-md-5">
               <Link to="/all-legislators">
                 View All <abbr aria-label="Massachusetts">MA</abbr> Legislators

@@ -15,7 +15,7 @@ export default class Rating extends React.Component {
     if (this.props.chamber === 'senate') {
       return (
         <div className="flex-grow mr-2">
-          <span className="font-weight-normal">Median Sen. Democrat</span>
+          <div className="average-data">Median Sen. Democrat</div>
           <ProgressBar
             width={this.props.rating.votes.cumulative.median.democrat}
           />
@@ -24,7 +24,7 @@ export default class Rating extends React.Component {
     } else if (this.props.chamber === 'house') {
       return (
         <div className="flex-grow mr-2">
-          <span className="font-weight-normal">Median House Democrat</span>
+          <div className="average-data">Median House Democrat</div>
           <ProgressBar
             width={this.props.rating.votes.cumulative.median.democrat}
           />
@@ -68,10 +68,10 @@ export default class Rating extends React.Component {
           <div className="d-flex">
             {this.renderMedianDem()}
             <div className="flex-grow ml-2">
-              <span className="font-weight-normal">
+              <div className="average-data">
                 Median {this.props.chamber === 'senate' ? 'Sen.' : 'House'}{' '}
                 Republican
-              </span>
+              </div>
               <ProgressBar
                 width={this.props.rating.votes.cumulative.median.republican}
               />

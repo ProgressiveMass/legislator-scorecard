@@ -99,7 +99,6 @@ const VoteRow = ({
   },
   lastName,
 }) => {
-  debugger
   return (
     <tr>
       <td style={{ width: '15%' }}>

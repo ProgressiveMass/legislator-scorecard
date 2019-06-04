@@ -13,7 +13,7 @@ const TagFilterList = ({ tags, tagFilter, toggleFilter }) => (
           badgeClass = getTagData(t).badge
         }
         return (
-          <li className="mr-1" key={getTagData(t).name}>
+          <li className="mt-1 mt-sm-0 mr-sm-1" key={getTagData(t).name}>
             <button
               className={`btn btn-sm badge ${badgeClass}`}
               style={{ fontSize: '.9rem' }}
