@@ -29,20 +29,25 @@ const TagFilterList = ({ tags, tagFilter, toggleFilter }) => (
   </>
 )
 
-const RowTags = ({ tags, toggleFilter }) =>
-  tags.map(t => {
-    return (
-      <button
-        key={getTagData(t).name}
-        className={`btn badge ${getTagData(t).badge}`}
-        onClick={() => {
-          toggleFilter(t)
-        }}
-      >
-        {getTagData(t).name}
-      </button>
-    )
-  })
+const RowTags = ({ tags, toggleFilter }) => (
+  <ul className="list-unstyled">
+    {tags.map(t => {
+      return (
+        <li className="mr-1 mb-1 d-inline-block">
+          <button
+            key={getTagData(t).name}
+            className={`btn badge ${getTagData(t).badge}`}
+            onClick={() => {
+              toggleFilter(t)
+            }}
+          >
+            {getTagData(t).name}
+          </button>
+        </li>
+      )
+    })}
+  </ul>
+)
 
 const filterRows = (data, tagFilter) => {
   if (!tagFilter) return data
