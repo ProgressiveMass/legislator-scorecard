@@ -13,7 +13,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ['/all-legislators/LegislatorList/', '/all-legislators/SortButton/', '/landing/*'],
+        exclude: [
+          '/all-legislators/LegislatorList/',
+          '/all-legislators/SortButton/',
+          '/landing/*',
+        ],
       },
     },
     {

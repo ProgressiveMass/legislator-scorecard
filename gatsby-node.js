@@ -9,14 +9,16 @@ const houseLegislators = require('./src/data/house_legislators.json')
 const senateLegislators = require('./src/data/senate_legislators.json')
 
 const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
+  const context = {
+    id: legislatorId,
+    chamber,
+    pageData,
+  }
+  console.log(context)
   createPage({
     path: `/legislator/${legislatorId.replace('ocd-person/', '')}`,
     component: require.resolve(`./src/components/legislator/index.js`),
-    context: {
-      id: legislatorId,
-      chamber,
-      pageData,
-    },
+    context,
   })
 }
 

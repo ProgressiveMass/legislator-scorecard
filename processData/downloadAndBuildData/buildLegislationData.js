@@ -11,6 +11,8 @@ const tagMap = {
   'sustainable infrastructure & environmental protection': 'environment',
 }
 
+const finalTags = Object.values(tagMap)
+
 const normalizeBillNumber = billNumber => billNumber.replace(/[\.\s]/g, '')
 const normalizeTags = tagString => {
   const tags = tagString
@@ -18,7 +20,7 @@ const normalizeTags = tagString => {
     .map(tag => tag.trim())
     .filter(Boolean)
     .map(tag => tag.toLowerCase())
-    .map(tag => tagMap[tag])
+    .map(tag => (finalTags.includes(tag) ? tag : tagMap[tag]))
   return tags
 }
 
@@ -43,20 +45,24 @@ const addYesAndNoVotes = (bills, votes) => {
     if (!rollCallNumber || !rollCallNumber.trim()) return
     const billVotes = votes.map(row => row[index])
 
-    const progressivePosition = bills[
-      rollCallNumber
-    ].progressive_position.toLowerCase()
-    let yesVotes, noVotes
-    if (progressivePosition === 'no') {
-      yesVotes = billVotes.filter(v => v.trim() === '-').length
-      noVotes = billVotes.filter(v => v.trim() === '+').length
-    } else {
-      yesVotes = billVotes.filter(v => v.trim() === '+').length
-      noVotes = billVotes.filter(v => v.trim() === '-').length
-    }
+    try {
+      const progressivePosition = bills[
+        rollCallNumber
+      ].progressive_position.toLowerCase()
+      let yesVotes, noVotes
+      if (progressivePosition === 'no') {
+        yesVotes = billVotes.filter(v => v && v.trim() === '-').length
+        noVotes = billVotes.filter(v => v && v.trim() === '+').length
+      } else {
+        yesVotes = billVotes.filter(v => v && v.trim() === '+').length
+        noVotes = billVotes.filter(v => v && v.trim() === '-').length
+      }
 
-    bills[rollCallNumber].noVotes = noVotes
-    bills[rollCallNumber].yesVotes = yesVotes
+      bills[rollCallNumber].noVotes = noVotes
+      bills[rollCallNumber].yesVotes = yesVotes
+    } catch (e) {
+      console.error(`couldnt find bill with roll call # ${rollCallNumber}`)
+    }
   })
 }
 

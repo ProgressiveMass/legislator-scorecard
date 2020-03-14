@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import { StickyContainer, Sticky } from 'react-sticky'
 import getTagData from './tagMap'
 
-const TagFilterList = ({ tags, tagFilter, toggleFilter }) => (
+const TagFilterList = ({ tags, tagFilter, toggleFilter }) => {
+  return (
   <>
     <span className="label d-md-inline-block mr-3">Filter Bills By Topic:</span>
     <ul className="d-sm-inline-flex list-unstyled">
@@ -28,6 +29,7 @@ const TagFilterList = ({ tags, tagFilter, toggleFilter }) => (
     </ul>
   </>
 )
+}
 
 const RowTags = ({ tags, toggleFilter }) => (
   <ul className="list-unstyled">
