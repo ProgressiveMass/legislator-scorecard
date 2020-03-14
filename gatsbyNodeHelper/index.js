@@ -4,7 +4,7 @@ const senateLegislators = require('../src/data/senate_legislators.json')
 const buildVoteCumulativeData = require('./buildVoteCumulativeData')
 const buildSponsorshipCumulativeData = require('./buildSponsorshipCumulativeData')
 
-const voteSummaryYear = 2017
+const voteSummaryYear = 2019
 const sponsorshipSummaryYear = 2019
 
 const legislatorData = {
