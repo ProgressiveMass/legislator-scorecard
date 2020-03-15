@@ -41,7 +41,7 @@ const LegislatorRow = ({ d, i, chamber }) => {
         </a>
       </td>
       <td data-label="Party">{d.party.slice(0, 1)}</td>
-      <td data-label="Progressive Rating (2018-2019)">
+      <td data-label="Progressive Rating (2019-2020)">
         <div style={{ maxWidth: '300px' }}>
           <ProgressBar data={d} />
         </div>
