@@ -86,7 +86,7 @@ const addBillUrls = (bills, session) => {
   })
 }
 
-const buildVoteObject = (votes, bills) => {
+const buildVoteObject = (votes) => {
   const rollCallNumberRow = votes[2]
 
   // return array instead of object because gatsby's graphql queries
@@ -107,7 +107,7 @@ const buildVoteObject = (votes, bills) => {
       }).length
 
       const totalScore = Object.entries(votes).reduce(
-        (acc, [rollCallNumber, vote]) => {
+        (acc, [, vote]) => {
           if (vote.trim() === '+') {
             return acc + 1
           }

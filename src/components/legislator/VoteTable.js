@@ -11,7 +11,7 @@ const LegislatorVote = ({ vote, progressivePosition }) => {
     else return 'N/A'
   }
 
-  if (vote === '+') {
+  if (vote.trim() === '+') {
     badgeClass += ' badge-primary'
   } else if (vote === '-' || vote === 'NV' || vote === 'NVP') {
     badgeClass += ' badge-danger'
@@ -20,7 +20,7 @@ const LegislatorVote = ({ vote, progressivePosition }) => {
   }
 
   let badgeText = 'N/A'
-  if (vote === '+') {
+  if (vote.trim() === '+') {
     badgeText =
       progressivePosition[0].toUpperCase() +
       progressivePosition.slice(1).toLowerCase()

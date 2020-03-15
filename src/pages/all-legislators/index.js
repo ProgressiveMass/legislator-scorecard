@@ -5,10 +5,12 @@ import LegislatorList from './LegislatorList'
 import Layout from '../../components/layout'
 import { getLastName } from '../../utilities'
 
+const mostRecentYear = 2019
+
 const legislatorQuery = graphql`
   {
     dataJson {
-      _2017 {
+      _2019 {
         houseVotes {
           id
           score
@@ -75,11 +77,11 @@ const processQuery = ({
   return {
     senators: createLegislatorList(
       allSenateLegislatorsJson.edges,
-      dataJson._2017.senateVotes
+      dataJson[`_${mostRecentYear}`].senateVotes
     ),
     houseReps: createLegislatorList(
       allHouseLegislatorsJson.edges,
-      dataJson._2017.houseVotes
+      dataJson[`_${mostRecentYear}`].houseVotes
     ),
   }
 }

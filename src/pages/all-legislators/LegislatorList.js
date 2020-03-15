@@ -41,7 +41,7 @@ const LegislatorRow = ({ d, i, chamber }) => {
         </a>
       </td>
       <td data-label="Party">{d.party.slice(0, 1)}</td>
-      <td data-label="Progressive Rating (2017-2018)">
+      <td data-label="Progressive Rating (2018-2019)">
         <div style={{ maxWidth: '300px' }}>
           <ProgressBar data={d} />
         </div>
@@ -193,7 +193,7 @@ class LegislatorList extends React.Component {
                     onClick={this.setSort}
                     sort="score"
                     currentSort={this.state.sort}
-                    title="Prog. Rating (2017-2018)"
+                    title="Prog. Rating (2019-2020)"
                   />
                 </th>
               </tr>
