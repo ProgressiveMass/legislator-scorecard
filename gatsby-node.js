@@ -14,7 +14,6 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
     chamber,
     pageData,
   }
-  console.log(context)
   createPage({
     path: `/legislator/${legislatorId.replace('ocd-person/', '')}`,
     component: require.resolve(`./src/components/legislator/index.js`),
