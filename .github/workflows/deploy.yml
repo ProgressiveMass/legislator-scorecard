@@ -27,4 +27,8 @@ jobs:
       - run: yarn run build
 
       - name: Deploy site
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          OPENSTATES_API_KEY: ${{ secrets.OPENSTATES_API_KEY }}
+          GATSBY_SERVERLESS_ENDPOINT: ${{ secrets.GATSBY_SERVERLESS_ENDPOINT }}
         run: yarn run deploy:prod
