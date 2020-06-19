@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - master
-      
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,5 +27,4 @@ jobs:
       - run: yarn run build
 
       - name: Deploy site
-        run: |
-          yarn run deploy:prod
+        run: yarn run deploy:prod
