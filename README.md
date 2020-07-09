@@ -1,3 +1,5 @@
+![.github/workflows/deploy.yml](https://github.com/ProgressiveMass/legislator-scorecard/workflows/.github/workflows/deploy.yml/badge.svg)
+
 # Progressive Massachusetts Legislator Scorecard
 
 Taking somewhat dry legislator information from various spreadsheets administered by [Progressive Massachussetts](https://www.progressivemass.com/) and turning it into a ...slightly less dry interactive app!
