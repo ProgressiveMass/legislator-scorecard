@@ -1,4 +1,4 @@
-![.github/workflows/deploy.yml](https://github.com/ProgressiveMass/legislator-scorecard/workflows/.github/workflows/deploy.yml/badge.svg)
+![.github/workflows/deploy.yml](https://github.com/ProgressiveMass/legislator-scorecard/workflows/.github/workflows/deploy.yml/badge.svg?branch=master)
 
 # Progressive Massachusetts Legislator Scorecard
 
