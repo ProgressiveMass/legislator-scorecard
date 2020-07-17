@@ -10,15 +10,12 @@ Taking somewhat dry legislator information from various spreadsheets administere
 
 The gatsbyjs statically-generated site [uses Google Sheets as a lightweight CMS](https://docs.google.com/spreadsheets/d/17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg) and also sources additional legislator data from the [Open States API](https://docs.openstates.org/en/latest/api/v2/).
 
-Hosted on Google Firebase with a Firebase serverless function for fetching geolocation data.
+Hosted on Google Firebase, with a Firebase serverless function for fetching geolocation data, and automated deployments using Github actions.
 
 Site created by [Alex Holachek](https://github.com/aholachek)
-
-## Screenshot
 
 ![screenshot of the scorecard](./screenshot.png)
 
 ## Contributing
 
 You can build the site locally by simply running `yarn start` after cloning the repo. To build the data, you'll need to copy `.env.template` to `.env` and then add your own Google API key (it must be Google Sheets enabled) and an Open States API key. You should then be able to run the `yarn build-data` command to fetch legislator data.
-
