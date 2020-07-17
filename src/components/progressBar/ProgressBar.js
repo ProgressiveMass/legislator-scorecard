@@ -37,7 +37,6 @@ const ProgressBar = ({ width, large }) => {
             style={{
               fontSize: '.85rem',
               position: 'relative',
-              top: '-2px',
             }}
           >
             <b>{getLetterGrade(width)}</b>&nbsp;&nbsp; ({width + '%'})
