@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Alex Holachek",
   "dependencies": {
+    "@babel/compat-data": "^7.10.5",
+    "@datadog/browser-rum": "^1.13.0",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.24.4",
     "gatsby-image": "^2.4.13",
@@ -29,8 +31,7 @@
     "react-responsive-tabs": "^3.3.0",
     "react-sticky": "^6.0.3",
     "react-sticky-table": "^2.0.5",
-    "react-tippy": "1.4.0",
-    "@babel/compat-data": "^7.10.5"
+    "react-tippy": "1.4.0"
   },
   "devDependencies": {
     "axios": "^0.18.0",
