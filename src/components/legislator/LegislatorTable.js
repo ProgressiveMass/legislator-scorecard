@@ -31,7 +31,7 @@ const TagFilterList = ({ tags, tagFilter, toggleFilter }) => {
 )
 }
 
-const RowTags = ({ tags, toggleFilter }) => (
+const RowTags = ({ tags = [], toggleFilter }) => (
   <ul className="list-unstyled">
     {tags.map(t => {
       return (

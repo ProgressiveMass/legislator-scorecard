@@ -5,7 +5,6 @@
   "author": "Alex Holachek",
   "dependencies": {
     "@babel/compat-data": "^7.10.5",
-    "@datadog/browser-rum": "^1.13.0",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.24.4",
     "gatsby-image": "^2.4.13",

@@ -8,9 +8,9 @@ const tagMap = {
   environment: { name: 'environment', badge: 'badge-green' },
 }
 
-const getTagData = (tag = '') => {
+const getTagData = (tag) => {
   return (
-    tagMap[tag.toLowerCase()] || {
+    tag && tagMap[tag.toLowerCase()] || {
       name: tag,
       badge: 'badge-default',
     }

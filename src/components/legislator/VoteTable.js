@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import LegislatorTable from './LegislatorTable'
 
 const LegislatorVote = ({ vote, progressivePosition }) => {
+  if (!progressivePosition) return 'error: progressive position not found'
   let badgeClass = 'badge'
 
   const oppositeDict = position => {
@@ -22,8 +23,10 @@ const LegislatorVote = ({ vote, progressivePosition }) => {
   let badgeText = 'N/A'
   if (vote.trim() === '+') {
     badgeText =
-      progressivePosition[0].toUpperCase() +
-      progressivePosition.slice(1).toLowerCase()
+      progressivePosition && progressivePosition[0]
+        ? progressivePosition[0].toUpperCase() +
+          progressivePosition.slice(1).toLowerCase()
+        : ''
   } else if (vote === '-') {
     badgeText = oppositeDict(progressivePosition)
   } else if (vote === 'NV') {
@@ -36,6 +39,7 @@ const LegislatorVote = ({ vote, progressivePosition }) => {
 }
 
 const CumulativeVote = ({ yesVotes, noVotes, progressivePosition }) => {
+  progressivePosition = progressivePosition || ''
   const yesBlock = (
     <div>
       <span className="label votes-fw">Yes:</span>&nbsp;
