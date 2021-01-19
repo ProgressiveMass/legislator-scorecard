@@ -22,7 +22,7 @@ const medianSponsorshipData = buildSponsorshipCumulativeData(
 // helpers
 const getLegislatorVotesEntry = ({ year, chamber, legislatorId }) =>
   legislationData[year][`${chamber}Votes`].find(
-    entry => entry?.id === legislatorId
+    entry => entry && entry.id === legislatorId
   )
 
 const getLegislatorSponsorshipEntry = ({ year, legislatorId }) =>
@@ -31,7 +31,7 @@ const getLegislatorSponsorshipEntry = ({ year, legislatorId }) =>
 // main function
 const createPageDataStruct = ({ chamber, legislatorId }) => {
   const legislator = legislatorData[chamber].find(
-    data => data?.id === legislatorId
+    data => data && data.id === legislatorId
   )
   const pageData = {
     legislator,
