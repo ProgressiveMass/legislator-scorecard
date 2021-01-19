@@ -9,7 +9,7 @@ const buildChamberVoteData = (year, legislatorData) => chamber => {
   const votes = legislationData[year][`${chamber}Votes`]
     .map(data => {
       const legislatorDescription = legislatorData[chamber].find(
-        legislator => legislator.id === data.id
+        legislator => legislator?.id === data.id
       )
       return legislatorDescription
         ? { ...data, party: legislatorDescription.party }
