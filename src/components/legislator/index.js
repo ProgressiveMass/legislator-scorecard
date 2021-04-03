@@ -18,7 +18,7 @@ const LegislatorPage = ({ pageContext: { chamber, id, pageData } }) => {
   }'s values by viewing a record of their activity in the Massachusetts statehouse.`
   return (
     <Layout>
-      <SEO title={seoTitle} description={seoDescription} />
+      <SEO title={seoTitle} description={seoDescription} image={pageData.legislator.image}/>
       <YourLegislatorTabs currentLegislator={pageData.legislator.id} />
       <div className="tinted-background">
         <LegislatorMetadata
