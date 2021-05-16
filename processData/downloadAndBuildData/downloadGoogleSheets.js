@@ -13,17 +13,12 @@ const googleSheetIds = {
 }
 
 const requestSheet = async (id, sheet) => {
-  try {
-    const response = await axios.get(
-      `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheet}?key=${
-        process.env.GOOGLE_API_KEY
-      }`
-    )
-    return response.data.values
-  } catch (e) {
-    console.error(e)
-    return []
-  }
+  const response = await axios.get(
+    `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheet}?key=${
+      process.env.GOOGLE_API_KEY
+    }`
+  )
+  return response.data.values
 }
 
 const loadGoogleSheets = async year => {
