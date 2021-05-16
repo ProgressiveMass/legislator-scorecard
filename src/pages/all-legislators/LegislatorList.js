@@ -5,6 +5,7 @@ import { navigate } from 'gatsby'
 import SortButton from './SortButton'
 import ProgressBar from '../../components/progressBar'
 import InfoPopover from '../../components/InfoPopover'
+import defaultPhoto from '../../images/default-photo.jpg'
 
 const LegislatorRow = ({ d, i, chamber }) => {
   return (
@@ -25,6 +26,11 @@ const LegislatorRow = ({ d, i, chamber }) => {
                 src={d.image}
                 alt=""
                 className="legislator-list__profile-img"
+                onError={(e) => {
+                  if (e.target.src !== window.location.origin + defaultPhoto) {
+                    e.target.src = defaultPhoto;
+                  }
+                }}
               />
             </LazyLoad>
             {d.name}&nbsp;
