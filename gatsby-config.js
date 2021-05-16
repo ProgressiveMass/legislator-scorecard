@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Progressive Massachussetts Legislator Scorecard`,
+    title: `Progressive Massachusetts Legislator Scorecard`,
     description: `Learn about MA state legislation and review your legislators' records`,
     author: `Alex Holachek`,
     siteUrl: 'https://scorecard.progressivemass.com/',
@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Progressive Massachussetts Legislator Scorecard`,
+        name: `Progressive Massachusetts Legislator Scorecard`,
         short_name: `Prog Mass Scorecard`,
         start_url: `/`,
         background_color: `#037BFF`,
