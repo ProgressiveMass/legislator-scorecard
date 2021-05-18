@@ -55,7 +55,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "gatsby:debug": "node --nolazy --inspect-brk node_modules/gatsby/dist/bin/gatsby develop",
-    "build-data": "node processData/downloadAndBuildData/index.js",
+    "build-data": "node --unhandled-rejections=strict processData/downloadAndBuildData/index.js",
     "serve:functions": "firebase serve",
     "deploy:functions:prod": "firebase deploy --only functions -P prod",
     "deploy:prod": "yarn run build && firebase deploy --only hosting -P prod",
