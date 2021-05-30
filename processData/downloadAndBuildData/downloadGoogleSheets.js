@@ -61,7 +61,12 @@ const loadGoogleSheets = async year => {
 }
 
 module.exports = async () => {
-  fs.removeSync(`${__dirname}/tmp`)
-  fs.mkdirSync(`${__dirname}/tmp`)
-  await Promise.all([loadGoogleSheets(2017), loadGoogleSheets(2019)])
+  yearsToRefresh = [
+    // 2017,
+    2019,
+  ]
+  yearsToRefresh.forEach(year => {
+    fs.removeSync(`${__dirname}/tmp/${year}.json`)
+  })
+  await Promise.all(yearsToRefresh.map(year => loadGoogleSheets(year)))
 }
