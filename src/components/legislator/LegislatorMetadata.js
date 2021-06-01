@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Rating from './Rating'
+import defaultPhoto from '../../images/default-photo.jpg'
 
 const LegislatorMetadata = props => {
   return (
@@ -21,6 +22,11 @@ const LegislatorMetadata = props => {
                     src={props.data.image}
                     alt="legislator profile picture"
                     className="legislator-portrait"
+                    onError={(e) => {
+                      if (e.target.src !== window.location.origin + defaultPhoto) {
+                        e.target.src = defaultPhoto;
+                      }
+                    }}
                   />
                 ) : null}
               </div>

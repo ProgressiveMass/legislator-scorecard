@@ -120,7 +120,7 @@ class SearchForm extends React.Component {
               onChange={this.onChange}
             />
           </label>
-          <div className="mt-3">Massachussetts</div>
+          <div className="mt-3">Massachusetts</div>
         </div>
 
         <div className="mt-4">

@@ -43,11 +43,14 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
     }
     //sponsorship
     const progMassSponsoredBills = legislationData[year].sponsoredBills
-    try {
-      const legislatorSponsorshipEntry = getLegislatorSponsorshipEntry({
-        year,
-        legislatorId,
-      })
+    const legislatorSponsorshipEntry = getLegislatorSponsorshipEntry({
+      year,
+      legislatorId,
+    })
+    if (legislatorSponsorshipEntry === undefined) {
+      termData.sponsorship = []
+      console.warn(`${pageData.legislator.name} didn't have sponsorship data available for ${year}`)
+    } else {
       const legislatorSponsorship = legislatorSponsorshipEntry.data
 
       termData.sponsorship = Object.keys(legislatorSponsorship).map(billNum => {
@@ -67,23 +70,19 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
           yourLegislator: legislatorSponsorship[billNum],
         }
       })
-    } catch (e) {
-      termData.sponsorship = []
-      console.error(
-        `${
-          pageData.legislator.name
-        } didn't have sponsorship data available for ${year}: ${e.toString()}`
-      )
     }
 
     // votes
     if (legislationData[year][`${chamber}Votes`]) {
-      try {
-        const legislatorVotesEntry = getLegislatorVotesEntry({
-          year,
-          chamber,
-          legislatorId,
-        })
+      const legislatorVotesEntry = getLegislatorVotesEntry({
+        year,
+        chamber,
+        legislatorId,
+      })
+      if (legislatorVotesEntry === undefined) {
+        termData.votes = []
+        console.warn(`${pageData.legislator.name} didn't have vote data available for ${year}`)
+      } else {
         const legislatorVotes = legislatorVotesEntry.data
 
         termData.votes = Object.keys(legislatorVotes).map(rollCallNumber => {
@@ -92,13 +91,6 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
             yourLegislator: legislatorVotes[rollCallNumber],
           }
         })
-      } catch (e) {
-        termData.votes = []
-        console.error(
-          `${
-            pageData.legislator.name
-          } didn't have vote data available for ${year}: ${e.toString()}`
-        )
       }
     }
     return termData

@@ -13,17 +13,12 @@ const googleSheetIds = {
 }
 
 const requestSheet = async (id, sheet) => {
-  try {
-    const response = await axios.get(
-      `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheet}?key=${
-        process.env.GOOGLE_API_KEY
-      }`
-    )
-    return response.data.values
-  } catch (e) {
-    console.error(e)
-    return []
-  }
+  const response = await axios.get(
+    `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheet}?key=${
+      process.env.GOOGLE_API_KEY
+    }`
+  )
+  return response.data.values
 }
 
 const loadGoogleSheets = async year => {
@@ -66,7 +61,12 @@ const loadGoogleSheets = async year => {
 }
 
 module.exports = async () => {
-  fs.removeSync(`${__dirname}/tmp`)
-  fs.mkdirSync(`${__dirname}/tmp`)
-  await Promise.all([loadGoogleSheets(2017), loadGoogleSheets(2019)])
+  yearsToRefresh = [
+    // 2017,
+    2019,
+  ]
+  yearsToRefresh.forEach(year => {
+    fs.removeSync(`${__dirname}/tmp/${year}.json`)
+  })
+  await Promise.all(yearsToRefresh.map(year => loadGoogleSheets(year)))
 }
