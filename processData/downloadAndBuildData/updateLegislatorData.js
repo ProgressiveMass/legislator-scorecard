@@ -95,7 +95,9 @@ const processData = edges => {
         delete data.contactDetails
         return data
       } catch (e) {
-        debugger
+        console.error('Failed to process data for ' + data.name + ' (' + data.id + ')')
+        console.error(data)
+        throw(e)
       }
     })
 }
