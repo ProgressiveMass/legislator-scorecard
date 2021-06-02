@@ -81,9 +81,14 @@ const processData = edges => {
         data.email = data.contactDetails.filter(
           c => c.type === "email"
         )[0].value
-        data.phone = data.contactDetails.filter(
-          c => c.type === "voice"
-        )[0].value
+        try {
+          data.phone = data.contactDetails.filter(
+            c => c.type === "voice"
+          )[0].value
+        } catch (e) {
+          console.warn('No phone number for ' + data.name)
+          data.phone = ''
+        }
         data.url = data.sources[0].url
         data.party = data.party[0].organization.name
         delete data.sources
