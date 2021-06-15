@@ -7,6 +7,7 @@ const termDict = {
   '2015-2016': '189th Session',
   '2017-2018': '190th Session',
   '2019-2020': '191st Session',
+  '2021-2022': '192nd Session',
 }
 
 export const SessionTabs = ({ terms, chamber, lastName }) => {
