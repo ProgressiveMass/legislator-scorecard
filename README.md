@@ -12,7 +12,7 @@ The gatsbyjs statically-generated site [uses Google Sheets as a lightweight CMS]
 
 Hosted on Google Firebase, with a Firebase serverless function for fetching geolocation data, and automated deployments using Github actions.
 
-Site created by [Alex Holachek](https://github.com/aholachek)
+Site created by [@aholachek](https://github.com/aholachek) and currently administered by [@dscush](https://github.com/dscush).
 
 ![screenshot of the scorecard](./screenshot.png)
 
