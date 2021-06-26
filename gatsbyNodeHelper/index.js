@@ -5,7 +5,7 @@ const buildVoteCumulativeData = require('./buildVoteCumulativeData')
 const buildSponsorshipCumulativeData = require('./buildSponsorshipCumulativeData')
 
 const voteSummaryYear = 2019
-const sponsorshipSummaryYear = 2019
+const sponsorshipSummaryYear = 2021
 
 const legislatorData = {
   senate: senateLegislators,
