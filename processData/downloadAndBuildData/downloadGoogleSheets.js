@@ -10,6 +10,7 @@ require('dotenv').config()
 const googleSheetIds = {
   2017: '15AgxGT87Qc02IqPV46Uc0u9Z_ChfAjZQaj3qS2VNF8g',
   2019: '17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg',
+  2021: '1_WD66ZAMR4gQRq9f3s0ITayesaLoQcHIMZVTHkTA6Ug',
 }
 
 const requestSheet = async (id, sheet) => {
@@ -64,6 +65,7 @@ module.exports = async () => {
   yearsToRefresh = [
     // 2017,
     2019,
+    2021,
   ]
   yearsToRefresh.forEach(year => {
     fs.removeSync(`${__dirname}/tmp/${year}.json`)

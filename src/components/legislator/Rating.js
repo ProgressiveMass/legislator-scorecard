@@ -83,6 +83,8 @@ export default class Rating extends React.Component {
   }
 
   renderCosponsorshipSection() {
+    if (isNaN(this.props.rating.sponsorship.legislator)) return null
+
     return (
       <div className="mt-4">
         <h3

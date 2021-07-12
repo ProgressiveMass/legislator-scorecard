@@ -203,5 +203,6 @@ module.exports = () => {
   return {
     2017: buildLegislationDataForYear(2017),
     2019: buildLegislationDataForYear(2019),
+    2021: buildLegislationDataForYear(2021),
   }
 }
