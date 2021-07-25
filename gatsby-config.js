@@ -1,3 +1,13 @@
+if (process.env.STAGING) {
+  require("dotenv").config({
+    path: `.env.staging`,
+  })
+} else {
+  require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+  })
+}
+
 module.exports = {
   siteMetadata: {
     title: `Progressive Massachusetts Legislator Scorecard`,
@@ -10,6 +20,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
     'gatsby-plugin-robots-txt',
+    `gatsby-plugin-open-graph-images`,
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {

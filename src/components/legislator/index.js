@@ -7,7 +7,7 @@ import Layout from '../layout'
 import { getLastName } from '../../utilities'
 import YourLegislatorTabs from './YourLegislatorTabs'
 
-const LegislatorPage = ({ pageContext: { chamber, id, pageData } }) => {
+const LegislatorPage = ({ pageContext: { chamber, id, pageData, ogImage } }) => {
   const legislatorTitle = chamber === 'senate' ? 'Senator' : 'Rep'
   const lastName = getLastName(pageData.legislator.name)
   const seoTitle = `${legislatorTitle} ${
@@ -18,7 +18,7 @@ const LegislatorPage = ({ pageContext: { chamber, id, pageData } }) => {
   }'s values by viewing a record of their activity in the Massachusetts statehouse.`
   return (
     <Layout>
-      <SEO title={seoTitle} description={seoDescription} image={pageData.legislator.image}/>
+      <SEO title={seoTitle} description={seoDescription} ogImage={ogImage} />
       <YourLegislatorTabs currentLegislator={pageData.legislator.id} />
       <div className="tinted-background">
         <LegislatorMetadata

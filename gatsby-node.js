@@ -3,16 +3,36 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const path = require('path')
+const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images");
 
 const createPageDataStruct = require('./gatsbyNodeHelper/index')
 const houseLegislators = require('./src/data/house_legislators.json')
 const senateLegislators = require('./src/data/senate_legislators.json')
 
 const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
+  const ogImageFilename =
+    (pageData.legislator.name + '-' + pageData.legislator.district)
+    .toLowerCase()
+    .replaceAll(' ', '-')
+    .replaceAll(/[.,']/g, '')
+
   const context = {
     id: legislatorId,
     chamber,
     pageData,
+    ogImage: createOpenGraphImage(createPage, {
+      path: `og-images/legislator/${ogImageFilename}.png`,
+      component: path.resolve(`src/components/legislator/ogImage.js`),
+      size: {
+        width: 630,
+        height: 315,
+      },
+      context: {
+        chamber,
+        pageData,
+      },
+    }),
   }
   createPage({
     path: `/legislator/${legislatorId.replace('ocd-person/', '')}`,

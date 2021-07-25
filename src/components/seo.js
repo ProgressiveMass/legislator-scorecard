@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, keywords, title, image }) {
+function SEO({ description, lang, meta, keywords, title, ogImage }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -52,7 +52,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -63,8 +63,16 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           content: `@ProgressiveMass`,
         },
         {
-          name: `og:image`,
-          content: image,
+          property: `og:image`,
+          content: process.env.GATSBY_DOMAIN + ogImage.path,
+        },
+        {
+          property: `og:image:width`,
+          content: `630`,
+        },
+        {
+          property: `og:image:height`,
+          content: `315`,
         },
         {
           name: 'google-site-verification',
@@ -89,7 +97,7 @@ SEO.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
-  image: require('../pages/landing/images/cards.png'),
+  ogImage: require('../pages/landing/images/cards.png'),
 }
 
 SEO.propTypes = {
@@ -98,7 +106,7 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
-  image: PropTypes.string,
+  ogImage: PropTypes.object,
 }
 
 export default SEO

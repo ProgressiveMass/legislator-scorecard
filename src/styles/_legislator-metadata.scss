@@ -31,7 +31,18 @@
   max-height: 180px;
   min-width: 125px;
   max-width: 150px;
+  object-fit: cover;
+  object-position: top center;
   margin-right: 2rem;
+}
+
+.legislator-portrait-social {
+    max-height: 225px;
+    min-width: 170px;
+    max-width: 170px;
+    margin-right: 0;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .progress-component {
