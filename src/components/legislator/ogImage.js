@@ -17,10 +17,11 @@ const LegislatorOgImage = ({ pageContext: { chamber, pageData } }) => {
     partySuffix = '(I)';
   }
   const fullName = [legislatorTitle, pageData.legislator.name, partySuffix].join(' ');
+  var fontSize = Math.min(65 - fullName.length, 40);
   return (
     <div className="row no-gutters align-items-md-center">
       <div className="col-12 pt-2 px-4">
-        <h1 className="metadata__heading mt-1">
+        <h1 className={"metadata__heading mt-1"} style={{fontSize: fontSize}}>
           <span className="font-weight-normal">{fullName}</span>
         </h1>
         <div className="row no-gutters">
