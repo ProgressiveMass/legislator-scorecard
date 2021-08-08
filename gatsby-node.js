@@ -16,6 +16,7 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
     .toLowerCase()
     .replaceAll(' ', '-')
     .replaceAll(/[.,']/g, '')
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // stackoverflow.com/questions/990904
 
   const context = {
     id: legislatorId,
