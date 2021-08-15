@@ -73,3 +73,5 @@ yarn-error.log
 
 .firebase
 .runtimeconfig.json
+
+test/tmp

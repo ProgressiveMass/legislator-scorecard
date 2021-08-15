@@ -58,6 +58,9 @@
     "gatsby:debug": "node --nolazy --inspect-brk node_modules/gatsby/dist/bin/gatsby develop",
     "build-data": "node --unhandled-rejections=strict processData/downloadAndBuildData/index.js",
     "serve:functions": "firebase serve",
+    "download-social-images:dev": "node test/downloadSocialImages.js",
+    "download-social-images:staging": "STAGING=true node test/downloadSocialImages.js",
+    "download-social-images:prod": "PRODUCTION=true test/downloadSocialImages.js",
     "deploy:functions:prod": "firebase deploy --only functions -P prod",
     "deploy:prod": "yarn run build && firebase deploy --only hosting -P prod",
     "deploy:dev": "STAGING=true yarn run build && firebase deploy --only hosting -P staging"
