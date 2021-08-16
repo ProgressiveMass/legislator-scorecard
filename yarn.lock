@@ -6918,10 +6918,9 @@ gatsby-plugin-offline@^3.2.18:
     lodash "^4.17.15"
     workbox-build "^4.3.1"
 
-gatsby-plugin-open-graph-images@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.npmjs.org/gatsby-plugin-open-graph-images/-/gatsby-plugin-open-graph-images-0.1.7.tgz"
-  integrity sha512-tYnEEfmVTWCM0qnRU1Wc+iA2mXcVRwebV8xhcEN9Mootw1mpG2lM/yradW6qfLU7r2/jmdXTVEVkEt5CRpxPbw==
+"gatsby-plugin-open-graph-images@https://github.com/dscush/gatsby-plugin-open-graph-images.git":
+  version "0.1.5"
+  resolved "https://github.com/dscush/gatsby-plugin-open-graph-images.git#8ea359c2aa3d4e88a7e8589e9357ce661cd1997d"
   dependencies:
     express "^4.17.1"
     puppeteer "^3.3.0"
@@ -12676,10 +12675,10 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react-sticky-table@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/react-sticky-table/-/react-sticky-table-3.1.1.tgz#a4ef5ecff70938944f28ba75b5b1923da9e32221"
-  integrity sha512-WwYMAajmwyoxVyOaknFLnNj3xRusImIE3zt9utzMWUge5ZGeIDbLFNJonauSd+0PkrG8DyiBOJbuWW6KAIRghg==
+react-sticky-table@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/react-sticky-table/-/react-sticky-table-2.0.5.tgz#0ce789592201242c179f78f670ae0ee887936e1d"
+  integrity sha512-f8hH/wNGZxCdhtfrPmoJKzBmRs9C8X7CD7Zk+e/3+C3wLxgn7oDPC8SzxqyDAtQj5Kc9WksdUudJFNPKM0VJRQ==
 
 react-sticky@^6.0.3:
   version "6.0.3"
