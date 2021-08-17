@@ -34,6 +34,7 @@ export default class Rating extends React.Component {
   }
 
   renderVoteSection() {
+    const fontSize = Math.min(34 - this.props.lastName, 18);
     return (
       <div>
         <div className="sr-only">
@@ -55,7 +56,7 @@ export default class Rating extends React.Component {
           <div className="mb-2">
             <b
               className="d-block mb-1  heading-font"
-              style={{ fontSize: '18px' }}
+              style={{ fontSize: fontSize }}
             >
               {this.props.title}&nbsp;
               {this.props.lastName}'s votes&nbsp;
