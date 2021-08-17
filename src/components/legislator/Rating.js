@@ -34,7 +34,7 @@ export default class Rating extends React.Component {
   }
 
   renderVoteSection() {
-    const fontSize = Math.min(34 - this.props.lastName, 18);
+    const fontSize = Math.min(34 - this.props.lastName.length, 18);
     return (
       <div>
         <div className="sr-only">
