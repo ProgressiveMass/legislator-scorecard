@@ -64,7 +64,7 @@
     "download-social-images:prod": "PRODUCTION=true test/downloadSocialImages.js",
     "deploy:functions:prod": "firebase deploy --only functions -P prod",
     "deploy:prod": "yarn run build && firebase deploy --only hosting -P prod",
-    "deploy:dev": "STAGING=true yarn run build && firebase deploy --only hosting -P staging"
+    "deploy:staging": "STAGING=true yarn run build && firebase deploy --only hosting -P staging"
   },
   "repository": {
     "type": "git",
