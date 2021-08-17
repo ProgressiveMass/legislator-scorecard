@@ -25,6 +25,7 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
     ogImage: createOpenGraphImage(createPage, {
       path: `og-images/legislator/${ogImageFilename}.png`,
       component: path.resolve(`src/components/legislator/ogImage.js`),
+      waitCondition: 'networkidle0',
       size: {
         width: 630,
         height: 315,
