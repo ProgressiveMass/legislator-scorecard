@@ -14,8 +14,8 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
   const ogImageFilename =
     (pageData.legislator.name + '-' + pageData.legislator.district)
     .toLowerCase()
-    .replaceAll(' ', '-')
-    .replaceAll(/[.,']/g, '')
+    .replace(/ /g, '-')
+    .replace(/[.,']/g, '')
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // stackoverflow.com/questions/990904
 
   const context = {

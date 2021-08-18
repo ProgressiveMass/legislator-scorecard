@@ -24,8 +24,8 @@ houseLegislators.concat(senateLegislators).forEach(legislator => {
   const ogImageFilename =
     (legislator.name + '-' + legislator.district)
     .toLowerCase()
-    .replaceAll(' ', '-')
-    .replaceAll(/[.,']/g, '')
+    .replace(/ /g, '-')
+    .replace(/[.,']/g, '')
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "");  // stackoverflow.com/questions/990904
   const url = `${domain}og-images/legislator/${ogImageFilename}.png`;
   request(url).pipe(fs.createWriteStream('test/tmp/' + ogImageFilename));
