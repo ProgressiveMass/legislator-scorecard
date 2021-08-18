@@ -6918,9 +6918,9 @@ gatsby-plugin-offline@^3.2.18:
     lodash "^4.17.15"
     workbox-build "^4.3.1"
 
-"gatsby-plugin-open-graph-images@https://github.com/dscush/gatsby-plugin-open-graph-images.git":
+"gatsby-plugin-open-graph-images@git+https://git@github.com/dscush/gatsby-plugin-open-graph-images.git":
   version "0.1.5"
-  resolved "git+ssh://git@github.com/dscush/gatsby-plugin-open-graph-images.git#8ea359c2aa3d4e88a7e8589e9357ce661cd1997d"
+  resolved "git+https://git@github.com/dscush/gatsby-plugin-open-graph-images.git#8ea359c2aa3d4e88a7e8589e9357ce661cd1997d"
   dependencies:
     express "^4.17.1"
     puppeteer "^3.3.0"
