@@ -88,7 +88,7 @@ class SearchForm extends React.Component {
         <div className="d-flex justify-content-end">
           <button
             type="button"
-            className="btn btn-secondary btn-sm"
+            className="btn btn-outline-dark btn-sm"
             onClick={this.randomizeLocation}
           >
             randomize location

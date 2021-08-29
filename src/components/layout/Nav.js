@@ -31,17 +31,25 @@ const Nav = () => {
 
         <div className="text-md-right mt-3 mt-md-0">
           <ul className="list-unstyled d-flex" style={{justifyContent: "space-between"}}>
-            <li className="mr-4 mr-md-5">
+            <li className="ml-md-4">
               <Link to="/all-legislators">
                 View All <abbr aria-label="Massachusetts">MA</abbr> Legislators
               </Link>
             </li>
-            <li className="ml-sm-2">
+            <li className="ml-md-4">
               <a
                 href="https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0"
                 target="_blank"
               >
                 F.A.Q. <span className="sr-only">opens in new window</span>
+              </a>
+            </li>
+            <li className="ml-md-4">
+              <a class="btn btn-secondary"
+                href="https://www.progressivemass.com/donate/"
+                target="_blank"
+              >
+                Donate <span className="sr-only">opens in new window</span>
               </a>
             </li>
           </ul>

@@ -18,15 +18,18 @@ header nav a {
   display: inline-block;
   font-weight: bold;
   border-bottom: .3rem solid $white;
+  border-top: .3rem solid $white;
   &:hover, &:focus {
     text-decoration: none;
     color: $primary;
-    border-color: mix($primary, $white, 20%);
-
+    border-bottom-color: mix($primary, $white, 20%);
   }
 
   &.active {
     border-color: $primary;
+  }
+  &.btn {
+    font-weight: bold;
   }
 }
 
