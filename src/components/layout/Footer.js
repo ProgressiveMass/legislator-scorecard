@@ -48,7 +48,7 @@ const Footer = () => {
                 href="https://github.com/ProgressiveMass/legislator-scorecard"
                 target="_blank"
               >
-                publically available on Github.
+                publicly available on Github.
                 <span className="sr-only">opens in new window</span>
               </a>
             </p>
