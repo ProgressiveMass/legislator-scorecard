@@ -14,15 +14,19 @@ export default () => {
               className="row no-gutters align-items-center"
               style={{ minHeight: '50vh' }}
             >
-              <div className="col-md-6 py-md-0">
-                <h1 className="landing__cta">
+              <div className="col-12">
+              </div>
+              <div className="col-md-6 col-lg-7 py-md-0">
+                <h1 className="landing__h1">Progressive Massachusetts Legislator Scorecard</h1>
+                <hr />
+                <div className="landing__cta h1">
                   Are your <b className="font-weight-800">Massachusetts</b>{' '}
                   representatives fighting for your{' '}
                   <b className="font-weight-800">progressive</b> values?
-                </h1>
+                </div>
               </div>
 
-              <div className="col-md-6  blue-background pl-md-5 pt-lg-3">
+              <div className="col-md-6 col-lg-5 blue-background pl-md-5 pt-lg-3">
                 <div className="mx-auto" style={{ maxWidth: '500px' }}>
                   <SearchForm />
                 </div>

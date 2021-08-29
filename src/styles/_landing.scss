@@ -11,18 +11,34 @@
 .landing__header--1 {
   padding: 5rem 0;
 
-  .landing__cta {
-    font-weight: 300;
-    font-size: 2.4rem;
+  hr {
+    border-top-color: $primary;
+    width: 50%;
     @include media-breakpoint-up(md) {
-      font-size: 3rem;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-weight: 300;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+  .landing__cta, landing__h1 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
       text-align: left;
     }
     @include media-breakpoint-up(lg) {
-      font-size: 3.4rem;
+      font-size: 2.2rem;
     }
     @include media-breakpoint-up(xl) {
-      font-size: 3.6rem;
+      font-size: 2.4rem;
     }
   }
   position: relative;
