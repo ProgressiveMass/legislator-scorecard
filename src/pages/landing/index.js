@@ -6,7 +6,7 @@ import Layout from '../../components/layout'
 export default () => {
   return (
     <Layout>
-      <SEO title="Find my MA legislators" description="Are your Massachusetts representatives fighting for your progressive values?" />
+      <SEO description="Are your Massachusetts representatives fighting for your progressive values?" />
       <section className="landing__header">
         <div className="heading-font landing__header--1">
           <div className="module-container">
