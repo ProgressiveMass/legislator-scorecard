@@ -20,10 +20,10 @@ const Footer = () => {
               />
             </a>
             <p>
-              You can support Progressive Mass by becoming{' '}
-              <a href="https://progressivemass.nationbuilder.com/contribute">
-                a contributing member
-              </a>
+              You can support Progressive Mass by{' '}
+              <a href="https://www.progressivemass.com/organize/membership/">
+                becoming a member
+              </a>.
             </p>
           </div>
         </div>
