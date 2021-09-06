@@ -43,7 +43,7 @@ export default () => {
           <div className="col-md-5 offset-md-1 pr-md-3 mb-5 mb-md-0">
             <img
               src={require('./images/cards.png')}
-              alt="snap shots of three different Progressive Massachusetts Legislator Report Cards"
+              alt="Examples of the Progressive Massachusetts Legislator Report Cards for three legislators"
               className="img-fluid mx-auto d-block"
               style={{ maxHeight: '500px' }}
             />
@@ -84,7 +84,7 @@ export default () => {
                 <h3 className="h4">
                   <img
                     src={require('./images/fine_print.svg')}
-                    alt=""
+                    alt="A page of small text with magnifying glass over it"
                     style={{ width: '80px' }}
                     className="my-4"
                   />
@@ -104,7 +104,7 @@ export default () => {
                 <h3 className="h4">
                   <img
                     src={require('./images/legislator.svg')}
-                    alt=""
+                    alt="A person reading a book"
                     style={{ width: '80px' }}
                     className="my-4"
                   />
@@ -125,7 +125,7 @@ export default () => {
                 <h3 className="h4">
                   <img
                     src={require('./images/collaboration.svg')}
-                    alt=""
+                    alt="Two people having a conversation"
                     style={{ width: '80px' }}
                     className="my-4"
                   />

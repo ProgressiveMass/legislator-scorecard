@@ -24,7 +24,7 @@ const LegislatorRow = ({ d, i, chamber }) => {
             <LazyLoad once height="4rem" offset={100}>
               <img
                 src={d.image}
-                alt=""
+                alt={'Photo of ' + d.name}
                 className="legislator-list__profile-img"
                 onError={(e) => {
                   if (e.target.src !== window.location.origin + defaultPhoto) {

@@ -15,7 +15,7 @@ const Footer = () => {
             >
               <img
                 src={progressiveMassLogo}
-                alt="Progressive Massachusetts"
+                alt="The logo for Progressive Massachusetts"
                 className="img-fluid"
               />
             </a>

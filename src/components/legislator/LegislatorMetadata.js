@@ -20,7 +20,7 @@ const LegislatorMetadata = props => {
                 {props.data.image ? (
                   <img
                     src={props.data.image}
-                    alt="legislator profile picture"
+                    alt={'Photo of ' + props.data.name}
                     className="legislator-portrait"
                     onError={(e) => {
                       if (e.target.src !== window.location.origin + defaultPhoto) {

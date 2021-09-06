@@ -12,7 +12,7 @@ const Nav = () => {
         <Link to="/" className="header__home-link d-flex align-items-center">
           <img
             src={LogoImg}
-            alt=""
+            alt="The logo for the Progressive Massachusetts Legislator Scorecard"
             style={{ width: '35px', marginRight: '.7rem' }}
           />
 

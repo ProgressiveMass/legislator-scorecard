@@ -29,7 +29,7 @@ const LegislatorOgImage = ({ pageContext: { chamber, pageData } }) => {
             {pageData.legislator.image ? (
               <img
                 src={pageData.legislator.image}
-                alt="legislator profile picture"
+                alt={'Photo of ' + pageData.legislator.name}
                 className="legislator-portrait-social"
                 onError={(e) => {
                   if (e.target.src !== window.location.origin + defaultPhoto) {
