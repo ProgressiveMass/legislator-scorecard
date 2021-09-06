@@ -45,7 +45,7 @@ const Nav = () => {
               </a>
             </li>
             <li className="ml-md-4">
-              <a class="btn btn-secondary"
+              <a className="btn btn-secondary"
                 href="https://www.progressivemass.com/donate/"
                 target="_blank"
               >
