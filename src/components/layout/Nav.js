@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import LogoImg from '../../images/scorecard-logo.svg'
+import LogoImg from '../../images/scorecard-logo.png'
 
 const Nav = () => {
   return (
@@ -13,20 +13,10 @@ const Nav = () => {
           <img
             src={LogoImg}
             alt="The logo for the Progressive Massachusetts Legislator Scorecard"
-            style={{ width: '35px', marginRight: '.7rem' }}
+            style={{ maxHeight: '45px', marginRight: '.7rem' }}
           />
+          <span className="sr-only">Progressive Massachusetts Legislative Scorecard</span>
 
-          <span>
-            <span
-              className="text-uppercase mb-0 d-block"
-              style={{ fontWeight: 'normal', fontSize: '.9rem' }}
-            >
-              Progressive Massachusetts
-            </span>
-            <span className="h5 mb-0 d-block" style={{ fontSize: '1.4rem' }}>
-              Legislator Scorecard
-            </span>
-          </span>
         </Link>
 
         <div className="text-md-right mt-3 mt-md-0">
