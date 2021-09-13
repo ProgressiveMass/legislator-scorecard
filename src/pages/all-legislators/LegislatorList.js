@@ -206,7 +206,7 @@ class LegislatorList extends React.Component {
             </thead>
             <tbody>
               {data.map((d, i) => (
-                <LegislatorRow d={d} i={i} chamber={this.props.chamber} />
+                <LegislatorRow key={d.id} d={d} i={i} chamber={this.props.chamber} />
               ))}
             </tbody>
           </table>
