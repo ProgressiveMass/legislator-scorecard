@@ -43,7 +43,7 @@ const InfoPopover = ({ title, position, text }) => (
         <img
           src={require('../images/help.svg')}
           style={{ height: '18px', position: 'relative', top: '1px' }}
-          alt=""
+          alt="more information"
         />
         <span className="sr-only">more information</span>
       </button>

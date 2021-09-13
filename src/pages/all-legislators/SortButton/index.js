@@ -6,9 +6,9 @@ import sortArrowSelected from './sort-arrows-selected.svg'
 const SortButton = ({ currentSort = [], sort, onClick, title }) => {
   const image =
     currentSort[0] === sort ? (
-      <img src={sortArrowSelected} alt="" style={{ maxWidth: '1rem' }} />
+      <img src={sortArrowSelected} alt="Legislators are sorted by this column - click to reverse sorting" style={{ maxWidth: '1rem' }} />
     ) : (
-      <img src={sortArrowFaded} alt="" style={{ maxWidth: '1rem' }} />
+      <img src={sortArrowFaded} alt="Click to sort legislators by this column" style={{ maxWidth: '1rem' }} />
     )
 
   const rotated = currentSort[0] === sort && currentSort[1] === 'desc'
