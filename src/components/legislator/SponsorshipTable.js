@@ -58,14 +58,15 @@ const description = (
   <>
     Cosponsoring legislation is an important way for a legislator to help put
     momentum behind certain bills. To learn more about which bills Progressive
-    Mass thinks are most important to support, you can view the{' '}
+    Mass thinks are most important to support, you can view{' '}
     <a
       className="font-weight-bold"
       target="_blank"
-      href="https://d3n8a8pro7vhmx.cloudfront.net/progressivemass/pages/5393/attachments/original/1553983553/2019_PM_Fact_Sheet_Compilation_March_2019.pdf"
+      href="http://www.progressivemass.com/agenda/"
     >
-      guide to progressive legislation for the 2019-2020 term.
+      our Legislative Agenda
     </a>
+    .
   </>
 )
 
