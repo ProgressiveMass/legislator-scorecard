@@ -8,47 +8,43 @@ export default class Rating extends React.Component {
     super(props)
     this.renderVoteSection = this.renderVoteSection.bind(this)
     this.renderCosponsorshipSection = this.renderCosponsorshipSection.bind(this)
-    this.renderMedianDem = this.renderMedianDem.bind(this)
+    this.renderMedians = this.renderMedians.bind(this)
   }
 
-  renderMedianDem() {
-    if (this.props.chamber === 'senate') {
-      return (
+  renderMedians() {
+    return (
+      <div className="d-flex">
         <div className="flex-grow mr-2">
-          <div className="average-data">Median Sen. Democrat</div>
+          <div className="average-data">
+            Median {this.props.chamber === 'senate' ? 'Sen.' : 'House'} Democrat
+          </div>
           <ProgressBar
             width={this.props.rating.votes.cumulative.median.democrat}
           />
         </div>
-      )
-    } else if (this.props.chamber === 'house') {
-      return (
-        <div className="flex-grow mr-2">
-          <div className="average-data">Median House Democrat</div>
+        <div className="flex-grow ml-2">
+          <div className="average-data">
+            Median {this.props.chamber === 'senate' ? 'Sen.' : 'House'}{' '}
+            Republican
+          </div>
           <ProgressBar
-            width={this.props.rating.votes.cumulative.median.democrat}
+            width={this.props.rating.votes.cumulative.median.republican}
           />
         </div>
-      )
-    }
+      </div>
+    )
   }
 
   renderVoteSection() {
-    const fontSize = Math.min(34 - this.props.lastName.length, 18);
+    const fontSize = Math.min(34 - this.props.lastName.length, 18)
     return (
       <div>
         <div className="sr-only">
           <h3>Vote information</h3>
           <p id="sr-stats">
-            {`Voted with the progressive position ${
-              this.props.rating.votes.score
-            } percent of the time.`}
-            {`The median democrat progressive rating was ${
-              this.props.rating.votes.cumulative.median.democrat
-            } percent.`}
-            {`The median republican progressive rating was ${
-              this.props.rating.votes.cumulative.median.republican
-            } percent.`}
+            {`Voted with the progressive position ${this.props.rating.votes.score} percent of the time.`}
+            {`The median democrat progressive rating was ${this.props.rating.votes.cumulative.median.democrat} percent.`}
+            {`The median republican progressive rating was ${this.props.rating.votes.cumulative.median.republican} percent.`}
           </p>
         </div>
 
@@ -66,18 +62,7 @@ export default class Rating extends React.Component {
             </b>
             <ProgressBarWContext data={this.props.rating.votes} large />
           </div>
-          <div className="d-flex">
-            {this.renderMedianDem()}
-            <div className="flex-grow ml-2">
-              <div className="average-data">
-                Median {this.props.chamber === 'senate' ? 'Sen.' : 'House'}{' '}
-                Republican
-              </div>
-              <ProgressBar
-                width={this.props.rating.votes.cumulative.median.republican}
-              />
-            </div>
-          </div>
+          {this.renderMedians()}
         </div>
       </div>
     )
