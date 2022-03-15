@@ -26,9 +26,9 @@ const LegislatorRow = ({ d, i, chamber }) => {
                 src={d.image}
                 alt={'Photo of ' + d.name}
                 className="legislator-list__profile-img"
-                onError={(e) => {
+                onError={e => {
                   if (e.target.src !== window.location.origin + defaultPhoto) {
-                    e.target.src = defaultPhoto;
+                    e.target.src = defaultPhoto
                   }
                 }}
               />
@@ -47,7 +47,7 @@ const LegislatorRow = ({ d, i, chamber }) => {
         </a>
       </td>
       <td data-label="Party">{d.party.slice(0, 1)}</td>
-      <td data-label="Progressive Rating (2019-2020)">
+      <td data-label="Progressive Rating (2021-2022)">
         <div style={{ maxWidth: '300px' }}>
           <ProgressBar data={d} />
         </div>
@@ -199,14 +199,19 @@ class LegislatorList extends React.Component {
                     onClick={this.setSort}
                     sort="score"
                     currentSort={this.state.sort}
-                    title="Prog. Rating (2019-2020)"
+                    title="Prog. Rating (2021-2022)"
                   />
                 </th>
               </tr>
             </thead>
             <tbody>
               {data.map((d, i) => (
-                <LegislatorRow key={d.id} d={d} i={i} chamber={this.props.chamber} />
+                <LegislatorRow
+                  key={d.id}
+                  d={d}
+                  i={i}
+                  chamber={this.props.chamber}
+                />
               ))}
             </tbody>
           </table>

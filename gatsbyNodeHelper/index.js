@@ -4,7 +4,7 @@ const senateLegislators = require('../src/data/senate_legislators.json')
 const buildVoteCumulativeData = require('./buildVoteCumulativeData')
 const buildSponsorshipCumulativeData = require('./buildSponsorshipCumulativeData')
 
-const voteSummaryYear = 2019
+const voteSummaryYear = 2021
 const sponsorshipSummaryYear = 2021
 
 const legislatorData = {
@@ -49,7 +49,9 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
     })
     if (legislatorSponsorshipEntry === undefined) {
       termData.sponsorship = []
-      console.warn(`${pageData.legislator.name} didn't have sponsorship data available for ${year}`)
+      console.warn(
+        `${pageData.legislator.name} didn't have sponsorship data available for ${year}`
+      )
     } else {
       const legislatorSponsorship = legislatorSponsorshipEntry.data
 
@@ -81,7 +83,9 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
       })
       if (legislatorVotesEntry === undefined) {
         termData.votes = []
-        console.warn(`${pageData.legislator.name} didn't have vote data available for ${year}`)
+        console.warn(
+          `${pageData.legislator.name} didn't have vote data available for ${year}`
+        )
       } else {
         const legislatorVotes = legislatorVotesEntry.data
 

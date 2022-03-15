@@ -5,12 +5,12 @@ import LegislatorList from './LegislatorList'
 import Layout from '../../components/layout'
 import { getLastName } from '../../utilities'
 
-const mostRecentYear = 2019
+const mostRecentYear = 2021
 
 const legislatorQuery = graphql`
   {
     dataJson {
-      _2019 {
+      _2021 {
         houseVotes {
           id
           score
