@@ -5,7 +5,9 @@ import LegislatorList from './LegislatorList'
 import Layout from '../../components/layout'
 import { getLastName } from '../../utilities'
 
+// Ideally, these should not be hard-coded here. We should fix this some day.
 const mostRecentYear = 2021
+const mostRecentSessionNumber = '192nd'
 
 const legislatorQuery = graphql`
   {
@@ -92,13 +94,21 @@ const AllLegislators = () => {
     {
       title: 'House Reps',
       component: (
-        <LegislatorList data={legislatorMetadata.houseReps} chamber="lower" />
+        <LegislatorList
+          data={legislatorMetadata.houseReps}
+          chamber="lower"
+          sessionNumber={mostRecentSessionNumber}
+        />
       ),
     },
     {
       title: 'Senators',
       component: (
-        <LegislatorList data={legislatorMetadata.senators} chamber="upper" />
+        <LegislatorList
+          data={legislatorMetadata.senators}
+          chamber="upper"
+          sessionNumber={mostRecentSessionNumber}
+        />
       ),
     },
   ].map(t => {

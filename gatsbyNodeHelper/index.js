@@ -95,6 +95,9 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
             yourLegislator: legislatorVotes[rollCallNumber],
           }
         })
+        termData.score = legislatorVotesEntry.score
+        termData.recordedVotePercentage =
+          legislatorVotesEntry.recordedVotePercentage
       }
     }
     return termData

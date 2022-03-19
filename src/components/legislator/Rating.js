@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ProgressBarWContext from '../progressBar'
 import ProgressBar from '../progressBar/ProgressBar'
+import { getSessionNumber } from '../../utilities'
 
 export default class Rating extends React.Component {
   constructor(props) {
@@ -37,6 +38,9 @@ export default class Rating extends React.Component {
 
   renderVoteSection() {
     const fontSize = Math.min(34 - this.props.lastName.length, 18)
+    const sessionNumber = getSessionNumber(
+      this.props.rating.votes.cumulative.term
+    )
     return (
       <div>
         <div className="sr-only">
@@ -60,7 +64,11 @@ export default class Rating extends React.Component {
                 ({this.props.rating.votes.cumulative.term})
               </span>
             </b>
-            <ProgressBarWContext data={this.props.rating.votes} large />
+            <ProgressBarWContext
+              data={this.props.rating.votes}
+              large
+              sessionNumber={sessionNumber}
+            />
           </div>
           {this.renderMedians()}
         </div>

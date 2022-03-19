@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Tabs from 'react-responsive-tabs'
 import TermLayout from './TermLayout'
+import ProgressBarWContext from '../progressBar'
 import { getSessionNumber } from '../../utilities'
 
 export const SessionTabs = ({ terms, chamber, lastName }) => {
@@ -12,6 +13,15 @@ export const SessionTabs = ({ terms, chamber, lastName }) => {
         <div>
           <div>{d.term} </div>
           <div style={{ fontSize: '1rem' }}>{sessionNumber} Session</div>
+          <div
+            style={{
+              marginLeft: '8%',
+              marginRight: '8%',
+              marginTop: '7px',
+            }}
+          >
+            <ProgressBarWContext data={d} />
+          </div>
         </div>
       ),
       key: d.term,

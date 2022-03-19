@@ -2,23 +2,33 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ProgressBar from './ProgressBar'
 
-const ContextualProgressBar = ({ data: d, large }) => {
+const ContextualProgressBar = ({ data: d, large, sessionNumber }) => {
+  let noScoreClasses =
+    'badge badge-secondary d-block text-center pl-3 py-1 rounded progress-alternative'
+  noScoreClasses = large ? noScoreClasses : noScoreClasses + ' progress small'
   if (!d.score) {
+    const sessionClause = sessionNumber
+      ? ' from ' + sessionNumber + ' sess.'
+      : ''
     return (
-      <div className="badge badge-secondary d-block text-center pl-3 py-1 rounded">
-        N/A:&nbsp; no voting data from 190th sess.
+      <div className={noScoreClasses}>
+        N/A:&nbsp; no voting data{sessionClause}
       </div>
     )
   } else if (d.recordedVotePercentage < 50) {
+    const sessionClause = sessionNumber ? ' of ' + sessionNumber + ' sess.' : ''
     return (
-      <div className="badge badge-secondary d-block text-center pl-3 py-1 rounded">
-        N/A:&nbsp; voted less than 50% of 190th sess.
+      <div className={noScoreClasses}>
+        N/A:&nbsp; voted less than 50%{sessionClause}
       </div>
     )
   } else if (d.score === 'n/a') {
+    const sessionClause = sessionNumber
+      ? ' for ' + sessionNumber + ' sess.'
+      : ''
     return (
-      <div className="badge badge-secondary d-block text-center pl-3 py-1 rounded">
-        N/A:&nbsp; no rating available for 190th sess.
+      <div className={noScoreClasses}>
+        N/A:&nbsp; no rating available{sessionClause}
       </div>
     )
   } else if (d.recordedVotePercentage < 90) {

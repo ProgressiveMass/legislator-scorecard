@@ -7,7 +7,7 @@ import ProgressBar from '../../components/progressBar'
 import InfoPopover from '../../components/InfoPopover'
 import defaultPhoto from '../../images/default-photo.jpg'
 
-const LegislatorRow = ({ d, i, chamber }) => {
+const LegislatorRow = ({ d, i, chamber, sessionNumber }) => {
   return (
     <tr
       key={d.id}
@@ -49,7 +49,7 @@ const LegislatorRow = ({ d, i, chamber }) => {
       <td data-label="Party">{d.party.slice(0, 1)}</td>
       <td data-label="Progressive Rating (2021-2022)">
         <div style={{ maxWidth: '300px' }}>
-          <ProgressBar data={d} />
+          <ProgressBar data={d} sessionNumber={sessionNumber} />
         </div>
       </td>
     </tr>
@@ -211,6 +211,7 @@ class LegislatorList extends React.Component {
                   d={d}
                   i={i}
                   chamber={this.props.chamber}
+                  sessionNumber={this.props.sessionNumber}
                 />
               ))}
             </tbody>
@@ -224,6 +225,7 @@ class LegislatorList extends React.Component {
 LegislatorList.propTypes = {
   data: PropTypes.array.isRequired,
   chamber: PropTypes.string.isRequired,
+  sessionNumber: PropTypes.string.isRequired,
 }
 
 export default LegislatorList
