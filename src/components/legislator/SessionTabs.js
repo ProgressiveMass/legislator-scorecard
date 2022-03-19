@@ -2,21 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Tabs from 'react-responsive-tabs'
 import TermLayout from './TermLayout'
-
-const termDict = {
-  '2015-2016': '189th Session',
-  '2017-2018': '190th Session',
-  '2019-2020': '191st Session',
-  '2021-2022': '192nd Session',
-}
+import { getSessionNumber } from '../../utilities'
 
 export const SessionTabs = ({ terms, chamber, lastName }) => {
   const tabItems = terms.map((d, i) => {
+    const sessionNumber = getSessionNumber(d.term)
     return {
       title: (
         <div>
           <div>{d.term} </div>
-          <div style={{ fontSize: '1rem' }}>{termDict[d.term]}</div>
+          <div style={{ fontSize: '1rem' }}>{sessionNumber} Session</div>
         </div>
       ),
       key: d.term,
