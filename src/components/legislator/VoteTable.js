@@ -30,7 +30,7 @@ const LegislatorVote = ({ vote, progressivePosition }) => {
   } else if (vote === '-') {
     badgeText = oppositeDict(progressivePosition)
   } else if (vote === 'NV') {
-    badgeText = 'Abstain'
+    badgeText = 'Absent'
   } else if (vote === 'NVP') {
     badgeText = 'Present'
   }
