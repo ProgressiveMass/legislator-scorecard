@@ -57,7 +57,7 @@ class SearchForm extends React.Component {
   onFormSubmit = e => {
     e.preventDefault()
     this.setState({ loading: true })
-    const address = this.state.street + ' MA ' + this.state.city
+    const address = this.state.street + ', ' + this.state.city + ', MA'
 
     return axios
       .post(`${process.env.GATSBY_SERVERLESS_ENDPOINT}/local-legislators`, {
