@@ -4,12 +4,11 @@ import SEO from '../seo'
 import LegislatorMetadata from './LegislatorMetadata'
 import SessionTabs from './SessionTabs'
 import Layout from '../layout'
-import { getLastName } from '../../utilities'
 import YourLegislatorTabs from './YourLegislatorTabs'
 
 const LegislatorPage = ({ pageContext: { chamber, id, pageData, ogImage } }) => {
   const legislatorTitle = chamber === 'senate' ? 'Senator' : 'Rep'
-  const lastName = getLastName(pageData.legislator.name)
+  const lastName = pageData.legislator.familyName
   const seoTitle = `${legislatorTitle} ${
     pageData.legislator.name
   }'s Voting Record`

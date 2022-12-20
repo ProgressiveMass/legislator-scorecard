@@ -9,6 +9,8 @@ query getLegislatorInfo($organization: String, $cursor: String) {
       node {
         id
         name
+        givenName
+        familyName
         image
         sources {
           url
@@ -93,6 +95,18 @@ const processData = edges => {
         data.party = data.party[0].organization.name
         delete data.sources
         delete data.contactDetails
+        if (!data.givenName) {
+          data.givenName = data.name.split(/\s/)[0]
+          console.warn(
+            `${data.name} missing givenName, using ${data.givenName}`
+          )
+        }
+        if (!data.familyName) {
+          data.familyName = getFamilyName(data.name)
+          console.warn(
+            `${data.name} missing familyName, using ${data.familyName}`
+          )
+        }
         return data
       } catch (e) {
         console.error('Failed to process data for ' + data.name + ' (' + data.id + ')')
@@ -132,6 +146,16 @@ const requestAllData = organization => {
     cursor: null,
     data,
   })
+}
+
+const getFamilyName = name => {
+  const splitName = name.split(/\s/)
+  // last name if there's a final thing like "jr" or "the third"
+  const possibleLast = splitName.find(item => item.match(/,$/))
+  const familyName = possibleLast
+    ? possibleLast.replace(',', '')
+    : splitName.slice(-1)[0]
+  return familyName
 }
 
 module.exports = () => {

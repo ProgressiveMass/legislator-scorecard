@@ -1,13 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import LegislatorMetadata from './LegislatorMetadata'
 import Rating from './Rating'
 import defaultPhoto from '../../images/default-photo.jpg'
-import { getLastName } from '../../utilities'
 
 const LegislatorOgImage = ({ pageContext: { chamber, pageData } }) => {
   const legislatorTitle = chamber === 'senate' ? 'Sen.' : 'Rep.'
-  const lastName = getLastName(pageData.legislator.name)
+  const lastName = pageData.legislator.familyName
   var partySuffix
   if (pageData.legislator.party === 'Democratic') {
     partySuffix = '(D)';

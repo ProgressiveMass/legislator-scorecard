@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Tabs from 'react-responsive-tabs'
 import LegislatorList from './LegislatorList'
 import Layout from '../../components/layout'
-import { getLastName } from '../../utilities'
 
 // Ideally, these should not be hard-coded here. We should fix this some day.
 const mostRecentYear = 2021
@@ -30,6 +29,8 @@ const legislatorQuery = graphql`
         node {
           id
           name
+          givenName
+          familyName
           party
           district
           image
@@ -41,6 +42,8 @@ const legislatorQuery = graphql`
         node {
           id
           name
+          givenName
+          familyName
           party
           district
           image
@@ -58,9 +61,10 @@ const createLegislatorList = (legislatorArr, voteDataArr) => {
   return legislatorArr
     .map(({ node }) => node)
     .map(data => {
-      const lastName = getLastName(data.name)
-      const firstName = data.name.split(/\s/)[0]
-      return { ...data, name: [lastName, firstName].join(', ') }
+      return {
+        ...data,
+        name: [data.familyName, data.givenName].join(', '),
+      }
     })
     .map(data => {
       const relevantVoteData = voteData[data.id]

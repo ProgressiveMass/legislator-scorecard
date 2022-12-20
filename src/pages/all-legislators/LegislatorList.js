@@ -37,7 +37,7 @@ const LegislatorRow = ({ d, i, chamber, sessionNumber }) => {
             {d.specialElectionUrl ? (
               <InfoPopover
                 text={`${chamber === 'upper' ? 'Senator' : 'Representative'} ${
-                  d.name.split(',')[0]
+                  d.givenName
                 } is no longer a member of the Massachusetts Legislature. There is a <a target="_blank" href="${
                   d.specialElectionUrl
                 }">special election</a> pending to elect a replacement.`}
