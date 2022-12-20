@@ -49,9 +49,6 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
     })
     if (legislatorSponsorshipEntry === undefined) {
       termData.sponsorship = []
-      console.warn(
-        `${pageData.legislator.name} didn't have sponsorship data available for ${year}`
-      )
     } else {
       const legislatorSponsorship = legislatorSponsorshipEntry.data
 
@@ -83,9 +80,6 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
       })
       if (legislatorVotesEntry === undefined) {
         termData.votes = []
-        console.warn(
-          `${pageData.legislator.name} didn't have vote data available for ${year}`
-        )
       } else {
         const legislatorVotes = legislatorVotesEntry.data
 
