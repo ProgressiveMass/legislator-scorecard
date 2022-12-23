@@ -60,13 +60,13 @@ const createLegislatorList = (legislatorArr, voteDataArr) => {
   }, {})
   return legislatorArr
     .map(({ node }) => node)
-    .map(data => {
+    .map((data) => {
       return {
         ...data,
         name: [data.familyName, data.givenName].join(', '),
       }
     })
-    .map(data => {
+    .map((data) => {
       const relevantVoteData = voteData[data.id]
       return {
         ...data,
@@ -100,7 +100,7 @@ const AllLegislators = () => {
       component: (
         <LegislatorList
           data={legislatorMetadata.houseReps}
-          chamber="lower"
+          chamber='lower'
           sessionNumber={mostRecentSessionNumber}
         />
       ),
@@ -110,12 +110,12 @@ const AllLegislators = () => {
       component: (
         <LegislatorList
           data={legislatorMetadata.senators}
-          chamber="upper"
+          chamber='upper'
           sessionNumber={mostRecentSessionNumber}
         />
       ),
     },
-  ].map(t => {
+  ].map((t) => {
     return {
       title: t.title,
       getContent: () => t.component,
@@ -124,14 +124,13 @@ const AllLegislators = () => {
 
   return (
     <Layout>
-      <div className="tinted-background">
+      <div className='tinted-background'>
         <h1
-          className="h2 mt-4 font-weight-light text-center"
-          style={{ marginBottom: '2rem' }}
-        >
+          className='h2 mt-4 font-weight-light text-center'
+          style={{ marginBottom: '2rem' }}>
           All Current MA Legislators
         </h1>
-        <div className="mt-4 inverted-tabs">
+        <div className='mt-4 inverted-tabs'>
           <Tabs items={tabItems} showMore={false} transform={false} />
         </div>
       </div>

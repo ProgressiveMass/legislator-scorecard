@@ -18,7 +18,7 @@ export default class TermLayout extends React.Component {
   }
 
   render() {
-    const onTabClick = active => e => {
+    const onTabClick = (active) => (e) => {
       e.preventDefault()
       this.setState({ active })
     }
@@ -26,46 +26,60 @@ export default class TermLayout extends React.Component {
     const hasSponsorship =
       this.props.data.sponsorship && this.props.data.sponsorship.length
     const sponsorshipTab = (
-      <li className="nav-item">
-        <a
+      <li className='nav-item'>
+        <div
+          role='link'
           className={`nav-link ${
             this.state.active === sponsorship ? 'active' : ''
           } ${!hasSponsorship ? 'disabled' : ''}`}
-          href="#"
+          href='#'
           aria-current={this.state.active === sponsorship ? 'page' : false}
           onClick={
             hasSponsorship
               ? onTabClick('sponsorship')
-              : function(e) {
+              : function (e) {
                   e.preventDefault()
                 }
           }
-          disabled={!hasSponsorship}
-        >
+          onKeyDown={
+            hasSponsorship
+              ? onTabClick('sponsorship')
+              : function (e) {
+                  e.preventDefault()
+                }
+          }
+          disabled={!hasSponsorship}>
           Cosponsorship
-        </a>
+        </div>
       </li>
     )
     const hasVotes = this.props.data.votes && this.props.data.votes.length
     const voteTab = (
-      <li className="nav-item">
-        <a
+      <li className='nav-item'>
+        <div
+          role='link'
           className={`nav-link ${this.state.active === votes ? 'active' : ''} ${
             !hasVotes ? 'disabled' : ''
           }`}
           aria-current={this.state.active === votes ? 'page' : false}
-          href="#"
+          href='#'
           onClick={
             hasVotes
               ? onTabClick('votes')
-              : function(e) {
+              : function (e) {
                   e.preventDefault()
                 }
           }
-          disabled={!hasVotes}
-        >
+          onKeyDown={
+            hasVotes
+              ? onTabClick('votes')
+              : function (e) {
+                  e.preventDefault()
+                }
+          }
+          disabled={!hasVotes}>
           Voting Record
-        </a>
+        </div>
       </li>
     )
 
@@ -84,8 +98,8 @@ export default class TermLayout extends React.Component {
       )
     }
     return (
-      <div className="white-background mb-4">
-        <ul className="nav justify-content-center">
+      <div className='white-background mb-4'>
+        <ul className='nav justify-content-center'>
           {sponsorshipTab}
           {voteTab}
         </ul>

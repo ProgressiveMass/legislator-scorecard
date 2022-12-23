@@ -14,17 +14,17 @@ export default class Rating extends React.Component {
 
   renderMedians() {
     return (
-      <div className="d-flex">
-        <div className="flex-grow mr-2">
-          <div className="average-data">
+      <div className='d-flex'>
+        <div className='flex-grow mr-2'>
+          <div className='average-data'>
             Median {this.props.chamber === 'senate' ? 'Sen.' : 'House'} Democrat
           </div>
           <ProgressBar
             width={this.props.rating.votes.cumulative.median.democrat}
           />
         </div>
-        <div className="flex-grow ml-2">
-          <div className="average-data">
+        <div className='flex-grow ml-2'>
+          <div className='average-data'>
             Median {this.props.chamber === 'senate' ? 'Sen.' : 'House'}{' '}
             Republican
           </div>
@@ -43,9 +43,9 @@ export default class Rating extends React.Component {
     )
     return (
       <div>
-        <div className="sr-only">
+        <div className='sr-only'>
           <h3>Vote information</h3>
-          <p id="sr-stats">
+          <p id='sr-stats'>
             {`Voted with the progressive position ${this.props.rating.votes.score} percent of the time.`}
             {`The median democrat progressive rating was ${this.props.rating.votes.cumulative.median.democrat} percent.`}
             {`The median republican progressive rating was ${this.props.rating.votes.cumulative.median.republican} percent.`}
@@ -53,14 +53,13 @@ export default class Rating extends React.Component {
         </div>
 
         <div aria-hidden>
-          <div className="mb-2">
+          <div className='mb-2'>
             <b
-              className="d-block mb-1  heading-font"
-              style={{ fontSize: fontSize }}
-            >
+              className='d-block mb-1  heading-font'
+              style={{ fontSize: fontSize }}>
               {this.props.title}&nbsp;
-              {this.props.lastName}'s votes&nbsp;
-              <span className="text-lowercase" style={{ fontSize: '1rem' }}>
+              {this.props.lastName}&#39;s votes&nbsp;
+              <span className='text-lowercase' style={{ fontSize: '1rem' }}>
                 ({this.props.rating.votes.cumulative.term})
               </span>
             </b>
@@ -80,33 +79,30 @@ export default class Rating extends React.Component {
     if (isNaN(this.props.rating.sponsorship.legislator)) return null
 
     return (
-      <div className="mt-4">
+      <div className='mt-4'>
         <h3
           style={{
             fontSize: '18px',
             position: 'relative',
             top: '.5rem',
             fontWeight: 'bold',
-          }}
-        >
+          }}>
           {this.props.title}&nbsp;
           {this.props.lastName} cosponsored
         </h3>
         <div
           style={{ fontSize: '2.5rem' }}
-          className="mb-2 heading-font cosponsorship-summary"
-        >
+          className='mb-2 heading-font cosponsorship-summary'>
           <b
             className={`${
               this.props.rating.sponsorship.legislator > 3
                 ? 'text-primary'
                 : 'text-danger'
-            }`}
-          >
+            }`}>
             {this.props.rating.sponsorship.legislator}
           </b>
           &nbsp;
-          <span className="font-weight-light">
+          <span className='font-weight-light'>
             progressive{' '}
             {this.props.rating.sponsorship.legislator === 1 ? 'bill' : 'bills'}
           </span>
@@ -125,8 +121,8 @@ export default class Rating extends React.Component {
     if (!this.props.rating) return null
 
     return (
-      <div className="progress-component">
-        <h2 className="sr-only">Progressive Ranking Summary</h2>
+      <div className='progress-component'>
+        <h2 className='sr-only'>Progressive Ranking Summary</h2>
         {this.renderVoteSection()}
         {this.renderCosponsorshipSection()}
       </div>

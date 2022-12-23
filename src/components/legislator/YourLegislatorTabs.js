@@ -17,12 +17,11 @@ const YourLegislatorTabs = ({ currentLegislator }) => {
 
   const selectedClass = 'RRT__tab--selected'
   return (
-    <div className="mt-5 d-md-flex your-legislator-tabs">
+    <div className='mt-5 d-md-flex your-legislator-tabs'>
       <div
         className={`RRT__tab RRT__tab--first ${
           search.yourRep ? selectedClass : ''
-        }`}
-      >
+        }`}>
         {search.yourRep ? (
           'Your Senator'
         ) : (
@@ -40,8 +39,7 @@ const YourLegislatorTabs = ({ currentLegislator }) => {
               search.yourSenator
                 ? '#'
                 : `/legislator/${search.yourRep}?yourSenator=${urlId}`
-            }
-          >
+            }>
             Your House Rep
           </Link>
         )}

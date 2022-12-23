@@ -11,22 +11,21 @@ const LegislatorRow = ({ d, i, chamber, sessionNumber }) => {
   return (
     <tr
       key={d.id}
-      className="legislator-row"
-      onClick={e => {
+      className='legislator-row'
+      onClick={(e) => {
         e.preventDefault()
         navigate(`/legislator/${d.id.replace('ocd-person/', '')}`)
-      }}
-    >
+      }}>
       <td style={{ verticalAlign: 'middle' }}>{i + 1}</td>
       <td data-label={chamber === 'upper' ? 'Senator' : 'Representative'}>
-        <a href="#" className="legislator-row__name">
+        <a href='#/' className='legislator-row__name'>
           <b>
-            <LazyLoad once height="4rem" offset={100}>
+            <LazyLoad once height='4rem' offset={100}>
               <img
                 src={d.image}
                 alt={'Photo of ' + d.name}
-                className="legislator-list__profile-img"
-                onError={e => {
+                className='legislator-list__profile-img'
+                onError={(e) => {
                   if (e.target.src !== window.location.origin + defaultPhoto) {
                     e.target.src = defaultPhoto
                   }
@@ -46,8 +45,8 @@ const LegislatorRow = ({ d, i, chamber, sessionNumber }) => {
           </b>
         </a>
       </td>
-      <td data-label="Party">{d.party.slice(0, 1)}</td>
-      <td data-label="Progressive Rating (2021-2022)">
+      <td data-label='Party'>{d.party.slice(0, 1)}</td>
+      <td data-label='Progressive Rating (2021-2022)'>
         <div style={{ maxWidth: '300px' }}>
           <ProgressBar data={d} sessionNumber={sessionNumber} />
         </div>
@@ -69,7 +68,7 @@ class LegislatorList extends React.Component {
   }
 
   sortData(data) {
-    const normalizeSortVal = val => {
+    const normalizeSortVal = (val) => {
       if (!val) {
         return 0
       } else if (typeof val === 'string') {
@@ -132,14 +131,11 @@ class LegislatorList extends React.Component {
 
   filterData(rows = []) {
     const filterRegex = new RegExp('^' + this.state.filter.toLowerCase())
-    return rows.filter(r => {
+    return rows.filter((r) => {
       const names = r.name.split(',')
       return (
-        names.filter(n => {
-          return n
-            .trim()
-            .toLowerCase()
-            .match(filterRegex)
+        names.filter((n) => {
+          return n.trim().toLowerCase().match(filterRegex)
         }).length > 0
       )
     })
@@ -149,57 +145,55 @@ class LegislatorList extends React.Component {
     const data = this.sortData(this.filterData(this.props.data))
 
     return (
-      <div className="white-background pt-5 mb-5">
-        <div className="mx-auto">
+      <div className='white-background pt-5 mb-5'>
+        <div className='mx-auto'>
           <div
-            className="d-md-flex align-items-center mb-5 mb-md-4"
-            style={{ maxWidth: '600px' }}
-          >
+            className='d-md-flex align-items-center mb-5 mb-md-4'
+            style={{ maxWidth: '600px' }}>
             <label
-              htmlFor="filterTable"
-              className="d-inline-block mr-1 mb-0"
-              style={{ minWidth: '240px', marginBottom: 0 }}
-            >
+              htmlFor='filterTable'
+              className='d-inline-block mr-1 mb-0'
+              style={{ minWidth: '240px', marginBottom: 0 }}>
               Filter By Legislator Name:
             </label>
             <input
-              type="text"
-              placeholder="Type a name"
-              id="filterTable"
-              className="form-control"
-              onChange={e => {
+              type='text'
+              placeholder='Type a name'
+              id='filterTable'
+              className='form-control'
+              onChange={(e) => {
                 this.setState({ filter: e.target.value })
                 setTimeout(forceCheck, 1)
               }}
             />
           </div>
 
-          <table className="table mx-auto table-hover table-clickable-rows">
+          <table className='table mx-auto table-hover table-clickable-rows'>
             <thead>
               <tr>
                 <th />
                 <th>
                   <SortButton
                     onClick={this.setSort}
-                    sort="name"
+                    sort='name'
                     currentSort={this.state.sort}
-                    title="Name"
+                    title='Name'
                   />
                 </th>
                 <th>
                   <SortButton
                     onClick={this.setSort}
-                    sort="party"
+                    sort='party'
                     currentSort={this.state.sort}
-                    title="Party"
+                    title='Party'
                   />
                 </th>
                 <th>
                   <SortButton
                     onClick={this.setSort}
-                    sort="score"
+                    sort='score'
                     currentSort={this.state.sort}
-                    title="Prog. Rating (2021-2022)"
+                    title='Prog. Rating (2021-2022)'
                   />
                 </th>
               </tr>

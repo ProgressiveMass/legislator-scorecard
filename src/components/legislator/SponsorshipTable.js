@@ -5,11 +5,11 @@ import LegislatorTable from './LegislatorTable'
 
 const Cosponsorship = ({ indicator }) => {
   if (!indicator) {
-    return <span className="badge badge-clear">N/A</span>
+    return <span className='badge badge-clear'>N/A</span>
   } else if (indicator === 'Y') {
-    return <span className="badge badge-primary">Yes</span>
+    return <span className='badge badge-primary'>Yes</span>
   } else if (indicator === 'N') {
-    return <span className="badge badge-danger">No</span>
+    return <span className='badge badge-danger'>No</span>
   }
 }
 
@@ -27,11 +27,11 @@ const SponsorshipRow = ({
 }) => {
   return (
     <tr>
-      <td className="text-muted" style={{ width: '15%' }}>
-        <div className="font-weight-bold">
+      <td className='text-muted' style={{ width: '15%' }}>
+        <div className='font-weight-bold'>
           {bill_number}&nbsp;
           {showPairedDisclaimer ? (
-            <InfoPopover text="This bill has two distinct versions in the House and Senate, but for the purposes of tracking sponsorship we treat them as a single bill." />
+            <InfoPopover text='This bill has two distinct versions in the House and Senate, but for the purposes of tracking sponsorship we treat them as a single bill.' />
           ) : null}
         </div>
 
@@ -39,12 +39,16 @@ const SponsorshipRow = ({
       </td>
       <td style={{ width: '30%' }}>
         <div>
-          <a href={url} className="font-weight-bold" target="_blank">
+          <a
+            href={url}
+            className='font-weight-bold'
+            target='_blank'
+            rel='noreferrer'>
             {shorthand_title}
           </a>
         </div>
       </td>
-      <td style={{ width: '40%' }} data-label="">
+      <td style={{ width: '40%' }} data-label=''>
         <p>{description}</p>
       </td>
       <td style={{ width: '15%' }} data-label={`${lastName} Cosponsored?`}>
@@ -60,10 +64,10 @@ const description = (
     momentum behind certain bills. To learn more about which bills Progressive
     Mass thinks are most important to support, you can view{' '}
     <a
-      className="font-weight-bold"
-      target="_blank"
-      href="http://www.progressivemass.com/agenda/"
-    >
+      className='font-weight-bold'
+      target='_blank'
+      href='http://www.progressivemass.com/agenda/'
+      rel='noreferrer'>
       our Legislative Agenda
     </a>
     .
@@ -73,7 +77,7 @@ const description = (
 const SponsorshipTable = ({ data: { sponsorship }, lastName }) => {
   return (
     <LegislatorTable
-      title="Cosponsored Bills"
+      title='Cosponsored Bills'
       description={description}
       rowData={sponsorship}
       lastName={lastName}
@@ -84,7 +88,10 @@ const SponsorshipTable = ({ data: { sponsorship }, lastName }) => {
             <th style={{ width: '30%' }}>Title</th>
             <th style={{ width: '40%' }}>
               Summary from{' '}
-              <a href="http://www.progressivemass.com/" target="_blank">
+              <a
+                href='http://www.progressivemass.com/'
+                target='_blank'
+                rel='noreferrer'>
                 Progressive Mass
               </a>
             </th>

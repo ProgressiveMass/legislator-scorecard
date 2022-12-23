@@ -40,8 +40,7 @@ const ContextualProgressBar = ({ data: d, large, sessionNumber }) => {
             lineHeight: 1.3,
             display: 'inline-block',
             marginTop: '.1rem',
-          }}
-        >
+          }}>
           *Missing several scored votes
         </small>
       </div>

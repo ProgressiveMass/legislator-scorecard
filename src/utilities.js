@@ -5,4 +5,4 @@ const termDict = {
   '2021-2022': '192nd',
 }
 
-export const getSessionNumber = yearRange => termDict[yearRange]
+export const getSessionNumber = (yearRange) => termDict[yearRange]

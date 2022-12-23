@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 import axios from 'axios'
 
 const randomLocations = [
@@ -39,7 +39,7 @@ const randomLocations = [
   { street: '1 Skyline Dr', city: 'Worcester' },
 ]
 
-const transformOpenStatesId = id => encodeURI(id.replace('ocd-person/', ''))
+const transformOpenStatesId = (id) => encodeURI(id.replace('ocd-person/', ''))
 
 class SearchForm extends React.Component {
   state = {
@@ -54,7 +54,7 @@ class SearchForm extends React.Component {
     this.setState(randomLocation)
   }
 
-  onFormSubmit = e => {
+  onFormSubmit = (e) => {
     e.preventDefault()
     this.setState({ loading: true })
     const address = this.state.street + ', ' + this.state.city + ', MA'
@@ -63,74 +63,71 @@ class SearchForm extends React.Component {
       .post(`${process.env.GATSBY_SERVERLESS_ENDPOINT}/local-legislators`, {
         address,
       })
-      .then(response => {
+      .then((response) => {
         navigate(
           `/legislator/${transformOpenStatesId(
             response.data.senator
           )}?yourRep=${transformOpenStatesId(response.data.representative)}`
         )
       })
-      .catch(error => {
+      .catch((error) => {
         // TODO: better error handling
         this.setState({ loading: false })
         console.error(error)
       })
   }
 
-  onChange = e => this.setState({ [e.target.name]: e.target.value })
+  onChange = (e) => this.setState({ [e.target.name]: e.target.value })
 
   render() {
     return (
       <form
-        className="search-form mt-5 mb-4 my-md-0 white-background"
-        onSubmit={this.onFormSubmit}
-      >
-        <div className="d-flex justify-content-end">
+        className='search-form mt-5 mb-4 my-md-0 white-background'
+        onSubmit={this.onFormSubmit}>
+        <div className='d-flex justify-content-end'>
           <button
-            type="button"
-            className="btn btn-outline-dark btn-sm"
-            onClick={this.randomizeLocation}
-          >
+            type='button'
+            className='btn btn-outline-dark btn-sm'
+            onClick={this.randomizeLocation}>
             randomize location
           </button>
         </div>
-        <div className="form-group">
+        <div className='form-group'>
           <label>
             Street Address
             <input
               value={this.state.street}
-              type="text"
-              className="form-control"
-              placeholder="123 Main St"
-              name="street"
+              type='text'
+              className='form-control'
+              placeholder='123 Main St'
+              name='street'
               onChange={this.onChange}
             />
           </label>
         </div>
 
-        <div className="form-group">
+        <div className='form-group'>
           <label>
             City
             <input
               value={this.state.city}
-              type="text"
-              className="form-control"
-              placeholder="Cambridge"
-              name="city"
+              type='text'
+              className='form-control'
+              placeholder='Cambridge'
+              name='city'
               onChange={this.onChange}
             />
           </label>
-          <div className="mt-3">Massachusetts</div>
+          <div className='mt-3'>Massachusetts</div>
         </div>
 
-        <div className="mt-4">
+        <div className='mt-4'>
           <button
-            className="btn btn-primary btn-block heading-font"
-            type="submit"
-          >
+            className='btn btn-primary btn-block heading-font'
+            type='submit'>
             {this.state.loading ? (
               <span>
-                <span aria-hidden="true" className="fa fa-spinner fa-pulse" />
+                <span aria-hidden='true' className='fa fa-spinner fa-pulse' />
                 &nbsp;Loading...
               </span>
             ) : (

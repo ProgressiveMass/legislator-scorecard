@@ -6,7 +6,7 @@ import ProgressBarWContext from '../progressBar'
 import { getSessionNumber } from '../../utilities'
 
 export const SessionTabs = ({ terms, chamber, lastName }) => {
-  const tabItems = terms.map((d, i) => {
+  const tabItems = terms.map((d) => {
     const sessionNumber = getSessionNumber(d.term)
     return {
       title: (
@@ -18,8 +18,7 @@ export const SessionTabs = ({ terms, chamber, lastName }) => {
               marginLeft: '8%',
               marginRight: '8%',
               marginTop: '7px',
-            }}
-          >
+            }}>
             <ProgressBarWContext data={d} />
           </div>
         </div>
@@ -41,12 +40,12 @@ export const SessionTabs = ({ terms, chamber, lastName }) => {
   const selectedTabKey = terms[terms.length - 1].term
 
   return (
-    <div className="inverted-tabs">
-      <h2 className="sr-only">Legislative Terms</h2>
+    <div className='inverted-tabs'>
+      <h2 className='sr-only'>Legislative Terms</h2>
       <Tabs
         items={tabItems}
         showMore={false}
-        wrapperClass="inverted-tabs"
+        wrapperClass='inverted-tabs'
         transform={false}
         selectedTabKey={selectedTabKey}
       />
