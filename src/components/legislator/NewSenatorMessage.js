@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
-const NewSenatorMessage = props => {
+const NewSenatorMessage = () => {
   return (
-    <div className="white-background">
-      <p className="lead">
+    <div className='white-background'>
+      <p className='lead'>
         <b>
           We were unable to find votes by this legislator for the 2017-2018
           session.
@@ -15,7 +15,7 @@ const NewSenatorMessage = props => {
       <p>
         You can follow the profile link above to learn more about the current
         state senator, or check out the voting table below to view the previous
-        senator's voting record.
+        senator&#39;s voting record.
       </p>
     </div>
   )

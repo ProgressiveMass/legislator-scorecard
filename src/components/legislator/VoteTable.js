@@ -6,7 +6,7 @@ const LegislatorVote = ({ vote, progressivePosition }) => {
   if (!progressivePosition) return 'error: progressive position not found'
   let badgeClass = 'badge'
 
-  const oppositeDict = position => {
+  const oppositeDict = (position) => {
     if (position.toLowerCase() === 'yes') return 'No'
     else if (position.toLowerCase() === 'no') return 'Yes'
     else return 'N/A'
@@ -42,14 +42,13 @@ const CumulativeVote = ({ yesVotes, noVotes, progressivePosition }) => {
   progressivePosition = progressivePosition || ''
   const yesBlock = (
     <div>
-      <span className="label votes-fw">Yes:</span>&nbsp;
+      <span className='label votes-fw'>Yes:</span>&nbsp;
       <span
         className={`badge ${
           progressivePosition.toLowerCase() === 'yes'
             ? 'badge-primary'
             : 'badge-danger'
-        }`}
-      >
+        }`}>
         {yesVotes}
       </span>
     </div>
@@ -57,14 +56,13 @@ const CumulativeVote = ({ yesVotes, noVotes, progressivePosition }) => {
 
   const noBlock = (
     <div>
-      <span className="label votes-fw">No:</span>&nbsp;
+      <span className='label votes-fw'>No:</span>&nbsp;
       <span
         className={`badge ${
           progressivePosition.toLowerCase() === 'no'
             ? 'badge-primary'
             : 'badge-danger'
-        }`}
-      >
+        }`}>
         {noVotes}
       </span>
     </div>
@@ -106,15 +104,23 @@ const VoteRow = ({
   return (
     <tr>
       <td style={{ width: '15%' }}>
-        <div className="text-muted font-weight-bold">
-          <a href={rollCallUrl} target="_blank" className="muted-link">
+        <div className='text-muted font-weight-bold'>
+          <a
+            href={rollCallUrl}
+            target='_blank'
+            className='muted-link'
+            rel='noreferrer'>
             {bill_number} {roll_call_number}
           </a>
         </div>
         <div>{tags}</div>
       </td>
       <td style={{ width: '25%' }}>
-        <a href={url} target="_blank" className="font-weight-bold">
+        <a
+          href={url}
+          target='_blank'
+          className='font-weight-bold'
+          rel='noreferrer'>
           {title}
           <div />
         </a>
@@ -122,8 +128,8 @@ const VoteRow = ({
       <td style={{ width: '35%' }}>
         <p>{description}</p>
         <p>
-          <span className="label">Progressive Position:</span>&nbsp;
-          <span className="badge badge-primary">{progressivePosition}</span>
+          <span className='label'>Progressive Position:</span>&nbsp;
+          <span className='badge badge-primary'>{progressivePosition}</span>
         </p>
       </td>
       <td style={{ width: '12.5%' }} data-label={`${lastName}'s Vote`}>
@@ -132,7 +138,7 @@ const VoteRow = ({
           progressivePosition={progressivePosition}
         />
       </td>
-      <td style={{ width: '12.5%' }} data-label="Total Votes">
+      <td style={{ width: '12.5%' }} data-label='Total Votes'>
         <CumulativeVote
           yesVotes={yesVotes}
           noVotes={noVotes}
@@ -149,9 +155,9 @@ const description = (
     where an important progressive advancement (or stopping a bad policy) is at
     stake.{' '}
     <a
-      href="https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0"
-      target="_blank"
-    >
+      href='https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0'
+      target='_blank'
+      rel='noreferrer'>
       Learn more about the benefits and limitations of a scorecard.
     </a>
   </>
@@ -160,7 +166,7 @@ const description = (
 const VoteTable = ({ data: { votes }, lastName }) => {
   return (
     <LegislatorTable
-      title="Voting Record"
+      title='Voting Record'
       description={description}
       rowData={votes}
       lastName={lastName}
@@ -173,13 +179,13 @@ const VoteTable = ({ data: { votes }, lastName }) => {
             <th style={{ width: '35%' }}>
               Summary from{' '}
               <a
-                href="https://www.progressivemass.com/190thscorecard-house"
-                target="_blank"
-              >
+                href='https://www.progressivemass.com/190thscorecard-house'
+                target='_blank'
+                rel='noreferrer'>
                 Progressive Mass
               </a>
             </th>
-            <th style={{ width: '12.5%' }}>{lastName}'s Vote</th>
+            <th style={{ width: '12.5%' }}>{lastName}&#39;s Vote</th>
             <th style={{ width: '12.5%' }}>Vote Tally</th>
           </tr>
         </>

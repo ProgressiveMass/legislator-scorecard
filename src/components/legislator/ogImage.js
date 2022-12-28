@@ -8,36 +8,40 @@ const LegislatorOgImage = ({ pageContext: { chamber, pageData } }) => {
   const lastName = pageData.legislator.familyName
   var partySuffix
   if (pageData.legislator.party === 'Democratic') {
-    partySuffix = '(D)';
+    partySuffix = '(D)'
   } else if (pageData.legislator.party === 'Republican') {
-    partySuffix = '(R)';
+    partySuffix = '(R)'
   } else {
-    partySuffix = '(I)';
+    partySuffix = '(I)'
   }
-  const fullName = [legislatorTitle, pageData.legislator.name, partySuffix].join(' ');
-  var fontSize = Math.min(65 - fullName.length, 40);
+  const fullName = [
+    legislatorTitle,
+    pageData.legislator.name,
+    partySuffix,
+  ].join(' ')
+  var fontSize = Math.min(65 - fullName.length, 40)
   return (
-    <div className="row no-gutters align-items-md-center">
-      <div className="col-12 pt-2 px-4">
-        <h1 className={"metadata__heading mt-1"} style={{fontSize: fontSize}}>
-          <span className="font-weight-normal">{fullName}</span>
+    <div className='row no-gutters align-items-md-center'>
+      <div className='col-12 pt-2 px-4'>
+        <h1 className={'metadata__heading mt-1'} style={{ fontSize: fontSize }}>
+          <span className='font-weight-normal'>{fullName}</span>
         </h1>
-        <div className="row no-gutters">
-          <div className="col-4">
+        <div className='row no-gutters'>
+          <div className='col-4'>
             {pageData.legislator.image ? (
               <img
                 src={pageData.legislator.image}
                 alt={'Photo of ' + pageData.legislator.name}
-                className="legislator-portrait-social"
+                className='legislator-portrait-social'
                 onError={(e) => {
                   if (e.target.src !== window.location.origin + defaultPhoto) {
-                    e.target.src = defaultPhoto;
+                    e.target.src = defaultPhoto
                   }
                 }}
               />
             ) : null}
           </div>
-          <div class="col-8">
+          <div className='col-8'>
             <Rating
               chamber={chamber}
               lastName={lastName}
@@ -59,4 +63,3 @@ LegislatorOgImage.propTypes = {
 }
 
 export default LegislatorOgImage
-

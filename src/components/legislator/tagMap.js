@@ -10,7 +10,7 @@ const tagMap = {
 
 const getTagData = (tag) => {
   return (
-    tag && tagMap[tag.toLowerCase()] || {
+    (tag && tagMap[tag.toLowerCase()]) || {
       name: tag,
       badge: 'badge-default',
     }
