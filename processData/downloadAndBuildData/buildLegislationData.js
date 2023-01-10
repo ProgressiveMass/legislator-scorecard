@@ -85,6 +85,15 @@ const addBillUrls = (bills, session) => {
   })
 }
 
+const addRollCallUrls = (bills, session, chamber) => {
+  Object.keys(bills).forEach((rollCallNumber) => {
+    if (!bills[rollCallNumber].roll_call_url) {
+      const roll_call_url = `https://malegislature.gov/RollCall/${session}/${chamber}RollCall${rollCallNumber}.pdf`
+      bills[rollCallNumber].roll_call_url = roll_call_url
+    }
+  })
+}
+
 const buildVoteObject = (votes) => {
   const rollCallNumberRow = votes[2]
 
@@ -182,6 +191,7 @@ const buildLegislationDataForYear = (year) => {
   ;['house', 'senate'].forEach((type) => {
     cleanDescription(data[`${type}Bills`])
     addBillUrls(data[`${type}Bills`], sessionDict[year])
+    addRollCallUrls(data[`${type}Bills`], sessionDict[year], type)
   })
 
   if (data.sponsorship.length)
