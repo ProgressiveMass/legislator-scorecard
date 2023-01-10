@@ -92,7 +92,7 @@ const VoteRow = ({
     title,
     bill_number,
     roll_call_number,
-    rollCallUrl,
+    roll_call_url,
     yesVotes,
     noVotes,
     progressive_position: progressivePosition,
@@ -105,12 +105,13 @@ const VoteRow = ({
     <tr>
       <td style={{ width: '15%' }}>
         <div className='text-muted font-weight-bold'>
+          {bill_number}&nbsp;
           <a
-            href={rollCallUrl}
+            href={roll_call_url}
             target='_blank'
-            className='muted-link'
+            // className='muted-link'
             rel='noreferrer'>
-            {bill_number} {roll_call_number}
+            {roll_call_number}
           </a>
         </div>
         <div>{tags}</div>

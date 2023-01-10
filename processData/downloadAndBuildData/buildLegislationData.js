@@ -13,14 +13,14 @@ const tagMap = {
 
 const finalTags = Object.values(tagMap)
 
-const normalizeBillNumber = billNumber => billNumber.replace(/[\.\s]/g, '')
-const normalizeTags = tagString => {
+const normalizeBillNumber = (billNumber) => billNumber.replace(/[.\s]/g, '')
+const normalizeTags = (tagString) => {
   const tags = tagString
     .split(',')
-    .map(tag => tag.trim())
+    .map((tag) => tag.trim())
     .filter(Boolean)
-    .map(tag => tag.toLowerCase())
-    .map(tag => (finalTags.includes(tag) ? tag : tagMap[tag]))
+    .map((tag) => tag.toLowerCase())
+    .map((tag) => (finalTags.includes(tag) ? tag : tagMap[tag]))
   return tags
 }
 
@@ -43,19 +43,18 @@ const addYesAndNoVotes = (bills, votes) => {
   const rollCallRow = votes[2]
   rollCallRow.forEach((rollCallNumber, index) => {
     if (!rollCallNumber || !rollCallNumber.trim()) return
-    const billVotes = votes.map(row => row[index])
+    const billVotes = votes.map((row) => row[index])
 
     try {
-      const progressivePosition = bills[
-        rollCallNumber
-      ].progressive_position.toLowerCase()
+      const progressivePosition =
+        bills[rollCallNumber].progressive_position.toLowerCase()
       let yesVotes, noVotes
       if (progressivePosition === 'no') {
-        yesVotes = billVotes.filter(v => v && v.trim() === '-').length
-        noVotes = billVotes.filter(v => v && v.trim() === '+').length
+        yesVotes = billVotes.filter((v) => v && v.trim() === '-').length
+        noVotes = billVotes.filter((v) => v && v.trim() === '+').length
       } else {
-        yesVotes = billVotes.filter(v => v && v.trim() === '+').length
-        noVotes = billVotes.filter(v => v && v.trim() === '-').length
+        yesVotes = billVotes.filter((v) => v && v.trim() === '+').length
+        noVotes = billVotes.filter((v) => v && v.trim() === '-').length
       }
 
       bills[rollCallNumber].noVotes = noVotes
@@ -66,8 +65,8 @@ const addYesAndNoVotes = (bills, votes) => {
   })
 }
 
-const cleanDescription = bills => {
-  Object.keys(bills).forEach(rollCallNumber => {
+const cleanDescription = (bills) => {
+  Object.keys(bills).forEach((rollCallNumber) => {
     const descriptionLines = bills[rollCallNumber].description
       .split(/\n/)
       .filter(Boolean)
@@ -78,11 +77,11 @@ const cleanDescription = bills => {
 }
 
 const addBillUrls = (bills, session) => {
-  Object.keys(bills).forEach(rollCallNumber => {
-    const url = `https://malegislature.gov/Bills/${session}/${
-      bills[rollCallNumber].bill_number
-    }`
-    bills[rollCallNumber].url = url
+  Object.keys(bills).forEach((rollCallNumber) => {
+    if (!bills[rollCallNumber].url) {
+      const url = `https://malegislature.gov/Bills/${session}/${bills[rollCallNumber].bill_number}`
+      bills[rollCallNumber].url = url
+    }
   })
 }
 
@@ -92,7 +91,7 @@ const buildVoteObject = (votes) => {
   // return array instead of object because gatsby's graphql queries
   // can only return bulk items in an array
   return votes
-    .map(row => {
+    .map((row) => {
       const openStatesLegislatorId = row[0]
       if (!openStatesLegislatorId) return
 
@@ -102,19 +101,16 @@ const buildVoteObject = (votes) => {
         return acc
       }, {})
 
-      const voteCount = Object.values(votes).filter(vote => {
+      const voteCount = Object.values(votes).filter((vote) => {
         return vote.toLowerCase() !== 'n/a'
       }).length
 
-      const totalScore = Object.entries(votes).reduce(
-        (acc, [, vote]) => {
-          if (vote.trim() === '+') {
-            return acc + 1
-          }
-          return acc
-        },
-        0
-      )
+      const totalScore = Object.entries(votes).reduce((acc, [, vote]) => {
+        if (vote.trim() === '+') {
+          return acc + 1
+        }
+        return acc
+      }, 0)
 
       const percentageScore = Math.round((totalScore / voteCount) * 100)
 
@@ -130,8 +126,8 @@ const buildVoteObject = (votes) => {
     .filter(Boolean)
 }
 
-const buildSponsorshipObject = sponsorship => {
-  const billNumbers = sponsorship.map(s => s[1]).slice(2)
+const buildSponsorshipObject = (sponsorship) => {
+  const billNumbers = sponsorship.map((s) => s[1]).slice(2)
   const openStateIds = sponsorship[0]
   return openStateIds
     .map((openStatesId, legislatorIndex) => {
@@ -161,29 +157,29 @@ const buildSponsorshipObject = sponsorship => {
 }
 
 const sessionDict = {
-  '2017': 190,
-  '2019': 191,
-  '2021': 192,
+  2017: 190,
+  2019: 191,
+  2021: 192,
 }
 
-const buildLegislationDataForYear = year => {
+const buildLegislationDataForYear = (year) => {
   const data = JSON.parse(
     fs.readFileSync(`${__dirname}/tmp/${year}.json`, 'utf8')
   )
 
-  ;['sponsored', 'house', 'senate'].forEach(type => {
+  ;['sponsored', 'house', 'senate'].forEach((type) => {
     const key = type === 'sponsored' ? 'bill_number' : 'roll_call_number'
     data[`${type}Bills`] = buildLegislationObject(data[`${type}Bills`], key)
   })
 
   // add additional vote data to bills
   // modifies in-place
-  ;['house', 'senate'].forEach(type => {
+  ;['house', 'senate'].forEach((type) => {
     if (!data[`${type}Votes`] || !Object.keys(data[`${type}Bills`]).length)
       return
     addYesAndNoVotes(data[`${type}Bills`], data[`${type}Votes`])
   })
-  ;['house', 'senate'].forEach(type => {
+  ;['house', 'senate'].forEach((type) => {
     cleanDescription(data[`${type}Bills`])
     addBillUrls(data[`${type}Bills`], sessionDict[year])
   })
