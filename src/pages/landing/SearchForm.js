@@ -104,7 +104,6 @@ const SearchForm = () => {
             value={street}
             type='text'
             className='form-control'
-            placeholder='123 Main St'
             name='street'
             onChange={onChange}
           />
@@ -118,7 +117,6 @@ const SearchForm = () => {
             value={city}
             type='text'
             className='form-control'
-            placeholder='Cambridge'
             name='city'
             onChange={onChange}
           />
