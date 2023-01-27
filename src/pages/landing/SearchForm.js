@@ -54,6 +54,9 @@ const SearchForm = () => {
     setStreet(randomLocation.street)
   }
 
+  /**
+   * TODO: handle errors with error boundaries
+   */
   const onFormSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
@@ -63,7 +66,7 @@ const SearchForm = () => {
       .get('https://maps.googleapis.com/maps/api/geocode/json', {
         params: {
           address: address,
-          key: 'AIzaSyCFrj78MU9xtD6m4RBFEmLwKvVQoUrWRdI',
+          key: process.env.GOOGLE_API_KEY,
         },
       })
       .then(function (response) {
@@ -81,9 +84,7 @@ const SearchForm = () => {
       })
 
     const response = await axios(
-      `https://v3.openstates.org/people.geo?lat=${lat}&lng=${lng}&apikey=${
-        process.env.OPENSTATES_API_KEY ?? 'f1eb1d05-e80a-4fa3-8157-46aa0227ff11'
-      }`
+      `https://v3.openstates.org/people.geo?lat=${lat}&lng=${lng}&apikey=${process.env.OPENSTATES_API_KEY}`
     )
     setLoading(false)
     const [representative, senator, ...rest] = response.data.results
