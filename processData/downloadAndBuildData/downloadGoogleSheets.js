@@ -1,6 +1,5 @@
 const fs = require('fs-extra')
 const axios = require('axios')
-const curlirize = require('axios-curlirize').default
 
 // get some nice debugging output
 // curlirize(axios)
@@ -15,14 +14,12 @@ const googleSheetIds = {
 
 const requestSheet = async (id, sheet) => {
   const response = await axios.get(
-    `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheet}?key=${
-      process.env.GOOGLE_API_KEY
-    }`
+    `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheet}?key=${process.env.GOOGLE_API_KEY}`
   )
   return response.data.values
 }
 
-const loadGoogleSheets = async year => {
+const loadGoogleSheets = async (year) => {
   const id = googleSheetIds[year]
   const sheetTypes = [
     'Sponsored_Bills',
@@ -32,7 +29,7 @@ const loadGoogleSheets = async year => {
     'House_Votes',
     'Senate_Votes',
   ]
-  const sheetRequests = sheetTypes.map(sheet => requestSheet(id, sheet))
+  const sheetRequests = sheetTypes.map((sheet) => requestSheet(id, sheet))
 
   await Promise.all(sheetRequests).then(
     ([
@@ -62,13 +59,12 @@ const loadGoogleSheets = async year => {
 }
 
 module.exports = async () => {
-  yearsToRefresh = [
+  let yearsToRefresh = [
     // 2017,
-    2019,
-    2021,
+    2019, 2021,
   ]
-  yearsToRefresh.forEach(year => {
+  yearsToRefresh.forEach((year) => {
     fs.removeSync(`${__dirname}/tmp/${year}.json`)
   })
-  await Promise.all(yearsToRefresh.map(year => loadGoogleSheets(year)))
+  await Promise.all(yearsToRefresh.map((year) => loadGoogleSheets(year)))
 }

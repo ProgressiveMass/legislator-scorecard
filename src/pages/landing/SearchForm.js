@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby'
 import axios from 'axios'
+import { geolocate } from '../../../functions/getLocalLegislatorsData/geolocate'
 
 const randomLocations = [
   {
@@ -53,27 +54,45 @@ const SearchForm = () => {
     setStreet(randomLocation.street)
   }
 
-  const onFormSubmit = (e) => {
+  const onFormSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
     const address = street + ', ' + city + ', MA'
 
-    return axios
-      .post(`${process.env.GATSBY_SERVERLESS_ENDPOINT}/local-legislators`, {
-        address,
+    const { lat, lng } = await axios
+      .get('https://maps.googleapis.com/maps/api/geocode/json', {
+        params: {
+          address: address,
+          key: 'AIzaSyCFrj78MU9xtD6m4RBFEmLwKvVQoUrWRdI',
+        },
       })
-      .then((response) => {
-        navigate(
-          `/legislator/${transformOpenStatesId(
-            response.data.senator
-          )}?yourRep=${transformOpenStatesId(response.data.representative)}`
-        )
+      .then(function (response) {
+        if (response.data.results.length) {
+          return response.data.results[0].geometry.location
+        } else {
+          // couldn't geolocate the address
+          throw new Error(
+            JSON.stringify({
+              name: "Couldn't locate that Massachusetts address.",
+              data: response.data,
+            })
+          )
+        }
       })
-      .catch((error) => {
-        // TODO: better error handling
-        setLoading(false)
-        console.error(error)
-      })
+
+    const response = await axios(
+      `https://v3.openstates.org/people.geo?lat=${lat}&lng=${lng}&apikey=${
+        process.env.OPENSTATES_API_KEY ?? 'f1eb1d05-e80a-4fa3-8157-46aa0227ff11'
+      }`
+    )
+    setLoading(false)
+    const [representative, senator, ...rest] = response.data.results
+
+    navigate(
+      `/legislator/${transformOpenStatesId(
+        senator.id
+      )}?yourRep=${transformOpenStatesId(representative.id)}`
+    )
   }
 
   const onChange = ({ target: { name, value } }) => {

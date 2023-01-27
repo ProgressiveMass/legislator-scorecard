@@ -44,7 +44,8 @@
       2,
       "always"
     ],
-    "no-return-assign": "off"
+    "no-return-assign": "off",
+    "no-unused-vars": "warn"
   },
   "settings": {
     "react": {
