@@ -14,7 +14,7 @@ const googleSheetIds = {
 
 const requestSheet = async (id, sheet) => {
   const response = await axios.get(
-    `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheet}?key=${process.env.GOOGLE_API_KEY}`
+    `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheet}?key=${process.env.GATSBY_GOOGLE_API_KEY}`
   )
   return response.data.values
 }

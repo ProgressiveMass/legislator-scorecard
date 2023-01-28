@@ -6,7 +6,7 @@ export async function geolocate(address) {
     .get('https://maps.googleapis.com/maps/api/geocode/json', {
       params: {
         address: address,
-        key: process.env.GOOGLE_API_KEY,
+        key: process.env.GATSBY_GOOGLE_API_KEY,
       },
     })
     .then(function (response) {

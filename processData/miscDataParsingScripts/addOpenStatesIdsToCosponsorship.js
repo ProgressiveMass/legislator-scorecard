@@ -13,10 +13,7 @@ const houseId = 'ocd-organization/ca38ad9c-c3d5-4c4f-bc2f-d885218ed802'
 const senateId = 'ocd-organization/1a75ab3a-669b-43fe-ac8d-31a2d6923d9a'
 
 function normalizeName(name) {
-  return name
-    .toLowerCase()
-    .trim()
-    .replace(/[.-]/g, '')
+  return name.toLowerCase().trim().replace(/[.-]/g, '')
 }
 
 function getNormalizedLastName(name) {
@@ -26,7 +23,7 @@ function getNormalizedLastName(name) {
 function createNameKey(name) {
   return normalizeName(normalize(name)).replace(/[\s,'"]/g, '')
 }
-const makeQuery = names => `
+const makeQuery = (names) => `
 query getLegislatorIds($organization: String ) {
     ${names.map((name, index) => {
       const key = createNameKey(name)
@@ -60,19 +57,19 @@ const makeRequest = ({ organization, names }) => {
     },
     {
       headers: {
-        'X-API-KEY': process.env.OPENSTATES_API_KEY,
+        'X-API-KEY': process.env.GATSBY_OPENSTATES_API_KEY,
       },
     }
   )
 }
 
-const processData = async fileName => {
+const processData = async (fileName) => {
   const fileContents = fs.readFileSync(`${__dirname}/../${fileName}`, 'utf8')
 
   const csvContents = parse(fileContents)
   const nameRow = csvContents[0]
 
-  const newRow = [...new Array(nameRow.length)].map(n => '')
+  const newRow = [...new Array(nameRow.length)].map((n) => '')
 
   let senateData = await makeRequest({
     organization: senateId,

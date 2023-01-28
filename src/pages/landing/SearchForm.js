@@ -1,7 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby'
 import axios from 'axios'
-import { geolocate } from '../../../functions/getLocalLegislatorsData/geolocate'
 
 const randomLocations = [
   {
@@ -61,12 +60,12 @@ const SearchForm = () => {
     e.preventDefault()
     setLoading(true)
     const address = street + ', ' + city + ', MA'
-
+    console.log('process.env', process.env)
     const { lat, lng } = await axios
       .get('https://maps.googleapis.com/maps/api/geocode/json', {
         params: {
           address: address,
-          key: process.env.GOOGLE_API_KEY,
+          key: process.env.GATSBY_GOOGLE_API_KEY,
         },
       })
       .then(function (response) {
@@ -84,7 +83,7 @@ const SearchForm = () => {
       })
 
     const response = await axios(
-      `https://v3.openstates.org/people.geo?lat=${lat}&lng=${lng}&apikey=${process.env.OPENSTATES_API_KEY}`
+      `https://v3.openstates.org/people.geo?lat=${lat}&lng=${lng}&apikey=${process.env.GATSBY_OPENSTATES_API_KEY}`
     )
     setLoading(false)
     const [representative, senator, ...rest] = response.data.results

@@ -12,17 +12,14 @@ const houseId = 'ocd-organization/ca38ad9c-c3d5-4c4f-bc2f-d885218ed802'
 const senateId = 'ocd-organization/1a75ab3a-669b-43fe-ac8d-31a2d6923d9a'
 
 function normalizeName(name) {
-  return name
-    .toLowerCase()
-    .trim()
-    .replace(/[.-]/g, '')
+  return name.toLowerCase().trim().replace(/[.-]/g, '')
 }
 
 function getNormalizedLastName(name) {
   return normalizeName(name.split(',')[0])
 }
 
-const makeQuery = names => `
+const makeQuery = (names) => `
 query getLegislatorIds($organization: String ) {
     ${names.map((name, index) => {
       return `
@@ -54,13 +51,13 @@ const makeRequest = ({ organization, names }) => {
     },
     {
       headers: {
-        'X-API-KEY': process.env.OPENSTATES_API_KEY,
+        'X-API-KEY': process.env.GATSBY_OPENSTATES_API_KEY,
       },
     }
   )
 }
 
-const processData = async fileName => {
+const processData = async (fileName) => {
   const fileContents = fs.readFileSync(`${__dirname}/../${fileName}`, 'utf8')
 
   const csvContents = parse(fileContents)
@@ -71,7 +68,7 @@ const processData = async fileName => {
 
   const data = await makeRequest({
     organization: isHouse ? houseId : senateId,
-    names: rowsThatNeedIds.map(row => row[0]),
+    names: rowsThatNeedIds.map((row) => row[0]),
   })
 
   rowsThatNeedIds.forEach((row, index) => {
@@ -86,9 +83,7 @@ const processData = async fileName => {
       ).bestMatch
       if (bestMatch.rating > 0.6) {
         console.log(
-          `Via string similarity metrics, the best match for ${name} was: ${
-            bestMatch.target
-          }`
+          `Via string similarity metrics, the best match for ${name} was: ${bestMatch.target}`
         )
         const bestMatchResult = result.find(
           ({ node: { name } }) => name === bestMatch.target
