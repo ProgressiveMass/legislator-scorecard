@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import qs from 'query-string'
+import { getLegislatorUrlParams } from '../../utilities'
 
 const YourLegislatorTabs = ({ currentLegislator }) => {
-  const urlId = currentLegislator.replace('ocd-person/', '')
+  const urlId = getLegislatorUrlParams(currentLegislator)
 
   const [search, setSearch] = useState({})
 

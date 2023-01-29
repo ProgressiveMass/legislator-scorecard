@@ -4,19 +4,24 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 const path = require('path')
-const { createOpenGraphImage } = require("gatsby-plugin-open-graph-images");
+const { createOpenGraphImage } = require('gatsby-plugin-open-graph-images')
 
 const createPageDataStruct = require('./gatsbyNodeHelper/index')
 const houseLegislators = require('./src/data/house_legislators.json')
 const senateLegislators = require('./src/data/senate_legislators.json')
+const { getLegislatorUrlParams } = require('./src/utilities')
 
 const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
-  const ogImageFilename =
-    (pageData.legislator.name + '-' + pageData.legislator.district)
+  const ogImageFilename = (
+    pageData.legislator.name +
+    '-' +
+    pageData.legislator.district
+  )
     .toLowerCase()
     .replace(/ /g, '-')
     .replace(/[.,']/g, '')
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // stackoverflow.com/questions/990904
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // stackoverflow.com/questions/990904
 
   const context = {
     id: legislatorId,
@@ -37,14 +42,14 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
     }),
   }
   createPage({
-    path: `/legislator/${legislatorId.replace('ocd-person/', '')}`,
+    path: `/legislator/${getLegislatorUrlParams(pageData.legislator)}`,
     component: require.resolve(`./src/components/legislator/index.js`),
     context,
   })
 }
 
 // create individual legislator pages
-exports.createPages = async function({ actions: { createPage } }) {
+exports.createPages = async function ({ actions: { createPage } }) {
   ;[
     { chamber: 'senate', legislators: senateLegislators },
     { chamber: 'house', legislators: houseLegislators },

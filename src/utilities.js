@@ -5,4 +5,15 @@ const termDict = {
   '2021-2022': '192nd',
 }
 
-export const getSessionNumber = (yearRange) => termDict[yearRange]
+const getSessionNumber = (yearRange) => termDict[yearRange]
+
+const getLegislatorUrlParams = (legislator) => {
+  const firstName = legislator.givenName ?? legislator.given_name
+  const lastName = legislator.familyName ?? legislator.family_name
+  return `${firstName.toLowerCase()}-${lastName.toLowerCase()}`
+}
+
+module.exports = {
+  getSessionNumber,
+  getLegislatorUrlParams,
+}

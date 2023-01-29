@@ -6,15 +6,16 @@ import SortButton from './SortButton'
 import ProgressBar from '../../components/progressBar'
 import InfoPopover from '../../components/InfoPopover'
 import defaultPhoto from '../../images/default-photo.jpg'
+import { getLegislatorUrlParams } from '../../utilities'
 
-const LegislatorRow = ({ d, i, chamber, sessionNumber }) => {
+const LegislatorRow = ({ legislator, i, chamber, sessionNumber }) => {
   return (
     <tr
-      key={d.id}
+      key={legislator.id}
       className='legislator-row'
       onClick={(e) => {
         e.preventDefault()
-        navigate(`/legislator/${d.id.replace('ocd-person/', '')}`)
+        navigate(`/legislator/${getLegislatorUrlParams(legislator)}`)
       }}>
       <td style={{ verticalAlign: 'middle' }}>{i + 1}</td>
       <td data-label={chamber === 'upper' ? 'Senator' : 'Representative'}>
@@ -22,8 +23,8 @@ const LegislatorRow = ({ d, i, chamber, sessionNumber }) => {
           <b>
             <LazyLoad once height='4rem' offset={100}>
               <img
-                src={d.image}
-                alt={'Photo of ' + d.name}
+                src={legislator.image}
+                alt={'Photo of ' + legislator.name}
                 className='legislator-list__profile-img'
                 onError={(e) => {
                   if (e.target.src !== window.location.origin + defaultPhoto) {
@@ -32,23 +33,23 @@ const LegislatorRow = ({ d, i, chamber, sessionNumber }) => {
                 }}
               />
             </LazyLoad>
-            {d.name}&nbsp;
-            {d.specialElectionUrl ? (
+            {legislator.name}&nbsp;
+            {legislator.specialElectionUrl ? (
               <InfoPopover
                 text={`${chamber === 'upper' ? 'Senator' : 'Representative'} ${
-                  d.givenName
+                  legislator.givenName
                 } is no longer a member of the Massachusetts Legislature. There is a <a target="_blank" href="${
-                  d.specialElectionUrl
+                  legislator.specialElectionUrl
                 }">special election</a> pending to elect a replacement.`}
               />
             ) : null}
           </b>
         </a>
       </td>
-      <td data-label='Party'>{d.party.slice(0, 1)}</td>
+      <td data-label='Party'>{legislator.party.slice(0, 1)}</td>
       <td data-label='Progressive Rating (2021-2022)'>
         <div style={{ maxWidth: '300px' }}>
-          <ProgressBar data={d} sessionNumber={sessionNumber} />
+          <ProgressBar data={legislator} sessionNumber={sessionNumber} />
         </div>
       </td>
     </tr>
@@ -190,10 +191,10 @@ const LegislatorList = (props) => {
             </tr>
           </thead>
           <tbody>
-            {data.map((d, i) => (
+            {data.map((legislator, i) => (
               <LegislatorRow
-                key={d.id}
-                d={d}
+                key={legislator.id}
+                legislator={legislator}
                 i={i}
                 chamber={props.chamber}
                 sessionNumber={props.sessionNumber}
