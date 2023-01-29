@@ -31,7 +31,8 @@
     "react-responsive-tabs": "^3.3.0",
     "react-sticky": "^6.0.3",
     "react-sticky-table": "^2.0.5",
-    "react-tippy": "1.4.0"
+    "react-tippy": "1.4.0",
+    "use-google-sheets": "^2.0.0"
   },
   "devDependencies": {
     "axios": "^0.21.2",

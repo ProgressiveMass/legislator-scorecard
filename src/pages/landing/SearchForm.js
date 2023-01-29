@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby'
 import axios from 'axios'
+import { getLegislatorUrlParams } from '../../utilities'
 
 const randomLocations = [
   {
@@ -39,7 +40,23 @@ const randomLocations = [
   { street: '1 Skyline Dr', city: 'Worcester' },
 ]
 
-const transformOpenStatesId = (id) => encodeURI(id.replace('ocd-person/', ''))
+const getOpenStatesInfo = (legislators) => {
+  let stateRep
+  let stateSenator
+  legislators.forEach((leg) => {
+    if (leg.jurisdiction.name === 'Massachusetts') {
+      if (leg.current_role.org_classification === 'lower') {
+        stateRep = leg
+      } else {
+        stateSenator = leg
+      }
+    }
+  })
+  return {
+    stateRep,
+    stateSenator,
+  }
+}
 
 const SearchForm = () => {
   const [loading, setLoading] = React.useState(false)
@@ -86,12 +103,13 @@ const SearchForm = () => {
       `https://v3.openstates.org/people.geo?lat=${lat}&lng=${lng}&apikey=${process.env.GATSBY_OPENSTATES_API_KEY}`
     )
     setLoading(false)
-    const [representative, senator, ...rest] = response.data.results
+
+    const { stateRep, stateSenator } = getOpenStatesInfo(response.data.results)
 
     navigate(
-      `/legislator/${transformOpenStatesId(
-        senator.id
-      )}?yourRep=${transformOpenStatesId(representative.id)}`
+      `/legislator/${getLegislatorUrlParams(
+        stateSenator
+      )}?yourRep=${getLegislatorUrlParams(stateRep)}`
     )
   }
 

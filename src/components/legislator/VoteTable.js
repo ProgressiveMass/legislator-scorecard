@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import LegislatorTable from './LegislatorTable'
 
 const LegislatorVote = ({ vote, progressivePosition }) => {
@@ -101,6 +102,9 @@ const VoteRow = ({
   },
   lastName,
 }) => {
+  console.log('url', url)
+
+  const redirectToBillView = () => {}
   return (
     <tr>
       <td style={{ width: '15%' }}>
@@ -117,14 +121,25 @@ const VoteRow = ({
         <div>{tags}</div>
       </td>
       <td style={{ width: '25%' }}>
-        <a
-          href={url}
-          target='_blank'
-          className='font-weight-bold'
-          rel='noreferrer'>
+        <Link
+          to='/bill-sponsors'
+          state={{
+            url,
+            title,
+            bill_number,
+            roll_call_number,
+            roll_call_url,
+            yesVotes,
+            noVotes,
+            progressive_position: progressivePosition,
+            description,
+            yourLegislator,
+          }}
+          onClick={redirectToBillView}
+          className='font-weight-bold'>
           {title}
           <div />
-        </a>
+        </Link>
       </td>
       <td style={{ width: '35%' }}>
         <p>{description}</p>
