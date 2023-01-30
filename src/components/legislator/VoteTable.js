@@ -102,9 +102,6 @@ const VoteRow = ({
   },
   lastName,
 }) => {
-  console.log('url', url)
-
-  const redirectToBillView = () => {}
   return (
     <tr>
       <td style={{ width: '15%' }}>
@@ -135,7 +132,6 @@ const VoteRow = ({
             description,
             yourLegislator,
           }}
-          onClick={redirectToBillView}
           className='font-weight-bold'>
           {title}
           <div />

@@ -77,7 +77,6 @@ const SearchForm = () => {
     e.preventDefault()
     setLoading(true)
     const address = street + ', ' + city + ', MA'
-    console.log('process.env', process.env)
     const { lat, lng } = await axios
       .get('https://maps.googleapis.com/maps/api/geocode/json', {
         params: {
@@ -105,7 +104,6 @@ const SearchForm = () => {
     setLoading(false)
 
     const { stateRep, stateSenator } = getOpenStatesInfo(response.data.results)
-
     navigate(
       `/legislator/${getLegislatorUrlParams(
         stateSenator
