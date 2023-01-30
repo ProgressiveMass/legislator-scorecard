@@ -51,6 +51,20 @@ query getLegislatorInfo($organization: String, $cursor: String) {
 
 const houseId = 'ocd-organization/ca38ad9c-c3d5-4c4f-bc2f-d885218ed802'
 const senateId = 'ocd-organization/1a75ab3a-669b-43fe-ac8d-31a2d6923d9a'
+const jurisdiction = 'ocd-jurisdiction/country:us/state:ma/government'
+
+const requestAllOpenStatesData = async (page) => {
+  console.log('page', page)
+  let url = `https://v3.openstates.org/people?jurisdiction=${jurisdiction}&page=${page}&per_page=50&apikey=${process.env.GATSBY_OPENSTATES_API_KEY}`
+  const response = await axios.get(url)
+  console.log('response', response)
+  const data = response.data
+  if (data.pagination.max_page > data.pagination.page) {
+    return data.concat(await requestAllOpenStatesData(page + 1))
+  } else {
+    return data
+  }
+}
 
 const makeRequest = ({ organization, cursor }) => {
   return axios.post(
@@ -119,7 +133,8 @@ const processData = (edges) => {
 }
 
 const makePaginatedRequest = ({ organization, cursor, data }) => {
-  return makeRequest({ organization, cursor }).then(
+  let otherData = requestAllOpenStatesData(cursor)
+   return makeRequest({ organization, cursor }).then(
     ({
       data: {
         data: {
