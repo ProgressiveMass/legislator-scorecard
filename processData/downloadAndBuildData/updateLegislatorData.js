@@ -80,9 +80,14 @@ const processData = edges => {
           : data.districtLower[0].post.label
         delete data.districtUpper
         delete data.districtLower
-        data.email = data.contactDetails.filter(
-          c => c.type === "email"
-        )[0].value
+        try {
+          data.email = data.contactDetails.filter(
+            c => c.type === "email"
+          )[0].value
+        } catch (e) {
+          console.warn('No email address for ' + data.name)
+          data.phone = ''
+        }
         try {
           data.phone = data.contactDetails.filter(
             c => c.type === "voice"
