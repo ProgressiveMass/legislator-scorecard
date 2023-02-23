@@ -4,7 +4,9 @@ const parse = require('csv-parse/lib/sync')
 const stringify = require('csv-stringify/lib/sync')
 const stringSimilarity = require('string-similarity')
 
-require('dotenv').config()
+require('dotenv').config({
+  path: process.cwd() + `/.env.${process.env.NODE_ENV ?? 'development'}`,
+})
 
 const fileName = '2017_Progressive_Mass_Data - Senate_Votes (1).csv'
 const isHouse = false
@@ -96,10 +98,6 @@ const processData = async (fileName) => {
     } else if (!result.length) {
       console.log(row[0], ' had no matches')
       row.splice(0, 0, 'NOT FOUND')
-    }
-    try {
-    } catch (e) {
-      console.log(row[0])
     }
   })
 

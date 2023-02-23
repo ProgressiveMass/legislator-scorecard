@@ -4,7 +4,9 @@ const axios = require('axios')
 // get some nice debugging output
 // curlirize(axios)
 
-require('dotenv').config()
+require('dotenv').config({
+  path: process.cwd() + `/.env.${process.env.NODE_ENV ?? 'development'}`,
+})
 
 const googleSheetIds = {
   2017: '15AgxGT87Qc02IqPV46Uc0u9Z_ChfAjZQaj3qS2VNF8g',

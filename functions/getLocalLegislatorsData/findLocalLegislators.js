@@ -39,7 +39,7 @@ function findLocalLegislators(coordinates) {
         },
       }
     )
-    .then(function(response) {
+    .then(function (response) {
       if (!Object.keys(response.data).length) {
         throw new Error("The Open States API couldn't find your legislators.")
       }
@@ -48,7 +48,7 @@ function findLocalLegislators(coordinates) {
         representative: response.data.data.representative.edges[0].node.id,
       }
     })
-    .catch(function(error) {
+    .catch(function (error) {
       console.error(error)
     })
 }

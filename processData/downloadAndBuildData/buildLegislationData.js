@@ -26,7 +26,7 @@ const normalizeTags = (tagString) => {
 
 // handles house, senate, and "sponsored" sheets
 const buildLegislationObject = (legislation, key) => {
-  const processedLegislation = legislation.slice(1).reduce((acc, row) => {
+  const processedLegislation = legislation?.slice(1)?.reduce((acc, row) => {
     const obj = row.reduce((acc, cell, i) => {
       acc[legislation[0][i]] = cell
       return acc
@@ -189,17 +189,19 @@ const buildLegislationDataForYear = (year) => {
     addYesAndNoVotes(data[`${type}Bills`], data[`${type}Votes`])
   })
   ;['house', 'senate'].forEach((type) => {
-    cleanDescription(data[`${type}Bills`])
-    addBillUrls(data[`${type}Bills`], sessionDict[year])
-    addRollCallUrls(data[`${type}Bills`], sessionDict[year], type)
+    if (data[`${type}Bills`]) {
+      cleanDescription(data[`${type}Bills`])
+      addBillUrls(data[`${type}Bills`], sessionDict[year])
+      addRollCallUrls(data[`${type}Bills`], sessionDict[year], type)
+    }
   })
 
-  if (data.sponsorship.length)
+  if (data?.sponsorship?.length)
     data.sponsorship = buildSponsorshipObject(data.sponsorship)
 
-  if (data.houseVotes)
+  if (data?.houseVotes)
     data.houseVotes = buildVoteObject(data.houseVotes, data.houseBills)
-  if (data.senateVotes)
+  if (data?.senateVotes)
     data.senateVotes = buildVoteObject(data.senateVotes, data.senateBills)
 
   return data

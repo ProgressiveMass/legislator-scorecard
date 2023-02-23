@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: process.cwd() + `/.env.${process.env.NODE_ENV ?? 'development'}`,
+})
+
 const fs = require('fs')
 const path = require('path')
 const downloadGoogleSheets = require('./downloadGoogleSheets')

@@ -1,6 +1,8 @@
+require('dotenv').config({
+  path: process.cwd() + `/.env.${process.env.NODE_ENV ?? 'development'}`,
+})
 const fs = require('fs')
 const axios = require('axios')
-require('dotenv').config()
 
 const query = `
 query getLegislatorInfo($organization: String, $cursor: String) {
@@ -54,10 +56,9 @@ const senateId = 'ocd-organization/1a75ab3a-669b-43fe-ac8d-31a2d6923d9a'
 const jurisdiction = 'ocd-jurisdiction/country:us/state:ma/government'
 
 const requestAllOpenStatesData = async (page) => {
-  console.log('page', page)
   let url = `https://v3.openstates.org/people?jurisdiction=${jurisdiction}&page=${page}&per_page=50&apikey=${process.env.GATSBY_OPENSTATES_API_KEY}`
   const response = await axios.get(url)
-  console.log('response', response)
+
   const data = response.data
   if (data.pagination.max_page > data.pagination.page) {
     return data.concat(await requestAllOpenStatesData(page + 1))
@@ -96,11 +97,11 @@ const processData = (edges) => {
         delete data.districtLower
         data.email = data.contactDetails.filter(
           (c) => c.type === 'email'
-        )[0].value
+        )[0]?.value
         try {
           data.phone = data.contactDetails.filter(
             (c) => c.type === 'voice'
-          )[0].value
+          )[0]?.value
         } catch (e) {
           console.warn('No phone number for ' + data.name)
           data.phone = ''
@@ -133,8 +134,7 @@ const processData = (edges) => {
 }
 
 const makePaginatedRequest = ({ organization, cursor, data }) => {
-  let otherData = requestAllOpenStatesData(cursor)
-   return makeRequest({ organization, cursor }).then(
+  return makeRequest({ organization, cursor }).then(
     ({
       data: {
         data: {

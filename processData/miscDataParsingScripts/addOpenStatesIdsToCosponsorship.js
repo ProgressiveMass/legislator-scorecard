@@ -4,8 +4,9 @@ const parse = require('csv-parse/lib/sync')
 const stringify = require('csv-stringify/lib/sync')
 const normalize = require('normalize-strings')
 const stringSimilarity = require('string-similarity')
-require('dotenv').config()
-
+require('dotenv').config({
+  path: process.cwd() + `/.env.${process.env.NODE_ENV ?? 'development'}`,
+})
 // change this
 const fileName = `2019_Progressive_Mass_Data - Sponsorship.csv`
 
