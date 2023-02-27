@@ -8,12 +8,26 @@ const termDict = {
 const getSessionNumber = (yearRange) => termDict[yearRange]
 
 const getLegislatorUrlParams = (legislator) => {
-  const firstName = legislator.givenName ?? legislator.given_name
-  const lastName = legislator.familyName ?? legislator.family_name
+  const firstName = legislator.givenName
+    ? legislator.givenName
+    : legislator.given_name ?? ''
+  const lastName = legislator.familyName
+    ? legislator.familyName
+    : legislator.family_name ?? ''
   return `${firstName.toLowerCase()}-${lastName.toLowerCase()}`
+}
+
+const getImageFileNames = (legislatorName, legislatorDistrict) => {
+  return (legislatorName + '-' + legislatorDistrict)
+    .toLowerCase()
+    .replace(/ /g, '-')
+    .replace(/[.,']/g, '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // stackoverflow.com/questions/990904
 }
 
 module.exports = {
   getSessionNumber,
   getLegislatorUrlParams,
+  getImageFileNames,
 }
