@@ -70,7 +70,7 @@ const LegislatorTable = ({
   title,
   rowComponent: RowComponent,
   rowData,
-  lastName,
+  familyName,
 }) => {
   const [tagFilter, setTagFilter] = useState('')
 
@@ -112,7 +112,7 @@ const LegislatorTable = ({
             {filteredData.map((d, index) => (
               <RowComponent
                 key={index}
-                lastName={lastName}
+                familyName={familyName}
                 rowData={d}
                 tags={<RowTags toggleFilter={toggleFilter} tags={d.tags} />}
               />
@@ -125,7 +125,7 @@ const LegislatorTable = ({
 }
 
 LegislatorTable.propTypes = {
-  lastName: PropTypes.string,
+  familyName: PropTypes.string,
   head: PropTypes.node,
   description: PropTypes.node,
   title: PropTypes.string,

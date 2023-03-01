@@ -27,7 +27,7 @@ const Rating = (props) => {
   }
 
   const renderVoteSection = () => {
-    const fontSize = Math.min(34 - props.lastName.length, 18)
+    const fontSize = Math.min(34 - props.familyName.length, 18)
     const sessionNumber = getSessionNumber(props.rating.votes.cumulative.term)
     return (
       <div>
@@ -46,7 +46,7 @@ const Rating = (props) => {
               className='d-block mb-1  heading-font'
               style={{ fontSize: fontSize }}>
               {props.title}&nbsp;
-              {props.lastName}&#39;s votes&nbsp;
+              {props.familyName}&#39;s votes&nbsp;
               <span className='text-lowercase' style={{ fontSize: '1rem' }}>
                 ({props.rating.votes.cumulative.term})
               </span>
@@ -76,7 +76,7 @@ const Rating = (props) => {
             fontWeight: 'bold',
           }}>
           {props.title}&nbsp;
-          {props.lastName} cosponsored
+          {props.familyName} cosponsored
         </h3>
         <div
           style={{ fontSize: '2.5rem' }}

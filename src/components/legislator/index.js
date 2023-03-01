@@ -15,7 +15,7 @@ const LegislatorPage = ({
   },
 }) => {
   const legislatorTitle = chamber === 'senate' ? 'Senator' : 'Rep'
-  const lastName = pageData.legislator.familyName
+  const familyName = pageData.legislator.familyName
   const seoTitle = `${legislatorTitle} ${pageData.legislator.name}'s Voting Record`
   const seoDescription = `Learn about ${legislatorTitle} ${pageData.legislator.name}'s values by viewing a record of their activity in the Massachusetts statehouse.`
   return (
@@ -27,14 +27,14 @@ const LegislatorPage = ({
           data={pageData.legislator}
           chamber={chamber}
           rating={pageData.rating}
-          lastName={lastName}
+          familyName={familyName}
           legislatorTitle={legislatorTitle}
         />
         <SessionTabs
           terms={pageData.data}
           chamber={chamber}
           key={chamber}
-          lastName={lastName}
+          familyName={familyName}
           legislatorTitle={legislatorTitle}
         />
       </div>

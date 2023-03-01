@@ -23,7 +23,7 @@ const SponsorshipRow = ({
     yourLegislator,
     url,
   },
-  lastName,
+  familyName,
 }) => {
   return (
     <tr>
@@ -51,7 +51,7 @@ const SponsorshipRow = ({
       <td style={{ width: '40%' }} data-label=''>
         <p>{description}</p>
       </td>
-      <td style={{ width: '15%' }} data-label={`${lastName} Cosponsored?`}>
+      <td style={{ width: '15%' }} data-label={`${familyName} Cosponsored?`}>
         <Cosponsorship indicator={yourLegislator} />
       </td>
     </tr>
@@ -74,13 +74,13 @@ const description = (
   </>
 )
 
-const SponsorshipTable = ({ data: { sponsorship }, lastName }) => {
+const SponsorshipTable = ({ data: { sponsorship }, familyName }) => {
   return (
     <LegislatorTable
       title='Cosponsored Bills'
       description={description}
       rowData={sponsorship}
-      lastName={lastName}
+      familyName={familyName}
       head={
         <>
           <tr>
@@ -95,7 +95,7 @@ const SponsorshipTable = ({ data: { sponsorship }, lastName }) => {
                 Progressive Mass
               </a>
             </th>
-            <th style={{ width: '15%' }}>{lastName} Cosponsored?</th>
+            <th style={{ width: '15%' }}>{familyName} Cosponsored?</th>
           </tr>
         </>
       }

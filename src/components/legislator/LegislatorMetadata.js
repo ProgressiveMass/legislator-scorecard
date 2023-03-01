@@ -51,7 +51,7 @@ const LegislatorMetadata = (props) => {
                     <h2
                       className='font-weight-bold  heading-font mt-3 mb-1'
                       style={{ fontWeight: 'bold', fontSize: '18px' }}>
-                      Contact {props.legislatorTitle} {props.lastName}:
+                      Contact {props.legislatorTitle} {props.familyName}:
                     </h2>
                   </div>
                   <div>
@@ -75,7 +75,7 @@ const LegislatorMetadata = (props) => {
           <div className='col-md-6 pl-md-4 pl-lg-5 pt-4 pt-md-0'>
             <Rating
               chamber={props.chamber}
-              lastName={props.lastName}
+              familyName={props.familyName}
               title={props.legislatorTitle}
               rating={props.rating}
             />

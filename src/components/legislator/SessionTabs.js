@@ -5,7 +5,7 @@ import TermLayout from './TermLayout'
 import ProgressBarWContext from '../progressBar'
 import { getSessionNumber } from '../../utilities'
 
-export const SessionTabs = ({ terms, chamber, lastName }) => {
+export const SessionTabs = ({ terms, chamber, familyName }) => {
   const tabItems = terms.map((d) => {
     const sessionNumber = getSessionNumber(d.term)
     return {
@@ -30,7 +30,7 @@ export const SessionTabs = ({ terms, chamber, lastName }) => {
             id={d.term}
             data={d}
             chamber={chamber}
-            lastName={lastName}
+            familyName={familyName}
           />
         )
       },
@@ -58,5 +58,5 @@ export default SessionTabs
 SessionTabs.propTypes = {
   terms: PropTypes.array.isRequired,
   chamber: PropTypes.string.isRequired,
-  lastName: PropTypes.string.isRequired,
+  familyName: PropTypes.string.isRequired,
 }
