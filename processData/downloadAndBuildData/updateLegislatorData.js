@@ -168,11 +168,11 @@ module.exports = () => {
     ([houseData, senateData]) => {
       fs.writeFileSync(
         `${__dirname}/../../src/data/house_legislators.json`,
-        JSON.stringify(houseData.filter(Boolean))
+        JSON.stringify(houseData.filter(Boolean), null, 2)
       )
       fs.writeFileSync(
         `${__dirname}/../../src/data/senate_legislators.json`,
-        JSON.stringify(senateData.filter(Boolean))
+        JSON.stringify(senateData.filter(Boolean), null, 2)
       )
     }
   )

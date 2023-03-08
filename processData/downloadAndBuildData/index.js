@@ -14,7 +14,7 @@ const downloadAndBuildData = async () => {
 
   fs.writeFileSync(
     `${__dirname}/../../src/data/legislation.json`,
-    JSON.stringify(processedData)
+    JSON.stringify(processedData, null, 2)
   )
   console.log(`wrote data to ${path.join(__dirname, '/../../src/data')}`)
 }
