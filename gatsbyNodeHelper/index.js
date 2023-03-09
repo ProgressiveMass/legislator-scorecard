@@ -56,8 +56,8 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
         const billKey = !billNum.match('/')
           ? billNum
           : chamber === 'senate'
-          ? billNum.match(/S\d+/)[0]
-          : billNum.match(/H\d+/)[0]
+          ? billNum.match(/SD?\d+/)[0]
+          : billNum.match(/HD?\d+/)[0]
         const billData = progMassSponsoredBills[billKey]
         if (!billData) {
           throw new Error(
