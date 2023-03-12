@@ -4,7 +4,7 @@ on:
     - cron: '0 0 1-31/2 * * '
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
