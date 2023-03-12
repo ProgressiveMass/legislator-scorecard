@@ -98,7 +98,7 @@ const Rating = (props) => {
         <div style={{ position: 'relative', top: '-.4rem' }}>
           out of&nbsp;
           <b>{props.rating.sponsorship.total}</b>
-          &nbsp;endorsed by Prog. Mass for{' '}
+          &nbsp;featured by Prog. Mass for{' '}
           {props.rating.sponsorship.cumulative.term}&nbsp;
         </div>
       </div>
