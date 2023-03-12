@@ -47,6 +47,7 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
       year,
       legislatorId,
     })
+    termData.isCurrentSponsorshipYear = year == sponsorshipSummaryYear
     if (legislatorSponsorshipEntry === undefined) {
       termData.sponsorship = []
     } else {
