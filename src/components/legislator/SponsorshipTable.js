@@ -4,12 +4,12 @@ import InfoPopover from '../InfoPopover'
 import LegislatorTable from './LegislatorTable'
 
 const Cosponsorship = ({ indicator }) => {
-  if (!indicator) {
-    return <span className='badge badge-clear'>N/A</span>
-  } else if (indicator === 'Y') {
-    return <span className='badge badge-primary'>Yes</span>
-  } else if (indicator === 'N') {
+  if (indicator === false) {
     return <span className='badge badge-danger'>No</span>
+  } else if (indicator === true) {
+    return <span className='badge badge-primary'>Yes</span>
+  } else {
+    return <span className='badge badge-clear'>N/A</span>
   }
 }
 

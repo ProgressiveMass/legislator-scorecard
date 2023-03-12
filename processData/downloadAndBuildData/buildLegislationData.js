@@ -144,15 +144,13 @@ const buildSponsorshipObject = (sponsorship) => {
       const data = billNumbers.reduce((acc, billNo, i) => {
         // for easier matching in gatsby-node.js
         billNo = billNo.replace(/\./g, '')
-        acc[billNo] = sponsorship[i + 2][legislatorIndex]
+        letterVote = sponsorship[i + 2][legislatorIndex]
+        acc[billNo] = letterVote.toUpperCase() === 'Y'
         return acc
       }, {})
       const score = parseInt(
         Object.values(data)
-          .reduce((acc, curr) => {
-            if (curr.toLowerCase() === 'y') return acc + 1
-            return acc
-          }, 0)
+          .reduce((acc, curr) => acc + curr , 0)
           .toFixed()
       )
 
