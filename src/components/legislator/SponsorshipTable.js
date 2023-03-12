@@ -3,9 +3,13 @@ import PropTypes from 'prop-types'
 import InfoPopover from '../InfoPopover'
 import LegislatorTable from './LegislatorTable'
 
-const Cosponsorship = ({ indicator }) => {
+const Cosponsorship = ({ indicator, isCurrentSponsorshipYear }) => {
   if (indicator === false) {
-    return <span className='badge badge-danger'>No</span>
+    if (isCurrentSponsorshipYear) {
+      return <span className='badge badge-danger'>Not Yet</span>
+    } else {
+      return <span className='badge badge-danger'>No</span>
+    }
   } else if (indicator === true) {
     return <span className='badge badge-primary'>Yes</span>
   } else {
@@ -23,6 +27,7 @@ const SponsorshipRow = ({
     yourLegislator,
     url,
   },
+  isCurrentYear,
   familyName,
 }) => {
   return (
@@ -52,7 +57,7 @@ const SponsorshipRow = ({
         <p>{description}</p>
       </td>
       <td style={{ width: '15%' }} data-label={`${familyName} Cosponsored?`}>
-        <Cosponsorship indicator={yourLegislator} />
+        <Cosponsorship indicator={yourLegislator} isCurrentSponsorshipYear={isCurrentYear} />
       </td>
     </tr>
   )
@@ -74,13 +79,14 @@ const description = (
   </>
 )
 
-const SponsorshipTable = ({ data: { sponsorship }, familyName }) => {
+const SponsorshipTable = ({ data: { sponsorship, isCurrentSponsorshipYear }, familyName }) => {
   return (
     <LegislatorTable
       title='Cosponsored Bills'
       description={description}
       rowData={sponsorship}
       familyName={familyName}
+      isCurrentYear={isCurrentSponsorshipYear}
       head={
         <>
           <tr>
