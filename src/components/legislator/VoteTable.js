@@ -100,7 +100,7 @@ const VoteRow = ({
     description,
     yourLegislator,
   },
-  lastName,
+  familyName,
 }) => {
   return (
     <tr>
@@ -144,7 +144,7 @@ const VoteRow = ({
           <span className='badge badge-primary'>{progressivePosition}</span>
         </p>
       </td>
-      <td style={{ width: '12.5%' }} data-label={`${lastName}'s Vote`}>
+      <td style={{ width: '12.5%' }} data-label={`${familyName}'s Vote`}>
         <LegislatorVote
           vote={yourLegislator}
           progressivePosition={progressivePosition}
@@ -175,13 +175,13 @@ const description = (
   </>
 )
 
-const VoteTable = ({ data: { votes }, lastName }) => {
+const VoteTable = ({ data: { votes }, familyName }) => {
   return (
     <LegislatorTable
       title='Voting Record'
       description={description}
       rowData={votes}
-      lastName={lastName}
+      familyName={familyName}
       rowComponent={VoteRow}
       head={
         <>
@@ -197,7 +197,7 @@ const VoteTable = ({ data: { votes }, lastName }) => {
                 Progressive Mass
               </a>
             </th>
-            <th style={{ width: '12.5%' }}>{lastName}&#39;s Vote</th>
+            <th style={{ width: '12.5%' }}>{familyName}&#39;s Vote</th>
             <th style={{ width: '12.5%' }}>Vote Tally</th>
           </tr>
         </>

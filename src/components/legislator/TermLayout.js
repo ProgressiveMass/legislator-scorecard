@@ -61,10 +61,10 @@ const TermLayout = (props) => {
 
   if (active === sponsorship) {
     BodyComponent = (
-      <SponsorshipTable data={props.data} lastName={props.lastName} />
+      <SponsorshipTable data={props.data} familyName={props.familyName} />
     )
   } else if (active === votes) {
-    BodyComponent = <VoteTable data={props.data} lastName={props.lastName} />
+    BodyComponent = <VoteTable data={props.data} familyName={props.familyName} />
   }
   return (
     <div className='white-background mb-4'>

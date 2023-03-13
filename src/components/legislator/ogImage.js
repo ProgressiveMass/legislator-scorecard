@@ -5,7 +5,7 @@ import defaultPhoto from '../../images/default-photo.jpg'
 
 const LegislatorOgImage = ({ pageContext: { chamber, pageData } }) => {
   const legislatorTitle = chamber === 'senate' ? 'Sen.' : 'Rep.'
-  const lastName = pageData.legislator.familyName
+  const familyName = pageData.legislator.familyName
   var partySuffix
   if (pageData.legislator.party === 'Democratic') {
     partySuffix = '(D)'
@@ -44,7 +44,7 @@ const LegislatorOgImage = ({ pageContext: { chamber, pageData } }) => {
           <div className='col-8'>
             <Rating
               chamber={chamber}
-              lastName={lastName}
+              familyName={familyName}
               title={legislatorTitle}
               rating={pageData.rating}
             />

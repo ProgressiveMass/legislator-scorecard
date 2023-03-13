@@ -12,6 +12,7 @@ const googleSheetIds = {
   2017: '15AgxGT87Qc02IqPV46Uc0u9Z_ChfAjZQaj3qS2VNF8g',
   2019: '17SfLTsqLaoBG8WE5vKHmBY_J6Iz1IFKThm_wAqsHZdg',
   2021: '1_WD66ZAMR4gQRq9f3s0ITayesaLoQcHIMZVTHkTA6Ug',
+  2023: '1Uq5Fe8F2FlRW0ns2UMbjJN9CKg2nxweE2EQfPhE6gdw',
 }
 
 const requestSheet = async (id, sheet) => {
@@ -63,7 +64,7 @@ const loadGoogleSheets = async (year) => {
 module.exports = async () => {
   let yearsToRefresh = [
     // 2017,
-    2019, 2021,
+    2019, 2021, 2023,
   ]
   yearsToRefresh.forEach((year) => {
     fs.removeSync(`${__dirname}/tmp/${year}.json`)

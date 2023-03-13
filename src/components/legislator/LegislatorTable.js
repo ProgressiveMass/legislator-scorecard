@@ -70,7 +70,8 @@ const LegislatorTable = ({
   title,
   rowComponent: RowComponent,
   rowData,
-  lastName,
+  isCurrentYear,
+  familyName,
 }) => {
   const [tagFilter, setTagFilter] = useState('')
 
@@ -112,8 +113,9 @@ const LegislatorTable = ({
             {filteredData.map((d, index) => (
               <RowComponent
                 key={index}
-                lastName={lastName}
+                familyName={familyName}
                 rowData={d}
+                isCurrentYear={isCurrentYear}
                 tags={<RowTags toggleFilter={toggleFilter} tags={d.tags} />}
               />
             ))}
@@ -125,12 +127,13 @@ const LegislatorTable = ({
 }
 
 LegislatorTable.propTypes = {
-  lastName: PropTypes.string,
+  familyName: PropTypes.string,
   head: PropTypes.node,
   description: PropTypes.node,
   title: PropTypes.string,
   rowComponent: PropTypes.node,
   rowData: PropTypes.arrayOf(PropTypes.object),
+  isCurrentYear: PropTypes.bool,
 }
 
 export default LegislatorTable

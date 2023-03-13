@@ -5,7 +5,7 @@ const buildVoteCumulativeData = require('./buildVoteCumulativeData')
 const buildSponsorshipCumulativeData = require('./buildSponsorshipCumulativeData')
 
 const voteSummaryYear = 2021
-const sponsorshipSummaryYear = 2021
+const sponsorshipSummaryYear = 2023
 
 const legislatorData = {
   senate: senateLegislators,
@@ -47,6 +47,7 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
       year,
       legislatorId,
     })
+    termData.isCurrentSponsorshipYear = year == sponsorshipSummaryYear
     if (legislatorSponsorshipEntry === undefined) {
       termData.sponsorship = []
     } else {
@@ -56,8 +57,8 @@ const createPageDataStruct = ({ chamber, legislatorId }) => {
         const billKey = !billNum.match('/')
           ? billNum
           : chamber === 'senate'
-          ? billNum.match(/S\d+/)[0]
-          : billNum.match(/H\d+/)[0]
+          ? billNum.match(/SD?\d+/)[0]
+          : billNum.match(/HD?\d+/)[0]
         const billData = progMassSponsoredBills[billKey]
         if (!billData) {
           throw new Error(

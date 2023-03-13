@@ -144,15 +144,13 @@ const buildSponsorshipObject = (sponsorship) => {
       const data = billNumbers.reduce((acc, billNo, i) => {
         // for easier matching in gatsby-node.js
         billNo = billNo.replace(/\./g, '')
-        acc[billNo] = sponsorship[i + 2][legislatorIndex]
+        letterVote = sponsorship[i + 2][legislatorIndex]
+        acc[billNo] = letterVote.toUpperCase() === 'Y'
         return acc
       }, {})
       const score = parseInt(
         Object.values(data)
-          .reduce((acc, curr) => {
-            if (curr.toLowerCase() === 'y') return acc + 1
-            return acc
-          }, 0)
+          .reduce((acc, curr) => acc + curr , 0)
           .toFixed()
       )
 
@@ -169,6 +167,7 @@ const sessionDict = {
   2017: 190,
   2019: 191,
   2021: 192,
+  2023: 193,
 }
 
 const buildLegislationDataForYear = (year) => {
@@ -212,5 +211,6 @@ module.exports = () => {
     2017: buildLegislationDataForYear(2017),
     2019: buildLegislationDataForYear(2019),
     2021: buildLegislationDataForYear(2021),
+    2023: buildLegislationDataForYear(2023),
   }
 }

@@ -3,13 +3,17 @@ import PropTypes from 'prop-types'
 import InfoPopover from '../InfoPopover'
 import LegislatorTable from './LegislatorTable'
 
-const Cosponsorship = ({ indicator }) => {
-  if (!indicator) {
-    return <span className='badge badge-clear'>N/A</span>
-  } else if (indicator === 'Y') {
+const Cosponsorship = ({ indicator, isCurrentSponsorshipYear }) => {
+  if (indicator === false) {
+    if (isCurrentSponsorshipYear) {
+      return <span className='badge badge-danger'>Not Yet</span>
+    } else {
+      return <span className='badge badge-danger'>No</span>
+    }
+  } else if (indicator === true) {
     return <span className='badge badge-primary'>Yes</span>
-  } else if (indicator === 'N') {
-    return <span className='badge badge-danger'>No</span>
+  } else {
+    return <span className='badge badge-clear'>N/A</span>
   }
 }
 
@@ -23,7 +27,8 @@ const SponsorshipRow = ({
     yourLegislator,
     url,
   },
-  lastName,
+  isCurrentYear,
+  familyName,
 }) => {
   return (
     <tr>
@@ -51,8 +56,8 @@ const SponsorshipRow = ({
       <td style={{ width: '40%' }} data-label=''>
         <p>{description}</p>
       </td>
-      <td style={{ width: '15%' }} data-label={`${lastName} Cosponsored?`}>
-        <Cosponsorship indicator={yourLegislator} />
+      <td style={{ width: '15%' }} data-label={`${familyName} Cosponsored?`}>
+        <Cosponsorship indicator={yourLegislator} isCurrentSponsorshipYear={isCurrentYear} />
       </td>
     </tr>
   )
@@ -74,13 +79,14 @@ const description = (
   </>
 )
 
-const SponsorshipTable = ({ data: { sponsorship }, lastName }) => {
+const SponsorshipTable = ({ data: { sponsorship, isCurrentSponsorshipYear }, familyName }) => {
   return (
     <LegislatorTable
       title='Cosponsored Bills'
       description={description}
       rowData={sponsorship}
-      lastName={lastName}
+      familyName={familyName}
+      isCurrentYear={isCurrentSponsorshipYear}
       head={
         <>
           <tr>
@@ -95,7 +101,7 @@ const SponsorshipTable = ({ data: { sponsorship }, lastName }) => {
                 Progressive Mass
               </a>
             </th>
-            <th style={{ width: '15%' }}>{lastName} Cosponsored?</th>
+            <th style={{ width: '15%' }}>{familyName} Cosponsored?</th>
           </tr>
         </>
       }
