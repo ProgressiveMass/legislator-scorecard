@@ -20,8 +20,10 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
     .toLowerCase()
     .replace(/ /g, '-')
     .replace(/[.,']/g, '')
+    // The next two lines remove diacritics, which createOpenGraphImage can't handle
+    // Source: stackoverflow.com/questions/990904
     .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '') // stackoverflow.com/questions/990904
+    .replace(/[\u0300-\u036f]/g, '')
 
   const context = {
     id: legislatorId,
