@@ -13,7 +13,7 @@ const { getLegislatorUrlParams } = require('./src/utilities')
 
 const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
   const ogImageFilename = (
-    pageData.legislator.name +
+    getLegislatorUrlParams(pageData.legislator) +
     '-' +
     pageData.legislator.district
   )
