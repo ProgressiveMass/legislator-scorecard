@@ -21,7 +21,7 @@ const LegislatorPage = ({
   return (
     <Layout>
       <SEO title={seoTitle} description={seoDescription} ogImage={ogImage} />
-      <YourLegislatorTabs currentLegislator={pageData.legislator.id} />
+      <YourLegislatorTabs currentLegislator={pageData.legislator} />
       <div className='tinted-background'>
         <LegislatorMetadata
           data={pageData.legislator}
