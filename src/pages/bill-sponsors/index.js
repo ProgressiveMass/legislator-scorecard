@@ -149,7 +149,7 @@ const BillSponsors = () => {
   const billInfo = React.useCallback(getBillInfo(data2021), [loading2021])
   const sponsorshipInfo = React.useCallback(
     getSponsorshipInfo(data2021, graphQLData),
-    [loading2021, !!graphQLData]
+    [loading2021, !!graphQLData, data2021]
   )
 
   if (loading2019 || loading2021)
