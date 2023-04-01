@@ -13,9 +13,7 @@
         "key_words": "Min wage",
         "other_names": "Fight for 15",
         "description": "Raises minimum wage to $15 by 2021 and indexes it to inflation. Ensures that tipped employees’ wages plus tips equal the new strengthened minimum wage.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/H2365"
       },
       "S1004": {
@@ -30,9 +28,7 @@
         "key_words": "Min wage",
         "other_names": "Fight for 15",
         "description": "Raises minimum wage to $15 by 2021 and indexes it to inflation. Ensures that tipped employees’ wages plus tips equal the new strengthened minimum wage.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/S1004"
       },
       "H2172": {
@@ -47,9 +43,7 @@
         "key_words": "Paid Leave",
         "other_names": "PFML",
         "description": "Makes employees eligible for job-protected paid leave to recover from a serious illness or injury, to care for a seriously ill or injured family member, or to care for a new child.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/H2172"
       },
       "S1048": {
@@ -64,9 +58,7 @@
         "key_words": "Paid Leave",
         "other_names": "PFML",
         "description": "Makes employees eligible for job-protected paid leave to recover from a serious illness or injury, to care for a seriously ill or injured family member, or to care for a new child.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/S1048"
       },
       "S81": {
@@ -81,9 +73,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Upgrades state’s zoning laws to encourage more affordable housing and transit-oriented, walkable development, and promotes inclusionary zoning  practices.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/S81"
       },
       "H2987": {
@@ -98,9 +88,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a single payer system, in which the state provides health care to all residents as a right.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/H2987"
       },
       "S619": {
@@ -115,9 +103,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a single payer system, in which the state provides health care to all residents as a right.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/S619"
       },
       "S223": {
@@ -132,9 +118,7 @@
         "key_words": "",
         "other_names": "",
         "description": "\nRequires the state to implement the recommendations of the the 2015 Foundation Budget Review Commission on K-12 education.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/S223"
       },
       "H633": {
@@ -149,9 +133,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes free college tuition and fees for all Massachusetts residents.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/H633",
         "show_paired_disclaimer": "TRUE"
       },
@@ -167,9 +149,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes free college (community college and/or state university) education for students of all families earning $200,000 a year or less, covering tuition, fees, housing, and transportation costs.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/190/S681",
         "show_paired_disclaimer": "TRUE"
       },
@@ -185,10 +165,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enacts comprehensive justice reform, complementing reductions in sentencing with jobs training, youth jobs, and pre-apprenticeship programs.",
-        "tags": [
-          "justice & equality",
-          "economy"
-        ],
+        "tags": ["justice & equality", "economy"],
         "url": "https://malegislature.gov/Bills/190/H2308"
       },
       "S791": {
@@ -203,9 +180,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enacts comprehensive justice reform, complementing reductions in sentencing with jobs training, youth jobs, and pre-apprenticeship programs.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/190/S791"
       },
       "H741": {
@@ -220,9 +195,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Restores judicial discretion in sentencing for nonviolent drug charges, reducing the economic and social costs of extended prison terms.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/190/H741"
       },
       "S819": {
@@ -237,9 +210,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Restores judicial discretion in sentencing for nonviolent drug charges, reducing the economic and social costs of extended prison terms.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/190/S819"
       },
       "H3269": {
@@ -254,9 +225,7 @@
         "key_words": "",
         "other_names": "Safe Communities",
         "description": "Prohibits the use of state resources for mass deportations or deportation raids, limits local and state police collaboration with federal immigration agents, and prohibits state support for Muslim registry.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/190/H3269"
       },
       "S1305": {
@@ -271,9 +240,7 @@
         "key_words": "",
         "other_names": "Safe Communities",
         "description": "Prohibits the use of state resources for mass deportations or deportation raids, limits local and state police collaboration with federal immigration agents, and prohibits state support for Muslim registry.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/190/S1305"
       },
       "H2359": {
@@ -288,9 +255,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Eliminates or reduces numerous fees, such as parole supervision, and ensures indigent residents are not jailed or given unreasonable fees simply because they struggle to pay court-related fines.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/190/H2359"
       },
       "S777": {
@@ -305,9 +270,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Eliminates or reduces numerous fees, such as parole supervision, and ensures indigent residents are not jailed or given unreasonable fees simply because they struggle to pay court-related fines.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/190/S777"
       },
       "H536": {
@@ -322,9 +285,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Updates MA’s contraceptive coverage equity law to require insurance carriers to provide all contraceptive methods without a copay.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/190/H536"
       },
       "S499": {
@@ -339,10 +300,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Updates MA’s contraceptive coverage equity law to require insurance carriers to provide all contraceptive methods without a copay.",
-        "tags": [
-          "justice & equality",
-          "economy"
-        ],
+        "tags": ["justice & equality", "economy"],
         "url": "https://malegislature.gov/Bills/190/S499"
       },
       "H2091": {
@@ -357,9 +315,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Modernizes voter registration by automatically registering citizens who interact with government agencies (\"opt-out\" instead of \"opt-in\") and ensures that such information is handled in a secure fashion.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/190/H2091"
       },
       "S373": {
@@ -374,9 +330,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Modernizes voter registration by automatically registering citizens who interact with government agencies (\"opt-out\" instead of \"opt-in\") and ensures that such information is handled in a secure fashion.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/190/S373"
       },
       "S1880": {
@@ -391,9 +345,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a climate adaptation and management program, sets greenhouse gas reduction targets for 2030 and 2040, accelerates the state’s Renewable Portfolio Standard (RPS), and increases commitment to offshore wind.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/190/S1880"
       },
       "H2706": {
@@ -408,9 +360,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Accelerates the state’s commitment to clean energy (RPS increase) and sets 25% by 2030 solar target.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/190/H2706"
       },
       "S1846": {
@@ -425,9 +375,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Accelerates the state’s commitment to clean energy (RPS increase) and sets 25% by 2030 solar target.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/190/S1846"
       },
       "H3400": {
@@ -442,9 +390,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Holds gas companies to a high standard with regards to new infrastructure and prevents massive public subsidy of new interstate gas pipelines.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/190/H3400"
       },
       "S1847": {
@@ -459,9 +405,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Holds gas companies to a high standard with regards to new infrastructure and prevents massive public subsidy of new interstate gas pipelines.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/190/S1847"
       },
       "H1726": {
@@ -476,9 +420,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enacts revenue-positive carbon pricing. 80% is rebated to residents while 20% is invested in green infrastructure, with a carve-out for low-income communities.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/190/H1726",
         "show_paired_disclaimer": "TRUE"
       },
@@ -494,9 +436,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enacts revenue-neutral carbon pricing. Every state resident receives an equal rebate, and employers get rebates based on their number of employees.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/190/S1821",
         "show_paired_disclaimer": "TRUE"
       }
@@ -515,9 +455,7 @@
         "# of Y": "116",
         "# of N": "43",
         "keywords": "Good Govt; Leadership",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 42,
         "yesVotes": 118,
         "url": "https://malegislature.gov/Bills/190/H58",
@@ -536,9 +474,7 @@
         "# of Y": "38",
         "# of N": "121",
         "keywords": "Good Govt, Transparency",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 123,
         "yesVotes": 37,
         "url": "https://malegislature.gov/Bills/190/H2019",
@@ -557,9 +493,7 @@
         "# of Y": "36",
         "# of N": "123",
         "keywords": "Revenue, Taxation",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 125,
         "yesVotes": 36,
         "url": "https://malegislature.gov/Bills/190/H3600",
@@ -578,9 +512,7 @@
         "# of Y": "118",
         "# of N": "39",
         "keywords": "Revenue, Taxation",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 38,
         "yesVotes": 121,
         "url": "https://malegislature.gov/Bills/190/H3600",
@@ -599,10 +531,7 @@
         "# of Y": "124",
         "# of N": "36",
         "keywords": "Housing, Immigration",
-        "tags": [
-          "economy",
-          "justice & equality"
-        ],
+        "tags": ["economy", "justice & equality"],
         "noVotes": 34,
         "yesVotes": 126,
         "url": "https://malegislature.gov/Bills/190/H3600",
@@ -621,9 +550,7 @@
         "# of Y": "123",
         "# of N": "37",
         "keywords": "Welfare, Poverty",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 35,
         "yesVotes": 126,
         "url": "https://malegislature.gov/Bills/190/H3600",
@@ -642,9 +569,7 @@
         "# of Y": "105",
         "# of N": "48",
         "keywords": "Revenue, Taxation, Education, Transportation",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 48,
         "yesVotes": 108,
         "url": "https://malegislature.gov/Bills/190/S10",
@@ -663,9 +588,7 @@
         "# of Y": "22",
         "# of N": "132",
         "keywords": "Criminal Justice, Health, Drug War",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 133,
         "yesVotes": 23,
         "url": "https://malegislature.gov/Bills/190/H3768",
@@ -684,10 +607,7 @@
         "# of Y": "141",
         "# of N": "13",
         "keywords": "Criminal Justice, Racial Equity, Gender Equity, Drug War",
-        "tags": [
-          "justice & equality",
-          "economy"
-        ],
+        "tags": ["justice & equality", "economy"],
         "noVotes": 14,
         "yesVotes": 142,
         "url": "https://malegislature.gov/Bills/190/H3768",
@@ -706,9 +626,7 @@
         "# of Y": "126",
         "# of N": "28",
         "keywords": "Criminal Justice, Drug War",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 29,
         "yesVotes": 127,
         "url": "https://malegislature.gov/Bills/190/H3768",
@@ -727,9 +645,7 @@
         "# of Y": "136",
         "# of N": "11",
         "keywords": "Criminal Justice, Drug War",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 11,
         "yesVotes": 139,
         "url": "https://malegislature.gov/Bills/190/H3818",
@@ -748,9 +664,7 @@
         "# of Y": "41",
         "# of N": "116",
         "keywords": "Health Care",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 119,
         "yesVotes": 40,
         "url": "https://malegislature.gov/Bills/190/H3822",
@@ -769,9 +683,7 @@
         "# of Y": "41",
         "# of N": "116",
         "keywords": "Health Care",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 119,
         "yesVotes": 40,
         "url": "https://malegislature.gov/Bills/190/H3822",
@@ -790,9 +702,7 @@
         "# of Y": "146",
         "# of N": "10",
         "keywords": "Climate Change, Environmental Protection",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 10,
         "yesVotes": 147,
         "url": "https://malegislature.gov/Bills/190/H3994",
@@ -811,9 +721,7 @@
         "# of Y": "140",
         "# of N": "16",
         "keywords": "Reproductive Rights, Health Care ",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 16,
         "yesVotes": 141,
         "url": "https://malegislature.gov/Bills/190/H4009",
@@ -832,9 +740,7 @@
         "# of Y": "119",
         "# of N": "34",
         "keywords": "Immigration, Policing ",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 34,
         "yesVotes": 120,
         "url": "https://malegislature.gov/Bills/190/H4011",
@@ -853,9 +759,7 @@
         "# of Y": "117",
         "# of N": "36",
         "keywords": "Criminal Justice Reform, Drug War",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 35,
         "yesVotes": 120,
         "url": "https://malegislature.gov/Bills/190/H4011",
@@ -874,9 +778,7 @@
         "# of Y": "123",
         "# of N": "34",
         "keywords": "Surveillance",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 34,
         "yesVotes": 124,
         "url": "https://malegislature.gov/Bills/190/H4011",
@@ -895,9 +797,7 @@
         "# of Y": "128",
         "# of N": "27",
         "keywords": "Criminal Justice Reform, Drug War",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 28,
         "yesVotes": 129,
         "url": "https://malegislature.gov/Bills/190/H4011",
@@ -916,9 +816,7 @@
         "# of Y": "118",
         "# of N": "37",
         "keywords": "Criminal Justice Reform",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 36,
         "yesVotes": 120,
         "url": "https://malegislature.gov/Bills/190/H4011",
@@ -937,9 +835,7 @@
         "# of Y": "136",
         "# of N": "18",
         "keywords": "Criminal Justice Reform",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 18,
         "yesVotes": 137,
         "url": "https://malegislature.gov/Bills/190/H4011",
@@ -958,9 +854,7 @@
         "# of Y": "118",
         "# of N": "36",
         "keywords": "Criminal Justice Reform",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 35,
         "yesVotes": 120,
         "url": "https://malegislature.gov/Bills/190/H4011",
@@ -979,9 +873,7 @@
         "# of Y": "110",
         "# of N": "41",
         "keywords": "Criminal Justice Reform, Drug War",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 39,
         "yesVotes": 113,
         "url": "https://malegislature.gov/Bills/190/H4011",
@@ -1000,9 +892,7 @@
         "# of Y": "148",
         "# of N": "5",
         "keywords": "Criminal Justice",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 5,
         "yesVotes": 151,
         "url": "https://malegislature.gov/Bills/190/S2371",
@@ -1021,9 +911,7 @@
         "# of Y": "10",
         "# of N": "145",
         "keywords": "Immigration, Policing ",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 148,
         "yesVotes": 10,
         "url": "https://malegislature.gov/Bills/190/H4400",
@@ -1042,9 +930,7 @@
         "# of Y": "136",
         "# of N": "19",
         "keywords": "Immigration, Policing, Local Aid",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 19,
         "yesVotes": 138,
         "url": "https://malegislature.gov/Bills/190/H4400",
@@ -1063,9 +949,7 @@
         "# of Y": "145",
         "# of N": "3",
         "keywords": "Corporate Tax Giveaways, Revenue",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 3,
         "yesVotes": 152,
         "url": "https://malegislature.gov/Bills/190/H4501",
@@ -1084,9 +968,7 @@
         "# of Y": "42",
         "# of N": "111",
         "keywords": "Gun Violence, Public Safety, Public Health",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 113,
         "yesVotes": 42,
         "url": "https://malegislature.gov/Bills/190/H4517",
@@ -1105,9 +987,7 @@
         "# of Y": "40",
         "# of N": "113",
         "keywords": "Gun Violence, Public Safety, Public Health",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 115,
         "yesVotes": 40,
         "url": "https://malegislature.gov/Bills/190/H4517",
@@ -1126,9 +1006,7 @@
         "# of Y": "139",
         "# of N": "14",
         "keywords": "Gun Violence, Public Safety, Public Health",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 14,
         "yesVotes": 141,
         "url": "https://malegislature.gov/Bills/190/H4517",
@@ -1147,9 +1025,7 @@
         "# of Y": "49",
         "# of N": "100",
         "keywords": "Health Care, Consumer Protection",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 102,
         "yesVotes": 49,
         "url": "https://malegislature.gov/Bills/190/H4617",
@@ -1168,9 +1044,7 @@
         "# of Y": "112",
         "# of N": "37",
         "keywords": "Economic Rights, Labor, Taxation",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 38,
         "yesVotes": 113,
         "url": "https://malegislature.gov/Bills/190/H4640",
@@ -1189,9 +1063,7 @@
         "# of Y": "34",
         "# of N": "117",
         "keywords": "LGBTQ Rights",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 118,
         "yesVotes": 35,
         "url": "https://malegislature.gov/Bills/190/H4664",
@@ -1210,9 +1082,7 @@
         "# of Y": "137",
         "# of N": "14",
         "keywords": "LGBTQ Rights",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 14,
         "yesVotes": 139,
         "url": "https://malegislature.gov/Bills/190/H4664",
@@ -1231,9 +1101,7 @@
         "# of Y": "131",
         "# of N": "20",
         "keywords": "Voting Rights, Democracy",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 20,
         "yesVotes": 133,
         "url": "https://malegislature.gov/Bills/190/H4667",
@@ -1252,9 +1120,7 @@
         "# of Y": "124",
         "# of N": "18",
         "keywords": "Taxation, Revenue",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 22,
         "yesVotes": 127,
         "url": "https://malegislature.gov/Bills/190/H4714",
@@ -1273,10 +1139,7 @@
         "# of Y": "111",
         "# of N": "36",
         "keywords": "Health Care, Civil Liberties",
-        "tags": [
-          "economy",
-          "justice & equality"
-        ],
+        "tags": ["economy", "justice & equality"],
         "noVotes": 37,
         "yesVotes": 114,
         "url": "https://malegislature.gov/Bills/190/H4725",
@@ -1295,9 +1158,7 @@
         "# of Y": "143",
         "# of N": "6",
         "keywords": "Immigration, Policing, Civil Rights",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 6,
         "yesVotes": 146,
         "url": "https://malegislature.gov/Bills/190/H4800",
@@ -1316,9 +1177,7 @@
         "# of Y": "138",
         "# of N": "9",
         "keywords": "Reproductive Rights",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 9,
         "yesVotes": 141,
         "url": "https://malegislature.gov/Bills/190/S2260",
@@ -1337,9 +1196,7 @@
         "# of Y": "116",
         "# of N": "34",
         "keywords": "Labor, Economic Rights, Education",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 34,
         "yesVotes": 118,
         "url": "https://malegislature.gov/Bills/190/H1390",
@@ -1358,9 +1215,7 @@
         "# of Y": "119",
         "# of N": "30",
         "keywords": "Housing, Taxation",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 30,
         "yesVotes": 121,
         "url": "https://malegislature.gov/Bills/190/H4841",
@@ -1379,9 +1234,7 @@
         "# of Y": "118",
         "# of N": "30",
         "keywords": "Poverty, Economic Rights",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 31,
         "yesVotes": 119,
         "url": "https://malegislature.gov/Bills/190/H4800",
@@ -1400,9 +1253,7 @@
         "# of Y": "37",
         "# of N": "114",
         "keywords": "Poverty, Economic Rights",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 117,
         "yesVotes": 36,
         "url": "https://malegislature.gov/Bills/190/H4823",
@@ -1422,9 +1273,7 @@
         "progressive_position": "NO",
         "# of Y": "31",
         "# of N": "9",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "status": "defeated",
         "noVotes": 9,
         "yesVotes": 29,
@@ -1443,9 +1292,7 @@
         "progressive_position": "YES",
         "# of Y": "37",
         "# of N": "0",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "status": "advanced",
         "noVotes": 0,
         "yesVotes": 37,
@@ -1464,9 +1311,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "0",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 0,
         "yesVotes": 38,
@@ -1485,9 +1330,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "0",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 0,
         "yesVotes": 38,
@@ -1506,9 +1349,7 @@
         "progressive_position": "YES",
         "# of Y": "22",
         "# of N": "15",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 15,
         "yesVotes": 22,
@@ -1527,9 +1368,7 @@
         "progressive_position": "YES",
         "# of Y": "29",
         "# of N": "7",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 7,
         "yesVotes": 31,
@@ -1548,9 +1387,7 @@
         "progressive_position": "YES",
         "# of Y": "30",
         "# of N": "5",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 5,
         "yesVotes": 32,
@@ -1569,9 +1406,7 @@
         "progressive_position": "YES",
         "# of Y": "12",
         "# of N": "26",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "defeated",
         "noVotes": 27,
         "yesVotes": 11,
@@ -1590,9 +1425,7 @@
         "progressive_position": "YES",
         "# of Y": "32",
         "# of N": "6",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 6,
         "yesVotes": 32,
@@ -1611,9 +1444,7 @@
         "progressive_position": "NO",
         "# of Y": "9",
         "# of N": "29",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 28,
         "yesVotes": 10,
@@ -1632,9 +1463,7 @@
         "progressive_position": "YES",
         "# of Y": "31",
         "# of N": "6",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 5,
         "yesVotes": 33,
@@ -1653,9 +1482,7 @@
         "progressive_position": "YES",
         "# of Y": "32",
         "# of N": "6",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "defeated",
         "noVotes": 5,
         "yesVotes": 34,
@@ -1674,9 +1501,7 @@
         "progressive_position": "NO",
         "# of Y": "15",
         "# of N": "22",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 22,
         "yesVotes": 15,
@@ -1695,9 +1520,7 @@
         "progressive_position": "NO",
         "# of Y": "14",
         "# of N": "23",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 23,
         "yesVotes": 14,
@@ -1716,9 +1539,7 @@
         "progressive_position": "NO",
         "# of Y": "22",
         "# of N": "15",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "defeated",
         "noVotes": 15,
         "yesVotes": 22,
@@ -1737,9 +1558,7 @@
         "progressive_position": "YES",
         "# of Y": "25",
         "# of N": "13",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 13,
         "yesVotes": 25,
@@ -1758,9 +1577,7 @@
         "progressive_position": "NO",
         "# of Y": "11",
         "# of N": "27",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 27,
         "yesVotes": 11,
@@ -1779,9 +1596,7 @@
         "progressive_position": "NO",
         "# of Y": "31",
         "# of N": "6",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "defeated",
         "noVotes": 6,
         "yesVotes": 31,
@@ -1800,9 +1615,7 @@
         "progressive_position": "NO",
         "# of Y": "18",
         "# of N": "19",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 20,
         "yesVotes": 17,
@@ -1821,9 +1634,7 @@
         "progressive_position": "NO",
         "# of Y": "17",
         "# of N": "21",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 21,
         "yesVotes": 17,
@@ -1842,9 +1653,7 @@
         "progressive_position": "NO",
         "# of Y": "15",
         "# of N": "23",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 22,
         "yesVotes": 16,
@@ -1863,9 +1672,7 @@
         "progressive_position": "NO",
         "# of Y": "18",
         "# of N": "20",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 20,
         "yesVotes": 18,
@@ -1884,9 +1691,7 @@
         "progressive_position": "NO",
         "# of Y": "9",
         "# of N": "28",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 28,
         "yesVotes": 9,
@@ -1905,9 +1710,7 @@
         "progressive_position": "NO",
         "# of Y": "17",
         "# of N": "20",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 20,
         "yesVotes": 17,
@@ -1926,9 +1729,7 @@
         "progressive_position": "NO",
         "# of Y": "15",
         "# of N": "22",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 22,
         "yesVotes": 15,
@@ -1947,9 +1748,7 @@
         "progressive_position": "NO",
         "# of Y": "13",
         "# of N": "24",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 24,
         "yesVotes": 13,
@@ -1968,9 +1767,7 @@
         "progressive_position": "NO",
         "# of Y": "14",
         "# of N": "22",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 22,
         "yesVotes": 14,
@@ -1989,9 +1786,7 @@
         "progressive_position": "NO",
         "# of Y": "18",
         "# of N": "19",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 19,
         "yesVotes": 18,
@@ -2010,9 +1805,7 @@
         "progressive_position": "NO",
         "# of Y": "8",
         "# of N": "28",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 28,
         "yesVotes": 8,
@@ -2031,9 +1824,7 @@
         "progressive_position": "YES",
         "# of Y": "27",
         "# of N": "10",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 10,
         "yesVotes": 27,
@@ -2052,9 +1843,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "31",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 32,
         "yesVotes": 6,
@@ -2073,9 +1862,7 @@
         "progressive_position": "YES",
         "# of Y": "12",
         "# of N": "26",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "defeated",
         "noVotes": 26,
         "yesVotes": 12,
@@ -2094,9 +1881,7 @@
         "progressive_position": "NO",
         "# of Y": "10",
         "# of N": "28",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 29,
         "yesVotes": 9,
@@ -2115,9 +1900,7 @@
         "progressive_position": "NO",
         "# of Y": "5",
         "# of N": "32",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 32,
         "yesVotes": 5,
@@ -2136,9 +1919,7 @@
         "progressive_position": "YES",
         "# of Y": "33",
         "# of N": "5",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 3,
         "yesVotes": 35,
@@ -2157,9 +1938,7 @@
         "progressive_position": "YES",
         "# of Y": "33",
         "# of N": "6",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 6,
         "yesVotes": 33,
@@ -2178,9 +1957,7 @@
         "progressive_position": "YES",
         "# of Y": "19",
         "# of N": "17",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 17,
         "yesVotes": 19,
@@ -2199,9 +1976,7 @@
         "progressive_position": "NO",
         "# of Y": "9",
         "# of N": "27",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "status": "defeated",
         "noVotes": 27,
         "yesVotes": 9,
@@ -2220,9 +1995,7 @@
         "progressive_position": "YES",
         "# of Y": "32",
         "# of N": "4",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "status": "advanced",
         "noVotes": 4,
         "yesVotes": 32,
@@ -2241,9 +2014,7 @@
         "progressive_position": "NO",
         "# of Y": "11",
         "# of N": "26",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 27,
         "yesVotes": 11,
@@ -2262,9 +2033,7 @@
         "progressive_position": "YES",
         "# of Y": "35",
         "# of N": "3",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "status": "advanced",
         "noVotes": 3,
         "yesVotes": 34,
@@ -2283,9 +2052,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "0",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 0,
         "yesVotes": 38,
@@ -2304,9 +2071,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "0",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 0,
         "yesVotes": 38,
@@ -2325,9 +2090,7 @@
         "progressive_position": "NO",
         "# of Y": "14",
         "# of N": "24",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 24,
         "yesVotes": 14,
@@ -2346,9 +2109,7 @@
         "progressive_position": "YES",
         "# of Y": "25",
         "# of N": "13",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 13,
         "yesVotes": 25,
@@ -2367,9 +2128,7 @@
         "progressive_position": "NO",
         "# of Y": "13",
         "# of N": "25",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 25,
         "yesVotes": 13,
@@ -2388,9 +2147,7 @@
         "progressive_position": "NO",
         "# of Y": "30",
         "# of N": "8",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "defeated",
         "noVotes": 8,
         "yesVotes": 30,
@@ -2409,9 +2166,7 @@
         "progressive_position": "YES",
         "# of Y": "15",
         "# of N": "22",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 23,
         "yesVotes": 15,
@@ -2430,9 +2185,7 @@
         "progressive_position": "NO",
         "# of Y": "33",
         "# of N": "5",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "defeated",
         "noVotes": 5,
         "yesVotes": 33,
@@ -2451,9 +2204,7 @@
         "progressive_position": "NO",
         "# of Y": "7",
         "# of N": "30",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "status": "advanced",
         "noVotes": 31,
         "yesVotes": 7,
@@ -2472,9 +2223,7 @@
         "progressive_position": "YES",
         "# of Y": "35",
         "# of N": "0",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "status": "advanced",
         "noVotes": 0,
         "yesVotes": 38,
@@ -2493,9 +2242,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "0",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 0,
         "yesVotes": 38,
@@ -2514,9 +2261,7 @@
         "progressive_position": "NO",
         "# of Y": "23",
         "# of N": "15",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "status": "defeated",
         "noVotes": 15,
         "yesVotes": 23,
@@ -2535,9 +2280,7 @@
         "progressive_position": "YES",
         "# of Y": "36",
         "# of N": "1",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 1,
         "yesVotes": 37,
@@ -2556,9 +2299,7 @@
         "progressive_position": "YES",
         "# of Y": "36",
         "# of N": "1",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "advanced",
         "noVotes": 1,
         "yesVotes": 37,
@@ -2577,9 +2318,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "0",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "status": "advanced",
         "noVotes": 0,
         "yesVotes": 38,
@@ -2598,9 +2337,7 @@
         "progressive_position": "NO",
         "# of Y": "36",
         "# of N": "1",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "defeated",
         "noVotes": 2,
         "yesVotes": 36,
@@ -2619,9 +2356,7 @@
         "progressive_position": "YES",
         "# of Y": "10",
         "# of N": "27",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "defeated",
         "noVotes": 27,
         "yesVotes": 11,
@@ -2640,9 +2375,7 @@
         "progressive_position": "NO",
         "# of Y": "22",
         "# of N": "15",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "defeated",
         "noVotes": 16,
         "yesVotes": 22,
@@ -2661,9 +2394,7 @@
         "progressive_position": "NO",
         "# of Y": "33",
         "# of N": "4",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "status": "defeated",
         "noVotes": 5,
         "yesVotes": 33,
@@ -2682,9 +2413,7 @@
         "progressive_position": "NO",
         "# of Y": "33",
         "# of N": "6",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "defeated",
         "noVotes": 6,
         "yesVotes": 32,
@@ -2703,10 +2432,7 @@
         "progressive_position": "YES",
         "# of Y": "27",
         "# of N": "10",
-        "tags": [
-          "economy",
-          "environment"
-        ],
+        "tags": ["economy", "environment"],
         "status": "advanced",
         "noVotes": 10,
         "yesVotes": 27,
@@ -2725,9 +2451,7 @@
         "progressive_position": "YES",
         "# of Y": "32",
         "# of N": "5",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 5,
         "yesVotes": 32,
@@ -2746,9 +2470,7 @@
         "progressive_position": "YES",
         "# of Y": "30",
         "# of N": "7",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 7,
         "yesVotes": 30,
@@ -2767,9 +2489,7 @@
         "progressive_position": "YES",
         "# of Y": "31",
         "# of N": "6",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 5,
         "yesVotes": 32,
@@ -2788,9 +2508,7 @@
         "progressive_position": "NO",
         "# of Y": "7",
         "# of N": "30",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "status": "advanced",
         "noVotes": 30,
         "yesVotes": 7,
@@ -18492,9 +18210,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a 4% surtax on income above $1 million to fund education and transportation reinvestment.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/S16"
       },
       "S16": {
@@ -18509,9 +18225,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a 4% surtax on income above $1 million to fund education and transportation reinvestment.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/h86"
       },
       "H586": {
@@ -18526,9 +18240,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Fixes our outdated school funding formula to more accurately and equitably distribute resources – giving all schools the funding they need to deliver high-quality education.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/s238"
       },
       "S238": {
@@ -18543,9 +18255,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Fixes our outdated school funding formula to more accurately and equitably distribute resources – giving all schools the funding they need to deliver high-quality education.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/H586"
       },
       "H1221": {
@@ -18560,9 +18270,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a higher education system where every Massachusetts resident has a right to attend any public college or university free of tuition and fees.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/S744"
       },
       "S744": {
@@ -18577,9 +18285,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a higher education system where every Massachusetts resident has a right to attend any public college or university free of tuition and fees.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/H1221"
       },
       "H470": {
@@ -18594,9 +18300,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Makes high-quality early education and child care affordable and accessible to all Massachusetts families.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/s288"
       },
       "S288": {
@@ -18611,9 +18315,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Makes high-quality early education and child care affordable and accessible to all Massachusetts families.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/H470"
       },
       "H1194": {
@@ -18628,9 +18330,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a single payer system, in which the state provides health care to all residents as a right.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/S683"
       },
       "S683": {
@@ -18645,9 +18345,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a single payer system, in which the state provides health care to all residents as a right.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/H1194"
       },
       "H1769": {
@@ -18662,9 +18360,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enables cities and towns to assess a fee of 0.5-2% on residential and commercial real estate transactions, with the funds allocated to affordable housing trust funds.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/s773"
       },
       "S773": {
@@ -18679,9 +18375,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enables cities and towns to assess a fee of 0.5-2% on residential and commercial real estate transactions, with the funds allocated to affordable housing trust funds.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/191/H1769"
       },
       "H3573": {
@@ -18696,9 +18390,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Limits local and state police collaboration with federal immigration agents, bars law enforcement and court personnel from inquiring about immigration status, and ensures due process protections.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/191/S1401"
       },
       "S1401": {
@@ -18713,9 +18405,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Limits local and state police collaboration with federal immigration agents, bars law enforcement and court personnel from inquiring about immigration status, and ensures due process protections.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/191/H3573"
       },
       "H2047": {
@@ -18730,9 +18420,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Strengthens and secures the rights of prisoners to receive visits and maintain relationships with their friends and loved ones without unnecessary interference from the state.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/191/S1379"
       },
       "S1379": {
@@ -18747,9 +18435,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Strengthens and secures the rights of prisoners to receive visits and maintain relationships with their friends and loved ones without unnecessary interference from the state.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/191/H2047"
       },
       "H3566": {
@@ -18764,9 +18450,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires the sealing of eviction records in order to combat housing discrimination.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/191/S824"
       },
       "S824": {
@@ -18781,9 +18465,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires the sealing of eviction records in order to combat housing discrimination.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/191/H3566"
       },
       "H3320": {
@@ -18798,9 +18480,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Reforms our state’s abortion laws so that every person can control their own body, life, and future.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/191/S1209"
       },
       "S1209": {
@@ -18815,9 +18495,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Reforms our state’s abortion laws so that every person can control their own body, life, and future.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/191/H3320"
       },
       "H685": {
@@ -18832,9 +18510,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Eliminates the arbitrary and discriminatory 20-day registration cutoff and allows eligible residents to register or re-register--and vote--at the polls on Election Day and during the early voting period.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/191/S396"
       },
       "S396": {
@@ -18849,9 +18525,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Eliminates the arbitrary and discriminatory 20-day registration cutoff and allows eligible residents to register or re-register--and vote--at the polls on Election Day and during the early voting period.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/191/H685"
       },
       "H719": {
@@ -18866,9 +18540,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Adopts ranked choice voting for relevant elections, enabling voters to rank candidate preferences and ensuring that the ultimate winner commands a majority of support.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/191/S414"
       },
       "S414": {
@@ -18883,9 +18555,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Adopts ranked choice voting for relevant elections, enabling voters to rank candidate preferences and ensuring that the ultimate winner commands a majority of support.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/191/H719"
       },
       "H3572": {
@@ -18900,9 +18570,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates an independent commission to investigate and report on complaints of workplace and sexual harassment in the Massachusetts Legislature.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/191/S1898"
       },
       "S1898": {
@@ -18917,9 +18585,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates an independent commission to investigate and report on complaints of workplace and sexual harassment in the Massachusetts Legislature.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/191/H3572"
       },
       "H761": {
@@ -18934,9 +18600,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Codifies environmental justice into law and secures strong enforcement of the state’s current EJ policy.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/191/S464"
       },
       "S464": {
@@ -18951,9 +18615,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Codifies environmental justice into law and secures strong enforcement of the state’s current EJ policy.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/191/h761"
       },
       "H2836": {
@@ -18968,9 +18630,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Sets the goal of 100% renewable energy economy-wide by 2045 and 100% renewable electricity by 2035.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/191/S1958"
       },
       "S1958": {
@@ -18985,9 +18645,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Sets the goal of 100% renewable energy economy-wide by 2045 and 100% renewable electricity by 2035.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/191/h2836"
       },
       "H2810": {
@@ -19002,9 +18660,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Sets a price on carbon emissions to incentivize the transition to renewable energy, with parts of the resulting revenue allocated for sustainable infrastructure. ",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/191/S1924",
         "show_paired_disclaimer": "TRUE"
       },
@@ -19020,9 +18676,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Sets a price on carbon emissions to incentivize the transition to renewable energy, with parts of the resulting revenue allocated for sustainable infrastructure. ",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/191/h2810",
         "show_paired_disclaimer": "TRUE"
       }
@@ -19040,9 +18694,7 @@
         "progressive_position": "Yes",
         "# of Y": "55",
         "# of N": "103",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 91,
         "yesVotes": 48,
         "url": "https://malegislature.gov/Bills/191/H2019",
@@ -19060,9 +18712,7 @@
         "progressive_position": "Yes",
         "# of Y": "47",
         "# of N": "111",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 99,
         "yesVotes": 40,
         "url": "https://malegislature.gov/Bills/191/H2019",
@@ -19080,9 +18730,7 @@
         "progressive_position": "Yes",
         "# of Y": "49",
         "# of N": "109",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 97,
         "yesVotes": 42,
         "url": "https://malegislature.gov/Bills/191/H2019",
@@ -19100,9 +18748,7 @@
         "progressive_position": "Yes",
         "# of Y": "149",
         "# of N": "8",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 8,
         "yesVotes": 131,
         "url": "https://malegislature.gov/Bills/191/H140",
@@ -19120,9 +18766,7 @@
         "progressive_position": "No",
         "# of Y": "31",
         "# of N": "126",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 112,
         "yesVotes": 27,
         "url": "https://malegislature.gov/Bills/191/H104",
@@ -19140,9 +18784,7 @@
         "progressive_position": "Yes",
         "# of Y": "140",
         "# of N": "14",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 10,
         "yesVotes": 125,
         "url": "https://malegislature.gov/Bills/191/H3638",
@@ -19160,9 +18802,7 @@
         "progressive_position": "Yes",
         "# of Y": "155",
         "# of N": "1",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 1,
         "yesVotes": 138,
         "url": "https://malegislature.gov/Bills/191/H104",
@@ -19180,9 +18820,7 @@
         "progressive_position": "No",
         "# of Y": "31",
         "# of N": "125",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 111,
         "yesVotes": 27,
         "url": "https://malegislature.gov/Bills/191/H3854",
@@ -19200,9 +18838,7 @@
         "progressive_position": "No",
         "# of Y": "22",
         "# of N": "134",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 119,
         "yesVotes": 19,
         "url": "https://malegislature.gov/Bills/191/H3854",
@@ -19220,9 +18856,7 @@
         "progressive_position": "No",
         "# of Y": "29",
         "# of N": "127",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 113,
         "yesVotes": 25,
         "url": "https://malegislature.gov/Bills/191/H3854",
@@ -19240,9 +18874,7 @@
         "progressive_position": "No",
         "# of Y": "27",
         "# of N": "129",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 115,
         "yesVotes": 23,
         "url": "https://malegislature.gov/Bills/191/H3854",
@@ -19260,9 +18892,7 @@
         "progressive_position": "No",
         "# of Y": "34",
         "# of N": "123",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 109,
         "yesVotes": 30,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -19280,9 +18910,7 @@
         "progressive_position": "No",
         "# of Y": "36",
         "# of N": "121",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 107,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -19300,9 +18928,7 @@
         "progressive_position": "No",
         "# of Y": "34",
         "# of N": "122",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 108,
         "yesVotes": 30,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -19320,9 +18946,7 @@
         "progressive_position": "No",
         "# of Y": "35",
         "# of N": "122",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 107,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -19340,9 +18964,7 @@
         "progressive_position": "No",
         "# of Y": "36",
         "# of N": "119",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 108,
         "yesVotes": 30,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -19360,9 +18982,7 @@
         "progressive_position": "No",
         "# of Y": "33",
         "# of N": "121",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 107,
         "yesVotes": 29,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -19380,9 +19000,7 @@
         "progressive_position": "Yes",
         "# of Y": "112",
         "# of N": "43",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 37,
         "yesVotes": 102,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -19400,9 +19018,7 @@
         "progressive_position": "No",
         "# of Y": "29",
         "# of N": "128",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 114,
         "yesVotes": 25,
         "url": "https://malegislature.gov/Bills/191/H3854",
@@ -19420,9 +19036,7 @@
         "progressive_position": "Yes",
         "# of Y": "30",
         "# of N": "128",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 115,
         "yesVotes": 25,
         "url": "https://malegislature.gov/Bills/191/H4087",
@@ -19440,9 +19054,7 @@
         "progressive_position": "No",
         "# of Y": "38",
         "# of N": "115",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 105,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/191/H4127",
@@ -19460,9 +19072,7 @@
         "progressive_position": "No",
         "# of Y": "32",
         "# of N": "126",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 111,
         "yesVotes": 28,
         "url": "https://malegislature.gov/Bills/191/H4183",
@@ -19480,9 +19090,7 @@
         "progressive_position": "Yes",
         "# of Y": "155",
         "# of N": "0",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 0,
         "yesVotes": 138,
         "url": "https://malegislature.gov/Bills/191/S2412",
@@ -19500,9 +19108,7 @@
         "progressive_position": "YES",
         "# of Y": "122",
         "# of N": "33",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 29,
         "yesVotes": 111,
         "url": "https://malegislature.gov/Bills/191/H4398",
@@ -19520,9 +19126,7 @@
         "progressive_position": "NO",
         "# of Y": "36",
         "# of N": "118",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 108,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/191/H4508",
@@ -19540,9 +19144,7 @@
         "progressive_position": "NO",
         "# of Y": "35",
         "# of N": "119",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 109,
         "yesVotes": 30,
         "url": "https://malegislature.gov/Bills/191/H4508",
@@ -19560,9 +19162,7 @@
         "progressive_position": "NO",
         "# of Y": "35",
         "# of N": "119",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 108,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/191/H4508",
@@ -19580,9 +19180,7 @@
         "progressive_position": "YES",
         "# of Y": "13",
         "# of N": "141",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 128,
         "yesVotes": 11,
         "url": "https://malegislature.gov/Bills/191/H4508",
@@ -19600,9 +19198,7 @@
         "progressive_position": "NO",
         "# of Y": "36",
         "# of N": "118",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 108,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/191/H4508",
@@ -19620,9 +19216,7 @@
         "progressive_position": "YES",
         "# of Y": "113",
         "# of N": "40",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 34,
         "yesVotes": 105,
         "url": "https://malegislature.gov/Bills/191/H4508",
@@ -19640,9 +19234,7 @@
         "progressive_position": "YES",
         "# of Y": "17",
         "# of N": "139",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 128,
         "yesVotes": 14,
         "url": "https://malegislature.gov/Bills/191/H4768",
@@ -19660,9 +19252,7 @@
         "progressive_position": "YES",
         "# of Y": "16",
         "# of N": "139",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 127,
         "yesVotes": 14,
         "url": "https://malegislature.gov/Bills/191/H4768",
@@ -19680,9 +19270,7 @@
         "progressive_position": "No",
         "# of Y": "44",
         "# of N": "115",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "33h",
         "noVotes": 107,
         "yesVotes": 37,
@@ -19701,9 +19289,7 @@
         "progressive_position": "Yes",
         "# of Y": "83",
         "# of N": "76",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "34h",
         "noVotes": 69,
         "yesVotes": 75,
@@ -19722,9 +19308,7 @@
         "progressive_position": "Yes",
         "# of Y": "38",
         "# of N": "121",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "35h",
         "noVotes": 108,
         "yesVotes": 36,
@@ -19743,9 +19327,7 @@
         "progressive_position": "Yes",
         "# of Y": "46",
         "# of N": "113",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "36h",
         "noVotes": 103,
         "yesVotes": 41,
@@ -19764,9 +19346,7 @@
         "progressive_position": "No",
         "# of Y": "34",
         "# of N": "124",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "37h",
         "noVotes": 112,
         "yesVotes": 32,
@@ -19785,9 +19365,7 @@
         "progressive_position": "No",
         "# of Y": "45",
         "# of N": "114",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "38h",
         "noVotes": 104,
         "yesVotes": 40,
@@ -19806,9 +19384,7 @@
         "progressive_position": "No",
         "# of Y": "44",
         "# of N": "114",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "39h",
         "noVotes": 103,
         "yesVotes": 40,
@@ -19827,9 +19403,7 @@
         "progressive_position": "No",
         "# of Y": "43",
         "# of N": "115",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "40h",
         "noVotes": 106,
         "yesVotes": 37,
@@ -19848,9 +19422,7 @@
         "progressive_position": "No",
         "# of Y": "68",
         "# of N": "90",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "41h",
         "noVotes": 80,
         "yesVotes": 63,
@@ -19869,9 +19441,7 @@
         "progressive_position": "No",
         "# of Y": "53",
         "# of N": "106",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "42h",
         "noVotes": 97,
         "yesVotes": 47,
@@ -19890,9 +19460,7 @@
         "progressive_position": "Yes",
         "# of Y": "24",
         "# of N": "135",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "43h",
         "noVotes": 122,
         "yesVotes": 22,
@@ -19911,9 +19479,7 @@
         "progressive_position": "No",
         "# of Y": "72",
         "# of N": "87",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "44h",
         "noVotes": 83,
         "yesVotes": 61,
@@ -19932,9 +19498,7 @@
         "progressive_position": "Yes",
         "# of Y": "115",
         "# of N": "44",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "45h",
         "noVotes": 44,
         "yesVotes": 100,
@@ -19953,9 +19517,7 @@
         "progressive_position": "Yes",
         "# of Y": "47",
         "# of N": "112",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "46h",
         "noVotes": 96,
         "yesVotes": 48,
@@ -19974,9 +19536,7 @@
         "progressive_position": "Yes",
         "# of Y": "93",
         "# of N": "66",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "undefined": "47h",
         "noVotes": 60,
         "yesVotes": 84,
@@ -19995,9 +19555,7 @@
         "progressive_position": "Yes",
         "# of Y": "29",
         "# of N": "130",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "undefined": "48h",
         "noVotes": 117,
         "yesVotes": 27,
@@ -20016,9 +19574,7 @@
         "progressive_position": "Yes",
         "# of Y": "23",
         "# of N": "136",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "undefined": "49h",
         "noVotes": 123,
         "yesVotes": 21,
@@ -20037,9 +19593,7 @@
         "progressive_position": "Yes",
         "# of Y": "19",
         "# of N": "139",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "undefined": "50h",
         "noVotes": 126,
         "yesVotes": 17,
@@ -20058,9 +19612,7 @@
         "progressive_position": "Yes",
         "# of Y": "51",
         "# of N": "108",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "undefined": "51h",
         "noVotes": 100,
         "yesVotes": 44,
@@ -20079,9 +19631,7 @@
         "progressive_position": "Yes",
         "# of Y": "142",
         "# of N": "17",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "undefined": "52h",
         "noVotes": 16,
         "yesVotes": 128,
@@ -20100,9 +19650,7 @@
         "progressive_position": "Yes",
         "# of Y": "30",
         "# of N": "127",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 118,
         "yesVotes": 25,
         "url": "https://malegislature.gov/Bills/191/H5150",
@@ -20120,9 +19668,7 @@
         "progressive_position": "Yes",
         "# of Y": "108",
         "# of N": "49",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 43,
         "yesVotes": 100,
         "url": "https://malegislature.gov/Bills/191/H5150",
@@ -20140,9 +19686,7 @@
         "progressive_position": "Yes",
         "# of Y": "92",
         "# of N": "67",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 52,
         "yesVotes": 91,
         "url": "https://malegislature.gov/Bills/191/S2963",
@@ -20160,9 +19704,7 @@
         "progressive_position": "No",
         "# of Y": "49",
         "# of N": "107",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 100,
         "yesVotes": 43,
         "url": "https://malegislature.gov/Bills/191/H5179",
@@ -20180,9 +19722,7 @@
         "progressive_position": "No",
         "# of Y": "34",
         "# of N": "120",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 111,
         "yesVotes": 30,
         "url": "https://malegislature.gov/Bills/191/H5179",
@@ -20200,9 +19740,7 @@
         "progressive_position": "Yes",
         "# of Y": "107",
         "# of N": "51",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 47,
         "yesVotes": 97,
         "url": "https://malegislature.gov/Bills/191/S2963",
@@ -20220,9 +19758,7 @@
         "progressive_position": "Yes",
         "# of Y": "107",
         "# of N": "46",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 42,
         "yesVotes": 100,
         "url": "https://malegislature.gov/Bills/191/H5179",
@@ -20240,9 +19776,7 @@
         "progressive_position": "Yes",
         "# of Y": "145",
         "# of N": "9",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 9,
         "yesVotes": 134,
         "url": "https://malegislature.gov/Bills/191/S2995",
@@ -20262,9 +19796,7 @@
         "progressive_position": "YES",
         "# of Y": "39",
         "# of N": "0",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 0,
         "yesVotes": 35,
         "url": "https://malegislature.gov/Bills/191/S9",
@@ -20282,9 +19814,7 @@
         "progressive_position": "YES",
         "# of Y": "8",
         "# of N": "31",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 30,
         "yesVotes": 5,
         "url": "https://malegislature.gov/Bills/191/S9",
@@ -20302,9 +19832,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "32",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 31,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/S2189",
@@ -20322,9 +19850,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "31",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 31,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/S2186",
@@ -20342,9 +19868,7 @@
         "progressive_position": "YES",
         "# of Y": "35",
         "# of N": "5",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 2,
         "yesVotes": 33,
         "url": "https://malegislature.gov/Bills/191/H3638",
@@ -20362,9 +19886,7 @@
         "progressive_position": "YES",
         "# of Y": "37",
         "# of N": "3",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 1,
         "yesVotes": 35,
         "url": "https://malegislature.gov/Bills/191/H3594",
@@ -20382,9 +19904,7 @@
         "progressive_position": "YES",
         "# of Y": "39",
         "# of N": "1",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 0,
         "yesVotes": 36,
         "url": "https://malegislature.gov/Bills/191/S2203",
@@ -20402,9 +19922,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "33",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 32,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -20422,9 +19940,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "33",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 32,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -20442,9 +19958,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "33",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 32,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -20462,9 +19976,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "33",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 32,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -20482,9 +19994,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "33",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 31,
         "yesVotes": 4,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -20502,9 +20012,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "33",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 32,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -20522,9 +20030,7 @@
         "progressive_position": "YES",
         "# of Y": "35",
         "# of N": "5",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 2,
         "yesVotes": 34,
         "url": "https://malegislature.gov/Bills/191/H86",
@@ -20542,9 +20048,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "32",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 32,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/S2273",
@@ -20562,9 +20066,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "32",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 32,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/S2273",
@@ -20582,9 +20084,7 @@
         "progressive_position": "NO",
         "# of Y": "5",
         "# of N": "34",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 33,
         "yesVotes": 2,
         "url": "https://malegislature.gov/Bills/191/H3854",
@@ -20602,9 +20102,7 @@
         "progressive_position": "YES",
         "# of Y": "14",
         "# of N": "24",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 23,
         "yesVotes": 11,
         "url": "https://malegislature.gov/Bills/191/S2350",
@@ -20622,9 +20120,7 @@
         "progressive_position": "YES",
         "# of Y": "39",
         "# of N": "0",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 0,
         "yesVotes": 34,
         "url": "https://malegislature.gov/Bills/191/S2350",
@@ -20642,9 +20138,7 @@
         "progressive_position": "YES",
         "# of Y": "34",
         "# of N": "4",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 3,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/191/S2350",
@@ -20662,9 +20156,7 @@
         "progressive_position": "NO",
         "# of Y": "11",
         "# of N": "27",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 26,
         "yesVotes": 8,
         "url": "https://malegislature.gov/Bills/191/S2350",
@@ -20682,9 +20174,7 @@
         "progressive_position": "YES",
         "# of Y": "37",
         "# of N": "0",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 0,
         "yesVotes": 35,
         "url": "https://malegislature.gov/Bills/191/S2350",
@@ -20702,9 +20192,7 @@
         "progressive_position": "NO",
         "# of Y": "11",
         "# of N": "27",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 26,
         "yesVotes": 9,
         "url": "https://malegislature.gov/Bills/191/S2407",
@@ -20722,9 +20210,7 @@
         "progressive_position": "NO",
         "# of Y": "13",
         "# of N": "26",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 25,
         "yesVotes": 10,
         "url": "https://malegislature.gov/Bills/191/S2410",
@@ -20742,9 +20228,7 @@
         "progressive_position": "NO",
         "# of Y": "12",
         "# of N": "27",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 27,
         "yesVotes": 8,
         "url": "https://malegislature.gov/Bills/191/S2410",
@@ -20762,9 +20246,7 @@
         "progressive_position": "YES",
         "# of Y": "33",
         "# of N": "2",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 1,
         "yesVotes": 33,
         "url": "https://malegislature.gov/Bills/191/S2459",
@@ -20782,9 +20264,7 @@
         "progressive_position": "NO",
         "# of Y": "8",
         "# of N": "29",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 28,
         "yesVotes": 7,
         "url": "https://malegislature.gov/Bills/191/S2477",
@@ -20802,9 +20282,7 @@
         "progressive_position": "NO",
         "# of Y": "30",
         "# of N": "7",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 29,
         "yesVotes": 6,
         "url": "https://malegislature.gov/Bills/191/S2478",
@@ -20822,9 +20300,7 @@
         "progressive_position": "YES",
         "# of Y": "35",
         "# of N": "2",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 1,
         "yesVotes": 34,
         "url": "https://malegislature.gov/Bills/191/S2478",
@@ -20842,9 +20318,7 @@
         "progressive_position": "NO",
         "# of Y": "7",
         "# of N": "30",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 29,
         "yesVotes": 6,
         "url": "https://malegislature.gov/Bills/191/S2477",
@@ -20862,9 +20336,7 @@
         "progressive_position": "YES",
         "# of Y": "36",
         "# of N": "2",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 1,
         "yesVotes": 33,
         "url": "https://malegislature.gov/Bills/191/S2477",
@@ -20882,9 +20354,7 @@
         "progressive_position": "YES",
         "# of Y": "35",
         "# of N": "2",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 1,
         "yesVotes": 33,
         "url": "https://malegislature.gov/Bills/191/S2476",
@@ -20902,9 +20372,7 @@
         "progressive_position": "No",
         "# of Y": "13",
         "# of N": "24",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 24,
         "yesVotes": 11,
         "url": "https://malegislature.gov/Bills/191/S2553",
@@ -20922,9 +20390,7 @@
         "progressive_position": "YES",
         "# of Y": "18",
         "# of N": "19",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 19,
         "yesVotes": 16,
         "url": "https://malegislature.gov/Bills/191/S2553",
@@ -20942,9 +20408,7 @@
         "progressive_position": "YES",
         "# of Y": "16",
         "# of N": "23",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 22,
         "yesVotes": 15,
         "url": "https://malegislature.gov/Bills/191/S2755",
@@ -20962,9 +20426,7 @@
         "progressive_position": "YES",
         "# of Y": "14",
         "# of N": "25",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 25,
         "yesVotes": 12,
         "url": "https://malegislature.gov/Bills/191/S2755",
@@ -20982,9 +20444,7 @@
         "progressive_position": "NO",
         "# of Y": "10",
         "# of N": "29",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 28,
         "yesVotes": 9,
         "url": "https://malegislature.gov/Bills/191/S2755",
@@ -21002,9 +20462,7 @@
         "progressive_position": "NO",
         "# of Y": "12",
         "# of N": "27",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 27,
         "yesVotes": 10,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21022,9 +20480,7 @@
         "progressive_position": "NO",
         "# of Y": "16",
         "# of N": "24",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 24,
         "yesVotes": 14,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21042,9 +20498,7 @@
         "progressive_position": "YES",
         "# of Y": "26",
         "# of N": "14",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 12,
         "yesVotes": 26,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21062,9 +20516,7 @@
         "progressive_position": "NO",
         "# of Y": "16",
         "# of N": "24",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 24,
         "yesVotes": 14,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21082,9 +20534,7 @@
         "progressive_position": "NO",
         "# of Y": "10",
         "# of N": "29",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 28,
         "yesVotes": 9,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21102,9 +20552,7 @@
         "progressive_position": "YES",
         "# of Y": "27",
         "# of N": "12",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 10,
         "yesVotes": 28,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21122,9 +20570,7 @@
         "progressive_position": "NO",
         "# of Y": "16",
         "# of N": "24",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 25,
         "yesVotes": 13,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21142,9 +20588,7 @@
         "progressive_position": "YES",
         "# of Y": "16",
         "# of N": "24",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 21,
         "yesVotes": 16,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21162,9 +20606,7 @@
         "progressive_position": "NO",
         "# of Y": "3",
         "# of N": "36",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 34,
         "yesVotes": 3,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21182,9 +20624,7 @@
         "progressive_position": "YES",
         "# of Y": "30",
         "# of N": "7",
-        "tags": [
-          null
-        ],
+        "tags": [null],
         "noVotes": 6,
         "yesVotes": 29,
         "url": "https://malegislature.gov/Bills/191/S2800",
@@ -21202,9 +20642,7 @@
         "progressive_position": "NO",
         "# of Y": "5",
         "# of N": "35",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 34,
         "yesVotes": 4,
         "url": "https://malegislature.gov/Bills/191/S4",
@@ -21222,9 +20660,7 @@
         "progressive_position": "YES",
         "# of Y": "33",
         "# of N": "7",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 6,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/191/S4",
@@ -21242,9 +20678,7 @@
         "progressive_position": "YES",
         "# of Y": "12",
         "# of N": "27",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 27,
         "yesVotes": 10,
         "url": "https://malegislature.gov/Bills/191/S4",
@@ -21262,9 +20696,7 @@
         "progressive_position": "YES",
         "# of Y": "28",
         "# of N": "12",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 10,
         "yesVotes": 28,
         "url": "https://malegislature.gov/Bills/191/S2963",
@@ -21282,9 +20714,7 @@
         "progressive_position": "NO",
         "# of Y": "8",
         "# of N": "32",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 31,
         "yesVotes": 7,
         "url": "https://malegislature.gov/Bills/191/H5179",
@@ -21302,9 +20732,7 @@
         "progressive_position": "NO",
         "# of Y": "12",
         "# of N": "28",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 27,
         "yesVotes": 11,
         "url": "https://malegislature.gov/Bills/191/S2963",
@@ -21322,9 +20750,7 @@
         "progressive_position": "YES",
         "# of Y": "31",
         "# of N": "9",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 7,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/191/S2963",
@@ -21342,9 +20768,7 @@
         "progressive_position": "YES",
         "# of Y": "32",
         "# of N": "8",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 7,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/191/H5179",
@@ -21362,9 +20786,7 @@
         "progressive_position": "YES",
         "# of Y": "32",
         "# of N": "7",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 5,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/191/H5164",
@@ -21382,9 +20804,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "2",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 1,
         "yesVotes": 37,
         "url": "https://malegislature.gov/Bills/191/S2995",
@@ -39159,9 +38579,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a universal system of affordable, high-quality early education and child care for all Massachusetts families, over a 5-year timeline.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/H605"
       },
       "S362": {
@@ -39176,9 +38594,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a universal system of affordable, high-quality early education and child care for all Massachusetts families, over a 5-year timeline.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/S362"
       },
       "H1339": {
@@ -39193,9 +38609,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a higher education system where every Massachusetts resident has a right to attend any public college or university free of tuition and fees.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/H1339"
       },
       "S829": {
@@ -39210,9 +38624,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a higher education system where every Massachusetts resident has a right to attend any public college or university free of tuition and fees.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/S829"
       },
       "H1267": {
@@ -39227,9 +38639,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a single payer system, in which the state provides health care to all residents as a right.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/H1267"
       },
       "S766": {
@@ -39244,9 +38654,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a single payer system, in which the state provides health care to all residents as a right.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/S766"
       },
       "H2890": {
@@ -39261,9 +38669,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Doubles the deeds excise tax on home sales to provide a funding stream for the Global Warming Solutions Fund, the Affordable Housing Trust Fund, and the Housing Preservation and Stabilization Fund.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/H2890"
       },
       "S1853": {
@@ -39278,9 +38684,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Doubles the deeds excise tax on home sales to provide a funding stream for the Global Warming Solutions Fund, the Affordable Housing Trust Fund, and the Housing Preservation and Stabilization Fund.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/S1853"
       },
       "H1377": {
@@ -39295,9 +38699,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enables cities and towns to assess a fee of 0.5-2% on residential and commercial real estate transactions, with the funds allocated to affordable housing trust funds.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/H1377"
       },
       "S868": {
@@ -39312,9 +38714,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enables cities and towns to assess a fee of 0.5-2% on residential and commercial real estate transactions, with the funds allocated to affordable housing trust funds.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/S1853"
       },
       "H1808": {
@@ -39329,9 +38729,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Protects tenants ​from ​​being unfairly branded with an eviction record if they don’t have a judgment against them, if they weren’t actually evicted, or if they didn’t do anything wrong.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/H1808"
       },
       "S921": {
@@ -39346,9 +38744,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Protects tenants ​from ​​being unfairly branded with an eviction record if they don’t have a judgment against them, if they weren’t actually evicted, or if they didn’t do anything wrong.",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/192/S921"
       },
       "H2418": {
@@ -39363,9 +38759,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Limits local and state police collaboration with federal immigration agents, bars law enforcement and court personnel from inquiring about immigration status, and ensures due process protections.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/H2418/"
       },
       "S1579": {
@@ -39380,9 +38774,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Limits local and state police collaboration with federal immigration agents, bars law enforcement and court personnel from inquiring about immigration status, and ensures due process protections.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/S1579/"
       },
       "H3456": {
@@ -39397,9 +38789,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enables all qualified state residents to apply for a standard Massachusetts driver’s license or identification card, regardless of immigrant status.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/H3456"
       },
       "S2289": {
@@ -39414,9 +38804,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enables all qualified state residents to apply for a standard Massachusetts driver’s license or identification card, regardless of immigrant status.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/S2289"
       },
       "H2504": {
@@ -39431,9 +38819,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Expands the rights of those in solitary confinement, including requiring treatment for those with serious mental illness and monthly reviews for eligibility to return to the general population.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/H2504"
       },
       "S1578": {
@@ -39448,9 +38834,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Expands the rights of those in solitary confinement, including requiring treatment for those with serious mental illness and monthly reviews for eligibility to return to the general population.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/S1578"
       },
       "H1900": {
@@ -39465,9 +38849,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Prevents prisons and jails from charging individuals who are incarcerated for phone calls to loved ones.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/H1900"
       },
       "S1559": {
@@ -39482,9 +38864,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Prevents prisons and jails from charging individuals who are incarcerated for phone calls to loved ones.",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/S1559"
       },
       "H2519": {
@@ -39499,9 +38879,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a grant program through the Executive Office of Health and Human Services to increase the availability of non-law-enforcement, unarmed community-based response options for calls to 911 ",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/H2519"
       },
       "S1552": {
@@ -39516,9 +38894,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a grant program through the Executive Office of Health and Human Services to increase the availability of non-law-enforcement, unarmed community-based response options for calls to 911 ",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/192/S1552"
       },
       "H3372": {
@@ -39533,9 +38909,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Commits MA to transitioning to 100% renewable electricity and net zero carbon emissions across all sectors by 2030.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/192/H3372"
       },
       "S2170": {
@@ -39550,9 +38924,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Commits MA to transitioning to 100% renewable electricity and net zero carbon emissions across all sectors by 2030.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/192/S2170"
       },
       "H3365": {
@@ -39567,9 +38939,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Puts thousands of MA residents to work retrofitting 100,000 homes each year to improve energy efficiency and health outcomes, and reduce utility bills and carbon emissions.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/192/H3365"
       },
       "S2226": {
@@ -39584,9 +38954,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Puts thousands of MA residents to work retrofitting 100,000 homes each year to improve energy efficiency and health outcomes, and reduce utility bills and carbon emissions.",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/192/S2226"
       },
       "H805": {
@@ -39601,9 +38969,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Makes reforms from last year’s COVID elections package permanent and builds on them with Election Day Registration, measures to ensure that individuals who are incarcerated but still have the right to vote are able to do so, and steps to strengthen enforcement of the 2018 Automatic Voter Registration law.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/192/H805"
       },
       "S459": {
@@ -39618,9 +38984,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Makes reforms from last year’s COVID elections package permanent and builds on them with Election Day Registration, measures to ensure that individuals who are incarcerated but still have the right to vote are able to do so, and steps to strengthen enforcement of the 2018 Automatic Voter Registration law.",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/192/S459"
       }
     },
@@ -39637,9 +39001,7 @@
         "progressive_position": "YES",
         "# of Y": "8",
         "# of N": "152",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://statehouseemployeeunion.org/",
         "roll_call_url": "https://statehouseemployeeunion.org/",
         "noVotes": 151,
@@ -39657,9 +39019,7 @@
         "progressive_position": "YES",
         "# of Y": "36",
         "# of N": "122",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 124,
         "yesVotes": 35,
         "url": "https://malegislature.gov/Bills/192/H68",
@@ -39677,9 +39037,7 @@
         "progressive_position": "YES",
         "# of Y": "4",
         "# of N": "152",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 153,
         "yesVotes": 4,
         "url": "https://malegislature.gov/Bills/192/H89",
@@ -39697,9 +39055,7 @@
         "progressive_position": "YES",
         "# of Y": "145",
         "# of N": "14",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 14,
         "yesVotes": 146,
         "url": "https://malegislature.gov/Bills/192/S9",
@@ -39717,9 +39073,7 @@
         "progressive_position": "YES",
         "# of Y": "121",
         "# of N": "39",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 39,
         "yesVotes": 122,
         "url": "https://malegislature.gov/Bills/192/S5",
@@ -39737,9 +39091,7 @@
         "progressive_position": "YES",
         "# of Y": "131",
         "# of N": "29",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 29,
         "yesVotes": 132,
         "url": "https://malegislature.gov/Bills/192/H3863",
@@ -39757,9 +39109,7 @@
         "progressive_position": "YES",
         "# of Y": "35",
         "# of N": "125",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 126,
         "yesVotes": 35,
         "url": "https://malegislature.gov/Bills/192/H3930",
@@ -39777,9 +39127,7 @@
         "progressive_position": "YES",
         "# of Y": "41",
         "# of N": "117",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 117,
         "yesVotes": 43,
         "url": "https://malegislature.gov/Bills/192/H3930",
@@ -39797,9 +39145,7 @@
         "progressive_position": "YES",
         "# of Y": "39",
         "# of N": "119",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 120,
         "yesVotes": 37,
         "url": "https://malegislature.gov/Bills/192/H3930",
@@ -39817,9 +39163,7 @@
         "progressive_position": "YES",
         "# of Y": "124",
         "# of N": "35",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 34,
         "yesVotes": 126,
         "url": "https://malegislature.gov/Bills/192/H4002",
@@ -39837,9 +39181,7 @@
         "progressive_position": "YES",
         "# of Y": "130",
         "# of N": "29",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 29,
         "yesVotes": 131,
         "url": "https://malegislature.gov/Bills/192/H4008",
@@ -39857,9 +39199,7 @@
         "progressive_position": "YES",
         "# of Y": "129",
         "# of N": "29",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 29,
         "yesVotes": 130,
         "url": "https://malegislature.gov/Bills/192/H4009",
@@ -39877,9 +39217,7 @@
         "progressive_position": "YES",
         "# of Y": "130",
         "# of N": "29",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 29,
         "yesVotes": 131,
         "url": "https://malegislature.gov/Bills/192/H4011",
@@ -39897,9 +39235,7 @@
         "progressive_position": "YES",
         "# of Y": "130",
         "# of N": "29",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 29,
         "yesVotes": 131,
         "url": "https://malegislature.gov/Bills/192/H4012",
@@ -39917,9 +39253,7 @@
         "progressive_position": "NO",
         "# of Y": "30",
         "# of N": "128",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 129,
         "yesVotes": 30,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -39937,9 +39271,7 @@
         "progressive_position": "NO",
         "# of Y": "32",
         "# of N": "126",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 127,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -39957,9 +39289,7 @@
         "progressive_position": "NO",
         "# of Y": "29",
         "# of N": "129",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 130,
         "yesVotes": 29,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -39977,9 +39307,7 @@
         "progressive_position": "YES",
         "# of Y": "153",
         "# of N": "5",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 5,
         "yesVotes": 154,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -39997,9 +39325,7 @@
         "progressive_position": "NO",
         "# of Y": "93",
         "# of N": "64",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 64,
         "yesVotes": 95,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -40017,9 +39343,7 @@
         "progressive_position": "NO",
         "# of Y": "31",
         "# of N": "127",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 128,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -40037,9 +39361,7 @@
         "progressive_position": "NO",
         "# of Y": "28",
         "# of N": "130",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 131,
         "yesVotes": 28,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -40057,9 +39379,7 @@
         "progressive_position": "NO",
         "# of Y": "29",
         "# of N": "128",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 129,
         "yesVotes": 29,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -40077,9 +39397,7 @@
         "progressive_position": "NO",
         "# of Y": "32",
         "# of N": "122",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 127,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/192/H4359",
@@ -40097,9 +39415,7 @@
         "progressive_position": "NO",
         "# of Y": "31",
         "# of N": "125",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 126,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/192/H4461",
@@ -40117,9 +39433,7 @@
         "progressive_position": "NO",
         "# of Y": "31",
         "# of N": "125",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 126,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/192/H4461",
@@ -40137,9 +39451,7 @@
         "progressive_position": "YES",
         "# of Y": "120",
         "# of N": "36",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 37,
         "yesVotes": 121,
         "url": "https://malegislature.gov/Bills/192/H4470",
@@ -40157,9 +39469,7 @@
         "progressive_position": "NO",
         "# of Y": "32",
         "# of N": "124",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 126,
         "yesVotes": 33,
         "url": "https://malegislature.gov/Bills/192/H4700",
@@ -40177,9 +39487,7 @@
         "progressive_position": "YES",
         "# of Y": "136",
         "# of N": "17",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 17,
         "yesVotes": 141,
         "url": "https://malegislature.gov/Bills/192/H4930",
@@ -40197,9 +39505,7 @@
         "progressive_position": "YES",
         "# of Y": "143",
         "# of N": "9",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 9,
         "yesVotes": 149,
         "url": "https://malegislature.gov/Bills/192/H5060",
@@ -40217,9 +39523,7 @@
         "progressive_position": "YES",
         "# of Y": "120",
         "# of N": "33",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 36,
         "yesVotes": 122,
         "url": "https://malegislature.gov/Bills/192/H5046",
@@ -40237,9 +39541,7 @@
         "progressive_position": "YES",
         "# of Y": "149",
         "# of N": "4",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 4,
         "yesVotes": 154,
         "url": "https://malegislature.gov/Bills/192/H5046",
@@ -40257,9 +39559,7 @@
         "progressive_position": "NO",
         "# of Y": "31",
         "# of N": "122",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 125,
         "yesVotes": 33,
         "url": "https://malegislature.gov/Bills/192/H5112",
@@ -40279,9 +39579,7 @@
         "progressive_position": "YES",
         "# of Y": "15",
         "# of N": "25",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://statehouseemployeeunion.org/",
         "roll_call_url": "https://statehouseemployeeunion.org/",
         "noVotes": 25,
@@ -40299,9 +39597,7 @@
         "progressive_position": "YES",
         "# of Y": "39",
         "# of N": "0",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 0,
         "yesVotes": 39,
         "url": "https://malegislature.gov/Bills/192/S11",
@@ -40319,9 +39615,7 @@
         "progressive_position": "YES",
         "# of Y": "39",
         "# of N": "1",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 1,
         "yesVotes": 39,
         "url": "https://malegislature.gov/Bills/192/S9",
@@ -40339,9 +39633,7 @@
         "progressive_position": "NO",
         "# of Y": "8",
         "# of N": "31",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 31,
         "yesVotes": 8,
         "url": "https://malegislature.gov/Bills/192/S35",
@@ -40359,9 +39651,7 @@
         "progressive_position": "NO",
         "# of Y": "9",
         "# of N": "31",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 31,
         "yesVotes": 9,
         "url": "https://malegislature.gov/Bills/192/S35",
@@ -40379,9 +39669,7 @@
         "progressive_position": "YES",
         "# of Y": "37",
         "# of N": "3",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 3,
         "yesVotes": 37,
         "url": "https://malegislature.gov/Bills/192/S2439",
@@ -40399,9 +39687,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "33",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 34,
         "yesVotes": 6,
         "url": "https://malegislature.gov/Bills/192/S3",
@@ -40419,9 +39705,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "2",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 2,
         "yesVotes": 38,
         "url": "https://malegislature.gov/Bills/192/S5",
@@ -40439,9 +39723,7 @@
         "progressive_position": "NO",
         "# of Y": "9",
         "# of N": "30",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 30,
         "yesVotes": 9,
         "url": "https://malegislature.gov/Bills/192/S2480",
@@ -40459,9 +39741,7 @@
         "progressive_position": "YES",
         "# of Y": "34",
         "# of N": "6",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 6,
         "yesVotes": 33,
         "url": "https://malegislature.gov/Bills/192/H4002",
@@ -40479,9 +39759,7 @@
         "progressive_position": "YES",
         "# of Y": "38",
         "# of N": "1",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 1,
         "yesVotes": 38,
         "url": "https://malegislature.gov/Bills/192/S2534",
@@ -40499,9 +39777,7 @@
         "progressive_position": "YES",
         "# of Y": "39",
         "# of N": "0",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 0,
         "yesVotes": 39,
         "url": "https://malegislature.gov/Bills/192/S2540",
@@ -40519,9 +39795,7 @@
         "progressive_position": "YES",
         "# of Y": "33",
         "# of N": "5",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 5,
         "yesVotes": 33,
         "url": "https://malegislature.gov/Bills/192/H4008",
@@ -40539,9 +39813,7 @@
         "progressive_position": "YES",
         "# of Y": "35",
         "# of N": "3",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 3,
         "yesVotes": 35,
         "url": "https://malegislature.gov/Bills/192/H4009",
@@ -40559,9 +39831,7 @@
         "progressive_position": "YES",
         "# of Y": "36",
         "# of N": "2",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 2,
         "yesVotes": 36,
         "url": "https://malegislature.gov/Bills/192/H4011",
@@ -40579,9 +39849,7 @@
         "progressive_position": "YES",
         "# of Y": "37",
         "# of N": "1",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 1,
         "yesVotes": 37,
         "url": "https://malegislature.gov/Bills/192/H4012",
@@ -40599,9 +39867,7 @@
         "progressive_position": "YES",
         "# of Y": "13",
         "# of N": "25",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 25,
         "yesVotes": 13,
         "url": "https://malegislature.gov/Bills/192/S2545",
@@ -40619,9 +39885,7 @@
         "progressive_position": "YES",
         "# of Y": "7",
         "# of N": "31",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 31,
         "yesVotes": 7,
         "url": "https://malegislature.gov/Bills/192/S2545",
@@ -40639,9 +39903,7 @@
         "progressive_position": "YES",
         "# of Y": "12",
         "# of N": "26",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 26,
         "yesVotes": 12,
         "url": "https://malegislature.gov/Bills/192/S2545",
@@ -40659,9 +39921,7 @@
         "progressive_position": "YES",
         "# of Y": "36",
         "# of N": "3",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 3,
         "yesVotes": 35,
         "url": "https://malegislature.gov/Bills/192/S2545",
@@ -40679,9 +39939,7 @@
         "progressive_position": "NO",
         "# of Y": "26",
         "# of N": "13",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "noVotes": 13,
         "yesVotes": 26,
         "url": "https://malegislature.gov/Bills/192/H4256",
@@ -40699,9 +39957,7 @@
         "progressive_position": "NO",
         "# of Y": "11",
         "# of N": "29",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 29,
         "yesVotes": 11,
         "url": "https://malegislature.gov/Bills/192/S2776",
@@ -40719,9 +39975,7 @@
         "progressive_position": "YES",
         "# of Y": "11",
         "# of N": "28",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 28,
         "yesVotes": 11,
         "url": "https://malegislature.gov/Bills/192/S2819",
@@ -40739,9 +39993,7 @@
         "progressive_position": "YES",
         "# of Y": "37",
         "# of N": "3",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "noVotes": 3,
         "yesVotes": 37,
         "url": "https://malegislature.gov/Bills/192/H4524",
@@ -40759,9 +40011,7 @@
         "progressive_position": "YES",
         "# of Y": "14",
         "# of N": "26",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "noVotes": 26,
         "yesVotes": 14,
         "url": "https://malegislature.gov/Bills/192/S2844",
@@ -40779,9 +40029,7 @@
         "progressive_position": "NO",
         "# of Y": "8",
         "# of N": "31",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 31,
         "yesVotes": 8,
         "url": "https://malegislature.gov/Bills/192/S2851",
@@ -40799,9 +40047,7 @@
         "progressive_position": "NO",
         "# of Y": "7",
         "# of N": "32",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 32,
         "yesVotes": 7,
         "url": "https://malegislature.gov/Bills/192/S2851",
@@ -40819,9 +40065,7 @@
         "progressive_position": "NO",
         "# of Y": "10",
         "# of N": "29",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 29,
         "yesVotes": 10,
         "url": "https://malegislature.gov/Bills/192/S2851",
@@ -40839,9 +40083,7 @@
         "progressive_position": "NO",
         "# of Y": "9",
         "# of N": "30",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 30,
         "yesVotes": 9,
         "url": "https://malegislature.gov/Bills/192/S2851",
@@ -40859,9 +40101,7 @@
         "progressive_position": "NO",
         "# of Y": "7",
         "# of N": "31",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 31,
         "yesVotes": 7,
         "url": "https://malegislature.gov/Bills/192/S2851",
@@ -40879,9 +40119,7 @@
         "progressive_position": "YES",
         "# of Y": "32",
         "# of N": "8",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 8,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/192/H4470",
@@ -40899,9 +40137,7 @@
         "progressive_position": "NO",
         "# of Y": "10",
         "# of N": "29",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 29,
         "yesVotes": 10,
         "url": "https://malegislature.gov/Bills/192/S2944",
@@ -40919,9 +40155,7 @@
         "progressive_position": "YES",
         "# of Y": "31",
         "# of N": "9",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 9,
         "yesVotes": 31,
         "url": "https://malegislature.gov/Bills/192/S2944",
@@ -40939,9 +40173,7 @@
         "progressive_position": "NO",
         "# of Y": "9",
         "# of N": "30",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 30,
         "yesVotes": 9,
         "url": "https://malegislature.gov/Bills/192/S2942",
@@ -40959,9 +40191,7 @@
         "progressive_position": "NO",
         "# of Y": "12",
         "# of N": "26",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 26,
         "yesVotes": 12,
         "url": "https://malegislature.gov/Bills/192/S2942",
@@ -40979,9 +40209,7 @@
         "progressive_position": "NO",
         "# of Y": "6",
         "# of N": "33",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 33,
         "yesVotes": 6,
         "url": "https://malegislature.gov/Bills/192/S2942",
@@ -40999,9 +40227,7 @@
         "progressive_position": "YES",
         "# of Y": "32",
         "# of N": "8",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 8,
         "yesVotes": 32,
         "url": "https://malegislature.gov/Bills/192/S2987",
@@ -41019,9 +40245,7 @@
         "progressive_position": "YES",
         "# of Y": "39",
         "# of N": "1",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 1,
         "yesVotes": 39,
         "url": "https://malegislature.gov/Bills/192/H5090",
@@ -41039,9 +40263,7 @@
         "progressive_position": "NO",
         "# of Y": "30",
         "# of N": "8",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "noVotes": 8,
         "yesVotes": 30,
         "url": "https://malegislature.gov/Bills/192/H5112",
@@ -53435,9 +52657,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Prevents Fair Share revenue from being diverted to tax giveaways or reserves, so it is available for spending on transportation and education as voters intended",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD2236"
       },
       "SD1166": {
@@ -53452,9 +52672,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Prevents Fair Share revenue from being diverted to tax giveaways or reserves, so it is available for spending on transportation and education as voters intended",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1166"
       },
       "HD2310": {
@@ -53469,9 +52687,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Prevents tax avoidance of the Fair Share Amendment by requiring, as many other states do, couples who file jointly at the federal level to file jointly at the state level as well",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD2310"
       },
       "SD1167": {
@@ -53486,9 +52702,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Prevents tax avoidance of the Fair Share Amendment by requiring, as many other states do, couples who file jointly at the federal level to file jointly at the state level as well",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1167"
       },
       "HD1465": {
@@ -53503,9 +52717,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Preserves most of the revenue-generation, inequality-reduction, and fairness benefits of the estate tax, while eliminating the current cliff effect",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/hd1465"
       },
       "SD1114": {
@@ -53520,9 +52732,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Preserves most of the revenue-generation, inequality-reduction, and fairness benefits of the estate tax, while eliminating the current cliff effect",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1114"
       },
       "HD3073": {
@@ -53537,9 +52747,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Makes the charitable deduction more targeted by limiting it to individuals who are not already getting such a deduction on their federal taxes",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD3073"
       },
       "SD1596": {
@@ -53554,9 +52762,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Makes the charitable deduction more targeted by limiting it to individuals who are not already getting such a deduction on their federal taxes",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1596"
       },
       "HD751": {
@@ -53571,9 +52777,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Makes publicly accessible reports that are already filed annually by publicly-traded corporations, detailing their sales, profits, taxable income, and taxes paid",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD751"
       },
       "SD1038": {
@@ -53588,9 +52792,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Makes publicly accessible reports that are already filed annually by publicly-traded corporations, detailing their sales, profits, taxable income, and taxes paid",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1038"
       },
       "HD388": {
@@ -53605,9 +52807,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Taxes, as other states and the federal government do, a portion of the profits that multinational corporations who do business in MA shift to offshore tax havens",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD388"
       },
       "SD1541": {
@@ -53622,9 +52822,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Taxes, as other states and the federal government do, a portion of the profits that multinational corporations who do business in MA shift to offshore tax havens",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1541"
       },
       "HD2758": {
@@ -53639,9 +52837,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Restores the tax on corporate profits to 9.5%, where it was before 2009, from the existing 8.0% rate",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD2758"
       },
       "SD508": {
@@ -53656,9 +52852,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Restores the tax on corporate profits to 9.5%, where it was before 2009, from the existing 8.0% rate",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD508"
       },
       "HD418": {
@@ -53673,9 +52867,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Ensures that larger corporations pay a minimum corporate tax bill in proportion to the size of their business in MA, while small businesses continue paying the current corporate minimum tax of just $456 per year",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD418"
       },
       "SD677": {
@@ -53690,9 +52882,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Ensures that larger corporations pay a minimum corporate tax bill in proportion to the size of their business in MA, while small businesses continue paying the current corporate minimum tax of just $456 per year",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD677"
       },
       "HD3965": {
@@ -53707,9 +52897,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Raises the minimum wage to $20 per hour over four years and indexes it to inflation to better align the minimum age with a living wage",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD3965"
       },
       "SD2032": {
@@ -53724,9 +52912,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Raises the minimum wage to $20 per hour over four years and indexes it to inflation to better align the minimum age with a living wage",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD2032"
       },
       "HD2435": {
@@ -53741,9 +52927,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Extends collecting bargaining rights to State House staff                      ",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/bills/193/hd2435"
       },
       "SD1208": {
@@ -53758,9 +52942,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Extends collecting bargaining rights to State House staff                      ",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/bills/193/sd1208"
       },
       "HD4039": {
@@ -53775,9 +52957,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires employers to publicly report their wage data, providing information essential to measuring our progress toward racial and gender wage equity in the Commonwealth of Massachusetts",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD4039"
       },
       "SD2331": {
@@ -53792,9 +52972,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires employers to publicly report their wage data, providing information essential to measuring our progress toward racial and gender wage equity in the Commonwealth of Massachusetts",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD2331"
       },
       "HD766": {
@@ -53809,9 +52987,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Ensures that there is no cost to families for any student to receive school lunch",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD766"
       },
       "SD1013": {
@@ -53826,9 +53002,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Ensures that there is no cost to families for any student to receive school lunch",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/S261"
       },
       "HD2794": {
@@ -53843,9 +53017,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a framework for delivering increased access to affordable, high-quality early education and child care with greater investment in providers, better pay for workers, and a cap on costs for families",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD2794"
       },
       "SD667": {
@@ -53860,9 +53032,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a framework for delivering increased access to affordable, high-quality early education and child care with greater investment in providers, better pay for workers, and a cap on costs for families",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD667"
       },
       "HD3162": {
@@ -53877,9 +53047,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a better system of assessment, support, accountability, and improvement that considers the whole child, and focuses on giving students and educators the tools and resources they need to succeed and thrive, replacing the harmful and failed state takeover policy",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD3162"
       },
       "SD2067": {
@@ -53894,9 +53062,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a better system of assessment, support, accountability, and improvement that considers the whole child, and focuses on giving students and educators the tools and resources they need to succeed and thrive, replacing the harmful and failed state takeover policy",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD2067"
       },
       "HD2755": {
@@ -53911,9 +53077,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a framework for adequate funding levels for public higher education, including increased student support and better pay and benefits for faculty and staff; implements a debt-free college plan; and creates a plan for green and healthy buildings on campus",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD2755"
       },
       "SD2092": {
@@ -53928,9 +53092,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a framework for adequate funding levels for public higher education, including increased student support and better pay and benefits for faculty and staff; implements a debt-free college plan; and creates a plan for green and healthy buildings on campus",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD2092"
       },
       "HD1584": {
@@ -53945,9 +53107,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a single payer system, in which the state provides health care to all residents as a right",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD1584"
       },
       "SD2182": {
@@ -53962,9 +53122,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Establishes a single payer system, in which the state provides health care to all residents as a right",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD2182"
       },
       "HD3953": {
@@ -53979,9 +53137,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enable municipalities to pass rent stabilization ordinances to fight displacement ",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD3953"
       },
       "SD1818": {
@@ -53996,9 +53152,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enable municipalities to pass rent stabilization ordinances to fight displacement ",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1818"
       },
       "HD2857": {
@@ -54013,9 +53167,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enables cities and towns to assess a fee of 0.5-2% on residential and commercial real estate transactions, with the funds allocated to affordable housing trust funds",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD2857"
       },
       "SD1982": {
@@ -54030,9 +53182,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enables cities and towns to assess a fee of 0.5-2% on residential and commercial real estate transactions, with the funds allocated to affordable housing trust funds",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1982"
       },
       "HD2510": {
@@ -54047,9 +53197,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Increases the deeds excise tax on home sales to provide a funding stream for the Global Warming Solutions Fund, the Affordable Housing Trust Fund, and the Housing Preservation and Stabilization Fund",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD2510"
       },
       "SD1226": {
@@ -54064,9 +53212,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Increases the deeds excise tax on home sales to provide a funding stream for the Global Warming Solutions Fund, the Affordable Housing Trust Fund, and the Housing Preservation and Stabilization Fund",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD1226"
       },
       "HD3252": {
@@ -54081,9 +53227,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Sets a statewide housing production goal, allows multi-family housing to be built near public transportation, makes it easier for municipalities to pass inclusionary zoning ordinances, allows accessory dwelling units to be built as-of-right, and promotes the use of vacant commercial properties and empty state-owned properties for housing",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/HD3252"
       },
       "SD2006": {
@@ -54098,9 +53242,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Sets a statewide housing production goal, allows multi-family housing to be built near public transportation, makes it easier for municipalities to pass inclusionary zoning ordinances, allows accessory dwelling units to be built as-of-right, and promotes the use of vacant commercial properties and empty state-owned properties for housing",
-        "tags": [
-          "economy"
-        ],
+        "tags": ["economy"],
         "url": "https://malegislature.gov/Bills/193/SD2006"
       },
       "HD822": {
@@ -54115,9 +53257,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Prevents prisons and jails from charging individuals who are incarcerated for phone calls to loved ones",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/HD822"
       },
       "SD1441": {
@@ -54132,9 +53272,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Prevents prisons and jails from charging individuals who are incarcerated for phone calls to loved ones",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/SD1441"
       },
       "HD799": {
@@ -54149,9 +53287,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enacts a five-year pause on new prison and jail construction in order to provide time to develop more effective, community-based approaches to public safety",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/HD799"
       },
       "SD661": {
@@ -54166,9 +53302,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Enacts a five-year pause on new prison and jail construction in order to provide time to develop more effective, community-based approaches to public safety",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/SD661"
       },
       "HD3510": {
@@ -54183,9 +53317,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Raises the age of criminal majority to 21, allowing youth to have better access to treatment and educational services and thereby reducing recidivism",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/HD3510"
       },
       "SD428": {
@@ -54200,9 +53332,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Raises the age of criminal majority to 21, allowing youth to have better access to treatment and educational services and thereby reducing recidivism",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/SD428"
       },
       "HD3616": {
@@ -54217,9 +53347,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Builds the capacity of key public-facing state agencies to meet the language access needs of an increasingly diverse population by standardizing and enforcing language access protocols and practices",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/HD3616"
       },
       "SD1066": {
@@ -54234,9 +53362,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Builds the capacity of key public-facing state agencies to meet the language access needs of an increasingly diverse population by standardizing and enforcing language access protocols and practices",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/SD1066"
       },
       "HD2459": {
@@ -54251,9 +53377,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Limits local and state police collaboration with federal immigration agents, bars law enforcement and court personnel from inquiring about immigration status, and ensures due process protections",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/HD2459"
       },
       "SD1937": {
@@ -54268,9 +53392,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Limits local and state police collaboration with federal immigration agents, bars law enforcement and court personnel from inquiring about immigration status, and ensures due process protections",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/S1510"
       },
       "HD3874": {
@@ -54285,9 +53407,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires school districts that provide sex education to ensure that it is comprehensive, age-appropriate, and LGBTQ-inclusive, with an emphasis on consent",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/HD3874"
       },
       "SD2199": {
@@ -54302,9 +53422,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires school districts that provide sex education to ensure that it is comprehensive, age-appropriate, and LGBTQ-inclusive, with an emphasis on consent",
-        "tags": [
-          "justice & equality"
-        ],
+        "tags": ["justice & equality"],
         "url": "https://malegislature.gov/Bills/193/SD2199"
       },
       "HD3460": {
@@ -54319,9 +53437,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires fossil-fuel producers to fund the state’s climate adaptation programs based on past emissions, a proposal that would extend the long-standing “polluter pays” principle for toxic waste cleanups to addressing climate change",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/193/HD3460"
       },
       "SD2366": {
@@ -54336,9 +53452,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires fossil-fuel producers to fund the state’s climate adaptation programs based on past emissions, a proposal that would extend the long-standing “polluter pays” principle for toxic waste cleanups to addressing climate change",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/193/SD2366"
       },
       "HD776": {
@@ -54353,9 +53467,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a fund for green and healthy home retrofits, with a prioritization of affordable housing, low-to-moderate-income homes, gateway cities, and environmental justice communities",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/193/HD776"
       },
       "SD500": {
@@ -54370,9 +53482,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Creates a fund for green and healthy home retrofits, with a prioritization of affordable housing, low-to-moderate-income homes, gateway cities, and environmental justice communities",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/193/SD500"
       },
       "HD3794": {
@@ -54387,9 +53497,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Pauses the approval for any new or expanded gas infrastructure through 2026",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/193/HD3794"
       },
       "SD1925": {
@@ -54404,9 +53512,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Pauses the approval for any new or expanded gas infrastructure through 2026",
-        "tags": [
-          "environment"
-        ],
+        "tags": ["environment"],
         "url": "https://malegislature.gov/Bills/193/SD1925"
       },
       "HD3153": {
@@ -54421,9 +53527,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Ensures that incarceration no longer leads to a loss of voting rights at any stage",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/193/HD3153"
       },
       "SD1037": {
@@ -54438,9 +53542,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Ensures that incarceration no longer leads to a loss of voting rights at any stage",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/193/SD1037"
       },
       "HD3261": {
@@ -54455,9 +53557,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires that all public bodies have options for hybrid participation and creates a trust fund and competitive grants to help municipalities with the technology needed to do so",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/193/HD3261"
       },
       "SD2017": {
@@ -54472,9 +53572,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Requires that all public bodies have options for hybrid participation and creates a trust fund and competitive grants to help municipalities with the technology needed to do so",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/193/SD2017"
       },
       "SD131": {
@@ -54489,9 +53587,7 @@
         "key_words": "",
         "other_names": "",
         "description": "Promotes transparency in state government by removing the Governor's exemption from public records law and requiring committee votes and legislative testimony (with appropriate redactions) to be public",
-        "tags": [
-          "government"
-        ],
+        "tags": ["government"],
         "url": "https://malegislature.gov/Bills/193/SD131"
       }
     },
