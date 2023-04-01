@@ -57,7 +57,10 @@ const SponsorshipRow = ({
         <p>{description}</p>
       </td>
       <td style={{ width: '15%' }} data-label={`${familyName} Cosponsored?`}>
-        <Cosponsorship indicator={yourLegislator} isCurrentSponsorshipYear={isCurrentYear} />
+        <Cosponsorship
+          indicator={yourLegislator}
+          isCurrentSponsorshipYear={isCurrentYear}
+        />
       </td>
     </tr>
   )
@@ -79,7 +82,10 @@ const description = (
   </>
 )
 
-const SponsorshipTable = ({ data: { sponsorship, isCurrentSponsorshipYear }, familyName }) => {
+const SponsorshipTable = ({
+  data: { sponsorship, isCurrentSponsorshipYear },
+  familyName,
+}) => {
   return (
     <LegislatorTable
       title='Cosponsored Bills'
