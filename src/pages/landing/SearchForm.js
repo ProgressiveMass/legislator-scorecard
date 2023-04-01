@@ -98,17 +98,38 @@ const SearchForm = () => {
         }
       })
 
-    const response = await axios(
-      `https://v3.openstates.org/people.geo?lat=${lat}&lng=${lng}&apikey=${process.env.GATSBY_OPENSTATES_API_KEY}`
-    )
-    setLoading(false)
+    // const response = await axios(
+    //   `https://v3.openstates.org/people.geo?lat=${lat}&lng=${lng}&apikey=${process.env.GATSBY_OPENSTATES_API_KEY}`
+    // )
+    // setLoading(false)
 
-    const { stateRep, stateSenator } = getOpenStatesInfo(response.data.results)
-    navigate(
-      `/legislator/${getLegislatorUrlParams(
-        stateSenator
-      )}?yourRep=${getLegislatorUrlParams(stateRep)}`
-    )
+    // const { stateRep, stateSenator } = getOpenStatesInfo(response.data.results)
+    // navigate(
+    //   `/legislator/${getLegislatorUrlParams(
+    //     stateSenator
+    //   )}?yourRep=${getLegislatorUrlParams(stateRep)}`
+    // )
+    return axios
+      .post(`${process.env.GATSBY_SERVERLESS_ENDPOINT}/local-legislators`, {
+        address,
+      })
+      .then((response) => {
+        const { stateRep, stateSenator } = getOpenStatesInfo(
+          response.data.results
+        )
+        setLoading(false)
+
+        navigate(
+          `/legislator/${getLegislatorUrlParams(
+            stateSenator
+          )}?yourRep=${getLegislatorUrlParams(stateRep)}`
+        )
+      })
+      .catch((error) => {
+        // TODO: better error handling
+        setLoading(false)
+        console.error(error)
+      })
   }
 
   const onChange = ({ target: { name, value } }) => {
