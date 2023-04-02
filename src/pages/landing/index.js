@@ -2,27 +2,29 @@ import React from 'react'
 import SearchInstructions from './SearchInstructions'
 import SEO from '../../components/seo'
 import Layout from '../../components/layout'
+import legislationData from '../../data/legislation.json'
 
 export default () => {
+  console.log('legislationData', legislationData)
+  console.log(
+    'Object.entries(legislationData)',
+    Object.entries(legislationData[2023].sponsoredBills)
+  )
+
   return (
     <Layout>
       <SEO description='Are your Massachusetts representatives fighting for your progressive values?' />
       <section className='landing__header'>
         <div className='heading-font landing__header--1'>
           <div className='module-container'>
-            <div
-              className='row no-gutters align-items-center'
-              style={{ minHeight: '50vh' }}>
+            <div className='row no-gutters align-items-center' style={{ minHeight: '50vh' }}>
               <div className='col-12'></div>
               <div className='col-md-6 col-lg-7 py-md-0'>
-                <h1 className='landing__h1'>
-                  Progressive Massachusetts Legislator Scorecard
-                </h1>
+                <h1 className='landing__h1'>Progressive Massachusetts Legislator Scorecard</h1>
                 <hr />
                 <div className='landing__cta h1'>
-                  Are your <b className='font-weight-800'>Massachusetts</b>{' '}
-                  representatives fighting for your{' '}
-                  <b className='font-weight-800'>progressive</b> values?
+                  Are your <b className='font-weight-800'>Massachusetts</b> representatives fighting
+                  for your <b className='font-weight-800'>progressive</b> values?
                 </div>
               </div>
 
@@ -58,9 +60,8 @@ export default () => {
                 Progressive Massachusetts
               </a>
               <br />
-              is a grassroots organization that tracks legislation in order to
-              provide people with the knowledge they need to enact positive
-              local change.
+              is a grassroots organization that tracks legislation in order to provide people with
+              the knowledge they need to enact positive local change.
             </p>
           </div>
         </div>
@@ -70,16 +71,12 @@ export default () => {
         <div className='module-container'>
           <div className='row'>
             <div className='col-sm-12'>
-              <h2 className='h1 mb-0 pb-5'>
-                The Legislator Scorecard can help you:
-              </h2>
+              <h2 className='h1 mb-0 pb-5'>The Legislator Scorecard can help you:</h2>
             </div>
           </div>
           <div className='row align-items-stretch pb-4'>
             <div className='col-md-4 mb-4 mb-md-0'>
-              <div
-                className='white-background p-3 mx-auto'
-                style={{ maxWidth: '400px' }}>
+              <div className='white-background p-3 mx-auto' style={{ maxWidth: '400px' }}>
                 <h3 className='h4'>
                   <img
                     src={require('./images/fine_print.svg')}
@@ -90,15 +87,13 @@ export default () => {
                   Track Legislation
                 </h3>
                 <p>
-                  Progressive Mass provides summaries of important bills and
-                  follows their paths through the State House.
+                  Progressive Mass provides summaries of important bills and follows their paths
+                  through the State House.
                 </p>
               </div>
             </div>
             <div className='col-md-4 mb-4 mb-md-0'>
-              <div
-                className='white-background p-3 mx-auto'
-                style={{ maxWidth: '400px' }}>
+              <div className='white-background p-3 mx-auto' style={{ maxWidth: '400px' }}>
                 <h3 className='h4'>
                   <img
                     src={require('./images/legislator.svg')}
@@ -109,16 +104,13 @@ export default () => {
                   Learn About Your Reps
                 </h3>
                 <p>
-                  By viewing which legislation your local representatives
-                  cosponsored and voted for or against, you can begin to
-                  understand their legislative priorities.
+                  By viewing which legislation your local representatives cosponsored and voted for
+                  or against, you can begin to understand their legislative priorities.
                 </p>
               </div>
             </div>
             <div className='col-md-4'>
-              <div
-                className='white-background p-3 mx-auto'
-                style={{ maxWidth: '400px' }}>
+              <div className='white-background p-3 mx-auto' style={{ maxWidth: '400px' }}>
                 <h3 className='h4'>
                   <img
                     src={require('./images/collaboration.svg')}
@@ -129,8 +121,8 @@ export default () => {
                   Take Action
                 </h3>
                 <p>
-                  Call or email your local legislators and talk to them about
-                  legislation that&#39;s important to you.
+                  Call or email your local legislators and talk to them about legislation that&#39;s
+                  important to you.
                 </p>
               </div>
             </div>

@@ -30,6 +30,7 @@
     "__COVERAGE__": false
   },
   "rules": {
+    "no-unused-vars": "warn",
     "react/display-name": 0,
     "import/no-unused-modules": 0,
     "react/prop-types": 0,

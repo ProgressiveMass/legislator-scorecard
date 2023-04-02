@@ -9,6 +9,8 @@ const { createOpenGraphImage } = require('gatsby-plugin-open-graph-images')
 const createPageDataStruct = require('./gatsbyNodeHelper/index')
 const houseLegislators = require('./src/data/house_legislators.json')
 const senateLegislators = require('./src/data/senate_legislators.json')
+const legislationData = require('./src/data/legislation.json')
+
 const { getLegislatorUrlParams } = require('./src/utilities')
 
 const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
@@ -51,8 +53,37 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
 }
 
 // create individual legislator pages
-exports.createPages = async function ({ actions: { createPage } }) {
-  ;[
+exports.createPages = async function ({ actions, graphql }) {
+  const { createPage } = actions
+
+  let sessionYear = 2023
+  // sponsorships
+  let sponsoredBills = Object.entries(legislationData[sessionYear].sponsoredBills)
+
+  const allSponsoredBillsTemplate = path.resolve(`./src/components/sponsorships/index.js`)
+
+  createPage({
+    path: `/sponsorships/all-bills`,
+    component: allSponsoredBillsTemplate,
+    context: {
+      sponsoredBills,
+    },
+  })
+
+  const sponsoredBillTemplate = path.resolve(`./src/components/sponsorships/sponsorships.js`)
+
+  sponsoredBills.forEach((sponsoredBill) => {
+    const [billNumber, billData] = sponsoredBill
+    createPage({
+      path: `/sponsorships/${billNumber}`,
+      component: sponsoredBillTemplate,
+      context: {
+        billData,
+      },
+    })
+  })
+
+  let legislatorsList = [
     { chamber: 'senate', legislators: senateLegislators },
     { chamber: 'house', legislators: houseLegislators },
   ].map(({ chamber, legislators }) => {
