@@ -1,6 +1,5 @@
 const fs = require('fs-extra')
 const axios = require('axios')
-const curlirize = require('axios-curlirize').default
 
 // get some nice debugging output
 // curlirize(axios)
