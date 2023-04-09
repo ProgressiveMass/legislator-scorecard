@@ -2,15 +2,8 @@ import React from 'react'
 import SearchInstructions from './SearchInstructions'
 import SEO from '../../components/seo'
 import Layout from '../../components/layout'
-import legislationData from '../../data/legislation.json'
 
 export default () => {
-  console.log('legislationData', legislationData)
-  console.log(
-    'Object.entries(legislationData)',
-    Object.entries(legislationData[2023].sponsoredBills)
-  )
-
   return (
     <Layout>
       <SEO description='Are your Massachusetts representatives fighting for your progressive values?' />

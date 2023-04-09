@@ -14,15 +14,14 @@ const Nav = () => {
             alt='The logo for the Progressive Massachusetts Legislator Scorecard'
             style={{ maxHeight: '45px', marginRight: '.7rem' }}
           />
-          <span className='sr-only'>
-            Progressive Massachusetts Legislative Scorecard
-          </span>
+          <span className='sr-only'>Progressive Massachusetts Legislative Scorecard</span>
         </Link>
 
         <div className='text-md-right mt-3 mt-md-0'>
-          <ul
-            className='list-unstyled d-flex'
-            style={{ justifyContent: 'space-between' }}>
+          <ul className='list-unstyled d-flex' style={{ justifyContent: 'space-between' }}>
+            <li className='ml-md-4'>
+              <Link to='/sponsorships/all-bills'>View Sponsored Bills</Link>
+            </li>
             <li className='ml-md-4'>
               <Link to='/all-legislators'>
                 View All <abbr aria-label='Massachusetts'>MA</abbr> Legislators

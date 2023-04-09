@@ -11,7 +11,7 @@ const houseLegislators = require('./src/data/house_legislators.json')
 const senateLegislators = require('./src/data/senate_legislators.json')
 const legislationData = require('./src/data/legislation.json')
 
-const { getLegislatorUrlParams } = require('./src/utilities')
+const { getLegislatorUrlParams, isHouseRep, isSenator } = require('./src/utilities')
 
 const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
   const ogImageFilename = (
@@ -56,8 +56,16 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
 exports.createPages = async function ({ actions, graphql }) {
   const { createPage } = actions
 
+  //TODO - other sessions
   let sessionYear = 2023
   // sponsorships
+  const getLegislatorById = (id) => {
+    return (
+      houseLegislators.find((legislator) => legislator.id === id) ??
+      senateLegislators?.find((legislator) => legislator.id === id)
+    )
+  }
+
   let sponsoredBills = Object.entries(legislationData[sessionYear].sponsoredBills)
 
   const allSponsoredBillsTemplate = path.resolve(`./src/components/sponsorships/index.js`)
@@ -72,13 +80,50 @@ exports.createPages = async function ({ actions, graphql }) {
 
   const sponsoredBillTemplate = path.resolve(`./src/components/sponsorships/sponsorships.js`)
 
+  let sponsors = Object.entries(legislationData[sessionYear].sponsorship).map((sponsorshipItem) => {
+    const [id, sponsorshipData] = sponsorshipItem
+    let legislatorData = getLegislatorById(sponsorshipData.id)
+    return {
+      sponsorshipData: { ...sponsorshipData.data, ...sponsorshipData.score },
+      ...legislatorData,
+    }
+  })
+
   sponsoredBills.forEach((sponsoredBill) => {
+    let sortedSponsors = []
     const [billNumber, billData] = sponsoredBill
+    let otherBillNames = ''
+    sortedSponsors = sponsors
+      .filter((sponsor) => {
+        if (!sponsor.id) return false
+        for (const bills in sponsor.sponsorshipData) {
+          if (bills.includes(billNumber) && sponsor.sponsorshipData[bills]) {
+            otherBillNames = bills
+            return true
+          }
+          return false
+        }
+      })
+      .sort((a, b) => {
+        const sponsorA = a.familyName?.toLowerCase()
+        const sponsorB = b.familyName?.toLowerCase()
+        if (sponsorA < sponsorB) {
+          return -1
+        }
+        if (sponsorA > sponsorB) {
+          return 1
+        }
+        return 0
+      })
+
     createPage({
       path: `/sponsorships/${billNumber}`,
       component: sponsoredBillTemplate,
       context: {
-        billData,
+        billData: { ...billData, otherBillNames },
+        sponsors: sortedSponsors,
+        houseSponsors: sortedSponsors.filter(isHouseRep),
+        senateSponsors: sortedSponsors.filter(isSenator),
       },
     })
   })

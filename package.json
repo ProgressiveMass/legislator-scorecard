@@ -31,7 +31,8 @@
     "react-responsive-tabs": "^3.3.0",
     "react-sticky": "^6.0.3",
     "react-sticky-table": "^2.0.5",
-    "react-tippy": "1.4.0"
+    "react-tippy": "1.4.0",
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "axios": "^0.21.2",
@@ -63,7 +64,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "gatsby:debug": "node --nolazy --inspect-brk node_modules/gatsby/dist/bin/gatsby develop",
-    "build-data": "node --unhandled-rejections=strict processData/downloadAndBuildData/index.js",
+    "build-data": "node --unhandled-rejections=warn processData/downloadAndBuildData/index.js",
     "serve:functions": "firebase serve",
     "download-social-images:dev": "node test/downloadSocialImages.js",
     "download-social-images:staging": "STAGING=true node test/downloadSocialImages.js",
