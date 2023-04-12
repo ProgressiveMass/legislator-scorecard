@@ -11,6 +11,12 @@ const TabsContaner = styled.div`
 const Container = styled.div`
   padding: 1rem 8rem;
 `
+const LinkContainer = styled.p`
+  span:not(:last-child)::after {
+    content: '/';
+    margin: 0 5px;
+  }
+`
 
 export default function SponsoredBill({
   pageContext: { billData: bill, houseSponsors, senateSponsors, sponsors },
@@ -34,7 +40,15 @@ export default function SponsoredBill({
     <Layout>
       <Container>
         <h2>{bill.name}</h2>
-        <p> {bill.otherBillNames}</p>
+        <LinkContainer>
+          {bill.otherBillNames.split('/').map((bill) => (
+            <span key={bill}>
+              <a href={`https://malegislature.gov/Bills/193/${bill.trim()}`} target='__blank'>
+                {bill.trim()}
+              </a>
+            </span>
+          ))}
+        </LinkContainer>
         <p>Filed by {bill.sponsors} </p>
         <p>{bill.description}</p>
         <h3> Sponsors</h3>
