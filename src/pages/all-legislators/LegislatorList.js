@@ -173,7 +173,7 @@ const LegislatorList = (props) => {
                   onClick={handleSort}
                   sort='score'
                   currentSort={sort}
-                  title='Prog. Rating (2022-2023)'
+                  title='Prog. Rating (2021-2022)'
                 />
               </th>
             </tr>
