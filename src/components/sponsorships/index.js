@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../../components/layout'
 import LegislatorTable from '../../components/legislator/LegislatorTable'
+import ListPageHeading from '../../components/ListPageHeading'
 import InfoPopover from '../../components/InfoPopover'
 import { consolidateBillNumbers } from '../../utilities'
 
@@ -53,40 +54,43 @@ const SponsorshipRow = (props) => {
 export default function SponsoredBills({ pageContext: { sponsoredBills, legislationData } }) {
   return (
     <Layout>
-      <Container>
-        <h2>All Sponsored bills</h2>
-
-        <LegislatorTable
-          title='Sponsored Bills'
-          description={''}
-          rowData={consolidateBillNumbers(
-            sponsoredBills.map(([billNumber, billData]) => {
-              return {
-                otherNames: [''],
-                ...billData,
+      <div className='tinted-background'>
+        <Container>
+          <ListPageHeading>All Sponsored bills</ListPageHeading>
+          <div className='bill-list'>
+            <LegislatorTable
+              title='Sponsored Bills'
+              description={''}
+              rowData={consolidateBillNumbers(
+                sponsoredBills.map(([billNumber, billData]) => {
+                  return {
+                    otherNames: [''],
+                    ...billData,
+                  }
+                }),
+                'name'
+              )}
+              familyName={''}
+              isCurrentYear={true}
+              head={
+                <>
+                  <tr>
+                    <th style={{ width: '15%' }}>Bill</th>
+                    <th style={{ width: '30%' }}>Title</th>
+                    <th style={{ width: '40%' }}>
+                      Summary from{' '}
+                      <a href='http://www.progressivemass.com/' target='_blank' rel='noreferrer'>
+                        Progressive Mass
+                      </a>
+                    </th>
+                  </tr>
+                </>
               }
-            }),
-            'name'
-          )}
-          familyName={''}
-          isCurrentYear={true}
-          head={
-            <>
-              <tr>
-                <th style={{ width: '15%' }}>Bill</th>
-                <th style={{ width: '30%' }}>Title</th>
-                <th style={{ width: '40%' }}>
-                  Summary from{' '}
-                  <a href='http://www.progressivemass.com/' target='_blank' rel='noreferrer'>
-                    Progressive Mass
-                  </a>
-                </th>
-              </tr>
-            </>
-          }
-          rowComponent={SponsorshipRow}
-        />
-      </Container>
+              rowComponent={SponsorshipRow}
+            />
+          </div>
+        </Container>
+      </div>
     </Layout>
   )
 }
