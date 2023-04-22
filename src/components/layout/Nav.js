@@ -1,7 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import LogoImg from '../../images/scorecard-logo.png'
+import styled from 'styled-components'
 
+const MobileFriendlyList = styled.ul`
+  @media (max-width: 768px) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+`
 const Nav = () => {
   return (
     <header>
@@ -18,16 +25,18 @@ const Nav = () => {
         </Link>
 
         <div className='text-md-right mt-3 mt-md-0'>
-          <ul className='list-unstyled d-flex' style={{ justifyContent: 'space-between' }}>
-            <li className='ml-md-4'>
-              <Link to='/sponsorships/all-bills'>View Sponsored Bills</Link>
+          <MobileFriendlyList
+            className='list-unstyled d-flex'
+            style={{ justifyContent: 'space-between' }}>
+            <li className='ml-md-3'>
+              <Link to='/sponsorships/all-bills'>Sponsored Bills</Link>
             </li>
-            <li className='ml-md-4'>
+            <li className='ml-md-3'>
               <Link to='/all-legislators'>
-                View All <abbr aria-label='Massachusetts'>MA</abbr> Legislators
+                All <abbr aria-label='Massachusetts'>MA</abbr> Legislators
               </Link>
             </li>
-            <li className='ml-md-4'>
+            <li className='ml-md-3'>
               <a
                 href='https://gdoc.pub/doc/19eWMYZ3IZaT-YFqswn-LqGOnYzHMID7LXEj1Gn1GNu0'
                 target='_blank'
@@ -35,7 +44,7 @@ const Nav = () => {
                 F.A.Q. <span className='sr-only'>opens in new window</span>
               </a>
             </li>
-            <li className='ml-md-4'>
+            <li className='ml-md-3'>
               <a
                 className='btn btn-secondary'
                 href='https://www.progressivemass.com/donate/'
@@ -44,7 +53,7 @@ const Nav = () => {
                 Donate <span className='sr-only'>opens in new window</span>
               </a>
             </li>
-          </ul>
+          </MobileFriendlyList>
         </div>
       </nav>
     </header>
