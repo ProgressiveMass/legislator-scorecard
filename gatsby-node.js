@@ -58,12 +58,19 @@ exports.createPages = async function ({ actions, graphql }) {
 
   //TODO - other sessions
   let sessionYear = 2023
+  let sessionVotesYear = 2021
   // sponsorships
   const getLegislatorById = (id) => {
-    return (
+    let legislator =
       houseLegislators.find((legislator) => legislator.id === id) ??
       senateLegislators?.find((legislator) => legislator.id === id)
-    )
+    let votes =
+      legislationData[sessionVotesYear]?.houseVotes?.find((vote) => vote.id === id) ??
+      legislationData[sessionVotesYear]?.senateVotes?.find((vote) => vote.id === id)
+    return {
+      ...legislator,
+      ...votes,
+    }
   }
 
   let sponsoredBills = Object.entries(legislationData[sessionYear].sponsoredBills)

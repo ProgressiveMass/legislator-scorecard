@@ -51,6 +51,7 @@ const SponsorshipRow = (props) => {
     </tr>
   )
 }
+
 export default function SponsoredBills({ pageContext: { sponsoredBills, legislationData } }) {
   return (
     <Layout>
