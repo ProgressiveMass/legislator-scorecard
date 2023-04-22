@@ -9,7 +9,7 @@ import ListPageHeading from '../../components/ListPageHeading'
 const mostRecentYear = 2021
 const mostRecentSessionNumber = '192nd'
 
-const legislatorQuery = graphql`
+export const legislatorQuery = graphql`
   {
     dataJson {
       _2021 {
@@ -76,11 +76,7 @@ const createLegislatorList = (legislatorArr, voteDataArr) => {
     })
 }
 
-const processQuery = ({
-  allHouseLegislatorsJson,
-  allSenateLegislatorsJson,
-  dataJson,
-}) => {
+export const processQuery = ({ allHouseLegislatorsJson, allSenateLegislatorsJson, dataJson }) => {
   return {
     senators: createLegislatorList(
       allSenateLegislatorsJson.edges,
@@ -126,9 +122,7 @@ const AllLegislators = () => {
   return (
     <Layout>
       <div className='tinted-background'>
-        <ListPageHeading>
-          All Current MA Legislators
-        </ListPageHeading>
+        <ListPageHeading>All Current MA Legislators</ListPageHeading>
         <div className='mt-4 inverted-tabs'>
           <Tabs items={tabItems} showMore={false} transform={false} />
         </div>

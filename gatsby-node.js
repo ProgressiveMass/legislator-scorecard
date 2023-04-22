@@ -80,8 +80,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
   const sponsoredBillTemplate = path.resolve(`./src/components/sponsorships/sponsorships.js`)
 
-  let sponsors = Object.entries(legislationData[sessionYear].sponsorship).map((sponsorshipItem) => {
-    const [id, sponsorshipData] = sponsorshipItem
+  let sponsors = legislationData[sessionYear].sponsorship.map((sponsorshipData) => {
     let legislatorData = getLegislatorById(sponsorshipData.id)
     return {
       sponsorshipData: { ...sponsorshipData.data, ...sponsorshipData.score },

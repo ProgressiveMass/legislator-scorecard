@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../../components/layout'
 import Tabs from 'react-responsive-tabs'
+import { useStaticQuery } from 'gatsby'
 import LegislatorList from '../../pages/all-legislators/LegislatorList'
+import { processQuery, legislatorQuery } from '../../pages/all-legislators/index'
 
 const TabsContaner = styled.div`
   background-color: #eaecef;
@@ -18,17 +20,35 @@ const LinkContainer = styled.p`
   }
 `
 
+const filterSponsors = (chamber, sponsors) => {
+  return chamber.filter((rep) => !!sponsors.find((sponsor) => sponsor.id === rep.id))
+}
 export default function SponsoredBill({
-  pageContext: { billData: bill, houseSponsors, senateSponsors, sponsors },
+  pageContext: { billData: bill, houseSponsors, senateSponsors },
 }) {
+  const legislatorMetadata = processQuery(useStaticQuery(legislatorQuery))
+  const { houseReps, senators } = legislatorMetadata
+
   const tabItems = [
     {
       title: 'House Reps',
-      component: <LegislatorList data={houseSponsors} chamber='lower' sessionNumber={'193rd'} />,
+      component: (
+        <LegislatorList
+          data={filterSponsors(houseReps, houseSponsors)}
+          chamber='lower'
+          sessionNumber={'193rd'}
+        />
+      ),
     },
     {
       title: 'Senators',
-      component: <LegislatorList data={senateSponsors} chamber='upper' sessionNumber={'193rd'} />,
+      component: (
+        <LegislatorList
+          data={filterSponsors(senators, senateSponsors)}
+          chamber='upper'
+          sessionNumber={'193rd'}
+        />
+      ),
     },
   ].map((t) => {
     return {
