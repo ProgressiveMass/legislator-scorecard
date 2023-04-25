@@ -4,7 +4,7 @@ const https = require('https');
 const rootCas = require('ssl-root-cas').inject();
 
 rootCas.addFile(path.resolve(__dirname, 'certs/intermediate.pem'));
-const httpsAgent1 = new https.Agent({ca: rootCas});
+const httpsAgent = new https.Agent({ca: rootCas});
 
 function findLocalLegislators(coordinates) {
   return axios.get('https://malegislature.gov/Legislators/GetDistrictByLatLong', {
@@ -13,7 +13,7 @@ function findLocalLegislators(coordinates) {
       longitude: coordinates.lng,
       isDistrictSearch: false,
     },
-      httpsAgent: httpsAgent1,
+      httpsAgent,
   }).then(response => {
     memberCodes = {}
     response.data.districts.map(({ Branch, UserMemberCode }) => {
