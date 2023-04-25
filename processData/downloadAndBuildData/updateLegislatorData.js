@@ -1,5 +1,6 @@
 const fs = require("fs")
 const axios = require("axios")
+const JSON5 = require('json5')
 require("dotenv").config()
 
 const query = `
@@ -36,6 +37,7 @@ query getLegislatorInfo($organization: String, $cursor: String) {
           }
         }
         image
+        extras
       }
     }
     pageInfo {
@@ -110,6 +112,17 @@ const processData = edges => {
           data.familyName = getFamilyName(data.name)
           console.warn(
             `${data.name} missing familyName, using ${data.familyName}`
+          )
+        }
+        data.memberCode = JSON5.parse(data.extras)['member code']
+        delete data.extras
+        if (!data.memberCode) {
+          console.warn(
+            `${data.name} missing memberCode inside extras field`
+          )
+        } else if (data.memberCode.length != 3 && data.memberCode.length != 4) {
+          console.warn(
+            `${data.name} might have invalid memberCode inside extras field: ${data.memberCode}`
           )
         }
         return data

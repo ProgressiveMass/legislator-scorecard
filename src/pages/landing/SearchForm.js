@@ -1,5 +1,5 @@
 import React from 'react'
-import { navigate } from 'gatsby'
+import { navigate, useStaticQuery, graphql } from 'gatsby'
 import axios from 'axios'
 import { getLegislatorUrlParams } from '../../utilities'
 
@@ -40,28 +40,47 @@ const randomLocations = [
   { street: '1 Skyline Dr', city: 'Worcester' },
 ]
 
-const getOpenStatesInfo = (legislators) => {
-  let stateRep
-  let stateSenator
-  legislators.forEach((leg) => {
-    if (leg.jurisdiction.name === 'Massachusetts') {
-      if (leg.current_role.org_classification === 'lower') {
-        stateRep = leg
-      } else {
-        stateSenator = leg
-      }
-    }
-  })
-  return {
-    stateRep,
-    stateSenator,
-  }
-}
-
 const SearchForm = () => {
   const [loading, setLoading] = React.useState(false)
   const [street, setStreet] = React.useState('')
   const [city, setCity] = React.useState('')
+
+  const legislatorNamesAndMemberCodes = useStaticQuery(
+    graphql`
+      {
+        allSenateLegislatorsJson {
+          edges {
+            node {
+              givenName
+              familyName
+              memberCode
+            }
+          }
+        }
+        allHouseLegislatorsJson {
+          edges {
+            node {
+              givenName
+              familyName
+              memberCode
+            }
+          }
+        }
+      }
+    `
+  )
+  const memberCodesToUrls = Object.fromEntries(
+    legislatorNamesAndMemberCodes.allHouseLegislatorsJson.edges.concat(
+      legislatorNamesAndMemberCodes.allSenateLegislatorsJson.edges
+    )
+    .map(({ node }) => node)
+    .map((data) => {
+      return [
+        data.memberCode,
+        getLegislatorUrlParams(data),
+      ]
+    })
+  )
 
   const randomizeLocation = () => {
     const randomLocation =
@@ -80,14 +99,12 @@ const SearchForm = () => {
         address,
       })
       .then((response) => {
-        const { stateRep, stateSenator } = getOpenStatesInfo(
-          response.data.results
-        )
-
         navigate(
-          `/legislator/${getLegislatorUrlParams(
-            stateSenator
-          )}?yourRep=${getLegislatorUrlParams(stateRep)}`
+          `/legislator/${memberCodesToUrls[
+            response.data.senator
+          ]}?yourRep=${memberCodesToUrls[
+            response.data.representative
+          ]}`
         )
       })
       .catch((error) => {

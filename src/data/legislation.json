@@ -54560,19 +54560,19 @@
           "H2894 / S1799": true,
           "H1379 / S858": false,
           "H1796 / S1494": true,
-          "H1795 / S1979": false,
+          "H1795 / S1979": true,
           "H1710 / S942": true,
           "H3084 / S1990": true,
           "H2288 / S1510": true,
           "H544 / S268": true,
           "H872  / S841": true,
           "H3232 / S2365": true,
-          "H3237 / S2135": false,
+          "H3237 / S2135": true,
           "H26 / S8": false,
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 22
+        "score": 24
       },
       {
         "id": "ocd-person/eab9b69f-0434-4307-972c-6acce9deb370",
@@ -54594,7 +54594,7 @@
           "H1260 / S816": false,
           "H1239 / S744": false,
           "H2103 / S1299": true,
-          "H2747 / S1771": false,
+          "H2747 / S1771": true,
           "H2894 / S1799": false,
           "H1379 / S858": true,
           "H1796 / S1494": false,
@@ -54610,7 +54610,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 9
+        "score": 10
       },
       {
         "id": "ocd-person/ff433cf6-2895-4e01-b143-26747500f8a4",
@@ -54977,20 +54977,20 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": false,
           "H2288 / S1510": false,
           "H544 / S268": true,
           "H872  / S841": false,
-          "H3232 / S2365": false,
+          "H3232 / S2365": true,
           "H3237 / S2135": false,
           "H26 / S8": false,
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 6
+        "score": 8
       },
       {
         "id": "ocd-person/0e72fc19-89be-49b9-8baf-5f35f938ec87",
@@ -55034,8 +55034,8 @@
         "id": "ocd-person/59aed143-c5c1-4760-ac55-eab18600c451",
         "data": {
           "H2908 / S1865": true,
-          "H2909 / S1866": false,
-          "H2960 / S1784": false,
+          "H2909 / S1866": true,
+          "H2960 / S1784": true,
           "H2964 / S1801": false,
           "H2725 / S1875": false,
           "H2708 / S1925": true,
@@ -55066,7 +55066,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 7
+        "score": 9
       },
       {
         "id": "ocd-person/5f227f77-f58b-4ac6-b193-9f406bde4055",
@@ -55121,12 +55121,12 @@
           "H3069 / S2014": false,
           "H1940 / S1181": false,
           "H603 / S261": false,
-          "H489 / S301": false,
+          "H489 / S301": true,
           "H495 / S246": true,
           "H1260 / S816": false,
           "H1239 / S744": true,
           "H2103 / S1299": true,
-          "H2747 / S1771": false,
+          "H2747 / S1771": true,
           "H2894 / S1799": false,
           "H1379 / S858": true,
           "H1796 / S1494": false,
@@ -55142,7 +55142,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 10
+        "score": 12
       },
       {
         "id": "ocd-person/62ebe10b-ef71-4579-a55a-3c2045916d70",
@@ -55242,8 +55242,8 @@
           "H2103 / S1299": false,
           "H2747 / S1771": true,
           "H2894 / S1799": true,
-          "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1379 / S858": true,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": true,
@@ -55256,7 +55256,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 11
+        "score": 13
       },
       {
         "id": "ocd-person/6b420d2a-f12d-40ca-a13f-04cf9061a66b",
@@ -55319,7 +55319,7 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": true,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": true,
@@ -55332,7 +55332,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 9
+        "score": 10
       },
       {
         "id": "ocd-person/a8225754-d88c-4343-8829-aa168b564cbd",
@@ -55420,7 +55420,7 @@
           "H2725 / S1875": false,
           "H2708 / S1925": false,
           "H2856 / S1788": false,
-          "H2743 / S1835": false,
+          "H2743 / S1835": true,
           "H1925 / S1200": false,
           "H3069 / S2014": false,
           "H1940 / S1181": false,
@@ -55431,7 +55431,7 @@
           "H1239 / S744": false,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
-          "H2894 / S1799": false,
+          "H2894 / S1799": true,
           "H1379 / S858": true,
           "H1796 / S1494": false,
           "H1795 / S1979": false,
@@ -55446,7 +55446,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 7
+        "score": 9
       },
       {
         "id": "ocd-person/b51c5c27-7da0-42f5-b67b-22085173af7a",
@@ -55650,7 +55650,7 @@
           "H2856 / S1788": false,
           "H2743 / S1835": false,
           "H1925 / S1200": false,
-          "H3069 / S2014": false,
+          "H3069 / S2014": true,
           "H1940 / S1181": false,
           "H603 / S261": false,
           "H489 / S301": false,
@@ -55674,7 +55674,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 0
+        "score": 1
       },
       {
         "id": "ocd-person/df1a3cfc-1555-4a05-8a5c-03a7e53932aa",
@@ -55691,7 +55691,7 @@
           "H3069 / S2014": false,
           "H1940 / S1181": false,
           "H603 / S261": false,
-          "H489 / S301": false,
+          "H489 / S301": true,
           "H495 / S246": false,
           "H1260 / S816": false,
           "H1239 / S744": false,
@@ -55712,7 +55712,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 0
+        "score": 1
       },
       {
         "id": "ocd-person/55824639-e627-48ad-9a3d-01b53caee00c",
@@ -55737,7 +55737,7 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": true,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": false,
@@ -55750,7 +55750,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 10
+        "score": 11
       },
       {
         "id": "ocd-person/65617e1a-1834-4ec8-9f19-4ac801ce9764",
@@ -55843,8 +55843,8 @@
           "H3069 / S2014": false,
           "H1940 / S1181": false,
           "H603 / S261": true,
-          "H489 / S301": false,
-          "H495 / S246": false,
+          "H489 / S301": true,
+          "H495 / S246": true,
           "H1260 / S816": false,
           "H1239 / S744": false,
           "H2103 / S1299": false,
@@ -55864,7 +55864,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 7
+        "score": 9
       },
       {
         "id": "ocd-person/18bf433d-24e5-46cb-9d83-c2f9373204bd",
@@ -55927,20 +55927,20 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": false,
           "H2288 / S1510": false,
           "H544 / S268": false,
-          "H872  / S841": false,
+          "H872  / S841": true,
           "H3232 / S2365": false,
           "H3237 / S2135": false,
           "H26 / S8": false,
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 2
+        "score": 4
       },
       {
         "id": "ocd-person/f41834f0-0d73-4e8e-8758-66184772c081",
@@ -56003,7 +56003,7 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": true,
@@ -56016,7 +56016,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 10
+        "score": 11
       },
       {
         "id": "ocd-person/db47013a-7653-4b44-8e11-9dbe4b85fec2",
@@ -56334,7 +56334,7 @@
           "H2856 / S1788": false,
           "H2743 / S1835": false,
           "H1925 / S1200": true,
-          "H3069 / S2014": false,
+          "H3069 / S2014": true,
           "H1940 / S1181": true,
           "H603 / S261": false,
           "H489 / S301": true,
@@ -56355,10 +56355,10 @@
           "H3232 / S2365": false,
           "H3237 / S2135": false,
           "H26 / S8": false,
-          "H3040 / S2024": false,
+          "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 7
+        "score": 9
       },
       {
         "id": "ocd-person/99c9c9e7-f0e3-480b-ad38-de297e6c635a",
@@ -56383,8 +56383,8 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
-          "H1795 / S1979": false,
+          "H1796 / S1494": true,
+          "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": false,
           "H2288 / S1510": true,
@@ -56396,7 +56396,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 5
+        "score": 7
       },
       {
         "id": "ocd-person/fdc5586f-0db3-4614-af1f-72a42cf5e6f0",
@@ -56498,7 +56498,7 @@
           "H2894 / S1799": false,
           "H1379 / S858": false,
           "H1796 / S1494": true,
-          "H1795 / S1979": false,
+          "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": false,
           "H2288 / S1510": true,
@@ -56510,7 +56510,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 11
+        "score": 12
       },
       {
         "id": "ocd-person/6f15f647-07f5-4739-a340-497798a474e7",
@@ -56535,7 +56535,7 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": true,
@@ -56548,7 +56548,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 3
+        "score": 4
       },
       {
         "id": "ocd-person/7be05b7f-d3dd-4a0f-b7d0-f29144d47f92",
@@ -56580,13 +56580,13 @@
           "H2288 / S1510": false,
           "H544 / S268": false,
           "H872  / S841": false,
-          "H3232 / S2365": false,
+          "H3232 / S2365": true,
           "H3237 / S2135": false,
           "H26 / S8": false,
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 6
+        "score": 7
       },
       {
         "id": "ocd-person/0e38852a-52b0-4aac-8a65-fa3fc964c88e",
@@ -56649,8 +56649,8 @@
           "H2747 / S1771": true,
           "H2894 / S1799": true,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
-          "H1795 / S1979": false,
+          "H1796 / S1494": true,
+          "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": false,
           "H2288 / S1510": true,
@@ -56662,7 +56662,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 21
+        "score": 23
       },
       {
         "id": "ocd-person/0ed98993-456c-4630-bd52-894bdde0c0b0",
@@ -56758,7 +56758,7 @@
           "H489 / S301": true,
           "H495 / S246": true,
           "H1260 / S816": false,
-          "H1239 / S744": false,
+          "H1239 / S744": true,
           "H2103 / S1299": false,
           "H2747 / S1771": true,
           "H2894 / S1799": false,
@@ -56776,7 +56776,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 8
+        "score": 9
       },
       {
         "id": "ocd-person/47c42957-b618-41b7-a557-5d24c33568cf",
@@ -56907,7 +56907,7 @@
           "H3069 / S2014": false,
           "H1940 / S1181": false,
           "H603 / S261": true,
-          "H489 / S301": false,
+          "H489 / S301": true,
           "H495 / S246": false,
           "H1260 / S816": false,
           "H1239 / S744": false,
@@ -56928,7 +56928,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 1
+        "score": 2
       },
       {
         "id": "ocd-person/799d49f3-28e5-46a1-bcc8-6370e9fbf44a",
@@ -56980,7 +56980,7 @@
           "H2856 / S1788": true,
           "H2743 / S1835": true,
           "H1925 / S1200": true,
-          "H3069 / S2014": false,
+          "H3069 / S2014": true,
           "H1940 / S1181": false,
           "H603 / S261": true,
           "H489 / S301": true,
@@ -57004,7 +57004,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 17
+        "score": 18
       },
       {
         "id": "ocd-person/9750bdb4-4dce-4003-85ec-672185a3a5a4",
@@ -57017,7 +57017,7 @@
           "H2708 / S1925": false,
           "H2856 / S1788": false,
           "H2743 / S1835": false,
-          "H1925 / S1200": false,
+          "H1925 / S1200": true,
           "H3069 / S2014": false,
           "H1940 / S1181": false,
           "H603 / S261": true,
@@ -57042,7 +57042,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 6
+        "score": 7
       },
       {
         "id": "ocd-person/17c3ac90-1218-4d61-ae47-bc5ef6ee4a74",
@@ -57051,7 +57051,7 @@
           "H2909 / S1866": true,
           "H2960 / S1784": true,
           "H2964 / S1801": true,
-          "H2725 / S1875": false,
+          "H2725 / S1875": true,
           "H2708 / S1925": true,
           "H2856 / S1788": true,
           "H2743 / S1835": false,
@@ -57067,20 +57067,20 @@
           "H2747 / S1771": true,
           "H2894 / S1799": true,
           "H1379 / S858": true,
-          "H1796 / S1494": false,
-          "H1795 / S1979": false,
+          "H1796 / S1494": true,
+          "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": true,
           "H2288 / S1510": true,
           "H544 / S268": true,
           "H872  / S841": true,
           "H3232 / S2365": true,
-          "H3237 / S2135": false,
+          "H3237 / S2135": true,
           "H26 / S8": false,
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 23
+        "score": 27
       },
       {
         "id": "ocd-person/3d709a64-6cd2-49c6-ad0d-b007e834bfec",
@@ -57137,10 +57137,10 @@
           "H603 / S261": true,
           "H489 / S301": true,
           "H495 / S246": false,
-          "H1260 / S816": false,
+          "H1260 / S816": true,
           "H1239 / S744": false,
           "H2103 / S1299": true,
-          "H2747 / S1771": false,
+          "H2747 / S1771": true,
           "H2894 / S1799": false,
           "H1379 / S858": false,
           "H1796 / S1494": true,
@@ -57156,7 +57156,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 9
+        "score": 11
       },
       {
         "id": "ocd-person/9e4b8b32-233e-443f-a147-46fbaa778a58",
@@ -57340,13 +57340,13 @@
           "H2288 / S1510": false,
           "H544 / S268": false,
           "H872  / S841": false,
-          "H3232 / S2365": false,
+          "H3232 / S2365": true,
           "H3237 / S2135": false,
           "H26 / S8": false,
-          "H3040 / S2024": false,
+          "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 1
+        "score": 3
       },
       {
         "id": "ocd-person/3dd1e2a8-3fdd-4d3a-9504-88a04f3fc973",
@@ -57441,13 +57441,13 @@
           "H603 / S261": true,
           "H489 / S301": true,
           "H495 / S246": true,
-          "H1260 / S816": false,
+          "H1260 / S816": true,
           "H1239 / S744": true,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": false,
@@ -57460,13 +57460,13 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 7
+        "score": 9
       },
       {
         "id": "ocd-person/4d0b5dda-d9d1-4c25-9c94-ce8fbd8ff398",
         "data": {
-          "H2908 / S1865": false,
-          "H2909 / S1866": false,
+          "H2908 / S1865": true,
+          "H2909 / S1866": true,
           "H2960 / S1784": false,
           "H2964 / S1801": false,
           "H2725 / S1875": false,
@@ -57498,7 +57498,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 5
+        "score": 7
       },
       {
         "id": "ocd-person/308b15a0-dc30-41be-be53-9e5827522cac",
@@ -57530,13 +57530,13 @@
           "H2288 / S1510": false,
           "H544 / S268": false,
           "H872  / S841": false,
-          "H3232 / S2365": false,
-          "H3237 / S2135": false,
+          "H3232 / S2365": true,
+          "H3237 / S2135": true,
           "H26 / S8": false,
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 1
+        "score": 3
       },
       {
         "id": "ocd-person/61a670a7-37a6-42f0-8c8f-4cfc1d93693a",
@@ -57554,14 +57554,14 @@
           "H1940 / S1181": true,
           "H603 / S261": true,
           "H489 / S301": true,
-          "H495 / S246": false,
-          "H1260 / S816": false,
+          "H495 / S246": true,
+          "H1260 / S816": true,
           "H1239 / S744": false,
           "H2103 / S1299": true,
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": true,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": true,
           "H1710 / S942": true,
           "H3084 / S1990": true,
@@ -57569,12 +57569,12 @@
           "H544 / S268": true,
           "H872  / S841": true,
           "H3232 / S2365": true,
-          "H3237 / S2135": false,
+          "H3237 / S2135": true,
           "H26 / S8": false,
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 14
+        "score": 18
       },
       {
         "id": "ocd-person/b61c923f-3598-465b-8051-6507b6f6c6c2",
@@ -57637,7 +57637,7 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": false,
@@ -57650,7 +57650,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 3
+        "score": 4
       },
       {
         "id": "ocd-person/fbbda637-7a45-43f2-a13a-388dc50b02ee",
@@ -57865,7 +57865,7 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
           "H3084 / S1990": false,
@@ -57878,7 +57878,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 5
+        "score": 6
       },
       {
         "id": "ocd-person/033bf9eb-2706-4c5f-9f93-8e8d222bf2c0",
@@ -57891,11 +57891,11 @@
           "H2708 / S1925": false,
           "H2856 / S1788": false,
           "H2743 / S1835": false,
-          "H1925 / S1200": false,
+          "H1925 / S1200": true,
           "H3069 / S2014": false,
           "H1940 / S1181": true,
           "H603 / S261": true,
-          "H489 / S301": false,
+          "H489 / S301": true,
           "H495 / S246": false,
           "H1260 / S816": false,
           "H1239 / S744": false,
@@ -57916,7 +57916,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 8
+        "score": 10
       },
       {
         "id": "ocd-person/398f9a47-bc65-4c2a-b12e-347f375d8fac",
@@ -58085,7 +58085,7 @@
           "H3069 / S2014": false,
           "H1940 / S1181": false,
           "H603 / S261": false,
-          "H489 / S301": false,
+          "H489 / S301": true,
           "H495 / S246": false,
           "H1260 / S816": false,
           "H1239 / S744": false,
@@ -58106,7 +58106,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 3
+        "score": 4
       },
       {
         "id": "ocd-person/6c3b63a2-ef13-43e5-b6de-d5e0901aa65a",
@@ -58121,7 +58121,7 @@
           "H2743 / S1835": false,
           "H1925 / S1200": false,
           "H3069 / S2014": false,
-          "H1940 / S1181": false,
+          "H1940 / S1181": true,
           "H603 / S261": true,
           "H489 / S301": true,
           "H495 / S246": false,
@@ -58144,7 +58144,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 2
+        "score": 3
       },
       {
         "id": "ocd-person/0e6c20bd-bfcb-445c-a1ce-3be99e26398e",
@@ -58226,29 +58226,29 @@
         "id": "ocd-person/87e3afd8-390c-45a3-97c6-2bb164ec1e90",
         "data": {
           "H2908 / S1865": true,
-          "H2909 / S1866": false,
+          "H2909 / S1866": true,
           "H2960 / S1784": true,
           "H2964 / S1801": false,
-          "H2725 / S1875": false,
-          "H2708 / S1925": false,
-          "H2856 / S1788": false,
-          "H2743 / S1835": false,
+          "H2725 / S1875": true,
+          "H2708 / S1925": true,
+          "H2856 / S1788": true,
+          "H2743 / S1835": true,
           "H1925 / S1200": true,
           "H3069 / S2014": false,
           "H1940 / S1181": false,
           "H603 / S261": true,
-          "H489 / S301": false,
+          "H489 / S301": true,
           "H495 / S246": false,
           "H1260 / S816": false,
           "H1239 / S744": false,
-          "H2103 / S1299": false,
+          "H2103 / S1299": true,
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
+          "H1796 / S1494": true,
           "H1795 / S1979": false,
           "H1710 / S942": false,
-          "H3084 / S1990": false,
+          "H3084 / S1990": true,
           "H2288 / S1510": false,
           "H544 / S268": false,
           "H872  / S841": false,
@@ -58258,7 +58258,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 4
+        "score": 13
       },
       {
         "id": "ocd-person/03d1f31d-1431-41d2-88b7-67b57d50f323",
@@ -58580,7 +58580,7 @@
           "H1940 / S1181": false,
           "H603 / S261": true,
           "H489 / S301": false,
-          "H495 / S246": false,
+          "H495 / S246": true,
           "H1260 / S816": false,
           "H1239 / S744": false,
           "H2103 / S1299": false,
@@ -58600,7 +58600,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 1
+        "score": 2
       },
       {
         "id": "ocd-person/66e7c819-cd52-4034-bace-bfec476c106d",
@@ -58624,7 +58624,7 @@
           "H2103 / S1299": false,
           "H2747 / S1771": false,
           "H2894 / S1799": false,
-          "H1379 / S858": false,
+          "H1379 / S858": true,
           "H1796 / S1494": false,
           "H1795 / S1979": false,
           "H1710 / S942": false,
@@ -58638,7 +58638,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 13
+        "score": 14
       },
       {
         "id": "ocd-person/1e7b8d51-56fa-4faf-93e6-9b485812ddf9",
@@ -58657,7 +58657,7 @@
           "H603 / S261": true,
           "H489 / S301": true,
           "H495 / S246": true,
-          "H1260 / S816": false,
+          "H1260 / S816": true,
           "H1239 / S744": false,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
@@ -58676,7 +58676,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 14
+        "score": 15
       },
       {
         "id": "ocd-person/67f64532-7f9a-4cd3-8c89-dc9b5df06517",
@@ -58763,7 +58763,7 @@
           "H2964 / S1801": false,
           "H2725 / S1875": false,
           "H2708 / S1925": true,
-          "H2856 / S1788": false,
+          "H2856 / S1788": true,
           "H2743 / S1835": true,
           "H1925 / S1200": true,
           "H3069 / S2014": false,
@@ -58790,7 +58790,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 25
+        "score": 26
       },
       {
         "id": "ocd-person/67833a9e-e086-4494-a364-fecdcd6aa609",
@@ -59012,13 +59012,13 @@
           "H2288 / S1510": false,
           "H544 / S268": true,
           "H872  / S841": false,
-          "H3232 / S2365": false,
+          "H3232 / S2365": true,
           "H3237 / S2135": false,
           "H26 / S8": false,
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 6
+        "score": 7
       },
       {
         "id": "ocd-person/88e0ae45-75e7-48b6-880a-1a4c039d4373",
@@ -59112,7 +59112,7 @@
           "H1940 / S1181": false,
           "H603 / S261": true,
           "H489 / S301": false,
-          "H495 / S246": false,
+          "H495 / S246": true,
           "H1260 / S816": false,
           "H1239 / S744": false,
           "H2103 / S1299": true,
@@ -59132,7 +59132,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 4
+        "score": 5
       },
       {
         "id": "ocd-person/a1a94ad4-7b75-46be-896e-548c86b23d0c",
@@ -59152,7 +59152,7 @@
           "H489 / S301": true,
           "H495 / S246": false,
           "H1260 / S816": false,
-          "H1239 / S744": false,
+          "H1239 / S744": true,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
           "H2894 / S1799": false,
@@ -59170,7 +59170,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 1
+        "score": 2
       },
       {
         "id": "ocd-person/824532f7-8dc9-4a1a-a7b3-16b2d0e78941",
@@ -59188,8 +59188,8 @@
           "H1940 / S1181": false,
           "H603 / S261": true,
           "H489 / S301": false,
-          "H495 / S246": false,
-          "H1260 / S816": false,
+          "H495 / S246": true,
+          "H1260 / S816": true,
           "H1239 / S744": false,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
@@ -59208,7 +59208,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 1
+        "score": 3
       },
       {
         "id": "ocd-person/f3dd7fd8-5d7f-4fa3-b2fe-910e375f2edd",
@@ -59226,8 +59226,8 @@
           "H1940 / S1181": true,
           "H603 / S261": false,
           "H489 / S301": true,
-          "H495 / S246": false,
-          "H1260 / S816": false,
+          "H495 / S246": true,
+          "H1260 / S816": true,
           "H1239 / S744": false,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
@@ -59246,7 +59246,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 6
+        "score": 8
       },
       {
         "id": "ocd-person/51adc4d9-23d8-442f-b692-c4e4204f552e",
@@ -59532,7 +59532,7 @@
           "H489 / S301": true,
           "H495 / S246": true,
           "H1260 / S816": true,
-          "H1239 / S744": false,
+          "H1239 / S744": true,
           "H2103 / S1299": true,
           "H2747 / S1771": false,
           "H2894 / S1799": false,
@@ -59550,7 +59550,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 17
+        "score": 18
       },
       {
         "id": "ocd-person/51c2533b-95e0-45c5-9100-0c6d68efb192",
@@ -59617,7 +59617,7 @@
           "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": false,
-          "H2288 / S1510": false,
+          "H2288 / S1510": true,
           "H544 / S268": false,
           "H872  / S841": false,
           "H3232 / S2365": true,
@@ -59626,7 +59626,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 13
+        "score": 14
       },
       {
         "id": "ocd-person/6c49bb2c-7c53-4f22-bfb9-04af813b95b0",
@@ -59641,10 +59641,10 @@
           "H2743 / S1835": false,
           "H1925 / S1200": false,
           "H3069 / S2014": false,
-          "H1940 / S1181": false,
-          "H603 / S261": false,
-          "H489 / S301": false,
-          "H495 / S246": false,
+          "H1940 / S1181": true,
+          "H603 / S261": true,
+          "H489 / S301": true,
+          "H495 / S246": true,
           "H1260 / S816": false,
           "H1239 / S744": false,
           "H2103 / S1299": false,
@@ -59664,7 +59664,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 0
+        "score": 4
       },
       {
         "id": "ocd-person/6e81dcb7-4a04-4a88-b5f2-728a3336cf9d",
@@ -60069,20 +60069,20 @@
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
-          "H1795 / S1979": false,
+          "H1796 / S1494": true,
+          "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": true,
           "H2288 / S1510": true,
           "H544 / S268": true,
-          "H872  / S841": false,
+          "H872  / S841": true,
           "H3232 / S2365": true,
           "H3237 / S2135": false,
           "H26 / S8": true,
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 22
+        "score": 25
       },
       {
         "id": "ocd-person/c1f81bec-d032-4f41-940c-ca32f2b5af12",
@@ -60216,13 +60216,13 @@
           "H489 / S301": true,
           "H495 / S246": true,
           "H1260 / S816": false,
-          "H1239 / S744": false,
+          "H1239 / S744": true,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
           "H2894 / S1799": true,
           "H1379 / S858": false,
-          "H1796 / S1494": false,
-          "H1795 / S1979": false,
+          "H1796 / S1494": true,
+          "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": true,
           "H2288 / S1510": true,
@@ -60234,7 +60234,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 14
+        "score": 17
       },
       {
         "id": "ocd-person/5f796cb3-08ae-40c4-8c11-a2758f317cc2",
@@ -60328,7 +60328,7 @@
           "H1940 / S1181": true,
           "H603 / S261": true,
           "H489 / S301": true,
-          "H495 / S246": false,
+          "H495 / S246": true,
           "H1260 / S816": false,
           "H1239 / S744": true,
           "H2103 / S1299": true,
@@ -60348,7 +60348,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 9
+        "score": 10
       },
       {
         "id": "ocd-person/e8071049-2a8d-4633-b6cb-c1f6ae83bb7a",
@@ -60459,10 +60459,10 @@
           "H3232 / S2365": false,
           "H3237 / S2135": false,
           "H26 / S8": false,
-          "H3040 / S2024": false,
+          "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 0
+        "score": 1
       },
       {
         "id": "ocd-person/49c4bb4e-fadd-4136-953f-6bd64a970acb",
@@ -60745,7 +60745,7 @@
           "H3069 / S2014": false,
           "H1940 / S1181": false,
           "H603 / S261": true,
-          "H489 / S301": false,
+          "H489 / S301": true,
           "H495 / S246": true,
           "H1260 / S816": true,
           "H1239 / S744": false,
@@ -60766,7 +60766,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 9
+        "score": 10
       },
       {
         "id": "ocd-person/5a333327-70bb-4b95-9cfd-fadd701e9348",
@@ -60900,17 +60900,17 @@
           "H489 / S301": true,
           "H495 / S246": true,
           "H1260 / S816": true,
-          "H1239 / S744": false,
+          "H1239 / S744": true,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
-          "H2894 / S1799": false,
-          "H1379 / S858": false,
+          "H2894 / S1799": true,
+          "H1379 / S858": true,
           "H1796 / S1494": false,
-          "H1795 / S1979": false,
+          "H1795 / S1979": true,
           "H1710 / S942": false,
           "H3084 / S1990": true,
-          "H2288 / S1510": false,
-          "H544 / S268": false,
+          "H2288 / S1510": true,
+          "H544 / S268": true,
           "H872  / S841": false,
           "H3232 / S2365": true,
           "H3237 / S2135": false,
@@ -60918,7 +60918,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 8
+        "score": 14
       },
       {
         "id": "ocd-person/23704722-a50c-4148-8f14-98c7d78324b9",
@@ -61000,7 +61000,7 @@
         "id": "ocd-person/b390af07-1fa2-4516-b8f0-b6bd1b62121a",
         "data": {
           "H2908 / S1865": false,
-          "H2909 / S1866": false,
+          "H2909 / S1866": true,
           "H2960 / S1784": false,
           "H2964 / S1801": false,
           "H2725 / S1875": false,
@@ -61017,7 +61017,7 @@
           "H1239 / S744": true,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
-          "H2894 / S1799": false,
+          "H2894 / S1799": true,
           "H1379 / S858": false,
           "H1796 / S1494": false,
           "H1795 / S1979": false,
@@ -61029,10 +61029,10 @@
           "H3232 / S2365": true,
           "H3237 / S2135": false,
           "H26 / S8": false,
-          "H3040 / S2024": false,
+          "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 10
+        "score": 13
       },
       {
         "id": "ocd-person/49397268-3fc9-4c83-a385-f55be18597f4",
@@ -61278,7 +61278,7 @@
           "H1940 / S1181": false,
           "H603 / S261": false,
           "H489 / S301": false,
-          "H495 / S246": false,
+          "H495 / S246": true,
           "H1260 / S816": false,
           "H1239 / S744": false,
           "H2103 / S1299": false,
@@ -61298,7 +61298,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 0
+        "score": 1
       },
       {
         "id": "ocd-person/2fb1c0e0-edaa-4b55-9bbb-b6fe6b3e5dcc",
@@ -61370,11 +61370,11 @@
           "H872  / S841": true,
           "H3232 / S2365": true,
           "H3237 / S2135": false,
-          "H26 / S8": false,
+          "H26 / S8": true,
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 24
+        "score": 25
       },
       {
         "id": "ocd-person/d0956cb2-93df-4096-82ce-d39fbf0b9e36",
@@ -61390,8 +61390,8 @@
           "H1925 / S1200": false,
           "H3069 / S2014": false,
           "H1940 / S1181": false,
-          "H603 / S261": false,
-          "H489 / S301": false,
+          "H603 / S261": true,
+          "H489 / S301": true,
           "H495 / S246": false,
           "H1260 / S816": false,
           "H1239 / S744": false,
@@ -61404,7 +61404,7 @@
           "H1710 / S942": false,
           "H3084 / S1990": false,
           "H2288 / S1510": false,
-          "H544 / S268": false,
+          "H544 / S268": true,
           "H872  / S841": false,
           "H3232 / S2365": false,
           "H3237 / S2135": false,
@@ -61412,7 +61412,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 0
+        "score": 3
       },
       {
         "id": "ocd-person/fd5aaac8-48f5-42c2-82a8-abaf6c5de650",
@@ -61447,10 +61447,10 @@
           "H3232 / S2365": true,
           "H3237 / S2135": false,
           "H26 / S8": false,
-          "H3040 / S2024": false,
+          "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 9
+        "score": 10
       },
       {
         "id": "ocd-person/703d6d4e-3a1d-4a2e-82e3-3c9693b75953",
@@ -61480,15 +61480,15 @@
           "H1710 / S942": true,
           "H3084 / S1990": true,
           "H2288 / S1510": true,
-          "H544 / S268": false,
-          "H872  / S841": false,
+          "H544 / S268": true,
+          "H872  / S841": true,
           "H3232 / S2365": true,
-          "H3237 / S2135": false,
+          "H3237 / S2135": true,
           "H26 / S8": true,
           "H3040 / S2024": false,
-          "S1963": false
+          "S1963": true
         },
-        "score": 24
+        "score": 28
       },
       {
         "id": "ocd-person/31600b44-797b-4baf-80aa-0762b4f0aff5",
@@ -61659,7 +61659,7 @@
           "H603 / S261": true,
           "H489 / S301": true,
           "H495 / S246": true,
-          "H1260 / S816": false,
+          "H1260 / S816": true,
           "H1239 / S744": true,
           "H2103 / S1299": false,
           "H2747 / S1771": false,
@@ -61678,7 +61678,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 13
+        "score": 14
       },
       {
         "id": "ocd-person/9e8c3405-d8ed-4838-a376-d19c357f4cb4",
@@ -61998,7 +61998,7 @@
           "H1925 / S1200": false,
           "H3069 / S2014": false,
           "H1940 / S1181": false,
-          "H603 / S261": false,
+          "H603 / S261": true,
           "H489 / S301": false,
           "H495 / S246": false,
           "H1260 / S816": true,
@@ -62020,7 +62020,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 1
+        "score": 2
       }
     ],
     "houseVotes": [

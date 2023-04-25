@@ -1,4 +1,4 @@
-.search-form, .search-instructions {
+.search-form {
   margin: auto;
   color: $body-color;
   box-shadow: 0;
@@ -19,19 +19,5 @@
 .search-form .btn-block {
   @include media-breakpoint-up(lg) {
     font-size: 1.2rem;
-  }
-}
-
-.search-instructions {
-  li::marker {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  li {
-    font-size: 1.2rem;
-    a {
-
-  font-weight: bold;
-    }
   }
 }
