@@ -16,10 +16,10 @@ function findLocalLegislators(coordinates) {
       httpsAgent,
   }).then(response => {
     memberCodes = {}
-    response.data.districts.map(({ Branch, UserMemberCode }) => {
-      if (Branch == 'Senate') {
+    response.data.districts.forEach(({ Branch, UserMemberCode }) => {
+      if (Branch === 'Senate') {
         memberCodes.senator = UserMemberCode
-      } else if (Branch == 'House') {
+      } else if (Branch === 'House') {
         memberCodes.representative = UserMemberCode
       } else {
         throw new Error(`Unexpected chamber: ${Branch}`)
