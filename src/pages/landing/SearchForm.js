@@ -165,7 +165,7 @@ const SearchForm = () => {
       <div className='mt-4'>
         <button
           className='btn btn-primary btn-block heading-font'
-          type='submit'>
+          type='submit' disabled={loading}>
           {loading ? (
             <span>
               <span aria-hidden='true' className='fa fa-spinner fa-pulse' />
