@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchInstructions from './SearchInstructions'
+import SearchForm from './SearchForm'
 import SEO from '../../components/seo'
 import Layout from '../../components/layout'
 
@@ -23,7 +23,7 @@ export default () => {
 
               <div className='col-md-6 col-lg-5 blue-background pl-md-5 pt-lg-3'>
                 <div className='mx-auto' style={{ maxWidth: '500px' }}>
-                  <SearchInstructions />
+                  <SearchForm />
                 </div>
               </div>
             </div>
