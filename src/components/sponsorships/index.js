@@ -14,6 +14,10 @@ const Container = styled.div`
   gap: 1rem;
   justify-items: center;
   align-items: center;
+
+  @media (max-width: 950px) {
+    padding: 0 2rem;
+  }
 `
 
 const SponsorshipRow = (props) => {

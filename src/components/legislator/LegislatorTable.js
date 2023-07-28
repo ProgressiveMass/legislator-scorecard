@@ -2,12 +2,21 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { StickyContainer, Sticky } from 'react-sticky'
 import getTagData from './tagMap'
+import styled from 'styled-components'
 
+const StyledTags = styled.ul`
+  @media (max-width: 950px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+`
 const TagFilterList = ({ tags, tagFilter, toggleFilter }) => {
   return (
     <>
-      <span className='label d-md-inline-block mr-3'>Filter Bills By Topic:</span>
-      <ul className='d-sm-inline-flex list-unstyled'>
+      <span className='label d-md-inline-block mr-3 pl-2'>Filter Bills By Topic:</span>
+      <StyledTags className='d-sm-inline-flex list-unstyled'>
         {tags.map((t) => {
           let badgeClass = 'badge-light'
           if (!tagFilter || tagFilter === t) {
@@ -25,7 +34,7 @@ const TagFilterList = ({ tags, tagFilter, toggleFilter }) => {
             </li>
           )
         })}
-      </ul>
+      </StyledTags>
     </>
   )
 }
