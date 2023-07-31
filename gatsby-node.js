@@ -110,16 +110,11 @@ exports.createPages = async function ({ actions, graphql }) {
           return false
         }
       })
-      .sort((a, b) => {
-        const sponsorA = a.familyName?.toLowerCase()
-        const sponsorB = b.familyName?.toLowerCase()
-        if (sponsorA < sponsorB) {
-          return -1
+      .map((sponsor) => {
+        return {
+          ...sponsor,
+          name: [sponsor.familyName, sponsor.givenName].join(', '),
         }
-        if (sponsorA > sponsorB) {
-          return 1
-        }
-        return 0
       })
 
     createPage({
