@@ -6,7 +6,8 @@ import LegislatorList from '../../pages/all-legislators/LegislatorList'
 
 const TabsContaner = styled.div`
   background-color: #eaecef;
-  padding: 1rem;
+  padding: 1rem 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   @media (max-width: 950px) {
@@ -20,7 +21,7 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-  padding: 1rem 8rem;
+  padding: 1rem 2rem;
 
   display: flex;
 
