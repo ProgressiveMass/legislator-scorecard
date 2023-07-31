@@ -1028,6 +1028,13 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
+"@babel/runtime@^7.20.13":
+  version "7.22.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.6.tgz#57d64b9ae3cff1d67eb067ae117dac087f5bd438"
+  integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/standalone@^7.12.6":
   version "7.21.4"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.21.4.tgz#f1a7131775df87c526cc393c36d013acd2b3c609"
@@ -7791,6 +7798,13 @@ gatsby-plugin-sitemap@^2.4.11:
     minimatch "^3.0.4"
     pify "^3.0.0"
     sitemap "^1.13.0"
+
+gatsby-plugin-styled-components@^6.11.0:
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-6.11.0.tgz#42c58821e534ebf82974c9f9fef74196dd345aa3"
+  integrity sha512-VfzTXZ/MZvTfaSwY9dwcWsxgqmw9OCcKXQj2keRIs9x8g0QecYBSVIWZBe7atr76LyCR0FiWjmLSSp6Ll/UD3Q==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
 
 gatsby-plugin-typescript@^2.12.1:
   version "2.12.1"
