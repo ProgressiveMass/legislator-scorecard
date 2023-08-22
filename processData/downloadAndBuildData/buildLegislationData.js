@@ -46,8 +46,7 @@ const addYesAndNoVotes = (bills, votes) => {
     const billVotes = votes.map((row) => row[index])
 
     try {
-      const progressivePosition =
-        bills[rollCallNumber].progressive_position.toLowerCase()
+      const progressivePosition = bills[rollCallNumber].progressive_position.toLowerCase()
       let yesVotes, noVotes
       if (progressivePosition === 'no') {
         yesVotes = billVotes.filter((v) => v && v.trim() === '-').length
@@ -67,11 +66,8 @@ const addYesAndNoVotes = (bills, votes) => {
 
 const cleanDescription = (bills) => {
   Object.keys(bills).forEach((rollCallNumber) => {
-    const descriptionLines = bills[rollCallNumber].description
-      .split(/\n/)
-      .filter(Boolean)
-    if (descriptionLines.length === 1)
-      bills[rollCallNumber].description = descriptionLines[0]
+    const descriptionLines = bills[rollCallNumber].description.split(/\n/).filter(Boolean)
+    if (descriptionLines.length === 1) bills[rollCallNumber].description = descriptionLines[0]
     else bills[rollCallNumber].description = descriptionLines[1]
   })
 }
@@ -127,9 +123,7 @@ const buildVoteObject = (votes) => {
         id: openStatesLegislatorId,
         data: votes,
         score: percentageScore,
-        recordedVotePercentage: Math.round(
-          (voteCount / Object.keys(votes).length) * 100
-        ),
+        recordedVotePercentage: Math.round((voteCount / Object.keys(votes).length) * 100),
       }
     })
     .filter(Boolean)
@@ -144,13 +138,13 @@ const buildSponsorshipObject = (sponsorship) => {
       const data = billNumbers.reduce((acc, billNo, i) => {
         // for easier matching in gatsby-node.js
         billNo = billNo.replace(/\./g, '')
-        letterVote = sponsorship[i + 2][legislatorIndex]
+        let letterVote = sponsorship[i + 2][legislatorIndex]
         acc[billNo] = letterVote.toUpperCase() === 'Y'
         return acc
       }, {})
       const score = parseInt(
         Object.values(data)
-          .reduce((acc, curr) => acc + curr , 0)
+          .reduce((acc, curr) => acc + curr, 0)
           .toFixed()
       )
 
@@ -171,9 +165,7 @@ const sessionDict = {
 }
 
 const buildLegislationDataForYear = (year) => {
-  const data = JSON.parse(
-    fs.readFileSync(`${__dirname}/tmp/${year}.json`, 'utf8')
-  )
+  const data = JSON.parse(fs.readFileSync(`${__dirname}/tmp/${year}.json`, 'utf8'))
 
   ;['sponsored', 'house', 'senate'].forEach((type) => {
     const key = type === 'sponsored' ? 'bill_number' : 'roll_call_number'
@@ -183,8 +175,7 @@ const buildLegislationDataForYear = (year) => {
   // add additional vote data to bills
   // modifies in-place
   ;['house', 'senate'].forEach((type) => {
-    if (!data[`${type}Votes`] || !Object.keys(data[`${type}Bills`]).length)
-      return
+    if (!data[`${type}Votes`] || !Object.keys(data[`${type}Bills`]).length) return
     addYesAndNoVotes(data[`${type}Bills`], data[`${type}Votes`])
   })
   ;['house', 'senate'].forEach((type) => {
@@ -193,13 +184,10 @@ const buildLegislationDataForYear = (year) => {
     addRollCallUrls(data[`${type}Bills`], sessionDict[year], type)
   })
 
-  if (data.sponsorship.length)
-    data.sponsorship = buildSponsorshipObject(data.sponsorship)
+  if (data.sponsorship.length) data.sponsorship = buildSponsorshipObject(data.sponsorship)
 
-  if (data.houseVotes)
-    data.houseVotes = buildVoteObject(data.houseVotes, data.houseBills)
-  if (data.senateVotes)
-    data.senateVotes = buildVoteObject(data.senateVotes, data.senateBills)
+  if (data.houseVotes) data.houseVotes = buildVoteObject(data.houseVotes, data.houseBills)
+  if (data.senateVotes) data.senateVotes = buildVoteObject(data.senateVotes, data.senateBills)
 
   return data
 }

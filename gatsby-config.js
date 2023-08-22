@@ -21,6 +21,7 @@ module.exports = {
     `gatsby-transformer-json`,
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-open-graph-images`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {

@@ -2,14 +2,21 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { StickyContainer, Sticky } from 'react-sticky'
 import getTagData from './tagMap'
+import styled from 'styled-components'
 
+const StyledTags = styled.ul`
+  @media (max-width: 950px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+`
 const TagFilterList = ({ tags, tagFilter, toggleFilter }) => {
   return (
     <>
-      <span className='label d-md-inline-block mr-3'>
-        Filter Bills By Topic:
-      </span>
-      <ul className='d-sm-inline-flex list-unstyled'>
+      <span className='label d-md-inline-block mr-3 pl-2'>Filter Bills By Topic:</span>
+      <StyledTags className='d-sm-inline-flex list-unstyled'>
         {tags.map((t) => {
           let badgeClass = 'badge-light'
           if (!tagFilter || tagFilter === t) {
@@ -27,7 +34,7 @@ const TagFilterList = ({ tags, tagFilter, toggleFilter }) => {
             </li>
           )
         })}
-      </ul>
+      </StyledTags>
     </>
   )
 }
@@ -77,38 +84,30 @@ const LegislatorTable = ({
 
   const toggleFilter = (tag) => setTagFilter(tagFilter === tag ? '' : tag)
 
-  const tags = Array.from(
-    new Set(
-      rowData.map((c) => c.tags).reduce((acc, curr) => acc.concat(curr), [])
-    )
+  const tags = Array?.from(
+    new Set(rowData?.map((c) => c.tags).reduce((acc, curr) => acc.concat(curr), []))
   ).sort()
 
   const filteredData = filterRows(rowData, tagFilter)
 
-  if (!filteredData.length) return <EmptyView />
+  if (!filteredData?.length) return <EmptyView />
 
   return (
     <div className='table-container'>
       <h3 className='sr-only'>{title}</h3>
-      <div className='mt-4 mb-1 my-sm-4 py-sm-2'>
-        <p className='lead mb-0 readable-measure'>{description}</p>
-      </div>
+      {description && (
+        <div className='mt-4 mb-1 my-sm-4 py-sm-2'>
+          <p className='lead mb-0 readable-measure'>{description}</p>
+        </div>
+      )}
       <StickyContainer>
         <div>
           <div className='pt-3'>
-            <TagFilterList
-              tags={tags}
-              tagFilter={tagFilter}
-              toggleFilter={toggleFilter}
-            />
+            <TagFilterList tags={tags} tagFilter={tagFilter} toggleFilter={toggleFilter} />
           </div>
         </div>
         <table className='table table--top-row-fixed'>
-          <Sticky>
-            {({ style: stickyStyle }) => (
-              <thead style={stickyStyle}>{head}</thead>
-            )}
-          </Sticky>
+          <Sticky>{({ style: stickyStyle }) => <thead style={stickyStyle}>{head}</thead>}</Sticky>
           <tbody>
             {filteredData.map((d, index) => (
               <RowComponent
@@ -124,16 +123,6 @@ const LegislatorTable = ({
       </StickyContainer>
     </div>
   )
-}
-
-LegislatorTable.propTypes = {
-  familyName: PropTypes.string,
-  head: PropTypes.node,
-  description: PropTypes.node,
-  title: PropTypes.string,
-  rowComponent: PropTypes.node,
-  rowData: PropTypes.arrayOf(PropTypes.object),
-  isCurrentYear: PropTypes.bool,
 }
 
 export default LegislatorTable

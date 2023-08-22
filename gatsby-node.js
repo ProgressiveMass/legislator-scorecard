@@ -9,7 +9,9 @@ const { createOpenGraphImage } = require('gatsby-plugin-open-graph-images')
 const createPageDataStruct = require('./gatsbyNodeHelper/index')
 const houseLegislators = require('./src/data/house_legislators.json')
 const senateLegislators = require('./src/data/senate_legislators.json')
-const { getLegislatorUrlParams } = require('./src/utilities')
+const legislationData = require('./src/data/legislation.json')
+
+const { getLegislatorUrlParams, isHouseRep, isSenator } = require('./src/utilities')
 
 const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
   const ogImageFilename = (
@@ -51,8 +53,83 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
 }
 
 // create individual legislator pages
-exports.createPages = async function ({ actions: { createPage } }) {
-  ;[
+exports.createPages = async function ({ actions, graphql }) {
+  const { createPage } = actions
+
+  //TODO - other sessions
+  let sessionYear = 2023
+  let sessionVotesYear = 2021
+  // sponsorships
+  const getLegislatorById = (id) => {
+    let legislator =
+      houseLegislators.find((legislator) => legislator.id === id) ??
+      senateLegislators?.find((legislator) => legislator.id === id)
+    let votes =
+      legislationData[sessionVotesYear]?.houseVotes?.find((vote) => vote.id === id) ??
+      legislationData[sessionVotesYear]?.senateVotes?.find((vote) => vote.id === id)
+    return {
+      ...legislator,
+      ...votes,
+    }
+  }
+
+  let sponsoredBills = Object.entries(legislationData[sessionYear].sponsoredBills)
+
+  const allSponsoredBillsTemplate = path.resolve(`./src/components/sponsorships/index.js`)
+
+  createPage({
+    path: `/sponsorships/all-bills`,
+    component: allSponsoredBillsTemplate,
+    context: {
+      sponsoredBills,
+    },
+  })
+
+  const sponsoredBillTemplate = path.resolve(`./src/components/sponsorships/sponsorships.js`)
+
+  let sponsors = legislationData[sessionYear].sponsorship.map((sponsorshipData) => {
+    let legislatorData = getLegislatorById(sponsorshipData.id)
+    return {
+      sponsorshipData: { ...sponsorshipData.data, ...sponsorshipData.score },
+      ...legislatorData,
+    }
+  })
+
+  sponsoredBills.forEach((sponsoredBill) => {
+    let sortedSponsors = []
+    const [billNumber, billData] = sponsoredBill
+    let otherBillNames = ''
+    sortedSponsors = sponsors
+      .filter((sponsor) => {
+        if (!sponsor.id) return false
+        for (const bills in sponsor.sponsorshipData) {
+          if (bills.includes(billNumber) && sponsor.sponsorshipData[bills]) {
+            otherBillNames = bills
+            return true
+          }
+          return false
+        }
+      })
+      .map((sponsor) => {
+        return {
+          ...sponsor,
+          name: [sponsor.familyName, sponsor.givenName].join(', '),
+        }
+      })
+
+    createPage({
+      path: `/sponsorships/${billNumber}`,
+      component: sponsoredBillTemplate,
+      context: {
+        billData: { ...billData, otherBillNames },
+        sponsors: sortedSponsors,
+        houseSponsors: sortedSponsors.filter(isHouseRep),
+        senateSponsors: sortedSponsors.filter(isSenator),
+      },
+    })
+  })
+
+  let legislatorsList = [
     { chamber: 'senate', legislators: senateLegislators },
     { chamber: 'house', legislators: houseLegislators },
   ].map(({ chamber, legislators }) => {

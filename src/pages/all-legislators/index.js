@@ -3,12 +3,13 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Tabs from 'react-responsive-tabs'
 import LegislatorList from './LegislatorList'
 import Layout from '../../components/layout'
+import ListPageHeading from '../../components/ListPageHeading'
 
 // Ideally, these should not be hard-coded here. We should fix this some day.
 const mostRecentYear = 2021
 const mostRecentSessionNumber = '192nd'
 
-const legislatorQuery = graphql`
+export const legislatorQuery = graphql`
   {
     dataJson {
       _2021 {
@@ -75,11 +76,7 @@ const createLegislatorList = (legislatorArr, voteDataArr) => {
     })
 }
 
-const processQuery = ({
-  allHouseLegislatorsJson,
-  allSenateLegislatorsJson,
-  dataJson,
-}) => {
+export const processQuery = ({ allHouseLegislatorsJson, allSenateLegislatorsJson, dataJson }) => {
   return {
     senators: createLegislatorList(
       allSenateLegislatorsJson.edges,
@@ -125,11 +122,7 @@ const AllLegislators = () => {
   return (
     <Layout>
       <div className='tinted-background'>
-        <h1
-          className='h2 mt-4 font-weight-light text-center'
-          style={{ marginBottom: '2rem' }}>
-          All Current MA Legislators
-        </h1>
+        <ListPageHeading>All Current MA Legislators</ListPageHeading>
         <div className='mt-4 inverted-tabs'>
           <Tabs items={tabItems} showMore={false} transform={false} />
         </div>

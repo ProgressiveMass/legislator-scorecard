@@ -139,9 +139,7 @@ const LegislatorList = (props) => {
   return (
     <div className='white-background pt-5 mb-5'>
       <div className='mx-auto'>
-        <div
-          className='d-md-flex align-items-center mb-5 mb-md-4'
-          style={{ maxWidth: '600px' }}>
+        <div className='d-md-flex align-items-center mb-5 mb-md-4' style={{ maxWidth: '600px' }}>
           <label
             htmlFor='filterTable'
             className='d-inline-block mr-1 mb-0'
@@ -165,20 +163,10 @@ const LegislatorList = (props) => {
             <tr>
               <th />
               <th>
-                <SortButton
-                  onClick={handleSort}
-                  sort='name'
-                  currentSort={sort}
-                  title='Name'
-                />
+                <SortButton onClick={handleSort} sort='name' currentSort={sort} title='Name' />
               </th>
               <th>
-                <SortButton
-                  onClick={handleSort}
-                  sort='party'
-                  currentSort={sort}
-                  title='Party'
-                />
+                <SortButton onClick={handleSort} sort='party' currentSort={sort} title='Party' />
               </th>
               <th>
                 <SortButton

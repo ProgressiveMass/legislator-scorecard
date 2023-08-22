@@ -19,14 +19,7 @@ const Cosponsorship = ({ indicator, isCurrentSponsorshipYear }) => {
 
 const SponsorshipRow = ({
   tags,
-  rowData: {
-    bill_number,
-    showPairedDisclaimer,
-    shorthand_title,
-    description,
-    yourLegislator,
-    url,
-  },
+  rowData: { bill_number, showPairedDisclaimer, shorthand_title, description, yourLegislator, url },
   isCurrentYear,
   familyName,
 }) => {
@@ -44,11 +37,7 @@ const SponsorshipRow = ({
       </td>
       <td style={{ width: '30%' }}>
         <div>
-          <a
-            href={url}
-            className='font-weight-bold'
-            target='_blank'
-            rel='noreferrer'>
+          <a href={url} className='font-weight-bold' target='_blank' rel='noreferrer'>
             {shorthand_title}
           </a>
         </div>
@@ -65,9 +54,9 @@ const SponsorshipRow = ({
 
 const description = (
   <>
-    Cosponsoring legislation is an important way for a legislator to help put
-    momentum behind certain bills. To learn more about which bills Progressive
-    Mass thinks are most important to support, you can view{' '}
+    Cosponsoring legislation is an important way for a legislator to help put momentum behind
+    certain bills. To learn more about which bills Progressive Mass thinks are most important to
+    support, you can view{' '}
     <a
       className='font-weight-bold'
       target='_blank'
@@ -94,10 +83,7 @@ const SponsorshipTable = ({ data: { sponsorship, isCurrentSponsorshipYear }, fam
             <th style={{ width: '30%' }}>Title</th>
             <th style={{ width: '40%' }}>
               Summary from{' '}
-              <a
-                href='http://www.progressivemass.com/'
-                target='_blank'
-                rel='noreferrer'>
+              <a href='http://www.progressivemass.com/' target='_blank' rel='noreferrer'>
                 Progressive Mass
               </a>
             </th>

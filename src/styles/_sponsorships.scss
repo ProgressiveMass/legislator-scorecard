@@ -1,0 +1,5 @@
+.bill-list {
+   @extend .module-container;
+   @extend .module-container--full-width-on-small;
+   background: $white;
+}
