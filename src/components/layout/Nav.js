@@ -29,12 +29,12 @@ const Nav = () => {
             className='list-unstyled d-flex'
             style={{ justifyContent: 'space-between' }}>
             <li className='ml-md-3'>
-              <Link to='/sponsorships/all-bills'>Sponsored Bills</Link>
-            </li>
-            <li className='ml-md-3'>
               <Link to='/all-legislators'>
                 All <abbr aria-label='Massachusetts'>MA</abbr> Legislators
               </Link>
+            </li>
+            <li className='ml-md-3'>
+              <Link to='/sponsorships/all-bills'>Sponsored Bills</Link>
             </li>
             <li className='ml-md-3'>
               <a
