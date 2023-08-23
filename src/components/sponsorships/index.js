@@ -44,7 +44,7 @@ const SponsorshipRow = (props) => {
 
         <div>{tags}</div>
       </td>
-      <td style={{ width: '20%' }}>
+      <td style={{ width: '30%' }}>
         <div>
           <Link to={`/sponsorships/${bill_number}`}>{`${shorthand_title}`}</Link>
         </div>
@@ -82,7 +82,7 @@ export default function SponsoredBills({ pageContext: { sponsoredBills, legislat
                   <tr>
                     <th style={{ width: '15%' }}>Bill</th>
                     <th style={{ width: '30%' }}>Title</th>
-                    <th style={{ width: '40%' }}>
+                    <th style={{ width: '50%' }}>
                       Summary from{' '}
                       <a href='http://www.progressivemass.com/' target='_blank' rel='noreferrer'>
                         Progressive Mass
