@@ -107,8 +107,8 @@ exports.createPages = async function ({ actions, graphql }) {
             otherBillNames = bills
             return true
           }
-          return false
         }
+        return false
       })
       .map((sponsor) => {
         return {
