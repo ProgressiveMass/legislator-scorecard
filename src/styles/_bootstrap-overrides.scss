@@ -91,6 +91,16 @@
   }
 }
 
+.badge-gray {
+  color: $black;
+  background-color: $gray-300;
+
+  &:hover,
+  &:focus,
+  &:active {
+  color: $black;  }
+}
+
 .badge-secondary {
   color: $gray-900;
   background-color: $gray-300;
