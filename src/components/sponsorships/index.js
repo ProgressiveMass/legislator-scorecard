@@ -31,6 +31,9 @@ const SponsorshipRow = (props) => {
     url,
     otherNames,
   } = rowData
+
+  // TODO: replace this with data from GoogleSheets, for now just hardcoding
+  const isUniversalSchoolMeals = shorthand_title.toLowerCase().includes('meals')
   return (
     <tr>
       <td className='text-muted' style={{ width: '15%' }}>
@@ -44,11 +47,19 @@ const SponsorshipRow = (props) => {
 
         <div>{tags}</div>
       </td>
-      <td style={{ width: '30%' }}>
+      <td style={{ width: '25%' }}>
         <div>
           <Link to={`/sponsorships/${bill_number}`}>{`${shorthand_title}`}</Link>
         </div>
       </td>
+      <td style={{ width: '10%', textAlign: 'center' }}>
+        <span
+          className={`badge ${isUniversalSchoolMeals ? 'badge-green' : 'badge-gray'}`}
+          style={{ fontSize: '.9rem' }}>
+          {isUniversalSchoolMeals ? 'Yes!' : 'Not Yet'}
+        </span>
+      </td>
+
       <td style={{ width: '50%' }} data-label=''>
         <p>{description}</p>
       </td>
@@ -81,7 +92,8 @@ export default function SponsoredBills({ pageContext: { sponsoredBills, legislat
                 <>
                   <tr>
                     <th style={{ width: '15%' }}>Bill</th>
-                    <th style={{ width: '30%' }}>Title</th>
+                    <th style={{ width: '25%' }}>Title</th>
+                    <th style={{ width: '10%' }}>Passed?</th>
                     <th style={{ width: '50%' }}>
                       Summary from{' '}
                       <a href='http://www.progressivemass.com/' target='_blank' rel='noreferrer'>
