@@ -47,7 +47,7 @@ const SponsorshipRow = (props) => {
 
         <div>{tags}</div>
       </td>
-      <td style={{ width: '25%' }}>
+      <td style={{ width: '25%', fontWeight: 'bold' }}>
         <div>
           <Link to={`/sponsorships/${bill_number}`}>{`${shorthand_title}`}</Link>
         </div>
