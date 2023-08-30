@@ -6,6 +6,7 @@ import LegislatorTable from '../../components/legislator/LegislatorTable'
 import ListPageHeading from '../../components/ListPageHeading'
 import InfoPopover from '../../components/InfoPopover'
 import { consolidateBillNumbers } from '../../utilities'
+import { QUERIES } from '../../utilities'
 
 const Container = styled.div`
   display: flex;
@@ -15,8 +16,49 @@ const Container = styled.div`
   justify-items: center;
   align-items: center;
 
-  @media (max-width: 950px) {
+  @media ${QUERIES.tabletAndSmaller} {
     padding: 0 2rem;
+  }
+`
+
+const StyledRow = styled.tr`
+  @media ${QUERIES.phoneAndSmaller} {
+    display: grid;
+    grid-template-areas: 'title title' 'number status' 'summary summary';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content 1fr;
+    & > * {
+      border: none;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    & > td#number,
+    & > td#status {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    & > td#number {
+      grid-area: number;
+    }
+
+    & > td#title {
+      grid-area: title;
+    }
+
+    & > td#status {
+      text-align: center;
+      grid-area: status;
+    }
+
+    & > td#summary {
+      grid-area: summary;
+    }
   }
 `
 
@@ -35,8 +77,8 @@ const SponsorshipRow = (props) => {
   // TODO: replace this with data from GoogleSheets, for now just hardcoding
   const isUniversalSchoolMeals = shorthand_title.toLowerCase().includes('meals')
   return (
-    <tr>
-      <td className='text-muted' style={{ width: '15%' }}>
+    <StyledRow>
+      <td id='number' className='text-muted' style={{ width: '15%' }}>
         <div className='font-weight-bold'>
           {otherNames ? [bill_number, ...otherNames.filter(Boolean)].join(' / ') : bill_number}
           &nbsp;
@@ -47,12 +89,16 @@ const SponsorshipRow = (props) => {
 
         <div>{tags}</div>
       </td>
-      <td style={{ width: '25%', fontWeight: 'bold' }}>
+      <td id='title' style={{ width: '25%', fontWeight: 'bold' }}>
         <div>
           <Link to={`/sponsorships/${bill_number}`}>{`${shorthand_title}`}</Link>
         </div>
       </td>
-      <td style={{ width: '10%', textAlign: 'center' }}>
+      <td
+        id='status'
+        className='text-muted'
+        data-label='Passed?'
+        style={{ width: '10%', textAlign: 'center' }}>
         <span
           className={`badge ${isUniversalSchoolMeals ? 'badge-green' : 'badge-gray'}`}
           style={{ fontSize: '.9rem' }}>
@@ -60,10 +106,10 @@ const SponsorshipRow = (props) => {
         </span>
       </td>
 
-      <td style={{ width: '50%' }} data-label=''>
+      <td id='summary' style={{ width: '50%' }}>
         <p>{description}</p>
       </td>
-    </tr>
+    </StyledRow>
   )
 }
 

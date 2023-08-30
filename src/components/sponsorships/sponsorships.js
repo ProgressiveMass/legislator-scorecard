@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Layout from '../../components/layout'
 import Tabs from 'react-responsive-tabs'
 import LegislatorList from '../../pages/all-legislators/LegislatorList'
+import { QUERIES } from '../../utilities'
 
 const TabsContaner = styled.div`
   background-color: #eaecef;
@@ -10,7 +11,7 @@ const TabsContaner = styled.div`
   margin: 0;
   display: flex;
   flex-direction: column;
-  @media (max-width: 950px) {
+  @media ${QUERIES.tabletAndSmaller} {
     padding: 0 0.5rem;
   }
 `
@@ -27,7 +28,7 @@ const Container = styled.div`
 
   justify-content: center;
   flex-direction: column;
-  @media (max-width: 950px) {
+  @media ${QUERIES.tabletAndSmaller} {
     padding: 0 2rem;
   }
 `
@@ -38,7 +39,7 @@ const BillInformation = styled.div`
   padding: 2rem;
 `
 const BillTitle = styled.h2`
-  @media (max-width: 950px) {
+  @media ${QUERIES.tabletAndSmaller} {
     font-size: 1.5rem;
   }
 `

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import { StickyContainer, Sticky } from 'react-sticky'
 import getTagData from './tagMap'
 import styled from 'styled-components'
+import { QUERIES } from '../../utilities'
 
 const StyledTags = styled.ul`
-  @media (max-width: 950px) {
+  @media ${QUERIES.tabletAndSmaller} {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;

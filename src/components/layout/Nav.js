@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import LogoImg from '../../images/scorecard-logo.png'
 import styled from 'styled-components'
+import { QUERIES } from '../../utilities'
 
 const MobileFriendlyList = styled.ul`
-  @media (max-width: 768px) {
+  @media ${QUERIES.phoneAndSmaller} {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
   }

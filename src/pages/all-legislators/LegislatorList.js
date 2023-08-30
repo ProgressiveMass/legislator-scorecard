@@ -6,18 +6,57 @@ import SortButton from './SortButton'
 import ProgressBar from '../../components/progressBar'
 import InfoPopover from '../../components/InfoPopover'
 import defaultPhoto from '../../images/default-photo.jpg'
-import { getLegislatorUrlParams } from '../../utilities'
+import { QUERIES, getLegislatorUrlParams } from '../../utilities'
+import styled from 'styled-components'
+
+const StyledRow = styled.tr`
+  @media ${QUERIES.phoneAndSmaller} {
+    display: grid;
+    grid-template-areas: 'name party' 'score score';
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 1fr min-content;
+
+    & > td:first-child {
+      grid-area: name;
+      border-bottom: none;
+    }
+
+    & > td[data-label='Party'] {
+      grid-area: party;
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    & > td[data-label='Party'] > span {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    & > td[data-label*='Progressive Rating'] {
+      grid-area: score;
+      border-top: none;
+      align-self: self-end;
+    }
+
+    & > td[data-label*='Progressive Rating'] > div {
+      max-width: revert !important;
+    }
+  }
+`
 
 const LegislatorRow = ({ legislator, i, chamber, sessionNumber }) => {
   return (
-    <tr
+    <StyledRow
       key={legislator.id}
       className='legislator-row'
       onClick={(e) => {
         e.preventDefault()
         navigate(`/legislator/${getLegislatorUrlParams(legislator)}`)
       }}>
-      <td style={{ verticalAlign: 'middle' }}>{i + 1}</td>
       <td data-label={chamber === 'upper' ? 'Senator' : 'Representative'}>
         <a href='#/' className='legislator-row__name'>
           <b>
@@ -46,13 +85,15 @@ const LegislatorRow = ({ legislator, i, chamber, sessionNumber }) => {
           </b>
         </a>
       </td>
-      <td data-label='Party'>{legislator.party.slice(0, 1)}</td>
+      <td data-label='Party'>
+        <span>{legislator.party.slice(0, 1)}</span>
+      </td>
       <td data-label='Progressive Rating (2021-2022)'>
         <div style={{ maxWidth: '300px' }}>
           <ProgressBar data={legislator} sessionNumber={sessionNumber} />
         </div>
       </td>
-    </tr>
+    </StyledRow>
   )
 }
 
@@ -161,7 +202,6 @@ const LegislatorList = (props) => {
         <table className='table mx-auto table-hover table-clickable-rows'>
           <thead>
             <tr>
-              <th />
               <th>
                 <SortButton onClick={handleSort} sort='name' currentSort={sort} title='Name' />
               </th>
