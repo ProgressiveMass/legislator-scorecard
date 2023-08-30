@@ -27,6 +27,7 @@ const StyledRow = styled.tr`
     grid-template-areas: 'title title' 'number status' 'summary summary';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content 1fr;
+
     & > * {
       border: none;
     }
