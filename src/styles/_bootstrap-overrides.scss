@@ -141,10 +141,7 @@
     border: 1px solid $gray-200 !important;
     border-bottom: 0;
   }
-  /* Leave a space between table rows */
-  tr + tr {
-    margin-top: 1.5em;
-  }
+
   /* Get table cells to act like rows */
   tr,
   td {

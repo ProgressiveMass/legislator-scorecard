@@ -42,10 +42,27 @@ function consolidateBillNumbers(arr) {
   return Array.from(nameMap.values())
 }
 
+const BREAKPOINTS = {
+  phone: 600,
+  tablet: 950,
+  laptop: 1300,
+}
+
+const QUERIES = {
+  phoneAndSmaller: `(max-width: ${BREAKPOINTS.phone / 16}rem)`,
+  tabletAndSmaller: `(max-width: ${BREAKPOINTS.tablet / 16}rem)`,
+  laptopAndSmaller: `(max-width: ${BREAKPOINTS.laptop / 16}rem)`,
+  phoneAndUp: `(min-width: ${BREAKPOINTS.phone / 16}rem)`,
+  tabletAndUp: `(min-width: ${BREAKPOINTS.tablet / 16}rem)`,
+  laptopAndUp: `(min-width: ${BREAKPOINTS.laptop / 16}rem)`,
+}
+
 module.exports = {
   getSessionNumber,
   getLegislatorUrlParams,
   isHouseRep,
   isSenator,
   consolidateBillNumbers,
+  BREAKPOINTS,
+  QUERIES,
 }
