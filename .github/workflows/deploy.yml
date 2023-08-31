@@ -1,4 +1,9 @@
 name: Deploy
+
+concurrency:
+  group: production
+  cancel-in-progress: true
+
 on:
   schedule:
     - cron: '0 0 1-31/2 * * '
@@ -10,6 +15,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    environment:
+      name: production
+      url: https://scorecard.progressivemass.com
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -31,7 +39,7 @@ jobs:
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           OPENSTATES_API_KEY: ${{ secrets.OPENSTATES_API_KEY }}
-          GATSBY_SERVERLESS_ENDPOINT: ${{ secrets.GATSBY_SERVERLESS_ENDPOINT }}
+          GATSBY_SERVERLESS_ENDPOINT: ${{ vars.GATSBY_SERVERLESS_ENDPOINT }}
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          GATSBY_DOMAIN: ${{ secrets.GATSBY_DOMAIN }}
+          GATSBY_DOMAIN: ${{ vars.GATSBY_DOMAIN }}
         run: yarn run deploy:prod
