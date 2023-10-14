@@ -81,6 +81,17 @@
   }
 }
 
+.badge-yellow {
+  color: rgb(133 77 14 );
+  background-color: rgb(254 249 195 );
+
+  &:hover,
+  &:focus,
+  &:active {
+    color:rgb(133 77 14);
+  }
+}
+
 .badge-green {
   color: $white;
   background-color: $green;

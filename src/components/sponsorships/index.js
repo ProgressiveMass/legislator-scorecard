@@ -75,8 +75,26 @@ const SponsorshipRow = (props) => {
     otherNames,
   } = rowData
 
-  // TODO: replace this with data from GoogleSheets, for now just hardcoding
-  const isUniversalSchoolMeals = shorthand_title.toLowerCase().includes('meals')
+  const passedBills = ['H2908', 'H2909', 'H603']
+  const passedHouse = ['H1940']
+  const passedHouseAndSenate = ['H1796']
+  let billStatus = 'Not Yet'
+  let billStatusColor = 'badge-gray'
+
+  if (passedHouseAndSenate.includes(bill_number)) {
+    billStatus = 'Passed House and Senate'
+    billStatusColor = 'badge-yellow'
+  }
+  if (passedHouse.includes(bill_number)) {
+    billStatus = 'Passed House'
+    billStatusColor = 'badge-yellow'
+  }
+  if (passedBills.includes(bill_number)) {
+    billStatus = 'Passed'
+    billStatusColor = 'badge-green'
+  }
+
+  console.log('bill_number', bill_number)
   return (
     <StyledRow>
       <td id='number' className='text-muted' style={{ width: '15%' }}>
@@ -100,11 +118,20 @@ const SponsorshipRow = (props) => {
         className='text-muted'
         data-label='Passed?'
         style={{ width: '10%', textAlign: 'center' }}>
-        <span
-          className={`badge ${isUniversalSchoolMeals ? 'badge-green' : 'badge-gray'}`}
-          style={{ fontSize: '.9rem' }}>
-          {isUniversalSchoolMeals ? 'Yes!' : 'Not Yet'}
-        </span>
+        {billStatus === 'Passed House and Senate' ? (
+          <>
+            <span className={`badge ${billStatusColor}`} style={{ fontSize: '.9rem' }}>
+              Passed House
+            </span>
+            <span className={`badge ${billStatusColor}`} style={{ fontSize: '.9rem' }}>
+              Passed Senate
+            </span>
+          </>
+        ) : (
+          <span className={`badge ${billStatusColor}`} style={{ fontSize: '.9rem' }}>
+            {billStatus}
+          </span>
+        )}
       </td>
 
       <td id='summary' style={{ width: '50%' }}>
