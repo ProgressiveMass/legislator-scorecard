@@ -22,21 +22,19 @@ const isSenator = (legislator) => {
   return legislator.email.includes('masenate')
 }
 
-function consolidateBillNumbers(arr) {
+function consolidateBillNumbers(bills) {
   const nameMap = new Map()
-  for (const obj of arr) {
-    const name = obj.shorthand_title.toLowerCase().trim()
-    const bill_number = obj.bill_number
+  for (const [bill_number, bill] of bills) {
+    const name = bill.shorthand_title.toLowerCase().trim()
+    chamber = Array.from(bill_number)[0] == 'H' ? 'house' : 'senate'
     if (nameMap.has(name)) {
-      // Found a duplicate
-      const duplicateObj = nameMap.get(name)
-      if (!duplicateObj.otherNames) {
-        duplicateObj.otherNames = [duplicateObj.bill_number]
-      }
-      duplicateObj.otherNames.push(bill_number)
+      // Found a paired bill
+      const pairedBill = nameMap.get(name)
+      pairedBill[`${chamber}BillNumber`] = bill_number
     } else {
       // First occurrence of this name
-      nameMap.set(name, obj)
+      bill[`${chamber}BillNumber`] = bill_number
+      nameMap.set(name, bill)
     }
   }
   return Array.from(nameMap.values())

@@ -66,13 +66,11 @@ const StyledRow = styled.tr`
 const SponsorshipRow = (props) => {
   const { tags, rowData, isCurrentYear, familyName } = props
   const {
-    bill_number,
+    houseBillNumber,
+    senateBillNumber,
     showPairedDisclaimer,
     shorthand_title,
     description,
-    yourLegislator,
-    url,
-    otherNames,
   } = rowData
 
   const passedBills = ['H2908', 'H2909', 'H603']
@@ -81,25 +79,27 @@ const SponsorshipRow = (props) => {
   let billStatus = 'Not Yet'
   let billStatusColor = 'badge-gray'
 
-  if (passedHouseAndSenate.includes(bill_number)) {
+  if (passedHouseAndSenate.includes(houseBillNumber)) {
     billStatus = 'Passed House and Senate'
     billStatusColor = 'badge-yellow'
   }
-  if (passedHouse.includes(bill_number)) {
+  if (passedHouse.includes(houseBillNumber)) {
     billStatus = 'Passed House'
     billStatusColor = 'badge-yellow'
   }
-  if (passedBills.includes(bill_number)) {
+  if (passedBills.includes(houseBillNumber)) {
     billStatus = 'Passed'
     billStatusColor = 'badge-green'
   }
 
-  console.log('bill_number', bill_number)
+  const separator = houseBillNumber && senateBillNumber ? ' / ' : ''
+  const combinedBillNumber = [houseBillNumber, senateBillNumber].join(separator)
+
   return (
     <StyledRow>
       <td id='number' className='text-muted' style={{ width: '15%' }}>
         <div className='font-weight-bold'>
-          {otherNames ? [bill_number, ...otherNames.filter(Boolean)].join(' / ') : bill_number}
+          {combinedBillNumber}
           &nbsp;
           {showPairedDisclaimer ? (
             <InfoPopover text='This bill has two distinct versions in the House and Senate, but for the purposes of tracking sponsorship we treat them as a single bill.' />
@@ -110,7 +110,7 @@ const SponsorshipRow = (props) => {
       </td>
       <td id='title' style={{ width: '25%', fontWeight: 'bold' }}>
         <div>
-          <Link to={`/sponsorships/${bill_number}`}>{`${shorthand_title}`}</Link>
+          <Link to={`/sponsorships/${houseBillNumber}`}>{`${shorthand_title}`}</Link>
         </div>
       </td>
       <td
@@ -151,15 +151,7 @@ export default function SponsoredBills({ pageContext: { sponsoredBills, legislat
             <LegislatorTable
               title='Sponsored Bills'
               description={''}
-              rowData={consolidateBillNumbers(
-                sponsoredBills.map(([billNumber, billData]) => {
-                  return {
-                    otherNames: [''],
-                    ...billData,
-                  }
-                }),
-                'name'
-              )}
+              rowData={consolidateBillNumbers(sponsoredBills)}
               familyName={''}
               isCurrentYear={true}
               head={
