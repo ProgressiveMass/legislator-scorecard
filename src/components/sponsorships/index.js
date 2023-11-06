@@ -5,7 +5,7 @@ import Layout from '../../components/layout'
 import LegislatorTable from '../../components/legislator/LegislatorTable'
 import ListPageHeading from '../../components/ListPageHeading'
 import InfoPopover from '../../components/InfoPopover'
-import { consolidateBillNumbers } from '../../utilities'
+import { consolidateBills } from '../../utilities'
 import { QUERIES } from '../../utilities'
 
 const Container = styled.div`
@@ -71,24 +71,26 @@ const SponsorshipRow = (props) => {
     showPairedDisclaimer,
     shorthand_title,
     description,
+    houseStatus,
+    senateStatus,
   } = rowData
 
-  const passedBills = ['H2908', 'H2909', 'H603']
-  const passedHouse = ['H1940']
-  const passedHouseAndSenate = ['H1796']
-  let billStatus = 'Not Yet'
+  let billStatus = 'Not Passed'
   let billStatusColor = 'badge-gray'
 
-  if (passedHouseAndSenate.includes(houseBillNumber)) {
-    billStatus = 'Passed House and Senate'
+  if (houseStatus === 'Passed') {
+    if (senateStatus === 'Passed') {
+      billStatus = 'Passed House and Senate'
+      billStatusColor = 'badge-yellow'
+    } else {
+      billStatus = 'Passed House'
+      billStatusColor = 'badge-yellow'
+    }
+  } else if (senateStatus === 'Passed') {
+    billStatus = 'Passed Senate'
     billStatusColor = 'badge-yellow'
-  }
-  if (passedHouse.includes(houseBillNumber)) {
-    billStatus = 'Passed House'
-    billStatusColor = 'badge-yellow'
-  }
-  if (passedBills.includes(houseBillNumber)) {
-    billStatus = 'Passed'
+  } else if (houseStatus === "Enacted") {
+    billStatus = 'Enacted'
     billStatusColor = 'badge-green'
   }
 
@@ -116,7 +118,7 @@ const SponsorshipRow = (props) => {
       <td
         id='status'
         className='text-muted'
-        data-label='Passed?'
+        data-label='Status'
         style={{ width: '10%', textAlign: 'center' }}>
         {billStatus === 'Passed House and Senate' ? (
           <>
@@ -151,7 +153,7 @@ export default function SponsoredBills({ pageContext: { sponsoredBills, legislat
             <LegislatorTable
               title='Sponsored Bills'
               description={''}
-              rowData={consolidateBillNumbers(sponsoredBills)}
+              rowData={consolidateBills(sponsoredBills)}
               familyName={''}
               isCurrentYear={true}
               head={
@@ -159,7 +161,7 @@ export default function SponsoredBills({ pageContext: { sponsoredBills, legislat
                   <tr>
                     <th style={{ width: '15%' }}>Bill</th>
                     <th style={{ width: '25%' }}>Title</th>
-                    <th style={{ width: '10%' }}>Passed?</th>
+                    <th style={{ width: '10%' }}>Status</th>
                     <th style={{ width: '50%' }}>
                       Summary from{' '}
                       <a href='http://www.progressivemass.com/' target='_blank' rel='noreferrer'>

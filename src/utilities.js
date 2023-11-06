@@ -22,7 +22,7 @@ const isSenator = (legislator) => {
   return legislator.email.includes('masenate')
 }
 
-function consolidateBillNumbers(bills) {
+function consolidateBills(bills) {
   const nameMap = new Map()
   for (const [bill_number, bill] of bills) {
     const name = bill.shorthand_title.toLowerCase().trim()
@@ -31,9 +31,11 @@ function consolidateBillNumbers(bills) {
       // Found a paired bill
       const pairedBill = nameMap.get(name)
       pairedBill[`${chamber}BillNumber`] = bill_number
+      pairedBill[`${chamber}Status`] = bill.status
     } else {
       // First occurrence of this name
       bill[`${chamber}BillNumber`] = bill_number
+      bill[`${chamber}Status`] = bill.status
       nameMap.set(name, bill)
     }
   }
@@ -60,7 +62,7 @@ module.exports = {
   getLegislatorUrlParams,
   isHouseRep,
   isSenator,
-  consolidateBillNumbers,
+  consolidateBills,
   BREAKPOINTS,
   QUERIES,
 }
