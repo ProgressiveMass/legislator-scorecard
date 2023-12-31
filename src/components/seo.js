@@ -98,7 +98,7 @@ SEO.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
-  ogImage: {path: require('../pages/landing/images/cards.png')},
+  ogImage: { path: require('../pages/landing/images/cards.png') },
 }
 
 SEO.propTypes = {

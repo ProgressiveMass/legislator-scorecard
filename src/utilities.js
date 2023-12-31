@@ -30,7 +30,7 @@ function consolidateBills(bills) {
   const nameMap = new Map()
   for (const [bill_number, bill] of bills) {
     const name = bill.shorthand_title.toLowerCase().trim()
-    chamber = Array.from(bill_number)[0] == 'H' ? 'house' : 'senate'
+    let chamber = Array.from(bill_number)[0] == 'H' ? 'house' : 'senate'
     if (nameMap.has(name)) {
       // Found a paired bill
       const pairedBill = nameMap.get(name)
