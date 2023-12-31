@@ -1,9 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import Tabs from 'react-responsive-tabs'
 import TermLayout from './TermLayout'
 import ProgressBarWContext from '../progressBar'
-import { getSessionNumber } from '../../utilities'
+import { getSessionNumber, QUERIES } from '../../utilities'
+
+const Term = styled.div`
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: 1rem;
+    text-wrap: wrap;
+  }
+`
+
+const Session = styled.div`
+  font-size: 1rem;
+
+  @media ${QUERIES.phoneAndSmaller} {
+    font-size: 0.8rem;
+    text-wrap: wrap;
+  }
+`
 
 export const SessionTabs = ({ terms, chamber, familyName }) => {
   const tabItems = terms.map((d) => {
@@ -11,8 +28,8 @@ export const SessionTabs = ({ terms, chamber, familyName }) => {
     return {
       title: (
         <div>
-          <div>{d.term} </div>
-          <div style={{ fontSize: '1rem' }}>{sessionNumber} Session</div>
+          <Term>{d.term} </Term>
+          <Session>{sessionNumber} Session</Session>
           <div
             style={{
               marginLeft: '8%',
