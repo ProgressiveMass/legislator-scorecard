@@ -14,12 +14,16 @@ const getLegislatorUrlParams = (legislator) => {
   return `${firstName.toLowerCase()}-${lastName.toLowerCase()}`
 }
 
-const isHouseRep = (legislator) => {
-  return legislator.email.includes('mahouse')
-}
+const isHouseRep = (legislator) => isMemberOfChamber(legislator, 'mahouse')
 
-const isSenator = (legislator) => {
-  return legislator.email.includes('masenate')
+const isSenator = (legislator) => isMemberOfChamber(legislator, 'masenate')
+
+const isMemberOfChamber = (legislator, chamber) => {
+  try {
+    return legislator.email.includes(chamber)
+  } catch (e) {
+    throw new Error("Problem checking email for legislator with ID: " + legislator.id)
+  }
 }
 
 function consolidateBills(bills) {

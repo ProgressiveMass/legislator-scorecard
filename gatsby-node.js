@@ -64,6 +64,12 @@ exports.createPages = async function ({ actions, graphql }) {
     let legislator =
       houseLegislators.find((legislator) => legislator.id === id) ??
       senateLegislators?.find((legislator) => legislator.id === id)
+    if (legislator === undefined) {
+      throw new Error(
+        `A legislator with ID ${id} is included in the sponsorships table, but that ID was not found among the ` +
+        `current legislators provided by Open States. Possibly a typo in the ID, or a retired legislator.`
+      )
+    }
     let votes =
       legislationData[sessionVotesYear]?.houseVotes?.find((vote) => vote.id === id) ??
       legislationData[sessionVotesYear]?.senateVotes?.find((vote) => vote.id === id)

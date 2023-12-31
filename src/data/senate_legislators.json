@@ -78,19 +78,6 @@
     "memberCode": "N_C0"
   },
   {
-    "id": "ocd-person/c59e1756-ad3e-4101-b64f-183c0abbf357",
-    "name": "Anne M. Gobi",
-    "givenName": "Anne",
-    "familyName": "Gobi",
-    "image": "https://malegislature.gov/Legislators/Profile/170/AMG0.jpg",
-    "party": "Democratic",
-    "district": "Worcester and Hampshire",
-    "email": "anne.gobi@masenate.gov",
-    "phone": "617-722-1540",
-    "url": "https://malegislature.gov/Legislators/Profile/AMG0",
-    "memberCode": "AMG0"
-  },
-  {
     "id": "ocd-person/edebef62-78d9-4f8b-a94d-65a29dbc09f6",
     "name": "Ryan C. Fattman",
     "givenName": "Ryan",
@@ -518,5 +505,18 @@
     "phone": "617-722-1604",
     "url": "http://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/PMP0",
     "memberCode": "PMP0"
+  },
+  {
+    "id": "ocd-person/c674060b-4568-43fa-b72d-0921f4876713",
+    "name": "Peter J. Durant",
+    "givenName": "Peter",
+    "familyName": "Durant",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PJD0.jpg",
+    "party": "Republican",
+    "district": "Worcester and Hampshire",
+    "email": "peter.durant@masenate.gov",
+    "phone": "617-722-1540",
+    "url": "http://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/PJD0",
+    "memberCode": "PJD0"
   }
 ]
