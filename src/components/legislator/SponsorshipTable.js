@@ -1,11 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import InfoPopover from '../InfoPopover'
 import LegislatorTable from './LegislatorTable'
+import { QUERIES } from '../../utilities'
 
-const Cosponsorship = ({ indicator, isCurrentSponsorshipYear }) => {
+const BaseTableRow = styled.tr`
+  border-bottom: 1px solid #eee;
+  @media ${QUERIES.tabletAndSmaller} {
+    margin: 15px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+  }
+`
+const PassedTableRow = styled(BaseTableRow)`
+  background-color: #71B84422;
+  border-bottom: 1px solid #71B8442a;
+`
+
+const Cosponsorship = ({ indicator, isPassed, isCurrentSponsorshipYear }) => {
   if (indicator === false) {
-    if (isCurrentSponsorshipYear) {
+    if (isCurrentSponsorshipYear && !isPassed) {
       return <span className='badge badge-danger'>Not Yet</span>
     } else {
       return <span className='badge badge-danger'>No</span>
@@ -19,12 +34,15 @@ const Cosponsorship = ({ indicator, isCurrentSponsorshipYear }) => {
 
 const SponsorshipRow = ({
   tags,
-  rowData: { bill_number, showPairedDisclaimer, shorthand_title, description, yourLegislator, url },
+  rowData: { bill_number, showPairedDisclaimer, shorthand_title, status, description, yourLegislator, url },
   isCurrentYear,
   familyName,
 }) => {
+  const isPassed = status === "Passed" || status === "Enacted"
+  const StyledTableRow = isPassed ? PassedTableRow : BaseTableRow
+  
   return (
-    <tr>
+    <StyledTableRow>
       <td className='text-muted' style={{ width: '15%' }}>
         <div className='font-weight-bold'>
           {bill_number}&nbsp;
@@ -34,6 +52,11 @@ const SponsorshipRow = ({
         </div>
 
         <div>{tags}</div>
+        {isPassed && (
+          <span className={`badge badge-green`} style={{ fontSize: '1rem' }}>
+            Passed!
+          </span>
+        )}
       </td>
       <td style={{ width: '30%' }}>
         <div>
@@ -46,9 +69,13 @@ const SponsorshipRow = ({
         <p>{description}</p>
       </td>
       <td style={{ width: '15%' }} data-label={`${familyName} Cosponsored?`}>
-        <Cosponsorship indicator={yourLegislator} isCurrentSponsorshipYear={isCurrentYear} />
+        <Cosponsorship
+          indicator={yourLegislator}
+          isCurrentSponsorshipYear={isCurrentYear}
+          isPassed={isPassed}
+        />
       </td>
-    </tr>
+    </StyledTableRow>
   )
 }
 
