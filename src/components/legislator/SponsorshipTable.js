@@ -40,7 +40,7 @@ const SponsorshipRow = ({
 }) => {
   const isPassed = status === "Passed" || status === "Enacted"
   const StyledTableRow = isPassed ? PassedTableRow : BaseTableRow
-  
+
   return (
     <StyledTableRow>
       <td className='text-muted' style={{ width: '15%' }}>
