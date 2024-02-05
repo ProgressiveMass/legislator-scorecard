@@ -96,6 +96,7 @@ const SponsorshipRow = (props) => {
 
   const separator = houseBillNumber && senateBillNumber ? ' / ' : ''
   const combinedBillNumber = [houseBillNumber, senateBillNumber].join(separator)
+  const urlBillNumber = houseBillNumber || senateBillNumber
 
   return (
     <StyledRow>
@@ -112,7 +113,7 @@ const SponsorshipRow = (props) => {
       </td>
       <td id='title' style={{ width: '25%', fontWeight: 'bold' }}>
         <div>
-          <Link to={`/sponsorships/${houseBillNumber}`}>{`${shorthand_title}`}</Link>
+          <Link to={`/sponsorships/${urlBillNumber}`}>{`${shorthand_title}`}</Link>
         </div>
       </td>
       <td
