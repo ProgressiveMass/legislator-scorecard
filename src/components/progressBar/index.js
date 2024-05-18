@@ -15,13 +15,6 @@ const ContextualProgressBar = ({ data: d, large, sessionNumber }) => {
         N/A:&nbsp; no voting data{sessionClause}
       </div>
     )
-  } else if (d.recordedVotePercentage < 50) {
-    const sessionClause = sessionNumber ? ' of ' + sessionNumber + ' sess.' : ''
-    return (
-      <div className={noScoreClasses}>
-        N/A:&nbsp; voted less than 50%{sessionClause}
-      </div>
-    )
   } else if (d.score === 'n/a') {
     const sessionClause = sessionNumber
       ? ' for ' + sessionNumber + ' sess.'
@@ -33,16 +26,8 @@ const ContextualProgressBar = ({ data: d, large, sessionNumber }) => {
     )
   } else if (d.recordedVotePercentage < 90) {
     return (
-      <div>
-        <ProgressBar width={d.score} key={d.id + 'prog-bar'} large={large} />
-        <small
-          style={{
-            lineHeight: 1.3,
-            display: 'inline-block',
-            marginTop: '.1rem',
-          }}>
-          *Missing several scored votes
-        </small>
+      <div className={noScoreClasses}>
+        N/A: missed at least 10% of scored votes
       </div>
     )
   } else {

@@ -18,7 +18,7 @@ const buildChamberVoteData = (year, legislatorData) => chamber => {
     .filter(Boolean)
 
   const allDemocratVotes = votes
-    .filter(vote => vote.recordedVotePercentage > 50)
+    .filter(vote => vote.recordedVotePercentage > 90)
     .filter(vote => {
       return isDemocrat(vote)
     })
@@ -26,7 +26,7 @@ const buildChamberVoteData = (year, legislatorData) => chamber => {
 
   const democratMedian = round(median(allDemocratVotes))
   const republicanVotes = votes
-    .filter(vote => vote.recordedVotePercentage > 50)
+    .filter(vote => vote.recordedVotePercentage > 90)
     .filter(vote => {
       return !isDemocrat(vote)
     })

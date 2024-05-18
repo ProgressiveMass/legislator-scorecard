@@ -113,7 +113,7 @@ const LegislatorList = (props) => {
     }
 
     const normalizeRatingVal = (val, data) => {
-      if (data.recordedVotePercentage < 50) {
+      if (data.recordedVotePercentage < 90) {
         return 0
       } else {
         return val

@@ -42,7 +42,7 @@ const buildLegislationObject = (legislation, key) => {
 const addYesAndNoVotes = (bills, votes) => {
   const rollCallRow = votes[2]
   rollCallRow.forEach((rollCallNumber, index) => {
-    if (!rollCallNumber || !rollCallNumber.trim()) return
+    if (!rollCallNumber || !rollCallNumber.trim() || rollCallNumber.trim() === 'RC #') return
     const billVotes = votes.map((row) => row[index])
 
     try {
@@ -107,7 +107,7 @@ const buildVoteObject = (votes) => {
       }, {})
 
       const voteCount = Object.values(votes).filter((vote) => {
-        return vote.toLowerCase() !== 'n/a'
+        return !['n/a', 'nv'].includes(vote.toLowerCase())
       }).length
 
       const totalScore = Object.entries(votes).reduce((acc, [, vote]) => {
