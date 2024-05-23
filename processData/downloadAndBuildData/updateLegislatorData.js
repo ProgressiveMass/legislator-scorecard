@@ -13,6 +13,9 @@ query getLegislatorInfo($organization: String, $cursor: String) {
         givenName
         familyName
         image
+        links {
+          url
+        }
         sources {
           url
         }
@@ -36,7 +39,6 @@ query getLegislatorInfo($organization: String, $cursor: String) {
             label
           }
         }
-        image
         extras
       }
     }
@@ -98,7 +100,12 @@ const processData = edges => {
           console.warn('No phone number for ' + data.name)
           data.phone = ''
         }
-        data.url = data.sources[0].url
+        if (data.links) {
+          data.url = data.links[0].url
+        } else {
+          console.warn(`${data.name} missing links entry, using sources: ${data.sources[0].url}`)
+          data.url = data.sources[0].url
+        }
         data.party = data.party[0].organization.name
         delete data.sources
         delete data.contactDetails
@@ -124,6 +131,9 @@ const processData = edges => {
           console.warn(
             `${data.name} might have invalid memberCode inside extras field: ${data.memberCode}`
           )
+        }
+        if (data.links[0].url.slice(-4) !== data.memberCode && data.links[0].url.slice(-3) !== data.memberCode) {
+          console.warn(`${data.name} may have wrong URL in links (${data.links[0].url}) compared to memberCode (${data.memberCode}) `)
         }
         return data
       } catch (e) {
