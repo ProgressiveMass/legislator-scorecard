@@ -40,7 +40,15 @@ function SEO({ description, lang, meta, keywords, title, ogImage }) {
           content: metaDescription,
         },
         {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+        {
           property: `og:title`,
+          content: title,
+        },
+        {
+          property: `twitter:title`,
           content: title,
         },
         {
@@ -65,6 +73,10 @@ function SEO({ description, lang, meta, keywords, title, ogImage }) {
         },
         {
           property: `og:image`,
+          content: process.env.GATSBY_DOMAIN + ogImage.path,
+        },
+        {
+          property: `twitter:image`,
           content: process.env.GATSBY_DOMAIN + ogImage.path,
         },
         {
