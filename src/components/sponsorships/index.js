@@ -5,7 +5,6 @@ import Layout from '../../components/layout'
 import LegislatorTable from '../../components/legislator/LegislatorTable'
 import ListPageHeading from '../../components/ListPageHeading'
 import InfoPopover from '../../components/InfoPopover'
-import { consolidateBills } from '../../utilities'
 import { QUERIES } from '../../utilities'
 
 const Container = styled.div`
@@ -147,7 +146,7 @@ const SponsorshipRow = (props) => {
   )
 }
 
-export default function SponsoredBills({ pageContext: { sponsoredBills, legislationData } }) {
+export default function SponsoredBills({ pageContext: { consolidatedBills } }) {
   return (
     <Layout>
       <div className='tinted-background'>
@@ -157,7 +156,7 @@ export default function SponsoredBills({ pageContext: { sponsoredBills, legislat
             <LegislatorTable
               title='Sponsored Bills'
               description={''}
-              rowData={consolidateBills(sponsoredBills)}
+              rowData={consolidatedBills}
               familyName={''}
               isCurrentYear={true}
               head={
