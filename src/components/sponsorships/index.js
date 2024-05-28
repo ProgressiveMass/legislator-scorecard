@@ -92,6 +92,9 @@ const SponsorshipRow = (props) => {
   } else if (houseStatus === "Enacted") {
     billStatus = 'Enacted'
     billStatusColor = 'badge-green'
+  } else if (houseStatus === 'In Conference Committee') {
+    billStatus = 'In Conference Committee'
+    billStatusColor = 'badge-yellow'
   }
 
   const separator = houseBillNumber && senateBillNumber ? ' / ' : ''
