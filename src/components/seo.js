@@ -25,6 +25,13 @@ function SEO({ description, lang, meta, keywords, title, ogImage }) {
     `
   )
   const metaDescription = description || site.siteMetadata.description
+  const defaultImagePath = 'https://www.progressivemass.com/wp-content/uploads/2024/05/scorecard.png'
+  let ogImagePath
+  if (ogImage.path) {
+    ogImagePath = process.env.GATSBY_DOMAIN + ogImage.path
+  } else {
+    ogImagePath = defaultImagePath
+  }
 
   return (
     <Helmet
@@ -73,11 +80,11 @@ function SEO({ description, lang, meta, keywords, title, ogImage }) {
         },
         {
           property: `og:image`,
-          content: process.env.GATSBY_DOMAIN + ogImage.path,
+          content: ogImagePath,
         },
         {
           property: `twitter:image`,
-          content: process.env.GATSBY_DOMAIN + ogImage.path,
+          content: ogImagePath,
         },
         {
           property: `og:image:width`,
@@ -110,7 +117,7 @@ SEO.defaultProps = {
   meta: [],
   keywords: [],
   description: ``,
-  ogImage: { path: require('../pages/landing/images/cards.png') },
+  ogImage: {},
 }
 
 SEO.propTypes = {
