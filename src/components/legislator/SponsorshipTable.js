@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import InfoPopover from '../InfoPopover'
 import LegislatorTable from './LegislatorTable'
 import { QUERIES } from '../../utilities'
+import { getBillStatusBadge, getBillStatus } from '../sponsorships/sponsorshipUtilities'
 
 const BaseTableRow = styled.tr`
   border-bottom: 1px solid #eee;
@@ -13,9 +14,15 @@ const BaseTableRow = styled.tr`
     background-color: #f9f9f9;
   }
 `
+
 const PassedTableRow = styled(BaseTableRow)`
+  background-color: #fef9c344;
+  border-bottom: 1px solid #fef9c3;
+`
+
+const EnactedTableRow = styled(BaseTableRow)`
   background-color: #71B84422;
-  border-bottom: 1px solid #71B8442a;
+  border-bottom: 1px solid #71B84444;
 `
 
 const Cosponsorship = ({ indicator, isPassed, isCurrentSponsorshipYear }) => {
@@ -34,12 +41,27 @@ const Cosponsorship = ({ indicator, isPassed, isCurrentSponsorshipYear }) => {
 
 const SponsorshipRow = ({
   tags,
-  rowData: { bill_number, showPairedDisclaimer, shorthand_title, status, description, yourLegislator, url },
+  rowData: {
+    bill_number,
+    showPairedDisclaimer,
+    shorthand_title,
+    description,
+    yourLegislator,
+    url,
+    houseStatus,
+    senateStatus, },
   isCurrentYear,
   familyName,
 }) => {
-  const isPassed = status === "Passed" || status === "Enacted"
-  const StyledTableRow = isPassed ? PassedTableRow : BaseTableRow
+  const { billStatus } = getBillStatus(houseStatus, senateStatus)
+  const isPassed = billStatus !== "Not Passed"
+  const isEnacted = billStatus === "Enacted"
+  let StyledTableRow = BaseTableRow
+  if (isEnacted) {
+    StyledTableRow = EnactedTableRow
+  } else if (isPassed) {
+    StyledTableRow = PassedTableRow
+  }
 
   return (
     <StyledTableRow>
@@ -52,11 +74,7 @@ const SponsorshipRow = ({
         </div>
 
         <div>{tags}</div>
-        {isPassed && (
-          <span className={`badge badge-green`} style={{ fontSize: '1rem' }}>
-            Passed!
-          </span>
-        )}
+        {getBillStatusBadge(houseStatus, senateStatus)}
       </td>
       <td style={{ width: '30%' }}>
         <div>

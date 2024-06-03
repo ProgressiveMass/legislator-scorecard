@@ -6,6 +6,7 @@ import LegislatorTable from '../../components/legislator/LegislatorTable'
 import ListPageHeading from '../../components/ListPageHeading'
 import InfoPopover from '../../components/InfoPopover'
 import { QUERIES } from '../../utilities'
+import { getBillStatusBadge } from './sponsorshipUtilities'
 
 const Container = styled.div`
   display: flex;
@@ -74,28 +75,6 @@ const SponsorshipRow = (props) => {
     senateStatus,
   } = rowData
 
-  let billStatus = 'Not Passed'
-  let billStatusColor = 'badge-gray'
-
-  if (houseStatus === 'Passed') {
-    if (senateStatus === 'Passed') {
-      billStatus = 'Passed House and Senate'
-      billStatusColor = 'badge-yellow'
-    } else {
-      billStatus = 'Passed House'
-      billStatusColor = 'badge-yellow'
-    }
-  } else if (senateStatus === 'Passed') {
-    billStatus = 'Passed Senate'
-    billStatusColor = 'badge-yellow'
-  } else if (houseStatus === "Enacted") {
-    billStatus = 'Enacted'
-    billStatusColor = 'badge-green'
-  } else if (houseStatus === 'In Conference Committee') {
-    billStatus = 'In Conference Committee'
-    billStatusColor = 'badge-yellow'
-  }
-
   const separator = houseBillNumber && senateBillNumber ? ' / ' : ''
   const combinedBillNumber = [houseBillNumber, senateBillNumber].join(separator)
   const urlBillNumber = houseBillNumber || senateBillNumber
@@ -123,20 +102,7 @@ const SponsorshipRow = (props) => {
         className='text-muted'
         data-label='Status'
         style={{ width: '10%', textAlign: 'center' }}>
-        {billStatus === 'Passed House and Senate' ? (
-          <>
-            <span className={`badge ${billStatusColor}`} style={{ fontSize: '.9rem' }}>
-              Passed House
-            </span>
-            <span className={`badge ${billStatusColor}`} style={{ fontSize: '.9rem' }}>
-              Passed Senate
-            </span>
-          </>
-        ) : (
-          <span className={`badge ${billStatusColor}`} style={{ fontSize: '.9rem' }}>
-            {billStatus}
-          </span>
-        )}
+        {getBillStatusBadge(houseStatus, senateStatus)}
       </td>
 
       <td id='summary' style={{ width: '50%' }}>
