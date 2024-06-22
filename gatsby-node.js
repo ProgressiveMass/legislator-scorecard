@@ -117,6 +117,10 @@ exports.createPages = async function ({ actions, graphql }) {
       const pairedBill = billNameMap.get(name)
       pairedBill[`${chamber}BillNumber`] = billNumber
       pairedBill[`${chamber}Status`] = billData.status
+      billData['houseBillNumber'] = pairedBill['houseBillNumber']
+      billData['senateBillNumber'] = pairedBill['senateBillNumber']
+      billData['houseStatus'] = pairedBill['houseStatus']
+      billData['senateStatus'] = pairedBill['senateStatus']
       validateBillStatuses(pairedBill)
     } else {
       // First occurrence of this name
