@@ -5,11 +5,16 @@
     "givenName": "William M.",
     "familyName": "Straus",
     "image": "https://malegislature.gov/Legislators/Profile/170/WMS1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/WMS1"
+      }
+    ],
     "party": "Democratic",
     "district": "10th Bristol",
     "email": "william.straus@mahouse.gov",
     "phone": "617-722-2400",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/WMS1",
     "memberCode": "WMS1"
   },
   {
@@ -18,11 +23,16 @@
     "givenName": "Frank A.",
     "familyName": "Moran",
     "image": "https://malegislature.gov/Legislators/Profile/170/FAM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/FAM1"
+      }
+    ],
     "party": "Democratic",
     "district": "17th Essex",
     "email": "frank.moran@mahouse.gov",
     "phone": "617-722-2180",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/FAM1",
     "memberCode": "FAM1"
   },
   {
@@ -31,11 +41,16 @@
     "givenName": "David K.",
     "familyName": "Muradian",
     "image": "https://malegislature.gov/Legislators/Profile/170/DKM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DKM1"
+      }
+    ],
     "party": "Republican",
     "district": "9th Worcester",
     "email": "david.muradian@mahouse.gov",
     "phone": "617-722-2240",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DKM1",
     "memberCode": "DKM1"
   },
   {
@@ -44,11 +59,16 @@
     "givenName": "John J.",
     "familyName": "Lawn",
     "image": "https://malegislature.gov/Legislators/Profile/170/JJL2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JJL2"
+      }
+    ],
     "party": "Democratic",
     "district": "10th Middlesex",
     "email": "john.lawn@mahouse.gov",
     "phone": "617-722-2430",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JJL2",
     "memberCode": "JJL2"
   },
   {
@@ -57,11 +77,16 @@
     "givenName": "Joseph D.",
     "familyName": "McKenna",
     "image": "https://malegislature.gov/Legislators/Profile/170/JDM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JDM1"
+      }
+    ],
     "party": "Republican",
     "district": "18th Worcester",
     "email": "joseph.mckenna@mahouse.gov",
     "phone": "617-722-2810",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JDM1",
     "memberCode": "JDM1"
   },
   {
@@ -70,11 +95,16 @@
     "givenName": "Colleen M.",
     "familyName": "Garry",
     "image": "https://malegislature.gov/Legislators/Profile/170/CMG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/CMG1"
+      }
+    ],
     "party": "Democratic",
     "district": "36th Middlesex",
     "email": "colleen.garry@mahouse.gov",
     "phone": "617-722-2380",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/CMG1",
     "memberCode": "CMG1"
   },
   {
@@ -83,11 +113,16 @@
     "givenName": "Carmine Lawrence",
     "familyName": "Gentile",
     "image": "https://malegislature.gov/Legislators/Profile/170/CLG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/CLG1"
+      }
+    ],
     "party": "Democratic",
     "district": "13th Middlesex",
     "email": "carmine.gentile@mahouse.gov",
     "phone": "617-722-2810",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/CLG1",
     "memberCode": "CLG1"
   },
   {
@@ -96,11 +131,16 @@
     "givenName": "Sean",
     "familyName": "Garballey",
     "image": "https://malegislature.gov/Legislators/Profile/170/S_G1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/S_G1"
+      }
+    ],
     "party": "Democratic",
     "district": "23rd Middlesex",
     "email": "sean.garballey@mahouse.gov",
     "phone": "617-722-2090",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/S_G1",
     "memberCode": "S_G1"
   },
   {
@@ -109,11 +149,19 @@
     "givenName": "Daniel Joseph",
     "familyName": "Ryan",
     "image": "https://malegislature.gov/Legislators/Profile/170/djr1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/djr1"
+      },
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DJR1"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Suffolk",
     "email": "dan.ryan@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/djr1",
     "memberCode": "djr1"
   },
   {
@@ -122,11 +170,16 @@
     "givenName": "Adrian C.",
     "familyName": "Madaro",
     "image": "https://malegislature.gov/Legislators/Profile/170/ACM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/ACM1"
+      }
+    ],
     "party": "Democratic",
     "district": "1st Suffolk",
     "email": "adrian.madaro@mahouse.gov",
     "phone": "617-722-2060",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/ACM1",
     "memberCode": "ACM1"
   },
   {
@@ -135,11 +188,16 @@
     "givenName": "Donald R.",
     "familyName": "Berthiaume",
     "image": "https://malegislature.gov/Legislators/Profile/170/DRB1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DRB1"
+      }
+    ],
     "party": "Republican",
     "district": "5th Worcester",
     "email": "donald.berthiaume@mahouse.gov",
     "phone": "617-722-2090",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DRB1",
     "memberCode": "DRB1"
   },
   {
@@ -148,11 +206,19 @@
     "givenName": "David M.",
     "familyName": "Rogers",
     "image": "https://malegislature.gov/Legislators/Profile/170/DMR1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DMR1"
+      },
+      {
+        "url": "https://www.repdaverogers.com/"
+      }
+    ],
     "party": "Democratic",
     "district": "24th Middlesex",
     "email": "dave.rogers@mahouse.gov",
     "phone": "617-722-2263",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DMR1",
     "memberCode": "DMR1"
   },
   {
@@ -161,11 +227,16 @@
     "givenName": "Angelo",
     "familyName": "D'Emilia",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Angelo-DEmilia.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/ALD1"
+      }
+    ],
     "party": "Republican",
     "district": "8th Plymouth",
     "email": "angelo.d'emilia@mahouse.gov",
     "phone": "508-697-2700",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/ALD1",
     "memberCode": "ALD1"
   },
   {
@@ -174,11 +245,16 @@
     "givenName": "Ruth B.",
     "familyName": "Balser",
     "image": "https://malegislature.gov/Legislators/Profile/170/RBB1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/RBB1"
+      }
+    ],
     "party": "Democratic",
     "district": "12th Middlesex",
     "email": "ruth.balser@mahouse.gov",
     "phone": "617-722-2199",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/RBB1",
     "memberCode": "RBB1"
   },
   {
@@ -187,11 +263,16 @@
     "givenName": "Paul J.",
     "familyName": "Donato",
     "image": "https://malegislature.gov/Legislators/Profile/170/PJD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/PJD1"
+      }
+    ],
     "party": "Democratic",
     "district": "35th Middlesex",
     "email": "paul.donato@mahouse.gov",
     "phone": "617-722-2520",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/PJD1",
     "memberCode": "PJD1"
   },
   {
@@ -200,11 +281,16 @@
     "givenName": "Brian M.",
     "familyName": "Ashe",
     "image": "https://malegislature.gov/Legislators/Profile/170/BMA1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/BMA1"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Hampden",
     "email": "brian.ashe@mahouse.gov",
     "phone": "617-722-2304",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/BMA1",
     "memberCode": "BMA1"
   },
   {
@@ -213,11 +299,16 @@
     "givenName": "Marjorie C.",
     "familyName": "Decker",
     "image": "https://malegislature.gov/Legislators/Profile/170/MCD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MCD1"
+      }
+    ],
     "party": "Democratic",
     "district": "25th Middlesex",
     "email": "marjorie.decker@mahouse.gov",
     "phone": "617-722-2130",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MCD1",
     "memberCode": "MCD1"
   },
   {
@@ -226,11 +317,16 @@
     "givenName": "David F.",
     "familyName": "DeCoste",
     "image": "https://malegislature.gov/Legislators/Profile/170/DFD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DFD1"
+      }
+    ],
     "party": "Republican",
     "district": "5th Plymouth",
     "email": "david.decoste@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DFD1",
     "memberCode": "DFD1"
   },
   {
@@ -239,11 +335,16 @@
     "givenName": "Steven S.",
     "familyName": "Howitt",
     "image": "https://malegislature.gov/Legislators/Profile/170/SSH1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SSH1"
+      }
+    ],
     "party": "Republican",
     "district": "4th Bristol",
     "email": "steven.howitt@mahouse.gov",
     "phone": "617-722-2305",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/SSH1",
     "memberCode": "SSH1"
   },
   {
@@ -252,11 +353,16 @@
     "givenName": "Michael Seamus",
     "familyName": "Day",
     "image": "https://malegislature.gov/Legislators/Profile/170/MSD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MSD1"
+      }
+    ],
     "party": "Democratic",
     "district": "31st Middlesex",
     "email": "michael.day@mahouse.gov",
     "phone": "617-722-2396",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MSD1",
     "memberCode": "MSD1"
   },
   {
@@ -265,11 +371,16 @@
     "givenName": "Michelle M.",
     "familyName": "DuBois",
     "image": "https://malegislature.gov/Legislators/Profile/170/MMD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MMD1"
+      }
+    ],
     "party": "Democratic",
     "district": "10th Plymouth",
     "email": "michelle.dubois@mahouse.gov",
     "phone": "617-722-2017",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MMD1",
     "memberCode": "MMD1"
   },
   {
@@ -278,11 +389,16 @@
     "givenName": "Daniel F.",
     "familyName": "Cahill",
     "image": "https://malegislature.gov/Legislators/Profile/170/DFC1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DFC1"
+      }
+    ],
     "party": "Democratic",
     "district": "10th Essex",
     "email": "daniel.cahill@mahouse.gov",
     "phone": "617-722-2020",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DFC1",
     "memberCode": "DFC1"
   },
   {
@@ -291,11 +407,16 @@
     "givenName": "Carole A.",
     "familyName": "Fiola",
     "image": "https://malegislature.gov/Legislators/Profile/170/CAF1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/CAF1"
+      }
+    ],
     "party": "Democratic",
     "district": "6th Bristol",
     "email": "carole.fiola@mahouse.gov",
     "phone": "617-722-2430",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/CAF1",
     "memberCode": "CAF1"
   },
   {
@@ -304,11 +425,16 @@
     "givenName": "Jonathan D.",
     "familyName": "Zlotnik",
     "image": "https://malegislature.gov/Legislators/Profile/170/JDZ1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JDZ1"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Worcester",
     "email": "jon.zlotnik@mahouse.gov",
     "phone": "617-722-2582",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JDZ1",
     "memberCode": "JDZ1"
   },
   {
@@ -317,11 +443,19 @@
     "givenName": "Kay",
     "familyName": "Khan",
     "image": "https://malegislature.gov/Legislators/Profile/170/K_K1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/K_K1"
+      },
+      {
+        "url": "https://www.kaykhan.org/"
+      }
+    ],
     "party": "Democratic",
     "district": "11th Middlesex",
     "email": "kay.khan@mahouse.gov",
     "phone": "617-722-2230",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/K_K1",
     "memberCode": "K_K1"
   },
   {
@@ -330,11 +464,16 @@
     "givenName": "James K.",
     "familyName": "Hawkins",
     "image": "https://malegislature.gov/Legislators/Profile/170/JKH1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JKH1"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Bristol",
     "email": "james.hawkins@mahouse.gov",
     "phone": "617-722-2013",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JKH1",
     "memberCode": "JKH1"
   },
   {
@@ -343,11 +482,16 @@
     "givenName": "David Paul",
     "familyName": "Linsky",
     "image": "https://malegislature.gov/Legislators/Profile/170/DPL1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DPL1"
+      }
+    ],
     "party": "Democratic",
     "district": "5th Middlesex",
     "email": "david.linsky@mahouse.gov",
     "phone": "617-722-2810",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DPL1",
     "memberCode": "DPL1"
   },
   {
@@ -356,11 +500,16 @@
     "givenName": "Steven",
     "familyName": "Ultrino",
     "image": "https://malegislature.gov/Legislators/Profile/170/S_G2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/S_G2"
+      }
+    ],
     "party": "Democratic",
     "district": "33rd Middlesex",
     "email": "steven.ultrino@mahouse.gov",
     "phone": "617-722-2070",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/S_G2",
     "memberCode": "S_G2"
   },
   {
@@ -369,11 +518,16 @@
     "givenName": "Dylan Andreo",
     "familyName": "Fernandes",
     "image": "https://malegislature.gov/Legislators/Profile/170/DAF1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DAF1"
+      }
+    ],
     "party": "Democratic",
     "district": "Barnstable, Dukes and Nantucket",
     "email": "dylan.fernandes@mahouse.gov",
     "phone": "617-722-2230",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DAF1",
     "memberCode": "DAF1"
   },
   {
@@ -382,11 +536,16 @@
     "givenName": "Rady",
     "familyName": "Mom",
     "image": "https://malegislature.gov/Legislators/Profile/170/R_M2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/R_M2"
+      }
+    ],
     "party": "Democratic",
     "district": "18th Middlesex",
     "email": "rady.mom@mahouse.gov",
     "phone": "617-722-2637",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/R_M2",
     "memberCode": "R_M2"
   },
   {
@@ -395,11 +554,16 @@
     "givenName": "Andres X.",
     "familyName": "Vargas",
     "image": "https://malegislature.gov/Legislators/Profile/170/AXV1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AXV1"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Essex",
     "email": "andy.vargas@mahouse.gov",
     "phone": "617-722-2370",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/AXV1",
     "memberCode": "AXV1"
   },
   {
@@ -408,11 +572,16 @@
     "givenName": "Danielle W.",
     "familyName": "Gregoire",
     "image": "https://malegislature.gov/Legislators/Profile/170/DWG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DWG1"
+      }
+    ],
     "party": "Democratic",
     "district": "4th Middlesex",
     "email": "danielle.gregoire@mahouse.gov",
     "phone": "617-722-2140",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DWG1",
     "memberCode": "DWG1"
   },
   {
@@ -421,11 +590,16 @@
     "givenName": "Paul",
     "familyName": "McMurtry",
     "image": "https://malegislature.gov/Legislators/Profile/170/P_M1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/P_M1"
+      }
+    ],
     "party": "Democratic",
     "district": "11th Norfolk",
     "email": "paul.mcmurtry@mahouse.gov",
     "phone": "617-722-2080",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/P_M1",
     "memberCode": "P_M1"
   },
   {
@@ -434,11 +608,16 @@
     "givenName": "Bruce J.",
     "familyName": "Ayers",
     "image": "https://malegislature.gov/Legislators/Profile/170/BJA1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/BJA1"
+      }
+    ],
     "party": "Democratic",
     "district": "1st Norfolk",
     "email": "bruce.ayers@mahouse.gov",
     "phone": "617-722-2220",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/BJA1",
     "memberCode": "BJA1"
   },
   {
@@ -447,11 +626,16 @@
     "givenName": "William J.",
     "familyName": "Driscoll",
     "image": "https://malegislature.gov/Legislators/Profile/170/WJD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/WJD1"
+      }
+    ],
     "party": "Democratic",
     "district": "7th Norfolk",
     "email": "william.driscoll@mahouse.gov",
     "phone": "617-722-2020",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/WJD1",
     "memberCode": "WJD1"
   },
   {
@@ -460,11 +644,16 @@
     "givenName": "Daniel M.",
     "familyName": "Donahue",
     "image": "https://malegislature.gov/Legislators/Profile/170/DMD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DMD1"
+      }
+    ],
     "party": "Democratic",
     "district": "16th Worcester",
     "email": "daniel.donahue@mahouse.gov",
     "phone": "617-722-2637",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DMD1",
     "memberCode": "DMD1"
   },
   {
@@ -473,11 +662,16 @@
     "givenName": "Marc T.",
     "familyName": "Lombardo",
     "image": "https://malegislature.gov/Legislators/Profile/170/MTL1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MTL1"
+      }
+    ],
     "party": "Republican",
     "district": "22nd Middlesex",
     "email": "marc.lombardo@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MTL1",
     "memberCode": "MTL1"
   },
   {
@@ -486,11 +680,16 @@
     "givenName": "Hannah",
     "familyName": "Kane",
     "image": "https://malegislature.gov/Legislators/Profile/170/HEK1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/HEK1"
+      }
+    ],
     "party": "Republican",
     "district": "11th Worcester",
     "email": "hannah.kane@mahouse.gov",
     "phone": "617-722-2810",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/HEK1",
     "memberCode": "HEK1"
   },
   {
@@ -499,11 +698,16 @@
     "givenName": "Alan",
     "familyName": "Silvia",
     "image": "https://malegislature.gov/Legislators/Profile/170/A_S1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/A_S1"
+      }
+    ],
     "party": "Democratic",
     "district": "7th Bristol",
     "email": "alan.silvia@mahouse.gov",
     "phone": "508-567-6474",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/A_S1",
     "memberCode": "A_S1"
   },
   {
@@ -512,11 +716,16 @@
     "givenName": "John H.",
     "familyName": "Rogers",
     "image": "https://malegislature.gov/Legislators/Profile/170/JHR1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JHR1"
+      }
+    ],
     "party": "Democratic",
     "district": "12th Norfolk",
     "email": "john.rogers@mahouse.gov",
     "phone": "617-722-2450",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JHR1",
     "memberCode": "JHR1"
   },
   {
@@ -525,11 +734,16 @@
     "givenName": "Angelo J.",
     "familyName": "Puppolo",
     "image": "https://malegislature.gov/Legislators/Profile/170/AJP1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AJP1"
+      }
+    ],
     "party": "Democratic",
     "district": "12th Hampden",
     "email": "angelo.puppolo@mahouse.gov",
     "phone": "617-722-2006",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/AJP1",
     "memberCode": "AJP1"
   },
   {
@@ -538,11 +752,16 @@
     "givenName": "Todd M.",
     "familyName": "Smola",
     "image": "https://malegislature.gov/Legislators/Profile/170/TMS2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/TMS2"
+      }
+    ],
     "party": "Republican",
     "district": "1st Hampden",
     "email": "todd.smola@mahouse.gov",
     "phone": "617-722-2100",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/TMS2",
     "memberCode": "TMS2"
   },
   {
@@ -551,11 +770,16 @@
     "givenName": "Sarah K.",
     "familyName": "Peake",
     "image": "https://malegislature.gov/Legislators/Profile/170/SKP1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SKP1"
+      }
+    ],
     "party": "Democratic",
     "district": "4th Barnstable",
     "email": "sarah.peake@mahouse.gov",
     "phone": "617-722-2040",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/SKP1",
     "memberCode": "SKP1"
   },
   {
@@ -564,11 +788,16 @@
     "givenName": "Kimberly N.",
     "familyName": "Ferguson",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kimberly-Ferguson.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/KNF1"
+      }
+    ],
     "party": "Republican",
     "district": "1st Worcester",
     "email": "kimberly.ferguson@mahouse.gov",
     "phone": "617-722-2100",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/KNF1",
     "memberCode": "KNF1"
   },
   {
@@ -577,11 +806,16 @@
     "givenName": "Aaron M.",
     "familyName": "Michlewitz",
     "image": "https://malegislature.gov/Legislators/Profile/170/AMM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AMM1"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Suffolk",
     "email": "aaron.m.michlewitz@mahouse.gov",
     "phone": "617-722-2990",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/AMM1",
     "memberCode": "AMM1"
   },
   {
@@ -590,11 +824,16 @@
     "givenName": "William Smitty",
     "familyName": "Pignatelli",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/William-Pignatelli.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/WSP1"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Berkshire",
     "email": "rep.smitty@mahouse.gov",
     "phone": "413-637-0631",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/WSP1",
     "memberCode": "WSP1"
   },
   {
@@ -603,11 +842,16 @@
     "givenName": "Mark James",
     "familyName": "Cusack",
     "image": "https://malegislature.gov/Legislators/Profile/170/MJC1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MJC1"
+      }
+    ],
     "party": "Democratic",
     "district": "5th Norfolk",
     "email": "mark.cusack@mahouse.gov",
     "phone": "617-722-2320",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MJC1",
     "memberCode": "MJC1"
   },
   {
@@ -616,11 +860,16 @@
     "givenName": "Paul K.",
     "familyName": "Frost",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Paul-Frost.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/PKF1"
+      }
+    ],
     "party": "Republican",
     "district": "7th Worcester",
     "email": "paul.frost@mahouse.gov",
     "phone": "617-722-2489",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/PKF1",
     "memberCode": "PKF1"
   },
   {
@@ -629,11 +878,16 @@
     "givenName": "Michael J.",
     "familyName": "Finn",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Michael_Finn.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MJF1"
+      }
+    ],
     "party": "Democratic",
     "district": "6th Hampden",
     "email": "michael.finn@mahouse.gov",
     "phone": "413-363-1965",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MJF1",
     "memberCode": "MJF1"
   },
   {
@@ -642,11 +896,16 @@
     "givenName": "Nicholas A.",
     "familyName": "Boldyga",
     "image": "https://malegislature.gov/Legislators/Profile/170/NAG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/NAG1"
+      }
+    ],
     "party": "Republican",
     "district": "3rd Hampden",
     "email": "nicholas.boldyga@mahouse.gov",
     "phone": "617-722-2810",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/NAG1",
     "memberCode": "NAG1"
   },
   {
@@ -655,11 +914,16 @@
     "givenName": "Jerald A.",
     "familyName": "Parisella",
     "image": "https://malegislature.gov/Legislators/Profile/170/JAP1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JAP1"
+      }
+    ],
     "party": "Democratic",
     "district": "6th Essex",
     "email": "jerald.parisella@mahouse.gov",
     "phone": "617-722-2370",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JAP1",
     "memberCode": "JAP1"
   },
   {
@@ -668,11 +932,16 @@
     "givenName": "Antonio F.D.",
     "familyName": "Cabral",
     "image": "https://malegislature.gov/Legislators/Profile/170/AFC1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AFC1"
+      }
+    ],
     "party": "Democratic",
     "district": "13th Bristol",
     "email": "antonio.cabral@mahouse.gov",
     "phone": "617-722-2017",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/AFC1",
     "memberCode": "AFC1"
   },
   {
@@ -681,11 +950,16 @@
     "givenName": "Bud L.",
     "familyName": "Williams",
     "image": "https://malegislature.gov/Legislators/Profile/170/BLW1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/BLW1"
+      }
+    ],
     "party": "Democratic",
     "district": "11th Hampden",
     "email": "bud.williams@mahouse.gov",
     "phone": "617-722-2430",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/BLW1",
     "memberCode": "BLW1"
   },
   {
@@ -694,11 +968,16 @@
     "givenName": "Patricia",
     "familyName": "Farley-Bouvier",
     "image": "https://malegislature.gov/Legislators/Profile/170/TFB1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/TFB1"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Berkshire",
     "email": "tricia.farley-bouvier@mahouse.gov",
     "phone": "617-722-2676",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/TFB1",
     "memberCode": "TFB1"
   },
   {
@@ -707,11 +986,16 @@
     "givenName": "Donald H.",
     "familyName": "Wong",
     "image": "https://malegislature.gov/Legislators/Profile/170/DHW1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DHW1"
+      }
+    ],
     "party": "Republican",
     "district": "9th Essex",
     "email": "donald.wong@mahouse.gov",
     "phone": "617-722-2488",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DHW1",
     "memberCode": "DHW1"
   },
   {
@@ -720,11 +1004,16 @@
     "givenName": "Mary S.",
     "familyName": "Keefe",
     "image": "https://malegislature.gov/Legislators/Profile/170/MSK1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MSK1"
+      }
+    ],
     "party": "Democratic",
     "district": "15th Worcester",
     "email": "mary.keefe@mahouse.gov",
     "phone": "617-722-2017",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MSK1",
     "memberCode": "MSK1"
   },
   {
@@ -733,11 +1022,16 @@
     "givenName": "Paul A.",
     "familyName": "Schmid",
     "image": "https://malegislature.gov/Legislators/Profile/170/PAS1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/PAS1"
+      }
+    ],
     "party": "Democratic",
     "district": "8th Bristol",
     "email": "paul.schmid@mahouse.gov",
     "phone": "617-722-2210",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers",
+    "url": "https://malegislature.gov/Legislators/Profile/PAS1",
     "memberCode": "PAS1"
   },
   {
@@ -746,11 +1040,16 @@
     "givenName": "James J.",
     "familyName": "O'Day",
     "image": "https://malegislature.gov/Legislators/Profile/170/JJO1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JJO1"
+      }
+    ],
     "party": "Democratic",
     "district": "14th Worcester",
     "email": "james.o'day@mahouse.gov",
     "phone": "617-722-2090",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JJO1",
     "memberCode": "JJO1"
   },
   {
@@ -759,11 +1058,19 @@
     "givenName": "Natalie M.",
     "familyName": "Higgins",
     "image": "https://malegislature.gov/Legislators/Profile/170/N_H1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/N_H1"
+      },
+      {
+        "url": "https://www.repnataliehiggins.com/"
+      }
+    ],
     "party": "Democratic",
     "district": "4th Worcester",
     "email": "natalie.higgins@mahouse.gov",
     "phone": "617-722-2014",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/N_H1",
     "memberCode": "N_H1"
   },
   {
@@ -772,11 +1079,16 @@
     "givenName": "Tackey",
     "familyName": "Chan",
     "image": "https://malegislature.gov/Legislators/Profile/170/T_C1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/T_C1"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Norfolk",
     "email": "tackey.chan@mahouse.gov",
     "phone": "617-722-2370",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/T_C1",
     "memberCode": "T_C1"
   },
   {
@@ -785,11 +1097,16 @@
     "givenName": "Fred Jay",
     "familyName": "Barrows",
     "image": "https://malegislature.gov/Legislators/Profile/170/FJB1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/FJB1"
+      }
+    ],
     "party": "Republican",
     "district": "1st Bristol",
     "email": "fred.barrows@mahouse.gov",
     "phone": "617-722-2100",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/FJB1",
     "memberCode": "FJB1"
   },
   {
@@ -798,11 +1115,16 @@
     "givenName": "Christine P.",
     "familyName": "Barber",
     "image": "https://malegislature.gov/Legislators/Profile/170/CPB2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/CPB2"
+      }
+    ],
     "party": "Democratic",
     "district": "34th Middlesex",
     "email": "christine.barber@mahouse.gov",
     "phone": "617-722-2396",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/CPB2",
     "memberCode": "CPB2"
   },
   {
@@ -811,11 +1133,16 @@
     "givenName": "Mathew J.",
     "familyName": "Muratore",
     "image": "https://malegislature.gov/Legislators/Profile/170/MJM2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MJM2"
+      }
+    ],
     "party": "Republican",
     "district": "1st Plymouth",
     "email": "mathew.muratore@mahouse.gov",
     "phone": "617-722-2488",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MJM2",
     "memberCode": "MJM2"
   },
   {
@@ -824,11 +1151,16 @@
     "givenName": "Thomas M.",
     "familyName": "Stanley",
     "image": "https://malegislature.gov/Legislators/Profile/170/TMS1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/TMS1"
+      }
+    ],
     "party": "Democratic",
     "district": "9th Middlesex",
     "email": "thomas.stanley@mahouse.gov",
     "phone": "617-722-2810",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/TMS1",
     "memberCode": "TMS1"
   },
   {
@@ -837,11 +1169,16 @@
     "givenName": "Michael J.",
     "familyName": "Moran",
     "image": "https://malegislature.gov/Legislators/Profile/170/MJM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MJM1"
+      }
+    ],
     "party": "Democratic",
     "district": "18th Suffolk",
     "email": "michael.moran@mahouse.gov",
     "phone": "617-722-2300",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MJM1",
     "memberCode": "MJM1"
   },
   {
@@ -850,11 +1187,16 @@
     "givenName": "David T.",
     "familyName": "Vieira",
     "image": "https://malegislature.gov/Legislators/Profile/170/DTV1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DTV1"
+      }
+    ],
     "party": "Republican",
     "district": "3rd Barnstable",
     "email": "david.vieira@mahouse.gov",
     "phone": "508-548-8683",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DTV1",
     "memberCode": "DTV1"
   },
   {
@@ -863,11 +1205,19 @@
     "givenName": "Mike",
     "familyName": "Connolly",
     "image": "https://malegislature.gov/Legislators/Profile/170/M_C1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/M_C1"
+      },
+      {
+        "url": "https://www.repmikeconnolly.org/"
+      }
+    ],
     "party": "Democratic",
     "district": "26th Middlesex",
     "email": "mike.connolly@mahouse.gov",
     "phone": "617-722-2240",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/M_C1",
     "memberCode": "M_C1"
   },
   {
@@ -876,11 +1226,19 @@
     "givenName": "James",
     "familyName": "Arciero",
     "image": "https://malegislature.gov/Legislators/Profile/170/J_A1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/J_A1"
+      },
+      {
+        "url": "https://repjamesarciero.com/"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Middlesex",
     "email": "james.arciero@mahouse.gov",
     "phone": "617-722-2575",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/J_A1",
     "memberCode": "J_A1"
   },
   {
@@ -889,11 +1247,16 @@
     "givenName": "Ronald Joseph",
     "familyName": "Mariano",
     "image": "https://malegislature.gov/Legislators/Profile/170/R_M1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/R_M1"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Norfolk",
     "email": "ronald.mariano@mahouse.gov",
     "phone": "617-722-2500",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/R_M1",
     "memberCode": "R_M1"
   },
   {
@@ -902,11 +1265,19 @@
     "givenName": "Daniel J.",
     "familyName": "Hunt",
     "image": "https://malegislature.gov/Legislators/Profile/170/djh1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/djh1"
+      },
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DJH1"
+      }
+    ],
     "party": "Democratic",
     "district": "13th Suffolk",
     "email": "daniel.hunt@mahouse.gov",
     "phone": "617-722-2380",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/djh1",
     "memberCode": "djh1"
   },
   {
@@ -915,11 +1286,16 @@
     "givenName": "John",
     "familyName": "Barrett",
     "image": "https://malegislature.gov/Legislators/Profile/170/J_B1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/J_B1"
+      }
+    ],
     "party": "Democratic",
     "district": "1st Berkshire",
     "email": "john.barrett@mahouse.gov",
     "phone": "617-722-2960",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/J_B1",
     "memberCode": "J_B1"
   },
   {
@@ -928,11 +1304,16 @@
     "givenName": "James M.",
     "familyName": "Murphy",
     "image": "https://malegislature.gov/Legislators/Profile/170/JMM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JMM1"
+      }
+    ],
     "party": "Democratic",
     "district": "4th Norfolk",
     "email": "james.murphy@mahouse.gov",
     "phone": "617-722-2220",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JMM1",
     "memberCode": "JMM1"
   },
   {
@@ -941,11 +1322,19 @@
     "givenName": "Joseph W.",
     "familyName": "McGonagle",
     "image": "https://malegislature.gov/Legislators/Profile/170/jwm1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/jwm1"
+      },
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JWM1"
+      }
+    ],
     "party": "Democratic",
     "district": "28th Middlesex",
     "email": "joseph.mcgonagle@mahouse.gov",
     "phone": "617-722-2012",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/jwm1",
     "memberCode": "jwm1"
   },
   {
@@ -954,11 +1343,16 @@
     "givenName": "William C.",
     "familyName": "Galvin",
     "image": "https://malegislature.gov/Legislators/Profile/170/WCG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/WCG1"
+      }
+    ],
     "party": "Democratic",
     "district": "6th Norfolk",
     "email": "william.galvin@mahouse.gov",
     "phone": "617-722-2692",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/WCG1",
     "memberCode": "WCG1"
   },
   {
@@ -967,11 +1361,16 @@
     "givenName": "Susannah M.",
     "familyName": "Whipps",
     "image": "https://malegislature.gov/Legislators/Profile/170/SLG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SLG1"
+      }
+    ],
     "party": "Independent",
     "district": "2nd Franklin",
     "email": "susannah.whipps@mahouse.gov",
     "phone": "978-895-9606",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/SLG1",
     "memberCode": "SLG1"
   },
   {
@@ -980,11 +1379,16 @@
     "givenName": "Gerard J.",
     "familyName": "Cassidy",
     "image": "https://malegislature.gov/Legislators/Profile/170/G_C2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/G_C2"
+      }
+    ],
     "party": "Democratic",
     "district": "9th Plymouth",
     "email": "gerard.cassidy@mahouse.gov",
     "phone": "617-722-2015",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/G_C2",
     "memberCode": "G_C2"
   },
   {
@@ -993,11 +1397,16 @@
     "givenName": "Brian W.",
     "familyName": "Murray",
     "image": "https://malegislature.gov/Legislators/Profile/170/BWM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/BWM1"
+      }
+    ],
     "party": "Democratic",
     "district": "10th Worcester",
     "email": "brian.murray@mahouse.gov",
     "phone": "508-473-1740",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/BWM1",
     "memberCode": "BWM1"
   },
   {
@@ -1006,11 +1415,16 @@
     "givenName": "Chynah",
     "familyName": "Tyler",
     "image": "https://malegislature.gov/Legislators/Profile/170/C_T1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/C_T1"
+      }
+    ],
     "party": "Democratic",
     "district": "7th Suffolk",
     "email": "chynah.tyler@mahouse.gov",
     "phone": "617-722-2060",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/C_T1",
     "memberCode": "C_T1"
   },
   {
@@ -1019,11 +1433,16 @@
     "givenName": "Russell Earl",
     "familyName": "Holmes",
     "image": "https://malegislature.gov/Legislators/Profile/170/REH1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/REH1"
+      }
+    ],
     "party": "Democratic",
     "district": "6th Suffolk",
     "email": "russell.holmes@mahouse.gov",
     "phone": "617-722-2220",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/REH1",
     "memberCode": "REH1"
   },
   {
@@ -1032,11 +1451,19 @@
     "givenName": "Ann-Margaret",
     "familyName": "Ferrante",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ann-Margaret-Ferrante.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AMF1"
+      },
+      {
+        "url": "https://annmargaretferrante.org/"
+      }
+    ],
     "party": "Democratic",
     "district": "5th Essex",
     "email": "ann-margaret.ferrante@mahouse.gov",
     "phone": "617-722-2380",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/AMF1",
     "memberCode": "AMF1"
   },
   {
@@ -1045,11 +1472,16 @@
     "givenName": "Joan",
     "familyName": "Meschino",
     "image": "https://malegislature.gov/Legislators/Profile/170/J_M1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/J_M1"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Plymouth",
     "email": "joan.meschino@mahouse.gov",
     "phone": "617-722-2092",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/J_M1",
     "memberCode": "J_M1"
   },
   {
@@ -1058,11 +1490,16 @@
     "givenName": "Carlos",
     "familyName": "Gonzalez",
     "image": "https://malegislature.gov/Legislators/Profile/170/C_G1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/C_G1"
+      }
+    ],
     "party": "Democratic",
     "district": "10th Hampden",
     "email": "carlos.gonzalez@mahouse.gov",
     "phone": "617-722-2230",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/C_G1",
     "memberCode": "C_G1"
   },
   {
@@ -1071,11 +1508,16 @@
     "givenName": "Patricia A.",
     "familyName": "Haddad",
     "image": "https://malegislature.gov/Legislators/Profile/170/PAH1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/PAH1"
+      }
+    ],
     "party": "Democratic",
     "district": "5th Bristol",
     "email": "patricia.haddad@mahouse.gov",
     "phone": "508-646-2821",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/PAH1",
     "memberCode": "PAH1"
   },
   {
@@ -1084,11 +1526,16 @@
     "givenName": "Thomas P.",
     "familyName": "Walsh",
     "image": "https://malegislature.gov/Legislators/Profile/170/TJW1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/TJW1"
+      }
+    ],
     "party": "Democratic",
     "district": "12th Essex",
     "email": "thomas.walsh@mahouse.gov",
     "phone": "617-722-2410",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/TJW1",
     "memberCode": "TJW1"
   },
   {
@@ -1097,11 +1544,16 @@
     "givenName": "Jay D.",
     "familyName": "Livingstone",
     "image": "https://malegislature.gov/Legislators/Profile/170/J_L1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/J_L1"
+      }
+    ],
     "party": "Democratic",
     "district": "8th Suffolk",
     "email": "jay.livingstone@mahouse.gov",
     "phone": "617-722-2011",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/J_L1",
     "memberCode": "J_L1"
   },
   {
@@ -1110,11 +1562,16 @@
     "givenName": "Christopher M.",
     "familyName": "Markey",
     "image": "https://malegislature.gov/Legislators/Profile/170/CMM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/CMM1"
+      }
+    ],
     "party": "Democratic",
     "district": "9th Bristol",
     "email": "christopher.markey@mahouse.gov",
     "phone": "617-722-2676",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/CMM1",
     "memberCode": "CMM1"
   },
   {
@@ -1123,11 +1580,16 @@
     "givenName": "Jeffrey N.",
     "familyName": "Roy",
     "image": "https://malegislature.gov/Legislators/Profile/170/JNR1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JNR1"
+      }
+    ],
     "party": "Democratic",
     "district": "10th Norfolk",
     "email": "jeffrey.roy@mahouse.gov",
     "phone": "617-722-2030",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JNR1",
     "memberCode": "JNR1"
   },
   {
@@ -1136,11 +1598,16 @@
     "givenName": "Susan Williams",
     "familyName": "Gifford",
     "image": "https://malegislature.gov/Legislators/Profile/170/SWG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SWG1"
+      }
+    ],
     "party": "Republican",
     "district": "2nd Plymouth",
     "email": "susan.gifford@mahouse.gov",
     "phone": "617-722-2100",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/SWG1",
     "memberCode": "SWG1"
   },
   {
@@ -1149,11 +1616,16 @@
     "givenName": "Kenneth I.",
     "familyName": "Gordon",
     "image": "https://malegislature.gov/Legislators/Profile/170/KIG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/KIG1"
+      }
+    ],
     "party": "Democratic",
     "district": "21st Middlesex",
     "email": "ken.gordon@mahouse.gov",
     "phone": "617-722-2240",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/KIG1",
     "memberCode": "KIG1"
   },
   {
@@ -1162,11 +1634,16 @@
     "givenName": "Jack Patrick",
     "familyName": "Lewis",
     "image": "https://malegislature.gov/Legislators/Profile/170/JPL1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JPL1"
+      }
+    ],
     "party": "Democratic",
     "district": "7th Middlesex",
     "email": "jack.lewis@mahouse.gov",
     "phone": "617-722-2582",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JPL1",
     "memberCode": "JPL1"
   },
   {
@@ -1174,12 +1651,17 @@
     "name": "John Mahoney",
     "givenName": "John J.",
     "familyName": "Mahoney",
-    "image": "https://malegislature.gov/Legislators/Profile/170/JJM1.jpg",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JJM2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JJM2"
+      }
+    ],
     "party": "Democratic",
     "district": "13th Worcester",
     "email": "john.mahoney@mahouse.gov",
     "phone": "617-722-2575",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JJM2",
     "memberCode": "JJM2"
   },
   {
@@ -1188,11 +1670,16 @@
     "givenName": "Alice Hanlon",
     "familyName": "Peisch",
     "image": "https://malegislature.gov/Legislators/Profile/170/AHP1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AHP1"
+      }
+    ],
     "party": "Democratic",
     "district": "14th Norfolk",
     "email": "alice.peisch@mahouse.gov",
     "phone": "617-722-2783",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/AHP1",
     "memberCode": "AHP1"
   },
   {
@@ -1201,11 +1688,16 @@
     "givenName": "Denise C.",
     "familyName": "Garlick",
     "image": "https://malegislature.gov/Legislators/Profile/170/DCG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DCG1"
+      }
+    ],
     "party": "Democratic",
     "district": "13th Norfolk",
     "email": "denise.garlick@mahouse.gov",
     "phone": "617-722-2070",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DCG1",
     "memberCode": "DCG1"
   },
   {
@@ -1214,11 +1706,16 @@
     "givenName": "Kate",
     "familyName": "Hogan",
     "image": "https://malegislature.gov/Legislators/Profile/170/K_H1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/K_H1"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Middlesex",
     "email": "kate.hogan@mahouse.gov",
     "phone": "617-722-2600",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/K_H1",
     "memberCode": "K_H1"
   },
   {
@@ -1227,11 +1724,16 @@
     "givenName": "Kevin G.",
     "familyName": "Honan",
     "image": "https://malegislature.gov/Legislators/Profile/170/KGH1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/KGH1"
+      }
+    ],
     "party": "Democratic",
     "district": "17th Suffolk",
     "email": "kevin.honan@mahouse.gov",
     "phone": "617-722-2470",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/KGH1",
     "memberCode": "KGH1"
   },
   {
@@ -1240,11 +1742,16 @@
     "givenName": "Bradley H.",
     "familyName": "Jones",
     "image": "https://malegislature.gov/Legislators/Profile/170/BHJ1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/BHJ1"
+      }
+    ],
     "party": "Republican",
     "district": "20th Middlesex",
     "email": "bradley.jones@mahouse.gov",
     "phone": "617-722-2100",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/BHJ1",
     "memberCode": "BHJ1"
   },
   {
@@ -1253,11 +1760,16 @@
     "givenName": "David Allen",
     "familyName": "Robertson",
     "image": "https://malegislature.gov/Legislators/Profile/170/D_R1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/D_R1"
+      }
+    ],
     "party": "Democratic",
     "district": "19th Middlesex",
     "email": "david.robertson@mahouse.gov",
     "phone": "617-722-2210",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/D_R1",
     "memberCode": "D_R1"
   },
   {
@@ -1266,11 +1778,16 @@
     "givenName": "Lindsay N.",
     "familyName": "Sabadosa",
     "image": "https://malegislature.gov/Legislators/Profile/170/L_S1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/L_S1"
+      }
+    ],
     "party": "Democratic",
     "district": "1st Hampshire",
     "email": "lindsay.sabadosa@mahouse.gov",
     "phone": "617-722-2304",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/L_S1",
     "memberCode": "L_S1"
   },
   {
@@ -1279,11 +1796,16 @@
     "givenName": "Mindy",
     "familyName": "Domb",
     "image": "https://malegislature.gov/Legislators/Profile/170/M_D2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/M_D2"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Hampshire",
     "email": "mindy.domb@mahouse.gov",
     "phone": "413-335-1362",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/M_D2",
     "memberCode": "M_D2"
   },
   {
@@ -1292,11 +1814,19 @@
     "givenName": "Christopher M.",
     "familyName": "Hendricks",
     "image": "https://malegislature.gov/Legislators/Profile/170/C_H1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/C_H1"
+      },
+      {
+        "url": "https://www.rephendricks.com/"
+      }
+    ],
     "party": "Democratic",
     "district": "11th Bristol",
     "email": "chris.hendricks@mahouse.gov",
     "phone": "617-722-2305",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/C_H1",
     "memberCode": "C_H1"
   },
   {
@@ -1305,11 +1835,16 @@
     "givenName": "David Henry Argosky",
     "familyName": "LeBoeuf",
     "image": "https://malegislature.gov/Legislators/Profile/170/DAL1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DAL1"
+      }
+    ],
     "party": "Democratic",
     "district": "17th Worcester",
     "email": "david.leboeuf@mahouse.gov",
     "phone": "617-722-2305",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DAL1",
     "memberCode": "DAL1"
   },
   {
@@ -1318,11 +1853,16 @@
     "givenName": "David",
     "familyName": "Biele",
     "image": "https://malegislature.gov/Legislators/Profile/170/D_B1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/D_B1"
+      }
+    ],
     "party": "Democratic",
     "district": "4th Suffolk",
     "email": "david.biele@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/D_B1",
     "memberCode": "D_B1"
   },
   {
@@ -1331,11 +1871,16 @@
     "givenName": "Daniel R.",
     "familyName": "Carey",
     "image": "https://malegislature.gov/Legislators/Profile/170/DRC1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DRC1"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Hampshire",
     "email": "daniel.carey@mahouse.gov",
     "phone": "617-722-2396",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DRC1",
     "memberCode": "DRC1"
   },
   {
@@ -1344,11 +1889,16 @@
     "givenName": "Michael J.",
     "familyName": "Soter",
     "image": "https://malegislature.gov/Legislators/Profile/170/MJS3.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MJS3"
+      }
+    ],
     "party": "Republican",
     "district": "8th Worcester",
     "email": "michael.soter@mahouse.gov",
     "phone": "617-722-2305",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MJS3",
     "memberCode": "MJS3"
   },
   {
@@ -1357,11 +1907,19 @@
     "givenName": "Natalie M.",
     "familyName": "Blais",
     "image": "https://malegislature.gov/Legislators/Profile/170/NMB1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/NMB1"
+      },
+      {
+        "url": "https://www.repblais.org/"
+      }
+    ],
     "party": "Democratic",
     "district": "1st Franklin",
     "email": "natalie.blais@mahouse.gov",
     "phone": "413-362-9453",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/NMB1",
     "memberCode": "NMB1"
   },
   {
@@ -1370,11 +1928,16 @@
     "givenName": "Patrick Joseph",
     "familyName": "Kearney",
     "image": "https://malegislature.gov/Legislators/Profile/170/PJK1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/PJK1"
+      }
+    ],
     "party": "Democratic",
     "district": "4th Plymouth",
     "email": "patrick.kearney@mahouse.gov",
     "phone": "617-722-2014",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/PJK1",
     "memberCode": "PJK1"
   },
   {
@@ -1383,11 +1946,16 @@
     "givenName": "Peter L.",
     "familyName": "Capano",
     "image": "https://malegislature.gov/Legislators/Profile/170/PLC1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/PLC1"
+      }
+    ],
     "party": "Democratic",
     "district": "11th Essex",
     "email": "peter.capano@mahouse.gov",
     "phone": "617-722-2020",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/PLC1",
     "memberCode": "PLC1"
   },
   {
@@ -1396,11 +1964,16 @@
     "givenName": "Norman J.",
     "familyName": "Orrall",
     "image": "https://malegislature.gov/Legislators/Profile/170/NJO1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/NJO1"
+      }
+    ],
     "party": "Republican",
     "district": "12th Bristol",
     "email": "norman.orrall@mahouse.gov",
     "phone": "617-722-2090",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/NJO1",
     "memberCode": "NJO1"
   },
   {
@@ -1409,11 +1982,16 @@
     "givenName": "Thomas",
     "familyName": "Vitolo",
     "image": "https://malegislature.gov/Legislators/Profile/170/T_V1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/T_V1"
+      }
+    ],
     "party": "Democratic",
     "district": "15th Norfolk",
     "email": "tommy.vitolo@mahouse.gov",
     "phone": "617-722-2220",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/T_V1",
     "memberCode": "T_V1"
   },
   {
@@ -1422,11 +2000,16 @@
     "givenName": "Tram T.",
     "familyName": "Nguyen",
     "image": "https://malegislature.gov/Legislators/Profile/170/TTN1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/TTN1"
+      }
+    ],
     "party": "Democratic",
     "district": "18th Essex",
     "email": "tram.nguyen@mahouse.gov",
     "phone": "617-722-2680",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/TTN1",
     "memberCode": "TTN1"
   },
   {
@@ -1435,11 +2018,16 @@
     "givenName": "Richard M.",
     "familyName": "Haggerty",
     "image": "https://malegislature.gov/Legislators/Profile/170/RMH1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/RMH1"
+      }
+    ],
     "party": "Democratic",
     "district": "30th Middlesex",
     "email": "richard.haggerty@mahouse.gov",
     "phone": "617-722-2080",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/RMH1",
     "memberCode": "RMH1"
   },
   {
@@ -1448,11 +2036,16 @@
     "givenName": "Kathleen Smith",
     "familyName": "LaNatra",
     "image": "https://malegislature.gov/Legislators/Profile/170/KPL1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/KPL1"
+      }
+    ],
     "party": "Democratic",
     "district": "12th Plymouth",
     "email": "kathleen.lanatra@mahouse.gov",
     "phone": "617-722-2575",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/KPL1",
     "memberCode": "KPL1"
   },
   {
@@ -1461,11 +2054,16 @@
     "givenName": "Michelle L.",
     "familyName": "Ciccolo",
     "image": "https://malegislature.gov/Legislators/Profile/170/M_C2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/M_C2"
+      }
+    ],
     "party": "Democratic",
     "district": "15th Middlesex",
     "email": "michelle.ciccolo@mahouse.gov",
     "phone": "617-722-2210",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/M_C2",
     "memberCode": "M_C2"
   },
   {
@@ -1474,11 +2072,16 @@
     "givenName": "Alyson M.",
     "familyName": "Sullivan-Almeida",
     "image": "https://malegislature.gov/Legislators/Profile/170/AMS2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AMS2"
+      }
+    ],
     "party": "Republican",
     "district": "7th Plymouth",
     "email": "alyson.sullivan@mahouse.gov",
     "phone": "617-722-2488",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/AMS2",
     "memberCode": "AMS2"
   },
   {
@@ -1487,11 +2090,16 @@
     "givenName": "Katherine",
     "familyName": "Lipper-Garabedian",
     "image": "https://malegislature.gov/Legislators/Profile/170/KLG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/KLG1"
+      }
+    ],
     "party": "Democratic",
     "district": "32nd Middlesex",
     "email": "kate.lipper-garabedian@mahouse.gov",
     "phone": "617-722-2810",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/KLG1",
     "memberCode": "KLG1"
   },
   {
@@ -1500,11 +2108,16 @@
     "givenName": "Carol A.",
     "familyName": "Doherty",
     "image": "https://malegislature.gov/Legislators/Profile/170/CAD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/CAD1"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Bristol",
     "email": "carol.doherty@mahouse.gov",
     "phone": "617-722-2014",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/CAD1",
     "memberCode": "CAD1"
   },
   {
@@ -1513,11 +2126,16 @@
     "givenName": "Rob",
     "familyName": "Consalvo",
     "image": "https://malegislature.gov/Legislators/Profile/170/R_C1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/R_C1"
+      }
+    ],
     "party": "Democratic",
     "district": "14th Suffolk",
     "email": "rob.consalvo@mahouse.gov",
     "phone": "617-722-2030",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/R_C1",
     "memberCode": "R_C1"
   },
   {
@@ -1526,11 +2144,16 @@
     "givenName": "Jessica Ann",
     "familyName": "Giannino",
     "image": "https://malegislature.gov/Legislators/Profile/170/JAG1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JAG1"
+      }
+    ],
     "party": "Democratic",
     "district": "16th Suffolk",
     "email": "jessica.giannino@mahouse.gov",
     "phone": "617-722-2011",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JAG1",
     "memberCode": "JAG1"
   },
   {
@@ -1539,11 +2162,16 @@
     "givenName": "Edward R.",
     "familyName": "Philips",
     "image": "https://images.prod.thevoterguide.org/candidate-images/c2-lwv/120x140/2/2/3/22388079.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/ERP1"
+      }
+    ],
     "party": "Democratic",
     "district": "8th Norfolk",
     "email": "edward.philips@mahouse.gov",
     "phone": "617-722-2396",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/ERP1",
     "memberCode": "ERP1"
   },
   {
@@ -1552,11 +2180,16 @@
     "givenName": "Vanna",
     "familyName": "Howard",
     "image": "https://malegislature.gov/Legislators/Profile/170/V_H1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/V_H1"
+      }
+    ],
     "party": "Democratic",
     "district": "17th Middlesex",
     "email": "vanna.howard@mahouse.gov",
     "phone": "617-722-2060",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/V_H1",
     "memberCode": "V_H1"
   },
   {
@@ -1565,11 +2198,16 @@
     "givenName": "Kip Andre",
     "familyName": "Diggs",
     "image": "https://www.capecod.com/wp-content/uploads/NWS_Kip-Diggs_JS081720.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/KAD1"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Barnstable",
     "email": "kip.diggs@mahouse.gov",
     "phone": "617-722-2013",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/KAD1",
     "memberCode": "KAD1"
   },
   {
@@ -1578,11 +2216,16 @@
     "givenName": "Danillo A.",
     "familyName": "Sena",
     "image": "http://malegislature.gov/Legislators/Profile/170/DAS1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DAS1"
+      }
+    ],
     "party": "Democratic",
     "district": "37th Middlesex",
     "email": "danillo.sena@mahouse.gov",
     "phone": "617-722-2014",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/DAS1",
     "memberCode": "DAS1"
   },
   {
@@ -1591,11 +2234,16 @@
     "givenName": "Steven George",
     "familyName": "Xiarhos",
     "image": "https://malegislature.gov/Legislators/Profile/170/SGX1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SGX1"
+      }
+    ],
     "party": "Republican",
     "district": "5th Barnstable",
     "email": "steven.xiarhos@mahouse.gov",
     "phone": "617-722-2488",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/SGX1",
     "memberCode": "SGX1"
   },
   {
@@ -1604,11 +2252,16 @@
     "givenName": "Michael Paul",
     "familyName": "Kushmerek",
     "image": "https://malegislature.gov/Legislators/Profile/170/MPK1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MPK1"
+      }
+    ],
     "party": "Democratic",
     "district": "3rd Worcester",
     "email": "michael.kushmerek@mahouse.gov",
     "phone": "617-722-2396",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MPK1",
     "memberCode": "MPK1"
   },
   {
@@ -1617,11 +2270,16 @@
     "givenName": "Meghan",
     "familyName": "Kilcoyne",
     "image": "https://img1.wsimg.com/isteam/ip/850f350e-49c6-4466-85f5-43a40c2a6240/062320-Meghan-17.jpg/:/rs=h:1500,cg:true,m",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/M_K1"
+      }
+    ],
     "party": "Democratic",
     "district": "12th Worcester",
     "email": "meghan.kilcoyne@mahouse.gov",
     "phone": "617-722-2396",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/M_K1",
     "memberCode": "M_K1"
   },
   {
@@ -1630,11 +2288,16 @@
     "givenName": "Patricia A.",
     "familyName": "Duffy",
     "image": "https://malegislature.gov/Legislators/Profile/170/PAD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/PAD1"
+      }
+    ],
     "party": "Democratic",
     "district": "5th Hampden",
     "email": "patricia.duffy@mahouse.gov",
     "phone": "617-722-2013",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/PAD1",
     "memberCode": "PAD1"
   },
   {
@@ -1643,11 +2306,16 @@
     "givenName": "Sally",
     "familyName": "Kerans",
     "image": "https://malegislature.gov/Legislators/Profile/170/SPK1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SPK1"
+      }
+    ],
     "party": "Democratic",
     "district": "13th Essex",
     "email": "sally.kerans@mahouse.gov",
     "phone": "617-722-2210",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/SPK1",
     "memberCode": "SPK1"
   },
   {
@@ -1656,11 +2324,16 @@
     "givenName": "Adam J.",
     "familyName": "Scanlon",
     "image": "https://malegislature.gov/Legislators/Profile/170/AJS1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AJS1"
+      }
+    ],
     "party": "Democratic",
     "district": "14th Bristol",
     "email": "adam.scanlon@mahouse.gov",
     "phone": "617-722-2210",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/AJS1",
     "memberCode": "AJS1"
   },
   {
@@ -1669,11 +2342,16 @@
     "givenName": "Brandy",
     "familyName": "Fluker Oakley",
     "image": "https://malegislature.gov/Legislators/Profile/170/BFO1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/BFO1"
+      }
+    ],
     "party": "Democratic",
     "district": "12th Suffolk",
     "email": "brandy.flukeroakley@mahouse.gov",
     "phone": "617-722-2430",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/BFO1",
     "memberCode": "BFO1"
   },
   {
@@ -1682,11 +2360,16 @@
     "givenName": "Orlando",
     "familyName": "Ramos",
     "image": "https://malegislature.gov/Legislators/Profile/170/O_R1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/O_R1"
+      }
+    ],
     "party": "Democratic",
     "district": "9th Hampden",
     "email": "orlando.ramos@mahouse.gov",
     "phone": "617-722-2430",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/O_R1",
     "memberCode": "O_R1"
   },
   {
@@ -1695,11 +2378,16 @@
     "givenName": "Kelly W.",
     "familyName": "Pease",
     "image": "https://malegislature.gov/Legislators/Profile/170/KWP1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/KWP1"
+      }
+    ],
     "party": "Republican",
     "district": "4th Hampden",
     "email": "kelly.pease@mahouse.gov",
     "phone": "413-875-8787",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/KWP1",
     "memberCode": "KWP1"
   },
   {
@@ -1708,11 +2396,16 @@
     "givenName": "Steven C.",
     "familyName": "Owens",
     "image": "https://malegislature.gov/Legislators/Profile/170/SCO1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SCO1"
+      }
+    ],
     "party": "Democratic",
     "district": "29th Middlesex",
     "email": "steven.owens@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/SCO1",
     "memberCode": "SCO1"
   },
   {
@@ -1721,11 +2414,16 @@
     "givenName": "Erika",
     "familyName": "Uyterhoeven",
     "image": "https://malegislature.gov/Legislators/Profile/170/E_U1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/E_U1"
+      }
+    ],
     "party": "Democratic",
     "district": "27th Middlesex",
     "email": "erika.uyterhoeven@mahouse.gov",
     "phone": "857-264-1096",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/E_U1",
     "memberCode": "E_U1"
   },
   {
@@ -1734,11 +2432,16 @@
     "givenName": "Jeffrey Rosario",
     "familyName": "Turco",
     "image": "https://malegislature.gov/Legislators/Profile/170/JRT1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JRT1"
+      }
+    ],
     "party": "Democratic",
     "district": "19th Suffolk",
     "email": "jeffrey.turco@mahouse.gov",
     "phone": "617-722-2263",
-    "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JRT1",
     "memberCode": "JRT1"
   },
   {
@@ -1747,11 +2450,16 @@
     "givenName": "Estela A.",
     "familyName": "Reyes",
     "image": "https://malegislature.gov/Legislators/Profile/170/EAR1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/EAR1"
+      }
+    ],
     "party": "Democratic",
     "district": "4th Essex",
     "email": "estela.reyes@mahouse.gov",
     "phone": "617-722-2060",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/EAR1",
     "memberCode": "EAR1"
   },
   {
@@ -1760,11 +2468,16 @@
     "givenName": "Ryan M.",
     "familyName": "Hamilton",
     "image": "https://malegislature.gov/Legislators/Profile/170/RMH2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/RMH2"
+      }
+    ],
     "party": "Democratic",
     "district": "15th Essex",
     "email": "ryan.hamilton@mahouse.gov",
     "phone": "617-722-2090",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/RMH2",
     "memberCode": "RMH2"
   },
   {
@@ -1773,11 +2486,16 @@
     "givenName": "Rodney M.",
     "familyName": "Elliott",
     "image": "https://malegislature.gov/Legislators/Profile/170/RME1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/RME1"
+      }
+    ],
     "party": "Democratic",
     "district": "16th Middlesex",
     "email": "rodney.elliott@mahouse.gov",
     "phone": "617-722-2080",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/RME1",
     "memberCode": "RME1"
   },
   {
@@ -1786,11 +2504,16 @@
     "givenName": "Kate",
     "familyName": "Donaghue",
     "image": "https://malegislature.gov/Legislators/Profile/170/K_D1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/K_D1"
+      }
+    ],
     "party": "Democratic",
     "district": "19th Worcester",
     "email": "kate.donaghue@mahouse.gov",
     "phone": "617-722-2060",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/K_D1",
     "memberCode": "K_D1"
   },
   {
@@ -1799,11 +2522,16 @@
     "givenName": "Francisco E.",
     "familyName": "Paulino",
     "image": "https://malegislature.gov/Legislators/Profile/170/FEP1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/FEP1"
+      }
+    ],
     "party": "Democratic",
     "district": "16th Essex",
     "email": "francisco.paulino@mahouse.gov",
     "phone": "617-722-2060",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/FEP1",
     "memberCode": "FEP1"
   },
   {
@@ -1812,11 +2540,16 @@
     "givenName": "Manny",
     "familyName": "Cruz",
     "image": "https://malegislature.gov/Legislators/Profile/170/M_C3.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/M_C3"
+      }
+    ],
     "party": "Democratic",
     "district": "7th Essex",
     "email": "manny.cruz@mahouse.gov",
     "phone": "617-722-2011",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/M_C3",
     "memberCode": "M_C3"
   },
   {
@@ -1825,11 +2558,16 @@
     "givenName": "Margaret",
     "familyName": "Scarsdale",
     "image": "https://malegislature.gov/Legislators/Profile/170/MRS1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MRS1"
+      }
+    ],
     "party": "Democratic",
     "district": "1st Middlesex",
     "email": "margaret.scarsdale@mahouse.gov",
     "phone": "617-722-2130",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MRS1",
     "memberCode": "MRS1"
   },
   {
@@ -1838,11 +2576,16 @@
     "givenName": "Marcus S.",
     "familyName": "Vaughn",
     "image": "https://malegislature.gov/Legislators/Profile/170/MSV1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MSV1"
+      }
+    ],
     "party": "Republican",
     "district": "9th Norfolk",
     "email": "marcus.vaughn@mahouse.gov",
     "phone": "617-722-2263",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/MSV1",
     "memberCode": "MSV1"
   },
   {
@@ -1851,11 +2594,16 @@
     "givenName": "James C.",
     "familyName": "Arena-DeRosa",
     "image": "https://malegislature.gov/Legislators/Profile/170/JCD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JCD1"
+      }
+    ],
     "party": "Democratic",
     "district": "8th Middlesex",
     "email": "james.arena-derosa@mahouse.gov",
     "phone": "617-722-2810",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JCD1",
     "memberCode": "JCD1"
   },
   {
@@ -1864,11 +2612,16 @@
     "givenName": "Jennifer Balinsky",
     "familyName": "Armini",
     "image": "https://malegislature.gov/Legislators/Profile/170/JBA1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JBA1"
+      }
+    ],
     "party": "Democratic",
     "district": "8th Essex",
     "email": "jennifer.armini@mahouse.gov",
     "phone": "617-722-2140",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JBA1",
     "memberCode": "JBA1"
   },
   {
@@ -1877,11 +2630,19 @@
     "givenName": "Rita A.",
     "familyName": "Mendes",
     "image": "https://malegislature.gov/Legislators/Profile/170/RAM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/RAM1"
+      },
+      {
+        "url": "https://www.staterepmendes.com/"
+      }
+    ],
     "party": "Democratic",
     "district": "11th Plymouth",
     "email": "rita.mendes@mahouse.gov",
     "phone": "617-722-2400",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/RAM1",
     "memberCode": "RAM1"
   },
   {
@@ -1890,11 +2651,16 @@
     "givenName": "Christopher J.",
     "familyName": "Worrell",
     "image": "https://malegislature.gov/Legislators/Profile/170/CJW1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/CJW1"
+      }
+    ],
     "party": "Democratic",
     "district": "5th Suffolk",
     "email": "christopher.worrell@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/CJW1",
     "memberCode": "CJW1"
   },
   {
@@ -1903,11 +2669,16 @@
     "givenName": "Kristin Hoffman",
     "familyName": "Kassner",
     "image": "https://malegislature.gov/Legislators/Profile/170/K_K2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/K_K2"
+      }
+    ],
     "party": "Democratic",
     "district": "2nd Essex",
     "email": "kristin.kassner@mahouse.gov",
     "phone": "617-722-2000 ext. 7905",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/K_K2",
     "memberCode": "K_K2"
   },
   {
@@ -1916,11 +2687,19 @@
     "givenName": "Samantha",
     "familyName": "Montano",
     "image": "https://malegislature.gov/Legislators/Profile/170/S_M1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/S_M1"
+      },
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/S_M1/District"
+      }
+    ],
     "party": "Democratic",
     "district": "15th Suffolk",
     "email": "samantha.montano@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/S_M1",
     "memberCode": "S_M1"
   },
   {
@@ -1929,11 +2708,16 @@
     "givenName": "Shirley B.",
     "familyName": "Arriaga",
     "image": "https://malegislature.gov/Legislators/Profile/170/SBA1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SBA1"
+      }
+    ],
     "party": "Democratic",
     "district": "8th Hampden",
     "email": "shirley.arriaga@mahouse.gov",
     "phone": "617-722-2582",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/SBA1",
     "memberCode": "SBA1"
   },
   {
@@ -1942,11 +2726,16 @@
     "givenName": "Christopher Richard",
     "familyName": "Flanagan",
     "image": "https://malegislature.gov/Legislators/Profile/170/CRF1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/CRF1"
+      }
+    ],
     "party": "Democratic",
     "district": "1st Barnstable",
     "email": "christopher.flanagan@mahouse.gov",
     "phone": "617-722-2080",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/CRF1",
     "memberCode": "CRF1"
   },
   {
@@ -1955,11 +2744,16 @@
     "givenName": "Dawne",
     "familyName": "Shand",
     "image": "https://malegislature.gov/Legislators/Profile/170/D_S1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/D_S1"
+      }
+    ],
     "party": "Democratic",
     "district": "1st Essex",
     "email": "dawne.shand@mahouse.gov",
     "phone": "617-722-2400",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/D_S1",
     "memberCode": "D_S1"
   },
   {
@@ -1968,11 +2762,19 @@
     "givenName": "Simon",
     "familyName": "Cataldo",
     "image": "https://malegislature.gov/Legislators/Profile/170/S_C1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/S_C1"
+      },
+      {
+        "url": "https://www.repcataldo.com/"
+      }
+    ],
     "party": "Democratic",
     "district": "14th Middlesex",
     "email": "simon.cataldo@mahouse.gov",
     "phone": "617-722-2000 ext. 8676",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/S_C1",
     "memberCode": "S_C1"
   },
   {
@@ -1981,11 +2783,16 @@
     "givenName": "Aaron L.",
     "familyName": "Saunders",
     "image": "https://malegislature.gov/Legislators/Profile/170/ALS1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/ALS1"
+      }
+    ],
     "party": "Democratic",
     "district": "7th Hampden",
     "email": "aaron.saunders@mahouse.gov",
     "phone": "617-722-2320",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/ALS1",
     "memberCode": "ALS1"
   },
   {
@@ -1994,11 +2801,16 @@
     "givenName": "Judith A.",
     "familyName": "Garcia",
     "image": "https://malegislature.gov/Legislators/Profile/170/JAG2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JAG2"
+      }
+    ],
     "party": "Democratic",
     "district": "11th Suffolk",
     "email": "judith.garcia@mahouse.gov",
     "phone": "617-722-2582",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JAG2",
     "memberCode": "JAG2"
   },
   {
@@ -2007,11 +2819,16 @@
     "givenName": "Priscila S.",
     "familyName": "Sousa",
     "image": "https://malegislature.gov/Legislators/Profile/170/PSS1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/PSS1"
+      }
+    ],
     "party": "Democratic",
     "district": "6th Middlesex",
     "email": "priscila.sousa@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/PSS1",
     "memberCode": "PSS1"
   },
   {
@@ -2020,11 +2837,16 @@
     "givenName": "Adrianne Pusateri",
     "familyName": "Ramos",
     "image": "https://malegislature.gov/Legislators/Profile/170/APR1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/APR1"
+      }
+    ],
     "party": "Democratic",
     "district": "14th Essex",
     "email": "adrianne.ramos@mahouse.gov",
     "phone": "617-722-2140",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/APR1",
     "memberCode": "APR1"
   },
   {
@@ -2033,11 +2855,16 @@
     "givenName": "William F.",
     "familyName": "MacGregor",
     "image": "https://images.squarespace-cdn.com/content/v1/64014cb72a76a83f08ddf74b/beb20812-27a1-4410-bc5a-e476990155c6/BZ3A6742.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/WFM1"
+      }
+    ],
     "party": "Democratic",
     "district": "10th Suffolk",
     "email": "bill.macgregor@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/WFM1",
     "memberCode": "WFM1"
   },
   {
@@ -2046,11 +2873,16 @@
     "givenName": "John Francis",
     "familyName": "Moran",
     "image": "https://malegislature.gov/Legislators/Profile/170/JFM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JFM1"
+      }
+    ],
     "party": "Democratic",
     "district": "9th Suffolk",
     "email": "john.moran@mahouse.gov",
     "phone": "617-722-2460",
-    "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/",
+    "url": "https://malegislature.gov/Legislators/Profile/JFM1",
     "memberCode": "JFM1"
   },
   {
@@ -2059,6 +2891,11 @@
     "givenName": "John J.",
     "familyName": "Marsi",
     "image": "https://malegislature.gov/Legislators/Profile/170/JJM1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JJM1"
+      }
+    ],
     "party": "Republican",
     "district": "6th Worcester",
     "email": "john.marsi@mahouse.gov",

@@ -53789,7 +53789,7 @@
         "paired_listing": "",
         "docket_prefix": "HD",
         "dock_number": "4039",
-        "status": "Passed",
+        "status": "In Conference Committee",
         "name": "An Act relative to transparency in the workplace ",
         "sponsors": "Rep. Dave Rogers, Rep. Christine Barber, Sen. Paul Feeney, & Sen. Liz Miranda",
         "shorthand_title": "Pay Equity Bill",
@@ -53807,7 +53807,7 @@
         "paired_listing": "",
         "docket_prefix": "SD",
         "dock_number": "2331",
-        "status": "Passed",
+        "status": "In Conference Committee",
         "name": "An Act relative to transparency in the workplace ",
         "sponsors": "Rep. Dave Rogers, Rep. Christine Barber, Sen. Paul Feeney, & Sen. Liz Miranda",
         "shorthand_title": "Pay Equity Bill",
@@ -54574,8 +54574,8 @@
         "tags": [
           "justice & equality"
         ],
-        "noVotes": 127,
-        "yesVotes": 33,
+        "noVotes": 126,
+        "yesVotes": 34,
         "url": "https://malegislature.gov/Bills/193/",
         "roll_call_url": "https://malegislature.gov/RollCall/193/houseRollCall0.pdf"
       },
@@ -54617,7 +54617,7 @@
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H3770/2/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall14.pdf",
         "noVotes": 130,
-        "yesVotes": 27
+        "yesVotes": 26
       },
       "15": {
         "pm_score\n": "3h",
@@ -54676,8 +54676,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H3900/136/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall17.pdf",
-        "noVotes": 134,
-        "yesVotes": 24
+        "noVotes": 133,
+        "yesVotes": 25
       },
       "33": {
         "pm_score\n": "6h",
@@ -54736,8 +54736,8 @@
         ],
         "url": "https://malegislature.gov/Bills/193/H4135",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall59.pdf",
-        "noVotes": 26,
-        "yesVotes": 134
+        "noVotes": 27,
+        "yesVotes": 133
       },
       "61": {
         "pm_score\n": "9h",
@@ -54756,8 +54756,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4135/42/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall61.pdf",
-        "noVotes": 136,
-        "yesVotes": 25
+        "noVotes": 135,
+        "yesVotes": 26
       },
       "62": {
         "pm_score\n": "10h",
@@ -54776,8 +54776,8 @@
         ],
         "url": "https://malegislature.gov/Bills/193/H139",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall62.pdf",
-        "noVotes": 37,
-        "yesVotes": 123
+        "noVotes": 38,
+        "yesVotes": 122
       },
       "63": {
         "pm_score\n": "11h",
@@ -54796,8 +54796,8 @@
         ],
         "url": "https://malegislature.gov/Bills/193/H4052",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall63.pdf",
-        "noVotes": 25,
-        "yesVotes": 134
+        "noVotes": 26,
+        "yesVotes": 133
       },
       "65": {
         "pm_score\n": "12h",
@@ -54816,8 +54816,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4167/49/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall65.pdf",
-        "noVotes": 130,
-        "yesVotes": 27
+        "noVotes": 129,
+        "yesVotes": 28
       },
       "75": {
         "pm_score\n": "13h",
@@ -54836,8 +54836,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4460/9/House/Preview",
         "roll_call_url": "https://malegislature.gov/Journal/House/193/RollCalls/hj03062024_RollCalls.pdf",
-        "noVotes": 127,
-        "yesVotes": 28
+        "noVotes": 126,
+        "yesVotes": 29
       },
       "79": {
         "pm_score\n": "14h",
@@ -54856,8 +54856,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4460/7/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall79.pdf",
-        "noVotes": 131,
-        "yesVotes": 25
+        "noVotes": 130,
+        "yesVotes": 26
       },
       "92": {
         "pm_score\n": "15h",
@@ -54876,8 +54876,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4600/645/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall92.pdf",
-        "noVotes": 130,
-        "yesVotes": 28
+        "noVotes": 129,
+        "yesVotes": 29
       },
       "99": {
         "pm_score\n": "16h",
@@ -54896,8 +54896,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4600/1393/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall99.pdf",
-        "noVotes": 129,
-        "yesVotes": 29
+        "noVotes": 128,
+        "yesVotes": 30
       },
       "100": {
         "pm_score\n": "17h",
@@ -54916,8 +54916,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4600/1394/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall100.pdf",
-        "noVotes": 132,
-        "yesVotes": 27
+        "noVotes": 131,
+        "yesVotes": 28
       },
       "101": {
         "pm_score\n": "18h",
@@ -54936,8 +54936,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4600/698/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall101.pdf",
-        "noVotes": 130,
-        "yesVotes": 28
+        "noVotes": 129,
+        "yesVotes": 29
       }
     },
     "senateBills": {
@@ -55676,7 +55676,7 @@
           "H1379 / S858": true,
           "H1796 / S1494": true,
           "H1795 / S1979": true,
-          "H1710 / S942": false,
+          "H1710 / S942": true,
           "H3084 / S1990": false,
           "H2288 / S1510": true,
           "H544 / S268": true,
@@ -55687,7 +55687,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 13
+        "score": 14
       },
       {
         "id": "ocd-person/35396516-6096-4336-ab74-80d6d8e53bcd",
@@ -56772,7 +56772,7 @@
           "H495 / S246": true,
           "H1260 / S816": true,
           "H1239 / S744": false,
-          "H2103 / S1299": true,
+          "H2103 / S1299": false,
           "H2747 / S1771": false,
           "H2894 / S1799": false,
           "H1379 / S858": false,
@@ -56789,7 +56789,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 7
+        "score": 6
       },
       {
         "id": "ocd-person/1b7d1710-da71-46cd-9ee3-fc891556f3a9",
@@ -60792,7 +60792,7 @@
           "H2708 / S1925": false,
           "H2856 / S1788": false,
           "H2743 / S1835": false,
-          "H1925 / S1200": false,
+          "H1925 / S1200": true,
           "H3069 / S2014": false,
           "H1940 / S1181": true,
           "H603 / S261": true,
@@ -60817,7 +60817,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 16
+        "score": 17
       },
       {
         "id": "ocd-person/95fef9c7-c5c1-415c-95ef-94e4d87e3a72",
@@ -62676,10 +62676,10 @@
           "H3232 / S2365": true,
           "H3237 / S2135": true,
           "H26 / S8": false,
-          "H3040 / S2024": false,
+          "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 12
+        "score": 13
       },
       {
         "id": "ocd-person/fb97b139-c0dd-41b5-ae52-159528f47b11",
@@ -63106,7 +63106,7 @@
       {
         "id": "ocd-person/47ffc61b-0cae-4386-ae68-12b20eadd83f",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -63126,7 +63126,7 @@
           "100": " +",
           "101": " +"
         },
-        "score": 79,
+        "score": 84,
         "recordedVotePercentage": 100
       },
       {
@@ -65890,26 +65890,26 @@
         "data": {
           "0": "-",
           "8": " +",
-          "14": "-",
+          "14": "NV",
           "15": "-",
           "16": "-",
-          "17": " +",
+          "17": "-",
           "33": "-",
           "58": " +",
-          "59": " +",
-          "61": " +",
-          "62": " +",
-          "63": " +",
-          "65": " +",
-          "75": " +",
-          "79": " +",
-          "92": " +",
-          "99": " +",
-          "100": " +",
-          "101": " +"
+          "59": "-",
+          "61": "-",
+          "62": "-",
+          "63": "-",
+          "65": "-",
+          "75": "-",
+          "79": "-",
+          "92": "-",
+          "99": "-",
+          "100": "-",
+          "101": "-"
         },
-        "score": 74,
-        "recordedVotePercentage": 100
+        "score": 11,
+        "recordedVotePercentage": 95
       },
       {
         "id": "ocd-person/ef175304-020e-4f79-b71f-dc961b738254",
