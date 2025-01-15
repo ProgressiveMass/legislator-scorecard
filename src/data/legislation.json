@@ -54562,7 +54562,7 @@
       "0": {
         "pm_score\n": "19h",
         "keyword": "DOC Accountability",
-        "description": "Visited a Department of Correction prison or County jail this legislative session. (This will be updated on an ongoing basis) ",
+        "description": "Visited a Department of Correction prison or County jail this legislative session. (This will be updated on an ongoing basis.) ",
         "roll_call_number": "0",
         "bill_number": "",
         "amendment": "",
@@ -54574,8 +54574,8 @@
         "tags": [
           "justice & equality"
         ],
-        "noVotes": 126,
-        "yesVotes": 34,
+        "noVotes": 114,
+        "yesVotes": 46,
         "url": "https://malegislature.gov/Bills/193/",
         "roll_call_url": "https://malegislature.gov/RollCall/193/houseRollCall0.pdf"
       },
@@ -54642,7 +54642,7 @@
       "16": {
         "pm_score\n": "4h",
         "keyword": "Revenue",
-        "description": "Vote was on the House’s regressive tax reform package, which contained $440 million in tax cuts for the commonwealth's richest estates, residents, and corporations—undermining the new revenue produced by the Fair Share Amendment.",
+        "description": "Vote was on the House’s regressive tax reform package, which contained $440 million in tax cuts for the commonwealth's richest estates, residents, and corporations—undermining the new revenue produced by the Fair Share Amendment (i.e., the new surtax on income over $1 million). ",
         "roll_call_number": "16",
         "bill_number": "H3770",
         "amendment": "",
@@ -54877,7 +54877,7 @@
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4600/645/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall92.pdf",
         "noVotes": 129,
-        "yesVotes": 29
+        "yesVotes": 30
       },
       "99": {
         "pm_score\n": "16h",
@@ -54897,7 +54897,7 @@
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4600/1393/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall99.pdf",
         "noVotes": 128,
-        "yesVotes": 30
+        "yesVotes": 31
       },
       "100": {
         "pm_score\n": "17h",
@@ -54917,7 +54917,7 @@
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4600/1394/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall100.pdf",
         "noVotes": 131,
-        "yesVotes": 28
+        "yesVotes": 29
       },
       "101": {
         "pm_score\n": "18h",
@@ -54937,14 +54937,226 @@
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4600/698/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall101.pdf",
         "noVotes": 129,
-        "yesVotes": 29
+        "yesVotes": 30
+      },
+      "110": {
+        "pm_score\n": "20h",
+        "keyword": "Housing",
+        "description": "Vote was on an amendment to exempt communities from MBTA Communities Act (i.e., the law requiring communities with MBTA service to establish a zoning district where multifamily housing can be built as of right) compliance if at least 10 percent of the housing units in the city or town are low- or moderate-income (the “40B” threshold). ",
+        "roll_call_number": "110",
+        "bill_number": "H4707",
+        "amendment": "29",
+        "vote_date": "6/5/2024",
+        "title": "Creating MBTA Communities Act Exemptions",
+        "progressive_position": "NO",
+        "# of Y": "27",
+        "# of N": "131",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4707/29/House/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall110.pdf",
+        "noVotes": 135,
+        "yesVotes": 25
+      },
+      "111": {
+        "pm_score\n": "21h",
+        "keyword": "Housing",
+        "description": "Vote was on an amendment to make it easier for communities opposed to building more housing to evade compliance with the MBTA Communities Act (i.e., the law requiring communities with MBTA service to establish a zoning district where multifamily housing can be built as of right) by creating a right to appeal if communities refuse to meet infrastructure needs and if they pretend that multifamily housing is antithetical to environmental protection or historic preservation.",
+        "roll_call_number": "111",
+        "bill_number": "H4707",
+        "amendment": "129",
+        "vote_date": "6/5/2024",
+        "title": "MBTA Community Act Appeal Process for NIMBY Towns",
+        "progressive_position": "NO",
+        "# of Y": "32",
+        "# of N": "126",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4707/129/House/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall111.pdf",
+        "noVotes": 130,
+        "yesVotes": 30
+      },
+      "114": {
+        "pm_score\n": "22h",
+        "keyword": "Housing",
+        "description": "Vote was on an amendment to automatically count all mobile homes toward a community’s 40B threshold (i.e., 10% of all housing units need to be for low or moderate incomes). The amendment was driven by NIMBY opposition to building affordable housing and would make it harder to achieve affordability goals. ",
+        "roll_call_number": "114",
+        "bill_number": "H4707",
+        "amendment": "348",
+        "vote_date": "6/5/2024",
+        "title": "Weakening Affordable Housing Production Standards",
+        "progressive_position": "NO",
+        "# of Y": "30",
+        "# of N": "127",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4707/348/House/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall114.pdf",
+        "noVotes": 132,
+        "yesVotes": 28
+      },
+      "115": {
+        "pm_score\n": "23h",
+        "keyword": "Housing",
+        "description": "Vote was on a consolidated amendment that, among other positive measures, included a Tenant Opportunity to Purchase (TOPA) local option. Under this measure, cities and towns could choose to pass ordinances giving tenants the right of first refusal to buy their building if it goes up for sale. ",
+        "roll_call_number": "115",
+        "bill_number": "H4707",
+        "amendment": "Cons. B",
+        "vote_date": "6/5/2024",
+        "title": "Tenant Opportunity to Purchase ",
+        "progressive_position": "YES",
+        "# of Y": "133",
+        "# of N": "25",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4707/B/House/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall115.pdf",
+        "noVotes": 23,
+        "yesVotes": 137
+      },
+      "120": {
+        "pm_score\n": "24h",
+        "keyword": "LGBTQ Rights",
+        "description": "Vote was on updating Massachusetts’ forty-year-old parentage statutes to be inclusive of LGBTQ+ families and families formed through assisted reproduction.",
+        "roll_call_number": "120",
+        "bill_number": "H4672",
+        "amendment": "",
+        "vote_date": "6/12/2024",
+        "title": "Massachusetts Parentage Act ",
+        "progressive_position": "YES",
+        "# of Y": "156",
+        "# of N": "0",
+        "tags": [
+          "justice & equality"
+        ],
+        "url": "https://malegislature.gov/Bills/193/H4672",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall120.pdf",
+        "noVotes": 21,
+        "yesVotes": 137
+      },
+      "124": {
+        "pm_score\n": "25h",
+        "keyword": "Health Care",
+        "description": "Vote was on comprehensive maternal health legislation that would expand equitable access to midwifery care, allow more birth centers to open, offer paid pregnancy loss leave, expand postpartum depression screenings, and increase public health attention on maternal health.",
+        "roll_call_number": "124",
+        "bill_number": "H4773",
+        "amendment": "",
+        "vote_date": "6/12/2024",
+        "title": "Maternal Health Omnibus ",
+        "progressive_position": "YES",
+        "# of Y": "153",
+        "# of N": "0",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/193/H4773",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall124.pdf",
+        "noVotes": 21,
+        "yesVotes": 135
+      },
+      "148": {
+        "pm_score\n": "26h ",
+        "keyword": "Taxation ",
+        "description": "Vote was on approving a home rule petition introduced by Boston Mayor Michelle Wu and overwhelmingly passed by the Boston City Council to blunt the impact of an increase in residential property taxes by limiting a decline of commercial real estate taxes during a period of four consecutive fiscal years from FY 2025 through FY 2030. ",
+        "roll_call_number": "148",
+        "bill_number": "H4942",
+        "amendment": "",
+        "vote_date": "7/30/2024",
+        "title": "Boston Tax Home Rule Petition",
+        "progressive_position": "YES",
+        "# of Y": "133",
+        "# of N": "24",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/193/H4942",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall148.pdf",
+        "noVotes": 22,
+        "yesVotes": 136
+      },
+      "201": {
+        "pm_score\n": "27h",
+        "keyword": "Climate",
+        "description": "Vote was on legislation to reform siting and permitting laws, accelerate the state’s transition away from gas and toward renewable energy, and improve EV infrastructure. ",
+        "roll_call_number": "201",
+        "bill_number": "S2967",
+        "amendment": "",
+        "vote_date": "11/14/2024",
+        "title": "Climate Bill ",
+        "progressive_position": "YES",
+        "# of Y": "128",
+        "# of N": "17",
+        "tags": [
+          null
+        ],
+        "url": "https://malegislature.gov/Bills/193/s2967",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall201.pdf",
+        "noVotes": 16,
+        "yesVotes": 134
+      },
+      "1001": {
+        "pm_score\n": "28h",
+        "keyword": "",
+        "description": "Co-sponsored at least 50% of the bills tracked on our Progressive Scorecard website.",
+        "roll_call_number": "1001",
+        "bill_number": "",
+        "amendment": "",
+        "vote_date": "",
+        "title": "Progressive Agenda Cosponsorship > 50%",
+        "progressive_position": "YES",
+        "tags": [],
+        "noVotes": 136,
+        "yesVotes": 26,
+        "url": "https://malegislature.gov/Bills/193/",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/houseRollCall1001.pdf"
+      },
+      "1002": {
+        "pm_score\n": "29h",
+        "keyword": "",
+        "description": "Co-sponsored at least 75% of the bills tracked on our Progressive Scorecard website. ",
+        "roll_call_number": "1002",
+        "bill_number": "",
+        "amendment": "",
+        "vote_date": "",
+        "title": "Progressive Agenda Cosponsorship > 75% ",
+        "progressive_position": "YES",
+        "tags": [],
+        "noVotes": 152,
+        "yesVotes": 10,
+        "url": "https://malegislature.gov/Bills/193/",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/houseRollCall1002.pdf"
+      },
+      "1003": {
+        "pm_score\n": "30h",
+        "keyword": "Democracy ",
+        "description": "Held office hours or town halls during the legislative session to create opportunities for constituents to make their voices heard. (This will be updated upon response.) ",
+        "roll_call_number": "1003",
+        "bill_number": "",
+        "amendment": "",
+        "vote_date": "",
+        "title": "Held Office Hours to Be Accessible to Constituents",
+        "progressive_position": "YES",
+        "# of Y": "",
+        "# of N": "",
+        "tags": [
+          "government"
+        ],
+        "noVotes": 120,
+        "yesVotes": 42,
+        "url": "https://malegislature.gov/Bills/193/",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/houseRollCall1003.pdf"
       }
     },
     "senateBills": {
       "0": {
         "pm_score\n": "24s",
         "keyword": "DOC Accountability",
-        "description": "Visited a Department of Correction prison or County jail this legislative session. (This will be updated on an ongoing basis) ",
+        "description": "Visited a Department of Correction prison or County jail this legislative session. (This will be updated on an ongoing basis.) ",
         "roll_call_number": "0",
         "bill_number": "",
         "amendment": "",
@@ -54956,8 +55168,8 @@
         "tags": [
           null
         ],
-        "noVotes": 31,
-        "yesVotes": 9,
+        "noVotes": 28,
+        "yesVotes": 12,
         "url": "https://malegislature.gov/Bills/193/",
         "roll_call_url": "https://malegislature.gov/RollCall/193/senateRollCall0.pdf"
       },
@@ -55004,7 +55216,7 @@
       "38": {
         "pm_score\n": "3s",
         "keyword": "Revenue",
-        "description": "Vote was on enabling wealthy individuals to avoid the Fair Share tax by reducing their taxable income.",
+        "description": "Vote was on enabling wealthy individuals to avoid the Fair Share tax (i.e., the new surtax on income over $1 million) by reducing their taxable income.",
         "roll_call_number": "38",
         "bill_number": "S3",
         "amendment": "809",
@@ -55420,6 +55632,338 @@
         "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall120.pdf",
         "noVotes": 27,
         "yesVotes": 12
+      },
+      "131": {
+        "pm_score\n": "25s",
+        "keyword": "Consumer Protection ",
+        "description": "Vote was on banning third-party electric suppliers from enrolling new individual residential customers, protecting residents from unfair and deceptive practices that have led to higher energy bills for low-income families. ",
+        "roll_call_number": "131",
+        "bill_number": "S2738",
+        "amendment": "",
+        "vote_date": "",
+        "title": "Protecting Consumers from Shady Third-Party Electric Suppliers ",
+        "progressive_position": "YES",
+        "# of Y": "34",
+        "# of N": "4",
+        "tags": [
+          null
+        ],
+        "url": "https://malegislature.gov/Bills/193/S2738",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall131.pdf",
+        "noVotes": 4,
+        "yesVotes": 34
+      },
+      "166": {
+        "pm_score\n": "26s",
+        "keyword": "Revenue; Taxation",
+        "description": "Vote was on an amendment to extend the statutory two-day sales tax holiday to two weeks. Sales tax holidays drain vital revenue and don’t actually achieve the goals of tax progressivity or economic stimulus.",
+        "roll_call_number": "166",
+        "bill_number": "S4",
+        "amendment": "810",
+        "vote_date": "5/23/2024",
+        "title": "Expanding Costly Tax Gimmicks ",
+        "progressive_position": "NO",
+        "# of Y": "5",
+        "# of N": "34",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S4/810/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall166.pdf",
+        "noVotes": 34,
+        "yesVotes": 5
+      },
+      "167": {
+        "pm_score\n": "27s",
+        "keyword": "Revenue; Taxation",
+        "description": "Vote was on an amendment to undermine the Fair Share Amendment by allowing high-income couples to evade the surtax by filing separate tax returns if they have filed a joint federal tax return.",
+        "roll_call_number": "167",
+        "bill_number": "S4",
+        "amendment": "832",
+        "vote_date": "5/23/2024",
+        "title": "Enabling Fair Share Tax Evasion",
+        "progressive_position": "NO",
+        "# of Y": "10",
+        "# of N": "29",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S4/832/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall167.pdf",
+        "noVotes": 29,
+        "yesVotes": 10
+      },
+      "177": {
+        "pm_score\n": "28s",
+        "keyword": "Indigenous Peoples Agenda",
+        "description": "Vote was on an amendment to create a new advisory commission to determine a new seal and motto of the commonwealth (to replace the current very racist flag and seal), as recommended by the last commission. ",
+        "roll_call_number": "177",
+        "bill_number": "S4",
+        "amendment": "125",
+        "vote_date": "5/23/2024",
+        "title": "Flag & Seal Commission",
+        "progressive_position": "YES",
+        "# of Y": "30",
+        "# of N": "9",
+        "tags": [
+          "justice & equality"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S4/125/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall177.pdf",
+        "noVotes": 2,
+        "yesVotes": 37
+      },
+      "184": {
+        "pm_score\n": "29s",
+        "keyword": "Environmental Protection",
+        "description": "Vote was on making the ten-cent fee for recycled paper carryout bags in the Plastics Reduction Act optional for retailers. ",
+        "roll_call_number": "184",
+        "bill_number": "S2830",
+        "amendment": "1",
+        "vote_date": "6/20/2024",
+        "title": "Undermining Carryout Bag Fees ",
+        "progressive_position": "NO",
+        "# of Y": "8",
+        "# of N": "30",
+        "tags": [
+          null
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S2830/1/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall184.pdf",
+        "noVotes": 31,
+        "yesVotes": 7
+      },
+      "186": {
+        "pm_score\n": "30s",
+        "keyword": "Environmental Protection",
+        "description": "Vote was on a comprehensive bill to reduce plastic waste including by creating a statewide ban on carry-out plastic bags, preventing plastic utensils and straws from automatically being given to consumers, prohibiting single-use plastic bottle purchases by state agencies, and creating a statewide program for recycling large plastic objects like car seats. ",
+        "roll_call_number": "186",
+        "bill_number": "S2830",
+        "amendment": "",
+        "vote_date": "6/20/2024",
+        "title": "Plastics Reduction Act",
+        "progressive_position": "YES",
+        "# of Y": "38",
+        "# of N": "2",
+        "tags": [
+          null
+        ],
+        "url": "https://malegislature.gov/Bills/193/S2830",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall186.pdf",
+        "noVotes": 2,
+        "yesVotes": 38
+      },
+      "194": {
+        "pm_score\n": "31s",
+        "keyword": "Housing",
+        "description": "Vote was on an amendment to make it easier for communities opposed to building more housing to evade compliance with the MBTA Communities Act (i.e., the law requiring communities with MBTA service to establish a zoning district where multifamily housing can be built as of right) by creating a right to appeal if communities refuse to meet infrastructure needs and if they pretend that multifamily housing is antithetical to environmental protection or historic preservation.",
+        "roll_call_number": "194",
+        "bill_number": "S2834",
+        "amendment": "25",
+        "vote_date": "6/27/2024",
+        "title": "MBTA Community Act Appeal Process for NIMBY Towns",
+        "progressive_position": "NO",
+        "# of Y": "6",
+        "# of N": "34",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S2834/25/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall194.pdf",
+        "noVotes": 34,
+        "yesVotes": 6
+      },
+      "198": {
+        "pm_score\n": "32s",
+        "keyword": "Criminal Legal Reform ",
+        "description": "Vote was on an amendment to increase the age of juvenile jurisdiction to include 18-year-olds—keeping high school seniors out of the adult prison system.",
+        "roll_call_number": "198",
+        "bill_number": "S2856",
+        "amendment": "474",
+        "vote_date": "7/11/2024",
+        "title": "Keeping High School Seniors out of Adult Prisons",
+        "progressive_position": "YES",
+        "# of Y": "31",
+        "# of N": "9",
+        "tags": [
+          "justice & equality"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S2856/474/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall198.pdf",
+        "noVotes": 9,
+        "yesVotes": 31
+      },
+      "199": {
+        "pm_score\n": "33s",
+        "keyword": "Public Health ",
+        "description": "Vote was on an amendment to establish minimum public health standards in every community, increase capacity and effectiveness by incentivizing shared services, create a data collection and reporting system, and increase equity across communities through dedicated stable funding. ",
+        "roll_call_number": "199",
+        "bill_number": "S2856",
+        "amendment": "34",
+        "vote_date": "7/11/2024",
+        "title": "Strengthening Public Health Infrastructure ",
+        "progressive_position": "YES",
+        "# of Y": "35",
+        "# of N": "4",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S2856/34/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall199.pdf",
+        "noVotes": 4,
+        "yesVotes": 35
+      },
+      "201": {
+        "pm_score\n": "34s",
+        "keyword": "Taxation; Revenue",
+        "description": "Vote was on reducing the tax rate on short-term capital gains from 8.5 percent to 5 percent over three years, a cut that would disproportionately benefit the top 1 percent.",
+        "roll_call_number": "201",
+        "bill_number": "S2856",
+        "amendment": "27",
+        "vote_date": "7/11/2024",
+        "title": "Regressive Tax Cuts",
+        "progressive_position": "NO",
+        "# of Y": "5",
+        "# of N": "34",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S2856/27/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall201.pdf",
+        "noVotes": 34,
+        "yesVotes": 5
+      },
+      "210": {
+        "pm_score\n": "35s",
+        "keyword": "Health Care",
+        "description": "Vote was on creating a moratorium on any hospital, provider, or provider organization entering into any financial agreement with a private equity firm, real estate investment trust or management services organization until 180 days after the bill’s regulations go into effect. ",
+        "roll_call_number": "210",
+        "bill_number": "S2871",
+        "amendment": "153",
+        "vote_date": "7/18/2024",
+        "title": "Moratorium on Private Equity in Patient Care",
+        "progressive_position": "YES",
+        "# of Y": "14",
+        "# of N": "25",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/S2871/153/Senate/Preview",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall210.pdf",
+        "noVotes": 25,
+        "yesVotes": 14
+      },
+      "224": {
+        "pm_score\n": "36s",
+        "keyword": "LGBTQ Rights",
+        "description": "Vote was on updating Massachusetts’ forty-year-old parentage statutes to be inclusive of LGBTQ+ families and families formed through assisted reproduction.",
+        "roll_call_number": "224",
+        "bill_number": "H4750",
+        "amendment": "",
+        "vote_date": "7/31/2024",
+        "title": "Massachusetts Parentage Act",
+        "progressive_position": "YES",
+        "# of Y": "40",
+        "# of N": "0",
+        "tags": [
+          "justice & equality"
+        ],
+        "url": "https://malegislature.gov/Bills/193/H4750",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall224.pdf",
+        "noVotes": 0,
+        "yesVotes": 40
+      },
+      "226": {
+        "pm_score\n": "37s",
+        "keyword": "Health Care",
+        "description": "Vote was on comprehensive maternal health legislation that would expand equitable access to midwifery care, allow more birth centers to open, offer paid pregnancy loss leave, provide insurance coverage for medically necessary donor milk, and increase public health attention on maternal health. ",
+        "roll_call_number": "226",
+        "bill_number": "H4785",
+        "amendment": "",
+        "vote_date": "7/31/2024",
+        "title": "Maternal Health Omnibus",
+        "progressive_position": "YES",
+        "# of Y": "40",
+        "# of N": "0",
+        "tags": [
+          "economy"
+        ],
+        "url": "https://malegislature.gov/Bills/193/h4785",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall226.pdf",
+        "noVotes": 0,
+        "yesVotes": 40
+      },
+      "250": {
+        "pm_score\n": "38s",
+        "keyword": "Climate",
+        "description": "Vote was on legislation to reform siting and permitting laws, accelerate the state’s transition away from gas and toward renewable energy, and improve EV infrastructure. ",
+        "roll_call_number": "250",
+        "bill_number": "S2967",
+        "amendment": "",
+        "vote_date": "10/24/2024",
+        "title": "Climate Bill",
+        "progressive_position": "YES",
+        "# of Y": "38",
+        "# of N": "2",
+        "tags": [
+          null
+        ],
+        "url": "https://malegislature.gov/Bills/193/s2967",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/SenateRollCall250.pdf",
+        "noVotes": 2,
+        "yesVotes": 38
+      },
+      "1001": {
+        "pm_score\n": "39s",
+        "keyword": "",
+        "description": "Co-sponsored at least 50% of the bills tracked on our Progressive Scorecard website.",
+        "roll_call_number": "1001",
+        "bill_number": "",
+        "amendment": "",
+        "vote_date": "",
+        "title": "Progressive Agenda Cosponsorship > 50%",
+        "progressive_position": "YES",
+        "tags": [],
+        "noVotes": 29,
+        "yesVotes": 11,
+        "url": "https://malegislature.gov/Bills/193/",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/senateRollCall1001.pdf"
+      },
+      "1002": {
+        "pm_score\n": "40s",
+        "keyword": "",
+        "description": "Co-sponsored at least 75% of the bills tracked on our Progressive Scorecard website. ",
+        "roll_call_number": "1002",
+        "bill_number": "",
+        "amendment": "",
+        "vote_date": "",
+        "title": "Progressive Agenda Cosponsorship > 75% ",
+        "progressive_position": "YES",
+        "tags": [],
+        "noVotes": 33,
+        "yesVotes": 7,
+        "url": "https://malegislature.gov/Bills/193/",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/senateRollCall1002.pdf"
+      },
+      "1003": {
+        "pm_score\n": "41s",
+        "keyword": "Democracy",
+        "description": "Held office hours or town halls during the legislative session to create opportunities for constituents to make their voices heard. (This will be updated upon response.) ",
+        "roll_call_number": "1003",
+        "bill_number": "",
+        "amendment": "",
+        "vote_date": "",
+        "title": "Held Office Hours to Be Accessible to Constituents",
+        "progressive_position": "YES",
+        "# of Y": "",
+        "# of N": "",
+        "tags": [
+          "government"
+        ],
+        "noVotes": 27,
+        "yesVotes": 13,
+        "url": "https://malegislature.gov/Bills/193/",
+        "roll_call_url": "https://malegislature.gov/RollCall/193/senateRollCall1003.pdf"
       }
     },
     "sponsorship": [
@@ -55600,7 +56144,7 @@
           "H1379 / S858": false,
           "H1796 / S1494": false,
           "H1795 / S1979": false,
-          "H1710 / S942": false,
+          "H1710 / S942": true,
           "H3084 / S1990": false,
           "H2288 / S1510": false,
           "H544 / S268": false,
@@ -55611,7 +56155,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 5
+        "score": 6
       },
       {
         "id": "ocd-person/f81b07bd-cc43-47be-95ea-dca26f19a647",
@@ -56340,11 +56884,11 @@
         "data": {
           "H2908 / S1865": false,
           "H2909 / S1866": false,
-          "H2960 / S1784": false,
-          "H2964 / S1801": false,
-          "H2725 / S1875": false,
-          "H2708 / S1925": false,
-          "H2856 / S1788": false,
+          "H2960 / S1784": true,
+          "H2964 / S1801": true,
+          "H2725 / S1875": true,
+          "H2708 / S1925": true,
+          "H2856 / S1788": true,
           "H2743 / S1835": true,
           "H1925 / S1200": true,
           "H3069 / S2014": false,
@@ -56371,7 +56915,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 19
+        "score": 24
       },
       {
         "id": "ocd-person/b51c5c27-7da0-42f5-b67b-22085173af7a",
@@ -56892,7 +57436,7 @@
           "H1379 / S858": true,
           "H1796 / S1494": true,
           "H1795 / S1979": false,
-          "H1710 / S942": false,
+          "H1710 / S942": true,
           "H3084 / S1990": true,
           "H2288 / S1510": false,
           "H544 / S268": true,
@@ -56903,7 +57447,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 14
+        "score": 15
       },
       {
         "id": "ocd-person/c674060b-4568-43fa-b72d-0921f4876713",
@@ -57538,7 +58082,7 @@
           "H1379 / S858": true,
           "H1796 / S1494": true,
           "H1795 / S1979": true,
-          "H1710 / S942": false,
+          "H1710 / S942": true,
           "H3084 / S1990": true,
           "H2288 / S1510": true,
           "H544 / S268": true,
@@ -57549,7 +58093,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 28
+        "score": 29
       },
       {
         "id": "ocd-person/0ed98993-456c-4630-bd52-894bdde0c0b0",
@@ -58792,7 +59336,7 @@
           "H1379 / S858": false,
           "H1796 / S1494": true,
           "H1795 / S1979": true,
-          "H1710 / S942": false,
+          "H1710 / S942": true,
           "H3084 / S1990": true,
           "H2288 / S1510": false,
           "H544 / S268": true,
@@ -58803,7 +59347,7 @@
           "H3040 / S2024": false,
           "S1963": false
         },
-        "score": 10
+        "score": 11
       },
       {
         "id": "ocd-person/398f9a47-bc65-4c2a-b12e-347f375d8fac",
@@ -59032,6 +59576,44 @@
           "S1963": false
         },
         "score": 4
+      },
+      {
+        "id": "ocd-person/0e8c6c71-bca0-46fd-86d1-223d41ed5517",
+        "data": {
+          "H2908 / S1865": false,
+          "H2909 / S1866": false,
+          "H2960 / S1784": false,
+          "H2964 / S1801": false,
+          "H2725 / S1875": false,
+          "H2708 / S1925": false,
+          "H2856 / S1788": false,
+          "H2743 / S1835": false,
+          "H1925 / S1200": false,
+          "H3069 / S2014": false,
+          "H1940 / S1181": false,
+          "H603 / S261": false,
+          "H489 / S301": false,
+          "H495 / S246": false,
+          "H1260 / S816": false,
+          "H1239 / S744": false,
+          "H2103 / S1299": false,
+          "H2747 / S1771": false,
+          "H2894 / S1799": false,
+          "H1379 / S858": false,
+          "H1796 / S1494": false,
+          "H1795 / S1979": false,
+          "H1710 / S942": false,
+          "H3084 / S1990": false,
+          "H2288 / S1510": false,
+          "H544 / S268": false,
+          "H872  / S481": false,
+          "H3232 / S2365": false,
+          "H3237 / S2135": false,
+          "H26 / S8": false,
+          "H3040 / S2024": false,
+          "S1963": false
+        },
+        "score": 0
       },
       {
         "id": "ocd-person/6c3b63a2-ef13-43e5-b6de-d5e0901aa65a",
@@ -59830,44 +60412,6 @@
           "S1963": false
         },
         "score": 2
-      },
-      {
-        "id": "ocd-person/6b1bbe32-1b86-48a4-909e-ee1ba6c5c746",
-        "data": {
-          "H2908 / S1865": false,
-          "H2909 / S1866": false,
-          "H2960 / S1784": false,
-          "H2964 / S1801": false,
-          "H2725 / S1875": false,
-          "H2708 / S1925": false,
-          "H2856 / S1788": false,
-          "H2743 / S1835": false,
-          "H1925 / S1200": false,
-          "H3069 / S2014": false,
-          "H1940 / S1181": false,
-          "H603 / S261": false,
-          "H489 / S301": false,
-          "H495 / S246": false,
-          "H1260 / S816": false,
-          "H1239 / S744": false,
-          "H2103 / S1299": false,
-          "H2747 / S1771": false,
-          "H2894 / S1799": false,
-          "H1379 / S858": false,
-          "H1796 / S1494": false,
-          "H1795 / S1979": false,
-          "H1710 / S942": false,
-          "H3084 / S1990": false,
-          "H2288 / S1510": false,
-          "H544 / S268": false,
-          "H872  / S481": false,
-          "H3232 / S2365": false,
-          "H3237 / S2135": false,
-          "H26 / S8": false,
-          "H3040 / S2024": false,
-          "S1963": false
-        },
-        "score": 0
       },
       {
         "id": "ocd-person/72eea330-24b4-4207-a016-0b1e568e0b6e",
@@ -60996,7 +61540,7 @@
           "H1379 / S858": false,
           "H1796 / S1494": false,
           "H1795 / S1979": false,
-          "H1710 / S942": false,
+          "H1710 / S942": true,
           "H3084 / S1990": true,
           "H2288 / S1510": false,
           "H544 / S268": true,
@@ -61007,7 +61551,7 @@
           "H3040 / S2024": true,
           "S1963": false
         },
-        "score": 9
+        "score": 10
       },
       {
         "id": "ocd-person/a3f4c05a-b51a-4b8f-bc5d-d4cb82d74164",
@@ -62970,7 +63514,18 @@
           "92": "No",
           "99": "No",
           "100": "No",
-          "101": "No"
+          "101": "No",
+          "110": "No",
+          "111": "No",
+          "114": "No",
+          "115": "Yes",
+          "120": "Yes",
+          "124": "Yes",
+          "148": "Yes",
+          "201": "Yes",
+          "1001": "Yes",
+          "1002": "Yes",
+          "1003": "Yes"
         },
         "score": 0,
         "recordedVotePercentage": 100
@@ -62978,6 +63533,7 @@
       {
         "id": "Bill Number",
         "data": {
+          "0": "",
           "8": "H.2025",
           "14": "H.3770",
           "15": "H.3770",
@@ -62995,7 +63551,15 @@
           "92": "H2",
           "99": "H2",
           "100": "H2",
-          "101": "H2"
+          "101": "H2",
+          "110": "H4707",
+          "111": "H4707",
+          "114": "H4707",
+          "115": "H4707",
+          "120": "H4672",
+          "124": "H4773",
+          "148": "H4942",
+          "201": "S2967"
         },
         "score": 0,
         "recordedVotePercentage": 100
@@ -63021,7 +63585,18 @@
           "92": "92",
           "99": "99",
           "100": "100",
-          "101": "101"
+          "101": "101",
+          "110": "110",
+          "111": "111",
+          "114": "114",
+          "115": "115",
+          "120": "120",
+          "124": "124",
+          "148": "148",
+          "201": "201",
+          "1001": "1001",
+          "1002": "1002",
+          "1003": "1003"
         },
         "score": 0,
         "recordedVotePercentage": 100
@@ -63029,6 +63604,7 @@
       {
         "id": "Date",
         "data": {
+          "0": "",
           "8": "2/1/2023",
           "14": "4/13/2023",
           "15": "4/13/2023",
@@ -63046,7 +63622,15 @@
           "92": "4/25/2024",
           "99": "4/26/2024",
           "100": "4/26/2024",
-          "101": "4/26/2024"
+          "101": "4/26/2024",
+          "110": "6/5/2024",
+          "111": "6/5/2024",
+          "114": "6/5/2024",
+          "115": "6/5/2024",
+          "120": "6/12/2024",
+          "124": "6/12/2024",
+          "148": "7/30/2024",
+          "201": "11/14/2024"
         },
         "score": 0,
         "recordedVotePercentage": 100
@@ -63072,9 +63656,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63098,9 +63693,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63124,15 +63730,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 90,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/eab9b69f-0434-4307-972c-6acce9deb370",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -63150,15 +63767,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/ff433cf6-2895-4e01-b143-26747500f8a4",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -63176,9 +63804,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 74,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -63202,10 +63841,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": "NV",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 74,
-        "recordedVotePercentage": 100
+        "score": 72,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/f81b07bd-cc43-47be-95ea-dca26f19a647",
@@ -63228,9 +63878,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63254,9 +63915,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63280,9 +63952,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 87,
         "recordedVotePercentage": 100
       },
       {
@@ -63306,10 +63989,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 76,
-        "recordedVotePercentage": 89
+        "score": 75,
+        "recordedVotePercentage": 93
       },
       {
         "id": "ocd-person/ee42e89c-24dd-47b1-aafa-e16472680e07",
@@ -63332,10 +64026,21 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 6,
-        "recordedVotePercentage": 95
+        "score": 3,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/5a276629-f50a-4d9a-a54e-2c0e07f84968",
@@ -63358,9 +64063,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 5,
+        "score": 30,
         "recordedVotePercentage": 100
       },
       {
@@ -63384,9 +64100,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63410,10 +64137,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
-        "recordedVotePercentage": 100
+        "score": 76,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/0e72fc19-89be-49b9-8baf-5f35f938ec87",
@@ -63436,15 +64174,26 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": "NV",
+          "124": "NV",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 5,
-        "recordedVotePercentage": 100
+        "score": 25,
+        "recordedVotePercentage": 93
       },
       {
         "id": "ocd-person/59aed143-c5c1-4760-ac55-eab18600c451",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -63462,9 +64211,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -63488,9 +64248,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63514,9 +64285,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63540,9 +64322,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -63566,9 +64359,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63592,9 +64396,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -63618,9 +64433,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63644,10 +64470,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
         "score": 83,
-        "recordedVotePercentage": 95
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/a8225754-d88c-4343-8829-aa168b564cbd",
@@ -63670,15 +64507,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 95,
+        "score": 97,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/edcd5892-2488-4945-a3da-86f40012d396",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -63696,9 +64544,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -63722,9 +64581,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 87,
         "recordedVotePercentage": 100
       },
       {
@@ -63748,9 +64618,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63774,10 +64655,21 @@
           "92": "n/a",
           "99": "n/a",
           "100": "n/a",
-          "101": "n/a"
+          "101": "n/a",
+          "110": "n/a",
+          "111": "n/a",
+          "114": "n/a",
+          "115": "n/a",
+          "120": "n/a",
+          "124": "n/a",
+          "148": "n/a",
+          "201": "n/a",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 73,
-        "recordedVotePercentage": 58
+        "score": 57,
+        "recordedVotePercentage": 47
       },
       {
         "id": "ocd-person/650d9459-5ecd-4e1a-8a96-f061a15e0ebc",
@@ -63800,10 +64692,21 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
-        "recordedVotePercentage": 100
+        "score": 7,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/2e198563-4aeb-499b-8333-b4a46b605491",
@@ -63826,10 +64729,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 76,
-        "recordedVotePercentage": 89
+        "score": 75,
+        "recordedVotePercentage": 93
       },
       {
         "id": "ocd-person/b9019024-899b-41b3-a283-69c50866fabd",
@@ -63852,10 +64766,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 78,
-        "recordedVotePercentage": 95
+        "score": 76,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/cf295962-4f8d-427a-84e9-c7615ff94c8c",
@@ -63878,15 +64803,26 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 11,
+        "score": 10,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/df1a3cfc-1555-4a05-8a5c-03a7e53932aa",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -63904,9 +64840,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -63930,9 +64877,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -63956,9 +64914,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -63982,9 +64951,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 84,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -64008,15 +64988,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 74,
+        "score": 73,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/18bf433d-24e5-46cb-9d83-c2f9373204bd",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -64034,10 +65025,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
-        "recordedVotePercentage": 100
+        "score": 83,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/1b7d1710-da71-46cd-9ee3-fc891556f3a9",
@@ -64060,9 +65062,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": "-",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 73,
         "recordedVotePercentage": 100
       },
       {
@@ -64086,9 +65099,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -64112,15 +65136,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/db47013a-7653-4b44-8e11-9dbe4b85fec2",
         "data": {
-          "0": "-",
+          "0": "n/a",
           "8": " +",
           "14": "-",
           "15": "-",
@@ -64138,10 +65173,21 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "n/a",
+          "111": "n/a",
+          "114": "n/a",
+          "115": "n/a",
+          "120": "n/a",
+          "124": "n/a",
+          "148": "n/a",
+          "201": "n/a",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
-        "recordedVotePercentage": 95
+        "score": 10,
+        "recordedVotePercentage": 67
       },
       {
         "id": "ocd-person/49816a0c-b8e5-4586-859b-8a8f1ae9b6ab",
@@ -64164,9 +65210,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -64190,10 +65247,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
-        "recordedVotePercentage": 95
+        "score": 79,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/888457ba-c348-4826-b2c6-450dba5e38bd",
@@ -64216,10 +65284,21 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": " +",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 6,
-        "recordedVotePercentage": 95
+        "score": 10,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/cd05a88c-19f0-4fc5-bc3b-d339572842b7",
@@ -64242,10 +65321,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": "-"
+          "101": "-",
+          "110": " +",
+          "111": "-",
+          "114": "-",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 75,
-        "recordedVotePercentage": 84
+        "score": 69,
+        "recordedVotePercentage": 87
       },
       {
         "id": "ocd-person/3b6297d5-2c8d-42a8-ba9b-bb4e8f50c0e2",
@@ -64268,9 +65358,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64294,9 +65395,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64320,9 +65432,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64346,9 +65469,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -64372,9 +65506,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 84,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -64398,9 +65543,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 7,
         "recordedVotePercentage": 100
       },
       {
@@ -64424,10 +65580,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 76,
-        "recordedVotePercentage": 89
+        "score": 74,
+        "recordedVotePercentage": 90
       },
       {
         "id": "ocd-person/1e9d742c-c20b-45cf-9e22-e7752189fa7a",
@@ -64450,9 +65617,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -64476,9 +65654,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64502,9 +65691,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64528,9 +65728,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 21,
+        "score": 27,
         "recordedVotePercentage": 100
       },
       {
@@ -64554,9 +65765,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 90,
         "recordedVotePercentage": 100
       },
       {
@@ -64580,9 +65802,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64606,9 +65839,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 7,
         "recordedVotePercentage": 100
       },
       {
@@ -64632,9 +65876,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 84,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -64658,9 +65913,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -64684,9 +65950,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64710,9 +65987,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 74,
+        "score": 73,
         "recordedVotePercentage": 100
       },
       {
@@ -64736,10 +66024,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
-        "recordedVotePercentage": 95
+        "score": 79,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/799d49f3-28e5-46a1-bcc8-6370e9fbf44a",
@@ -64762,9 +66061,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -64788,9 +66098,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -64814,9 +66135,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 84,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -64840,9 +66172,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 90,
         "recordedVotePercentage": 100
       },
       {
@@ -64866,9 +66209,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64892,9 +66246,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 87,
         "recordedVotePercentage": 100
       },
       {
@@ -64918,9 +66283,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -64944,9 +66320,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": "-"
         },
-        "score": 84,
+        "score": 87,
         "recordedVotePercentage": 100
       },
       {
@@ -64970,9 +66357,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 7,
         "recordedVotePercentage": 100
       },
       {
@@ -64996,10 +66394,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
-        "recordedVotePercentage": 95
+        "score": 79,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/368c3f95-1124-4f0a-9ab5-7361cb2805d3",
@@ -65022,9 +66431,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 10,
         "recordedVotePercentage": 100
       },
       {
@@ -65048,9 +66468,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": " +",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 11,
+        "score": 17,
         "recordedVotePercentage": 100
       },
       {
@@ -65074,9 +66505,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -65100,10 +66542,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": "-",
+          "114": " +",
+          "115": " +",
+          "120": "NV",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 82,
-        "recordedVotePercentage": 89
+        "score": 74,
+        "recordedVotePercentage": 90
       },
       {
         "id": "ocd-person/4d0b5dda-d9d1-4c25-9c94-ce8fbd8ff398",
@@ -65126,10 +66579,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 88,
-        "recordedVotePercentage": 89
+        "score": 82,
+        "recordedVotePercentage": 93
       },
       {
         "id": "ocd-person/308b15a0-dc30-41be-be53-9e5827522cac",
@@ -65152,15 +66616,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": "-",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 73,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/61a670a7-37a6-42f0-8c8f-4cfc1d93693a",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -65178,9 +66653,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -65204,9 +66690,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65230,9 +66727,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65256,9 +66764,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": "-",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 74,
+        "score": 70,
         "recordedVotePercentage": 100
       },
       {
@@ -65282,9 +66801,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 84,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -65308,9 +66838,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 90,
         "recordedVotePercentage": 100
       },
       {
@@ -65334,10 +66875,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": "NV",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
-        "recordedVotePercentage": 100
+        "score": 83,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/06867e5f-9de5-4cb2-a3ae-a039e890718c",
@@ -65360,9 +66912,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -65386,15 +66949,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/033bf9eb-2706-4c5f-9f93-8e8d222bf2c0",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -65412,9 +66986,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -65438,10 +67023,21 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 6,
-        "recordedVotePercentage": 95
+        "score": 4,
+        "recordedVotePercentage": 93
       },
       {
         "id": "ocd-person/9f0c5984-accf-45a3-8922-07aa7ade0030",
@@ -65464,15 +67060,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 92,
-        "recordedVotePercentage": 68
+        "score": 83,
+        "recordedVotePercentage": 80
       },
       {
         "id": "ocd-person/f8772f1e-29f7-42e2-8a8c-ab4005153b05",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -65490,9 +67097,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 87,
         "recordedVotePercentage": 100
       },
       {
@@ -65516,9 +67134,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65542,9 +67171,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65568,10 +67208,58 @@
           "92": " +",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 53,
+        "score": 60,
         "recordedVotePercentage": 100
+      },
+      {
+        "id": "ocd-person/0e8c6c71-bca0-46fd-86d1-223d41ed5517",
+        "data": {
+          "0": "-",
+          "8": "n/a",
+          "14": "n/a",
+          "15": "n/a",
+          "16": "n/a",
+          "17": "n/a",
+          "33": "n/a",
+          "58": "n/a",
+          "59": "n/a",
+          "61": "n/a",
+          "62": "n/a",
+          "63": "n/a",
+          "65": "n/a",
+          "75": "n/a",
+          "79": "n/a",
+          "92": "-",
+          "99": "-",
+          "100": "-",
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": " +",
+          "124": " +",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
+        },
+        "score": 13,
+        "recordedVotePercentage": 53
       },
       {
         "id": "ocd-person/6c3b63a2-ef13-43e5-b6de-d5e0901aa65a",
@@ -65594,9 +67282,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65620,9 +67319,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 7,
         "recordedVotePercentage": 100
       },
       {
@@ -65646,9 +67356,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65672,9 +67393,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -65698,10 +67430,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
-        "recordedVotePercentage": 95
+        "score": 79,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/4183f327-e2a6-4b1a-9d23-161da1b5e261",
@@ -65724,9 +67467,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65750,10 +67504,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 74,
-        "recordedVotePercentage": 100
+        "score": 72,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/668db267-f9e1-4839-918d-c092741f96f9",
@@ -65776,10 +67541,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": "-"
         },
-        "score": 88,
-        "recordedVotePercentage": 84
+        "score": 89,
+        "recordedVotePercentage": 90
       },
       {
         "id": "ocd-person/8c42603e-4483-44f1-995f-5956fa09c73c",
@@ -65802,15 +67578,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/15ff9d00-e05e-470a-b89c-36038b1dd5bb",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "n/a",
           "14": "n/a",
           "15": "n/a",
@@ -65828,10 +67615,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
         "score": 92,
-        "recordedVotePercentage": 68
+        "recordedVotePercentage": 80
       },
       {
         "id": "ocd-person/2fd8669d-a5e2-40fd-bb2f-595210f1bf49",
@@ -65854,9 +67652,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65880,9 +67689,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 7,
         "recordedVotePercentage": 100
       },
       {
@@ -65906,10 +67726,21 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
-        "recordedVotePercentage": 95
+        "score": 7,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/ef175304-020e-4f79-b71f-dc961b738254",
@@ -65932,9 +67763,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65958,9 +67800,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -65984,9 +67837,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 87,
         "recordedVotePercentage": 100
       },
       {
@@ -66010,9 +67874,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66036,9 +67911,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 7,
         "recordedVotePercentage": 100
       },
       {
@@ -66062,9 +67948,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 90,
         "recordedVotePercentage": 100
       },
       {
@@ -66088,9 +67985,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66114,10 +68022,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 76,
-        "recordedVotePercentage": 89
+        "score": 75,
+        "recordedVotePercentage": 93
       },
       {
         "id": "ocd-person/6b1bbe32-1b86-48a4-909e-ee1ba6c5c746",
@@ -66140,9 +68059,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66166,9 +68096,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 5,
+        "score": 13,
         "recordedVotePercentage": 100
       },
       {
@@ -66192,10 +68133,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": "NV",
+          "148": " +",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
-        "recordedVotePercentage": 100
+        "score": 75,
+        "recordedVotePercentage": 93
       },
       {
         "id": "ocd-person/73394d70-485b-4fbf-a512-bf2da4e4cb3b",
@@ -66218,9 +68170,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66244,10 +68207,21 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": "NV",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 76,
-        "recordedVotePercentage": 89
+        "score": 74,
+        "recordedVotePercentage": 90
       },
       {
         "id": "ocd-person/8302648f-4ed2-454e-ad1e-d7389e25b8dc",
@@ -66270,9 +68244,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66296,9 +68281,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66322,9 +68318,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66348,9 +68355,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66374,9 +68392,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 42,
+        "score": 40,
         "recordedVotePercentage": 100
       },
       {
@@ -66400,9 +68429,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -66426,10 +68466,21 @@
           "92": " +",
           "99": "NV",
           "100": " +",
-          "101": "NV"
+          "101": "NV",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
         "score": 81,
-        "recordedVotePercentage": 84
+        "recordedVotePercentage": 90
       },
       {
         "id": "ocd-person/b23d4ed5-1994-4355-a102-cdf15ae57230",
@@ -66452,9 +68503,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66478,9 +68540,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66504,15 +68577,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 90,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/c3d23eba-caa6-4d2a-bbd2-5b8b2ca184ae",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": "-",
           "14": " +",
           "15": " +",
@@ -66530,9 +68614,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 74,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -66556,9 +68651,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66582,9 +68688,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -66608,9 +68725,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66634,9 +68762,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 89,
+        "score": 90,
         "recordedVotePercentage": 100
       },
       {
@@ -66660,10 +68799,21 @@
           "92": "NV",
           "99": "NV",
           "100": "NV",
-          "101": "NV"
+          "101": "NV",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
         "score": 73,
-        "recordedVotePercentage": 79
+        "recordedVotePercentage": 87
       },
       {
         "id": "ocd-person/6e81dcb7-4a04-4a88-b5f2-728a3336cf9d",
@@ -66686,10 +68836,21 @@
           "92": "NV",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": "NV",
+          "148": "NV",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
         "score": 67,
-        "recordedVotePercentage": 79
+        "recordedVotePercentage": 80
       },
       {
         "id": "ocd-person/d8895862-a95b-4982-bb2e-31c8ffa4bf57",
@@ -66712,10 +68873,21 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "NV",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
-        "recordedVotePercentage": 100
+        "score": 7,
+        "recordedVotePercentage": 97
       },
       {
         "id": "ocd-person/4cec2aa4-c17b-4749-b0e9-58a25695bf2f",
@@ -66738,9 +68910,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 5,
+        "score": 3,
         "recordedVotePercentage": 100
       },
       {
@@ -66764,9 +68947,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66790,9 +68984,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -66816,9 +69021,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66842,9 +69058,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 5,
+        "score": 3,
         "recordedVotePercentage": 100
       },
       {
@@ -66868,9 +69095,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 68,
+        "score": 70,
         "recordedVotePercentage": 100
       },
       {
@@ -66894,9 +69132,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -66920,9 +69169,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -66946,9 +69206,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 95,
+        "score": 97,
         "recordedVotePercentage": 100
       },
       {
@@ -66972,15 +69243,26 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/2dd65a68-0ea5-4c15-b5fe-bcde086eb357",
         "data": {
-          "0": "-",
+          "0": " +",
           "8": " +",
           "14": "-",
           "15": "-",
@@ -66998,9 +69280,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 11,
+        "score": 13,
         "recordedVotePercentage": 100
       },
       {
@@ -67024,9 +69317,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 7,
         "recordedVotePercentage": 100
       },
       {
@@ -67050,9 +69354,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -67076,9 +69391,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": "-",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 73,
         "recordedVotePercentage": 100
       },
       {
@@ -67102,9 +69428,20 @@
           "92": "-",
           "99": "-",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 47,
+        "score": 57,
         "recordedVotePercentage": 100
       },
       {
@@ -67128,9 +69465,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 77,
         "recordedVotePercentage": 100
       },
       {
@@ -67154,9 +69502,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 11,
+        "score": 10,
         "recordedVotePercentage": 100
       },
       {
@@ -67180,9 +69539,20 @@
           "92": " +",
           "99": " +",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": " +",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 84,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -67206,9 +69576,20 @@
           "92": "-",
           "99": "-",
           "100": "-",
-          "101": "-"
+          "101": "-",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
+          "124": "-",
+          "148": "-",
+          "201": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 11,
+        "score": 10,
         "recordedVotePercentage": 100
       },
       {
@@ -67232,9 +69613,20 @@
           "92": "-",
           "99": "-",
           "100": " +",
-          "101": " +"
+          "101": " +",
+          "110": " +",
+          "111": "-",
+          "114": " +",
+          "115": " +",
+          "120": " +",
+          "124": " +",
+          "148": " +",
+          "201": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 47,
+        "score": 53,
         "recordedVotePercentage": 100
       }
     ],
@@ -67265,7 +69657,24 @@
           "115": "No",
           "116": "Yes",
           "119": "No",
-          "120": "No"
+          "120": "No",
+          "131": "Yes",
+          "166": "No",
+          "167": "No",
+          "177": "Yes",
+          "184": "No",
+          "186": "Yes",
+          "194": "No",
+          "198": "Yes",
+          "199": "Yes",
+          "201": "No",
+          "210": "Yes",
+          "224": "Yes",
+          "226": "Yes",
+          "250": "Yes",
+          "1001": "Yes",
+          "1002": "Yes",
+          "1003": "Yes"
         },
         "score": 0,
         "recordedVotePercentage": 100
@@ -67273,6 +69682,7 @@
       {
         "id": "Bill Number",
         "data": {
+          "0": "",
           "7": "S.17",
           "36": "S.3",
           "38": "S.3",
@@ -67295,7 +69705,21 @@
           "115": "S.2697",
           "116": "S.2707",
           "119": "S.2708",
-          "120": "S.2708"
+          "120": "S.2708",
+          "131": "S2738",
+          "166": "S4",
+          "167": "S4",
+          "177": "S4",
+          "184": "S2830",
+          "186": "S2830",
+          "194": "S2834",
+          "198": "S2856",
+          "199": "S2856",
+          "201": "S2856",
+          "210": "S2871",
+          "224": "H4750",
+          "226": "H4785",
+          "250": "S2967"
         },
         "score": 0,
         "recordedVotePercentage": 100
@@ -67326,7 +69750,24 @@
           "115": "115",
           "116": "116",
           "119": "119",
-          "120": "120"
+          "120": "120",
+          "131": "131",
+          "166": "166",
+          "167": "167",
+          "177": "177",
+          "184": "184",
+          "186": "186",
+          "194": "194",
+          "198": "198",
+          "199": "199",
+          "201": "201",
+          "210": "210",
+          "224": "224",
+          "226": "226",
+          "250": "250",
+          "1001": "1001",
+          "1002": "1002",
+          "1003": "1003"
         },
         "score": 0,
         "recordedVotePercentage": 100
@@ -67334,6 +69775,7 @@
       {
         "id": "Date",
         "data": {
+          "0": "",
           "7": "2/9/2023",
           "36": "5/24/2023",
           "38": "5/25/2023",
@@ -67356,7 +69798,21 @@
           "115": "3/14/2024",
           "116": "3/14/2024",
           "119": "3/21/2024",
-          "120": "3/21/2024"
+          "120": "3/21/2024",
+          "131": "4/25/2024",
+          "166": "5/23/2024",
+          "167": "5/23/2024",
+          "177": "5/23/2024",
+          "184": "6/20/2024",
+          "186": "6/20/2024",
+          "194": "6/27/2024",
+          "198": "7/11/2024",
+          "199": "7/11/2024",
+          "201": "7/11/2024",
+          "210": "7/18/2024",
+          "224": "7/31/2024",
+          "226": "7/31/2024",
+          "250": "10/24/2024"
         },
         "score": 0,
         "recordedVotePercentage": 100
@@ -67387,9 +69843,26 @@
           "115": "-",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 78,
         "recordedVotePercentage": 100
       },
       {
@@ -67418,9 +69891,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": "-",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -67449,9 +69939,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -67480,7 +69987,24 @@
           "115": "-",
           "116": " +",
           "119": "-",
-          "120": "-"
+          "120": "-",
+          "131": " +",
+          "166": " +",
+          "167": "-",
+          "177": "-",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": "-",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
         "score": 63,
         "recordedVotePercentage": 100
@@ -67511,9 +70035,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 83,
+        "score": 85,
         "recordedVotePercentage": 100
       },
       {
@@ -67542,9 +70083,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -67573,9 +70131,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -67604,9 +70179,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": "-"
+          "120": "-",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": "-",
+          "186": " +",
+          "194": " +",
+          "198": "-",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 73,
         "recordedVotePercentage": 100
       },
       {
@@ -67635,7 +70227,24 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
         "score": 88,
         "recordedVotePercentage": 100
@@ -67666,7 +70275,24 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": "-"
         },
         "score": 88,
         "recordedVotePercentage": 100
@@ -67697,10 +70323,27 @@
           "115": "-",
           "116": " +",
           "119": "-",
-          "120": "-"
+          "120": "-",
+          "131": "-",
+          "166": "-",
+          "167": "-",
+          "177": " +",
+          "184": "-",
+          "186": "-",
+          "194": "-",
+          "198": "-",
+          "199": "-",
+          "201": "-",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 13,
-        "recordedVotePercentage": 33
+        "score": 20,
+        "recordedVotePercentage": 61
       },
       {
         "id": "ocd-person/5278711f-55ec-4a67-acc9-edd1db1c4e8c",
@@ -67728,9 +70371,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 88,
+        "score": 85,
         "recordedVotePercentage": 100
       },
       {
@@ -67759,9 +70419,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": "-"
         },
-        "score": 96,
+        "score": 95,
         "recordedVotePercentage": 100
       },
       {
@@ -67790,9 +70467,26 @@
           "115": "-",
           "116": " +",
           "119": "-",
-          "120": "-"
+          "120": "-",
+          "131": "-",
+          "166": "-",
+          "167": "-",
+          "177": " +",
+          "184": "-",
+          "186": "-",
+          "194": "-",
+          "198": "-",
+          "199": "-",
+          "201": "-",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": "-",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 25,
+        "score": 24,
         "recordedVotePercentage": 100
       },
       {
@@ -67821,9 +70515,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -67852,9 +70563,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": "-"
+          "120": "-",
+          "131": " +",
+          "166": " +",
+          "167": "-",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 63,
+        "score": 66,
         "recordedVotePercentage": 100
       },
       {
@@ -67883,7 +70611,24 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
         "score": 83,
         "recordedVotePercentage": 100
@@ -67914,10 +70659,27 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": "-"
         },
-        "score": 87,
-        "recordedVotePercentage": 96
+        "score": 90,
+        "recordedVotePercentage": 98
       },
       {
         "id": "ocd-person/6de50ed2-4fe8-4b98-894d-0bc391c876b5",
@@ -67945,9 +70707,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 92,
+        "score": 93,
         "recordedVotePercentage": 100
       },
       {
@@ -67976,7 +70755,24 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
         "score": 83,
         "recordedVotePercentage": 100
@@ -68007,15 +70803,32 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": "-",
+          "186": " +",
+          "194": "-",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
+        "score": 78,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/2fb1c0e0-edaa-4b55-9bbb-b6fe6b3e5dcc",
         "data": {
-          "0": "-",
+          "0": " +",
           "7": "-",
           "36": " +",
           "38": " +",
@@ -68038,7 +70851,24 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
         "score": 88,
         "recordedVotePercentage": 100
@@ -68069,9 +70899,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 83,
+        "score": 88,
         "recordedVotePercentage": 100
       },
       {
@@ -68100,9 +70947,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": "-",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 83,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -68131,9 +70995,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -68162,10 +71043,27 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": "NV",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 96,
-        "recordedVotePercentage": 96
+        "score": 95,
+        "recordedVotePercentage": 95
       },
       {
         "id": "ocd-person/31600b44-797b-4baf-80aa-0762b4f0aff5",
@@ -68193,9 +71091,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": "-"
+          "120": "-",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 79,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
@@ -68224,9 +71139,26 @@
           "115": " +",
           "116": " +",
           "119": "-",
-          "120": "-"
+          "120": "-",
+          "131": " +",
+          "166": " +",
+          "167": "-",
+          "177": " +",
+          "184": "-",
+          "186": " +",
+          "194": " +",
+          "198": "-",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 71,
+        "score": 68,
         "recordedVotePercentage": 100
       },
       {
@@ -68255,9 +71187,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 88,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -68286,15 +71235,32 @@
           "115": "-",
           "116": " +",
           "119": "-",
-          "120": "-"
+          "120": "-",
+          "131": "-",
+          "166": "-",
+          "167": "-",
+          "177": " +",
+          "184": "-",
+          "186": " +",
+          "194": "-",
+          "198": "-",
+          "199": "-",
+          "201": "-",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 29,
+        "score": 32,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/b857e2f7-b65a-4d34-a680-50dfff745a16",
         "data": {
-          "0": "-",
+          "0": " +",
           "7": "-",
           "36": " +",
           "38": " +",
@@ -68317,9 +71283,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 83,
+        "score": 88,
         "recordedVotePercentage": 100
       },
       {
@@ -68348,9 +71331,26 @@
           "115": "-",
           "116": " +",
           "119": "-",
-          "120": "-"
+          "120": "-",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 63,
+        "score": 71,
         "recordedVotePercentage": 100
       },
       {
@@ -68379,9 +71379,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 88,
+        "score": 83,
         "recordedVotePercentage": 100
       },
       {
@@ -68410,9 +71427,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": " +",
+          "1002": " +",
+          "1003": " +"
         },
-        "score": 96,
+        "score": 95,
         "recordedVotePercentage": 100
       },
       {
@@ -68441,15 +71475,32 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": " +",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 83,
+        "score": 80,
         "recordedVotePercentage": 100
       },
       {
         "id": "ocd-person/6a82d675-3496-48af-88cf-23c26355b01f",
         "data": {
-          "0": "-",
+          "0": " +",
           "7": "-",
           "36": " +",
           "38": " +",
@@ -68472,10 +71523,27 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": " +"
+          "120": " +",
+          "131": "NV",
+          "166": " +",
+          "167": " +",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
         "score": 83,
-        "recordedVotePercentage": 100
+        "recordedVotePercentage": 98
       },
       {
         "id": "ocd-person/e48879ef-ed74-4f93-8e5b-c0f3752d4fd7",
@@ -68503,10 +71571,27 @@
           "115": "n/a",
           "116": " +",
           "119": "n/a",
-          "120": "n/a"
+          "120": "n/a",
+          "131": "n/a",
+          "166": "n/a",
+          "167": "n/a",
+          "177": "n/a",
+          "184": "n/a",
+          "186": " +",
+          "194": " +",
+          "198": " +",
+          "199": "n/a",
+          "201": "n/a",
+          "210": "n/a",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 70,
-        "recordedVotePercentage": 42
+        "score": 68,
+        "recordedVotePercentage": 46
       },
       {
         "id": "ocd-person/429f87cf-f7a1-4201-ade4-9efeb9149d03",
@@ -68534,9 +71619,26 @@
           "115": "-",
           "116": " +",
           "119": "-",
-          "120": "-"
+          "120": "-",
+          "131": "-",
+          "166": "-",
+          "167": "-",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": "-",
+          "198": "-",
+          "199": "-",
+          "201": "-",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": "-"
         },
-        "score": 33,
+        "score": 37,
         "recordedVotePercentage": 100
       },
       {
@@ -68565,9 +71667,26 @@
           "115": " +",
           "116": " +",
           "119": "-",
-          "120": "-"
+          "120": "-",
+          "131": " +",
+          "166": "-",
+          "167": "-",
+          "177": " +",
+          "184": " +",
+          "186": " +",
+          "194": "-",
+          "198": "-",
+          "199": " +",
+          "201": "-",
+          "210": " +",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 50,
+        "score": 54,
         "recordedVotePercentage": 100
       },
       {
@@ -68596,9 +71715,26 @@
           "115": " +",
           "116": " +",
           "119": " +",
-          "120": "-"
+          "120": "-",
+          "131": " +",
+          "166": " +",
+          "167": "-",
+          "177": " +",
+          "184": "-",
+          "186": " +",
+          "194": " +",
+          "198": "-",
+          "199": " +",
+          "201": " +",
+          "210": "-",
+          "224": " +",
+          "226": " +",
+          "250": " +",
+          "1001": "-",
+          "1002": "-",
+          "1003": " +"
         },
-        "score": 79,
+        "score": 73,
         "recordedVotePercentage": 100
       }
     ]

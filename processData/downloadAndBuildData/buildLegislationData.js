@@ -15,6 +15,9 @@ const finalTags = Object.values(tagMap)
 
 const normalizeBillNumber = (billNumber) => billNumber.replace(/[.\s]/g, '')
 const normalizeTags = (tagString) => {
+  if (tagString === undefined) {
+    return []
+  }
   const tags = tagString
     .split(',')
     .map((tag) => tag.trim())

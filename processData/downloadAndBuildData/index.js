@@ -10,7 +10,7 @@ const downloadAndBuildData = async () => {
   // process into json tree
   const processedData = buildLegislationData()
   // fetch legislator details from openStates
-  await updateLegislatorData()
+  // await updateLegislatorData()
 
   fs.writeFileSync(
     `${__dirname}/../../src/data/legislation.json`,
