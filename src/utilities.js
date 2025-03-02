@@ -4,6 +4,7 @@ const termDict = {
   '2019-2020': '191st',
   '2021-2022': '192nd',
   '2023-2024': '193rd',
+  '2025-2026': '194th',
 }
 
 const getSessionNumber = (yearRange) => termDict[yearRange]

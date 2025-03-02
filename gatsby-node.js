@@ -57,7 +57,7 @@ exports.createPages = async function ({ actions, graphql }) {
   const { createPage } = actions
 
   //TODO - other sessions
-  let sessionYear = 2023
+  let sessionYear = 2025
   let sessionVotesYear = 2023
   // sponsorships
   const getLegislatorById = (id) => {

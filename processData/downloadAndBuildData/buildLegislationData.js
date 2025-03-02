@@ -165,6 +165,7 @@ const sessionDict = {
   2019: 191,
   2021: 192,
   2023: 193,
+  2025: 194,
 }
 
 const buildLegislationDataForYear = (year) => {
@@ -201,5 +202,6 @@ module.exports = () => {
     2019: buildLegislationDataForYear(2019),
     2021: buildLegislationDataForYear(2021),
     2023: buildLegislationDataForYear(2023),
+    2025: buildLegislationDataForYear(2025),
   }
 }
