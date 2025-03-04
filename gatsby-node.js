@@ -117,15 +117,20 @@ exports.createPages = async function ({ actions, graphql }) {
       const pairedBill = billNameMap.get(name)
       pairedBill[`${chamber}BillNumber`] = billNumber
       pairedBill[`${chamber}Status`] = billData.status
+      pairedBill[`${chamber}LeadSponsors`] = billData.sponsors.split('&').map(sponsor => sponsor.trim())
       billData['houseBillNumber'] = pairedBill['houseBillNumber']
       billData['senateBillNumber'] = pairedBill['senateBillNumber']
       billData['houseStatus'] = pairedBill['houseStatus']
       billData['senateStatus'] = pairedBill['senateStatus']
+      billData['senateLeadSponsors'] = pairedBill['senateLeadSponsors']
+      billData['houseLeadSponsors'] = pairedBill['houseLeadSponsors']
+      billData.sponsors = billData.senateLeadSponsors.concat(billData.houseLeadSponsors).join(', ')
       validateBillStatuses(pairedBill)
     } else {
       // First occurrence of this name
       billData[`${chamber}BillNumber`] = billNumber
       billData[`${chamber}Status`] = billData.status
+      billData[`${chamber}LeadSponsors`] = billData.sponsors.split('&').map(sponsor => sponsor.trim())
       billNameMap.set(name, billData)
     }
   }
@@ -135,6 +140,7 @@ exports.createPages = async function ({ actions, graphql }) {
     let sortedSponsors = []
     const [billNumber, billData] = sponsoredBill
     consolidateBills(billNumber, billData, nameMap)
+
     let otherBillNames = ''
     sortedSponsors = sponsors
       .filter((sponsor) => {
@@ -154,8 +160,21 @@ exports.createPages = async function ({ actions, graphql }) {
         }
       })
 
+    if (billData.houseBillNumber === undefined || billData.senateBillNumber === undefined)
+      return
+
     createPage({
-      path: `/sponsorships/${billNumber}`,
+      path: `/sponsorships/${billData.houseBillNumber}`,
+      component: sponsoredBillTemplate,
+      context: {
+        billData: { ...billData, otherBillNames },
+        sponsors: sortedSponsors,
+        houseSponsors: sortedSponsors.filter(isHouseRep),
+        senateSponsors: sortedSponsors.filter(isSenator),
+      },
+    })
+    createPage({
+      path: `/sponsorships/${billData.senateBillNumber}`,
       component: sponsoredBillTemplate,
       context: {
         billData: { ...billData, otherBillNames },
