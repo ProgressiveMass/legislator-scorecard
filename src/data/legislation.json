@@ -54956,8 +54956,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4707/29/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall110.pdf",
-        "noVotes": 135,
-        "yesVotes": 25
+        "noVotes": 133,
+        "yesVotes": 27
       },
       "111": {
         "pm_score\n": "21h",
@@ -54976,8 +54976,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4707/129/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall111.pdf",
-        "noVotes": 130,
-        "yesVotes": 30
+        "noVotes": 128,
+        "yesVotes": 32
       },
       "114": {
         "pm_score\n": "22h",
@@ -54996,8 +54996,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4707/348/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall114.pdf",
-        "noVotes": 132,
-        "yesVotes": 28
+        "noVotes": 130,
+        "yesVotes": 30
       },
       "115": {
         "pm_score\n": "23h",
@@ -55016,8 +55016,8 @@
         ],
         "url": "https://malegislature.gov/Bills/GetAmendmentContent/193/H4707/B/House/Preview",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall115.pdf",
-        "noVotes": 23,
-        "yesVotes": 137
+        "noVotes": 25,
+        "yesVotes": 135
       },
       "120": {
         "pm_score\n": "24h",
@@ -55036,8 +55036,8 @@
         ],
         "url": "https://malegislature.gov/Bills/193/H4672",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall120.pdf",
-        "noVotes": 21,
-        "yesVotes": 137
+        "noVotes": 22,
+        "yesVotes": 136
       },
       "124": {
         "pm_score\n": "25h",
@@ -55076,8 +55076,8 @@
         ],
         "url": "https://malegislature.gov/Bills/193/H4942",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall148.pdf",
-        "noVotes": 22,
-        "yesVotes": 136
+        "noVotes": 23,
+        "yesVotes": 135
       },
       "201": {
         "pm_score\n": "27h",
@@ -55096,8 +55096,8 @@
         ],
         "url": "https://malegislature.gov/Bills/193/s2967",
         "roll_call_url": "https://malegislature.gov/RollCall/193/HouseRollCall201.pdf",
-        "noVotes": 16,
-        "yesVotes": 134
+        "noVotes": 18,
+        "yesVotes": 132
       },
       "1001": {
         "pm_score\n": "28h",
@@ -64064,19 +64064,19 @@
           "99": "-",
           "100": "-",
           "101": "-",
-          "110": " +",
-          "111": " +",
-          "114": " +",
-          "115": " +",
-          "120": " +",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
+          "120": "-",
           "124": " +",
           "148": " +",
-          "201": " +",
+          "201": "-",
           "1001": "-",
           "1002": "-",
           "1003": "-"
         },
-        "score": 30,
+        "score": 10,
         "recordedVotePercentage": 100
       },
       {
@@ -64175,19 +64175,19 @@
           "99": "-",
           "100": "-",
           "101": "-",
-          "110": " +",
-          "111": " +",
-          "114": " +",
-          "115": " +",
+          "110": "-",
+          "111": "-",
+          "114": "-",
+          "115": "-",
           "120": "NV",
           "124": "NV",
-          "148": " +",
-          "201": " +",
+          "148": "-",
+          "201": "-",
           "1001": "-",
           "1002": "-",
           "1003": "-"
         },
-        "score": 25,
+        "score": 4,
         "recordedVotePercentage": 93
       },
       {
@@ -72439,7 +72439,7 @@
         "other_names": "",
         "description": "Enables eligible citizens to register to vote at the polls, eliminating the arbitrary 10-day voter registration window",
         "tags": [
-          null
+          "government"
         ],
         "url": "https://malegislature.gov/Bills/194/HD856"
       },
@@ -72457,7 +72457,7 @@
         "other_names": "",
         "description": "Enables eligible citizens to register to vote at the polls, eliminating the arbitrary 10-day voter registration window",
         "tags": [
-          null
+          "government"
         ],
         "url": "https://malegislature.gov/Bills/194/SD667"
       },
@@ -72469,13 +72469,13 @@
         "dock_number": "2673",
         "status": "Not Yet",
         "name": "An Act decoupling the municipal census from voter registration",
-        "sponsors": "Rep. Shirley Arriago ",
+        "sponsors": "Rep. Shirley Arriaga",
         "shorthand_title": "Decoupling the Municipal Census from Voter Rolls",
         "key_words": "",
         "other_names": "",
         "description": "Ends the use of the municipal census to remove voters from the active voter lists",
         "tags": [
-          null
+          "government"
         ],
         "url": "https://malegislature.gov/Bills/194/HD2673"
       },
@@ -72493,7 +72493,7 @@
         "other_names": "",
         "description": "Ends the use of the municipal census to remove voters from the active voter lists",
         "tags": [
-          null
+          "government"
         ],
         "url": "https://malegislature.gov/Bills/194/SD636"
       },
@@ -72511,7 +72511,7 @@
         "other_names": "",
         "description": "Promotes transparency in state government by removing the Governor’s exemption from public records law, requiring committee votes and legislative testimony to be public, and requiring 2 weeks notice for legislative hearings",
         "tags": [
-          null
+          "government"
         ],
         "url": "https://malegislature.gov/Bills/194/SD467"
       }

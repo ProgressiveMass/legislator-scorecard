@@ -7,6 +7,7 @@ const tagMap = {
   'good govt/strong democracy': 'government',
   'good government & strong democracy': 'government',
   'strong democracy': 'government',
+  'good government/strong democracy': 'government',
   'infrastructure/environment': 'environment',
   'sustainable infrastructure & environmental protection': 'environment',
 }
