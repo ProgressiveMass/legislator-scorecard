@@ -37,6 +37,7 @@ const BillInformation = styled.div`
   margin-top: 2rem;
   background-color: white;
   padding: 2rem;
+  border-radius: 6px;
 `
 const BillTitle = styled.h2`
   @media ${QUERIES.tabletAndSmaller} {

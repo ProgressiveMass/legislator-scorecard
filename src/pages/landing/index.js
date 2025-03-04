@@ -72,7 +72,7 @@ export default () => {
           </div>
           <div className='row align-items-stretch pb-4'>
             <div className='col-md-4 mb-4 mb-md-0'>
-              <div className='white-background p-3 mx-auto' style={{ maxWidth: '400px' }}>
+              <div className='white-background p-3 mx-auto landing-section-card'>
                 <h3 className='h4'>
                   <img
                     src={require('./images/fine_print.svg')}
@@ -89,7 +89,7 @@ export default () => {
               </div>
             </div>
             <div className='col-md-4 mb-4 mb-md-0'>
-              <div className='white-background p-3 mx-auto' style={{ maxWidth: '400px' }}>
+              <div className='white-background p-3 mx-auto landing-section-card'>
                 <h3 className='h4'>
                   <img
                     src={require('./images/legislator.svg')}
@@ -106,7 +106,7 @@ export default () => {
               </div>
             </div>
             <div className='col-md-4'>
-              <div className='white-background p-3 mx-auto' style={{ maxWidth: '400px' }}>
+              <div className='white-background p-3 mx-auto landing-section-card'>
                 <h3 className='h4'>
                   <img
                     src={require('./images/collaboration.svg')}
