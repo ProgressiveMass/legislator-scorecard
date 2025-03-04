@@ -61,11 +61,11 @@ export default function SponsoredBill({
 }) {
   const tabItems = [
     {
-      title: 'House Reps',
+      title: `House Reps (${houseSponsors.length})`,
       component: <LegislatorList data={houseSponsors} chamber='lower' sessionNumber={'193rd'} />,
     },
     {
-      title: 'Senators',
+      title: `Senators (${senateSponsors.length})`,
       component: <LegislatorList data={senateSponsors} chamber='upper' sessionNumber={'193rd'} />,
     },
   ].map((t) => {
@@ -79,7 +79,7 @@ export default function SponsoredBill({
       <Wrapper>
         <Container className='module-container tinted-background '>
           <BillInformation>
-            <BillTitle>{bill.name}</BillTitle>
+            <BillTitle>{bill.shorthand_title}</BillTitle>
             <LinkContainer>
               {bill.otherBillNames.split('/').map((bill) => (
                 <span key={bill}>
@@ -89,6 +89,7 @@ export default function SponsoredBill({
                 </span>
               ))}
             </LinkContainer>
+            <p>Full title: {bill.name} </p>
             <p>Filed by {bill.sponsors} </p>
             <p>{bill.description}</p>
           </BillInformation>
