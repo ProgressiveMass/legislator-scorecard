@@ -57,16 +57,17 @@ const LinkContainer = styled.p`
 `
 
 export default function SponsoredBill({
-  pageContext: { billData: bill, houseSponsors, senateSponsors },
+  pageContext: { billData: bill, houseSponsors, senateSponsors, votesSessionOrdinal, sponsorshipsSessionNumber },
 }) {
+  console.log('bill: ', bill)
   const tabItems = [
     {
       title: `House Reps (${houseSponsors.length})`,
-      component: <LegislatorList data={houseSponsors} chamber='lower' sessionNumber={'193rd'} />,
+      component: <LegislatorList data={houseSponsors} chamber='lower' sessionNumber={votesSessionOrdinal} />,
     },
     {
       title: `Senators (${senateSponsors.length})`,
-      component: <LegislatorList data={senateSponsors} chamber='upper' sessionNumber={'193rd'} />,
+      component: <LegislatorList data={senateSponsors} chamber='upper' sessionNumber={votesSessionOrdinal} />,
     },
   ].map((t) => {
     return {
@@ -83,7 +84,7 @@ export default function SponsoredBill({
             <LinkContainer>
               {bill.otherBillNames.split('/').map((bill) => (
                 <span key={bill}>
-                  <a href={`https://malegislature.gov/Bills/193/${bill.trim()}`} target='__blank'>
+                  <a href={`https://malegislature.gov/Bills/${sponsorshipsSessionNumber}/${bill.trim()}`} target='__blank'>
                     {bill.trim()}
                   </a>
                 </span>

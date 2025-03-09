@@ -52,13 +52,16 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
   })
 }
 
+//TODO - other sessions
+const sponsorshipsSessionNumber = 194
+const votesSessionOrdinal = '193rd'
+const sponsorshipsSessionYear = 2025
+const votesSessionYear = 2023
+
 // create individual legislator pages
 exports.createPages = async function ({ actions, graphql }) {
   const { createPage } = actions
 
-  //TODO - other sessions
-  let sessionYear = 2025
-  let sessionVotesYear = 2023
   // sponsorships
   const getLegislatorById = (id) => {
     let legislator =
@@ -71,19 +74,19 @@ exports.createPages = async function ({ actions, graphql }) {
       )
     }
     let votes =
-      legislationData[sessionVotesYear]?.houseVotes?.find((vote) => vote.id === id) ??
-      legislationData[sessionVotesYear]?.senateVotes?.find((vote) => vote.id === id)
+      legislationData[votesSessionYear]?.houseVotes?.find((vote) => vote.id === id) ??
+      legislationData[votesSessionYear]?.senateVotes?.find((vote) => vote.id === id)
     return {
       ...legislator,
       ...votes,
     }
   }
 
-  let sponsoredBills = Object.entries(legislationData[sessionYear].sponsoredBills)
+  let sponsoredBills = Object.entries(legislationData[sponsorshipsSessionYear].sponsoredBills)
 
   const sponsoredBillTemplate = path.resolve(`./src/components/sponsorships/sponsorships.js`)
 
-  let sponsors = legislationData[sessionYear].sponsorship.map((sponsorshipData) => {
+  let sponsors = legislationData[sponsorshipsSessionYear].sponsorship.map((sponsorshipData) => {
     let legislatorData = getLegislatorById(sponsorshipData.id)
     return {
       sponsorshipData: { ...sponsorshipData.data, ...sponsorshipData.score },
@@ -163,7 +166,7 @@ exports.createPages = async function ({ actions, graphql }) {
     if (billData.houseBillNumber === undefined || billData.senateBillNumber === undefined)
       return
 
-    createPage({
+    const createPageHouseBillData = {
       path: `/sponsorships/${billData.houseBillNumber}`,
       component: sponsoredBillTemplate,
       context: {
@@ -171,18 +174,13 @@ exports.createPages = async function ({ actions, graphql }) {
         sponsors: sortedSponsors,
         houseSponsors: sortedSponsors.filter(isHouseRep),
         senateSponsors: sortedSponsors.filter(isSenator),
+        votesSessionOrdinal,
+        sponsorshipsSessionNumber,
       },
-    })
-    createPage({
-      path: `/sponsorships/${billData.senateBillNumber}`,
-      component: sponsoredBillTemplate,
-      context: {
-        billData: { ...billData, otherBillNames },
-        sponsors: sortedSponsors,
-        houseSponsors: sortedSponsors.filter(isHouseRep),
-        senateSponsors: sortedSponsors.filter(isSenator),
-      },
-    })
+    }
+    const createPageSenateBillData = { ...createPageHouseBillData, path: `/sponsorships/${billData.houseBillNumber}` }
+    createPage(createPageHouseBillData)
+    createPage(createPageSenateBillData)
   })
   const consolidatedBills = Array.from(nameMap.values());
 
