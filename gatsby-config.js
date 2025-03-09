@@ -2,6 +2,7 @@ if (process.env.STAGING) {
   require("dotenv").config({
     path: `.env.staging`,
   })
+  console.log("Building for staging environment")
 } else {
   require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
