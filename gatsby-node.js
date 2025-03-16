@@ -64,7 +64,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
   // sponsorships
   const getLegislatorById = (id) => {
-    let legislator =
+    const legislator =
       houseLegislators.find((legislator) => legislator.id === id) ??
       senateLegislators?.find((legislator) => legislator.id === id)
     if (legislator === undefined) {
@@ -73,7 +73,7 @@ exports.createPages = async function ({ actions, graphql }) {
         `current legislators provided by Open States. Possibly a typo in the ID, or a retired legislator.`
       )
     }
-    let votes =
+    const votes =
       legislationData[votesSessionYear]?.houseVotes?.find((vote) => vote.id === id) ??
       legislationData[votesSessionYear]?.senateVotes?.find((vote) => vote.id === id)
     return {
@@ -82,12 +82,12 @@ exports.createPages = async function ({ actions, graphql }) {
     }
   }
 
-  let sponsoredBills = Object.entries(legislationData[sponsorshipsSessionYear].sponsoredBills)
+  const sponsoredBills = Object.entries(legislationData[sponsorshipsSessionYear].sponsoredBills)
 
   const sponsoredBillTemplate = path.resolve(`./src/components/sponsorships/sponsorships.js`)
 
-  let sponsors = legislationData[sponsorshipsSessionYear].sponsorship.map((sponsorshipData) => {
-    let legislatorData = getLegislatorById(sponsorshipData.id)
+  const sponsors = legislationData[sponsorshipsSessionYear].sponsorship.map((sponsorshipData) => {
+    const legislatorData = getLegislatorById(sponsorshipData.id)
     return {
       sponsorshipData: { ...sponsorshipData.data, ...sponsorshipData.score },
       ...legislatorData,
@@ -116,7 +116,7 @@ exports.createPages = async function ({ actions, graphql }) {
   sponsoredBills.forEach((sponsoredBill) => {
     const [billNumber, billData] = sponsoredBill
     const name = billData.shorthand_title.toLowerCase().trim()
-    let chamber = Array.from(billNumber)[0] == 'H' ? 'house' : 'senate'
+    const chamber = Array.from(billNumber)[0] == 'H' ? 'house' : 'senate'
     if (billNamesToConsolidatedBillsMap.has(name)) {
       // Found a paired bill
       const pairedBill = billNamesToConsolidatedBillsMap.get(name)
@@ -144,7 +144,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
   consolidatedBills.forEach((billData) => {
     let otherBillNames = ''
-    let sortedSponsors = sponsors
+    const sortedSponsors = sponsors
       .filter((sponsor) => {
         if (!sponsor.id) return false
         for (const bills in sponsor.sponsorshipData) {
