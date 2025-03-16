@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const getBillStatus = (houseStatus, senateStatus) => {
-  let billStatus = 'Not Passed'
+  let billStatus = 'Not Passed Yet'
   let billStatusColor = 'badge-gray'
 
   if (houseStatus === 'Passed') {

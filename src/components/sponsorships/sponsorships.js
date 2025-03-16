@@ -37,6 +37,8 @@ const BillInformation = styled.div`
   margin-top: 2rem;
   background-color: white;
   padding: 2rem;
+  border-radius: 6px;
+  width: 100%;
 `
 const BillTitle = styled.h2`
   @media ${QUERIES.tabletAndSmaller} {
@@ -56,16 +58,16 @@ const LinkContainer = styled.p`
 `
 
 export default function SponsoredBill({
-  pageContext: { billData: bill, houseSponsors, senateSponsors },
+  pageContext: { billData: bill, houseSponsors, senateSponsors, votesSessionOrdinal, sponsorshipsSessionNumber },
 }) {
   const tabItems = [
     {
-      title: 'House Reps',
-      component: <LegislatorList data={houseSponsors} chamber='lower' sessionNumber={'193rd'} />,
+      title: `House Reps (${houseSponsors.length})`,
+      component: <LegislatorList data={houseSponsors} chamber='lower' sessionNumber={votesSessionOrdinal} />,
     },
     {
-      title: 'Senators',
-      component: <LegislatorList data={senateSponsors} chamber='upper' sessionNumber={'193rd'} />,
+      title: `Senators (${senateSponsors.length})`,
+      component: <LegislatorList data={senateSponsors} chamber='upper' sessionNumber={votesSessionOrdinal} />,
     },
   ].map((t) => {
     return {
@@ -78,16 +80,17 @@ export default function SponsoredBill({
       <Wrapper>
         <Container className='module-container tinted-background '>
           <BillInformation>
-            <BillTitle>{bill.name}</BillTitle>
+            <BillTitle>{bill.shorthand_title}</BillTitle>
             <LinkContainer>
               {bill.otherBillNames.split('/').map((bill) => (
                 <span key={bill}>
-                  <a href={`https://malegislature.gov/Bills/193/${bill.trim()}`} target='__blank'>
+                  <a href={`https://malegislature.gov/Bills/${sponsorshipsSessionNumber}/${bill.trim()}`} target='__blank'>
                     {bill.trim()}
                   </a>
                 </span>
               ))}
             </LinkContainer>
+            <p>Full title: {bill.name} </p>
             <p>Filed by {bill.sponsors} </p>
             <p>{bill.description}</p>
           </BillInformation>

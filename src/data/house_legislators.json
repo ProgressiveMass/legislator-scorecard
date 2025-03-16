@@ -1,26 +1,8 @@
 [
   {
-    "id": "ocd-person/95fef9c7-c5c1-415c-95ef-94e4d87e3a72",
-    "name": "Bill Straus",
-    "givenName": "William M.",
-    "familyName": "Straus",
-    "image": "https://malegislature.gov/Legislators/Profile/170/WMS1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/WMS1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "10th Bristol",
-    "email": "william.straus@mahouse.gov",
-    "phone": "617-722-2400",
-    "url": "https://malegislature.gov/Legislators/Profile/WMS1",
-    "memberCode": "WMS1"
-  },
-  {
     "id": "ocd-person/8c42603e-4483-44f1-995f-5956fa09c73c",
     "name": "Frank Moran",
-    "givenName": "Frank A.",
+    "givenName": "Frank",
     "familyName": "Moran",
     "image": "https://malegislature.gov/Legislators/Profile/170/FAM1.jpg",
     "links": [
@@ -38,7 +20,7 @@
   {
     "id": "ocd-person/b601dee7-1ad1-4f36-b585-b0fb5077fd89",
     "name": "Dave Muradian",
-    "givenName": "David K.",
+    "givenName": "Dave",
     "familyName": "Muradian",
     "image": "https://malegislature.gov/Legislators/Profile/170/DKM1.jpg",
     "links": [
@@ -56,7 +38,7 @@
   {
     "id": "ocd-person/1ea6937d-a39e-41e2-92fb-47c2966cd52e",
     "name": "John Lawn",
-    "givenName": "John J.",
+    "givenName": "John",
     "familyName": "Lawn",
     "image": "https://malegislature.gov/Legislators/Profile/170/JJL2.jpg",
     "links": [
@@ -74,7 +56,7 @@
   {
     "id": "ocd-person/0e6c20bd-bfcb-445c-a1ce-3be99e26398e",
     "name": "Joe McKenna",
-    "givenName": "Joseph D.",
+    "givenName": "Joe",
     "familyName": "McKenna",
     "image": "https://malegislature.gov/Legislators/Profile/170/JDM1.jpg",
     "links": [
@@ -92,7 +74,7 @@
   {
     "id": "ocd-person/0e38852a-52b0-4aac-8a65-fa3fc964c88e",
     "name": "Colleen Garry",
-    "givenName": "Colleen M.",
+    "givenName": "Colleen",
     "familyName": "Garry",
     "image": "https://malegislature.gov/Legislators/Profile/170/CMG1.jpg",
     "links": [
@@ -110,7 +92,7 @@
   {
     "id": "ocd-person/b9a91cec-bad7-43a7-8fd2-60cd704bd7ab",
     "name": "Carmine Gentile",
-    "givenName": "Carmine Lawrence",
+    "givenName": "Carmine",
     "familyName": "Gentile",
     "image": "https://malegislature.gov/Legislators/Profile/170/CLG1.jpg",
     "links": [
@@ -146,7 +128,7 @@
   {
     "id": "ocd-person/c0519476-08fc-44af-9114-c77d197f883d",
     "name": "Danny Ryan",
-    "givenName": "Daniel Joseph",
+    "givenName": "Danny",
     "familyName": "Ryan",
     "image": "https://malegislature.gov/Legislators/Profile/170/djr1.jpg",
     "links": [
@@ -167,7 +149,7 @@
   {
     "id": "ocd-person/f8772f1e-29f7-42e2-8a8c-ab4005153b05",
     "name": "Adrian Madaro",
-    "givenName": "Adrian C.",
+    "givenName": "Adrian",
     "familyName": "Madaro",
     "image": "https://malegislature.gov/Legislators/Profile/170/ACM1.jpg",
     "links": [
@@ -185,7 +167,7 @@
   {
     "id": "ocd-person/5a276629-f50a-4d9a-a54e-2c0e07f84968",
     "name": "Donnie Berthiaume",
-    "givenName": "Donald R.",
+    "givenName": "Donnie",
     "familyName": "Berthiaume",
     "image": "https://malegislature.gov/Legislators/Profile/170/DRB1.jpg",
     "links": [
@@ -203,7 +185,7 @@
   {
     "id": "ocd-person/51adc4d9-23d8-442f-b692-c4e4204f552e",
     "name": "Dave Rogers",
-    "givenName": "David M.",
+    "givenName": "Dave",
     "familyName": "Rogers",
     "image": "https://malegislature.gov/Legislators/Profile/170/DMR1.jpg",
     "links": [
@@ -222,45 +204,9 @@
     "memberCode": "DMR1"
   },
   {
-    "id": "ocd-person/650d9459-5ecd-4e1a-8a96-f061a15e0ebc",
-    "name": "Angelo D'Emilia",
-    "givenName": "Angelo",
-    "familyName": "D'Emilia",
-    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Angelo-DEmilia.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/ALD1"
-      }
-    ],
-    "party": "Republican",
-    "district": "8th Plymouth",
-    "email": "angelo.d'emilia@mahouse.gov",
-    "phone": "508-697-2700",
-    "url": "https://malegislature.gov/Legislators/Profile/ALD1",
-    "memberCode": "ALD1"
-  },
-  {
-    "id": "ocd-person/0df5de43-f3a3-4988-82fb-7f951fa02753",
-    "name": "Ruth Balser",
-    "givenName": "Ruth B.",
-    "familyName": "Balser",
-    "image": "https://malegislature.gov/Legislators/Profile/170/RBB1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/RBB1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "12th Middlesex",
-    "email": "ruth.balser@mahouse.gov",
-    "phone": "617-722-2199",
-    "url": "https://malegislature.gov/Legislators/Profile/RBB1",
-    "memberCode": "RBB1"
-  },
-  {
     "id": "ocd-person/18bf433d-24e5-46cb-9d83-c2f9373204bd",
     "name": "Paul Donato",
-    "givenName": "Paul J.",
+    "givenName": "Paul",
     "familyName": "Donato",
     "image": "https://malegislature.gov/Legislators/Profile/170/PJD1.jpg",
     "links": [
@@ -278,7 +224,7 @@
   {
     "id": "ocd-person/503a0888-f086-4b52-b03c-c5293378bc51",
     "name": "Brian Ashe",
-    "givenName": "Brian M.",
+    "givenName": "Brian",
     "familyName": "Ashe",
     "image": "https://malegislature.gov/Legislators/Profile/170/BMA1.jpg",
     "links": [
@@ -296,7 +242,7 @@
   {
     "id": "ocd-person/b9019024-899b-41b3-a283-69c50866fabd",
     "name": "Marjorie Decker",
-    "givenName": "Marjorie C.",
+    "givenName": "Marjorie",
     "familyName": "Decker",
     "image": "https://malegislature.gov/Legislators/Profile/170/MCD1.jpg",
     "links": [
@@ -314,7 +260,7 @@
   {
     "id": "ocd-person/cf295962-4f8d-427a-84e9-c7615ff94c8c",
     "name": "David DeCoste",
-    "givenName": "David F.",
+    "givenName": "David",
     "familyName": "DeCoste",
     "image": "https://malegislature.gov/Legislators/Profile/170/DFD1.jpg",
     "links": [
@@ -332,7 +278,7 @@
   {
     "id": "ocd-person/54487f49-5377-4c41-bd97-60b748cc240a",
     "name": "Steven Howitt",
-    "givenName": "Steven S.",
+    "givenName": "Steven",
     "familyName": "Howitt",
     "image": "https://malegislature.gov/Legislators/Profile/170/SSH1.jpg",
     "links": [
@@ -350,7 +296,7 @@
   {
     "id": "ocd-person/2e198563-4aeb-499b-8333-b4a46b605491",
     "name": "Mike Day",
-    "givenName": "Michael Seamus",
+    "givenName": "Mike",
     "familyName": "Day",
     "image": "https://malegislature.gov/Legislators/Profile/170/MSD1.jpg",
     "links": [
@@ -368,7 +314,7 @@
   {
     "id": "ocd-person/f41834f0-0d73-4e8e-8758-66184772c081",
     "name": "Michelle DuBois",
-    "givenName": "Michelle M.",
+    "givenName": "Michelle",
     "familyName": "DuBois",
     "image": "https://malegislature.gov/Legislators/Profile/170/MMD1.jpg",
     "links": [
@@ -386,7 +332,7 @@
   {
     "id": "ocd-person/5f227f77-f58b-4ac6-b193-9f406bde4055",
     "name": "Dan Cahill",
-    "givenName": "Daniel F.",
+    "givenName": "Dan",
     "familyName": "Cahill",
     "image": "https://malegislature.gov/Legislators/Profile/170/DFC1.jpg",
     "links": [
@@ -404,7 +350,7 @@
   {
     "id": "ocd-person/af41924a-7c46-4b6b-b71b-bba683c62c5f",
     "name": "Carole Fiola",
-    "givenName": "Carole A.",
+    "givenName": "Carole",
     "familyName": "Fiola",
     "image": "https://malegislature.gov/Legislators/Profile/170/CAF1.jpg",
     "links": [
@@ -422,7 +368,7 @@
   {
     "id": "ocd-person/49c4bb4e-fadd-4136-953f-6bd64a970acb",
     "name": "Jon Zlotnik",
-    "givenName": "Jonathan D.",
+    "givenName": "Jon",
     "familyName": "Zlotnik",
     "image": "https://malegislature.gov/Legislators/Profile/170/JDZ1.jpg",
     "links": [
@@ -438,30 +384,9 @@
     "memberCode": "JDZ1"
   },
   {
-    "id": "ocd-person/61a670a7-37a6-42f0-8c8f-4cfc1d93693a",
-    "name": "Kay Khan",
-    "givenName": "Kay",
-    "familyName": "Khan",
-    "image": "https://malegislature.gov/Legislators/Profile/170/K_K1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/K_K1"
-      },
-      {
-        "url": "https://www.kaykhan.org/"
-      }
-    ],
-    "party": "Democratic",
-    "district": "11th Middlesex",
-    "email": "kay.khan@mahouse.gov",
-    "phone": "617-722-2230",
-    "url": "https://malegislature.gov/Legislators/Profile/K_K1",
-    "memberCode": "K_K1"
-  },
-  {
     "id": "ocd-person/c8936e7c-f0f5-4dc4-b9e9-774e38638787",
     "name": "Jim Hawkins",
-    "givenName": "James K.",
+    "givenName": "Jim",
     "familyName": "Hawkins",
     "image": "https://malegislature.gov/Legislators/Profile/170/JKH1.jpg",
     "links": [
@@ -479,7 +404,7 @@
   {
     "id": "ocd-person/06867e5f-9de5-4cb2-a3ae-a039e890718c",
     "name": "David Linsky",
-    "givenName": "David Paul",
+    "givenName": "David",
     "familyName": "Linsky",
     "image": "https://malegislature.gov/Legislators/Profile/170/DPL1.jpg",
     "links": [
@@ -497,7 +422,7 @@
   {
     "id": "ocd-person/209427dd-91f0-45d6-ae8c-05a51872c10c",
     "name": "Steve Ultrino",
-    "givenName": "Steven",
+    "givenName": "Steve",
     "familyName": "Ultrino",
     "image": "https://malegislature.gov/Legislators/Profile/170/S_G2.jpg",
     "links": [
@@ -513,45 +438,9 @@
     "memberCode": "S_G2"
   },
   {
-    "id": "ocd-person/cd05a88c-19f0-4fc5-bc3b-d339572842b7",
-    "name": "Dylan Fernandes",
-    "givenName": "Dylan Andreo",
-    "familyName": "Fernandes",
-    "image": "https://malegislature.gov/Legislators/Profile/170/DAF1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/DAF1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "Barnstable, Dukes and Nantucket",
-    "email": "dylan.fernandes@mahouse.gov",
-    "phone": "617-722-2230",
-    "url": "https://malegislature.gov/Legislators/Profile/DAF1",
-    "memberCode": "DAF1"
-  },
-  {
-    "id": "ocd-person/7b9e688f-a9aa-425b-8d3d-833993d6d58a",
-    "name": "Rady Mom",
-    "givenName": "Rady",
-    "familyName": "Mom",
-    "image": "https://malegislature.gov/Legislators/Profile/170/R_M2.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/R_M2"
-      }
-    ],
-    "party": "Democratic",
-    "district": "18th Middlesex",
-    "email": "rady.mom@mahouse.gov",
-    "phone": "617-722-2637",
-    "url": "https://malegislature.gov/Legislators/Profile/R_M2",
-    "memberCode": "R_M2"
-  },
-  {
     "id": "ocd-person/c1f81bec-d032-4f41-940c-ca32f2b5af12",
     "name": "Andy Vargas",
-    "givenName": "Andres X.",
+    "givenName": "Andy",
     "familyName": "Vargas",
     "image": "https://malegislature.gov/Legislators/Profile/170/AXV1.jpg",
     "links": [
@@ -569,7 +458,7 @@
   {
     "id": "ocd-person/5696763c-5fd6-44dd-9dce-7be56632cedd",
     "name": "Danielle Gregoire",
-    "givenName": "Danielle W.",
+    "givenName": "Danielle",
     "familyName": "Gregoire",
     "image": "https://malegislature.gov/Legislators/Profile/170/DWG1.jpg",
     "links": [
@@ -605,7 +494,7 @@
   {
     "id": "ocd-person/f81b07bd-cc43-47be-95ea-dca26f19a647",
     "name": "Bruce Ayers",
-    "givenName": "Bruce J.",
+    "givenName": "Bruce",
     "familyName": "Ayers",
     "image": "https://malegislature.gov/Legislators/Profile/170/BJA1.jpg",
     "links": [
@@ -621,27 +510,9 @@
     "memberCode": "BJA1"
   },
   {
-    "id": "ocd-person/1b7d1710-da71-46cd-9ee3-fc891556f3a9",
-    "name": "Bill Driscoll",
-    "givenName": "William J.",
-    "familyName": "Driscoll",
-    "image": "https://malegislature.gov/Legislators/Profile/170/WJD1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/WJD1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "7th Norfolk",
-    "email": "william.driscoll@mahouse.gov",
-    "phone": "617-722-2020",
-    "url": "https://malegislature.gov/Legislators/Profile/WJD1",
-    "memberCode": "WJD1"
-  },
-  {
     "id": "ocd-person/d70e97f1-b8ec-489d-ab5a-2b7f3775ae8a",
     "name": "Dan Donahue",
-    "givenName": "Daniel M.",
+    "givenName": "Dan",
     "familyName": "Donahue",
     "image": "https://malegislature.gov/Legislators/Profile/170/DMD1.jpg",
     "links": [
@@ -659,7 +530,7 @@
   {
     "id": "ocd-person/398f9a47-bc65-4c2a-b12e-347f375d8fac",
     "name": "Marc Lombardo",
-    "givenName": "Marc T.",
+    "givenName": "Marc",
     "familyName": "Lombardo",
     "image": "https://malegislature.gov/Legislators/Profile/170/MTL1.jpg",
     "links": [
@@ -706,14 +577,14 @@
     "party": "Democratic",
     "district": "7th Bristol",
     "email": "alan.silvia@mahouse.gov",
-    "phone": "508-567-6474",
+    "phone": "617-722-2230",
     "url": "https://malegislature.gov/Legislators/Profile/A_S1",
     "memberCode": "A_S1"
   },
   {
     "id": "ocd-person/50942563-77bb-49ec-a54c-6e26048a31a3",
     "name": "John Rogers",
-    "givenName": "John H.",
+    "givenName": "John",
     "familyName": "Rogers",
     "image": "https://malegislature.gov/Legislators/Profile/170/JHR1.jpg",
     "links": [
@@ -731,7 +602,7 @@
   {
     "id": "ocd-person/8302648f-4ed2-454e-ad1e-d7389e25b8dc",
     "name": "Angelo Puppolo",
-    "givenName": "Angelo J.",
+    "givenName": "Angelo",
     "familyName": "Puppolo",
     "image": "https://malegislature.gov/Legislators/Profile/170/AJP1.jpg",
     "links": [
@@ -749,7 +620,7 @@
   {
     "id": "ocd-person/d8895862-a95b-4982-bb2e-31c8ffa4bf57",
     "name": "Todd Smola",
-    "givenName": "Todd M.",
+    "givenName": "Todd",
     "familyName": "Smola",
     "image": "https://malegislature.gov/Legislators/Profile/170/TMS2.jpg",
     "links": [
@@ -765,27 +636,9 @@
     "memberCode": "TMS2"
   },
   {
-    "id": "ocd-person/6b1bbe32-1b86-48a4-909e-ee1ba6c5c746",
-    "name": "Sarah Peake",
-    "givenName": "Sarah K.",
-    "familyName": "Peake",
-    "image": "https://malegislature.gov/Legislators/Profile/170/SKP1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/SKP1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "4th Barnstable",
-    "email": "sarah.peake@mahouse.gov",
-    "phone": "617-722-2040",
-    "url": "https://malegislature.gov/Legislators/Profile/SKP1",
-    "memberCode": "SKP1"
-  },
-  {
     "id": "ocd-person/888457ba-c348-4826-b2c6-450dba5e38bd",
     "name": "Kim Ferguson",
-    "givenName": "Kimberly N.",
+    "givenName": "Kim",
     "familyName": "Ferguson",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kimberly-Ferguson.jpg",
     "links": [
@@ -803,7 +656,7 @@
   {
     "id": "ocd-person/4183f327-e2a6-4b1a-9d23-161da1b5e261",
     "name": "Aaron Michlewitz",
-    "givenName": "Aaron M.",
+    "givenName": "Aaron",
     "familyName": "Michlewitz",
     "image": "https://malegislature.gov/Legislators/Profile/170/AMM1.jpg",
     "links": [
@@ -819,27 +672,9 @@
     "memberCode": "AMM1"
   },
   {
-    "id": "ocd-person/88e0ae45-75e7-48b6-880a-1a4c039d4373",
-    "name": "Smitty Pignatelli",
-    "givenName": "William Smitty",
-    "familyName": "Pignatelli",
-    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/William-Pignatelli.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/WSP1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "3rd Berkshire",
-    "email": "rep.smitty@mahouse.gov",
-    "phone": "413-637-0631",
-    "url": "https://malegislature.gov/Legislators/Profile/WSP1",
-    "memberCode": "WSP1"
-  },
-  {
     "id": "ocd-person/b51c5c27-7da0-42f5-b67b-22085173af7a",
     "name": "Mark Cusack",
-    "givenName": "Mark James",
+    "givenName": "Mark",
     "familyName": "Cusack",
     "image": "https://malegislature.gov/Legislators/Profile/170/MJC1.jpg",
     "links": [
@@ -857,7 +692,7 @@
   {
     "id": "ocd-person/fdc5586f-0db3-4614-af1f-72a42cf5e6f0",
     "name": "Paul Frost",
-    "givenName": "Paul K.",
+    "givenName": "Paul",
     "familyName": "Frost",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Paul-Frost.jpg",
     "links": [
@@ -875,7 +710,7 @@
   {
     "id": "ocd-person/b61922e8-c775-4c74-8ecb-557d79162195",
     "name": "Mike Finn",
-    "givenName": "Michael J.",
+    "givenName": "Mike",
     "familyName": "Finn",
     "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Michael_Finn.jpg",
     "links": [
@@ -893,7 +728,7 @@
   {
     "id": "ocd-person/0e72fc19-89be-49b9-8baf-5f35f938ec87",
     "name": "Nick Boldyga",
-    "givenName": "Nicholas A.",
+    "givenName": "Nick",
     "familyName": "Boldyga",
     "image": "https://malegislature.gov/Legislators/Profile/170/NAG1.jpg",
     "links": [
@@ -904,32 +739,14 @@
     "party": "Republican",
     "district": "3rd Hampden",
     "email": "nicholas.boldyga@mahouse.gov",
-    "phone": "617-722-2810",
+    "phone": "413-274-8084",
     "url": "https://malegislature.gov/Legislators/Profile/NAG1",
     "memberCode": "NAG1"
   },
   {
-    "id": "ocd-person/67833a9e-e086-4494-a364-fecdcd6aa609",
-    "name": "Jerry Parisella",
-    "givenName": "Jerald A.",
-    "familyName": "Parisella",
-    "image": "https://malegislature.gov/Legislators/Profile/170/JAP1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/JAP1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "6th Essex",
-    "email": "jerald.parisella@mahouse.gov",
-    "phone": "617-722-2370",
-    "url": "https://malegislature.gov/Legislators/Profile/JAP1",
-    "memberCode": "JAP1"
-  },
-  {
     "id": "ocd-person/59aed143-c5c1-4760-ac55-eab18600c451",
     "name": "Tony Cabral",
-    "givenName": "Antonio F.D.",
+    "givenName": "Tony",
     "familyName": "Cabral",
     "image": "https://malegislature.gov/Legislators/Profile/170/AFC1.jpg",
     "links": [
@@ -947,7 +764,7 @@
   {
     "id": "ocd-person/b23dd64e-a05c-4fe1-8562-c29436ca79bb",
     "name": "Bud Williams",
-    "givenName": "Bud L.",
+    "givenName": "Bud",
     "familyName": "Williams",
     "image": "https://malegislature.gov/Legislators/Profile/170/BLW1.jpg",
     "links": [
@@ -965,7 +782,7 @@
   {
     "id": "ocd-person/1f444dfe-d3b3-4852-ab10-0682206d773d",
     "name": "Tricia Farley-Bouvier",
-    "givenName": "Patricia",
+    "givenName": "Tricia",
     "familyName": "Farley-Bouvier",
     "image": "https://malegislature.gov/Legislators/Profile/170/TFB1.jpg",
     "links": [
@@ -983,7 +800,7 @@
   {
     "id": "ocd-person/e8071049-2a8d-4633-b6cb-c1f6ae83bb7a",
     "name": "Donald Wong",
-    "givenName": "Donald H.",
+    "givenName": "Donald",
     "familyName": "Wong",
     "image": "https://malegislature.gov/Legislators/Profile/170/DHW1.jpg",
     "links": [
@@ -1001,7 +818,7 @@
   {
     "id": "ocd-person/4d0b5dda-d9d1-4c25-9c94-ce8fbd8ff398",
     "name": "Mary Keefe",
-    "givenName": "Mary S.",
+    "givenName": "Mary",
     "familyName": "Keefe",
     "image": "https://malegislature.gov/Legislators/Profile/170/MSK1.jpg",
     "links": [
@@ -1017,27 +834,9 @@
     "memberCode": "MSK1"
   },
   {
-    "id": "ocd-person/51c2533b-95e0-45c5-9100-0c6d68efb192",
-    "name": "Paul Schmid",
-    "givenName": "Paul A.",
-    "familyName": "Schmid",
-    "image": "https://malegislature.gov/Legislators/Profile/170/PAS1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/PAS1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "8th Bristol",
-    "email": "paul.schmid@mahouse.gov",
-    "phone": "617-722-2210",
-    "url": "https://malegislature.gov/Legislators/Profile/PAS1",
-    "memberCode": "PAS1"
-  },
-  {
     "id": "ocd-person/67f64532-7f9a-4cd3-8c89-dc9b5df06517",
     "name": "Jim O'Day",
-    "givenName": "James J.",
+    "givenName": "Jim",
     "familyName": "O'Day",
     "image": "https://malegislature.gov/Legislators/Profile/170/JJO1.jpg",
     "links": [
@@ -1055,7 +854,7 @@
   {
     "id": "ocd-person/17c3ac90-1218-4d61-ae47-bc5ef6ee4a74",
     "name": "Natalie Higgins",
-    "givenName": "Natalie M.",
+    "givenName": "Natalie",
     "familyName": "Higgins",
     "image": "https://malegislature.gov/Legislators/Profile/170/N_H1.jpg",
     "links": [
@@ -1092,27 +891,9 @@
     "memberCode": "T_C1"
   },
   {
-    "id": "ocd-person/ee42e89c-24dd-47b1-aafa-e16472680e07",
-    "name": "Jay Barrows",
-    "givenName": "Fred Jay",
-    "familyName": "Barrows",
-    "image": "https://malegislature.gov/Legislators/Profile/170/FJB1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/FJB1"
-      }
-    ],
-    "party": "Republican",
-    "district": "1st Bristol",
-    "email": "fred.barrows@mahouse.gov",
-    "phone": "617-722-2100",
-    "url": "https://malegislature.gov/Legislators/Profile/FJB1",
-    "memberCode": "FJB1"
-  },
-  {
     "id": "ocd-person/35396516-6096-4336-ab74-80d6d8e53bcd",
     "name": "Christine Barber",
-    "givenName": "Christine P.",
+    "givenName": "Christine",
     "familyName": "Barber",
     "image": "https://malegislature.gov/Legislators/Profile/170/CPB2.jpg",
     "links": [
@@ -1128,27 +909,9 @@
     "memberCode": "CPB2"
   },
   {
-    "id": "ocd-person/207ff26d-21a1-448a-bd09-c1b08c2a6f62",
-    "name": "Matt Muratore",
-    "givenName": "Mathew J.",
-    "familyName": "Muratore",
-    "image": "https://malegislature.gov/Legislators/Profile/170/MJM2.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/MJM2"
-      }
-    ],
-    "party": "Republican",
-    "district": "1st Plymouth",
-    "email": "mathew.muratore@mahouse.gov",
-    "phone": "617-722-2488",
-    "url": "https://malegislature.gov/Legislators/Profile/MJM2",
-    "memberCode": "MJM2"
-  },
-  {
     "id": "ocd-person/2becbe4e-5b5e-4b42-be87-b4abf57550c7",
     "name": "Tom Stanley",
-    "givenName": "Thomas M.",
+    "givenName": "Tom",
     "familyName": "Stanley",
     "image": "https://malegislature.gov/Legislators/Profile/170/TMS1.jpg",
     "links": [
@@ -1166,7 +929,7 @@
   {
     "id": "ocd-person/2fd8669d-a5e2-40fd-bb2f-595210f1bf49",
     "name": "Mike Moran",
-    "givenName": "Michael J.",
+    "givenName": "Mike",
     "familyName": "Moran",
     "image": "https://malegislature.gov/Legislators/Profile/170/MJM1.jpg",
     "links": [
@@ -1184,7 +947,7 @@
   {
     "id": "ocd-person/5c798735-2f95-40a6-9ef7-4cd25eb638f6",
     "name": "Dave Vieira",
-    "givenName": "David T.",
+    "givenName": "Dave",
     "familyName": "Vieira",
     "image": "https://malegislature.gov/Legislators/Profile/170/DTV1.jpg",
     "links": [
@@ -1223,7 +986,7 @@
   {
     "id": "ocd-person/70e42c78-89e1-43cb-bc65-7d0da132daa2",
     "name": "Jim Arciero",
-    "givenName": "James",
+    "givenName": "Jim",
     "familyName": "Arciero",
     "image": "https://malegislature.gov/Legislators/Profile/170/J_A1.jpg",
     "links": [
@@ -1244,7 +1007,7 @@
   {
     "id": "ocd-person/e142d28d-e57a-4ff9-afa4-c3cd149f2114",
     "name": "Ron Mariano",
-    "givenName": "Ronald Joseph",
+    "givenName": "Ron",
     "familyName": "Mariano",
     "image": "https://malegislature.gov/Legislators/Profile/170/R_M1.jpg",
     "links": [
@@ -1262,7 +1025,7 @@
   {
     "id": "ocd-person/2990f236-cb76-4d93-af19-7792fa77290b",
     "name": "Dan Hunt",
-    "givenName": "Daniel J.",
+    "givenName": "Dan",
     "familyName": "Hunt",
     "image": "https://malegislature.gov/Legislators/Profile/170/djh1.jpg",
     "links": [
@@ -1300,8 +1063,8 @@
   },
   {
     "id": "ocd-person/ef175304-020e-4f79-b71f-dc961b738254",
-    "name": "James Murphy",
-    "givenName": "James M.",
+    "name": "Jamie Murphy",
+    "givenName": "Jamie",
     "familyName": "Murphy",
     "image": "https://malegislature.gov/Legislators/Profile/170/JMM1.jpg",
     "links": [
@@ -1319,7 +1082,7 @@
   {
     "id": "ocd-person/6c3b63a2-ef13-43e5-b6de-d5e0901aa65a",
     "name": "Joe McGonagle",
-    "givenName": "Joseph W.",
+    "givenName": "Joe",
     "familyName": "McGonagle",
     "image": "https://malegislature.gov/Legislators/Profile/170/jwm1.jpg",
     "links": [
@@ -1340,7 +1103,7 @@
   {
     "id": "ocd-person/04997a33-67a9-4535-95d2-c9a4c260519d",
     "name": "Bill Galvin",
-    "givenName": "William C.",
+    "givenName": "Bill",
     "familyName": "Galvin",
     "image": "https://malegislature.gov/Legislators/Profile/170/WCG1.jpg",
     "links": [
@@ -1358,7 +1121,7 @@
   {
     "id": "ocd-person/76b07f35-1876-4259-9c0a-bdf595541c39",
     "name": "Susannah Whipps",
-    "givenName": "Susannah M.",
+    "givenName": "Susannah",
     "familyName": "Whipps",
     "image": "https://malegislature.gov/Legislators/Profile/170/SLG1.jpg",
     "links": [
@@ -1374,27 +1137,9 @@
     "memberCode": "SLG1"
   },
   {
-    "id": "ocd-person/3a1863b5-ca54-44d8-9afb-55f48623fd47",
-    "name": "Gerry Cassidy",
-    "givenName": "Gerard J.",
-    "familyName": "Cassidy",
-    "image": "https://malegislature.gov/Legislators/Profile/170/G_C2.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/G_C2"
-      }
-    ],
-    "party": "Democratic",
-    "district": "9th Plymouth",
-    "email": "gerard.cassidy@mahouse.gov",
-    "phone": "617-722-2015",
-    "url": "https://malegislature.gov/Legislators/Profile/G_C2",
-    "memberCode": "G_C2"
-  },
-  {
     "id": "ocd-person/66e7c819-cd52-4034-bace-bfec476c106d",
     "name": "Brian Murray",
-    "givenName": "Brian W.",
+    "givenName": "Brian",
     "familyName": "Murray",
     "image": "https://malegislature.gov/Legislators/Profile/170/BWM1.jpg",
     "links": [
@@ -1430,7 +1175,7 @@
   {
     "id": "ocd-person/078692f2-2afe-4aa1-a320-d4747edacbbb",
     "name": "Russell Holmes",
-    "givenName": "Russell Earl",
+    "givenName": "Russell",
     "familyName": "Holmes",
     "image": "https://malegislature.gov/Legislators/Profile/170/REH1.jpg",
     "links": [
@@ -1488,7 +1233,7 @@
     "id": "ocd-person/c4d03c0e-713d-4195-ba23-1394f225494b",
     "name": "Carlos González",
     "givenName": "Carlos",
-    "familyName": "Gonzalez",
+    "familyName": "González",
     "image": "https://malegislature.gov/Legislators/Profile/170/C_G1.jpg",
     "links": [
       {
@@ -1503,27 +1248,9 @@
     "memberCode": "C_G1"
   },
   {
-    "id": "ocd-person/d2f16a1f-415d-4e60-b905-2f4c71959e0f",
-    "name": "Pat Haddad",
-    "givenName": "Patricia A.",
-    "familyName": "Haddad",
-    "image": "https://malegislature.gov/Legislators/Profile/170/PAH1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/PAH1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "5th Bristol",
-    "email": "patricia.haddad@mahouse.gov",
-    "phone": "508-646-2821",
-    "url": "https://malegislature.gov/Legislators/Profile/PAH1",
-    "memberCode": "PAH1"
-  },
-  {
     "id": "ocd-person/5f796cb3-08ae-40c4-8c11-a2758f317cc2",
     "name": "Tom Walsh",
-    "givenName": "Thomas P.",
+    "givenName": "Tom",
     "familyName": "Walsh",
     "image": "https://malegislature.gov/Legislators/Profile/170/TJW1.jpg",
     "links": [
@@ -1541,7 +1268,7 @@
   {
     "id": "ocd-person/033bf9eb-2706-4c5f-9f93-8e8d222bf2c0",
     "name": "Jay Livingstone",
-    "givenName": "Jay D.",
+    "givenName": "Jay",
     "familyName": "Livingstone",
     "image": "https://malegislature.gov/Legislators/Profile/170/J_L1.jpg",
     "links": [
@@ -1559,7 +1286,7 @@
   {
     "id": "ocd-person/560c5ca3-d9b4-4c47-998c-a9baa16a8309",
     "name": "Christopher Markey",
-    "givenName": "Christopher M.",
+    "givenName": "Christopher",
     "familyName": "Markey",
     "image": "https://malegislature.gov/Legislators/Profile/170/CMM1.jpg",
     "links": [
@@ -1577,7 +1304,7 @@
   {
     "id": "ocd-person/b23d4ed5-1994-4355-a102-cdf15ae57230",
     "name": "Jeff Roy",
-    "givenName": "Jeffrey N.",
+    "givenName": "Jeff",
     "familyName": "Roy",
     "image": "https://malegislature.gov/Legislators/Profile/170/JNR1.jpg",
     "links": [
@@ -1593,27 +1320,9 @@
     "memberCode": "JNR1"
   },
   {
-    "id": "ocd-person/adb172f4-64c0-4c96-8097-71bd125fc2e0",
-    "name": "Susan Gifford",
-    "givenName": "Susan Williams",
-    "familyName": "Gifford",
-    "image": "https://malegislature.gov/Legislators/Profile/170/SWG1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/SWG1"
-      }
-    ],
-    "party": "Republican",
-    "district": "2nd Plymouth",
-    "email": "susan.gifford@mahouse.gov",
-    "phone": "617-722-2100",
-    "url": "https://malegislature.gov/Legislators/Profile/SWG1",
-    "memberCode": "SWG1"
-  },
-  {
     "id": "ocd-person/47c42957-b618-41b7-a557-5d24c33568cf",
     "name": "Ken Gordon",
-    "givenName": "Kenneth I.",
+    "givenName": "Ken",
     "familyName": "Gordon",
     "image": "https://malegislature.gov/Legislators/Profile/170/KIG1.jpg",
     "links": [
@@ -1631,7 +1340,7 @@
   {
     "id": "ocd-person/e3dc06b1-8523-4a33-959f-21ed0d5da851",
     "name": "Jack Lewis",
-    "givenName": "Jack Patrick",
+    "givenName": "Jack",
     "familyName": "Lewis",
     "image": "https://malegislature.gov/Legislators/Profile/170/JPL1.jpg",
     "links": [
@@ -1649,7 +1358,7 @@
   {
     "id": "ocd-person/2abbc0cb-6339-42d9-9947-69412a24301b",
     "name": "John Mahoney",
-    "givenName": "John J.",
+    "givenName": "John",
     "familyName": "Mahoney",
     "image": "https://malegislature.gov/Legislators/Profile/170/JJM2.jpg",
     "links": [
@@ -1667,7 +1376,7 @@
   {
     "id": "ocd-person/2a9569a0-feaf-431d-8a8d-012d8ebccbf8",
     "name": "Alice Peisch",
-    "givenName": "Alice Hanlon",
+    "givenName": "Alice",
     "familyName": "Peisch",
     "image": "https://malegislature.gov/Legislators/Profile/170/AHP1.jpg",
     "links": [
@@ -1683,24 +1392,6 @@
     "memberCode": "AHP1"
   },
   {
-    "id": "ocd-person/7be05b7f-d3dd-4a0f-b7d0-f29144d47f92",
-    "name": "Denise Garlick",
-    "givenName": "Denise C.",
-    "familyName": "Garlick",
-    "image": "https://malegislature.gov/Legislators/Profile/170/DCG1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/DCG1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "13th Norfolk",
-    "email": "denise.garlick@mahouse.gov",
-    "phone": "617-722-2070",
-    "url": "https://malegislature.gov/Legislators/Profile/DCG1",
-    "memberCode": "DCG1"
-  },
-  {
     "id": "ocd-person/3d709a64-6cd2-49c6-ad0d-b007e834bfec",
     "name": "Kate Hogan",
     "givenName": "Kate",
@@ -1709,6 +1400,9 @@
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/K_H1"
+      },
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/K_H1/"
       }
     ],
     "party": "Democratic",
@@ -1721,12 +1415,15 @@
   {
     "id": "ocd-person/9e4b8b32-233e-443f-a147-46fbaa778a58",
     "name": "Kevin Honan",
-    "givenName": "Kevin G.",
+    "givenName": "Kevin",
     "familyName": "Honan",
     "image": "https://malegislature.gov/Legislators/Profile/170/KGH1.jpg",
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/KGH1"
+      },
+      {
+        "url": "https://www.repkevinhonan.org/"
       }
     ],
     "party": "Democratic",
@@ -1739,7 +1436,7 @@
   {
     "id": "ocd-person/368c3f95-1124-4f0a-9ab5-7361cb2805d3",
     "name": "Brad Jones",
-    "givenName": "Bradley H.",
+    "givenName": "Brad",
     "familyName": "Jones",
     "image": "https://malegislature.gov/Legislators/Profile/170/BHJ1.jpg",
     "links": [
@@ -1757,7 +1454,7 @@
   {
     "id": "ocd-person/f3dd7fd8-5d7f-4fa3-b2fe-910e375f2edd",
     "name": "Dave Robertson",
-    "givenName": "David Allen",
+    "givenName": "Dave",
     "familyName": "Robertson",
     "image": "https://malegislature.gov/Legislators/Profile/170/D_R1.jpg",
     "links": [
@@ -1775,7 +1472,7 @@
   {
     "id": "ocd-person/05f9b238-283f-4529-8989-ff7d1bda60a8",
     "name": "Lindsay Sabadosa",
-    "givenName": "Lindsay N.",
+    "givenName": "Lindsay",
     "familyName": "Sabadosa",
     "image": "https://malegislature.gov/Legislators/Profile/170/L_S1.jpg",
     "links": [
@@ -1811,7 +1508,7 @@
   {
     "id": "ocd-person/9750bdb4-4dce-4003-85ec-672185a3a5a4",
     "name": "Chris Hendricks",
-    "givenName": "Christopher M.",
+    "givenName": "Chris",
     "familyName": "Hendricks",
     "image": "https://malegislature.gov/Legislators/Profile/170/C_H1.jpg",
     "links": [
@@ -1832,7 +1529,7 @@
   {
     "id": "ocd-person/ca659c30-e49e-420b-8213-797cfeb3c378",
     "name": "David LeBoeuf",
-    "givenName": "David Henry Argosky",
+    "givenName": "David",
     "familyName": "LeBoeuf",
     "image": "https://malegislature.gov/Legislators/Profile/170/DAL1.jpg",
     "links": [
@@ -1866,27 +1563,9 @@
     "memberCode": "D_B1"
   },
   {
-    "id": "ocd-person/62ebe10b-ef71-4579-a55a-3c2045916d70",
-    "name": "Dan Carey",
-    "givenName": "Daniel R.",
-    "familyName": "Carey",
-    "image": "https://malegislature.gov/Legislators/Profile/170/DRC1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/DRC1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "2nd Hampshire",
-    "email": "daniel.carey@mahouse.gov",
-    "phone": "617-722-2396",
-    "url": "https://malegislature.gov/Legislators/Profile/DRC1",
-    "memberCode": "DRC1"
-  },
-  {
     "id": "ocd-person/4cec2aa4-c17b-4749-b0e9-58a25695bf2f",
     "name": "Mike Soter",
-    "givenName": "Michael J.",
+    "givenName": "Mike",
     "familyName": "Soter",
     "image": "https://malegislature.gov/Legislators/Profile/170/MJS3.jpg",
     "links": [
@@ -1904,7 +1583,7 @@
   {
     "id": "ocd-person/173c7e47-c770-4c5a-9794-4db19f9f5dce",
     "name": "Natalie Blais",
-    "givenName": "Natalie M.",
+    "givenName": "Natalie",
     "familyName": "Blais",
     "image": "https://malegislature.gov/Legislators/Profile/170/NMB1.jpg",
     "links": [
@@ -1925,7 +1604,7 @@
   {
     "id": "ocd-person/0a288f3d-397f-4e7b-8bfd-b5032ae1421f",
     "name": "Patrick Kearney",
-    "givenName": "Patrick Joseph",
+    "givenName": "Patrick",
     "familyName": "Kearney",
     "image": "https://malegislature.gov/Legislators/Profile/170/PJK1.jpg",
     "links": [
@@ -1941,27 +1620,9 @@
     "memberCode": "PJK1"
   },
   {
-    "id": "ocd-person/c017af03-ae33-4c72-aee4-6ce58722b3b8",
-    "name": "Pete Capano",
-    "givenName": "Peter L.",
-    "familyName": "Capano",
-    "image": "https://malegislature.gov/Legislators/Profile/170/PLC1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/PLC1"
-      }
-    ],
-    "party": "Democratic",
-    "district": "11th Essex",
-    "email": "peter.capano@mahouse.gov",
-    "phone": "617-722-2020",
-    "url": "https://malegislature.gov/Legislators/Profile/PLC1",
-    "memberCode": "PLC1"
-  },
-  {
     "id": "ocd-person/6d186dd3-a4a0-4d65-aaf1-2f0a63cd42ec",
     "name": "Norm Orrall",
-    "givenName": "Norman J.",
+    "givenName": "Norm",
     "familyName": "Orrall",
     "image": "https://malegislature.gov/Legislators/Profile/170/NJO1.jpg",
     "links": [
@@ -1979,7 +1640,7 @@
   {
     "id": "ocd-person/7a234dbf-2f9f-466f-8db1-44ac0f3975a8",
     "name": "Tommy Vitolo",
-    "givenName": "Thomas",
+    "givenName": "Tommy",
     "familyName": "Vitolo",
     "image": "https://malegislature.gov/Legislators/Profile/170/T_V1.jpg",
     "links": [
@@ -1997,7 +1658,7 @@
   {
     "id": "ocd-person/1e7b8d51-56fa-4faf-93e6-9b485812ddf9",
     "name": "Tram Nguyen",
-    "givenName": "Tram T.",
+    "givenName": "Tram",
     "familyName": "Nguyen",
     "image": "https://malegislature.gov/Legislators/Profile/170/TTN1.jpg",
     "links": [
@@ -2015,7 +1676,7 @@
   {
     "id": "ocd-person/521620ea-1e5b-4a0c-94f8-abe888370e05",
     "name": "Rich Haggerty",
-    "givenName": "Richard M.",
+    "givenName": "Rich",
     "familyName": "Haggerty",
     "image": "https://malegislature.gov/Legislators/Profile/170/RMH1.jpg",
     "links": [
@@ -2033,7 +1694,7 @@
   {
     "id": "ocd-person/fbbda637-7a45-43f2-a13a-388dc50b02ee",
     "name": "Kathy LaNatra",
-    "givenName": "Kathleen Smith",
+    "givenName": "Kathy",
     "familyName": "LaNatra",
     "image": "https://malegislature.gov/Legislators/Profile/170/KPL1.jpg",
     "links": [
@@ -2051,7 +1712,7 @@
   {
     "id": "ocd-person/ea385faa-049c-4743-ad41-3bbe58ee40e2",
     "name": "Michelle Ciccolo",
-    "givenName": "Michelle L.",
+    "givenName": "Michelle",
     "familyName": "Ciccolo",
     "image": "https://malegislature.gov/Legislators/Profile/170/M_C2.jpg",
     "links": [
@@ -2069,7 +1730,7 @@
   {
     "id": "ocd-person/bed31f9a-e759-41a5-80b6-8b6bb9a64762",
     "name": "Alyson Sullivan-Almeida",
-    "givenName": "Alyson M.",
+    "givenName": "Alyson",
     "familyName": "Sullivan-Almeida",
     "image": "https://malegislature.gov/Legislators/Profile/170/AMS2.jpg",
     "links": [
@@ -2087,7 +1748,7 @@
   {
     "id": "ocd-person/7d66e1ca-1fb3-4194-bb18-f9924c528df2",
     "name": "Kate Lipper-Garabedian",
-    "givenName": "Katherine",
+    "givenName": "Kate",
     "familyName": "Lipper-Garabedian",
     "image": "https://malegislature.gov/Legislators/Profile/170/KLG1.jpg",
     "links": [
@@ -2105,7 +1766,7 @@
   {
     "id": "ocd-person/55824639-e627-48ad-9a3d-01b53caee00c",
     "name": "Carol Doherty",
-    "givenName": "Carol A.",
+    "givenName": "Carol",
     "familyName": "Doherty",
     "image": "https://malegislature.gov/Legislators/Profile/170/CAD1.jpg",
     "links": [
@@ -2141,7 +1802,7 @@
   {
     "id": "ocd-person/0ed98993-456c-4630-bd52-894bdde0c0b0",
     "name": "Jessica Giannino",
-    "givenName": "Jessica Ann",
+    "givenName": "Jessica",
     "familyName": "Giannino",
     "image": "https://malegislature.gov/Legislators/Profile/170/JAG1.jpg",
     "links": [
@@ -2159,9 +1820,9 @@
   {
     "id": "ocd-person/73394d70-485b-4fbf-a512-bf2da4e4cb3b",
     "name": "Ted Philips",
-    "givenName": "Edward R.",
+    "givenName": "Ted",
     "familyName": "Philips",
-    "image": "https://images.prod.thevoterguide.org/candidate-images/c2-lwv/120x140/2/2/3/22388079.jpg",
+    "image": "https://malegislature.gov/Legislators/Profile/170/ERP1.jpg",
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/ERP1"
@@ -2195,7 +1856,7 @@
   {
     "id": "ocd-person/df1a3cfc-1555-4a05-8a5c-03a7e53932aa",
     "name": "Kip Diggs",
-    "givenName": "Kip Andre",
+    "givenName": "Kip",
     "familyName": "Diggs",
     "image": "https://www.capecod.com/wp-content/uploads/NWS_Kip-Diggs_JS081720.jpg",
     "links": [
@@ -2213,7 +1874,7 @@
   {
     "id": "ocd-person/8f480d9c-0741-43bb-83a4-179745e1f3b2",
     "name": "Dan Sena",
-    "givenName": "Danillo A.",
+    "givenName": "Dan",
     "familyName": "Sena",
     "image": "http://malegislature.gov/Legislators/Profile/170/DAS1.jpg",
     "links": [
@@ -2231,7 +1892,7 @@
   {
     "id": "ocd-person/485e001e-95e9-4b79-9226-cf028a307138",
     "name": "Steve Xiarhos",
-    "givenName": "Steven George",
+    "givenName": "Steve",
     "familyName": "Xiarhos",
     "image": "https://malegislature.gov/Legislators/Profile/170/SGX1.jpg",
     "links": [
@@ -2249,7 +1910,7 @@
   {
     "id": "ocd-person/591dc6dd-40b8-4713-83b8-f236ff6250bf",
     "name": "Mike Kushmerek",
-    "givenName": "Michael Paul",
+    "givenName": "Mike",
     "familyName": "Kushmerek",
     "image": "https://malegislature.gov/Legislators/Profile/170/MPK1.jpg",
     "links": [
@@ -2267,9 +1928,9 @@
   {
     "id": "ocd-person/b61c923f-3598-465b-8051-6507b6f6c6c2",
     "name": "Meg Kilcoyne",
-    "givenName": "Meghan",
+    "givenName": "Meg",
     "familyName": "Kilcoyne",
-    "image": "https://img1.wsimg.com/isteam/ip/850f350e-49c6-4466-85f5-43a40c2a6240/062320-Meghan-17.jpg/:/rs=h:1500,cg:true,m",
+    "image": "https://malegislature.gov/Legislators/Profile/170/M_K1.jpg",
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/M_K1"
@@ -2285,7 +1946,7 @@
   {
     "id": "ocd-person/e50e8121-bc6f-4aaa-8cf2-f1cbd53c9172",
     "name": "Pat Duffy",
-    "givenName": "Patricia A.",
+    "givenName": "Pat",
     "familyName": "Duffy",
     "image": "https://malegislature.gov/Legislators/Profile/170/PAD1.jpg",
     "links": [
@@ -2321,7 +1982,7 @@
   {
     "id": "ocd-person/804c5518-7fdf-43c9-ba24-f2c24eb3b0ab",
     "name": "Adam Scanlon",
-    "givenName": "Adam J.",
+    "givenName": "Adam",
     "familyName": "Scanlon",
     "image": "https://malegislature.gov/Legislators/Profile/170/AJS1.jpg",
     "links": [
@@ -2375,7 +2036,7 @@
   {
     "id": "ocd-person/72eea330-24b4-4207-a016-0b1e568e0b6e",
     "name": "Kelly Pease",
-    "givenName": "Kelly W.",
+    "givenName": "Kelly",
     "familyName": "Pease",
     "image": "https://malegislature.gov/Legislators/Profile/170/KWP1.jpg",
     "links": [
@@ -2393,7 +2054,7 @@
   {
     "id": "ocd-person/f20dd448-92ef-458c-bf92-90e7e766072a",
     "name": "Steve Owens",
-    "givenName": "Steven C.",
+    "givenName": "Steve",
     "familyName": "Owens",
     "image": "https://malegislature.gov/Legislators/Profile/170/SCO1.jpg",
     "links": [
@@ -2422,14 +2083,14 @@
     "party": "Democratic",
     "district": "27th Middlesex",
     "email": "erika.uyterhoeven@mahouse.gov",
-    "phone": "857-264-1096",
+    "phone": "508-319-9510",
     "url": "https://malegislature.gov/Legislators/Profile/E_U1",
     "memberCode": "E_U1"
   },
   {
     "id": "ocd-person/cd89185f-f928-4b26-bb47-60f1bccad0dd",
     "name": "Jeff Turco",
-    "givenName": "Jeffrey Rosario",
+    "givenName": "Jeff",
     "familyName": "Turco",
     "image": "https://malegislature.gov/Legislators/Profile/170/JRT1.jpg",
     "links": [
@@ -2447,7 +2108,7 @@
   {
     "id": "ocd-person/824532f7-8dc9-4a1a-a7b3-16b2d0e78941",
     "name": "Estela Reyes",
-    "givenName": "Estela A.",
+    "givenName": "Estela",
     "familyName": "Reyes",
     "image": "https://malegislature.gov/Legislators/Profile/170/EAR1.jpg",
     "links": [
@@ -2465,7 +2126,7 @@
   {
     "id": "ocd-person/799d49f3-28e5-46a1-bcc8-6370e9fbf44a",
     "name": "Ryan Hamilton",
-    "givenName": "Ryan M.",
+    "givenName": "Ryan",
     "familyName": "Hamilton",
     "image": "https://malegislature.gov/Legislators/Profile/170/RMH2.jpg",
     "links": [
@@ -2483,7 +2144,7 @@
   {
     "id": "ocd-person/49816a0c-b8e5-4586-859b-8a8f1ae9b6ab",
     "name": "Rodney Elliott",
-    "givenName": "Rodney M.",
+    "givenName": "Rodney",
     "familyName": "Elliott",
     "image": "https://malegislature.gov/Legislators/Profile/170/RME1.jpg",
     "links": [
@@ -2519,7 +2180,7 @@
   {
     "id": "ocd-person/99109961-27e8-4e58-8269-3a1deb29f228",
     "name": "Francisco Paulino",
-    "givenName": "Francisco E.",
+    "givenName": "Francisco",
     "familyName": "Paulino",
     "image": "https://malegislature.gov/Legislators/Profile/170/FEP1.jpg",
     "links": [
@@ -2573,7 +2234,7 @@
   {
     "id": "ocd-person/2dd65a68-0ea5-4c15-b5fe-bcde086eb357",
     "name": "Marcus Vaughn",
-    "givenName": "Marcus S.",
+    "givenName": "Marcus",
     "familyName": "Vaughn",
     "image": "https://malegislature.gov/Legislators/Profile/170/MSV1.jpg",
     "links": [
@@ -2591,7 +2252,7 @@
   {
     "id": "ocd-person/47ffc61b-0cae-4386-ae68-12b20eadd83f",
     "name": "James Arena-DeRosa",
-    "givenName": "James C.",
+    "givenName": "James",
     "familyName": "Arena-DeRosa",
     "image": "https://malegislature.gov/Legislators/Profile/170/JCD1.jpg",
     "links": [
@@ -2609,7 +2270,7 @@
   {
     "id": "ocd-person/eab9b69f-0434-4307-972c-6acce9deb370",
     "name": "Jenny Armini",
-    "givenName": "Jennifer Balinsky",
+    "givenName": "Jenny",
     "familyName": "Armini",
     "image": "https://malegislature.gov/Legislators/Profile/170/JBA1.jpg",
     "links": [
@@ -2627,7 +2288,7 @@
   {
     "id": "ocd-person/87e3afd8-390c-45a3-97c6-2bb164ec1e90",
     "name": "Rita Mendes",
-    "givenName": "Rita A.",
+    "givenName": "Rita",
     "familyName": "Mendes",
     "image": "https://malegislature.gov/Legislators/Profile/170/RAM1.jpg",
     "links": [
@@ -2648,7 +2309,7 @@
   {
     "id": "ocd-person/59539448-5c3b-4d4d-8e96-48fabb01b10f",
     "name": "Chris Worrell",
-    "givenName": "Christopher J.",
+    "givenName": "Chris",
     "familyName": "Worrell",
     "image": "https://malegislature.gov/Legislators/Profile/170/CJW1.jpg",
     "links": [
@@ -2666,7 +2327,7 @@
   {
     "id": "ocd-person/1129a0d9-c280-4bf0-af34-20879293a2b5",
     "name": "Kristin Kassner",
-    "givenName": "Kristin Hoffman",
+    "givenName": "Kristin",
     "familyName": "Kassner",
     "image": "https://malegislature.gov/Legislators/Profile/170/K_K2.jpg",
     "links": [
@@ -2677,15 +2338,15 @@
     "party": "Democratic",
     "district": "2nd Essex",
     "email": "kristin.kassner@mahouse.gov",
-    "phone": "617-722-2000 ext. 7905",
+    "phone": "617-722-2000",
     "url": "https://malegislature.gov/Legislators/Profile/K_K2",
     "memberCode": "K_K2"
   },
   {
     "id": "ocd-person/668db267-f9e1-4839-918d-c092741f96f9",
     "name": "Sam Montaño",
-    "givenName": "Samantha",
-    "familyName": "Montano",
+    "givenName": "Sam",
+    "familyName": "Montaño",
     "image": "https://malegislature.gov/Legislators/Profile/170/S_M1.jpg",
     "links": [
       {
@@ -2693,6 +2354,9 @@
       },
       {
         "url": "https://malegislature.gov/Legislators/Profile/S_M1/District"
+      },
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/S_M1/"
       }
     ],
     "party": "Democratic",
@@ -2705,7 +2369,7 @@
   {
     "id": "ocd-person/ff433cf6-2895-4e01-b143-26747500f8a4",
     "name": "Shirley Arriaga",
-    "givenName": "Shirley B.",
+    "givenName": "Shirley",
     "familyName": "Arriaga",
     "image": "https://malegislature.gov/Legislators/Profile/170/SBA1.jpg",
     "links": [
@@ -2723,7 +2387,7 @@
   {
     "id": "ocd-person/c30f76b4-73d6-4795-be75-c46973d17f59",
     "name": "Chris Flanagan",
-    "givenName": "Christopher Richard",
+    "givenName": "Chris",
     "familyName": "Flanagan",
     "image": "https://malegislature.gov/Legislators/Profile/170/CRF1.jpg",
     "links": [
@@ -2773,14 +2437,14 @@
     "party": "Democratic",
     "district": "14th Middlesex",
     "email": "simon.cataldo@mahouse.gov",
-    "phone": "617-722-2000 ext. 8676",
+    "phone": "617-722-2000",
     "url": "https://malegislature.gov/Legislators/Profile/S_C1",
     "memberCode": "S_C1"
   },
   {
     "id": "ocd-person/c3d23eba-caa6-4d2a-bbd2-5b8b2ca184ae",
     "name": "Aaron Saunders",
-    "givenName": "Aaron L.",
+    "givenName": "Aaron",
     "familyName": "Saunders",
     "image": "https://malegislature.gov/Legislators/Profile/170/ALS1.jpg",
     "links": [
@@ -2798,8 +2462,8 @@
   {
     "id": "ocd-person/6f15f647-07f5-4739-a340-497798a474e7",
     "name": "Judith García",
-    "givenName": "Judith A.",
-    "familyName": "Garcia",
+    "givenName": "Judith",
+    "familyName": "García",
     "image": "https://malegislature.gov/Legislators/Profile/170/JAG2.jpg",
     "links": [
       {
@@ -2816,7 +2480,7 @@
   {
     "id": "ocd-person/a148ff77-2e73-4e42-a525-20e8d1ed569a",
     "name": "Priscila Sousa",
-    "givenName": "Priscila S.",
+    "givenName": "Priscila",
     "familyName": "Sousa",
     "image": "https://malegislature.gov/Legislators/Profile/170/PSS1.jpg",
     "links": [
@@ -2834,7 +2498,7 @@
   {
     "id": "ocd-person/300d40b3-9479-43c0-99d3-18f94e1110cc",
     "name": "Adrianne Ramos",
-    "givenName": "Adrianne Pusateri",
+    "givenName": "Adrianne",
     "familyName": "Ramos",
     "image": "https://malegislature.gov/Legislators/Profile/170/APR1.jpg",
     "links": [
@@ -2852,7 +2516,7 @@
   {
     "id": "ocd-person/9f0c5984-accf-45a3-8922-07aa7ade0030",
     "name": "Billy MacGregor",
-    "givenName": "William F.",
+    "givenName": "Billy",
     "familyName": "MacGregor",
     "image": "https://images.squarespace-cdn.com/content/v1/64014cb72a76a83f08ddf74b/beb20812-27a1-4410-bc5a-e476990155c6/BZ3A6742.jpg",
     "links": [
@@ -2870,7 +2534,7 @@
   {
     "id": "ocd-person/15ff9d00-e05e-470a-b89c-36038b1dd5bb",
     "name": "John Moran",
-    "givenName": "John Francis",
+    "givenName": "John",
     "familyName": "Moran",
     "image": "https://malegislature.gov/Legislators/Profile/170/JFM1.jpg",
     "links": [
@@ -2888,7 +2552,7 @@
   {
     "id": "ocd-person/0e8c6c71-bca0-46fd-86d1-223d41ed5517",
     "name": "John Marsi",
-    "givenName": "John J.",
+    "givenName": "John",
     "familyName": "Marsi",
     "image": "https://malegislature.gov/Legislators/Profile/170/JJM1.jpg",
     "links": [
@@ -2902,5 +2566,350 @@
     "phone": "617-722-2060",
     "url": "https://malegislature.gov/Legislators/Profile/JJM1",
     "memberCode": "JJM1"
+  },
+  {
+    "id": "ocd-person/0fbe25ff-563e-4563-8523-f151bd839e3c",
+    "name": "Steven Ouellette",
+    "givenName": "Steven",
+    "familyName": "Ouellette",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Steven_Ouellette_20241027_114832.jpeg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/SJO1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "8th Bristol",
+    "email": "steve.ouellette@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/SJO1",
+    "memberCode": "SJO1"
+  },
+  {
+    "id": "ocd-person/0a74c581-eb5c-4935-b5c3-f4a77e6dcd31",
+    "name": "Mike Chaisson",
+    "givenName": "Mike",
+    "familyName": "Chaisson",
+    "image": "https://pbs.twimg.com/profile_images/1538266871371284480/5PkanQyz_400x400.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MSC1"
+      }
+    ],
+    "party": "Republican",
+    "district": "1st Bristol",
+    "email": "michael.chaisson@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/MSC1",
+    "memberCode": "MSC1"
+  },
+  {
+    "id": "ocd-person/d3ad855a-567f-443a-bb9f-480a0c95fb06",
+    "name": "Sean Reid",
+    "givenName": "Sean",
+    "familyName": "Reid",
+    "image": "https://static.wixstatic.com/media/afaf11_7be85579b8f44be19dc438362812307c~mv2.jpg/v1/crop/x_0,y_241,w_1500,h_1845/fill/w_560,h_689,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SeanHeadshot.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/S_R1"
+      },
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/S_R1/Biography"
+      }
+    ],
+    "party": "Democratic",
+    "district": "11th Essex",
+    "email": "sean.reid@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/S_R1",
+    "memberCode": "S_R1"
+  },
+  {
+    "id": "ocd-person/1eece00d-5b31-4be0-9263-b594863b295c",
+    "name": "Ken Sweezey",
+    "givenName": "Ken",
+    "familyName": "Sweezey",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KennethSweezey.jpeg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/KPS1"
+      }
+    ],
+    "party": "Republican",
+    "district": "6th Plymouth",
+    "email": "ken.sweezey@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/KPS1",
+    "memberCode": "KPS1"
+  },
+  {
+    "id": "ocd-person/9c847f4f-a48b-4d42-95cb-2b6a219f89ac",
+    "name": "Josh Tarsky",
+    "givenName": "Josh",
+    "familyName": "Tarsky",
+    "image": "https://static.wixstatic.com/media/c90c92_e8dcd11b374c472d96449fe7763e361a~mv2.jpg/v1/fill/w_323,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c90c92_e8dcd11b374c472d96449fe7763e361a~mv2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/J_T1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "13th Norfolk",
+    "email": "joshua.tarsky@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/J_T1",
+    "memberCode": "J_T1"
+  },
+  {
+    "id": "ocd-person/386c6121-a2a4-4c92-b093-4abea066d840",
+    "name": "Leigh Davis",
+    "givenName": "Leigh",
+    "familyName": "Davis",
+    "image": "https://malegislature.gov/Legislators/Profile/170/LSD1.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/LSD1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "3rd Berkshire",
+    "email": "leigh.davis@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/LSD1",
+    "memberCode": "LSD1"
+  },
+  {
+    "id": "ocd-person/6b27dd86-5c03-4223-957c-9efd12c70e04",
+    "name": "Homar Gomez",
+    "givenName": "Homar",
+    "familyName": "Gomez",
+    "image": "https://images.squarespace-cdn.com/content/v1/6616e5c7caac657d5a7f9682/0c122a29-b755-4647-a180-d5cbdb08bbcc/Screenshot+2024-04-10+at+4.35.35+PM.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/H_G1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "2nd Hampshire",
+    "email": "homar.gomez@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/H_G1",
+    "memberCode": "H_G1"
+  },
+  {
+    "id": "ocd-person/013e94ee-496e-42f3-8b1b-f96c737f1f8e",
+    "name": "John Gaskey",
+    "givenName": "John",
+    "familyName": "Gaskey",
+    "image": "https://static.wixstatic.com/media/40d8f8_3ba01018eff64b309a92373daddd8344~mv2.jpg/v1/crop/x_140,y_436,w_734,h_891/fill/w_440,h_534,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Untitled-6.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/JRG2"
+      }
+    ],
+    "party": "Republican",
+    "district": "2nd Plymouth",
+    "email": "john.gaskey@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/JRG2",
+    "memberCode": "JRG2"
+  },
+  {
+    "id": "ocd-person/7446bdd1-f6b4-40cb-a039-41f4be68833e",
+    "name": "Mark Sylvia",
+    "givenName": "Mark",
+    "familyName": "Sylvia",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MarkSylvia2024.jpeg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MDS1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "10th Bristol",
+    "email": "mark.sylvia@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/MDS1",
+    "memberCode": "MDS1"
+  },
+  {
+    "id": "ocd-person/3601344e-8a37-488b-a3b1-f355f4e52ea7",
+    "name": "Dennis Gallagher",
+    "givenName": "Dennis",
+    "familyName": "Gallagher",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DCG2.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/DCG2"
+      }
+    ],
+    "party": "Democratic",
+    "district": "8th Plymouth",
+    "email": "dennis.gallagher@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/DCG2",
+    "memberCode": "DCG2"
+  },
+  {
+    "id": "ocd-person/a0c80d02-beb0-42c3-b7ff-31fc0d5351f5",
+    "name": "Michelle Badger",
+    "givenName": "Michelle",
+    "familyName": "Badger",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MichelleBadger24.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/MLB1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "1st Plymouth",
+    "email": "michelle.badger@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/MLB1",
+    "memberCode": "MLB1"
+  },
+  {
+    "id": "ocd-person/ebfdda03-c083-4a13-b3a4-f87f6e24adac",
+    "name": "Thomas Moakley",
+    "givenName": "Thomas",
+    "familyName": "Moakley",
+    "image": "https://images.squarespace-cdn.com/content/v1/5da78aa5a8dca01c7fd688a2/228c2b8c-632d-43c5-8313-59608d4c07ef/LKH-374+%281%29.jpg?format=1500w",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/TWM1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "Barnstable, Dukes and Nantucket",
+    "email": "thomas.moakley@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/TWM1",
+    "memberCode": "TWM1"
+  },
+  {
+    "id": "ocd-person/adb7ebb2-480f-4215-859e-3a1194e9a598",
+    "name": "Amy Sangiolo",
+    "givenName": "Amy",
+    "familyName": "Sangiolo",
+    "image": "https://run.imgix.net/b260b02b-f427-4e9c-80c1-96d4a925070d/0e6384a6-45a4-4cef-8c00-62e6e10e1702/0e6384a6-45a4-4cef-8c00-62e6e10e1702.jpeg?ixlib=js-3.8.0&bri=0&con=0&sat=0&high=0&shad=0&usm=0&rect=0%2C120%2C1500%2C1500&auto=compress%2Cformat&fit=fillmax&w=2048&q=75",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/AMS3"
+      }
+    ],
+    "party": "Democratic",
+    "district": "11th Middlesex",
+    "email": "amy.sangiolo@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/AMS3",
+    "memberCode": "AMS3"
+  },
+  {
+    "id": "ocd-person/8d481937-69c5-477d-ba72-e3b682ed0a4d",
+    "name": "Hadley Luddy",
+    "givenName": "Hadley",
+    "familyName": "Luddy",
+    "image": "https://static.wixstatic.com/media/9f153b_553cf4a01d9c419ba9b077b06630ad95~mv2.jpg/v1/fill/w_392,h_392,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Image-empty-state.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/H_L1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "4th Barnstable",
+    "email": "hadley.luddy@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/H_L1",
+    "memberCode": "H_L1"
+  },
+  {
+    "id": "ocd-person/2b6d0884-6638-410e-87b7-243c7ca18a16",
+    "name": "Bridget Plouffe",
+    "givenName": "Bridget",
+    "familyName": "Plouffe",
+    "image": "https://static.wixstatic.com/media/27b18a_fb4b693b005c49fe9bc848a8dc5cba75~mv2.jpg/v1/fill/w_326,h_588,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_1993_edited.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/BMP1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "9th Plymouth",
+    "email": "bridget.plouffe@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/BMP1",
+    "memberCode": "BMP1"
+  },
+  {
+    "id": "ocd-person/e988f332-eba5-40a4-b55f-554728360e6c",
+    "name": "Richard Wells",
+    "givenName": "Richard",
+    "familyName": "Wells",
+    "image": "https://www.miltonscene.com/wp-content/uploads/2024/04/richard-wells-2024.jpg",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/RGW1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "7th Norfolk",
+    "email": "richard.wells@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/RGW1",
+    "memberCode": "RGW1"
+  },
+  {
+    "id": "ocd-person/2770216d-1802-435d-b147-4ca1d684dc45",
+    "name": "Greg Schwartz",
+    "givenName": "Greg",
+    "familyName": "Schwartz",
+    "image": "https://run.imgix.net/2557ba77-9285-4bfd-a618-a64cccef937a/0247e248-4267-420c-a1a6-1fead69639c1/0247e248-4267-420c-a1a6-1fead69639c1.jpeg?ixlib=js-3.8.0&bri=0&con=0&sat=0&high=0&shad=0&usm=0&rect=1917%2C0%2C4357%2C5464&auto=compress%2Cformat&fit=fillmax&w=1920&q=75",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/G_S1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "12th Middlesex",
+    "email": "greg.schwartz@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/G_S1",
+    "memberCode": "G_S1"
+  },
+  {
+    "id": "ocd-person/e5b9b2d0-1626-4151-93cf-73c16035a584",
+    "name": "Tara Hong",
+    "givenName": "Tara",
+    "familyName": "Hong",
+    "image": "https://static.wixstatic.com/media/036def_5bf9ad5b1ab6414c9c9c3a759ff6bfa3~mv2.png/v1/fill/w_392,h_392,al_c,q_95,enc_avif,quality_auto/Image-empty-state.png",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/TTH1"
+      }
+    ],
+    "party": "Democratic",
+    "district": "18th Middlesex",
+    "email": "tara.hong@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/TTH1",
+    "memberCode": "TTH1"
+  },
+  {
+    "id": "ocd-person/4002361d-3211-4f02-b627-95d6e6a3f76c",
+    "name": "Justin Thurber",
+    "givenName": "Justin",
+    "familyName": "Thurber",
+    "image": "https://static.wixstatic.com/media/2c9203_769cd98a12ae4e9882d925d8ee7fd9f1~mv2.png/v1/fill/w_410,h_606,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2c9203_769cd98a12ae4e9882d925d8ee7fd9f1~mv2.png",
+    "links": [
+      {
+        "url": "https://malegislature.gov/Legislators/Profile/J_T2"
+      }
+    ],
+    "party": "Republican",
+    "district": "5th Bristol",
+    "email": "justin.thurber@mahouse.gov",
+    "phone": "617-722-2800",
+    "url": "https://malegislature.gov/Legislators/Profile/J_T2",
+    "memberCode": "J_T2"
   }
 ]

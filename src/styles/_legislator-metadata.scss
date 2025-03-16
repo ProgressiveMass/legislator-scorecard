@@ -3,6 +3,7 @@
   @extend .white-background;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  border-radius: 6px;
   @include media-breakpoint-down(xs) {
     margin-bottom: 2rem;
   }

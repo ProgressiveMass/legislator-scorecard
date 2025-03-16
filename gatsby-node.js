@@ -52,16 +52,19 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
   })
 }
 
+//TODO - other sessions
+const sponsorshipsSessionNumber = 194
+const votesSessionOrdinal = '193rd'
+const sponsorshipsSessionYear = 2025
+const votesSessionYear = 2023
+
 // create individual legislator pages
 exports.createPages = async function ({ actions, graphql }) {
   const { createPage } = actions
 
-  //TODO - other sessions
-  let sessionYear = 2023
-  let sessionVotesYear = 2023
   // sponsorships
   const getLegislatorById = (id) => {
-    let legislator =
+    const legislator =
       houseLegislators.find((legislator) => legislator.id === id) ??
       senateLegislators?.find((legislator) => legislator.id === id)
     if (legislator === undefined) {
@@ -70,21 +73,21 @@ exports.createPages = async function ({ actions, graphql }) {
         `current legislators provided by Open States. Possibly a typo in the ID, or a retired legislator.`
       )
     }
-    let votes =
-      legislationData[sessionVotesYear]?.houseVotes?.find((vote) => vote.id === id) ??
-      legislationData[sessionVotesYear]?.senateVotes?.find((vote) => vote.id === id)
+    const votes =
+      legislationData[votesSessionYear]?.houseVotes?.find((vote) => vote.id === id) ??
+      legislationData[votesSessionYear]?.senateVotes?.find((vote) => vote.id === id)
     return {
       ...legislator,
       ...votes,
     }
   }
 
-  let sponsoredBills = Object.entries(legislationData[sessionYear].sponsoredBills)
+  const sponsoredBills = Object.entries(legislationData[sponsorshipsSessionYear].sponsoredBills)
 
   const sponsoredBillTemplate = path.resolve(`./src/components/sponsorships/sponsorships.js`)
 
-  let sponsors = legislationData[sessionYear].sponsorship.map((sponsorshipData) => {
-    let legislatorData = getLegislatorById(sponsorshipData.id)
+  const sponsors = legislationData[sponsorshipsSessionYear].sponsorship.map((sponsorshipData) => {
+    const legislatorData = getLegislatorById(sponsorshipData.id)
     return {
       sponsorshipData: { ...sponsorshipData.data, ...sponsorshipData.score },
       ...legislatorData,
@@ -109,38 +112,43 @@ exports.createPages = async function ({ actions, graphql }) {
     }
   }
 
-  const consolidateBills = (billNumber, billData, billNameMap) => {
+  const billNamesToConsolidatedBillsMap = new Map()
+  sponsoredBills.forEach((sponsoredBill) => {
+    const [billNumber, billData] = sponsoredBill
     const name = billData.shorthand_title.toLowerCase().trim()
-    let chamber = Array.from(billNumber)[0] == 'H' ? 'house' : 'senate'
-    if (billNameMap.has(name)) {
+    const chamber = Array.from(billNumber)[0] == 'H' ? 'house' : 'senate'
+    if (billNamesToConsolidatedBillsMap.has(name)) {
       // Found a paired bill
-      const pairedBill = billNameMap.get(name)
+      const pairedBill = billNamesToConsolidatedBillsMap.get(name)
       pairedBill[`${chamber}BillNumber`] = billNumber
       pairedBill[`${chamber}Status`] = billData.status
+      pairedBill[`${chamber}LeadSponsors`] = billData.sponsors.split('&').map(sponsor => sponsor.trim())
       billData['houseBillNumber'] = pairedBill['houseBillNumber']
       billData['senateBillNumber'] = pairedBill['senateBillNumber']
       billData['houseStatus'] = pairedBill['houseStatus']
       billData['senateStatus'] = pairedBill['senateStatus']
+      billData['senateLeadSponsors'] = pairedBill['senateLeadSponsors']
+      billData['houseLeadSponsors'] = pairedBill['houseLeadSponsors']
+      billData.sponsors = billData.senateLeadSponsors.concat(billData.houseLeadSponsors).join(', ')
       validateBillStatuses(pairedBill)
     } else {
       // First occurrence of this name
       billData[`${chamber}BillNumber`] = billNumber
       billData[`${chamber}Status`] = billData.status
-      billNameMap.set(name, billData)
+      billData[`${chamber}LeadSponsors`] = billData.sponsors.split('&').map(sponsor => sponsor.trim())
+      billNamesToConsolidatedBillsMap.set(name, billData)
     }
-  }
+  })
 
-  const nameMap = new Map()
-  sponsoredBills.forEach((sponsoredBill) => {
-    let sortedSponsors = []
-    const [billNumber, billData] = sponsoredBill
-    consolidateBills(billNumber, billData, nameMap)
+  const consolidatedBills = Array.from(billNamesToConsolidatedBillsMap.values());
+
+  consolidatedBills.forEach((billData) => {
     let otherBillNames = ''
-    sortedSponsors = sponsors
+    const sortedSponsors = sponsors
       .filter((sponsor) => {
         if (!sponsor.id) return false
         for (const bills in sponsor.sponsorshipData) {
-          if (bills.includes(billNumber) && sponsor.sponsorshipData[bills]) {
+          if (bills.includes(billData.bill_number) && sponsor.sponsorshipData[bills]) {
             otherBillNames = bills
             return true
           }
@@ -154,18 +162,26 @@ exports.createPages = async function ({ actions, graphql }) {
         }
       })
 
-    createPage({
-      path: `/sponsorships/${billNumber}`,
+    const createPageData = {
       component: sponsoredBillTemplate,
       context: {
         billData: { ...billData, otherBillNames },
         sponsors: sortedSponsors,
         houseSponsors: sortedSponsors.filter(isHouseRep),
         senateSponsors: sortedSponsors.filter(isSenator),
+        votesSessionOrdinal,
+        sponsorshipsSessionNumber,
       },
-    })
+    }
+    if (billData.houseBillNumber !== undefined) {
+      const createPageHouseBillData = { ...createPageData, path: `/sponsorships/${billData.houseBillNumber}` }
+      createPage(createPageHouseBillData)
+    }
+    if (billData.senateBillNumber !== undefined) {
+      const createPageSenateBillData = { ...createPageData, path: `/sponsorships/${billData.senateBillNumber}` }
+      createPage(createPageSenateBillData)
+    }
   })
-  const consolidatedBills = Array.from(nameMap.values());
 
   const allSponsoredBillsTemplate = path.resolve(`./src/components/sponsorships/index.js`)
 

@@ -54,7 +54,7 @@ const SponsorshipRow = ({
   familyName,
 }) => {
   const { billStatus } = getBillStatus(houseStatus, senateStatus)
-  const isPassed = billStatus !== "Not Passed"
+  const isPassed = billStatus !== "Not Passed Yet"
   const isEnacted = billStatus === "Enacted"
   let StyledTableRow = BaseTableRow
   if (isEnacted) {
