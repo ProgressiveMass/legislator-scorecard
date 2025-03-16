@@ -60,7 +60,6 @@ const LinkContainer = styled.p`
 export default function SponsoredBill({
   pageContext: { billData: bill, houseSponsors, senateSponsors, votesSessionOrdinal, sponsorshipsSessionNumber },
 }) {
-  console.log('bill: ', bill)
   const tabItems = [
     {
       title: `House Reps (${houseSponsors.length})`,
