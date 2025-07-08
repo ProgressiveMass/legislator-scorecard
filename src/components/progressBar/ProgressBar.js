@@ -28,7 +28,7 @@ function getLetterGrade(score) {
   }
 }
 
-const ProgressBar = ({ width, large }) => {
+const ProgressBar = ({ width, large, gradeOnly }) => {
   return (
     <div>
       <div className={`progress ${large ? 'progress--large' : ''}`}>
@@ -38,7 +38,7 @@ const ProgressBar = ({ width, large }) => {
               fontSize: '.85rem',
               position: 'relative',
             }}>
-            <b>{getLetterGrade(width)}</b>&nbsp;&nbsp; ({width + '%'})
+            <b>{getLetterGrade(width)}</b>{gradeOnly ? '' : <>&nbsp;&nbsp; ({width + '%'})</>}
           </span>
         </div>
 

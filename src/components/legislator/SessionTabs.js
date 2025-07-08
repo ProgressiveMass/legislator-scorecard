@@ -7,7 +7,7 @@ import ProgressBarWContext from '../progressBar'
 import { getSessionNumber, QUERIES } from '../../utilities'
 
 const Term = styled.div`
-  @media ${QUERIES.phoneAndSmaller} {
+  @media ${QUERIES.tabletAndSmaller} {
     font-size: 1rem;
     text-wrap: wrap;
   }
@@ -16,7 +16,7 @@ const Term = styled.div`
 const Session = styled.div`
   font-size: 1rem;
 
-  @media ${QUERIES.phoneAndSmaller} {
+  @media ${QUERIES.tabletAndSmaller} {
     font-size: 0.8rem;
     text-wrap: wrap;
   }
@@ -36,7 +36,7 @@ export const SessionTabs = ({ terms, chamber, familyName }) => {
               marginRight: '8%',
               marginTop: '7px',
             }}>
-            <ProgressBarWContext data={d} />
+            <ProgressBarWContext data={d} utilizeGradeOnlyFlag={true}/>
           </div>
         </div>
       ),
