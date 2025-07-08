@@ -3,7 +3,7 @@ import SearchForm from './SearchForm'
 import SEO from '../../components/seo'
 import Layout from '../../components/layout'
 
-export default () => {
+const LandingPage = () => {
   return (
     <Layout>
       <SEO
@@ -128,3 +128,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default LandingPage
