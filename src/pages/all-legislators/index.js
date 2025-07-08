@@ -76,7 +76,7 @@ const createLegislatorList = (legislatorArr, voteDataArr) => {
     })
 }
 
-export const processQuery = ({ allHouseLegislatorsJson, allSenateLegislatorsJson, dataJson }) => {
+const processQuery = ({ allHouseLegislatorsJson, allSenateLegislatorsJson, dataJson }) => {
   return {
     senators: createLegislatorList(
       allSenateLegislatorsJson.edges,
