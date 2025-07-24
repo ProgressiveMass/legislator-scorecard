@@ -31,7 +31,7 @@ const ContextualProgressBar = ({ data: d, large, sessionNumber, utilizeGradeOnly
   }, [])
 
   let noScoreClasses =
-    'badge badge-secondary d-block text-center px-3 py-1 rounded progress-alternative'
+    'badge badge-secondary d-block text-center px-1 py-1 rounded progress-alternative'
   noScoreClasses = large ? noScoreClasses : noScoreClasses + ' progress small'
   if (!d.score) {
     const sessionClause = sessionNumber
