@@ -47,7 +47,6 @@ const SponsorshipRow = ({
     shorthand_title,
     description,
     yourLegislator,
-    url,
     houseStatus,
     senateStatus, },
   isCurrentYear,
@@ -78,7 +77,7 @@ const SponsorshipRow = ({
       </td>
       <td style={{ width: '30%' }}>
         <div>
-          <a href={url} className='font-weight-bold' target='_blank' rel='noreferrer'>
+          <a href={`/sponsorships/${bill_number}`} className='font-weight-bold'>
             {shorthand_title}
           </a>
         </div>
