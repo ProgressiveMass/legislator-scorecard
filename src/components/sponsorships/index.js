@@ -76,8 +76,7 @@ const SponsorshipRow = (props) => {
     showPairedDisclaimer,
     shorthand_title,
     description,
-    houseStatus,
-    senateStatus,
+    billStatus,
   } = rowData
 
   const separator = houseBillNumber && senateBillNumber ? ' / ' : ''
@@ -106,7 +105,7 @@ const SponsorshipRow = (props) => {
         id='status'
         data-label='Status'
         style={{ width: `${statusWidth}%` }}>
-        {houseStatus}
+        {billStatus}
       </td>
 
       <td id='summary' style={{ width: `${summaryWidth}%` }}>

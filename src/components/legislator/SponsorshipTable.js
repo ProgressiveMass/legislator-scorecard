@@ -4,25 +4,14 @@ import styled from 'styled-components'
 import InfoPopover from '../InfoPopover'
 import LegislatorTable from './LegislatorTable'
 import { QUERIES } from '../../utilities'
-import { getBillStatusBadge, getBillStatus } from '../sponsorships/sponsorshipUtilities'
 
-const BaseTableRow = styled.tr`
+const StyledTableRow = styled.tr`
   border-bottom: 1px solid #eee;
   @media ${QUERIES.tabletAndSmaller} {
     margin: 15px;
     border-radius: 15px;
     background-color: #f9f9f9;
   }
-`
-
-const PassedTableRow = styled(BaseTableRow)`
-  background-color: #fef9c344;
-  border-bottom: 1px solid #fef9c3;
-`
-
-const EnactedTableRow = styled(BaseTableRow)`
-  background-color: #71B84422;
-  border-bottom: 1px solid #71B84444;
 `
 
 const billWidth = 15
@@ -32,9 +21,9 @@ const summaryWidth = 45
 const summaryWidthCurrentYear = 30
 const cosponsoredWidth = 15
 
-const Cosponsorship = ({ indicator, isPassed, isCurrentSponsorshipYear }) => {
+const Cosponsorship = ({ indicator, isCurrentSponsorshipYear }) => {
   if (indicator === false) {
-    if (isCurrentSponsorshipYear && !isPassed) {
+    if (isCurrentSponsorshipYear) {
       return <span className='badge badge-danger'>Not Yet</span>
     } else {
       return <span className='badge badge-danger'>No</span>
@@ -54,20 +43,11 @@ const SponsorshipRow = ({
     shorthand_title,
     description,
     yourLegislator,
-    houseStatus,
-    senateStatus, },
+    billStatus,
+  },
   isCurrentYear,
   familyName,
 }) => {
-  const { billStatus } = getBillStatus(houseStatus, senateStatus)
-  const isPassed = billStatus !== "Not Passed Yet"
-  const isEnacted = billStatus === "Enacted"
-  let StyledTableRow = BaseTableRow
-  if (isEnacted) {
-    StyledTableRow = EnactedTableRow
-  } else if (isPassed) {
-    StyledTableRow = PassedTableRow
-  }
 
   return (
     <StyledTableRow>
@@ -92,7 +72,7 @@ const SponsorshipRow = ({
         id='status'
         data-label='Status'
         style={{ width: `${statusWidth}%` }}>
-        {houseStatus}
+        {billStatus}
       </td>)}
       <td style={{ width: `${isCurrentYear ? summaryWidthCurrentYear : summaryWidth}%` }} data-label=''>
         <p>{description}</p>
@@ -101,7 +81,6 @@ const SponsorshipRow = ({
         <Cosponsorship
           indicator={yourLegislator}
           isCurrentSponsorshipYear={isCurrentYear}
-          isPassed={isPassed}
         />
       </td>
     </StyledTableRow>

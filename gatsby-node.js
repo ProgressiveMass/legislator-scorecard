@@ -94,22 +94,14 @@ exports.createPages = async function ({ actions, graphql }) {
     }
   })
 
-  const validateBillStatuses = (billData) => {
-    const validStatusPairs = [
-      ['Passed', 'Passed'],
-      ['Not Yet', 'Not Yet'],
-      ['Passed', 'Not Yet'],
-      ['Not Yet', 'Passed'],
-      ['In Conference Committee', 'In Conference Committee'],
-      ['Enacted', 'Enacted'],
-    ]
-    if (!validStatusPairs.some(([houseStatus, senateStatus]) => {
-      return houseStatus === billData.houseStatus && senateStatus === billData.senateStatus
-    })) {
+  const getBillStatus = (billData) => {
+      if (billData.houseStatus === billData.senateStatus) {
+        return billData.houseStatus
+      }
       throw new Error(
-        `Invalid statuses for bill ${billData.houseBillNumber} / ${billData.senateBillNumber}: ` +
-        `house status "${billData.houseStatus}", senate status "${billData.senateStatus}"`)
-    }
+        `Statuses for bill ${billData.houseBillNumber} / ${billData.senateBillNumber} don't match: ` +
+        `house status "${billData.houseStatus}", senate status "${billData.senateStatus}"`
+      )
   }
 
   const billNamesToConsolidatedBillsMap = new Map()
@@ -130,7 +122,8 @@ exports.createPages = async function ({ actions, graphql }) {
       billData['senateLeadSponsors'] = pairedBill['senateLeadSponsors']
       billData['houseLeadSponsors'] = pairedBill['houseLeadSponsors']
       billData.sponsors = billData.senateLeadSponsors.concat(billData.houseLeadSponsors).join(', ')
-      validateBillStatuses(pairedBill)
+      billData['billStatus'] = getBillStatus(pairedBill)
+      pairedBill['billStatus'] = billData['billStatus']
     } else {
       // First occurrence of this name
       billData[`${chamber}BillNumber`] = billNumber
