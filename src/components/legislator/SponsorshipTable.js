@@ -25,6 +25,13 @@ const EnactedTableRow = styled(BaseTableRow)`
   border-bottom: 1px solid #71B84444;
 `
 
+const billWidth = 15
+const titleWidth = 25
+const statusWidth = 15
+const summaryWidth = 45
+const summaryWidthCurrentYear = 30
+const cosponsoredWidth = 15
+
 const Cosponsorship = ({ indicator, isPassed, isCurrentSponsorshipYear }) => {
   if (indicator === false) {
     if (isCurrentSponsorshipYear && !isPassed) {
@@ -64,7 +71,7 @@ const SponsorshipRow = ({
 
   return (
     <StyledTableRow>
-      <td className='text-muted' style={{ width: '15%' }}>
+      <td className='text-muted' style={{ width: `${billWidth}%` }}>
         <div className='font-weight-bold'>
           {bill_number}&nbsp;
           {showPairedDisclaimer ? (
@@ -73,19 +80,24 @@ const SponsorshipRow = ({
         </div>
 
         <div>{tags}</div>
-        {isCurrentYear && getBillStatusBadge(houseStatus, senateStatus)}
       </td>
-      <td style={{ width: '30%' }}>
+      <td style={{ width: `${titleWidth}%` }}>
         <div>
           <a href={`/sponsorships/${bill_number}`} className='font-weight-bold'>
             {shorthand_title}
           </a>
         </div>
       </td>
-      <td style={{ width: '40%' }} data-label=''>
+      {isCurrentYear && (<td
+        id='status'
+        data-label='Status'
+        style={{ width: `${statusWidth}%` }}>
+        {houseStatus}
+      </td>)}
+      <td style={{ width: `${isCurrentYear ? summaryWidthCurrentYear : summaryWidth}%` }} data-label=''>
         <p>{description}</p>
       </td>
-      <td style={{ width: '15%' }} data-label={`${familyName} Cosponsored?`}>
+      <td style={{ width: `${cosponsoredWidth}%` }} data-label={`${familyName} Cosponsored?`}>
         <Cosponsorship
           indicator={yourLegislator}
           isCurrentSponsorshipYear={isCurrentYear}
@@ -123,15 +135,16 @@ const SponsorshipTable = ({ data: { sponsorship, isCurrentSponsorshipYear }, fam
       head={
         <>
           <tr>
-            <th style={{ width: '15%' }}>Bill</th>
-            <th style={{ width: '30%' }}>Title</th>
-            <th style={{ width: '40%' }}>
+            <th style={{ width: `${billWidth}%` }}>Bill</th>
+            <th style={{ width: `${titleWidth}%` }}>Title</th>
+            {isCurrentSponsorshipYear && <th style={{ width: `${statusWidth}%` }}>Status</th>}
+            <th style={{ width: `${isCurrentSponsorshipYear ? summaryWidthCurrentYear : summaryWidth}%` }}>
               Summary from{' '}
               <a href='http://www.progressivemass.com/' target='_blank' rel='noreferrer'>
                 Progressive Mass
               </a>
             </th>
-            <th style={{ width: '15%' }}>{familyName} Cosponsored?</th>
+            <th style={{ width: `${cosponsoredWidth}%` }}>{familyName} Cosponsored?</th>
           </tr>
         </>
       }

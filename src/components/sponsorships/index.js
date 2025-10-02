@@ -63,6 +63,11 @@ const StyledRow = styled.tr`
   }
 `
 
+const billWidth = 15
+const titleWidth = 25
+const statusWidth = 15
+const summaryWidth = 45
+
 const SponsorshipRow = (props) => {
   const { tags, rowData, isCurrentYear, familyName } = props
   const {
@@ -81,7 +86,7 @@ const SponsorshipRow = (props) => {
 
   return (
     <StyledRow>
-      <td id='number' className='text-muted' style={{ width: '15%' }}>
+      <td id='number' className='text-muted' style={{ width: `${billWidth}%` }}>
         <div className='font-weight-bold'>
           {combinedBillNumber}
           &nbsp;
@@ -92,20 +97,19 @@ const SponsorshipRow = (props) => {
 
         <div>{tags}</div>
       </td>
-      <td id='title' style={{ width: '25%', fontWeight: 'bold' }}>
+      <td id='title' style={{ width: `${titleWidth}%`, fontWeight: 'bold' }}>
         <div>
           <Link to={`/sponsorships/${urlBillNumber}`}>{`${shorthand_title}`}</Link>
         </div>
       </td>
       <td
         id='status'
-        className='text-muted'
         data-label='Status'
-        style={{ width: '10%', textAlign: 'center' }}>
-        {getBillStatusBadge(houseStatus, senateStatus)}
+        style={{ width: `${statusWidth}%` }}>
+        {houseStatus}
       </td>
 
-      <td id='summary' style={{ width: '50%' }}>
+      <td id='summary' style={{ width: `${summaryWidth}%` }}>
         <p>{description}</p>
       </td>
     </StyledRow>
@@ -128,10 +132,10 @@ export default function SponsoredBills({ pageContext: { consolidatedBills } }) {
               head={
                 <>
                   <tr>
-                    <th style={{ width: '15%' }}>Bill</th>
-                    <th style={{ width: '25%' }}>Title</th>
-                    <th style={{ width: '10%' }}>Status</th>
-                    <th style={{ width: '50%' }}>
+                    <th style={{ width: `${billWidth}%` }}>Bill</th>
+                    <th style={{ width: `${titleWidth}%` }}>Title</th>
+                    <th style={{ width: `${statusWidth}%` }}>Status</th>
+                    <th style={{ width: `${summaryWidth}%` }}>
                       Summary from{' '}
                       <a href='http://www.progressivemass.com/' target='_blank' rel='noreferrer'>
                         Progressive Mass
