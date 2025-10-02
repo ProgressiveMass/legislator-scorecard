@@ -73,7 +73,7 @@ const SponsorshipRow = ({
         </div>
 
         <div>{tags}</div>
-        {getBillStatusBadge(houseStatus, senateStatus)}
+        {isCurrentYear && getBillStatusBadge(houseStatus, senateStatus)}
       </td>
       <td style={{ width: '30%' }}>
         <div>
