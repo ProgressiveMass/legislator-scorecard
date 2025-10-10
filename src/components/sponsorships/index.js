@@ -6,7 +6,6 @@ import LegislatorTable from '../../components/legislator/LegislatorTable'
 import ListPageHeading from '../../components/ListPageHeading'
 import InfoPopover from '../../components/InfoPopover'
 import { QUERIES } from '../../utilities'
-import { getBillStatusBadge } from './sponsorshipUtilities'
 
 const Container = styled.div`
   display: flex;
@@ -76,7 +75,8 @@ const SponsorshipRow = (props) => {
     showPairedDisclaimer,
     shorthand_title,
     description,
-    billStatus,
+    houseStatus,
+    senateStatus,
   } = rowData
 
   const separator = houseBillNumber && senateBillNumber ? ' / ' : ''
@@ -105,7 +105,8 @@ const SponsorshipRow = (props) => {
         id='status'
         data-label='Status'
         style={{ width: `${statusWidth}%` }}>
-        {billStatus}
+          <div><span style={{"font-weight": "bold"}}>House:</span> {houseStatus}</div>
+          <div><span style={{"font-weight": "bold"}}>Senate:</span> {senateStatus}</div>
       </td>
 
       <td id='summary' style={{ width: `${summaryWidth}%` }}>

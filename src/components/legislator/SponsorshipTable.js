@@ -43,7 +43,8 @@ const SponsorshipRow = ({
     shorthand_title,
     description,
     yourLegislator,
-    billStatus,
+    houseStatus,
+    senateStatus
   },
   isCurrentYear,
   familyName,
@@ -72,7 +73,8 @@ const SponsorshipRow = ({
         id='status'
         data-label='Status'
         style={{ width: `${statusWidth}%` }}>
-        {billStatus}
+          <div><span style={{"font-weight": "bold"}}>House:</span> {houseStatus}</div>
+          <div><span style={{"font-weight": "bold"}}>Senate:</span> {senateStatus}</div>
       </td>)}
       <td style={{ width: `${isCurrentYear ? summaryWidthCurrentYear : summaryWidth}%` }} data-label=''>
         <p>{description}</p>

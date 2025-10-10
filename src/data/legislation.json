@@ -71267,7 +71267,7 @@
       "H3110": {
         "sort": "1",
         "bill_number": "H3110",
-        "status": "asdf",
+        "status": "In Committee",
         "name": "An Act combating offshore tax avoidance",
         "sponsors": "Rep. Carlos González",
         "shorthand_title": "Corporate Fair Share",
@@ -71280,7 +71280,7 @@
       "S2033": {
         "sort": "1.1",
         "bill_number": "S2033",
-        "status": "asdfx",
+        "status": "In Committee",
         "name": "An Act combating offshore tax avoidance",
         "sponsors": "Sens. Jason Lewis & Liz Miranda ",
         "shorthand_title": "Corporate Fair Share",
@@ -71293,7 +71293,7 @@
       "HD4328": {
         "sort": "2",
         "bill_number": "HD4328",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act empowering students and schools to thrive",
         "sponsors": "Rep. Sam Montaño",
         "shorthand_title": "Thrive Act",
@@ -71306,7 +71306,7 @@
       "S374": {
         "sort": "2.1",
         "bill_number": "S374",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act empowering students and schools to thrive",
         "sponsors": "Sen. Adam Gomez",
         "shorthand_title": "Thrive Act",
@@ -71319,7 +71319,7 @@
       "H678": {
         "sort": "3",
         "bill_number": "H678",
-        "status": "Not Yet",
+        "status": "Accompanied Other Legislation",
         "name": "An Act to fix the Chapter 70 inflation adjustment",
         "sponsors": "Rep. Orlando Ramos",
         "shorthand_title": "Funding Our Public Schools",
@@ -71332,7 +71332,7 @@
       "S388": {
         "sort": "3.1",
         "bill_number": "S388",
-        "status": "Not Yet",
+        "status": "Accompanied Other Legislation",
         "name": "An Act to fix the Chapter 70 inflation adjustment",
         "sponsors": "Sen. Robyn Kennedy ",
         "shorthand_title": "Funding Our Public Schools",
@@ -71345,7 +71345,7 @@
       "H1436": {
         "sort": "4",
         "bill_number": "H1436",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act relative to debt-free public higher education",
         "sponsors": "Rep. Natalie Higgins & Rep. Carmine Gentile",
         "shorthand_title": "Debt-Free Public Higher Ed",
@@ -71358,7 +71358,7 @@
       "S929": {
         "sort": "4.1",
         "bill_number": "S929",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act relative to debt-free public higher education",
         "sponsors": "Sen. Jamie Eldridge",
         "shorthand_title": "Debt-Free Public Higher Ed",
@@ -71371,7 +71371,7 @@
       "H3056": {
         "sort": "5",
         "bill_number": "H3056",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act granting a local option for a real estate transfer fee to fund affordable housing",
         "sponsors": "Rep. Mike Connolly & Rep. Carmine Gentile",
         "shorthand_title": "Real Estate Transfer Fee",
@@ -71384,7 +71384,7 @@
       "S1937": {
         "sort": "5.1",
         "bill_number": "S1937",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act granting a local option for a real estate transfer fee to fund affordable housing",
         "sponsors": "Sen. Jo Comerford ",
         "shorthand_title": "Real Estate Transfer Fee",
@@ -71397,7 +71397,7 @@
       "H2328": {
         "sort": "6",
         "bill_number": "H2328",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act enabling cities and towns to stabilize rents and protect tenants",
         "sponsors": "Rep. Dave Rogers & Rep. Sam Montaño",
         "shorthand_title": "Rent Stabilization",
@@ -71410,7 +71410,7 @@
       "S1447": {
         "sort": "6.1",
         "bill_number": "S1447",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act enabling cities and towns to stabilize rents and protect tenants",
         "sponsors": "Sen. Pat Jehlen",
         "shorthand_title": "Rent Stabilization",
@@ -71423,7 +71423,7 @@
       "H1544": {
         "sort": "7",
         "bill_number": "H1544",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to guarantee a tenant’s first right of refusal",
         "sponsors": "Rep. Jay Livingstone & Rep. Rob Consalvo",
         "shorthand_title": "Tenant Opportunity to Purchase",
@@ -71436,7 +71436,7 @@
       "S998": {
         "sort": "7.1",
         "bill_number": "S998",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to guarantee a tenant’s first right of refusal",
         "sponsors": "Sen. Pat Jehlen",
         "shorthand_title": "Tenant Opportunity to Purchase",
@@ -71449,7 +71449,7 @@
       "H1405": {
         "sort": "8",
         "bill_number": "H1405",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act establishing medicare for all in Massachusetts",
         "sponsors": "Rep. Lindsay Sabadosa & Rep. Margaret Scarsdale",
         "shorthand_title": "Medicare for All",
@@ -71462,7 +71462,7 @@
       "S860": {
         "sort": "8.1",
         "bill_number": "S860",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act establishing medicare for all in Massachusetts",
         "sponsors": "Sen. Jamie Eldridge",
         "shorthand_title": "Medicare for All",
@@ -71475,7 +71475,7 @@
       "H1923": {
         "sort": "9",
         "bill_number": "H1923",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to promote public safety and better outcomes for young adults",
         "sponsors": "Rep. Jim O'Day & Rep. Manny Cruz",
         "shorthand_title": "Raise the Age",
@@ -71488,7 +71488,7 @@
       "S1061": {
         "sort": "9.1",
         "bill_number": "S1061",
-        "status": "Not Yet",
+        "status": "Advanced Out of Committee",
         "name": "An Act to promote public safety and better outcomes for young adults",
         "sponsors": "Sen. Brendan Crighton ",
         "shorthand_title": "Raise the Age",
@@ -71501,7 +71501,7 @@
       "H1811": {
         "sort": "10",
         "bill_number": "H1811",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act requiring clean slate automated record sealing",
         "sponsors": "Rep. Mary Keefe & Rep. Andy Vargas",
         "shorthand_title": "Clean Slate ",
@@ -71514,7 +71514,7 @@
       "S1114": {
         "sort": "10.1",
         "bill_number": "S1114",
-        "status": "Not Yet",
+        "status": "Advanced Out of Committee",
         "name": "An Act requiring clean slate automated record sealing",
         "sponsors": "Sen. Cindy Friedman ",
         "shorthand_title": "Clean Slate ",
@@ -71527,7 +71527,7 @@
       "H3422": {
         "sort": "11",
         "bill_number": "H3422",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act establishing a jail and prison construction moratorium",
         "sponsors": "Rep. Chynah Tyler",
         "shorthand_title": "Prison Moratorium ",
@@ -71540,7 +71540,7 @@
       "S2114": {
         "sort": "11.1",
         "bill_number": "S2114",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act establishing a jail and prison construction moratorium",
         "sponsors": "Sen. Jo Comerford ",
         "shorthand_title": "Prison Moratorium ",
@@ -71553,7 +71553,7 @@
       "H2580": {
         "sort": "12",
         "bill_number": "H2580",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to protect the civil rights and safety of all Massachusetts residents",
         "sponsors": "Rep. Manny Cruz & Rep. Priscila Sousa",
         "shorthand_title": "Safe Communities Act",
@@ -71566,7 +71566,7 @@
       "S1681": {
         "sort": "12.1",
         "bill_number": "S1681",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to protect the civil rights and safety of all Massachusetts residents",
         "sponsors": "Sen. Jamie Eldridge & Sen. Liz Miranda",
         "shorthand_title": "Safe Communities Act",
@@ -71579,7 +71579,7 @@
       "H1954": {
         "sort": "13",
         "bill_number": "H1954",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act ensuring access to equitable representation in immigration proceedings",
         "sponsors": "Rep. Dave Rogers & Rep. Frank Moran ",
         "shorthand_title": "Immigrant Legal Defense Act",
@@ -71592,7 +71592,7 @@
       "S1127": {
         "sort": "13.1",
         "bill_number": "S1127",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act ensuring access to equitable representation in immigration proceedings",
         "sponsors": "Sen. Adam Gomez",
         "shorthand_title": "Immigrant Legal Defense Act",
@@ -71605,7 +71605,7 @@
       "H2591": {
         "sort": "14",
         "bill_number": "H2591",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to build restorative family and community connection",
         "sponsors": "Rep. Marjorie Decker",
         "shorthand_title": "Visitation Bill ",
@@ -71618,7 +71618,7 @@
       "S1720": {
         "sort": "14.1",
         "bill_number": "S1720",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to build restorative family and community connection",
         "sponsors": "Sen. Liz Miranda",
         "shorthand_title": "Visitation Bill ",
@@ -71631,7 +71631,7 @@
       "H86": {
         "sort": "15",
         "bill_number": "H86",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to protect safety and privacy by stopping the sale of location data",
         "sponsors": "Rep. Kate Lipper-Garabedian & Rep. David Vieira",
         "shorthand_title": "Location Shield Act",
@@ -71644,7 +71644,7 @@
       "S197": {
         "sort": "15.1",
         "bill_number": "S197",
-        "status": "Not Yet",
+        "status": "Passed via Omnibus Bill",
         "name": "An Act to protect safety and privacy by stopping the sale of location data",
         "sponsors": "Sen. Cindy Creem",
         "shorthand_title": "Location Shield Act",
@@ -71657,7 +71657,7 @@
       "H3594": {
         "sort": "16",
         "bill_number": "H3594",
-        "status": "Not Yet",
+        "status": "Advanced Out of Committee",
         "name": "An Act regarding free expression",
         "sponsors": "Rep. John Moran & Rep. Adam Scanlon",
         "shorthand_title": "Right to Learn Bill ",
@@ -71670,7 +71670,7 @@
       "S2328": {
         "sort": "16.1",
         "bill_number": "S2328",
-        "status": "Not Yet",
+        "status": "Advanced Out of Committee",
         "name": "An Act regarding free expression",
         "sponsors": "Sen. Julian Cyr",
         "shorthand_title": "Right to Learn Bill ",
@@ -71683,7 +71683,7 @@
       "H655": {
         "sort": "17",
         "bill_number": "H655",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to promote comprehensive and inclusive curriculum in schools",
         "sponsors": "Rep. Tram Nguyen & Rep. Steve Ultrino",
         "shorthand_title": "CARE Bill",
@@ -71696,7 +71696,7 @@
       "S371": {
         "sort": "17.1",
         "bill_number": "S371",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to promote comprehensive and inclusive curriculum in schools",
         "sponsors": "Sen. Adam Gomez",
         "shorthand_title": "CARE Bill",
@@ -71709,7 +71709,7 @@
       "H3547": {
         "sort": "18",
         "bill_number": "H3547",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act preventing gas expansion to protect climate, community health and safety",
         "sponsors": "Rep. Bud Wiliams & Rep. Adrianne Ramos",
         "shorthand_title": "Put Gas in the Past ",
@@ -71722,7 +71722,7 @@
       "S2290": {
         "sort": "18.1",
         "bill_number": "S2290",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act preventing gas expansion to protect climate, community health and safety",
         "sponsors": "Sen. Adam Gomez",
         "shorthand_title": "Put Gas in the Past ",
@@ -71735,7 +71735,7 @@
       "H1014": {
         "sort": "19",
         "bill_number": "H1014",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act establishing a climate change superfund",
         "sponsors": "Rep. Steve Owens & Rep. Jack Lewis",
         "shorthand_title": "Make Polluters Pay ",
@@ -71748,7 +71748,7 @@
       "S588": {
         "sort": "19.1",
         "bill_number": "S588",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act establishing a climate change superfund",
         "sponsors": "Sen. Jamie Eldridge",
         "shorthand_title": "Make Polluters Pay ",
@@ -71761,7 +71761,7 @@
       "H834": {
         "sort": "20",
         "bill_number": "H834",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act establishing same day registration of voters",
         "sponsors": "Rep. Carmine Gentile",
         "shorthand_title": "Same Day Registration",
@@ -71774,7 +71774,7 @@
       "S505": {
         "sort": "20.1",
         "bill_number": "S505",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act establishing same day registration of voters",
         "sponsors": "Sen. Cindy Creem",
         "shorthand_title": "Same Day Registration",
@@ -71787,7 +71787,7 @@
       "H799": {
         "sort": "21",
         "bill_number": "H799",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act decoupling the municipal census from voter registration",
         "sponsors": "Rep. Shirley Arriaga",
         "shorthand_title": "Decoupling the Municipal Census from Voter Rolls",
@@ -71800,7 +71800,7 @@
       "S503": {
         "sort": "21.1",
         "bill_number": "S503",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act decoupling the municipal census from voter registration",
         "sponsors": "Sen. Cindy Creem",
         "shorthand_title": "Decoupling the Municipal Census from Voter Rolls",
@@ -71813,7 +71813,7 @@
       "S2099": {
         "sort": "22.1",
         "bill_number": "S2099",
-        "status": "Not Yet",
+        "status": "In Committee",
         "name": "An Act to provide sunlight to state government",
         "sponsors": "Sen. Jamie Eldridge",
         "shorthand_title": "Sunlight Act ",
@@ -71897,7 +71897,7 @@
           "H1923 / S1061": false,
           "H1811 / S1114": false,
           "H3422 / S2114": false,
-          "H2580 / S1681": false,
+          "H2580 / S1681": true,
           "H1954 / S1127": false,
           "H2591 / S1720": false,
           "H86 / S197": true,
@@ -71909,7 +71909,7 @@
           "H799 / S503": false,
           "S2099": false
         },
-        "score": 4
+        "score": 5
       },
       {
         "id": "ocd-person/ff433cf6-2895-4e01-b143-26747500f8a4",
@@ -72200,7 +72200,7 @@
           "H1436 / S929": false,
           "H3056 / S1937": true,
           "H2328 / S1447": true,
-          "H1544 / S998": false,
+          "H1544 / S998": true,
           "H1405 / S860": false,
           "H1923 / S1061": false,
           "H1811 / S1114": false,
@@ -72208,7 +72208,7 @@
           "H2580 / S1681": true,
           "H1954 / S1127": false,
           "H2591 / S1720": false,
-          "H86 / S197": false,
+          "H86 / S197": true,
           "H3594 / S2328": false,
           "H655 / S371": false,
           "H3547 / S2290": false,
@@ -72217,7 +72217,7 @@
           "H799 / S503": false,
           "S2099": false
         },
-        "score": 3
+        "score": 5
       },
       {
         "id": "ocd-person/59aed143-c5c1-4760-ac55-eab18600c451",
@@ -72884,12 +72884,12 @@
           "H3594 / S2328": false,
           "H655 / S371": false,
           "H3547 / S2290": false,
-          "H1014 / S588": false,
+          "H1014 / S588": true,
           "H834 / S505": false,
           "H799 / S503": false,
           "S2099": false
         },
-        "score": 4
+        "score": 5
       },
       {
         "id": "ocd-person/888457ba-c348-4826-b2c6-450dba5e38bd",
@@ -73062,7 +73062,7 @@
       {
         "id": "ocd-person/99c9c9e7-f0e3-480b-ad38-de297e6c635a",
         "data": {
-          "H3110 / S2033": false,
+          "H3110 / S2033": true,
           "HD4328 / S374": false,
           "H678 / S388": false,
           "H1436 / S929": false,
@@ -73085,7 +73085,7 @@
           "H799 / S503": false,
           "S2099": false
         },
-        "score": 2
+        "score": 3
       },
       {
         "id": "ocd-person/fdc5586f-0db3-4614-af1f-72a42cf5e6f0",
@@ -73157,7 +73157,7 @@
           "H1923 / S1061": false,
           "H1811 / S1114": false,
           "H3422 / S2114": false,
-          "H2580 / S1681": false,
+          "H2580 / S1681": true,
           "H1954 / S1127": false,
           "H2591 / S1720": false,
           "H86 / S197": true,
@@ -73169,7 +73169,7 @@
           "H799 / S503": false,
           "S2099": false
         },
-        "score": 1
+        "score": 2
       },
       {
         "id": "ocd-person/1e9d742c-c20b-45cf-9e22-e7752189fa7a",
@@ -75087,7 +75087,7 @@
           "H1544 / S998": false,
           "H1405 / S860": true,
           "H1923 / S1061": false,
-          "H1811 / S1114": false,
+          "H1811 / S1114": true,
           "H3422 / S2114": false,
           "H2580 / S1681": false,
           "H1954 / S1127": false,
@@ -75101,7 +75101,7 @@
           "H799 / S503": false,
           "S2099": false
         },
-        "score": 4
+        "score": 5
       },
       {
         "id": "ocd-person/8302648f-4ed2-454e-ad1e-d7389e25b8dc",
@@ -76470,10 +76470,10 @@
           "H3547 / S2290": true,
           "H1014 / S588": true,
           "H834 / S505": true,
-          "H799 / S503": false,
+          "H799 / S503": true,
           "S2099": false
         },
-        "score": 19
+        "score": 20
       },
       {
         "id": "ocd-person/ece82669-b6f6-4f0f-ae5d-7b238b1cd1dd",
@@ -77242,7 +77242,7 @@
           "H2328 / S1447": false,
           "H1544 / S998": true,
           "H1405 / S860": false,
-          "H1923 / S1061": false,
+          "H1923 / S1061": true,
           "H1811 / S1114": false,
           "H3422 / S2114": true,
           "H2580 / S1681": true,
@@ -77257,7 +77257,7 @@
           "H799 / S503": false,
           "S2099": false
         },
-        "score": 9
+        "score": 10
       },
       {
         "id": "ocd-person/fb97b139-c0dd-41b5-ae52-159528f47b11",

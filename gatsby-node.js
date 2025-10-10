@@ -94,16 +94,6 @@ exports.createPages = async function ({ actions, graphql }) {
     }
   })
 
-  const getBillStatus = (billData) => {
-      if (billData.houseStatus === billData.senateStatus) {
-        return billData.houseStatus
-      }
-      throw new Error(
-        `Statuses for bill ${billData.houseBillNumber} / ${billData.senateBillNumber} don't match: ` +
-        `house status "${billData.houseStatus}", senate status "${billData.senateStatus}"`
-      )
-  }
-
   const billNamesToConsolidatedBillsMap = new Map()
   sponsoredBills.forEach((sponsoredBill) => {
     const [billNumber, billData] = sponsoredBill
@@ -122,8 +112,6 @@ exports.createPages = async function ({ actions, graphql }) {
       billData['senateLeadSponsors'] = pairedBill['senateLeadSponsors']
       billData['houseLeadSponsors'] = pairedBill['houseLeadSponsors']
       billData.sponsors = billData.senateLeadSponsors.concat(billData.houseLeadSponsors).join(', ')
-      billData['billStatus'] = getBillStatus(pairedBill)
-      pairedBill['billStatus'] = billData['billStatus']
     } else {
       // First occurrence of this name
       billData[`${chamber}BillNumber`] = billNumber
