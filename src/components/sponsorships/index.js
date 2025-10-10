@@ -105,8 +105,10 @@ const SponsorshipRow = (props) => {
         id='status'
         data-label='Status'
         style={{ width: `${statusWidth}%` }}>
-          <div><span style={{"font-weight": "bold"}}>House:</span> {houseStatus}</div>
-          <div><span style={{"font-weight": "bold"}}>Senate:</span> {senateStatus}</div>
+          <div style={{display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            {houseStatus && <div><span style={{"font-weight": "bold"}}>House:</span> {houseStatus}</div>}
+            {senateStatus && <div><span style={{"font-weight": "bold"}}>Senate:</span> {senateStatus}</div>}
+          </div>
       </td>
 
       <td id='summary' style={{ width: `${summaryWidth}%` }}>
