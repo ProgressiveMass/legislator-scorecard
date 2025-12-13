@@ -2,6 +2,10 @@ import React from 'react'
 import SearchForm from './SearchForm'
 import SEO from '../../components/seo'
 import Layout from '../../components/layout'
+import CardsImage from './images/cards.png'
+import FinePrintImage from './images/fine_print.svg'
+import LegislatorImage from './images/legislator.svg'
+import CollaborationImage from './images/collaboration.svg'
 
 const LandingPage = () => {
   return (
@@ -40,7 +44,7 @@ const LandingPage = () => {
         <div className='landing__section--1 row no-gutters align-items-center'>
           <div className='col-md-5 offset-md-1 pr-md-3 mb-5 mb-md-0'>
             <img
-              src={require('./images/cards.png')}
+              src={CardsImage}
               alt='Examples of the Progressive Massachusetts Legislator Report Cards for three legislators'
               className='img-fluid mx-auto d-block'
               style={{ maxHeight: '500px' }}
@@ -75,7 +79,7 @@ const LandingPage = () => {
               <div className='white-background p-3 mx-auto landing-section-card'>
                 <h3 className='h4'>
                   <img
-                    src={require('./images/fine_print.svg')}
+                    src={FinePrintImage}
                     alt='A page of small text with magnifying glass over it'
                     style={{ width: '80px' }}
                     className='my-4'
@@ -92,7 +96,7 @@ const LandingPage = () => {
               <div className='white-background p-3 mx-auto landing-section-card'>
                 <h3 className='h4'>
                   <img
-                    src={require('./images/legislator.svg')}
+                    src={LegislatorImage}
                     alt='A person reading a book'
                     style={{ width: '80px' }}
                     className='my-4'
@@ -109,7 +113,7 @@ const LandingPage = () => {
               <div className='white-background p-3 mx-auto landing-section-card'>
                 <h3 className='h4'>
                   <img
-                    src={require('./images/collaboration.svg')}
+                    src={CollaborationImage}
                     alt='Two people having a conversation'
                     style={{ width: '80px' }}
                     className='my-4'
