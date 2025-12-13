@@ -59,6 +59,11 @@ const LegislatorMetadata = (props) => {
                       {props.data.email}
                     </a>
                   </div>
+                  {props.data.phone && (
+                    <div>
+                      <a href={`tel:${props.data.phone}`}>{props.data.phone}</a>
+                    </div>
+                  )}
                   <div>
                     <a
                       href='https://www.progressivemass.com/ma_legislators_contact'
@@ -66,7 +71,6 @@ const LegislatorMetadata = (props) => {
                       rel='noreferrer'>
                       More contact information
                     </a>
-                    {/* <a href={`tel:${props.data.phone}`}>{props.data.phone}</a> */}
                   </div>
                 </div>
               </div>
