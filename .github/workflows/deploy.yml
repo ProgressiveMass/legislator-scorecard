@@ -14,7 +14,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: macos-13
+    runs-on: macos-15-intel
     environment:
       name: production
       url: https://scorecard.progressivemass.com
