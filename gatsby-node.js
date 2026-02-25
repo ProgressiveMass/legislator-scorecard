@@ -174,6 +174,34 @@ exports.createPages = async function ({ actions, graphql }) {
     },
   })
 
+  createPage({
+    path: `/legislator/vacant-rep`,
+    component: require.resolve(`./src/components/legislator/vacant.js`),
+    context: {
+      pageData: {
+        legislator: {
+          givenName: 'Vacant',
+          familyName: 'Representative'
+        }
+      },
+      chamber: 'house',
+    }
+  })
+
+  createPage({
+    path: `/legislator/vacant-senator`,
+    component: require.resolve(`./src/components/legislator/vacant.js`),
+    context: {
+      pageData: {
+        legislator: {
+          givenName: 'Vacant',
+          familyName: 'Senator'
+        }
+      },
+      chamber: 'senate',
+    }
+  })
+
   let legislatorsList = [
     { chamber: 'senate', legislators: senateLegislators },
     { chamber: 'house', legislators: houseLegislators },

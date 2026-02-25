@@ -99,13 +99,16 @@ const SearchForm = () => {
         address,
       })
       .then((response) => {
-        navigate(
-          `/legislator/${memberCodesToUrls[
-            response.data.senator
-          ]}?yourRep=${memberCodesToUrls[
-            response.data.representative
-          ]}`
-        )
+        const { senator, representative } = response.data
+        const senatorUrl = senator === null ? "vacant-senator" : memberCodesToUrls[senator]
+        const repUrl = representative === null ? "vacant-rep" : memberCodesToUrls[representative]
+        if (senator === null) {
+          navigate(`/legislator/${repUrl}?yourSenator=${senatorUrl}`)
+        } else {
+          navigate(
+            `/legislator/${senatorUrl}?yourRep=${repUrl}`
+          )
+        }
       })
       .catch((error) => {
         // TODO: better error handling
