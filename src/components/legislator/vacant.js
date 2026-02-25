@@ -15,10 +15,10 @@ const LegislatorPage = ({
       <div className='tinted-background'>
         <div className='module-container module-container--full-width-on-small'>
           <div className='metadata text-center' >
-            <div className='label  heading-font' style={{ fontSize: '1.1rem' }}>
+            <div className='label  heading-font mt-2' style={{ fontSize: '1.1rem' }}>
               {chamber === 'senate' ? 'Senator' : 'Representative'}
             </div>
-            <h1 className='metadata__heading mt-1'>
+            <h1 className='metadata__heading mt-3'>
               <span className='font-weight-normal'>This seat is currently vacant</span>
             </h1>
           </div>
