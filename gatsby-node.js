@@ -54,9 +54,9 @@ const makePage = ({ chamber, pageData, createPage, legislatorId }) => {
 
 //TODO - other sessions
 const sponsorshipsSessionNumber = 194
-const votesSessionOrdinal = '193rd'
+const votesSessionOrdinal = '194th'
 const sponsorshipsSessionYear = 2025
-const votesSessionYear = 2023
+const votesSessionYear = 2025
 
 // create individual legislator pages
 exports.createPages = async function ({ actions, graphql }) {

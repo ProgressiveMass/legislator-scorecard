@@ -6,13 +6,13 @@ import Layout from '../../components/layout'
 import ListPageHeading from '../../components/ListPageHeading'
 
 // Ideally, these should not be hard-coded here. We should fix this some day.
-const mostRecentYear = 2023
-const mostRecentSessionNumber = '193rd'
+const mostRecentYear = 2025
+const mostRecentSessionNumber = '194th'
 
 export const legislatorQuery = graphql`
   {
     dataJson {
-      _2023 {
+      _2025 {
         houseVotes {
           id
           score

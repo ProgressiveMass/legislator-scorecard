@@ -299,6 +299,9 @@
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/PMO"
+      },
+      {
+        "url": "https://www.senatoroconnor.com/"
       }
     ],
     "party": "Republican",
@@ -316,17 +319,20 @@
     "image": "https://malegislature.gov/Legislators/Profile/170/jcv1.jpg",
     "links": [
       {
+        "url": "https://malegislature.gov/Legislators/Profile/JCV0"
+      },
+      {
         "url": "https://malegislature.gov/Legislators/Profile/jcv1"
       },
       {
-        "url": "https://malegislature.gov/Legislators/Profile/JCV0"
+        "url": "https://senatorjohnvelis.com/"
       }
     ],
     "party": "Democratic",
     "district": "Hampden and Hampshire",
     "email": "john.velis@masenate.gov",
     "phone": "617-722-1415",
-    "url": "https://malegislature.gov/Legislators/Profile/jcv1",
+    "url": "https://malegislature.gov/Legislators/Profile/JCV0",
     "memberCode": "JCV0"
   },
   {
@@ -413,6 +419,9 @@
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/MDB0"
+      },
+      {
+        "url": "https://senatormikebrady.org/"
       }
     ],
     "party": "Democratic",
@@ -607,27 +616,6 @@
     "phone": "617-722-1612",
     "url": "https://malegislature.gov/Legislators/Profile/BRF0",
     "memberCode": "BRF0"
-  },
-  {
-    "id": "ocd-person/6ad38b3e-46dc-4367-b85a-26793ea9ff65",
-    "name": "Ed Kennedy",
-    "givenName": "Ed",
-    "familyName": "Kennedy",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Edward_J_Kennedy_MA_government_photo.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/EDJ0"
-      },
-      {
-        "url": "https://senatoredkennedy.com/"
-      }
-    ],
-    "party": "Democratic",
-    "district": "First Middlesex",
-    "email": "edward.kennedy@masenate.gov",
-    "phone": "617-722-1630",
-    "url": "https://malegislature.gov/Legislators/Profile/EDJ0",
-    "memberCode": "EDJ0"
   },
   {
     "id": "ocd-person/703d6d4e-3a1d-4a2e-82e3-3c9693b75953",

@@ -824,6 +824,9 @@
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/MSK1"
+      },
+      {
+        "url": "https://www.repmarykeefe.com/"
       }
     ],
     "party": "Democratic",
@@ -1191,27 +1194,6 @@
     "memberCode": "REH1"
   },
   {
-    "id": "ocd-person/3b6297d5-2c8d-42a8-ba9b-bb4e8f50c0e2",
-    "name": "Ann-Margaret Ferrante",
-    "givenName": "Ann-Margaret",
-    "familyName": "Ferrante",
-    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ann-Margaret-Ferrante.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/AMF1"
-      },
-      {
-        "url": "https://annmargaretferrante.org/"
-      }
-    ],
-    "party": "Democratic",
-    "district": "5th Essex",
-    "email": "ann-margaret.ferrante@mahouse.gov",
-    "phone": "617-722-2380",
-    "url": "https://malegislature.gov/Legislators/Profile/AMF1",
-    "memberCode": "AMF1"
-  },
-  {
     "id": "ocd-person/03d1f31d-1431-41d2-88b7-67b57d50f323",
     "name": "Joan Meschino",
     "givenName": "Joan",
@@ -1382,6 +1364,9 @@
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/AHP1"
+      },
+      {
+        "url": "https://www.alicepeisch.org"
       }
     ],
     "party": "Democratic",
@@ -1579,27 +1564,6 @@
     "phone": "617-722-2488",
     "url": "https://malegislature.gov/Legislators/Profile/MJS3",
     "memberCode": "MJS3"
-  },
-  {
-    "id": "ocd-person/173c7e47-c770-4c5a-9794-4db19f9f5dce",
-    "name": "Natalie Blais",
-    "givenName": "Natalie",
-    "familyName": "Blais",
-    "image": "https://malegislature.gov/Legislators/Profile/170/NMB1.jpg",
-    "links": [
-      {
-        "url": "https://malegislature.gov/Legislators/Profile/NMB1"
-      },
-      {
-        "url": "https://www.repblais.org/"
-      }
-    ],
-    "party": "Democratic",
-    "district": "1st Franklin",
-    "email": "natalie.blais@mahouse.gov",
-    "phone": "413-362-9453",
-    "url": "https://malegislature.gov/Legislators/Profile/NMB1",
-    "memberCode": "NMB1"
   },
   {
     "id": "ocd-person/0a288f3d-397f-4e7b-8bfd-b5032ae1421f",
@@ -2919,7 +2883,7 @@
     "name": "Lisa Field",
     "givenName": "Lisa",
     "familyName": "Field",
-    "image": "https://images.squarespace-cdn.com/content/v1/67fd43f807185144b55d1911/2bbbfed1-78d0-4740-bf7d-9cbe6ff7b66f/0J2A2530_%282%29.jpg",
+    "image": "https://malegislature.gov/Legislators/Profile/170/LMF1.jpg",
     "links": [
       {
         "url": "https://malegislature.gov/Legislators/Profile/LMF1"
@@ -2927,8 +2891,8 @@
     ],
     "party": "Democratic",
     "district": "3rd Bristol",
-    "email": "Lisa.Field@mahouse.gov",
-    "phone": "617-722-2460",
+    "email": "lisa.field@mahouse.gov",
+    "phone": "",
     "url": "https://malegislature.gov/Legislators/Profile/LMF1"
   }
 ]

@@ -63,7 +63,8 @@ const addYesAndNoVotes = (bills, votes) => {
       bills[rollCallNumber].noVotes = noVotes
       bills[rollCallNumber].yesVotes = yesVotes
     } catch (e) {
-      console.error(`couldnt find bill with roll call # ${rollCallNumber}`)
+      console.error(`couldnt find bill with roll call # ${rollCallNumber} in ${Object.keys(bills).join(', ')}: `)
+      throw e
     }
   })
 }
@@ -110,9 +111,7 @@ const buildVoteObject = (votes) => {
         return acc
       }, {})
 
-      const voteCount = Object.values(votes).filter((vote) => {
-        return !['n/a', 'nv'].includes(vote.toLowerCase())
-      }).length
+      const voteCount = Object.values(votes).filter((vote) => vote.toLowerCase().trim() !== 'n/a').length
 
       const totalScore = Object.entries(votes).reduce((acc, [, vote]) => {
         if (vote.trim() === '+') {

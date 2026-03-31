@@ -105,14 +105,16 @@ const VoteRow = ({
     <tr>
       <td style={{ width: '15%' }}>
         <div className='text-muted font-weight-bold'>
-          {bill_number}&nbsp;
-          <a
-            href={roll_call_url}
-            target='_blank'
-            // className='muted-link'
-            rel='noreferrer'>
-            {roll_call_number}
-          </a>
+          {bill_number && (<> {/* hack, because we don't have a good way to store scored items that aren't bills */}
+            {bill_number}&nbsp;
+            <a
+              href={roll_call_url}
+              target='_blank'
+              // className='muted-link'
+              rel='noreferrer'>
+              {roll_call_number}
+            </a>
+          </>)}
         </div>
         <div>{tags}</div>
       </td>
