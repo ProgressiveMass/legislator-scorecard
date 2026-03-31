@@ -88,7 +88,7 @@ const LegislatorRow = ({ legislator, i, chamber, sessionNumber }) => {
       <td data-label='Party'>
         <span>{legislator.party.slice(0, 1)}</span>
       </td>
-      <td data-label='Progressive Rating (2024-2025)'>
+      <td data-label='Progressive Rating (2025-2026)'>
         <div style={{ maxWidth: '300px' }}>
           <ProgressBar data={legislator} sessionNumber={sessionNumber} />
         </div>
@@ -213,7 +213,7 @@ const LegislatorList = (props) => {
                   onClick={handleSort}
                   sort='score'
                   currentSort={sort}
-                  title='Prog. Rating (2024-2025)'
+                  title='Prog. Rating (2025-2026)'
                 />
               </th>
             </tr>
