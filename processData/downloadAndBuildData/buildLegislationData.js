@@ -111,7 +111,8 @@ const buildVoteObject = (votes) => {
         return acc
       }, {})
 
-      const voteCount = Object.values(votes).filter((vote) => vote.toLowerCase().trim() !== 'n/a').length
+      const voteCountIncludingNv = Object.values(votes).filter((vote) => vote.toLowerCase().trim() !== 'n/a').length
+      const voteCountExcludingNv = Object.values(votes).filter((vote) => !['n/a', 'nv'].includes(vote.toLowerCase().trim())).length
 
       const totalScore = Object.entries(votes).reduce((acc, [, vote]) => {
         if (vote.trim() === '+') {
@@ -120,13 +121,14 @@ const buildVoteObject = (votes) => {
         return acc
       }, 0)
 
-      const percentageScore = Math.round((totalScore / voteCount) * 100)
+      const percentageScore = Math.round((totalScore / voteCountIncludingNv) * 100)
+      const recordedVotePercentage = Math.round((voteCountExcludingNv / Object.keys(votes).length) * 100)
 
       return {
         id: openStatesLegislatorId,
         data: votes,
         score: percentageScore,
-        recordedVotePercentage: Math.round((voteCount / Object.keys(votes).length) * 100),
+        recordedVotePercentage,
       }
     })
     .filter(Boolean)
