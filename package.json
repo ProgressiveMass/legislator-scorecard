@@ -42,7 +42,7 @@
     "sass": "^1.61.0",
     "styled-components": "^5.3.9",
     "typescript": "^5.8.3",
-    "webpack": "^5.99.9"
+    "webpack": "^5.104.1"
   },
   "devDependencies": {
     "axios": "^0.21.2",
